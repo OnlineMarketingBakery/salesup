@@ -48,19 +48,22 @@ const cases = [
     name: 'Orange',
     category: 'Attract leads',
     title: 'Eén team. Eén doel. Constante commerciële beweging.',
-    image: '/assets/team-celebrate.png',
+    image: '/assets/case-orange.png',
+    url: 'https://salesup.be/client-cases/de-3-saleslessen-van-stefanie-van-rillaer-head-of-hunting-bij-orange',
   },
   {
     name: 'Trustteam',
     category: 'Boost sales',
     title: 'Groei versnellen met hetzelfde ondernemende DNA.',
-    image: '/assets/team-office.png',
+    image: '/assets/case-trustteam.png',
+    url: 'https://salesup.be/client-cases/trustteam-x-salesup-groei-versnellen-met-hetzelfde-dna',
   },
   {
     name: 'Liantis',
     category: 'Keep clients',
     title: 'Mensen laten groeien om bedrijven te laten groeien.',
-    image: '/assets/team-meeting.png',
+    image: '/assets/case-liantis.png',
+    url: 'https://salesup.be/client-cases/liantis-x-salesup-mensen-laten-groeien-om-groei-mogelijk-te-maken',
   },
 ]
 
@@ -269,7 +272,7 @@ function App() {
                   <p>{item.name}</p>
                 </div>
                 <h3>{item.title}</h3>
-                <a href="#contact">Bekijk de case <Arrow diagonal /></a>
+                <a href={item.url}>Bekijk de case <Arrow diagonal /></a>
               </article>
             ))}
           </div>
