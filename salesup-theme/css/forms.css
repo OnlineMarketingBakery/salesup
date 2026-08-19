@@ -1,0 +1,516 @@
+/* HubSpot form embeds — overrides theme form styling across all pages */
+
+/* ------------------------------------------------------------------
+   New HubSpot form renderer (hsfc) — form theme defaults to white text
+   ------------------------------------------------------------------ */
+.contact-form-card .hsfc-Renderer,
+.contact-form-card .hsfc-FormWrapper,
+.soft-cta .hsfc-Renderer,
+.soft-cta .hsfc-FormWrapper,
+.sc-action .hsfc-Renderer,
+.sc-action .hsfc-FormWrapper {
+  --hsf-default-field-label__color: var(--navy-deep);
+  --hsf-field-label__color: var(--navy-deep);
+  --hsf-default-heading__color: var(--navy-deep);
+  --hsf-default-richtext__color: var(--slate);
+  --hsf-default-progressbar-text__color: var(--navy-deep);
+  --hsf-default-field-checkbox__color: var(--navy-deep);
+  --hsf-default-field-radio__color: var(--navy-deep);
+  --hsf-default-field-description__color: var(--slate);
+  --hsf-default-field-footer__color: var(--slate);
+  --hsf-default-field-input__background-color: var(--ghost);
+  --hsf-default-field-textarea__background-color: var(--ghost);
+  --hsf-default-field-checkbox__background-color: var(--white);
+  --hsf-default-field-radio__background-color: var(--white);
+  --hsf-default-field-input__border-color: var(--line);
+  --hsf-default-field-textarea__border-color: var(--line);
+  --hsf-default-field-checkbox__border-color: var(--line);
+  --hsf-default-field-radio__border-color: var(--line);
+  --hsf-default-field-input__border-radius: 10px;
+  --hsf-default-field-textarea__border-radius: 10px;
+  --hsf-default-field-input__color: var(--navy-deep);
+  --hsf-default-field-textarea__color: var(--navy-deep);
+  --hsf-default-field-input__placeholder-color: var(--slate-light);
+  --hsf-default-field-textarea__placeholder-color: var(--slate-light);
+  --hsf-default-button__background-color: var(--navy-deep);
+  --hsf-default-button--hover__background-color: var(--orange);
+  --hsf-default-button__color: var(--white);
+  --hsf-default-button__border-radius: 100px;
+  --hsf-default-button__border-style: solid;
+  --hsf-default-button__border-width: 0;
+  --hsf-default-button__padding: 11px 20px;
+  --hsf-default-button__font-size: 14px;
+  --hsf-default-button__font-weight: 600;
+  --hsf-default-background__padding: 0;
+  --hsf-default-infoalert__color: var(--navy-deep);
+  --hsf-default-infoalert__background-color: var(--orange-tint);
+  --hsf-default-successalert__color: var(--navy-deep);
+  --hsf-default-successalert__background-color: var(--orange-tint);
+  --hsf-default-erroralert__color: var(--orange-deep);
+}
+
+.soft-cta .hsfc-Renderer,
+.soft-cta .hsfc-FormWrapper {
+  --hsf-default-field-input__background-color: var(--white);
+  --hsf-default-field-textarea__background-color: var(--white);
+}
+
+.hsfc-FieldLabel,
+.hsfc-FieldLabel > span,
+.hsfc-RichText,
+.hsfc-RichText p {
+  color: var(--navy-deep) !important;
+}
+
+.hsfc-RichText,
+.hsfc-RichText p {
+  color: var(--slate) !important;
+}
+
+.hsfc-TextInput,
+.hsfc-TextareaInput,
+.hsfc-PhoneInput,
+.hsfc-DropdownInput,
+.hsfc-EmailField input {
+  width: 100%;
+  border: 1.5px solid var(--line) !important;
+  border-radius: 10px !important;
+  background: var(--ghost) !important;
+  color: var(--navy-deep) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  min-height: 44px;
+  box-shadow: none !important;
+}
+
+.soft-cta .hsfc-TextInput,
+.soft-cta .hsfc-TextareaInput,
+.soft-cta .hsfc-PhoneInput,
+.soft-cta .hsfc-DropdownInput,
+.soft-cta .hsfc-EmailField input {
+  background: var(--white) !important;
+}
+
+.hsfc-TextInput:focus,
+.hsfc-TextareaInput:focus,
+.hsfc-PhoneInput:focus-within,
+.hsfc-DropdownInput:focus-within {
+  outline: 3px solid var(--orange) !important;
+  outline-offset: 2px !important;
+  border-color: var(--orange) !important;
+}
+
+.hsfc-Button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 20px !important;
+  border-radius: 100px !important;
+  border: 1.5px solid transparent !important;
+  background: var(--grad-navy) !important;
+  color: var(--white) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+.hsfc-Button:hover {
+  background: var(--orange) !important;
+  color: var(--navy-deep) !important;
+}
+
+.hsfc-CheckboxField label,
+.hsfc-CheckboxFieldGroup label,
+.hsfc-DataPrivacyField label,
+.hsfc-DataPrivacyField label span {
+  color: var(--navy-deep) !important;
+}
+
+.hsfc-CheckboxInput {
+  accent-color: var(--orange);
+}
+
+[class*="hsfc-"][class*="Alert"],
+[class*="hsfc-"][class*="Banner"],
+[class*="hsfc-"][class*="Success"] {
+  color: var(--navy-deep) !important;
+  background: var(--orange-tint) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+}
+
+[class*="hsfc-"][class*="Alert"] p,
+[class*="hsfc-"][class*="Alert"] span,
+[class*="hsfc-"][class*="Banner"] p,
+[class*="hsfc-"][class*="Banner"] span {
+  color: var(--navy-deep) !important;
+}
+
+/* Soft CTA — full contact/demo forms (2-column grid) */
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Form,
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-FormWrapper {
+  width: 100%;
+}
+
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Step__Content {
+  width: 100%;
+}
+
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 14px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Row:has(.hsfc-RichText),
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Row:has(.hsfc-CheckboxFieldGroup),
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Row:has(.hsfc-DataPrivacyField),
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Row:has(.hsfc-TextareaField),
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Row:has(.hsfc-DropdownField) {
+  grid-template-columns: 1fr;
+}
+
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-TextField,
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-EmailField,
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-PhoneField {
+  min-width: 0;
+}
+
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-NavigationRow {
+  margin-top: 4px;
+}
+
+.soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-RichText {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+  .soft-cta:not(.soft-cta--newsletter) .sc-action .hsfc-Row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Soft CTA — compact newsletter layout (email + button inline) */
+.soft-cta--newsletter .sc-action .hsfc-Form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.soft-cta--newsletter .sc-action .hsfc-Row,
+.soft-cta--newsletter .sc-action .hsfc-Step__Content {
+  display: contents;
+}
+
+.soft-cta--newsletter .sc-action .hsfc-EmailField,
+.soft-cta--newsletter .sc-action .hsfc-TextField {
+  flex: 1 1 168px;
+  min-width: 0;
+}
+
+.soft-cta--newsletter .sc-action .hsfc-NavigationRow,
+.soft-cta--newsletter .sc-action .hsfc-NavigationRow__Buttons {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.soft-cta--newsletter .sc-action .hsfc-RichText,
+.soft-cta--newsletter .sc-action .hsfc-DataPrivacyField,
+.soft-cta--newsletter .sc-action .hsfc-CheckboxFieldGroup {
+  flex: 1 1 100%;
+}
+
+@media (max-width: 820px) {
+  .soft-cta--newsletter .sc-action .hsfc-NavigationRow__Buttons .hsfc-Button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.contact-form-card .hsfc-Row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 14px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.contact-form-card .hsfc-Row:has(.hsfc-RichText),
+.contact-form-card .hsfc-Row:has(.hsfc-CheckboxFieldGroup),
+.contact-form-card .hsfc-Row:has(.hsfc-DataPrivacyField),
+.contact-form-card .hsfc-Row:has(.hsfc-TextareaField),
+.contact-form-card .hsfc-Row:has(.hsfc-DropdownField) {
+  grid-template-columns: 1fr;
+}
+
+.contact-form-card .hsfc-TextField,
+.contact-form-card .hsfc-EmailField,
+.contact-form-card .hsfc-PhoneField {
+  min-width: 0;
+}
+
+.contact-form-card .hsfc-NavigationRow__Buttons {
+  margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .contact-form-card .hsfc-Row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hide duplicate HubSpot form title when the module already has a heading */
+.contact-form-card .form-title,
+.soft-cta .form-title,
+.sc-action .form-title {
+  display: none !important;
+}
+
+/* Labels, legends, option text — beat inline form-theme colors */
+.hs-form label,
+.hs-form label > span,
+.hs-form .hs-form-field > label,
+.hs-form .hs-form-field label span,
+.hs-form legend,
+.hs-form .hs-field-desc,
+.hbspt-form label,
+.hbspt-form label span,
+.hbspt-form legend {
+  color: var(--navy-deep) !important;
+}
+
+.hs-form .hs-form-checkbox-display,
+.hs-form .hs-form-radio-display,
+.hs-form .hs-form-checkbox-display span,
+.hs-form .hs-form-radio-display span,
+.hs-form .hs-form-booleancheckbox-display,
+.hs-form .hs-form-booleancheckbox-display span {
+  color: var(--navy-deep) !important;
+}
+
+.hs-form .hs-richtext,
+.hs-form .hs-richtext p,
+.hs-form .legal-consent-container,
+.hs-form .legal-consent-container p,
+.hs-form .legal-consent-container label,
+.hs-form .legal-consent-container label span {
+  color: var(--slate) !important;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* Inputs */
+.hs-form input[type="text"],
+.hs-form input[type="email"],
+.hs-form input[type="tel"],
+.hs-form input[type="number"],
+.hs-form input[type="url"],
+.hs-form input[type="search"],
+.hs-form select,
+.hs-form textarea {
+  width: 100%;
+  border: 1.5px solid var(--line) !important;
+  border-radius: 10px !important;
+  padding: 10px 12px !important;
+  min-height: 44px;
+  background: var(--ghost) !important;
+  color: var(--navy-deep) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  box-shadow: none !important;
+}
+
+.soft-cta .hs-form input[type="text"],
+.soft-cta .hs-form input[type="email"],
+.soft-cta .hs-form input[type="tel"],
+.soft-cta .hs-form select,
+.soft-cta .hs-form textarea {
+  background: var(--white) !important;
+}
+
+.hs-form input::placeholder,
+.hs-form textarea::placeholder {
+  color: var(--slate-light) !important;
+  opacity: 1 !important;
+}
+
+.hs-form input:focus,
+.hs-form select:focus,
+.hs-form textarea:focus {
+  outline: 3px solid var(--orange) !important;
+  outline-offset: 2px !important;
+  border-color: var(--orange) !important;
+}
+
+.hs-form .hs-error-msgs,
+.hs-form .hs-error-msg {
+  color: var(--orange-deep) !important;
+  font-size: 12px !important;
+}
+
+/* Submit buttons */
+.hs-form .hs-button,
+.hs-form .actions .hs-button,
+.hs-button.primary {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 20px !important;
+  border-radius: 100px !important;
+  border: 1.5px solid transparent !important;
+  background: var(--grad-navy) !important;
+  color: var(--white) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.hs-form .hs-button:hover,
+.hs-form .actions .hs-button:hover,
+.hs-button.primary:hover {
+  background: var(--orange) !important;
+  color: var(--navy-deep) !important;
+}
+
+/* Inline success message */
+.submitted-message,
+.hs-form .submitted-message,
+.hbspt-form .submitted-message {
+  background: var(--orange-tint) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  padding: 20px 24px !important;
+  color: var(--navy-deep) !important;
+}
+
+.submitted-message p,
+.submitted-message h1,
+.submitted-message h2,
+.submitted-message h3,
+.submitted-message h4,
+.submitted-message span,
+.submitted-message div,
+.hs-form .submitted-message p,
+.hs-form .submitted-message span,
+.hs-form .submitted-message div {
+  color: var(--navy-deep) !important;
+}
+
+/* Multi-step pagination */
+.hs-form .hs-form-pagination,
+.hs-form .hs-form-pagination .hs-button {
+  margin-top: 8px;
+}
+
+.hs-form .hs-form-pagination .hs-button {
+  margin-right: 8px;
+}
+
+/* Checkbox / radio lists */
+.hs-form .inputs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hs-form .inputs-list li {
+  margin: 0 0 8px;
+}
+
+.hs-form .inputs-list label {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 500 !important;
+}
+
+.hs-form .inputs-list input[type="checkbox"],
+.hs-form .inputs-list input[type="radio"] {
+  width: auto !important;
+  min-height: auto !important;
+  margin-top: 3px;
+  flex: 0 0 auto;
+}
+
+/* Soft CTA — compact newsletter layout */
+.soft-cta .sc-action .hbspt-form,
+.soft-cta .sc-action .hs-form {
+  width: 100%;
+}
+
+.soft-cta .sc-action .hs-form fieldset {
+  max-width: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.soft-cta .sc-action .hs-form .hs-form-field {
+  float: none;
+  width: auto;
+  flex: 1 1 168px;
+  min-width: 0;
+  margin: 0;
+}
+
+.soft-cta .sc-action .hs-form .hs-form-field .input {
+  margin: 0;
+}
+
+.soft-cta .sc-action .hs-form .hs_recaptcha,
+.soft-cta .sc-action .hs-form .legal-consent-container,
+.soft-cta .sc-action .hs-form .hs-richtext,
+.soft-cta .sc-action .hs-form .hs_error_rollup {
+  flex: 1 1 100%;
+}
+
+.soft-cta .sc-action .hs-form .actions {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+.soft-cta.navy .hs-form label,
+.soft-cta.navy .hs-form label span,
+.soft-cta.navy .hs-form .hs-form-checkbox-display span {
+  color: var(--white) !important;
+}
+
+.soft-cta.navy .hs-form input[type="text"],
+.soft-cta.navy .hs-form input[type="email"],
+.soft-cta.navy .hs-form input[type="tel"],
+.soft-cta.navy .hs-form textarea {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: var(--line-dark) !important;
+  color: var(--white) !important;
+}
+
+.soft-cta.navy .submitted-message,
+.soft-cta.navy .submitted-message p {
+  color: var(--navy-deep) !important;
+}
+
+@media (max-width: 820px) {
+  .soft-cta .sc-action .hs-form .actions,
+  .soft-cta .sc-action .hs-form .hs-form-field {
+    flex: 1 1 100%;
+  }
+
+  .soft-cta .sc-action .hs-form .actions .hs-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

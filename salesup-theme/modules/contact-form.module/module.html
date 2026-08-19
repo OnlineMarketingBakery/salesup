@@ -3,94 +3,12 @@
     <div class="contact-form-card">
       <h2 id="form-titel">{{ module.form_heading }}</h2>
       {% if module.form_note %}<p class="contact-note">{{ module.form_note }}</p>{% endif %}
-      <form class="form-mock su-contact-form" data-hs-contact-form data-form-id="{% if module.form.form_id %}{{ module.form.form_id }}{% else %}79c85a00-56e9-4014-be21-cb8af40feb9d{% endif %}" novalidate>
-          <label>
-            Naam
-            <input type="text" name="full_name" autocomplete="name" required>
-          </label>
-          <label>
-            E-mail
-            <input type="email" name="email" autocomplete="email" required>
-          </label>
-          <label>
-            Telefoon
-            <input type="tel" name="phone" autocomplete="tel">
-          </label>
-          <label>
-            Bedrijf
-            <input type="text" name="company" autocomplete="organization">
-          </label>
-          <label style="grid-column:1 / -1;">
-            Waarmee kunnen we helpen?
-            <textarea name="message" required></textarea>
-          </label>
-          <button class="btn" type="submit">Verstuur <span class="arrow" aria-hidden="true">&rarr;</span></button>
-          <p class="hs-note" data-form-feedback aria-live="polite"></p>
-        </form>
-        <script>
-          (function () {
-            var forms = document.querySelectorAll('[data-hs-contact-form]');
-            if (!forms.length) return;
-            forms.forEach(function (form) {
-              if (form.dataset.bound === 'true') return;
-              form.dataset.bound = 'true';
-              form.addEventListener('submit', function (event) {
-                event.preventDefault();
-                var feedback = form.querySelector('[data-form-feedback]');
-                var submitBtn = form.querySelector('button[type="submit"]');
-                var formId = form.getAttribute('data-form-id');
-                if (!formId) return;
-                var fullName = (form.querySelector('[name="full_name"]') || {}).value || '';
-                var email = (form.querySelector('[name="email"]') || {}).value || '';
-                var phone = (form.querySelector('[name="phone"]') || {}).value || '';
-                var company = (form.querySelector('[name="company"]') || {}).value || '';
-                var message = (form.querySelector('[name="message"]') || {}).value || '';
-                if (!fullName.trim() || !email.trim() || !message.trim()) {
-                  if (feedback) feedback.textContent = 'Vul naam, e-mail en je vraag in.';
-                  return;
-                }
-                var parts = fullName.trim().split(/\s+/);
-                var firstName = parts.shift() || fullName.trim();
-                var lastName = parts.join(' ');
-                var payload = {
-                  fields: [
-                    { name: 'firstname', value: firstName },
-                    { name: 'lastname', value: lastName },
-                    { name: 'email', value: email },
-                    { name: 'phone', value: phone },
-                    { name: 'company', value: company },
-                    { name: 'message', value: message }
-                  ],
-                  context: {
-                    pageUri: window.location.href,
-                    pageName: document.title
-                  }
-                };
-                if (submitBtn) submitBtn.disabled = true;
-                if (feedback) feedback.textContent = 'Verzenden...';
-                fetch('https://api.hsforms.com/submissions/v3/integration/submit/25245585/' + encodeURIComponent(formId), {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify(payload)
-                })
-                  .then(function (response) {
-                    if (!response.ok) throw new Error('submit_failed');
-                    return response.json();
-                  })
-                  .then(function () {
-                    form.reset();
-                    if (feedback) feedback.textContent = 'Bedankt. We bellen je binnen 30 minuten terug.';
-                  })
-                  .catch(function () {
-                    if (feedback) feedback.textContent = 'Er liep iets mis. Bel ons op 053 78 28 30.';
-                  })
-                  .finally(function () {
-                    if (submitBtn) submitBtn.disabled = false;
-                  });
-              });
-            });
-          })();
-        </script>
+      {% form
+        form_to_use="{{ module.form.form_id or '79c85a00-56e9-4014-be21-cb8af40feb9d' }}"
+        response_type="{{ module.form.response_type or 'inline' }}"
+        message="{{ module.form.message or 'Bedankt. We bellen je binnen 30 minuten terug.' }}"
+        gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+      %}
     </div>
     <div class="contact-meet-card">
       <h2>{{ module.meet_heading }}</h2>

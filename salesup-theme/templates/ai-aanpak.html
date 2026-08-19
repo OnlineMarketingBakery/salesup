@@ -302,7 +302,6 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: HubSpot-form koppelen (form-GUID) — placeholder is inert tot livegang -->
             {% dnd_module
           path="../modules/soft-cta",
           aria="Vraag een demo aan",
@@ -317,7 +316,12 @@
             },
           link_label="Vraag je demo aan",
           note="Binnen 30 minuten een reactie.",
-          navy=false
+          navy=false,
+          form={
+              "form_id": "79c85a00-56e9-4014-be21-cb8af40feb9d",
+              "response_type": "inline",
+              "message": "Bedankt. We bellen je binnen 30 minuten terug."
+            }
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
