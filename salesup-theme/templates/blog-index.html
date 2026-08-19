@@ -43,7 +43,7 @@
   media_type="trustcard",
   trustcard_aria="salesUp blog",
   trustcard_image={
-    "src": "https://salesup.be/hubfs/Frame%20252-1.png",
+    "src": "https://salesup.be/hubfs/LR/IZ6A0501_LR.jpg",
     "alt": "salesUp-team in gesprek over commerciële groei en salesstrategie."
   },
   trustcard_stat="",
@@ -53,18 +53,29 @@
 %}
 
 {% set all_tags = blog_tags(group.id, 250) %}
+{% if topic %}
+  {% set current_tag = topic %}
+{% elif tag and tag.slug %}
+  {% set current_tag = tag.slug %}
+{% elif tag %}
+  {% set current_tag = tag %}
+{% elif '/tag/' in request.path %}
+  {% set current_tag = request.path|split('/tag/')|last|split('/')|first %}
+{% else %}
+  {% set current_tag = '' %}
+{% endif %}
 <section class="blog-listing wrap" aria-label="Blogartikels">
   <nav class="blog-tags" aria-label="Filter op categorie">
-    <a class="blog-tag{% unless tag %} is-active{% endunless %}" href="{{ group.absolute_url }}"{% unless tag %} aria-current="true"{% endunless %}>Toon alles</a>
+    <a class="blog-tag{% unless current_tag %} is-active{% endunless %}" href="{{ group.absolute_url }}"{% unless current_tag %} aria-current="page"{% endunless %}>Toon alles</a>
     {% for item in all_tags %}
-    <a class="blog-tag{% if tag and tag.slug == item.slug %} is-active{% endif %}" href="{{ blog_tag_url(group.id, item.slug) }}"{% if tag and tag.slug == item.slug %} aria-current="true"{% endif %}>{{ item.name|default(item) }}</a>
+    <a class="blog-tag{% if current_tag and current_tag == item.slug %} is-active{% endif %}" href="{{ blog_tag_url(group.id, item.slug) }}"{% if current_tag and current_tag == item.slug %} aria-current="page"{% endif %}>{{ item.name|default(item) }}</a>
     {% endfor %}
   </nav>
   <label class="blog-tags-mobile-label mono" for="blog-tag-select">Filter</label>
   <select id="blog-tag-select" class="blog-tags-select" aria-label="Filter op categorie" onchange="if(this.value){location.href=this.value;}">
-    <option value="{{ group.absolute_url }}"{% unless tag %} selected{% endunless %}>Toon alles</option>
+    <option value="{{ group.absolute_url }}"{% unless current_tag %} selected{% endunless %}>Toon alles</option>
     {% for item in all_tags %}
-    <option value="{{ blog_tag_url(group.id, item.slug) }}"{% if tag and tag.slug == item.slug %} selected{% endif %}>{{ item.name|default(item) }}</option>
+    <option value="{{ blog_tag_url(group.id, item.slug) }}"{% if current_tag and current_tag == item.slug %} selected{% endif %}>{{ item.name|default(item) }}</option>
     {% endfor %}
   </select>
 
