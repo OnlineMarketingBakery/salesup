@@ -1,0 +1,103 @@
+[ {
+  "id" : "eyebrow",
+  "name" : "eyebrow",
+  "label" : "Eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "VACATURE"
+}, {
+  "id" : "title",
+  "name" : "title",
+  "label" : "Titel (fallback tot API laadt)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Vacature"
+}, {
+  "id" : "chips",
+  "name" : "chips",
+  "label" : "Chips (fallback)",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "chips.link_label",
+    "name" : "link_label",
+    "label" : "Label",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "apply_text",
+  "name" : "apply_text",
+  "label" : "Solliciteer-tekst",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Solliciteer nu"
+}, {
+  "id" : "apply_url",
+  "name" : "apply_url",
+  "label" : "Apply-URL (fallback)",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "content_id" : null,
+      "href" : "https://salesup.recruitee.com/"
+    }
+  }
+}, {
+  "id" : "back_text",
+  "name" : "back_text",
+  "label" : "Terug-tekst",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Alle vacatures"
+}, {
+  "id" : "back_url",
+  "name" : "back_url",
+  "label" : "Terug-URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "content_id" : null,
+      "href" : "/werken-bij"
+    }
+  }
+} ]

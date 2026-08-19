@@ -1,0 +1,67 @@
+[ {
+  "id" : "eyebrow",
+  "name" : "eyebrow",
+  "label" : "Eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Wat het oplevert"
+}, {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Titel (H2)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Meetbaar, niet in vage beloftes."
+}, {
+  "id" : "kpis",
+  "name" : "kpis",
+  "label" : "KPI's",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 8,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "kpis.num",
+    "name" : "num",
+    "label" : "Cijfer",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "91<em>%</em>"
+  }, {
+    "id" : "kpis.who",
+    "name" : "who",
+    "label" : "Wie",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Orange"
+  }, {
+    "id" : "kpis.context",
+    "name" : "context",
+    "label" : "Context",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

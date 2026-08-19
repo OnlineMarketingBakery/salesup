@@ -1,0 +1,25 @@
+{% macro resolve_href(link, fallback='/contact') -%}
+{%- set href = link.url.href if link and link.url else '' -%}
+{%- if link and link.url and link.url.content_id and (not href or href == '#' or href == '#contact') -%}
+  {%- set page = content_by_id(link.url.content_id) -%}
+  {%- set href = page.absolute_url if page and page.absolute_url else fallback -%}
+{%- endif -%}
+{%- if not href or href == '#' or href == '#contact' -%}
+  {%- set page = content_by_id(453268184310) -%}
+  {{- page.absolute_url if page and page.absolute_url else fallback -}}
+{%- else -%}
+  {{- href -}}
+{%- endif -%}
+{%- endmacro %}
+<section class="final wrap" id="{{ module.anchor|default('contact') }}">
+  <div class="final-card">
+    <div>
+      <h2>{{ module.heading }}</h2>
+      {% if module.tekst %}<div>{{ module.tekst }}</div>{% endif %}
+    </div>
+    <div class="final-cta">
+      {% if module.cta1_text %}<a href="{{ resolve_href(module.cta1_url, '/contact') }}" class="btn on-dark"{% if module.cta1_new_tab %} target="_blank" rel="noopener"{% endif %}>{{ module.cta1_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+      {% if module.cta2_text %}<a href="{{ module.cta2_url.url.href|default('tel:+3253782830') }}" class="btn on-dark">{{ module.cta2_text }}</a>{% endif %}
+    </div>
+  </div>
+</section>

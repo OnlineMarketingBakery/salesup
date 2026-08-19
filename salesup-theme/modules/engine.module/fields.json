@@ -1,0 +1,77 @@
+[ {
+  "id" : "eyebrow",
+  "name" : "eyebrow",
+  "label" : "Eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "De motor"
+}, {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Titel (H2)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Vijf onderdelen. Eén databasis. Eén cirkel die zichzelf voedt."
+}, {
+  "id" : "sub",
+  "name" : "sub",
+  "label" : "Subtekst",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "nodes",
+  "name" : "nodes",
+  "label" : "Diensten (legende)",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 5,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "nodes.idx",
+    "name" : "idx",
+    "label" : "Index",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "01"
+  }, {
+    "id" : "nodes.naam",
+    "name" : "naam",
+    "label" : "Naam",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Marketing"
+  }, {
+    "id" : "nodes.desc",
+    "name" : "desc",
+    "label" : "Beschrijving",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

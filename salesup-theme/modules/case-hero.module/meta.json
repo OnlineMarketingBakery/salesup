@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 453248182477,
+  "label" : "salesUp — Case hero",
+  "icon" : "@hubspot/sprocket",
+  "is_available_for_new_content" : true
+}

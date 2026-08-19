@@ -1,0 +1,395 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — AI-aanpak
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/ai-aanpak.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"AI-gedreven sales\",\n      \"serviceType\":\"Automated quality monitoring, opportunity- en objection-detectie, live bijsturing, AI-roleplays en gespreksverslagen\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/ai-aanpak\",\n      \"description\":\"salesUp zet AI operationeel in over de hele commerciële keten: elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, koopsignalen en bezwaren worden live herkend, verkopers trainen tegen AI-avatars op de scorecard van hun klant en elk gesprek wordt omgezet in een verslag. De platformen zijn in eigen beheer. De AI meet en signaleert; de mens beslist en verkoopt.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"AI-aanpak\",\"item\":\"https://www.salesup.be/ai-aanpak\"}\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/ai-aanpak",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "AI-aanpak",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="De AI-aanpak · methodologie",
+          heading="AI die door de <em>héle keten</em> werkt — geen gimmick.",
+          subtext="<p>Zo zet salesUp AI operationeel in over de vijf diensten. Elk verkoopgesprek wordt automatisch gescoord op kwaliteit en koopkans, koopsignalen en bezwaren worden live herkend en de medewerker wordt bijgestuurd. De platformen zijn in eigen beheer gebouwd, dus je data blijft in één keten. De AI meet en signaleert; de mens beslist en verkoopt.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Bekijk wat de AI doet",
+          cta2_url={
+              "url": {
+                "href": "#capabilities",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Elk gesprek gescoord"
+              },
+              {
+                "link_label": "Platformen in eigen beheer"
+              },
+              {
+                "link_label": "GDPR-conform"
+              },
+              {
+                "link_label": "Reactie < 30 min"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="demopaneel",
+          demo_aria="Voorbeeldweergave van het salesUp-platform",
+          demo_html="<div class=\"aip-panel-head\">\n            <div class=\"aip-panel-title\">Gesprek #4821<span>Inkomende lead · vandaag 09:14</span></div>\n            <span class=\"aip-demo-badge\">Voorbeeld — demodata</span>\n          </div>\n          <div class=\"aip-panel-body\">\n            <div class=\"aip-score\"><span class=\"aip-score-num\">87<span class=\"of\">/100</span></span></div>\n            <div class=\"aip-score-label\">Kwaliteitsscore van dit gesprek</div>\n            <div class=\"aip-metric\"><span class=\"k\">Koopkans</span><span class=\"aip-tag\">Hoog · rijp voor offerte</span></div>\n            <div class=\"aip-metric\"><span class=\"k\">Herkende bezwaren</span></div>\n            <div class=\"aip-tags\">\n              <span class=\"aip-tag\">prijs</span>\n              <span class=\"aip-tag\">timing</span>\n              <span class=\"aip-tag\">concurrent in beeld</span>\n            </div>\n            <div class=\"aip-sub\">\n              <div class=\"aip-subscore\"><div class=\"row\"><span>Opening &amp; behoefteanalyse</span><b>92%</b></div><div class=\"aip-bar\"><span style=\"width:92%\"></span></div></div>\n              <div class=\"aip-subscore\"><div class=\"row\"><span>Omgaan met bezwaren</span><b>78%</b></div><div class=\"aip-bar\"><span style=\"width:78%\"></span></div></div>\n              <div class=\"aip-subscore\"><div class=\"row\"><span>Afsluiting &amp; volgende stap</span><b>85%</b></div><div class=\"aip-bar\"><span style=\"width:85%\"></span></div></div>\n            </div>\n          </div>",
+          demo_caption="Voorbeeldweergave met demodata uit ons eigen platform — geen mockup, geen tech-abstractie."
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met onze AI-aanpak werken",
+          eyebrow="Bedrijven waar onze AI-aanpak draait",
+          logos=[
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Astara",
+                "slug": ""
+              },
+              {
+                "naam": "Axians",
+                "slug": ""
+              },
+              {
+                "naam": "Upgrade Estate",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "Geodis",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/capabilities",
+          eyebrow="Wat de AI vandaag doet",
+          heading="Zes dingen die onze AI doet — software die draait.",
+          intro="<p>salesUp bouwt de platformen in eigen beheer. Dezelfde AI doet zes concrete dingen, verspreid over de vijf diensten en verbonden in één keten. De AI meet en signaleert; de mens beslist en verkoopt.</p>",
+          capability_cards=[
+              {
+                "num": "01",
+                "title": "Automated quality monitoring",
+                "tekst": "<p>Elk gesprek wordt getranscribeerd en per gespreksfase beoordeeld — opening, behoefteanalyse, bezwaren, afsluiting — en krijgt één totaalscore. Op elk gesprek, niet op een steekproef achteraf.</p>",
+                "signal": "De score wijst je coach waar het gesprek beter kan."
+              },
+              {
+                "num": "02",
+                "title": "Opportunity score",
+                "tekst": "<p>Koopsignalen worden herkend en samengevat in één opportunity score per gesprek. De opvolglijst sorteert zich vanzelf op koopkans, zodat de warmste dossiers als eerste worden gebeld.</p>",
+                "signal": "De AI rangschikt de kansen; welke deal je eerst belt, kies jij."
+              },
+              {
+                "num": "03",
+                "title": "Objection-detectie",
+                "tekst": "<p>Bezwaren worden benoemd en geteld over gesprekken heen: prijs, timing, een concurrent in beeld. Zo weet je niet alleen dát een gesprek liep, maar ook wáár de deal op vastzit.</p>",
+                "signal": "Terugkerende bezwaren voeden script en aanbod."
+              },
+              {
+                "num": "04",
+                "title": "Live bijsturing",
+                "tekst": "<p>Terwijl het gesprek loopt, herkent de AI het moment en verschijnt een korte aanwijzing op het scherm van de medewerker: een betere vraag, het juiste opvolgmoment, het kanaal dat werkt.</p>",
+                "signal": "De AI fluistert; de medewerker beslist of hij ze gebruikt."
+              },
+              {
+                "num": "05",
+                "title": "Gesprek → trainingsdata",
+                "tekst": "<p>De scores en objection-data voeden salesUp Academy: verkopers oefenen tegen AI-avatars op de scorecard van jouw klant en bevragen hun eigen gespreksdata in gewone taal. Ze groeien op wat de data aanwijst.</p>",
+                "signal": "De avatar vervangt de oefenpartner, niet de coach."
+              },
+              {
+                "num": "06",
+                "title": "Rapportage",
+                "tekst": "<p>Elk gesprek wordt automatisch omgezet in een verslag met samenvatting, afspraken, bezwaren en volgende stap — aan de lijn én face-to-face. Daarbovenop krijg je een wekelijkse rapportering die toont wat elk beluur opbrengt.</p>",
+                "signal": "Het verslag schrijft zichzelf; de vervolgstap bepaalt de verkoper."
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/datalus",
+          eyebrow="Eén sluitende keten",
+          heading="Hoe de data door de hele keten stroomt.",
+          claim="De AI is wat door de keten stroomt. Ze meet elke stap en verbindt ze; op elke stap handelt een mens.",
+          figcaption="Zo sluit de keten. Marketing genereert een lead en de AI bepaalt het ideale opvolgmoment. Ons Sales Contact Center belt die lead binnen 30 minuten en kwalificeert hem; elk gesprek wordt automatisch gescoord op kwaliteit en koopkans. Die scores en de opportunity- en objection-data voeden de Training: verkopers oefenen tegen AI-avatars op de scorecard van de klant en groeien op de punten die de data aanwijst. Sterkere mensen staan vervolgens aan de lijn en in het veld bij Face2Face Sales, waar de gesprekken opnieuw worden opgenomen en gescoord. Wie extra capaciteit nodig heeft, zet Sales Consultants uit dezelfde groep in, mét die volledige omkadering. De omzet die daaruit komt, voedt de volgende marketingcampagne. Op elke stap meet en verbindt de AI; op elke stap beslist en verkoopt de mens.",
+          contrast="Wie met vier leveranciers werkt, verliest bij elke overdracht data en verantwoordelijkheid. Bij één partner met eigen platformen blijft alles in dezelfde keten.",
+          quote="Die mensen nemen het au sérieux. Ze denken mee met u over database, scripting, evaluatie en bijsturen.",
+          quote_who="— <strong>Pascal Pinket</strong>, Sales Director bij Trustteam"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/ai-per-dienst",
+          eyebrow="AI per dienst",
+          heading="Wat de AI concreet doet, per dienst.",
+          intro="<p>Dezelfde AI-motor loopt door de vijf diensten van salesUp — telkens toegepast op waar die dienst voor staat.</p>",
+          dienst_rows=[
+              {
+                "naam": "Marketing",
+                "wat": "<p>De AI stuurt de campagne aan en bepaalt per contact het <b>ideale opvolgmoment en kanaal</b>. De leads stromen rechtstreeks door naar het eigen Sales Contact Center voor menselijke opvolging binnen 30 minuten.</p>"
+              },
+              {
+                "naam": "Sales Contact Center",
+                "wat": "<p>Elk gesprek wordt <b>automatisch gescoord op kwaliteit en koopkans</b>; koopsignalen en bezwaren worden live herkend en de medewerker wordt tijdens het gesprek bijgestuurd. De scores sturen meteen opvolging en training aan.</p>"
+              },
+              {
+                "naam": "Face2Face Sales",
+                "wat": "<p>Veldgesprekken worden <b>opgenomen en automatisch omgezet in een verslag</b> met kwaliteitsinzichten — dezelfde AI-motor als aan de lijn. De opvolging loopt via telesales die achter het veld draait.</p>"
+              },
+              {
+                "naam": "Training",
+                "wat": "<p><b>AI-avatar-roleplays via salesUp Academy</b> op de scorecard van jouw klant, chat met de eigen gespreksdata en competentie-opvolging per medewerker. De echte gespreksdata bepaalt waarop getraind wordt.</p>"
+              },
+              {
+                "naam": "Sales Consultants",
+                "wat": "<p>De profielen komen mét de <b>volledige AI-omkadering</b> — quality monitoring, opnames en het trainingsplatform — die de groep zelf gebruikt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-woman-desk.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- VERIFIEER: exacte GDPR-formulering (DPO + verwerkersovereenkomst) en de privacy-URL vóór publicatie. -->
+            {% dnd_module
+          path="../modules/data-privacy",
+          eyebrow="Data & privacy",
+          heading="Je data blijft in de keten — en van jou.",
+          intro="<p>Omdat salesUp de platformen in eigen beheer bouwt, gaat je data niet naar externe licentietools. Ze blijft in één keten, binnen jouw opdracht, en de verwerking gebeurt conform de GDPR.</p>",
+          media={
+              "src": "https://salesup.be/hubfs/Rectangle%2058.jpg",
+              "alt": "Medewerker van salesUp aan een bureau met het platform op het scherm — echte werkvloer, geen montage."
+            },
+          trust_rows=[
+              {
+                "titel": "Platformen in eigen beheer.",
+                "uitleg": "<p>We kopen geen tooling in; we bouwen ze zelf. Je data gaat niet naar externe licentietools maar blijft in één keten.</p>"
+              },
+              {
+                "titel": "Data blijft in jouw opdracht.",
+                "uitleg": "<p>Gespreksopnames en scores gebruiken we voor kwaliteitsmeting, opvolging en training binnen jouw opdracht — niet daarbuiten.</p>"
+              },
+              {
+                "titel": "GDPR-conform.",
+                "uitleg": "<p>Verwerking gebeurt conform de GDPR. Afspraken over bewaartermijnen, toegang en verwijdering leggen we vooraf vast.</p>"
+              },
+              {
+                "titel": "Één keten, geen breuken.",
+                "uitleg": "<p>Doordat alles in eigen platformen loopt, verlies je geen data of verantwoordelijkheid bij overdrachten tussen leveranciers.</p>"
+              }
+            ],
+          slot="De volledige afspraken over verwerking, bewaring en toegang leggen we vast in een verwerkersovereenkomst."
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-team-floor.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/mens-tegendraad",
+          eyebrow="De mens beslist",
+          heading="Technologie versterkt de mens, ze vervangt hem niet.",
+          intro="<p>Deze methodologie staat niet op beloftes maar op een externe auditscore. En hoe AI-zwaar de aanpak ook is: de mens houdt het laatste woord.</p>",
+          media={
+              "src": "https://salesup.be/hubfs/Untitled%20design.png",
+              "alt": "Dedicated salesUp-team aan het werk in het Sales Contact Center, waar elk gesprek door de automated quality monitoring gaat."
+            },
+          lead="<strong>91% auditscore bij Orange</strong> — de hoogste van Europa in de Orange Europe-audit. Elk gesprek gaat door onze automated quality monitoring; dat is het cijfer dat deze methodologie draagt.",
+          pull_titel="De AI meet en signaleert, de mens beslist en verkoopt.",
+          pull_body="<p>Elke capability op deze pagina levert een signaal; wat ermee gebeurt, beslist een mens. De verkoper voert het gesprek en sluit de deal; de coach beslist wat er met de inzichten gebeurt. Zo blijft een AI-zware aanpak commercieel én menselijk.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: HubSpot-form koppelen (form-GUID) — placeholder is inert tot livegang -->
+            {% dnd_module
+          path="../modules/soft-cta",
+          aria="Vraag een demo aan",
+          sc_eyebrow="Demo op maat",
+          heading="Zie onze AI-aanpak live in een demo",
+          tekst="<p>Ontdek hoe we data, AI en menselijk vakmanschap combineren tot één commerciële motor. Laat je gegevens achter voor een demo op maat van jouw situatie.</p>",
+          veldenset={
+              "naam": true,
+              "email": true,
+              "telefoon": false,
+              "website": false
+            },
+          link_label="Vraag je demo aan",
+          note="Binnen 30 minuten een reactie.",
+          navy=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Wil je zien wat deze aanpak in jouw pipeline doet?",
+          tekst="<p>Je hebt gezien wat onze AI meet en wat onze mensen ermee doen. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Sales Contact Center",
+                "url": {
+                  "url": {
+                    "href": "/sales-contact-center",
+                    "type": "CONTENT", "content_id": 453268175089
+                  }
+                }
+              },
+              {
+                "link_label": "Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              },
+              {
+                "link_label": "Face2Face Sales",
+                "url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

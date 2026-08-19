@@ -1,0 +1,150 @@
+[
+  {
+    "type": "group",
+    "name": "kleuren",
+    "label": "Kleuren (BrandBook)",
+    "children": [
+      {
+        "type": "color",
+        "name": "orange",
+        "label": "Up Orange",
+        "default": {
+          "color": "#EF7D00",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "orange_deep",
+        "label": "Oranje diep (hover/gradient)",
+        "default": {
+          "color": "#e62d23",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "orange_tint",
+        "label": "Oranje tint (kaarten)",
+        "default": {
+          "color": "#FDF3E8",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "navy",
+        "label": "Up Blue",
+        "default": {
+          "color": "#193c6c",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "navy_deep",
+        "label": "Dark Blue (koppen)",
+        "default": {
+          "color": "#151e35",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "ghost",
+        "label": "Ghost White",
+        "default": {
+          "color": "#f6f6fc",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "white",
+        "label": "Wit",
+        "default": {
+          "color": "#ffffff",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "slate",
+        "label": "Slate (body)",
+        "default": {
+          "color": "#5B6270",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "slate_light",
+        "label": "Slate light",
+        "default": {
+          "color": "#8A8F99",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "ink_dim",
+        "label": "Ink dim (tekst op donker)",
+        "default": {
+          "color": "#C7CAD1",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "line",
+        "label": "Lijn (licht)",
+        "default": {
+          "color": "#e7e7ef",
+          "opacity": 100
+        }
+      },
+      {
+        "type": "color",
+        "name": "line_dark",
+        "label": "Lijn (donker)",
+        "default": {
+          "color": "#2c4a78",
+          "opacity": 100
+        }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "typografie",
+    "label": "Typografie",
+    "children": [
+      {
+        "type": "font",
+        "name": "heading",
+        "label": "Koppen (Poppins)",
+        "default": {
+          "font": "Poppins",
+          "font_set": "GOOGLE",
+          "fallback": "sans-serif",
+          "styles": {
+            "font-weight": "700"
+          }
+        }
+      },
+      {
+        "type": "font",
+        "name": "basis",
+        "label": "Body (Inter)",
+        "default": {
+          "font": "Inter",
+          "font_set": "GOOGLE",
+          "fallback": "sans-serif",
+          "styles": {
+            "font-weight": "400"
+          }
+        }
+      }
+    ]
+  }
+]

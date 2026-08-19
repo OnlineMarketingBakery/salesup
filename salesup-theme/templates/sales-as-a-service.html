@@ -1,0 +1,347 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Sales-as-a-Service
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Sales-as-a-Service\",\n      \"serviceType\":\"Uitbestede salesfunctie\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/sales-as-a-service\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Consultants\",\"url\":\"https://www.salesup.be/sales-consultants\"},\n      \"description\":\"Je volledige salesfunctie uitbesteed aan een team van salesUp, van prospectie tot closing, met tooling, coaching en de datalus mee. Meetbaar via onze eigen platformen en afgerekend op resultaat.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Consultants\",\"item\":\"https://www.salesup.be/sales-consultants\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Sales-as-a-Service\",\"item\":\"https://www.salesup.be/sales-as-a-service\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat houdt Sales-as-a-Service precies in?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je besteedt je volledige salesfunctie uit aan een team van salesUp, van prospectie tot closing. Wij nemen de commerciële motor over — bellen, opvolgen, afspraken maken en afsluiten — met onze tooling, coaching en de datalus mee. Zo bouw je verkoop uit zonder zelf een salesteam te moeten opzetten en managen.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor welke bedrijven is dit geschikt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Voor bedrijven die willen groeien maar geen eigen salesteam willen opbouwen, of die een nieuwe markt of propositie willen testen zonder meteen vast personeel aan te werven. Je krijgt een volwaardige salesfunctie die met je ambitie meegroeit, in plaats van de kost en het risico van een team op te bouwen dat je later weer moet afbouwen.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe blijft dit meetbaar?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Elk gesprek wordt gescoord op kwaliteit en koopkans via onze eigen platformen, en die scores sturen de opvolging én de training via salesUp Academy. Je krijgt een wekelijkse rapportering die toont wat de salesfunctie oplevert, met 100% kostentransparantie. Zo zie je zwart op wit wat je per euro terugkrijgt.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op wat de salesfunctie oplevert tegenover een vooraf afgesproken doel — afspraken, verkopen of pipeline — niet op gepresteerde uren. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/sales-as-a-service",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Consultants",
+                "url": {
+                  "url": {
+                    "href": "/sales-consultants",
+                    "type": "CONTENT", "content_id": 453268196580
+                  }
+                }
+              },
+              {
+                "link_label": "Sales-as-a-Service",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-team-floor.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: geen specifiek beeld beschikbaar; sfeerbeeld uit ../assets -->
+        <!-- VERIFIEER: hier hoort een echt cijfer (bv. pipeline of behaald doel) zodra beschikbaar; nu kwalitatief. -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Sales Consultants · Sales-as-a-Service",
+          heading="Je volledige salesfunctie, <em>uitbesteed</em>.",
+          subtext="<p>Je commerciële motor uitbesteed aan een team van salesUp, van prospectie tot closing. Wij bellen, volgen op, maken afspraken en sluiten af — met onze tooling, coaching en de datalus mee. Zo bouw je verkoop uit zonder zelf een salesteam te moeten opzetten en managen, meetbaar via onze eigen platformen en afgerekend op resultaat.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta2_text="Zo werkt het",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Volledige salesfunctie"
+              },
+              {
+                "link_label": "Prospectie tot closing"
+              },
+              {
+                "link_label": "Tooling + datalus mee"
+              },
+              {
+                "link_label": "Afgerekend op resultaat"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Onze aanpak bij Sales-as-a-Service",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Untitled%20design.png",
+              "alt": "Een salesUp-salesteam aan het werk op de kantoorvloer."
+            },
+          trustcard_badge="",
+          trustcard_stat="",
+          trustcard_label="Een volwaardige salesfunctie zonder er zelf een op te bouwen: prospectie tot closing door een team van salesUp, gescoord op elk gesprek en meegroeiend met je ambitie.",
+          trustcard_quote="\"Je hoeft geen salesteam op te bouwen om te verkopen — je moet weten wat elk gesprek oplevert.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak met consultants"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het oplevert",
+          heading="Verkopen zonder een team op te bouwen.",
+          intro="<p>Een eigen salesteam opzetten en managen kost tijd, geld en risico. Met Sales-as-a-Service krijg je een volwaardige commerciële motor die meteen draait — en die meetbaar blijft.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Sales zonder een team op te bouwen",
+                "tekst": "<p>Wij nemen je commerciële motor over, zodat jij je op je product en je levering kan richten. Ideaal om te groeien of een nieuwe markt te testen zonder meteen vast personeel aan te werven.</p>"
+              },
+              {
+                "title": "Van prospectie tot closing",
+                "tekst": "<p>Bellen, opvolgen, afspraken maken en afsluiten — het volledige salesproces onder één dak, met een vaste salescoach die de kwaliteit bewaakt.</p>"
+              },
+              {
+                "title": "Meetbaar via onze eigen platformen",
+                "tekst": "<p>Elk gesprek gescoord op kwaliteit en koopkans, met bijsturing via salesUp Academy. Je krijgt een wekelijkse rapportering die toont wat de salesfunctie oplevert, met 100% kostentransparantie.</p>"
+              },
+              {
+                "title": "Meegroeiend met je ambitie",
+                "tekst": "<p>Je schaalt op of af zonder een team te moeten aanwerven of afbouwen. Je rekent ons af op resultaat tegenover een vooraf afgesproken doel — niet op gepresteerde uren.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van scope tot afgerekend resultaat.",
+          intro="<p>We spreken vooraf een doelstelling af en bakenen af welk deel van het salesproces we voor je overnemen.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Doel & scope bepalen",
+                "tekst": "<p>We spreken vooraf een doelstelling af en bakenen af welk deel van het salesproces we voor je overnemen.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Team samenstellen & inwerken",
+                "tekst": "<p>We stellen een team met vaste salescoach samen en werken het in op je aanbod, je markt en je klanten.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Draaien: prospecteren tot sluiten",
+                "tekst": "<p>Het team neemt de commerciële motor over — van prospectie en opvolging tot het sluiten van de verkoop.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Meten, bijsturen & wekelijks rapporteren",
+                "tekst": "<p>Gesprekken worden gescoord, we sturen bij via salesUp Academy en je krijgt een wekelijkse rapportering met 100% kostentransparantie.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over Sales-as-a-Service vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Wat houdt Sales-as-a-Service precies in?",
+                "answer": "<p>Je besteedt je volledige salesfunctie uit aan een team van salesUp, van prospectie tot closing. Wij nemen de commerciële motor over — bellen, opvolgen, afspraken maken en afsluiten — met onze tooling, coaching en de datalus mee. Zo bouw je verkoop uit zonder zelf een salesteam te moeten opzetten en managen.</p>"
+              },
+              {
+                "question": "Voor welke bedrijven is dit geschikt?",
+                "answer": "<p>Voor bedrijven die willen groeien maar geen eigen salesteam willen opbouwen, of die een nieuwe markt of propositie willen testen zonder meteen vast personeel aan te werven. Je krijgt een volwaardige salesfunctie die met je ambitie meegroeit, in plaats van de kost en het risico van een team op te bouwen dat je later weer moet afbouwen.</p>"
+              },
+              {
+                "question": "Hoe blijft dit meetbaar?",
+                "answer": "<p>Elk gesprek wordt gescoord op kwaliteit en koopkans via onze eigen platformen, en die scores sturen de opvolging én de training via salesUp Academy. Je krijgt een wekelijkse rapportering die toont wat de salesfunctie oplevert, met 100% kostentransparantie. Zo zie je zwart op wit wat je per euro terugkrijgt.</p>"
+              },
+              {
+                "question": "Waarop rekenen jullie ons af?",
+                "answer": "<p>Op wat de salesfunctie oplevert tegenover een vooraf afgesproken doel — afspraken, verkopen of pipeline — niet op gepresteerde uren. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met salesUp werken",
+          eyebrow="Bedrijven die met salesUp werken",
+          logos=[
+              {
+                "naam": "Liantis",
+                "slug": ""
+              },
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Geodis",
+                "slug": ""
+              },
+              {
+                "naam": "VM Building",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om je sales uit te besteden en te laten groeien?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een uitbestede salesfunctie voor jou kan betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Detachering / interim sales",
+                "url": {
+                  "url": {
+                    "href": "/detachering",
+                    "type": "CONTENT", "content_id": 453268185305
+                  }
+                }
+              },
+              {
+                "link_label": "Sales management ad interim",
+                "url": {
+                  "url": {
+                    "href": "/interim-sales-management",
+                    "type": "CONTENT", "content_id": 453268165858
+                  }
+                }
+              },
+              {
+                "link_label": "Sales-audit & optimalisatie",
+                "url": {
+                  "url": {
+                    "href": "/sales-audit",
+                    "type": "CONTENT", "content_id": 453268177096
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Sales Consultants",
+                "url": {
+                  "url": {
+                    "href": "/sales-consultants",
+                    "type": "CONTENT", "content_id": 453268196580
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

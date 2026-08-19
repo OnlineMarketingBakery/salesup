@@ -1,0 +1,95 @@
+[ {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Titel (H2)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Vijf onderdelen. Elk ook los te boeken."
+}, {
+  "id" : "intro",
+  "name" : "intro",
+  "label" : "Intro",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "service_rows",
+  "name" : "service_rows",
+  "label" : "Rijen",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 8,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "service_rows.idx",
+    "name" : "idx",
+    "label" : "Index",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "01"
+  }, {
+    "id" : "service_rows.naam",
+    "name" : "naam",
+    "label" : "Naam",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Marketing"
+  }, {
+    "id" : "service_rows.desc",
+    "name" : "desc",
+    "label" : "Beschrijving",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : ""
+  }, {
+    "id" : "service_rows.tag_text",
+    "name" : "tag_text",
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Bekijk apart"
+  }, {
+    "id" : "service_rows.tag_url",
+    "name" : "tag_url",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/marketing"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

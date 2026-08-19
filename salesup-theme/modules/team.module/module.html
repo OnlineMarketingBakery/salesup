@@ -1,0 +1,67 @@
+<section class="section tight wrap" id="team" aria-labelledby="team-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="team-titel">{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="team-grid">
+    {% for p in module.mensen %}
+      {% set first = p.naam|split(" ")|first %}
+      <article class="team-kaart">
+        <figure>
+          <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if p.beeld.src %}{{ p.beeld.src }}{% elif first == 'Kim' %}https://salesup.be/hubfs/kim.jpeg{% elif first == 'Korneel' %}https://salesup.be/hubfs/Image_20260211_101259_692.jpeg{% elif first == 'Andy' %}https://salesup.be/hubfs/IZ6A0354%201%20(2).png{% elif first == 'Zahra' %}https://salesup.be/hubfs/IZ6A0354%201%20(1).png{% elif first == 'Vincent' %}https://salesup.be/hubfs/IZ6A0354%201%20(3).png{% elif first == 'Greet' %}https://salesup.be/hubfs/IZ6A0354%201%20(4).png{% elif first == 'Stig' %}https://salesup.be/hubfs/IZ6A0354%201%20(5).png{% elif first == 'Wim' %}https://salesup.be/hubfs/wim.jpg{% else %}https://salesup.be/hubfs/Rectangle%2049-1.png{% endif %}" alt="{{ p.beeld.alt|default(p.naam) }}" width="1068" height="1600" loading="lazy" decoding="async">
+          <figcaption>
+            <span class="mens-naam">{{ p.naam }}</span>
+            <span class="mens-rol">{{ p.rol }}</span>
+            <span class="mens-bij">{{ p.dienst }}</span>
+          </figcaption>
+        </figure>
+      </article>
+    {% endfor %}
+    {% if module.mensen|length < 8 %}
+      {% if module.mensen|length < 5 %}
+      <article class="team-kaart">
+        <figure>
+          <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/IZ6A0354%201%20(3).png" alt="Vincent, Business Unit Manager Marketing bij salesUp." width="1068" height="1600" loading="lazy" decoding="async">
+          <figcaption>
+            <span class="mens-naam">Vincent</span>
+            <span class="mens-rol">Business Unit Manager – Marketing</span>
+            <span class="mens-bij">Marketing</span>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="team-kaart">
+        <figure>
+          <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/IZ6A0354%201%20(4).png" alt="Greet, Founder en Business Unit Manager Recruitment bij salesUp." width="1068" height="1600" loading="lazy" decoding="async">
+          <figcaption>
+            <span class="mens-naam">Greet</span>
+            <span class="mens-rol">Founder &amp; Business Unit Manager Recruitment</span>
+            <span class="mens-bij">Recruitment</span>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="team-kaart">
+        <figure>
+          <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/IZ6A0354%201%20(5).png" alt="Stig, Managing Director van salesUp." width="1068" height="1600" loading="lazy" decoding="async">
+          <figcaption>
+            <span class="mens-naam">Stig</span>
+            <span class="mens-rol">Managing Director</span>
+            <span class="mens-bij">salesUp</span>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="team-kaart">
+        <figure>
+          <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/wim.jpg" alt="Wim, Managing Director van salesUp." width="1068" height="1600" loading="lazy" decoding="async">
+          <figcaption>
+            <span class="mens-naam">Wim</span>
+            <span class="mens-rol">Managing Director</span>
+            <span class="mens-bij">salesUp</span>
+          </figcaption>
+        </figure>
+      </article>
+      {% endif %}
+    {% endif %}
+  </div>
+  {% if module.noot %}<p class="team-noot">{{ module.noot }}</p>{% endif %}
+</section>

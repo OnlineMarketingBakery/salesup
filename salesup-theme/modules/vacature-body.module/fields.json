@@ -1,0 +1,10 @@
+[ {
+  "id" : "fallback_html",
+  "name" : "fallback_html",
+  "label" : "Fallback-HTML tot de API laadt",
+  "required" : false,
+  "locked" : false,
+  "type" : "html",
+  "display_width" : null,
+  "default" : "<p>Vacature laden…</p>"
+} ]

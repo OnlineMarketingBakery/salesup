@@ -1,0 +1,172 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Ev Shop
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Telefonische prospectie voor EV Shop\", \"about\": \"EV Shop\", \"description\": \"Ontdek hoe salesUp EV Shop hielp met succesvolle telefonische prospectie voor groei.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/ev-shop\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"EV Shop\", \"item\": \"https://www.salesup.be/cases/ev-shop\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/ev-shop",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "EV Shop",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Elektrische voertuigen",
+          heading="Telefonische prospectie voor EV Shop",
+          subtext="<p>Ontdek hoe salesUp EV Shop hielp met succesvolle telefonische prospectie voor groei.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "2023",
+                "toelichting": "In drie maanden (mei–juli 2023): 60 uur besteed en 19 afspraken gerealiseerd, met een conversie van bijna 15%"
+              },
+              {
+                "cijfer": "129",
+                "toelichting": "129 callbacks in de pipeline opgebouwd"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>EV Shop is dé specialist in elektrische voertuigen. Ze bieden zowel nieuwe als tweedehands elektrische wagens aan en schakelen salesUp in om deze voertuigen succesvol te verkopen. In samenwerking met EV Shop voerden wij een gerichte B2B <a href=\"/afspraakplanning\">prospectie</a> campagne uit, specifiek gericht op zaakvoerders, fleetmanagers en wagenparkbeheerders in Oost-Vlaanderen. Benieuwd naar onze aanpak en de resultaten? Lees verder en ontdek het zelf.</p>\n<h2>De uitdaging: meer elektrische voertuigen verkopen aan bedrijven</h2>\n<p>De elektrische automarkt groeit snel, maar met die groei komt ook meer concurrentie. EV Shop richtte zich op bedrijven die hun wagenpark willen verduurzamen en profiteren van de fiscale voordelen voor elektrische wagens. Ondanks hun sterke aanbod konden ze niet altijd de juiste beslissingsnemers bereiken.</p>\n<p>Daar sprongen wij in. Wij belden bedrijven in Oost-Vlaanderen met als doel afspraken te maken met zaakvoerders, fleetmanagers en wagenparkbeheerders die klaar waren om over te stappen naar elektrische voertuigen.</p>\n<h2>Resultaten die spreken</h2>\n<p>In drie maanden tijd, van mei tot juli 2023, hebben we in totaal 60 uur besteed en 19 afspraken gerealiseerd voor EV Shop, met een conversie van bijna 15%. Deze resultaten tonen aan dat een groot deel van de benaderde bedrijven serieus geïnteresseerd was in het verduurzamen van hun wagenpark. Naast deze sterke prestatie hebben we ook 129 callbacks in de pipeline opgebouwd. Dit geeft een goed beeld van het toekomstige potentieel en benadrukt hoe gerichte telefonische prospectie niet alleen direct succes oplevert, maar ook een stevige basis legt voor verdere groei.</p>\n<h2>Waarom EV Shop voor salesUp koos</h2>\n<p>Gino Herman, de zaakvoerder van EV Shop, koos voor salesUp vanwege ons vermogen om snel vertrouwen te winnen bij de bedrijven die we hebben benaderd. Onze duidelijke rapportage en nauwkeurige opvolging droegen bij aan het succes van de campagne. Gino waardeerde vooral de zorgvuldigheid van onze aanpak en de resultaten die we in korte tijd hebben behaald.</p>\n<h2>Samen verder groeien</h2>\n<p>De samenwerking tussen EV Shop en salesUp laat zien dat een gerichte aanpak in korte tijd tot concrete resultaten leidt. We hebben samen mooie successen behaald door strategisch te focussen op de juiste doelgroepen. Dit toont aan dat, met de juiste partner, ook jouw bedrijf flinke stappen kan zetten om je zakelijke doelen te bereiken. Klaar om jouw succesverhaal te schrijven?</p>\n<h2>Up your sales met salesUp</h2>\n<p>De samenwerking tussen EV Shop en salesUp laat zien dat een gerichte aanpak in korte tijd tot concrete resultaten leidt. We hebben samen mooie successen behaald door strategisch te focussen op de juiste doelgroepen. Dit toont aan dat, met de juiste partner, ook jouw bedrijf flinke stappen kan zetten om je zakelijke doelen te bereiken. Klaar om jouw succesverhaal te schrijven?</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor EV Shop deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/spm",
+                    "type": "CONTENT", "content_id": 453268038868
+                  }
+                },
+                "sector": "Proptech / software voor syndici",
+                "naam": "SPM Technologies",
+                "stat": "Gemiddeld 8 afspraken per week geboekt in slechts enkele weken (aanvankelijke doelstelling was een vijftal per week)",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/eurocircuits",
+                    "type": "CONTENT", "content_id": 453268371675
+                  }
+                },
+                "sector": "Elektronica (PCB's)",
+                "naam": "Eurocircuits",
+                "stat": "Vijfjarige samenwerking (2019-2023): meer dan 140.653 belpogingen uitgevoerd",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/jaguar-land-rover",
+                    "type": "CONTENT", "content_id": 453268397251
+                  }
+                },
+                "sector": "Automotive",
+                "naam": "Jaguar Land Rover",
+                "stat": "In totaal 154 leads doorgestuurd naar de dealers (34 aanvragen proefrit, 40 verzoeken offerte, 80 aanvragen direct dealercontact) in de periode dec. 2023 t/m juli 2024",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

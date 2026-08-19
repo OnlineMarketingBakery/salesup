@@ -1,0 +1,138 @@
+[
+  {
+    "id": "eyebrow",
+    "name": "eyebrow",
+    "label": "Eyebrow",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "De mensen"
+  },
+  {
+    "id": "heading",
+    "name": "heading",
+    "label": "Titel (H2)",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "De mensen achter het cijfer."
+  },
+  {
+    "id": "intro",
+    "name": "intro",
+    "label": "Intro",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "mensen",
+    "name": "mensen",
+    "label": "Mensen",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 0,
+      "max": 12,
+      "sorting_label_field": null,
+      "default": 8
+    },
+    "children": [
+      {
+        "id": "mensen.naam",
+        "name": "naam",
+        "label": "Naam",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": ""
+      },
+      {
+        "id": "mensen.rol",
+        "name": "rol",
+        "label": "Rol",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": ""
+      },
+      {
+        "id": "mensen.dienst",
+        "name": "dienst",
+        "label": "Dienst",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": ""
+      },
+      {
+        "id": "mensen.beeld",
+        "name": "beeld",
+        "label": "Beeld",
+        "required": false,
+        "locked": false,
+        "responsive": false,
+        "resizable": true,
+        "show_loading": false,
+        "type": "image",
+        "display_width": null,
+        "default": {
+          "src": "",
+          "alt": ""
+        }
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  },
+  {
+    "id": "image_fit",
+    "name": "image_fit",
+    "label": "Beeldweergave (object-fit)",
+    "help_text": "Cover vult het kader en kan bijsnijden. Contain toont het hele beeld, zonder afsnijden.",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      [
+        "cover",
+        "Cover (vullen)"
+      ],
+      [
+        "contain",
+        "Contain (volledig zichtbaar)"
+      ]
+    ],
+    "multiple": false,
+    "reordering_enabled": false,
+    "preset": null,
+    "type": "choice",
+    "display_width": null,
+    "default": "cover"
+  },
+  {
+    "id": "noot",
+    "name": "noot",
+    "label": "Noot (VERIFIEER portretten)",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  }
+]

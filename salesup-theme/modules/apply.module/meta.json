@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 452882850039,
+  "label" : "salesUp — Apply (Recruitee)",
+  "icon" : "@hubspot/sprocket",
+  "is_available_for_new_content" : true
+}

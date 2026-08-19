@@ -1,0 +1,16 @@
+<section class="services wrap" id="diensten">
+  <div class="services-head">
+    <h2>{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="service-list">
+    {% for row in module.service_rows %}
+    <a class="service-row" href="{{ row.tag_url.url.href|default('#') }}">
+      <span class="service-idx">{{ row.idx }}</span>
+      <span class="service-name">{{ row.naam }}</span>
+      <span class="service-desc">{{ row.desc }}</span>
+      <span class="service-tag">{{ row.tag_text }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

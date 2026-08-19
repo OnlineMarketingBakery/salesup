@@ -1,0 +1,148 @@
+[
+  {
+    "id": "logo",
+    "name": "logo",
+    "label": "Klantlogo",
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": true,
+    "show_loading": false,
+    "type": "image",
+    "display_width": null,
+    "default": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": "image_fit",
+    "name": "image_fit",
+    "label": "Beeldweergave (object-fit)",
+    "help_text": "Cover vult het kader en kan bijsnijden. Contain toont het hele beeld, zonder afsnijden.",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      [
+        "cover",
+        "Cover (vullen)"
+      ],
+      [
+        "contain",
+        "Contain (volledig zichtbaar)"
+      ]
+    ],
+    "multiple": false,
+    "reordering_enabled": false,
+    "preset": null,
+    "type": "choice",
+    "display_width": null,
+    "default": "cover"
+  },
+  {
+    "id": "eyebrow",
+    "name": "eyebrow",
+    "label": "Eyebrow",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Client case"
+  },
+  {
+    "id": "heading",
+    "name": "heading",
+    "label": "Titel (H1)",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "subtext",
+    "name": "subtext",
+    "label": "Subtekst",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "meta_tags",
+    "name": "meta_tags",
+    "label": "Meta-tags (diensten)",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 0,
+      "max": 8,
+      "sorting_label_field": null,
+      "default": 0
+    },
+    "children": [
+      {
+        "id": "meta_tags.link_label",
+        "name": "link_label",
+        "label": "Tag",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": ""
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  },
+  {
+    "id": "stats",
+    "name": "stats",
+    "label": "Kerncijfers",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "sorting_label_field": null,
+      "default": 0
+    },
+    "children": [
+      {
+        "id": "stats.cijfer",
+        "name": "cijfer",
+        "label": "Cijfer",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": ""
+      },
+      {
+        "id": "stats.toelichting",
+        "name": "toelichting",
+        "label": "Toelichting",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": ""
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  }
+]

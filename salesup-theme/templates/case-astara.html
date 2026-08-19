@@ -1,0 +1,183 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Astara
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Astara x salesUp: hoe menselijk contact het verschil maakt in de autosector\", \"about\": \"Astara\", \"description\": \"Ontdek hoe Astara en salesUp tijdens het Brussels Motor Show inzetten op menselijk contact, energie en klantbeleving om meer leads, vertrouwen en duurzame groei te realiseren.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/astara\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Astara\", \"item\": \"https://www.salesup.be/cases/astara\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/astara",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Astara",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          logo={
+              "src": "https://salesup.be/hubfs/astra%20good.png",
+              "alt": "Astara logo"
+            },
+          eyebrow="Client case · Autosector",
+          heading="Astara x salesUp: hoe menselijk contact het verschil maakt in de autosector",
+          subtext="<p>Ontdek hoe Astara en salesUp tijdens het Brussels Motor Show inzetten op menselijk contact, energie en klantbeleving om meer leads, vertrouwen en duurzame groei te realiseren.</p>",
+          meta_tags=[
+              {
+                "link_label": "Training"
+              },
+              {
+                "link_label": "Face2Face Sales"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "19%",
+                "toelichting": "Gemiddelde productiviteit per informant lag 19% hoger dan tijdens het vorige Autosalon"
+              },
+              {
+                "cijfer": "13%",
+                "toelichting": "Ongeveer 13% van de gegenereerde leads werd effectief omgezet naar een wagenverkoop"
+              },
+              {
+                "cijfer": "9.4,",
+                "toelichting": "Klanttevredenheidsscores op de gesprekken van 9.4, 9.5 en 9.6"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<h2>Menselijke connectie als standaard</h2>\n<p>In een automarkt die sneller verandert dan ooit, wordt het steeds moeilijker om als merk écht het verschil te maken. Nieuwe spelers betreden de markt, klanten vergelijken eindeloos online en technologie alleen volstaat niet om vertrouwen op te bouwen.</p>\n<p>Voor Astara lag net daar de uitdaging én de opportuniteit.</p>\n<p>Vanuit een gedeelde visie op klantbeleving en commerciële impact groeide de samenwerking tussen Astara en salesUp uit tot een traject waarin niet het product, maar de mens centraal stond. Geen klassieke productverkoop, maar een aanpak gebaseerd op connectie, energie en kwalitatieve gesprekken.</p>\n<h2>Meer dan auto’s verkopen</h2>\n<p>Binnen de autobranche verschuift de focus steeds meer van puur productgericht denken naar relatiegericht werken. Zeker op grote momenten zoals het Autosalon, waar merken in enkele dagen duizenden bezoekers ontvangen, wordt de kwaliteit van klantinteracties bepalend.</p>\n<p>Voor Astara was het duidelijk dat die ervaring sterker moest worden.</p>\n<p><em>“Het gaat niet om die auto, het gaat niet om de velgen of de actieradius. Er staat een mens voor je.”</em> <strong>– Andy Vlaeminck, Business Unit Manager bij salesUp</strong></p>\n<p>Vanuit die filosofie ondersteunde salesUp Astara tijdens het Brussels Motor Show-traject met een <a href=\"/training\">commerciële trainingsaanpak</a> voor het volledige team van informanten op de stand.</p>\n<p>Astara was daarbij specifiek op zoek naar een partner die verder ging dan klassieke commerciële training. De bedoeling was niet alleen om theoretische modellen of technieken aan te leren, maar vooral om meer energie, connectie en plezier op de stand te brengen.</p>\n<h2>Een andere kijk op automotive sales</h2>\n<p>Traditioneel focust de autosector sterk op specificaties, prijzen en productinformatie. Maar volgens salesUp begint sterke sales veel vroeger: bij het begrijpen van de klant.</p>\n<p>Daarom werd tijdens de samenwerking sterk ingezet op connectie, vertrouwen opbouwen, behoefteanalyse en energie op de stand. Niet zo snel mogelijk een offerte proberen maken, maar eerst investeren in een goed gesprek.</p>\n<p><em>“Goede gesprekken voeren, dat was de basis. Oprecht geïnteresseerd zijn in waarom iemand een nieuwe wagen zoekt.”</em> <strong>– Andy Vlaeminck</strong></p>\n<p>Die aanpak zorgde voor een totaal andere dynamiek op de stand. Informanten leerden niet denken vanuit producten, maar vanuit mensen en hun verwachtingen.</p>\n<p>Volgens Astara maakte net die menselijke aanpak het verschil tegenover eerdere edities van het Autosalon. Waar klassieke commerciële technieken vaak geforceerd aanvoelden, bracht salesUp een aanpak die mensen vertrouwen gaf, energie creëerde en teams sterker deed samenwerken.</p>\n<h2>Training met directe impact</h2>\n<p>Voor het Autosalon werd een team van 85 informanten voorbereid via een intensief commercieel trainingstraject. Een zeer diverse groep, met leeftijden van 18 tot 78 jaar en uiteenlopende niveaus van ervaring binnen automotive sales. Deze groep werd bovendien begeleid met persoonlijke coaching tijdens het eerste beursweekend.</p>\n<p>Naast productkennis lag de focus vooral op commerciële mindset, energie en klantbeleving.</p>\n<p>salesUp werkte daarbij rond:</p>\n<ul><li>het belang van de eerste indruk</li><li>klantgericht communiceren</li><li>kwalitatieve behoefteanalyse</li><li>energie en motivatie op de stand</li><li>het creëren van een sterke brand experience</li></ul>\n<p>Die aanpak vertaalde zich meteen in concrete resultaten.</p>\n<p>De gemiddelde productiviteit per informant lag <strong>19% hoger</strong> dan tijdens het vorige Autosalon. Bovendien werd ongeveer <strong>13% van de gegenereerde leads effectief omgezet naar een wagenverkoop</strong>, een duidelijke stijging tegenover eerdere resultaten.</p>\n<p>Naast de resultaten op vlak van leads en conversie, zorgde de samenwerking er ook voor dat een zeer uiteenlopende groep mensen snel één sterk team werd. Volgens Astara vielen alle puzzelstukken vanaf dag één in elkaar en bleef die positieve dynamiek voelbaar tot het einde van het salon.</p>\n<h2>Energie als commercieel verschil</h2>\n<p>Wat deze samenwerking extra sterk maakte, was de sfeer en energie op de stand.</p>\n<p>Waar op veel standen het energieniveau traditioneel zakt tijdens lange beursdagen, bleef het team van Astara gedurende het volledige salon gemotiveerd en gefocust. salesUp legde de nadruk niet op druk of targets alleen, maar op plezier, betrokkenheid en kwalitatieve gesprekken.</p>\n<p><em>“Door zo hard te focussen op plezier, goesting en energie, is niemand in die ‘vallei van ellende’ gesukkeld.”</em> <strong>– Andy Vlaeminck</strong></p>\n<p>Vanaf dag één werden de vooropgestelde targets overschreden en bleef het team presteren tot het laatste moment van het salon.</p>\n<p>Die energie bleef ook niet onopgemerkt bij bezoekers. De gesprekken op de stand werden systematisch beoordeeld met scores van 9.4, 9.5 en 9.6 op klanttevredenheid.</p>\n<h2>Vertrouwen als nieuwe groeifactor</h2>\n<p>Binnen de podcastaflevering rond automotive groei en verandering kwam één thema voortdurend terug: vertrouwen.</p>\n<p>In een markt waar technologie steeds toegankelijker wordt en producten sneller vergelijkbaar zijn, wordt vertrouwen steeds meer de echte onderscheidende factor.</p>\n<p><em>“Een klant binnenhalen op korte termijn is makkelijk. Een klant houden op lange termijn, daar zit de investering.”</em> <strong>– Didier Blokland</strong></p>\n<p>Dat vertrouwen ontstaat niet door harder te roepen of meer promoties te tonen, maar door relevant te zijn, goed te luisteren en een sterke connectie op te bouwen met klanten.</p>\n<p>Die visie sluit perfect aan bij de manier waarop salesUp commerciële trajecten benadert: menselijk, strategisch en gericht op duurzame relaties.</p>\n<h2>Samen bouwen aan sterke merkbeleving</h2>\n<p>Voor Astara draaide deze samenwerking niet alleen rond meer leads of betere verkoopcijfers. Het ging ook om het versterken van de volledige merkervaring.</p>\n<p>Bezoekers moesten niet enkel informatie krijgen over een wagen, maar vooral een positief gevoel meenemen van hun interactie met het merk.</p>\n<p>Dat verschil voel je in elk contactmoment:</p>\n<ul><li>hoe mensen worden aangesproken</li><li>hoeveel energie er op de stand aanwezig is</li><li>hoe gesprekken worden gevoerd</li><li>hoe goed er geluisterd wordt</li></ul>\n<p>Wanneer die elementen samenkomen, ontstaat meer dan sales alleen. Dan ontstaat merkvoorkeur.</p>\n<p>Astara omschreef deze editie van het Autosalon als één van de beste ervaringen die ze in jaren hadden meegemaakt. Niet alleen omwille van de resultaten, maar ook door de sfeer, samenwerking en energie die gedurende het volledige traject voelbaar bleef.</p>\n<h2>Eén gedeelde visie op groei</h2>\n<p>De samenwerking tussen Astara en salesUp toont dat duurzame commerciële groei niet alleen gebouwd wordt op producten of technologie.</p>\n<p>Het verschil zit in:</p>\n<ul><li>de kwaliteit van gesprekken</li><li>de energie van teams</li><li>de connectie met klanten</li><li>en de bereidheid om écht te investeren in merkbeleving</li></ul>\n<p>Wanneer mensen zich gehoord voelen, groeit vertrouwen.<br>Wanneer teams energie uitstralen, groeit impact.<br>Wanneer klantbeleving centraal staat, volgen resultaten vanzelf.</p>\n<p>Benieuwd naar de inzichten achter deze samenwerking?</p>\n<p>In onze blog ontdek je de belangrijkste inzichten uit de podcastaflevering rond automotive groei, merkbeleving en klantconnectie in een snel veranderende markt.</p>\n<h2><strong>Up your sales met salesUp</strong></h2>\n<p>Op zoek naar een partner die jouw teams helpt groeien met impactvolle training, strategische begeleiding en commerciële expertise?</p>\n<p>salesUp helpt ambitieuze organisaties groeien, via hun mensen.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Astara deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/liantis",
+                    "type": "CONTENT", "content_id": 453268379883
+                  }
+                },
+                "sector": "HR-dienstengroep",
+                "naam": "Liantis",
+                "stat": "Keynote van 90 minuten voor het volledige sales-team",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/zambon",
+                    "type": "CONTENT", "content_id": 453268044009
+                  }
+                },
+                "sector": "Farmaceutisch",
+                "naam": "Zambon",
+                "stat": "Traject met zes verkopers en het management (geen resultaatcijfer)",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/hivolta",
+                    "type": "CONTENT", "content_id": 453268393209
+                  }
+                },
+                "sector": "Duurzame energie",
+                "naam": "Hivolta",
+                "stat": "75 aanvragen op één kwartaal via de Google Advertentiecampagnes",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

@@ -1,0 +1,19 @@
+[ {
+  "id" : "quote",
+  "name" : "quote",
+  "label" : "Quote",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "who",
+  "name" : "who",
+  "label" : "Attributie",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+} ]

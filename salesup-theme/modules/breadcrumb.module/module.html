@@ -1,0 +1,23 @@
+<nav class="breadcrumb wrap" aria-label="Kruimelpad">
+  {% for c in module.crumbs %}
+    {% if not loop.first %}<span class="sep" aria-hidden="true">/</span>{% endif %}
+    {% if loop.last or not c.url.url.href %}
+      <span aria-current="page">{{ c.link_label }}</span>
+    {% else %}
+      <a href="{{ c.url.url.href|default(c.url.href) }}">{{ c.link_label }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>
+{% if module.emit_schema %}
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {% for c in module.crumbs %}
+    {"@type":"ListItem","position":{{ loop.index }},"name":{{ c.link_label|tojson }}{% if c.url.url.href %},"item":"https://www.salesup.be{{ c.url.url.href }}"{% endif %}}{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}

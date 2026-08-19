@@ -1,0 +1,184 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Van Heurck
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Van Heurck: Strategische marktbevraging transformeert verkoopaanpak\", \"about\": \"Van Heurck\", \"description\": \"Ontdek hoe VH met salesUp's strategische marktbevraging 26,28% conversie behaalt.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/van-heurck\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Van Heurck\", \"item\": \"https://www.salesup.be/cases/van-heurck\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/van-heurck",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Van Heurck",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Bedrijfskleding",
+          heading="Van Heurck: Strategische marktbevraging transformeert verkoopaanpak",
+          subtext="<p>Ontdek hoe VH met salesUp's strategische marktbevraging 26,28% conversie behaalt.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "26,28%",
+                "toelichting": "Een bruto conversie van 26,28% in België (ruim boven de doelstelling van 10%)"
+              },
+              {
+                "cijfer": "77",
+                "toelichting": "77 hoogwaardige leads uit 293 afgewerkte contacten"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>Van Heurck, ook wel bekend als VH, is een toonaangevende specialist in hoogwaardige bedrijfskleding. Dankzij de samenwerking met salesUp hebben zij waardevolle marktinzichten verkregen. Met een doordachte strategie gericht op kwaliteit boven kwantiteit leggen beide partijen de basis voor duurzame groei. Deze case study laat zien hoe een strategische marktbevraging tot diepgaande inzichten leidt.</p>\n<h2>De uitdaging: van aankloppen naar inzicht verwerven</h2>\n<p>VH, een toonaangevende speler in het segment van duurzame en comfortabele werkkleding, stond voor een uitdaging: hoe kunnen ze in een markt met lange aankooptrajecten toch effectief leads genereren?</p>\n<h2>Een unieke aanpak voor langdurige resultaten</h2>\n<h2>Diepgaande gesprekken in plaats van oppervlakkige sales</h2>\n<p>Onze telefonische contacten met aankoopverantwoordelijken en werfverantwoordelijken in België en Nederland gaan veel verder dan standaard acquisitiegesprekken. We voeren diepgaande bevragingen: welke werkkleding gebruiken ze momenteel? Wanneer hebben ze vernieuwing nodig? Hoe lang gaat hun huidige kleding mee? Bij welke leverancier kopen ze nu?</p>\n<h3><strong>Indrukwekkende conversie resultaten</strong></h3>\n<p>Deze doordachte strategie levert opmerkelijke resultaten op:</p>\n<ul><li>Een bruto conversie van 26,28% in België (ruim boven de doelstelling van 10%)</li><li>77 hoogwaardige leads uit 293 afgewerkte contacten</li><li>Een schat aan marktinformatie voor gerichte follow-up</li></ul>\n<p>Deze hoogwaardige inzichten vormen een solide fundament voor de sales pipeline van VH, waarbij kwaliteit duidelijk boven kwantiteit gaat.</p>\n<h2>Twee landen, twee aanpakken: cultuurverschillen overbruggen</h2>\n<p>Een van de meest fascinerende aspecten van deze campagne is hoe duidelijk de culturele verschillen tussen België en Nederland naar voren komen in de resultaten</p>\n<h2>De Belgische aanpak: eerst een babbel, dan zaken</h2>\n<p>Bij Belgische prospects werkt een relationele aanpak het beste:</p>\n<ul><li>We beginnen met een uitgebreid gesprek</li><li>Bouwen eerst een vertrouwensband op</li><li>Werken geleidelijk toe naar interesse of een afspraak</li><li>Belgen waarderen een \"babbel\" en nemen graag de tijd</li></ul>\n<h2>De Nederlandse directheid: to the point</h2>\n<p>In Nederland vereist dezelfde campagne een volledig andere strategie:</p>\n<ul><li>Direct beginnen met de kernvraag</li><li>Alleen uitleg bieden als er expliciet interesse wordt getoond</li><li>Kort en zakelijk blijven</li><li>Nederlanders prefereren een no-nonsense benadering</li></ul>\n<h2>Flexibiliteit als succesfactor</h2>\n<p>Deze culturele verschillen vereisen een aangepaste benadering per land, wat perfect aansluit bij onze flexibele werkwijze. Door lokale expertise in te zetten - Nederlandse collega's voor de Nederlandse markt - optimaliseren we de effectiviteit van onze gesprekken en verhogen we geleidelijk de conversiepercentages in beide landen.</p>\n<h2>Strategische visie: investeren in de toekomst</h2>\n<h3>De lange verkoopcyclus in bedrijfskleding</h3>\n<p>VH onderscheidt zich door een strategische langetermijnvisie in een markt die hierom vraagt:</p>\n<ul><li>Verkoopprocessen die tot wel drie jaar kunnen duren</li><li>Langlopende contracten en complexe aanbestedingen</li><li>Besluitvorming die vaak op concernniveau plaatsvindt</li><li>Weinig ruimte voor impulsaankopen of snelle switches <br><br></li></ul>\n<h2>Marktbevraging als strategische investering</h2>\n<p>In deze context is traditionele <a href=\"/afspraakplanning\">koude acquisitie</a> weinig effectief. VH kiest bewust voor een diepgaande marktbevraging als investering:</p>\n<ul><li>Verzamelen van contract einddatums voor perfect getimede follow-up</li><li>In kaart brengen van huidige leveranciers en pijnpunten</li><li>Identificeren van specifieke behoeften en verbetermogelijkheden</li><li>Opbouwen van een gedetailleerde pijplijn voor <a href=\"/marketing\">gerichte marketing</a>.</li></ul>\n<h2>Duurzaamheid in product én benadering</h2>\n<p>Deze doordachte aanpak reflecteert de kernwaarden van VH zelf:</p>\n<ul><li>Kwaliteit boven kwantiteit</li><li>Langetermijnvisie in plaats van kortetermijnwinst</li><li>Duurzame relaties opbouwen</li><li>Maatwerk in plaats van standaardoplossingen</li></ul>\n<p>Net zoals hun werkkleding duurzaam en doordacht is ontworpen, zo is ook hun sales- en marketingstrategie gebouwd op een fundament van zorgvuldigheid en kwaliteit.</p>\n<h2>De samenwerking: communicatie als succesfactor</h2>\n<p>Wekelijkse afstemming zorgt voor optimale resultaten</p>\n<p>Een cruciale succesfactor in deze campagne is de nauwe samenwerking tussen salesUp en VH:</p>\n<ul><li>Wekelijkse overlegmomenten met Danny Lenselink (CCO) en ons team</li><li>Directe feedback-uitwisseling over gevoerde gesprekken</li><li>Snelle bijsturing waar nodig</li><li>Gezamenlijke evaluatie van resultaten</li></ul>\n<p>Gelaagde communicatiestructuur voor continue verbetering</p>\n<p>Deze intensieve samenwerking is doelbewust gestructureerd op verschillende niveaus:</p>\n<ul><li>Wekelijkse operationele afstemming voor directe bijsturing</li><li>Maandelijkse diepgaande evaluaties voor tactische aanpassingen</li><li>Kwartaalbijeenkomsten voor strategische heroriëntatie</li></ul>\n<p>Een partnerschap gebaseerd op wederzijds vertrouwen</p>\n<p>Deze communicatiestructuur waarborgt dat beide partijen volledig synchroon blijven werken en de campagne continu wordt geoptimaliseerd. Het resultaat is een partnerschap dat verder gaat dan een standaard klant-leverancierrelatie.</p>\n<h2>Wat zegt de klant?</h2>\n<p><em>\"De samenwerking met SalesUp kenmerkt zich door korte lijnen, snel schakelen en een uitstekend begrip van onze business. Ze weten onze behoeften feilloos te vertalen naar effectieve en klantgerichte telefoongesprekken. Hun flexibiliteit en snelheid maken hen een waardevolle partner voor ons.\"</em> - Danny Lenselink - CCO Van Heurck</p>\n<h2>De voordelen van strategische marktbevraging</h2>\n<p>Onze aanpak biedt tastbare voordelen voor uw business:</p>\n<ul><li>Gedetailleerd inzicht in uw markt en concurrentiepositie</li><li>Hoogwaardige leads die echt passen bij uw aanbod</li><li>Meer efficiëntie in uw sales funnel door betere kwalificatie</li><li>Een duurzame pijplijn in plaats van kortstondige resultaten</li></ul>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;De samenwerking met SalesUp kenmerkt zich door korte lijnen, snel schakelen en een uitstekend begrip van onze business. Ze weten onze behoeften feilloos te vertalen naar effectieve en klantgerichte telefoongesprekken. Hun flexibiliteit en snelheid maken hen een waardevolle partner voor ons.&rdquo;</p>",
+          who="&mdash; <strong>Danny Lenselink</strong>, Chief Commercial Officer (CCO) bij Van Heurck"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Van Heurck deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/q8oils",
+                    "type": "CONTENT", "content_id": 453268494546
+                  }
+                },
+                "sector": "Brandstoffen & smeermiddelen",
+                "naam": "Q8Oils",
+                "stat": "Conversieratio van meer dan 50% bij de enquête-aanpak in de campagne haven van Antwerpen",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/axians",
+                    "type": "CONTENT", "content_id": 453268364529
+                  }
+                },
+                "sector": "Audiovisuele oplossingen",
+                "naam": "Axians",
+                "stat": "36 meetings met warme prospects, waarvan 28 omgezet naar concrete offertes – conversiepercentage van 78%",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/unizo",
+                    "type": "CONTENT", "content_id": 453268041941
+                  }
+                },
+                "sector": "Ondernemersorganisatie",
+                "naam": "UNIZO",
+                "stat": "Responsgraad 80% hoger dan bij ‘spammy’ content",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

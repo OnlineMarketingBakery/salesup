@@ -1,0 +1,347 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Interim sales management
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Sales management ad interim\",\n      \"serviceType\":\"Interim sales management\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/interim-sales-management\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Consultants\",\"url\":\"https://www.salesup.be/sales-consultants\"},\n      \"description\":\"Een ervaren salesmanager die je commercieel team tijdelijk aanstuurt en coacht, datagedreven via onze eigen platformen, met kennisoverdracht bij afronding. Vanaf minstens 3 maanden.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Consultants\",\"item\":\"https://www.salesup.be/sales-consultants\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Sales management ad interim\",\"item\":\"https://www.salesup.be/interim-sales-management\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wanneer zet je een interim salesmanager in?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Typisch om een gat te overbruggen: bij het vertrek van een salesmanager, tijdens een groeifase die om meer sturing vraagt, of wanneer een team tijdelijk nood heeft aan structuur en ritme. Onze manager neemt de aansturing tijdelijk over, zet het team weer op koers en zorgt dat er geen gat valt in je commerciële werking.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe stuurt jullie manager het team aan?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Datagedreven. De manager werkt met onze eigen platformen, waarin elk gesprek gescoord wordt op kwaliteit en koopkans, en coacht op basis van die inzichten in plaats van op buikgevoel. Zo krijgt je team structuur, opvolging en gerichte coaching, gekoppeld aan de training via salesUp Academy.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat gebeurt er als de opdracht afloopt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We dragen bewust kennis over. De manier van werken, de structuur en de opvolgingsritmes die we opzetten, blijven bij je team en bij je volgende vaste salesmanager. Zo is de interimperiode geen tijdelijk verband, maar een basis waar je team op verder bouwt.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe lang duurt zo'n opdracht?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een opdracht loopt vanaf minstens 3 maanden, zodat de manager je team, markt en klanten echt leert kennen en de aansturing rendeert. We spreken vooraf een doel af en rapporteren het resultaat wekelijks met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/interim-sales-management",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Consultants",
+                "url": {
+                  "url": {
+                    "href": "/sales-consultants",
+                    "type": "CONTENT", "content_id": 453268196580
+                  }
+                }
+              },
+              {
+                "link_label": "Sales management ad interim",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload overleg-senior-woman.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: geen geposeerd portret beschikbaar; sfeerbeeld uit ../assets -->
+        <!-- VERIFIEER: hier hoort een echt cijfer (bv. behaald doel of teamgrootte) zodra beschikbaar; nu kwalitatief. -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Sales Consultants · Sales management ad interim",
+          heading="Een <em>salesmanager</em> ad interim die je team op koers zet.",
+          subtext="<p>Een ervaren salesmanager die je commercieel team tijdelijk aanstuurt en coacht — om een vertrek te overbruggen, een groeifase te begeleiden of structuur en ritme terug te brengen. Datagedreven via onze eigen platformen, met kennisoverdracht bij afronding zodat je team er sterker uitkomt.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta2_text="Zo werkt het",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Ervaren salesmanager"
+              },
+              {
+                "link_label": "Tijdelijke aansturing"
+              },
+              {
+                "link_label": "Datagedreven coaching"
+              },
+              {
+                "link_label": "Vanaf 3 maanden"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Onze aanpak bij interim sales management",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2058.jpg",
+              "alt": "Een ervaren salesmanager coacht een teamlid tijdens een overleg."
+            },
+          trustcard_badge="",
+          trustcard_stat="",
+          trustcard_label="Leiding zonder een gat te laten vallen: een ervaren manager die je team tijdelijk aanstuurt, coacht op basis van data en de manier van werken achterlaat bij je vaste opvolger.",
+          trustcard_quote="\"Een interimperiode mag geen tijdelijk verband zijn — het is de basis waar je team op verder bouwt.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak met consultants"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het oplevert",
+          heading="Leiding zonder een gat te laten vallen.",
+          intro="<p>Een salesteam zonder sturing verliest snel ritme en focus. Onze interim salesmanager neemt de leiding tijdelijk over, zet het team weer op koers en laat een sterkere werking achter.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Leiding zonder een gat te laten vallen",
+                "tekst": "<p>Bij het vertrek van een salesmanager of tijdens een groeifase neemt onze manager de aansturing tijdelijk over, zodat je commerciële werking niet stilvalt.</p>"
+              },
+              {
+                "title": "Structuur en ritme terug",
+                "tekst": "<p>Duidelijke doelen, opvolgingsritmes en een aanpak die het team weer op koers zet — geen losse instructies, maar een werkbare commerciële structuur.</p>"
+              },
+              {
+                "title": "Coaching op basis van data",
+                "tekst": "<p>De manager werkt met onze eigen platformen, waarin elk gesprek gescoord wordt op kwaliteit en koopkans, en coacht op basis van die inzichten — gekoppeld aan de training via salesUp Academy.</p>"
+              },
+              {
+                "title": "Kennisoverdracht bij afronding",
+                "tekst": "<p>De manier van werken en de opvolgingsritmes blijven bij je team en je volgende vaste salesmanager. Zo bouw je verder op de interimperiode, in plaats van opnieuw te beginnen.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van situatie tot overgedragen structuur.",
+          intro="<p>We brengen samen in kaart wat je team nodig heeft en spreken vooraf een doelstelling af voor de interimperiode.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Situatie & doel bepalen",
+                "tekst": "<p>We brengen samen in kaart wat je team nodig heeft en spreken vooraf een doelstelling af voor de interimperiode.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Manager matchen & inwerken",
+                "tekst": "<p>We matchen een ervaren salesmanager uit ons team en werken hem in op je team, je markt en je klanten.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Aansturen & coachen",
+                "tekst": "<p>De manager stuurt het team aan, zet structuur en ritme neer en coacht datagedreven op basis van de gespreksscores.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Meten, rapporteren & overdragen",
+                "tekst": "<p>Je krijgt een wekelijkse rapportering met 100% kostentransparantie, en bij afronding dragen we de aanpak over aan je vaste opvolger.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over interim management vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Wanneer zet je een interim salesmanager in?",
+                "answer": "<p>Typisch om een gat te overbruggen: bij het vertrek van een salesmanager, tijdens een groeifase die om meer sturing vraagt, of wanneer een team tijdelijk nood heeft aan structuur en ritme. Onze manager neemt de aansturing tijdelijk over, zet het team weer op koers en zorgt dat er geen gat valt in je commerciële werking.</p>"
+              },
+              {
+                "question": "Hoe stuurt jullie manager het team aan?",
+                "answer": "<p>Datagedreven. De manager werkt met onze eigen platformen, waarin elk gesprek gescoord wordt op kwaliteit en koopkans, en coacht op basis van die inzichten in plaats van op buikgevoel. Zo krijgt je team structuur, opvolging en gerichte coaching, gekoppeld aan de training via salesUp Academy.</p>"
+              },
+              {
+                "question": "Wat gebeurt er als de opdracht afloopt?",
+                "answer": "<p>We dragen bewust kennis over. De manier van werken, de structuur en de opvolgingsritmes die we opzetten, blijven bij je team en bij je volgende vaste salesmanager. Zo is de interimperiode geen tijdelijk verband, maar een basis waar je team op verder bouwt.</p>"
+              },
+              {
+                "question": "Hoe lang duurt zo'n opdracht?",
+                "answer": "<p>Een opdracht loopt vanaf minstens 3 maanden, zodat de manager je team, markt en klanten echt leert kennen en de aansturing rendeert. We spreken vooraf een doel af en rapporteren het resultaat wekelijks met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met salesUp werken",
+          eyebrow="Bedrijven die met salesUp werken",
+          logos=[
+              {
+                "naam": "Liantis",
+                "slug": ""
+              },
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Geodis",
+                "slug": ""
+              },
+              {
+                "naam": "VM Building",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om je team weer op koers te zetten?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een interim salesmanager voor jouw team kan betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Detachering / interim sales",
+                "url": {
+                  "url": {
+                    "href": "/detachering",
+                    "type": "CONTENT", "content_id": 453268185305
+                  }
+                }
+              },
+              {
+                "link_label": "Sales-as-a-Service",
+                "url": {
+                  "url": {
+                    "href": "/sales-as-a-service",
+                    "type": "CONTENT", "content_id": 453268197610
+                  }
+                }
+              },
+              {
+                "link_label": "Sales-audit & optimalisatie",
+                "url": {
+                  "url": {
+                    "href": "/sales-audit",
+                    "type": "CONTENT", "content_id": 453268177096
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Sales Consultants",
+                "url": {
+                  "url": {
+                    "href": "/sales-consultants",
+                    "type": "CONTENT", "content_id": 453268196580
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

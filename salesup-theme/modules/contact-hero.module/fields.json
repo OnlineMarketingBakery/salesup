@@ -1,0 +1,83 @@
+[ {
+  "id" : "eyebrow",
+  "name" : "eyebrow",
+  "label" : "Eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Contact"
+}, {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Titel (H1)",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "Zin om te <em>groeien</em>? Eén gesprek volstaat."
+}, {
+  "id" : "subtext",
+  "name" : "subtext",
+  "label" : "Subtekst",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "cta1_text",
+  "name" : "cta1_text",
+  "label" : "CTA 1",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Bel 053 78 28 30"
+}, {
+  "id" : "cta1_url",
+  "name" : "cta1_url",
+  "label" : "CTA 1 URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "content_id" : null,
+      "href" : "tel:+3253782830"
+    }
+  }
+}, {
+  "id" : "cta2_text",
+  "name" : "cta2_text",
+  "label" : "CTA 2",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Mail ons"
+}, {
+  "id" : "cta2_url",
+  "name" : "cta2_url",
+  "label" : "CTA 2 URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "content_id" : null,
+      "href" : "mailto:info@salesup.be"
+    }
+  }
+} ]

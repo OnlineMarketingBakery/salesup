@@ -1,0 +1,50 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<!--
+  templates/base.html — basislayout.
+  Andere templates extenden deze basis en vullen het content-blok.
+  Header + footer zijn GLOBAL modules (een plek beheert nav/footer).
+-->
+<!doctype html>
+<html lang="{{ html_lang|default('nl') }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page_meta.html_title or content.html_title or pageTitle %}
+  <title>{{ page_meta.html_title or content.html_title or pageTitle }}</title>
+  {% endif %}
+  {% if page_meta.meta_description or content.meta_description %}
+  <meta name="description" content="{{ page_meta.meta_description or content.meta_description }}">
+  {% endif %}
+  {{ standard_header_includes }}
+  {% if html_lang == 'fr' %}
+  <link rel='alternate' hreflang="fr" href='{{ request.full_url }}'>
+  {% else %}
+  <link rel='alternate' hreflang="nl" href='{{ request.full_url }}'>
+  {% endif %}
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Inter:wght@400;500;600&display=swap' rel='stylesheet'>
+  {{ require_css(get_asset_url('../css/main.css')) }}
+  {% block extra_css %}{% endblock %}
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  {# JSON-LD zit per pagina in extra_head / bovenaan content #}
+  <a class='skip-link' href='#main'>Ga meteen naar de inhoud</a>
+
+  {% module "site_header" path="../modules/site-header", label="Header" %}
+
+  <main id="main">
+    {% block content %}{% endblock content %}
+  </main>
+
+  {% module "site_footer" path="../modules/site-footer", label="Footer" %}
+
+  {{ require_js(get_asset_url('../js/main.js')) }}
+  {% block extra_js %}{% endblock %}
+  {{ standard_footer_includes }}
+</body>
+</html>

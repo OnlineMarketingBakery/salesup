@@ -1,0 +1,515 @@
+{
+  "step": 1,
+  "rule": "Only unpublished salesup-theme drafts. Never publish. Never take a slug that is already live.",
+  "live_slugs_left_untouched": [
+    {
+      "slug": "",
+      "live_url": "https://salesup.be/",
+      "page_id": "250381106390",
+      "name": "Home"
+    },
+    {
+      "slug": "contact",
+      "live_url": "https://salesup.be/contact",
+      "page_id": "250204917970",
+      "name": "Contact"
+    },
+    {
+      "slug": "over-ons",
+      "live_url": "https://salesup.be/over-ons",
+      "page_id": "250348390593",
+      "name": "Over Ons"
+    },
+    {
+      "slug": "telesales",
+      "live_url": "https://salesup.be/telesales",
+      "page_id": "246821162220",
+      "name": "Telesales"
+    },
+    {
+      "slug": "groeipodcast-salesup",
+      "live_url": "https://salesup.be/groeipodcast-salesup",
+      "page_id": "362315121912",
+      "name": "Groeipodcast"
+    }
+  ],
+  "notes": [
+    "Blog listing and posts are not website-page drafts; they stay on /blog.",
+    "Drafts with a new slug stay Draft, so they do not replace live URLs even when the slug is currently a 404.",
+    "Five intended go-live slugs collide with live pages, so those drafts get a -nieuw / staging slug until Step 6."
+  ],
+  "pages": [
+    {
+      "id": "453268163816",
+      "name": "Homepage",
+      "template": "salesup-theme/templates/home.html",
+      "draft_slug_now": "home-nieuw",
+      "go_live_slug": "",
+      "reason": "Live homepage already owns the empty slug."
+    },
+    {
+      "id": "453268359396",
+      "name": "Home - AI aanpak",
+      "template": "salesup-theme/templates/ai-aanpak.html",
+      "draft_slug_now": "ai-aanpak",
+      "go_live_slug": "ai-aanpak"
+    },
+    {
+      "id": "453268195517",
+      "name": "Over ons",
+      "template": "salesup-theme/templates/over-ons.html",
+      "draft_slug_now": "over-ons-nieuw",
+      "go_live_slug": "over-ons",
+      "reason": "Live /over-ons stays as-is until Step 6."
+    },
+    {
+      "id": "453268184310",
+      "name": "Contact",
+      "template": "salesup-theme/templates/contact.html",
+      "draft_slug_now": "contact-nieuw",
+      "go_live_slug": "contact",
+      "reason": "Live /contact stays as-is until Step 6."
+    },
+    {
+      "id": "453268195541",
+      "name": "Podcast",
+      "template": "salesup-theme/templates/podcast.html",
+      "draft_slug_now": "podcast",
+      "go_live_slug": "groeipodcast-salesup",
+      "reason": "Live HubSpot podcast URL stays /groeipodcast-salesup until Step 6."
+    },
+    {
+      "id": "453268184251",
+      "name": "Cases",
+      "template": "salesup-theme/templates/cases.html",
+      "draft_slug_now": "cases",
+      "go_live_slug": "cases"
+    },
+    {
+      "id": "453268183261",
+      "name": "Cases - Detail",
+      "template": "salesup-theme/templates/case-detail.html",
+      "draft_slug_now": "template-case-detail",
+      "go_live_slug": null,
+      "reason": "Generic template page, not part of the public IA. Do not publish."
+    },
+    {
+      "id": "453268188375",
+      "name": "Dienstpagina",
+      "template": "salesup-theme/templates/dienst.html",
+      "draft_slug_now": "template-dienst",
+      "go_live_slug": null,
+      "reason": "Generic template page. Do not publish."
+    },
+    {
+      "id": "453268284652",
+      "name": "Subdienstpagina",
+      "template": "salesup-theme/templates/subdienst.html",
+      "draft_slug_now": "template-subdienst",
+      "go_live_slug": null,
+      "reason": "Generic template page. Do not publish."
+    },
+    {
+      "id": "453268305108",
+      "name": "Standaardpagina (dnd)",
+      "template": "salesup-theme/templates/page.html",
+      "draft_slug_now": "template-page",
+      "go_live_slug": null,
+      "reason": "Generic template page. Do not publish."
+    },
+    {
+      "id": "453268170965",
+      "name": "Diensten - Marketing",
+      "template": "salesup-theme/templates/marketing.html",
+      "draft_slug_now": "marketing",
+      "go_live_slug": "marketing"
+    },
+    {
+      "id": "453268311272",
+      "name": "Diensten - Marketing - Website",
+      "template": "salesup-theme/templates/website.html",
+      "draft_slug_now": "website",
+      "go_live_slug": "website"
+    },
+    {
+      "id": "453268282609",
+      "name": "Diensten - Marketing - Social ads",
+      "template": "salesup-theme/templates/social-ads.html",
+      "draft_slug_now": "social-ads",
+      "go_live_slug": "social-ads"
+    },
+    {
+      "id": "453268282562",
+      "name": "Diensten - Marketing - SEO/GEO",
+      "template": "salesup-theme/templates/seo-geo.html",
+      "draft_slug_now": "seo-geo",
+      "go_live_slug": "seo-geo"
+    },
+    {
+      "id": "453268178164",
+      "name": "Diensten - Marketing - SEA",
+      "template": "salesup-theme/templates/sea.html",
+      "draft_slug_now": "sea",
+      "go_live_slug": "sea"
+    },
+    {
+      "id": "453268161744",
+      "name": "Diensten - Marketing - E-mail",
+      "template": "salesup-theme/templates/email.html",
+      "draft_slug_now": "email",
+      "go_live_slug": "email"
+    },
+    {
+      "id": "453268285669",
+      "name": "Diensten - Training",
+      "template": "salesup-theme/templates/training.html",
+      "draft_slug_now": "training",
+      "go_live_slug": "training"
+    },
+    {
+      "id": "453268285688",
+      "name": "Diensten - Training - Trainingsplatform",
+      "template": "salesup-theme/templates/trainingsplatform.html",
+      "draft_slug_now": "trainingsplatform",
+      "go_live_slug": "trainingsplatform"
+    },
+    {
+      "id": "453268171975",
+      "name": "Diensten - Training - Off-sites",
+      "template": "salesup-theme/templates/off-sites.html",
+      "draft_slug_now": "off-sites",
+      "go_live_slug": "off-sites"
+    },
+    {
+      "id": "453268164824",
+      "name": "Diensten - Training - Inspiratiesessie",
+      "template": "salesup-theme/templates/inspiratiesessie.html",
+      "draft_slug_now": "inspiratiesessie",
+      "go_live_slug": "inspiratiesessie"
+    },
+    {
+      "id": "453268184281",
+      "name": "Diensten - Training - Coachingtraject",
+      "template": "salesup-theme/templates/coachingstraject.html",
+      "draft_slug_now": "coachingstraject",
+      "go_live_slug": "coachingstraject"
+    },
+    {
+      "id": "453268175089",
+      "name": "Diensten - Sales Contact Center",
+      "template": "salesup-theme/templates/sales-contact-center.html",
+      "draft_slug_now": "sales-contact-center",
+      "go_live_slug": "sales-contact-center"
+    },
+    {
+      "id": "453268307183",
+      "name": "Diensten - Sales Contact Center - Telesales",
+      "template": "salesup-theme/templates/telesales.html",
+      "draft_slug_now": "telesales-nieuw",
+      "go_live_slug": "telesales",
+      "reason": "Live /telesales stays as-is until Step 6."
+    },
+    {
+      "id": "453268358390",
+      "name": "Siensten - Sales COntact Center - After sales",
+      "template": "salesup-theme/templates/after-sales.html",
+      "draft_slug_now": "after-sales",
+      "go_live_slug": "after-sales"
+    },
+    {
+      "id": "453268356322",
+      "name": "diensten - sales contact center - telefonische prospectie & afspraakplanning",
+      "template": "salesup-theme/templates/afspraakplanning.html",
+      "draft_slug_now": "afspraakplanning",
+      "go_live_slug": "afspraakplanning"
+    },
+    {
+      "id": "453268196580",
+      "name": "Diensten - Sales Consultants",
+      "template": "salesup-theme/templates/sales-consultants.html",
+      "draft_slug_now": "sales-consultants",
+      "go_live_slug": "sales-consultants"
+    },
+    {
+      "id": "453268177096",
+      "name": "Diensten - Sales Consultants - Sales-audit & optimalisatie",
+      "template": "salesup-theme/templates/sales-audit.html",
+      "draft_slug_now": "sales-audit",
+      "go_live_slug": "sales-audit"
+    },
+    {
+      "id": "453268197610",
+      "name": "Diensten - Sales Consultants - Sales-as-a-service",
+      "template": "salesup-theme/templates/sales-as-a-service.html",
+      "draft_slug_now": "sales-as-a-service",
+      "go_live_slug": "sales-as-a-service"
+    },
+    {
+      "id": "453268185305",
+      "name": "Diensten - Sales Consultants - Detachering/interim sales",
+      "template": "salesup-theme/templates/detachering.html",
+      "draft_slug_now": "detachering",
+      "go_live_slug": "detachering"
+    },
+    {
+      "id": "453268165858",
+      "name": "Diensten - Sales Consultants - Sales management ad interim",
+      "template": "salesup-theme/templates/interim-sales-management.html",
+      "draft_slug_now": "interim-sales-management",
+      "go_live_slug": "interim-sales-management"
+    },
+    {
+      "id": "453268189404",
+      "name": "Diensten - Face2Face Sales",
+      "template": "salesup-theme/templates/dienst-face2face.html",
+      "draft_slug_now": "face2face-sales",
+      "go_live_slug": "face2face-sales"
+    },
+    {
+      "id": "453268312296",
+      "name": "Diensten - Face2Face Sales - Events & beurzen",
+      "template": "salesup-theme/templates/events-beurzen.html",
+      "draft_slug_now": "events-beurzen",
+      "go_live_slug": "events-beurzen"
+    },
+    {
+      "id": "453268284621",
+      "name": "Diensten - Face2Face Sales - Studenten & promoteams",
+      "template": "salesup-theme/templates/studenten-promoteams.html",
+      "draft_slug_now": "studenten-promoteams",
+      "go_live_slug": "studenten-promoteams"
+    },
+    {
+      "id": "453268195575",
+      "name": "Diensten - Face2Face Sales - Retail & winkelvloer",
+      "template": "salesup-theme/templates/retail-winkelvloer.html",
+      "draft_slug_now": "retail-winkelvloer",
+      "go_live_slug": "retail-winkelvloer"
+    },
+    {
+      "id": "453268186333",
+      "name": "Diensten - Face2Face Sales - Deur-aan-deur (D2D)",
+      "template": "salesup-theme/templates/deur-aan-deur.html",
+      "draft_slug_now": "deur-aan-deur",
+      "go_live_slug": "deur-aan-deur"
+    },
+    {
+      "id": "453268312260",
+      "name": "Werken bij",
+      "template": "salesup-theme/templates/werken-bij.html",
+      "draft_slug_now": "werken-bij",
+      "go_live_slug": "werken-bij"
+    },
+    {
+      "id": "453268166896",
+      "name": "Werken bij - Contact Center",
+      "template": "salesup-theme/templates/jobs-contact-center.html",
+      "draft_slug_now": "jobs-contact-center",
+      "go_live_slug": "jobs-contact-center"
+    },
+    {
+      "id": "453268168921",
+      "name": "Werken bij - Sales Consultants",
+      "template": "salesup-theme/templates/jobs-sales-consultants.html",
+      "draft_slug_now": "jobs-sales-consultants",
+      "go_live_slug": "jobs-sales-consultants"
+    },
+    {
+      "id": "453268169949",
+      "name": "Werken bij - Studenten & Face2Face",
+      "template": "salesup-theme/templates/jobs-studenten.html",
+      "draft_slug_now": "jobs-studenten",
+      "go_live_slug": "jobs-studenten"
+    },
+    {
+      "id": "453268167916",
+      "name": "Jobs doelgroep",
+      "template": "salesup-theme/templates/jobs-doelgroep.html",
+      "draft_slug_now": "template-jobs-doelgroep",
+      "go_live_slug": null,
+      "reason": "Generic template page. Do not publish."
+    },
+    {
+      "id": "453268310210",
+      "name": "Werken bij - Studenten & Face2Face - Studentenjob - Face2Face",
+      "template": "salesup-theme/templates/vacature-detail.html",
+      "draft_slug_now": "werken-bij/vacature",
+      "go_live_slug": "werken-bij/vacature"
+    },
+    {
+      "id": "453268386037",
+      "name": "Cases - Alindus",
+      "template": "salesup-theme/templates/case-alindus.html",
+      "draft_slug_now": "cases/alindus",
+      "go_live_slug": "cases/alindus"
+    },
+    {
+      "id": "453268364479",
+      "name": "Cases - Astara",
+      "template": "salesup-theme/templates/case-astara.html",
+      "draft_slug_now": "cases/astara",
+      "go_live_slug": "cases/astara"
+    },
+    {
+      "id": "453268364529",
+      "name": "Cases - Axians",
+      "template": "salesup-theme/templates/case-axians.html",
+      "draft_slug_now": "cases/axians",
+      "go_live_slug": "cases/axians"
+    },
+    {
+      "id": "453268371675",
+      "name": "Cases - Eurocircuits",
+      "template": "salesup-theme/templates/case-eurocircuits.html",
+      "draft_slug_now": "cases/eurocircuits",
+      "go_live_slug": "cases/eurocircuits"
+    },
+    {
+      "id": "453268393162",
+      "name": "Cases - EV Shop",
+      "template": "salesup-theme/templates/case-ev-shop.html",
+      "draft_slug_now": "cases/ev-shop",
+      "go_live_slug": "cases/ev-shop"
+    },
+    {
+      "id": "453268372723",
+      "name": "Cases - Geodis",
+      "template": "salesup-theme/templates/case-geodis.html",
+      "draft_slug_now": "cases/geodis",
+      "go_live_slug": "cases/geodis"
+    },
+    {
+      "id": "453268393209",
+      "name": "Cases - Hivolta",
+      "template": "salesup-theme/templates/case-hivolta.html",
+      "draft_slug_now": "cases/hivolta",
+      "go_live_slug": "cases/hivolta"
+    },
+    {
+      "id": "453268374754",
+      "name": "Cases - iChoosr",
+      "template": "salesup-theme/templates/case-ichoosr.html",
+      "draft_slug_now": "cases/ichoosr",
+      "go_live_slug": "cases/ichoosr"
+    },
+    {
+      "id": "453268375760",
+      "name": "Cases - Immo Van Middelem",
+      "template": "salesup-theme/templates/case-immo-van-middelem.html",
+      "draft_slug_now": "cases/immo-van-middelem",
+      "go_live_slug": "cases/immo-van-middelem"
+    },
+    {
+      "id": "453268397251",
+      "name": "Cases - Jaguar Land Rover",
+      "template": "salesup-theme/templates/case-jaguar-land-rover.html",
+      "draft_slug_now": "cases/jaguar-land-rover",
+      "go_live_slug": "cases/jaguar-land-rover"
+    },
+    {
+      "id": "453268379883",
+      "name": "Cases - Liantis",
+      "template": "salesup-theme/templates/case-liantis.html",
+      "draft_slug_now": "cases/liantis",
+      "go_live_slug": "cases/liantis"
+    },
+    {
+      "id": "453268491493",
+      "name": "Cases - Messer Group",
+      "template": "salesup-theme/templates/case-messer-group.html",
+      "draft_slug_now": "cases/messer-group",
+      "go_live_slug": "cases/messer-group"
+    },
+    {
+      "id": "453268493508",
+      "name": "Cases - Orange",
+      "template": "salesup-theme/templates/case-orange.html",
+      "draft_slug_now": "cases/orange",
+      "go_live_slug": "cases/orange"
+    },
+    {
+      "id": "453268494546",
+      "name": "Cases - Q8 Oils",
+      "template": "salesup-theme/templates/case-q8oils.html",
+      "draft_slug_now": "cases/q8oils",
+      "go_live_slug": "cases/q8oils"
+    },
+    {
+      "id": "453268029669",
+      "name": "Cases - Radiance Energy",
+      "template": "salesup-theme/templates/case-radiance-energy.html",
+      "draft_slug_now": "cases/radiance-energy",
+      "go_live_slug": "cases/radiance-energy"
+    },
+    {
+      "id": "453268038868",
+      "name": "Cases - SPM Technologies",
+      "template": "salesup-theme/templates/case-spm.html",
+      "draft_slug_now": "cases/spm",
+      "go_live_slug": "cases/spm"
+    },
+    {
+      "id": "453268665592",
+      "name": "Cases - Trustteam",
+      "template": "salesup-theme/templates/case-trustteam.html",
+      "draft_slug_now": "cases/trustteam",
+      "go_live_slug": "cases/trustteam"
+    },
+    {
+      "id": "453268041941",
+      "name": "Cases - UNIZO",
+      "template": "salesup-theme/templates/case-unizo.html",
+      "draft_slug_now": "cases/unizo",
+      "go_live_slug": "cases/unizo"
+    },
+    {
+      "id": "453268668617",
+      "name": "Cases - Upgrade Estate",
+      "template": "salesup-theme/templates/case-upgrade-estate.html",
+      "draft_slug_now": "cases/upgrade-estate",
+      "go_live_slug": "cases/upgrade-estate"
+    },
+    {
+      "id": "453268669671",
+      "name": "Cases - Van Heurck",
+      "template": "salesup-theme/templates/case-van-heurck.html",
+      "draft_slug_now": "cases/van-heurck",
+      "go_live_slug": "cases/van-heurck"
+    },
+    {
+      "id": "453268043979",
+      "name": "Cases - VM Building Solutions",
+      "template": "salesup-theme/templates/case-vm-building.html",
+      "draft_slug_now": "cases/vm-building",
+      "go_live_slug": "cases/vm-building"
+    },
+    {
+      "id": "453268044009",
+      "name": "Cases - Zambon",
+      "template": "salesup-theme/templates/case-zambon.html",
+      "draft_slug_now": "cases/zambon",
+      "go_live_slug": "cases/zambon"
+    },
+    {
+      "id": "455643379910",
+      "name": "Cases - Ikaros Solar",
+      "template": "salesup-theme/templates/case-ikaros-solar.html",
+      "draft_slug_now": "cases/ikaros-solar",
+      "go_live_slug": "cases/ikaros-solar"
+    },
+    {
+      "id": "455643379912",
+      "name": "Cases - Cesano",
+      "template": "salesup-theme/templates/case-cesano.html",
+      "draft_slug_now": "cases/cesano",
+      "go_live_slug": "cases/cesano"
+    },
+    {
+      "id": "455643379914",
+      "name": "Cases - Sobelhor",
+      "template": "salesup-theme/templates/case-sobelhor.html",
+      "draft_slug_now": "cases/sobelhor",
+      "go_live_slug": "cases/sobelhor"
+    }
+  ]
+}

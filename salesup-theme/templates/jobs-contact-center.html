@@ -1,0 +1,352 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Jobs contact center
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/vacatures.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"foundingDate\":\"2005\",\n      \"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Evenbroekveld 14\",\"postalCode\":\"9420\",\"addressLocality\":\"Erpe-Mere\",\"addressCountry\":\"BE\"},\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\n      \"sameAs\":[\"https://www.linkedin.com/company/salesup-be\"]\n    },\n    {\n      \"@type\":\"ItemList\",\n      \"name\":\"Openstaande jobs — Contact Center bij salesUp\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Sales Agent Contact Center\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Senior Sales Agent Contact Center\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Teamlead Contact Center\"}\n      ]\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Werken bij\",\"item\":\"https://www.salesup.be/werken-bij\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Contact Center\",\"item\":\"https://www.salesup.be/jobs-contact-center\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\"@type\":\"Question\",\"name\":\"Heb ik sales-ervaring nodig?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. Goesting en een vlotte babbel wegen zwaarder dan een cv vol ervaring. Je start met opleiding via de salesUp Academy en een coach die met je meekijkt, dus ook zonder salesverleden kun je hier je carrière beginnen. Heb je wél al ervaring? Dan stromen we je sneller door naar een senior rol.\"}},\n        {\"@type\":\"Question\",\"name\":\"Wat verdien ik — hoe zit het met loon en bonus?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je krijgt een vast contract met een vast maandloon, aangevuld met een bonus op je resultaat. Hoe beter je verkoopt, hoe meer je verdient — je hebt je verloning dus deels zelf in de hand. De exacte bedragen hangen af van je rol en ervaring en bespreken we open tijdens het kennismakingsgesprek.\"}},\n        {\"@type\":\"Question\",\"name\":\"Welke opleiding krijg ik?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Vanaf dag één volg je onze eigen opleiding via de salesUp Academy: gesprekstechniek, productkennis en verkoopvaardigheid. Daarna blijf je groeien met coaching op de werkvloer, feedback na je gesprekken en AI-roleplays waarmee je situaties kunt inoefenen voor je ze live doet.\"}},\n        {\"@type\":\"Question\",\"name\":\"Voltijds of deeltijds — hoe zit het met de uren?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Beide kan. We werken met voltijdse en deeltijdse contracten binnen kantooruren, zodat de job past bij je leven. De concrete uren en het regime spreken we samen af per rol en vestiging.\"}},\n        {\"@type\":\"Question\",\"name\":\"Wat maakt dit anders dan een klassiek callcenter?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je bent hier verkoper, geen klantendienst. Je belt geen ellenlange scripts af en handelt geen klachten af — je gaat met warme leads uit onze eigen marketing van gesprek naar deal. Je resultaat telt, je krijgt er bonus voor, en je groeit via coaching en de salesUp Academy door naar senior, coach of teamlead.\"}}\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/jobs-contact-center",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Werken bij",
+                "url": {
+                  "url": {
+                    "content_id": 453268312260,
+                    "href": "/werken-bij",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Contact Center",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "content_id": 453268166896,
+                    "type": "CONTENT"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-team-floor.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Werken bij salesUp — Contact Center",
+          heading="Start of <em>versnel</em> je salescarrière.",
+          subtext="<p>Wil je vooruit in sales? In ons contact center bel je, verkoop je en groei je — met warme leads uit onze eigen marketing, een vast contract met bonus op resultaat, coaching via de salesUp Academy en AI-tools die je gerichter beter maken.</p>",
+          cta1_text="Bekijk de open vacatures",
+          cta1_url={
+              "url": {
+                "href": "#vacatures",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Je doorgroeipad",
+          cta2_url={
+              "url": {
+                "href": "#doorgroei",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Geen koud bellen. <strong>Je start met gesprekken die al warm zijn.</strong>",
+          note_energie=true,
+          chips=[
+              {
+                "link_label": "Vast contract + bonus"
+              },
+              {
+                "link_label": "Coaching & Academy"
+              },
+              {
+                "link_label": "Warme leads"
+              },
+              {
+                "link_label": "Echte doorgroei"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="De contact-center-werkvloer",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Untitled%20design.png",
+              "alt": "salesUp-collega's met headset aan hun bureaus in het contact center, met blauw-oranje schotten."
+            },
+          trustcard_badge="Van gesprek naar deal",
+          trustcard_stat="4<em> stappen</em>",
+          trustcard_label="van Sales Agent tot Teamlead — een duidelijk doorgroeipad, in je eigen tempo en met coaching bij elke stap.",
+          trustcard_quote="\"De AI helpt jou verkopen. Jíj sluit de deal.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over AI aan jouw kant"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="troeven",
+          eyebrow="Waarom hier",
+          heading="Hier bouw je écht aan je salescarrière.",
+          intro="<p>Sales is een vak dat je kunt leren en waarin je blijft groeien. Bij salesUp krijg je alles om beter te worden — en om er ook beter aan te verdienen.</p>",
+          vac_troef=true,
+          feature_cards=[
+              {
+                "title": "Vast contract + bonus",
+                "tekst": "<p>Je krijgt zekerheid met een vast maandloon, plus een bonus op je resultaat. Hoe beter je verkoopt, hoe meer je verdient — je verloning heb je deels zelf in de hand.</p>"
+              },
+              {
+                "title": "Coaching & salesUp Academy",
+                "tekst": "<p>Je leert het vak via onze eigen opleiding en krijgt een coach die met je meekijkt. Je stopt nooit met bijleren, ook als je al jaren verkoopt.</p>"
+              },
+              {
+                "title": "AI-tools die je sterker maken",
+                "tekst": "<p>Feedback na elk gesprek, tips terwijl je belt en roleplays om te oefenen. De technologie staat aan jouw kant en maakt je gerichter beter.</p>"
+              },
+              {
+                "title": "Warme leads, geen koud bellen",
+                "tekst": "<p>Je belt mensen die al interesse toonden dankzij onze eigen marketing. Je start dus niet vanuit het niets, maar met een gesprek dat al warm is.</p>"
+              },
+              {
+                "title": "Echte doorgroei",
+                "tekst": "<p>Van Sales Agent naar senior, coach of teamlead: wie ambitie toont en resultaat neerzet, krijgt bij ons het pad om door te groeien.</p>"
+              },
+              {
+                "title": "Een groep die blijft groeien",
+                "tekst": "<p>Een stabiele Belgische salesgroep sinds 2005, ±200 collega's en twee keer Trends Gazelle (2023 &amp; 2024). Je bouwt mee aan iets dat groeit.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-man-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/ai-differentiator",
+          anchor="ai",
+          eyebrow="De AI aan jóuw kant",
+          heading="Technologie die jou sterker maakt.",
+          intro="Bij ons is AI geen controle-instrument dat over je schouder meekijkt. Het is een coach die je helpt sneller te groeien — jij blijft aan het stuur. De AI meet en signaleert; jij verkoopt en sluit de deal.",
+          points=[
+              {
+                "num": "01",
+                "text": "<p><strong>Elk gesprek gescoord</strong> — na je gesprekken krijg je een score en concrete feedback, zodat je zwart op wit ziet waar je gericht beter kunt worden.</p>"
+              },
+              {
+                "num": "02",
+                "text": "<p><strong>Live bijsturing tijdens het gesprek</strong> — terwijl je belt krijg je tips op het scherm, een duwtje op het juiste moment.</p>"
+              },
+              {
+                "num": "03",
+                "text": "<p><strong>Trainen met AI-roleplays</strong> — oefen lastige situaties met een AI-gesprekspartner vóór je ze live doet.</p>"
+              },
+              {
+                "num": "04",
+                "text": "<p><strong>Gekoppeld aan de salesUp Academy</strong> — waar je hapert, word je gericht bijgeschoold.</p>"
+              }
+            ],
+          image={
+              "src": "https://salesup.be/hubfs/Rectangle%2060.jpg",
+              "alt": "Jonge salesUp-medewerker met headset aan zijn laptop tijdens een verkoopgesprek."
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="doorgroei",
+          eyebrow="Je doorgroeipad",
+          heading="Begin als agent, groei zo ver als je wil.",
+          intro="<p>Wie resultaat neerzet en wil groeien, doorloopt bij ons een duidelijk pad — in je eigen tempo, met coaching bij elke stap.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Sales Agent",
+                "tekst": "<p>Je leert het vak, belt met warme leads en zet je eerste deals neer, met coaching en de Academy naast je.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Senior Sales Agent",
+                "tekst": "<p>Je draait sterke resultaten, pakt complexere gesprekken en wordt een vaste waarde in het team.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Coach",
+                "tekst": "<p>Je geeft je kennis door: je begeleidt nieuwe agents, luistert mee en helpt collega's beter worden.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Teamlead",
+                "tekst": "<p>Je stuurt een team aan, bewaakt de targets en bouwt mee aan de groei van het contact center.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/open-vacatures",
+          eyebrow="Open vacatures",
+          heading="Solliciteer op een concrete rol.",
+          intro="<p>Kies de rol die bij je past. Nog niet zeker welke? Solliciteer gerust en we kijken samen waar je het best start.</p>",
+          api_url="https://salesup.recruitee.com/api/offers/",
+          department="Contact Center",
+          detail_base="/werken-bij/vacature"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Nog vragen over de job?",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Heb ik sales-ervaring nodig?",
+                "answer": "<p>Nee. Goesting en een vlotte babbel wegen zwaarder dan een cv vol ervaring. Je start met opleiding via de salesUp Academy en een coach die met je meekijkt, dus ook zonder salesverleden kun je hier je carrière beginnen. Heb je wél al ervaring? Dan stromen we je sneller door naar een senior rol.</p>"
+              },
+              {
+                "question": "Wat verdien ik — hoe zit het met loon en bonus?",
+                "answer": "<p>Je krijgt een vast contract met een vast maandloon, aangevuld met een bonus op je resultaat. Hoe beter je verkoopt, hoe meer je verdient — je hebt je verloning dus deels zelf in de hand. De exacte bedragen hangen af van je rol en ervaring en bespreken we open tijdens het kennismakingsgesprek.</p>"
+              },
+              {
+                "question": "Welke opleiding krijg ik?",
+                "answer": "<p>Vanaf dag één volg je onze eigen opleiding via de salesUp Academy: gesprekstechniek, productkennis en verkoopvaardigheid. Daarna blijf je groeien met coaching op de werkvloer, feedback na je gesprekken en AI-roleplays waarmee je situaties kunt inoefenen voor je ze live doet.</p>"
+              },
+              {
+                "question": "Voltijds of deeltijds — hoe zit het met de uren?",
+                "answer": "<p>Beide kan. We werken met voltijdse en deeltijdse contracten binnen kantooruren, zodat de job past bij je leven. De concrete uren en het regime spreken we samen af per rol en vestiging.</p>"
+              },
+              {
+                "question": "Wat maakt dit anders dan een klassiek callcenter?",
+                "answer": "<p>Je bent hier verkoper, geen klantendienst. Je belt geen ellenlange scripts af en handelt geen klachten af — je gaat met warme leads uit onze eigen marketing van gesprek naar deal. Je resultaat telt, je krijgt er bonus voor, en je groeit via coaching en de salesUp Academy door naar senior, coach of teamlead.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om te groeien? Solliciteer vandaag.",
+          tekst="<p>Kies een rol hierboven of solliciteer spontaan — twijfel je nog welke rol past, dan kijken we er samen naar tijdens een kort gesprek. We kijken naar je goesting, niet naar een dik cv.</p>",
+          cta1_text="Solliciteer",
+          cta1_url={
+              "url": {
+                "href": "#vacatures",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Alle profielen",
+                "url": {
+                  "url": {
+                    "content_id": 453268312260,
+                    "href": "/werken-bij",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Studenten & Face2Face",
+                "url": {
+                  "url": {
+                    "content_id": 453268169949,
+                    "href": "/jobs-studenten",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Consultants",
+                "url": {
+                  "url": {
+                    "content_id": 453268168921,
+                    "href": "/jobs-sales-consultants",
+                    "type": "CONTENT"
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}
+{% block extra_js %}{{ require_js(get_asset_url('../js/recruitee.js')) }}{% endblock %}

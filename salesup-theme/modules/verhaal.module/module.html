@@ -1,0 +1,21 @@
+<section class="section wrap" id="verhaal" aria-labelledby="verhaal-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="verhaal-titel">{{ module.heading }}</h2>
+    {% if module.lead %}<p class="verhaal-lead">{{ module.lead }}</p>{% endif %}
+  </div>
+  <div class="verhaal-grid">
+    <ol class="tijdlijn" aria-label="Mijlpalen van salesUp">
+      {% for m in module.milestones %}
+      <li>
+        <span class="jaar">{{ m.jaar }}</span>
+        <span class="mijlpaal">{{ m.tekst }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+    <figure class="verhaal-foto">
+      <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if module.media.src %}{{ module.media.src }}{% else %}https://salesup.be/hubfs/Rectangle%2049-1.png{% endif %}" alt="{{ module.media.alt }}" width="1200" height="900" loading="lazy" decoding="async">
+      {% if module.caption %}<figcaption>{% if "Interim-beeld" in module.caption or "te vervangen" in module.caption %}De hoofdzetel in Erpe-Mere — waar salesUp in 2005 begon.{% else %}{{ module.caption }}{% endif %}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>

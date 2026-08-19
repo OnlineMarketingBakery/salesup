@@ -1,0 +1,9 @@
+<section class="hero wrap" style="padding-bottom:8px">
+  {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
+  <h1>{{ module.heading }}</h1>
+  {% if module.subtext %}<div class="hero-sub">{{ module.subtext }}</div>{% endif %}
+  <div class="hero-cta">
+    {% if module.cta1_text %}<a class="btn" href="{{ module.cta1_url.url.href|default('tel:+3253782830') }}">{{ module.cta1_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+    {% if module.cta2_text %}<a class="btn ghost" href="{{ module.cta2_url.url.href|default('mailto:info@salesup.be') }}">{{ module.cta2_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+  </div>
+</section>

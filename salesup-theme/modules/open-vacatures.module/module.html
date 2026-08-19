@@ -1,0 +1,14 @@
+<section class="vac-jobs wrap" id="vacatures" aria-labelledby="vacatures-titel"
+  data-recruitee-list
+  data-api="{{ module.api_url|default('https://salesup.recruitee.com/api/offers/') }}"
+  data-department="{{ module.department }}"
+  data-detail-base="{{ module.detail_base|default('/werken-bij/vacature') }}">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="vacatures-titel">{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="vac-job-grid" data-recruitee-grid>
+    <p class="vac-note" role="status">Vacatures laden via Recruitee…</p>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Wat we doen",
+    "href": "/#diensten"
+  },
+  {
+    "label": "Cases",
+    "href": "/cases"
+  },
+  {
+    "label": "Over ons",
+    "href": "/over-ons"
+  },
+  {
+    "label": "Blog",
+    "href": "/blog"
+  },
+  {
+    "label": "Podcast",
+    "href": "/groeipodcast-salesup"
+  },
+  {
+    "label": "AI-aanpak",
+    "href": "/ai-aanpak"
+  },
+  {
+    "label": "Vacatures",
+    "href": "/werken-bij"
+  }
+]

@@ -1,0 +1,191 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Orange
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Orange en salesUp: één team, één doel, één constante groei\", \"about\": \"Orange\", \"description\": \"Orange en salesUp: één team, één doel, één constante groei in telecom sales.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/orange\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Orange\", \"item\": \"https://www.salesup.be/cases/orange\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/orange",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Orange",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Telecom",
+          heading="Orange en salesUp: één team, één doel, één constante groei",
+          subtext="<p>Orange en salesUp: één team, één doel, één constante groei in telecom sales.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              },
+              {
+                "link_label": "Face2Face Sales"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "91%",
+                "toelichting": "Telesales België behaalde een score van 91% in de Europese audit – de hoogste score van Europa"
+              },
+              {
+                "cijfer": "65",
+                "toelichting": "Geïntegreerd team van meer dan 65 medewerkers, ondersteund door 3 teamcoaches en 5 senior agents"
+              },
+              {
+                "cijfer": "•",
+                "toelichting": "Op maandbasis worden tienduizenden contacten gelegd (outbound calls grootste aandeel)"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<h2>Van leverancier naar echte partner</h2>\n<p>Wat als je geen leverancier zoekt, maar een partner die écht meewerkt aan je resultaten?</p>\n<p>Voor Orange was dat het vertrekpunt van de samenwerking met salesUp. Geen klassieke klant-leveranciersrelatie, maar één team dat dagelijks samenwerkt, bijstuurt en optimaliseert – met één doel: groei.</p>\n<p><em>“Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.”</em> – Stefanie Van Rillaer, Head of Hunting bij Orange</p>\n<p><em>“Wij zijn echt geen leverancier, maar een partner. Het is één visie: wij zijn één team dat samen naar hetzelfde doel werkt.”</em> – Kim Bulté, Business Unit Manager – Sales</p>\n<p><em>“Het is echt samenwerken. Zowel wij als Orange hebben dezelfde mindset: beter kan altijd en we willen samen blijven groeien.”</em> – Korneel Bucsan, Business Unit Manager – F2F</p>\n<h2>Een geïntegreerde multichannel aanpak</h2>\n<p>Binnen deze samenwerking ondersteunt salesUp Orange via een geïntegreerde, multichannel salesaanpak.</p>\n<p>Via <a href=\"/telesales\">telesales</a> worden inbound en outbound campagnes, web leads en cross-sell opportuniteiten dagelijks opgevolgd. Elke klantinteractie wordt gezien als een kans om extra waarde te creëren. Er wordt niet alleen gefocust op het realiseren van een verkoop, maar ook op het actief identificeren van bijkomende opportuniteiten bij de klant.</p>\n<p>Daarnaast werd ook WhatsApp toegevoegd als kanaal, waardoor klanten sneller en laagdrempeliger bereikt worden. Klanten bewegen vandaag tussen verschillende kanalen – de aanpak moet dat weerspiegelen.</p>\n<p>Hiernaast zet salesUp sterk in op <a href=\"/face2face-sales\">face-to-face</a> initiatieven. Van gerichte deur-aan-deur campagnes tot aanwezigheid op lokale events. Deze aanpak creëert persoonlijk contact en versterkt het vertrouwen bij de eindklant.</p>\n<p>Binnen de face-to-face werking worden gerichte acties opgezet in specifieke regio’s, waarbij teams actief klanten benaderen en begeleiden richting de juiste oplossing. Zo worden ook moeilijk bereikbare doelgroepen effectief bereikt.</p>\n<p>De kracht van deze samenwerking zit in de integratie van deze kanalen. Leads worden efficiënt opgevolgd, teams werken nauw samen en inzichten worden gedeeld. Het resultaat is één geïntegreerd salesapparaat.</p>\n<h2>Resultaten, impact en voortdurende optimalisatie</h2>\n<p>Vandaag bestaat dit geïntegreerde team uit meer dan 65 medewerkers, ondersteund door 3 teamcoaches en 5 senior agents, die dagelijks samenwerken om de kwaliteit en resultaten te bewaken.</p>\n<p>De samenwerking vraagt snelheid en flexibiliteit, en nét daar maakt salesUp het verschil.</p>\n<p>Feedback wordt snel omgezet in concrete acties, optimalisaties worden onmiddellijk doorgevoerd en er is een continue afstemming tussen beide teams. Niet reactief, maar proactief gestuurd op verbetering.</p>\n<p>Deze aanpak vertaalt zich in meetbare resultaten. Orange Europe heeft een grondige audit gedaan op processen en werking van Telesales in heel Europa. Telesales België behaalde een score van 91%, de hoogste score van Europa. Hier heeft salesUp ook een heel grote bijdrage aan geleverd. Het team van salesUp wordt dan ook door Orange aanzien als een zeer sterk team met mooie resultaten.</p>\n<p>De impact is ook zichtbaar in de groei van de salesresultaten. De cijfers tonen een duidelijke en consistente groei in zowel mobile als cable sales over de voorbije maanden – structurele groei, geen eenmalige piek.</p>\n<p>Op maandbasis worden tienduizenden contacten gelegd, waarbij outbound calls het grootste aandeel vertegenwoordigen en een belangrijke driver zijn van de commerciële resultaten.</p>\n<p><em>“De eerste maanden was een opstartfase, maar we hebben sterke stappen gezet en zijn vandaag beter dan de vorige partner.”</em> – Kim Bulté</p>\n<p>Minstens even belangrijk is de manier waarop deze resultaten tot stand komen: heldere verwachtingen, open communicatie en een sterke focus op oplossingen en continue optimalisatie.</p>\n<p>Ook naar de toekomst toe blijft die partnership-mindset centraal staan. Nieuwe technologieën, waaronder Automated Quality Monitoring en automatisatie, worden actief ingezet om de efficiëntie te verhogen. Tegelijk wordt er continu gekeken naar nieuwe kanalen en opportuniteiten om de commerciële impact te versterken.</p>\n<p><em>“De verwachtingen liggen hoog, maar net daardoor worden we extra geboost om resultaten te blijven neerzetten.”</em> – Kim Bulté</p>\n<p><em>“Wat deze samenwerking zo sterk maakt, is de betrokkenheid langs beide kanten. Orange geeft ons de tools en het vertrouwen, en wij zorgen ervoor dat we elke dag resultaat leveren.”</em> – Korneel Bucsan</p>\n<p>Want in deze samenwerking geldt één constante: blijven groeien.</p>\n<p><em>“De gedrevenheid werkt aanstekelijk en geeft onze cijfers dagelijks een boost. The only way is up.”</em> – Stefanie Van Rillaer</p>\n<p>Benieuwd naar de 3 lessen die Stefanie met ons heeft gedeeld tijdens onze podcast?</p>\n<h2><strong>Up your sales met salesUp</strong></h2>\n<p>Op zoek naar een partner die meedenkt, bijstuurt en verantwoordelijkheid neemt voor je resultaten? Dan is salesUp jouw volgende stap.</p>\n<p>Ontdek wat we voor jou kunnen betekenen!</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.&rdquo;</p>",
+          who="&mdash; <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Orange deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/van-heurck",
+                    "type": "CONTENT", "content_id": 453268669671
+                  }
+                },
+                "sector": "Bedrijfskleding",
+                "naam": "Van Heurck",
+                "stat": "Een bruto conversie van 26,28% in België (ruim boven de doelstelling van 10%)",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/q8oils",
+                    "type": "CONTENT", "content_id": 453268494546
+                  }
+                },
+                "sector": "Brandstoffen & smeermiddelen",
+                "naam": "Q8Oils",
+                "stat": "Conversieratio van meer dan 50% bij de enquête-aanpak in de campagne haven van Antwerpen",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/axians",
+                    "type": "CONTENT", "content_id": 453268364529
+                  }
+                },
+                "sector": "Audiovisuele oplossingen",
+                "naam": "Axians",
+                "stat": "36 meetings met warme prospects, waarvan 28 omgezet naar concrete offertes – conversiepercentage van 78%",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

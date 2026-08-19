@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+.hsaccount
+hubspot.config.yml
+.env
+.hs-pak
+*.log
+.hs/

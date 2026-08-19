@@ -1,0 +1,8 @@
+{% if module.quote %}
+<section class="case-quote wrap">
+  <figure class="quote-card">
+    <blockquote>{{ module.quote }}</blockquote>
+    {% if module.who %}<figcaption><footer>{{ module.who }}</footer></figcaption>{% endif %}
+  </figure>
+</section>
+{% endif %}

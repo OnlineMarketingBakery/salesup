@@ -1,0 +1,232 @@
+[ {
+  "id" : "adres",
+  "name" : "adres",
+  "label" : "Adres (hoofdzetel)",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Evenbroekveld 14, 9420 Erpe-Mere"
+}, {
+  "id" : "tel_display",
+  "name" : "tel_display",
+  "label" : "Telefoon (weergave)",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "053 78 28 30"
+}, {
+  "id" : "tel_href",
+  "name" : "tel_href",
+  "label" : "Telefoon (tel:-waarde)",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "+3253782830"
+}, {
+  "id" : "email",
+  "name" : "email",
+  "label" : "E-mail",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "info@salesup.be"
+}, {
+  "id" : "columns",
+  "name" : "columns",
+  "label" : "Kolommen",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "columns.title",
+    "name" : "title",
+    "label" : "Titel",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Wat we doen"
+  }, {
+    "id" : "columns.menu",
+    "name" : "menu",
+    "label" : "Niet gebruiken (live Footer-menu = oude IA)",
+    "required" : false,
+    "locked" : false,
+    "type" : "menu",
+    "display_width" : null
+  }, {
+    "id" : "columns.links",
+    "name" : "links",
+    "label" : "Links",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 10,
+      "sorting_label_field" : null,
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "columns.links.link_label",
+      "name" : "link_label",
+      "label" : "Label",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Marketing"
+    }, {
+      "id" : "columns.links.url",
+      "name" : "url",
+      "label" : "URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "content_id" : null,
+          "href" : "/marketing"
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "title" : "Wat we doen",
+    "links" : [ {
+      "link_label" : "Marketing",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/marketing" } }
+    }, {
+      "link_label" : "Sales Contact Center",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/sales-contact-center" } }
+    }, {
+      "link_label" : "Face2Face Sales",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/face2face-sales" } }
+    }, {
+      "link_label" : "Training",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/training" } }
+    }, {
+      "link_label" : "Sales Consultants",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/sales-consultants" } }
+    } ]
+  }, {
+    "title" : "Bedrijf",
+    "links" : [ {
+      "link_label" : "Over ons",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/over-ons" } }
+    }, {
+      "link_label" : "Cases",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/cases" } }
+    }, {
+      "link_label" : "Vacatures",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/werken-bij" } }
+    }, {
+      "link_label" : "Blog",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/blog" } }
+    }, {
+      "link_label" : "Podcast",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "/groeipodcast-salesup" } }
+    } ]
+  }, {
+    "title" : "Contact",
+    "links" : [ {
+      "link_label" : "Plan een gesprek",
+      "url" : { "url" : { "type" : "CONTENT", "content_id" : 453268184310, "href" : "/contact" } }
+    }, {
+      "link_label" : "LinkedIn",
+      "url" : { "url" : { "type" : "EXTERNAL", "content_id" : null, "href" : "https://www.linkedin.com/company/salesup-be" } }
+    } ]
+  } ]
+}, {
+  "id" : "legal_links",
+  "name" : "legal_links",
+  "label" : "Juridische links",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "legal_links.link_label",
+    "name" : "link_label",
+    "label" : "Label",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Privacy & cookiebeleid"
+  }, {
+    "id" : "legal_links.url",
+    "name" : "url",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/privacy-policy"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "link_label" : "Algemene voorwaarden",
+    "url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/algemene-voorwaarden"
+      }
+    }
+  }, {
+    "link_label" : "Privacy & cookiebeleid",
+    "url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/privacy-policy"
+      }
+    }
+  } ]
+} ]

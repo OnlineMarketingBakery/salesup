@@ -1,0 +1,15 @@
+<section class="results" aria-labelledby="results-title">
+  <div class="wrap">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="results-title">{{ module.heading }}</h2>
+    <div class="kpi-grid">
+      {% for k in module.kpis %}
+      <div class="kpi">
+        <div class="num">{{ k.num }}</div>
+        <div class="who">{{ k.who }}</div>
+        <div>{{ k.context }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

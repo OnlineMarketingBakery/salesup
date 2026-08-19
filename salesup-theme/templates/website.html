@@ -1,0 +1,340 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Website
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Website\",\n      \"serviceType\":\"Conversiegerichte websites\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/website\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Marketing\",\"url\":\"https://www.salesup.be/marketing\"},\n      \"description\":\"Websites gebouwd om te converteren: elke pagina gericht op één doel, gekoppeld aan je campagnes op één datalaag, met leads die rechtstreeks naar sales stromen.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Marketing\",\"item\":\"https://www.salesup.be/marketing\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Website\",\"item\":\"https://www.salesup.be/website\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Bouwen jullie enkel mooie sites of ook sites die converteren?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een website is bij ons geen digitaal visitekaartje, maar het beginpunt van je commerciële motor. Elke pagina wordt gebouwd rond één doel: de bezoeker naar een afspraak of aanvraag brengen. Vorm volgt op conversie, niet omgekeerd. En omdat de site op dezelfde datalaag draait als je campagnes, verdwijnen de leads niet in een formulier: ze stromen rechtstreeks door naar ons Sales Contact Center dat ze binnen 30 minuten opvolgt.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe hangt de website samen met mijn andere marketing?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je website is de plek waar SEA, social ads, SEO/GEO en e-mail op landen. Wij bouwen hem op dezelfde datalaag als die kanalen, zodat wat een zoekwoordcampagne of advertentie leert, je landingspagina's mee aanstuurt. Zo werkt de site niet los, maar als sluitstuk van de bovenkant van je commerciële motor.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Blijf ik zelf eigenaar van mijn site en content?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, altijd. Jij blijft eigenaar van je content en je site; wij zorgen voor het fundament en de doorlopende optimalisatie. We kiezen het platform dat het best past bij jouw team en noden, zodat je zelf kan blijven bijsturen.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe snel kunnen we starten?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je start met een strategiegesprek van een half uur, telefonisch of bij jou op kantoor. Daarna krijg je een voorstel met doelstellingen en volledige prijszetting; wat erin staat, is wat je betaalt. Liever meteen gebeld? We bellen je binnen 30 minuten terug.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/website",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              },
+              {
+                "link_label": "Website",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: set heeft geen echt website-/campagnebeeld; dichtstbijzijnde is overleg-op-laptop -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Marketing · Website",
+          heading="Een website die <em>leads</em> oplevert, niet enkel mooi oogt.",
+          subtext="<p>Een website is geen digitaal visitekaartje, maar het beginpunt van je commerciële motor. We bouwen elke pagina rond één doel — de bezoeker naar een afspraak of aanvraag brengen — en koppelen de site aan dezelfde datalaag als je campagnes, zodat de leads rechtstreeks naar sales stromen en binnen 30 minuten gebeld worden.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo bouwen we je site",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Conversie eerst"
+              },
+              {
+                "link_label": "Gekoppeld aan je campagnes"
+              },
+              {
+                "link_label": "Eén datalaag"
+              },
+              {
+                "link_label": "Jij blijft eigenaar"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Waarom onze websites werken",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2058.jpg",
+              "alt": "Twee salesUp-collega's bekijken samen een website-ontwerp op een laptop."
+            },
+          trustcard_badge="",
+          trustcard_stat="Conversie<em>.</em>",
+          trustcard_label="Elke pagina gebouwd rond één doel: de bezoeker naar een afspraak of aanvraag brengen — de basis waar SEA, social ads, SEO/GEO en e-mail op landen.",
+          trustcard_quote="\"Een site die niet converteert, is een brochure met een adres. Wij bouwen het beginpunt van je pipeline.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van onze marketing"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat je krijgt",
+          heading="Een site die meewerkt met de rest van je marketing.",
+          intro="<p>Je website staat niet op zichzelf. Hij is het sluitstuk waar elk ander kanaal op landt, gebouwd om bezoekers om te zetten en de leads meteen door te geven aan sales.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Conversiegericht design",
+                "tekst": "<p>Elke pagina gebouwd rond één doel: van eerste bezoek tot ingevulde afspraak of aanvraag. Geen template die je merk moet volgen, maar een structuur die je bezoeker naar de actie brengt.</p>"
+              },
+              {
+                "title": "Snel & technisch in orde",
+                "tekst": "<p>Laadtijd en de technische SEO-basis staan vanaf dag één goed, zodat je site ook echt gevonden en gebruikt wordt en niet afhaakt op de eerste seconde.</p>"
+              },
+              {
+                "title": "Gekoppeld aan je campagnes",
+                "tekst": "<p>De site draait op dezelfde datalaag als SEA, social ads en e-mail — geen losse silo's die elkaar tegenspreken. Wat een campagne leert, stuurt je landingspagina's mee aan.</p>"
+              },
+              {
+                "title": "Leads rechtstreeks naar sales",
+                "tekst": "<p>Een aanvraag verdwijnt niet in een formulier: ze stroomt door naar ons Sales Contact Center dat binnen 30 minuten belt, en de gespreksdata komt terug om je site scherper te richten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van intake tot live site die converteert.",
+          intro="<p>We bepalen in een half uur wat de site moet opleveren en voor wie. Het doel bepaalt de opbouw, niet omgekeerd.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Intake & doel afstemmen",
+                "tekst": "<p>We bepalen in een half uur wat de site moet opleveren en voor wie. Het doel bepaalt de opbouw, niet omgekeerd.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Structuur & wireframe",
+                "tekst": "<p>De opbouw van elke pagina, gericht op het gedrag dat je wil uitlokken: afspraak, aanvraag of aankoop.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Design & copy",
+                "tekst": "<p>Visuele uitwerking en teksten die overtuigen, on-brand en gericht op conversie — niet enkel invullen.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Build, live & doorlopend bijsturen",
+                "tekst": "<p>Technische bouw, testen en lancering. Daarna meten we live in het platform en sturen we bij; de leads gaan door naar sales voor opvolging binnen 30 minuten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over hun website vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Bouwen jullie enkel mooie sites of ook sites die converteren?",
+                "answer": "<p>Een website is bij ons geen digitaal visitekaartje, maar het beginpunt van je commerciële motor. Elke pagina wordt gebouwd rond één doel: de bezoeker naar een afspraak of aanvraag brengen. Vorm volgt op conversie, niet omgekeerd. En omdat de site op dezelfde datalaag draait als je campagnes, verdwijnen de leads niet in een formulier: ze stromen rechtstreeks door naar ons Sales Contact Center dat ze binnen 30 minuten opvolgt.</p>"
+              },
+              {
+                "question": "Hoe hangt de website samen met mijn andere marketing?",
+                "answer": "<p>Je website is de plek waar SEA, social ads, SEO/GEO en e-mail op landen. Wij bouwen hem op dezelfde datalaag als die kanalen, zodat wat een zoekwoordcampagne of advertentie leert, je landingspagina's mee aanstuurt. Zo werkt de site niet los, maar als sluitstuk van de bovenkant van je commerciële motor.</p>"
+              },
+              {
+                "question": "Blijf ik zelf eigenaar van mijn site en content?",
+                "answer": "<p>Ja, altijd. Jij blijft eigenaar van je content en je site; wij zorgen voor het fundament en de doorlopende optimalisatie. We kiezen het platform dat het best past bij jouw team en noden, zodat je zelf kan blijven bijsturen.</p>"
+              },
+              {
+                "question": "Hoe snel kunnen we starten?",
+                "answer": "<p>Je start met een strategiegesprek van een half uur, telefonisch of bij jou op kantoor. Daarna krijg je een voorstel met doelstellingen en volledige prijszetting; wat erin staat, is wat je betaalt. Liever meteen gebeld? We bellen je binnen 30 minuten terug.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met onze marketing werken",
+          eyebrow="Bedrijven die met onze marketing werken",
+          logos=[
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Hivolta",
+                "slug": ""
+              },
+              {
+                "naam": "Jaguar Land Rover",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar voor een site die werkt in plaats van pronkt?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat je huidige site laat liggen. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "SEA",
+                "url": {
+                  "url": {
+                    "href": "/sea",
+                    "type": "CONTENT", "content_id": 453268178164
+                  }
+                }
+              },
+              {
+                "link_label": "SEO/GEO",
+                "url": {
+                  "url": {
+                    "href": "/seo-geo",
+                    "type": "CONTENT", "content_id": 453268282562
+                  }
+                }
+              },
+              {
+                "link_label": "Social ads",
+                "url": {
+                  "url": {
+                    "href": "/social-ads",
+                    "type": "CONTENT", "content_id": 453268282609
+                  }
+                }
+              },
+              {
+                "link_label": "E-mail",
+                "url": {
+                  "url": {
+                    "href": "/email",
+                    "type": "CONTENT", "content_id": 453268161744
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

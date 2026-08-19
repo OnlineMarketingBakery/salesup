@@ -1,0 +1,347 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Inspiratiesessie
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Inspiratiesessie\",\n      \"serviceType\":\"High-energy sales-keynote / kick-off van een halve dag\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/inspiratiesessie\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Training\",\"url\":\"https://www.salesup.be/training\"},\n      \"description\":\"Een korte, high-energy keynote van een halve dag die een salesteam activeert en op één lijn zet, als kick-off of energieboost.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Training\",\"item\":\"https://www.salesup.be/training\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Inspiratiesessie\",\"item\":\"https://www.salesup.be/inspiratiesessie\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe lang duurt een inspiratiesessie?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een inspiratiesessie is kort en krachtig: reken op een halve dag. Lang genoeg om een team te activeren en op één lijn te zetten, kort genoeg om in een kick-off, een salesdag of een teamevent te passen. De inhoud stemmen we af op je team en het moment.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wanneer kies je voor een inspiratiesessie in plaats van een traject?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Kies een inspiratiesessie als je een team wil activeren, op scherp wil zetten of achter één verhaal wil krijgen: een jaarstart, de lancering van een nieuwe aanpak of een dip die je wil doorbreken. Wil je gedrag structureel veranderen en meten, dan is een coachingstraject of het platform salesUp Academy de betere keuze. Vaak werkt een keynote net als vonk vóór zo'n traject.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Is dit een generiek motivatieverhaal?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. We vertrekken van jouw context en, waar mogelijk, van wat we in je verkoopgesprekken zien. Zo raakt de sessie de echte thema's van jouw team in plaats van een algemeen motivatieverhaal. Bij Liantis begonnen we net zo: eerst aftoetsen wat er leeft, en dan pas op het podium.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe snel kunnen we een sessie inplannen?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je start met een kort kennismakingsgesprek waarin we het doel en het moment bepalen; daarna leggen we een datum vast. Liever meteen overleggen? We bellen je binnen 30 minuten terug.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/inspiratiesessie",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT",
+                    "content_id": 453268285669
+                  }
+                }
+              },
+              {
+                "link_label": "Inspiratiesessie",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload spreker-micro.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Training · Inspiratiesessie",
+          heading="Een keynote die je team in <em>beweging</em> zet.",
+          subtext="<p>Een korte, high-energy inspiratiesessie van een halve dag die je salesteam activeert en op één lijn zet. Ideaal als kick-off, energieboost of vonk vóór een langer traject. Geen generiek motivatieverhaal, maar de echte thema's van jouw team.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo verloopt een sessie",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Halve dag"
+              },
+              {
+                "link_label": "High-energy"
+              },
+              {
+                "link_label": "Team op één lijn"
+              },
+              {
+                "link_label": "Ideaal als kick-off"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Liantis",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Group%20201-2.png",
+              "alt": "salesUp-spreker met microfoon geeft een high-energy keynote voor een salespubliek, projectie op de achtergrond."
+            },
+          trustcard_badge="",
+          trustcard_stat="90<em>min</em>",
+          trustcard_label="Keynote die bij Liantis het voltallige commerciële team (±70 à 80 mensen) activeerde en tot inzichten bracht.",
+          trustcard_quote="\"Jullie hebben de mensen tot inzichten gebracht. Soms ook wat shocking. En dat werkt.\"",
+          trustcard_quote_who="— <strong>Eveline Boúúaert</strong>, Head of Sales KMO bij Liantis"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het oplevert",
+          heading="Kort van duur. Lang van impact.",
+          intro="<p>Soms heeft een team geen traject nodig, maar een vonk. Een inspiratiesessie geeft die vonk — en zet iedereen in één beweging achter hetzelfde verhaal.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Activeert in één halve dag",
+                "tekst": "<p>Kort en krachtig: genoeg om een team wakker te schudden en op scherp te zetten, kort genoeg om in een kick-off, salesdag of teamevent te passen.</p>"
+              },
+              {
+                "title": "Zet iedereen op één lijn",
+                "tekst": "<p>Junior en senior, sceptici en believers: na de sessie kijken ze in dezelfde richting. Perfect om een jaarstart of een nieuwe aanpak te lanceren.</p>"
+              },
+              {
+                "title": "Raakt de échte thema's",
+                "tekst": "<p>Geen algemeen motivatieverhaal. We vertrekken van jouw context en, waar mogelijk, van wat we in je verkoopgesprekken zien — zodat het écht over jouw team gaat.</p>"
+              },
+              {
+                "title": "De vonk vóór een traject",
+                "tekst": "<p>Een keynote werkt vaak als startschot. Wil je de energie daarna vasthouden en meten, dan sluiten een coachingstraject en salesUp Academy er naadloos op aan.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van aftoetsen tot podium.",
+          intro="<p>We beginnen met luisteren: wat wil je bereiken, wat speelt er in je team en wat zien we in de gesprekken? Zo raakt de sessie de juiste snaar.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Aftoetsen wat er leeft",
+                "tekst": "<p>We beginnen met luisteren: wat wil je bereiken, wat speelt er in je team en wat zien we in de gesprekken? Zo raakt de sessie de juiste snaar.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Keynote op maat bouwen",
+                "tekst": "<p>We bouwen een high-energy verhaal van een halve dag rond jouw thema's, met voorbeelden die je team herkent.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Activeren op de dag zelf",
+                "tekst": "<p>Op het podium zetten we het team in beweging en op één lijn — met inzichten die soms confronteren, maar wél blijven hangen.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Doorpakken (optioneel)",
+                "tekst": "<p>Wil je de energie vasthouden, dan koppelen we er een coachingstraject of salesUp Academy aan, zodat de vonk een gewoonte wordt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over de inspiratiesessie vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Hoe lang duurt een inspiratiesessie?",
+                "answer": "<p>Een inspiratiesessie is kort en krachtig: reken op een halve dag. Lang genoeg om een team te activeren en op één lijn te zetten, kort genoeg om in een kick-off, een salesdag of een teamevent te passen. De inhoud stemmen we af op je team en het moment.</p>"
+              },
+              {
+                "question": "Wanneer kies je voor een inspiratiesessie in plaats van een traject?",
+                "answer": "<p>Kies een inspiratiesessie als je een team wil activeren, op scherp wil zetten of achter één verhaal wil krijgen: een jaarstart, de lancering van een nieuwe aanpak of een dip die je wil doorbreken. Wil je gedrag structureel veranderen en meten, dan is een coachingstraject of het platform salesUp Academy de betere keuze. Vaak werkt een keynote net als vonk vóór zo'n traject.</p>"
+              },
+              {
+                "question": "Is dit een generiek motivatieverhaal?",
+                "answer": "<p>Nee. We vertrekken van jouw context en, waar mogelijk, van wat we in je verkoopgesprekken zien. Zo raakt de sessie de echte thema's van jouw team in plaats van een algemeen motivatieverhaal. Bij Liantis begonnen we net zo: eerst aftoetsen wat er leeft, en dan pas op het podium.</p>"
+              },
+              {
+                "question": "Hoe snel kunnen we een sessie inplannen?",
+                "answer": "<p>Je start met een kort kennismakingsgesprek waarin we het doel en het moment bepalen; daarna leggen we een datum vast. Liever meteen overleggen? We bellen je binnen 30 minuten terug.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met salesUp werken",
+          eyebrow="Bedrijven die met salesUp werken",
+          logos=[
+              {
+                "naam": "Astara",
+                "slug": ""
+              },
+              {
+                "naam": "Liantis",
+                "slug": ""
+              },
+              {
+                "naam": "Zambon",
+                "slug": ""
+              },
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om je team in beweging te zetten?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een inspiratiesessie voor jouw team kan betekenen. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Off-sites",
+                "url": {
+                  "url": {
+                    "href": "/off-sites",
+                    "type": "CONTENT", "content_id": 453268171975
+                  }
+                }
+              },
+              {
+                "link_label": "Coachingstraject",
+                "url": {
+                  "url": {
+                    "href": "/coachingstraject",
+                    "type": "CONTENT", "content_id": 453268184281
+                  }
+                }
+              },
+              {
+                "link_label": "Trainingsplatform (salesUp Academy)",
+                "url": {
+                  "url": {
+                    "href": "/trainingsplatform",
+                    "type": "CONTENT", "content_id": 453268285688
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

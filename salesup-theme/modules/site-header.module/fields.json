@@ -1,0 +1,145 @@
+[ {
+  "id" : "hoofdmenu",
+  "name" : "hoofdmenu",
+  "label" : "Niet gebruiken (live Main-menu = oude IA; header gebruikt de links hieronder)",
+  "required" : false,
+  "locked" : true,
+  "type" : "menu",
+  "display_width" : null
+}, {
+  "id" : "nav_links",
+  "name" : "nav_links",
+  "label" : "Navigatielinks (fallback)",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 12,
+    "sorting_label_field" : null,
+    "default" : 7
+  },
+  "children" : [ {
+    "id" : "nav_links.link_label",
+    "name" : "link_label",
+    "label" : "Label",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Cases"
+  }, {
+    "id" : "nav_links.url",
+    "name" : "url",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/cases"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "link_label" : "Wat we doen",
+    "url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/#diensten"
+      }
+    }
+  }, {
+    "link_label" : "Cases",
+    "url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/cases"
+      }
+    }
+  }, {
+    "link_label" : "Over ons",
+    "url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/over-ons"
+      }
+    }
+  }, {
+    "link_label" : "Blog",
+    "url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/blog"
+      }
+    }
+  }, {
+    "link_label" : "Podcast",
+    "url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/groeipodcast-salesup"
+      }
+    }
+  }, {
+    "link_label" : "AI-aanpak",
+    "url" : {
+      "url" : {
+        "type" : "CONTENT",
+        "content_id" : 453268359396,
+        "href" : "/ai-aanpak"
+      }
+    }
+  }, {
+    "link_label" : "Vacatures",
+    "url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/werken-bij"
+      }
+    }
+  } ]
+}, {
+  "id" : "cta_text",
+  "name" : "cta_text",
+  "label" : "CTA-tekst",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Plan een gesprek"
+}, {
+  "id" : "cta_url",
+  "name" : "cta_url",
+  "label" : "CTA-link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "content_id" : 453268184310,
+      "href" : "/contact"
+    }
+  }
+} ]

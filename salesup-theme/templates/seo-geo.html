@@ -1,0 +1,340 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — SEO/GEO
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"SEO/GEO\",\n      \"serviceType\":\"Zoekmachine- en Generative Engine Optimization\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/seo-geo\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Marketing\",\"url\":\"https://www.salesup.be/marketing\"},\n      \"description\":\"Vindbaarheid in klassieke zoekresultaten én in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews, zodat je gevonden wordt waar je klant vandaag zoekt.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Marketing\",\"item\":\"https://www.salesup.be/marketing\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"SEO/GEO\",\"item\":\"https://www.salesup.be/seo-geo\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat is het verschil tussen SEO en GEO?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"SEO gaat over vindbaarheid in klassieke zoekresultaten van Google en Bing. GEO staat voor Generative Engine Optimization: hoe je merk verschijnt en geciteerd wordt in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews. Steeds meer zoekopdrachten landen daar zonder klik naar je site, dus we werken op beide sporen tegelijk.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe zorgen jullie dat mijn merk in AI-antwoorden opduikt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We zetten de technische SEO-basis op orde, schrijven content die geschreven is om te rangschikken én geciteerd te worden, en volgen maandelijks op of en hoe je merk verschijnt in ChatGPT, Perplexity en Gemini. Waar je nog niet opduikt, sturen we de content en structuur bij tot je wél in de antwoorden staat.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe lang duurt het voor ik resultaat zie?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"SEO en GEO zijn een middellange-termijnproject: de eerste verschuivingen in posities en AI-zichtbaarheid zie je na enkele maanden. Je volgt de voortgang live in het platform, met posities, verkeer en AI-zichtbaarheid in één overzicht, zodat je geen powerpoint achteraf hoeft af te wachten.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Schrijven jullie ook de content zelf?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, content-creatie zit standaard mee in dit traject. En omdat SEO/GEO op dezelfde datalaag draait als je andere kanalen, voedt de vindbaarheid die we opbouwen rechtstreeks je sales: wie je via een AI-antwoord of zoekresultaat vindt en een aanvraag doet, wordt binnen 30 minuten opgebeld.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/seo-geo",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              },
+              {
+                "link_label": "SEO/GEO",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: set heeft geen echt SEO-/campagnebeeld; dichtstbijzijnde is kantoor-/overlegsfeer -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Marketing · SEO/GEO",
+          heading="Gevonden worden in Google <em>én</em> in AI-antwoorden.",
+          subtext="<p>Klassieke zoekmachine-optimalisatie, aangevuld met GEO — Generative Engine Optimization: vindbaarheid in ChatGPT, Perplexity en Google AI Overviews, waar steeds meer zoekopdrachten landen zonder klik naar je site. Zo word je gevonden waar je klant vandaag écht zoekt.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo werkt SEO/GEO",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Google én AI"
+              },
+              {
+                "link_label": "Generative Engine Optimization"
+              },
+              {
+                "link_label": "Content die rangschikt"
+              },
+              {
+                "link_label": "Maandelijkse monitoring"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Waarom SEO/GEO telt",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2055.jpg",
+              "alt": "salesUp-team overlegt aan een sta-tafel over content en vindbaarheid."
+            },
+          trustcard_badge="",
+          trustcard_stat="2<em> sporen</em>",
+          trustcard_label="Vindbaar in klassieke zoekresultaten én in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews — waar steeds meer zoekopdrachten landen zonder klik.",
+          trustcard_quote="\"Je klant zoekt niet meer alleen in Google. Wie niet in het AI-antwoord staat, bestaat straks niet voor de helft van de zoekopdrachten.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van onze marketing"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat je krijgt",
+          heading="Vindbaarheid op twee sporen tegelijk.",
+          intro="<p>SEO houdt je zichtbaar in de klassieke zoekresultaten; GEO zorgt dat je merk ook opduikt in de AI-antwoorden waar je klant steeds vaker landt.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Technische SEO-basis",
+                "tekst": "<p>Laadtijd, structuur en indexatie in orde: de fundering onder alles. Zonder die basis rangschikt geen enkele pagina, in Google noch in een AI-antwoord.</p>"
+              },
+              {
+                "title": "Content die rangschikt én geciteerd wordt",
+                "tekst": "<p>Artikels en pagina's geschreven rond wat je doelgroep effectief zoekt, en opgebouwd zodat AI-modellen je merk als bron oppikken en citeren.</p>"
+              },
+              {
+                "title": "GEO-monitoring",
+                "tekst": "<p>We volgen maandelijks of en hoe je merk verschijnt in ChatGPT, Perplexity en Gemini, en sturen bij tot je in de antwoorden staat. Generative Engine Optimization in de praktijk.</p>"
+              },
+              {
+                "title": "Rapportage via ons AI-platform",
+                "tekst": "<p>Posities, verkeer en AI-zichtbaarheid in één overzicht. En omdat alles op dezelfde datalaag draait, stroomt wie je vindt en een aanvraag doet rechtstreeks door naar sales.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van audit tot zichtbaarheid in Google en AI.",
+          intro="<p>We brengen technische en inhoudelijke werkpunten in kaart, voor klassieke zoekresultaten én voor AI-antwoorden.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Audit",
+                "tekst": "<p>We brengen technische en inhoudelijke werkpunten in kaart, voor klassieke zoekresultaten én voor AI-antwoorden.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Prioriteiten bepalen",
+                "tekst": "<p>Welke pagina's en onderwerpen leveren het meeste op — in verkeer én in citaties door AI-modellen.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Content & technische fixes",
+                "tekst": "<p>Uitvoering van de verbeteringen: technische basis op orde en content die rangschikt en geciteerd wordt.</p>"
+              },
+              {
+                "num": "04",
+                "title": "GEO-monitoring & bijsturen",
+                "tekst": "<p>Maandelijkse opvolging in Google én in ChatGPT, Perplexity en Gemini; wie een aanvraag doet, gaat door naar sales voor opvolging binnen 30 minuten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over SEO/GEO vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Wat is het verschil tussen SEO en GEO?",
+                "answer": "<p>SEO gaat over vindbaarheid in klassieke zoekresultaten van Google en Bing. GEO staat voor Generative Engine Optimization: hoe je merk verschijnt en geciteerd wordt in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews. Steeds meer zoekopdrachten landen daar zonder klik naar je site, dus we werken op beide sporen tegelijk.</p>"
+              },
+              {
+                "question": "Hoe zorgen jullie dat mijn merk in AI-antwoorden opduikt?",
+                "answer": "<p>We zetten de technische SEO-basis op orde, schrijven content die geschreven is om te rangschikken én geciteerd te worden, en volgen maandelijks op of en hoe je merk verschijnt in ChatGPT, Perplexity en Gemini. Waar je nog niet opduikt, sturen we de content en structuur bij tot je wél in de antwoorden staat.</p>"
+              },
+              {
+                "question": "Hoe lang duurt het voor ik resultaat zie?",
+                "answer": "<p>SEO en GEO zijn een middellange-termijnproject: de eerste verschuivingen in posities en AI-zichtbaarheid zie je na enkele maanden. Je volgt de voortgang live in het platform, met posities, verkeer en AI-zichtbaarheid in één overzicht, zodat je geen powerpoint achteraf hoeft af te wachten.</p>"
+              },
+              {
+                "question": "Schrijven jullie ook de content zelf?",
+                "answer": "<p>Ja, content-creatie zit standaard mee in dit traject. En omdat SEO/GEO op dezelfde datalaag draait als je andere kanalen, voedt de vindbaarheid die we opbouwen rechtstreeks je sales: wie je via een AI-antwoord of zoekresultaat vindt en een aanvraag doet, wordt binnen 30 minuten opgebeld.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met onze marketing werken",
+          eyebrow="Bedrijven die met onze marketing werken",
+          logos=[
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Hivolta",
+                "slug": ""
+              },
+              {
+                "naam": "Jaguar Land Rover",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om ook in AI-antwoorden gevonden te worden?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van je huidige vindbaarheid in Google én in AI. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Website",
+                "url": {
+                  "url": {
+                    "href": "/website",
+                    "type": "CONTENT", "content_id": 453268311272
+                  }
+                }
+              },
+              {
+                "link_label": "SEA",
+                "url": {
+                  "url": {
+                    "href": "/sea",
+                    "type": "CONTENT", "content_id": 453268178164
+                  }
+                }
+              },
+              {
+                "link_label": "Social ads",
+                "url": {
+                  "url": {
+                    "href": "/social-ads",
+                    "type": "CONTENT", "content_id": 453268282609
+                  }
+                }
+              },
+              {
+                "link_label": "E-mail",
+                "url": {
+                  "url": {
+                    "href": "/email",
+                    "type": "CONTENT", "content_id": 453268161744
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

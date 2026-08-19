@@ -1,0 +1,184 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Q8Oils
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Q8Oils: Een geoliede samenwerking voor B2B-prospectie\", \"about\": \"Q8Oils\", \"description\": \"Ontdek hoe salesUp Q8 Oils heeft geholpen om hun salesstrategie en resultaten te versterken.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/q8oils\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Q8Oils\", \"item\": \"https://www.salesup.be/cases/q8oils\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/q8oils",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Q8Oils",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          logo={
+              "src": "https://salesup.be/hubfs/Q8.png",
+              "alt": "Q8Oils logo"
+            },
+          eyebrow="Client case · Brandstoffen & smeermiddelen",
+          heading="Q8Oils: Een geoliede samenwerking voor B2B-prospectie",
+          subtext="<p>Ontdek hoe salesUp Q8 Oils heeft geholpen om hun salesstrategie en resultaten te versterken.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "50%",
+                "toelichting": "Conversieratio van meer dan 50% bij de enquête-aanpak in de campagne haven van Antwerpen"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>In de altijd evoluerende wereld van <a href=\"/afspraakplanning\">B2B-prospectie</a> heeft Q8Oils, gespecialiseerd in de handel en productie van brandstoffen en smeermiddelen, de uitdaging aangenomen om meer sales te genereren. Daarvoor schakelden ze ons als externe prospectiepartner in. Het doel was duidelijk: brand awareness creëren voor Q8Oils en sales genereren met als primaire doelgroep de productiemanagers, onderhoudsmanagers, kwaliteitscoördinatoren en gezondheids- en veiligheidsmanagers in meerdere sectoren.</p>\n<h2>De campagnes</h2>\n<p>Aanvankelijk begon Q8 Oils met één campagne: prospectie in Zuid-Nederland. Maar al snel werden, vanwege het succes van de eerste, er twee andere aan toegevoegd. De andere campagnes die daaruit voortvloeiden, draaiden om prospectie van bedrijven in en rond de haven van Antwerpen en prospectie in Wallonië.<br><br>De campagne in de haven van Antwerpen was bijzonder interessant omdat ze een iets andere aanpak kreeg dan gebruikelijk. Hier begon salesUp met een vrijblijvende  enquête, om beter de behoeften van de te prospecteren bedrijven te begrijpen. De enquête ging dieper in op de producten die bedrijven gebruikten, de uitdagingen waarmee ze te maken hadden en zelfs hun wagenpark en machines kwamen aan bod. Op basis van de resultaten werden de meest veelbelovende bedrijven opnieuw benaderd voor een kennismakingsgesprek, toegespitst op de challenges die ze eerder zelf aangaven. Deze aanpak leidde tot een opmerkelijke conversieratio van meer dan 50%.</p>\n<h2>Een succesvol partnership</h2>\n<p>Wat dit partnerschap echt succesvol maakte, was de nauwe samenwerking tussen Q8Oils en salesUp. Het salesteam van salesUp had rechtstreeks contact met de Q8Oils -verkopers, en afspraken werden naadloos ingepland via een gedeeld agendasysteem. Bovendien werden wekelijkse rapporten met inzichten uit de telefoongesprekken naar Q8Oils gestuurd. Regelmatige feedbacksessies werden georganiseerd, waardoor Q8Oils de communicatie met prospects kon evalueren en bijsturen waar nodig.</p>\n<h2>Til je telefonische prospectie naar een hoger niveau</h2>\n<p>Het succesverhaal van Q8Oils en salesUp biedt waardevolle inzichten die kunnen helpen je eigen telefonische prospectie te perfectioneren. We kunnen uit deze case drie waardevolle tips destilleren waarmee je moeiteloos zelf aan de slag kan om  jouw eigen prospectie-inspanningen naar een hoger niveau te tillen.</p>\n<p>Productkennis en Training: Het salesUp team kreeg uitgebreide technische en producttraining om vol vertrouwen te bellen. Hierdoor konden ze gesprekken voeren zonder script, wat resulteerde in authentieke interacties.<br><br>Scriptloze Communicatie: In plaats van een rigide script te volgen, streeft salesUp naar vlotte en natuurlijke gesprekken. Hierdoor kunnen ze flexibel inspelen op de behoeften van de prospects.<br><br>​​​​​​​Wees creatief met uw enquête: Stel vragen op een interessante en relevante manier om waardevolle informatie te verzamelen zonder de 'enquête'-vibe.</p>\n<h2>Ook meer verkopen?</h2>\n<p>De samenwerking tussen salesUp en Q8Oils is een toonbeeld van hoe een innovatieve aanpak en nauwe samenwerking kunnen leiden tot buitengewone resultaten. Of zoals Isabella Hauquier, Sales Manager bij Q8Oils, het verwoordde: \"Onze aangename samenwerking met salesUp blijft consequent leiden tot blijvende successen.\" Dit succesverhaal bewijst dat met de juiste strategie, training en samenwerking, telefonische prospectie een krachtige motor kan zijn voor het genereren van waardevolle B2B-sales.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;Onze aangename samenwerking met salesUp blijft consequent leiden tot blijvende successen.&rdquo;</p>",
+          who="&mdash; <strong>Isabella Hauquier</strong>, Sales Manager bij Q8Oils"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Q8Oils deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/axians",
+                    "type": "CONTENT", "content_id": 453268364529
+                  }
+                },
+                "sector": "Audiovisuele oplossingen",
+                "naam": "Axians",
+                "stat": "36 meetings met warme prospects, waarvan 28 omgezet naar concrete offertes – conversiepercentage van 78%",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/unizo",
+                    "type": "CONTENT", "content_id": 453268041941
+                  }
+                },
+                "sector": "Ondernemersorganisatie",
+                "naam": "UNIZO",
+                "stat": "Responsgraad 80% hoger dan bij ‘spammy’ content",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/vm-building",
+                    "type": "CONTENT", "content_id": 453268043979
+                  }
+                },
+                "sector": "Bouw",
+                "naam": "VM Building Solutions",
+                "stat": "Succespercentage van 16,21% met al 535 gemaakte afspraken (ruim boven het doel van 10%)",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

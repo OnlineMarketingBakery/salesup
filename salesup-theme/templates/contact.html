@@ -1,0 +1,157 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Contact
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/contact.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\":\"https://schema.org\",\"@type\":\"ContactPage\",\"name\":\"Contact salesUp\",\"mainEntity\":{\"@type\":\"Organization\",\"name\":\"salesUp\",\"email\":\"info@salesup.be\",\"telephone\":\"+3253782830\",\"url\":\"https://www.salesup.be/\",\"address\":[{\"@type\":\"PostalAddress\",\"streetAddress\":\"Evenbroekveld 14\",\"postalCode\":\"9420\",\"addressLocality\":\"Erpe-Mere\",\"addressCountry\":\"BE\"},{\"@type\":\"PostalAddress\",\"streetAddress\":\"Kerkstraat 39\",\"postalCode\":\"8400\",\"addressLocality\":\"Oostende\",\"addressCountry\":\"BE\"}],\"areaServed\":{\"@type\":\"Country\",\"name\":\"Belgi\\u00eb\"}}}",
+  hreflang_nl="https://www.salesup.be/contact",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Contact",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/contact-hero",
+          eyebrow="Contact",
+          heading="Zin om te <em>groeien</em>? Eén gesprek volstaat.",
+          subtext="<p>Vertel ons kort waar je staat en wat je wil bereiken. We denken meteen met je mee — en we bellen je <strong>binnen 30 minuten</strong> terug.</p>",
+          cta1_text="Bel 053 78 28 30",
+          cta1_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Mail ons",
+          cta2_url={
+              "url": {
+                "href": "mailto:info@salesup.be",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/contact-form",
+          form_heading="Laat je gegevens achter",
+          form_note="Vul kort je gegevens in. We bellen je binnen 30 minuten terug.",
+          form={
+              "form_id": "79c85a00-56e9-4014-be21-cb8af40feb9d",
+              "response_type": "inline",
+              "message": "Bedankt. We bellen je binnen 30 minuten terug."
+            },
+          meet_heading="Of plan meteen een moment",
+          meet_note="Kies zelf een tijdslot dat past.",
+          meetings_url=""
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/kantoren",
+          eyebrow="Onze kantoren",
+          heading="Kom gerust eens langs.",
+          kantoren=[
+              {
+                "status": "Hoofdzetel",
+                "naam": "salesUp Erpe-Mere",
+                "adres": "Evenbroekveld 14, 9420 Erpe-Mere<br><a href='tel:+3253782830'>053 78 28 30</a> &middot; <a href='mailto:info@salesup.be'>info@salesup.be</a>",
+                "maps_url": "https://www.google.com/maps/search/?api=1&query=Evenbroekveld+14+9420+Erpe-Mere",
+                "beeld": {
+                  "src": "https://salesup.be/hubfs/Rectangle%2049-1.png",
+                  "alt": "Kantoor van salesUp op de hoofdzetel in Erpe-Mere."
+                }
+              },
+              {
+                "status": "Vestiging",
+                "naam": "salesUp Oostende",
+                "adres": "Kerkstraat 39, 8400 Oostende<br><a href='tel:+3253782830'>053 78 28 30</a> &middot; <a href='mailto:info@salesup.be'>info@salesup.be</a>",
+                "maps_url": "https://www.google.com/maps/search/?api=1&query=Kerkstraat+39+Oostende",
+                "beeld": {
+                  "src": "https://salesup.be/hubfs/Rectangle%2056.png",
+                  "alt": "Kantoor van salesUp in Oostende."
+                }
+              }
+            ],
+          soon=""
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Liever dat wij bellen?",
+          tekst="<p>Laat je nummer achter of bel ons rechtstreeks — we bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Bel 053 78 28 30",
+          cta1_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Mail info@salesup.be",
+          cta2_url={
+              "url": {
+                "href": "mailto:info@salesup.be",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

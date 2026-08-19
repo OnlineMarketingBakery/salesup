@@ -1,0 +1,370 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Trainingsplatform
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Trainingsplatform (salesUp Academy)\",\n      \"serviceType\":\"Sales-trainingsplatform met gesprekanalyse, AI-avatars en scorecards\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/trainingsplatform\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Training\",\"url\":\"https://www.salesup.be/training\"},\n      \"description\":\"salesUp Academy: een trainingsplatform met gesprekanalyse en AI-scoring, AI-avatar-roleplays, scorecards, gamification en een wekelijkse coach-mail, gekoppeld aan de live sales-data van de klant.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Training\",\"item\":\"https://www.salesup.be/training\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Trainingsplatform\",\"item\":\"https://www.salesup.be/trainingsplatform\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat is salesUp Academy precies?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"salesUp Academy is ons eigen trainingsplatform. Het analyseert echte verkoopgesprekken met AI-scoring, laat elke verkoper oefenen op zijn werkpunt met AI-avatar-roleplays, houdt de voortgang bij op scorecards en gebruikt gamification en een wekelijkse coach-mail om het team scherp te houden. Alles is gekoppeld aan je live sales-data, zodat training en omzet naast elkaar zichtbaar zijn.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe werken de AI-avatar-roleplays?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op basis van de gesprekanalyse oefent elke verkoper met een AI-avatar, precies op het werkpunt dat voor hem telt, zo vaak als nodig. Er is geen coach nodig om in te plannen en fouten maken kan zonder een echte klant te verliezen. Score en evolutie per sessie zijn zichtbaar voor zowel de coach als de verkoper.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe koppelen jullie het platform aan onze sales-data?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Via een koppeling met je CRM/ERP. Zo staan de trainingsscores en de echte verkoopresultaten naast elkaar en zie je zwart op wit of beter gedrag ook meer omzet oplevert. Die datalus tussen gesprek, training en omzet is precies wat een losstaand e-learningplatform niet biedt.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Werkt het platform ook zonder onze andere trainingen?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. salesUp Academy werkt op zichzelf, maar wordt sterker in combinatie met een off-site, een inspiratiesessie of een coachingstraject: dan houdt het platform de energie vast en maakt het de voortgang meetbaar. Wil je overleggen wat past voor jouw team? We bellen je binnen 30 minuten terug.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/trainingsplatform",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              },
+              {
+                "link_label": "Trainingsplatform",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload kantoor-brandscreen.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Training · Trainingsplatform",
+          heading="<em>salesUp Academy</em>: trainen op wat de data toont.",
+          subtext="<p>Ons eigen trainingsplatform analyseert echte verkoopgesprekken, laat iedereen oefenen op zijn werkpunt met AI-avatars, houdt de voortgang bij op scorecards en koppelt alles aan je live sales-data. Zo train je op het échte werkpunt — en zie je of het omzet oplevert.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo werkt het platform",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Gesprekanalyse & AI-scoring"
+              },
+              {
+                "link_label": "AI-avatar-roleplays"
+              },
+              {
+                "link_label": "Scorecards & gamification"
+              },
+              {
+                "link_label": "Gekoppeld aan je omzet"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Astara",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2049-1.png",
+              "alt": "salesUp-medewerker werkt op een laptop naast een scherm met de boodschap dat salesUp je helpt groeien."
+            },
+          trustcard_badge="",
+          trustcard_stat="9,4–9,6<em>/10</em>",
+          trustcard_label="Klanttevredenheid van de met salesUp getrainde ploeg bij Astara — bewijs dat datagedreven training aan de gesprekskwaliteit voelbaar is.",
+          trustcard_quote="\"Op basis van de gesprekanalyse oefent elke sales persoon met een AI-avatar — precies op het werkpunt dat voor hem telt, zo vaak als nodig.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van salesUp Academy"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het platform doet",
+          heading="Eén platform, van gesprek tot omzet.",
+          intro="<p>salesUp Academy is geen losstaande e-learning. Het sluit de lus tussen wat er in het gesprek gebeurt, waar iemand op oefent en wat het uiteindelijk opbrengt.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Gesprekanalyse & AI-scoring",
+                "tekst": "<p>Elk verkoopgesprek wordt geanalyseerd en gescoord op kwaliteit en werkpunten. Zo zie je zicht op wat écht gebeurt in het gesprek, niet wat iemand achteraf denkt te hebben gedaan.</p>"
+              },
+              {
+                "title": "AI-avatar-roleplays op je werkpunt",
+                "tekst": "<p>Iedereen oefent met een AI-avatar op precies het werkpunt uit zijn eigen analyse, zo vaak als nodig. Geen coach inplannen, en fouten maken kan zonder een echte klant te verliezen.</p>"
+              },
+              {
+                "title": "Scorecards & gamification",
+                "tekst": "<p>De voortgang staat per verkoper op een scorecard, tegenover jouw sales-methodologie. Punten, streak en percentiel houden het spel én de motivatie erin — coach en verkoper zien de evolutie.</p>"
+              },
+              {
+                "title": "Wekelijkse coach-mail & datakoppeling",
+                "tekst": "<p>Een wekelijkse coach-mail houdt iedereen scherp, en via de koppeling met je CRM/ERP staat de training naast de echte omzet. Dat is de datalus die geen losstaand platform biedt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van werkpunt tot beheersing.",
+          intro="<p>Het platform analyseert echte verkoopgesprekken en legt per verkoper sterktes en werkpunten bloot met AI-scoring.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Gesprekken analyseren",
+                "tekst": "<p>Het platform analyseert echte verkoopgesprekken en legt per verkoper sterktes en werkpunten bloot met AI-scoring.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Oefenen met AI-avatars",
+                "tekst": "<p>Op basis van die analyse oefent iedereen met een AI-avatar op zijn eigen werkpunt, zo vaak als nodig, op elk moment.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Voortgang volgen op scorecards",
+                "tekst": "<p>Score en evolutie per sessie staan op scorecards; gamification en de wekelijkse coach-mail houden het team scherp.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Koppelen aan de sales-data",
+                "tekst": "<p>Via je CRM/ERP staat de training naast de echte omzet, zodat je zwart op wit ziet of beter gedrag ook meer verkoopt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over salesUp Academy vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Wat is salesUp Academy precies?",
+                "answer": "<p>salesUp Academy is ons eigen trainingsplatform. Het analyseert echte verkoopgesprekken met AI-scoring, laat elke verkoper oefenen op zijn werkpunt met AI-avatar-roleplays, houdt de voortgang bij op scorecards en gebruikt gamification en een wekelijkse coach-mail om het team scherp te houden. Alles is gekoppeld aan je live sales-data, zodat training en omzet naast elkaar zichtbaar zijn.</p>"
+              },
+              {
+                "question": "Hoe werken de AI-avatar-roleplays?",
+                "answer": "<p>Op basis van de gesprekanalyse oefent elke verkoper met een AI-avatar, precies op het werkpunt dat voor hem telt, zo vaak als nodig. Er is geen coach nodig om in te plannen en fouten maken kan zonder een echte klant te verliezen. Score en evolutie per sessie zijn zichtbaar voor zowel de coach als de verkoper.</p>"
+              },
+              {
+                "question": "Hoe koppelen jullie het platform aan onze sales-data?",
+                "answer": "<p>Via een koppeling met je CRM/ERP. Zo staan de trainingsscores en de echte verkoopresultaten naast elkaar en zie je zwart op wit of beter gedrag ook meer omzet oplevert. Die datalus tussen gesprek, training en omzet is precies wat een losstaand e-learningplatform niet biedt.</p>"
+              },
+              {
+                "question": "Werkt het platform ook zonder onze andere trainingen?",
+                "answer": "<p>Ja. salesUp Academy werkt op zichzelf, maar wordt sterker in combinatie met een off-site, een inspiratiesessie of een coachingstraject: dan houdt het platform de energie vast en maakt het de voortgang meetbaar. Wil je overleggen wat past voor jouw team? We bellen je binnen 30 minuten terug.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met salesUp werken",
+          eyebrow="Bedrijven die met salesUp werken",
+          logos=[
+              {
+                "naam": "Astara",
+                "slug": ""
+              },
+              {
+                "naam": "Liantis",
+                "slug": ""
+              },
+              {
+                "naam": "Zambon",
+                "slug": ""
+              },
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: HubSpot-form koppelen (form-GUID) — placeholder is inert tot livegang -->
+            {% dnd_module
+          path="../modules/soft-cta",
+          aria="Vraag een demo aan",
+          sc_eyebrow="Demo op maat",
+          heading="Zie het trainingsplatform live in actie",
+          tekst="<p>Benieuwd hoe training, coaching en resultaat samenkomen op één scherm? Laat je gegevens achter en we geven je een rondleiding op maat van jouw team — geen verkooppraatje.</p>",
+          veldenset={
+              "naam": true,
+              "email": true,
+              "telefoon": false,
+              "website": false
+            },
+          link_label="Vraag je demo aan",
+          note="Binnen 30 minuten een reactie.",
+          navy=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zie training en omzet eindelijk naast elkaar.",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat salesUp Academy voor jouw team kan betekenen. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Off-sites",
+                "url": {
+                  "url": {
+                    "href": "/off-sites",
+                    "type": "CONTENT", "content_id": 453268171975
+                  }
+                }
+              },
+              {
+                "link_label": "Inspiratiesessie",
+                "url": {
+                  "url": {
+                    "href": "/inspiratiesessie",
+                    "type": "CONTENT", "content_id": 453268164824
+                  }
+                }
+              },
+              {
+                "link_label": "Coachingstraject",
+                "url": {
+                  "url": {
+                    "href": "/coachingstraject",
+                    "type": "CONTENT", "content_id": 453268184281
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

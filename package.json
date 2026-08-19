@@ -1,0 +1,20 @@
+{
+  "name": "salesup",
+  "version": "1.0.0",
+  "description": "Local HubSpot CMS workspace for salesUp",
+  "private": true,
+  "scripts": {
+    "auth": "hs account auth --name salesUp --default",
+    "list": "hs cms list",
+    "fetch": "hs cms fetch salesup-theme salesup-theme -o",
+    "watch": "hs cms watch salesup-theme salesup-theme",
+    "upload": "hs cms upload salesup-theme salesup-theme"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@hubspot/cli": "^8.13.0"
+  }
+}

@@ -1,0 +1,184 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Sobelhor
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Efficiënter voorraadbeheer en orderverwerking voor Sobelhor\", \"about\": \"Sobelhor\", \"description\": \"Sinds 2020 beheert salesUp een groot deel van de administratieve operaties van Sobelhor: inbound, logistieke codering en facturen via hun ERP. Benutting van het systeem steeg van 60% naar 80%.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/sobelhor\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Sobelhor\", \"item\": \"https://www.salesup.be/cases/sobelhor\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/sobelhor",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Sobelhor",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Horeca-leverancier",
+          heading="Efficiënter voorraadbeheer en orderverwerking voor Sobelhor",
+          subtext="<p>Sobelhor, leverancier van warme en koude dranken voor hotels, internaten en jeugdherbergen, liep vast in verouderde processen. Sinds 2020 brengt salesUp structuur in orders, voorraad en facturatie.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "60% → 80%",
+                "toelichting": "Benutting van het ERP-systeem van Sobelhor"
+              },
+              {
+                "cijfer": "2020",
+                "toelichting": "Start van de samenwerking — inbound, logistiek en facturatie"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>Sobelhor, leverancier van warme en koude dranken voor hotels, internaten en jeugdherbergen, liep vast in verouderde processen. Orders werden handmatig verwerkt, voorraadbeheer was onvoorspelbaar en facturen stapelden zich op. Tijdrovend, foutgevoelig en inefficiënt.</p>\n<p>Het werd tijd om slimmer te werken. In 2020 ging Sobelhor de samenwerking aan met salesUp. Het doel: structuur aanbrengen, fouten minimaliseren en zorgen voor een efficiënte werkwijze.</p>\n<h2>De uitdaging: van losse taken naar een gestroomlijnd proces</h2>\n<p>Bij de start van de samenwerking bleek al snel dat Sobelhor vastliep in verouderde processen. Bestellingen werden handmatig ingevoerd, wat vertragingen en fouten veroorzaakte. Voorraadbeheer was een gok: soms te veel, soms te weinig. En de facturatie verliep traag en handmatig.</p>\n<p>Toch was de oplossing binnen handbereik. Sobelhor had een krachtig ERP-systeem, maar gebruikte slechts een fractie van de mogelijkheden. Samen brachten we structuur aan en maakten we optimaal gebruik van de beschikbare technologie.</p>\n<h2>De aanpak: experimenteren en optimaliseren</h2>\n<p>Wat begon als operationele ondersteuning, groeide uit tot een strategische samenwerking. Processen werden niet alleen verbeterd, maar ook toekomstbestendig gemaakt.</p>\n<ul><li>Bestellingen worden nu direct verwerkt zonder dubbele invoer of fouten.</li><li>Voorraadbeheer is voorspelbaar dankzij realtime inzicht in de beschikbare producten.</li><li>Facturen worden sneller en accurater gegenereerd, zonder handmatige verwerking.</li><li>Klanten krijgen sneller en duidelijker antwoord dankzij een beter ingericht <a href=\"/after-sales\">klantcontactproces</a>.</li></ul>\n<p>Daarnaast werd het ERP-systeem efficiënter ingezet. Waar eerst 60% van de functies werd benut, werkt Sobelhor nu met 80% van de mogelijkheden. Een directe winst in snelheid en nauwkeurigheid.</p>\n<h2>Het resultaat: minder handmatig werk, meer controle</h2>\n<p>Door de optimalisaties en de strategische samenwerking met salesUp en het ERP-systeem van Sobelhor kan Sobelhor nu:</p>\n<ul><li>Sneller orders verwerken en klanten beter bedienen</li><li>Altijd inzicht hebben in de actuele voorraad, waardoor producten op tijd beschikbaar zijn</li><li>Efficiënter factureren, zonder dubbele invoer en onnodige vertragingen</li><li>Strategische keuzes maken, dankzij realtime inzicht in orders en voorraad</li></ul>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;In 2020 sloot SOBELHOR zich aan bij salesUp, dat een groot deel van onze administratieve operaties beheert. Dit varieert van inbound verwerking tot logistieke codering, inclusief het opstellen van facturen via ons ERP-systeem, dat ze in recordtijd onder de knie kregen. De meertaligheid van het personeel is bovendien een echte aanrader.&rdquo;</p>",
+          who="&mdash; <strong>Marc Wodon</strong>, Sobelhor"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Sobelhor deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/ichoosr",
+                    "type": "CONTENT", "content_id": 453268374754
+                  }
+                },
+                "sector": "Energie",
+                "naam": "iChoosr",
+                "stat": "Flexibele inbound klantondersteuning bij pieken en dalen",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/immo-van-middelem",
+                    "type": "CONTENT", "content_id": 453268375760
+                  }
+                },
+                "sector": "Vastgoed",
+                "naam": "Immo Van Middelem",
+                "stat": "Dagelijkse inkomende telefoons en e-mails overgenomen",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/eurocircuits",
+                    "type": "CONTENT", "content_id": 453268371675
+                  }
+                },
+                "sector": "Elektronica (PCB's)",
+                "naam": "Eurocircuits",
+                "stat": "91,64% van de klanten geholpen, over heel Europa",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

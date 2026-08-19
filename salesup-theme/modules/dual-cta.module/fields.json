@@ -1,0 +1,131 @@
+[ {
+  "id" : "option1_eyebrow",
+  "name" : "option1_eyebrow",
+  "label" : "Optie 1 — eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Optie 1"
+}, {
+  "id" : "option1_h3",
+  "name" : "option1_h3",
+  "label" : "Optie 1 — titel",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Geef je hele groeimotor uit handen"
+}, {
+  "id" : "option1_body",
+  "name" : "option1_body",
+  "label" : "Optie 1 — tekst",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "option1_cta_text",
+  "name" : "option1_cta_text",
+  "label" : "Optie 1 — CTA",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Plan een gesprek"
+}, {
+  "id" : "option1_cta_url",
+  "name" : "option1_cta_url",
+  "label" : "Optie 1 — URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "content_id" : null,
+      "href" : "/contact"
+    }
+  }
+}, {
+  "id" : "option2_eyebrow",
+  "name" : "option2_eyebrow",
+  "label" : "Optie 2 — eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Optie 2"
+}, {
+  "id" : "option2_h3",
+  "name" : "option2_h3",
+  "label" : "Optie 2 — titel",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Kies gewoon één dienst"
+}, {
+  "id" : "option2_body",
+  "name" : "option2_body",
+  "label" : "Optie 2 — tekst",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "quicklinks",
+  "name" : "quicklinks",
+  "label" : "Snelle links",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 8,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "quicklinks.link_label",
+    "name" : "link_label",
+    "label" : "Label",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Marketing"
+  }, {
+    "id" : "quicklinks.url",
+    "name" : "url",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "content_id" : null,
+        "href" : "/marketing"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

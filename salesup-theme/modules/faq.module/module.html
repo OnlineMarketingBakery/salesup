@@ -1,0 +1,28 @@
+<section class="section tight wrap" id="faq" aria-labelledby="faq-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="faq-titel">{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="faq">
+    {% for item in module.faq_items %}
+    <details class="faq-item">
+      <summary>{{ item.question }}</summary>
+      <div class="antwoord">{{ item.answer }}</div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+{% if module.emit_schema %}
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {% for item in module.faq_items %}
+    {"@type":"Question","name":{{ item.question|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ item.answer|striptags|tojson }}}}{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}

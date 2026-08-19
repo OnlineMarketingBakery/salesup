@@ -1,0 +1,325 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Werken bij
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/vacatures.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"foundingDate\":\"2005\",\n      \"slogan\":\"Technologie versterkt de mens, ze vervangt hem niet.\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\n      \"sameAs\":[\"https://www.linkedin.com/company/salesup-be\"]\n    },\n    {\n      \"@type\":\"CollectionPage\",\n      \"name\":\"Werken bij salesUp\",\n      \"url\":\"https://www.salesup.be/werken-bij\",\n      \"description\":\"Kies je profiel en ontdek de jobs bij salesUp: studentenjob Face2Face, contact center of sales consultant.\",\n      \"isPartOf\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"about\":{\"@id\":\"https://www.salesup.be/#org\"}\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Werken bij\",\"item\":\"https://www.salesup.be/werken-bij\"}\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/werken-bij",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Werken bij",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "content_id": 453268312260,
+                    "type": "CONTENT"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-hoodie-back.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Werken bij salesUp",
+          heading="Kom <em>groeien</em> bij een Belgische salesgroep.",
+          subtext="<p>Of je nu je eerste studentenjob zoekt of al jaren op de baan bent: bij salesUp verkoop je, leer je en groei je. Wij leren je het vak via de salesUp Academy en geven je een coach, doorgroeikansen en collega's die je erdoor trekken.</p>",
+          cta1_text="Bekijk de open vacatures",
+          cta1_url={
+              "url": {
+                "href": "#vacatures",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Kies jouw profiel",
+          cta2_url={
+              "url": {
+                "href": "#profielen",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Nog aan het twijfelen? <strong>Solliciteer gerust spontaan — er komt voortdurend iets bij.</strong>",
+          note_energie=true,
+          chips=[
+              {
+                "link_label": "Sinds 2005"
+              },
+              {
+                "link_label": "±200 experten"
+              },
+              {
+                "link_label": "Eigen salesUp Academy"
+              },
+              {
+                "link_label": "Coaching & doorgroei"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="salesUp als werkgever",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/446%20x%20316%20px-Mar-26-2026-01-31-59-3301-PM.png",
+              "alt": "Medewerker met een salesUp-hoodie waarop 'A job in sales?' staat, met headset op de werkvloer."
+            },
+          trustcard_badge="A job in sales?",
+          trustcard_stat="±200<em></em>",
+          trustcard_label="collega's in sales, marketing en coaching — twee keer Trends Gazelle (2023 &amp; 2024) en al twintig jaar groeiend.",
+          trustcard_quote="\"Technologie versterkt de mens, ze vervangt hem niet.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, sinds 2005"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="troeven",
+          eyebrow="Waarom salesUp",
+          heading="Een plek waar je écht beter wordt in sales.",
+          intro="<p>Wat je profiel ook is, deze troeven deel je met elke collega: opleiding, coaching en de kans om door te groeien — in een groep die al twintig jaar groeit en blijft groeien.</p>",
+          vac_troef=true,
+          feature_cards=[
+              {
+                "title": "Opleiding & coaching",
+                "tekst": "<p>Je leert het vak via de salesUp Academy en krijgt een coach die met je meekijkt. Geen ervaring? Dan starten we bij het begin.</p>"
+              },
+              {
+                "title": "Echte doorgroeikansen",
+                "tekst": "<p>Van studentenjob naar contact center, van agent naar teamlead of consultant: wie wil groeien, krijgt bij ons het pad ervoor.</p>"
+              },
+              {
+                "title": "Sfeer & teamspirit",
+                "tekst": "<p>Targets haal je niet alleen. Je zit tussen collega's die je erdoor trekken, met events, borrels en een team dat wint als groep.</p>"
+              },
+              {
+                "title": "AI-tools die je sterker maken",
+                "tekst": "<p>Je oefent met AI-roleplays en krijgt na elk gesprek feedback. De technologie versterkt jou, ze vervangt je niet.</p>"
+              },
+              {
+                "title": "Meerdere kantoren",
+                "tekst": "<p>Werk dicht bij huis vanuit Erpe-Mere of Oostende.</p>"
+              },
+              {
+                "title": "20 jaar & groeiend",
+                "tekst": "<p>Een stabiele Belgische salesgroep sinds 2005, twee keer Trends Gazelle (2023 &amp; 2024). Je bouwt mee aan iets dat blijft groeien.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/subservices",
+          anchor="profielen",
+          eyebrow="Kies je profiel",
+          heading="Welke job past bij jou?",
+          intro="",
+          kaarten=[
+              {
+                "title": "Studenten & Face2Face",
+                "desc": "<p>Flexibele studentenjob waarin je goed verdient, events beleeft en met een toffe crew op pad gaat — geen ervaring nodig, wij leren je alles.</p>",
+                "url": {
+                  "url": {
+                    "content_id": 453268169949,
+                    "href": "/jobs-studenten",
+                    "type": "CONTENT"
+                  }
+                },
+                "cta": "Ontdek de jobs →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "Contact Center",
+                "desc": "<p>Bel, verkoop en scoor: met coaching, de salesUp Academy en AI-tools die je sterker maken bouw je aan je targets — en aan je bonus.</p>",
+                "url": {
+                  "url": {
+                    "content_id": 453268166896,
+                    "href": "/jobs-contact-center",
+                    "type": "CONTENT"
+                  }
+                },
+                "cta": "Ontdek de jobs →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "Sales Consultants",
+                "desc": "<p>Voor ervaren buitendienstprofielen: autonomie, variatie aan klanten en de kracht van een groep met tooling en collega's achter je.</p>",
+                "url": {
+                  "url": {
+                    "content_id": 453268168921,
+                    "href": "/jobs-sales-consultants",
+                    "type": "CONTENT"
+                  }
+                },
+                "cta": "Ontdek de jobs →",
+                "proposed": false,
+                "tag": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- INTERIM: nog geen sterk Face2Face-veldbeeld in de assets (zie ../assets/BEELDEN_overzicht.md); veldbeeld toevoegen zodra aangeleverd. -->
+            {% dnd_module
+          path="../modules/sfeer",
+          eyebrow="De sfeer",
+          heading="Werken bij salesUp, in beeld.",
+          intro="<p>Van de contact-center-vloer tot de afterdrink na een geslaagde actie: dit is de omgeving waarin je bij ons terechtkomt.</p>",
+          shots=[
+              {
+                "beeld": {
+                  "src": "https://salesup.be/hubfs/Untitled%20design.png",
+                  "alt": "salesUp-collega's met headset aan hun bureaus in het contact center, met blauw-oranje schotten."
+                },
+                "caption": "De contact-center-vloer — hier bel en verkoop je met een team rond je."
+              },
+              {
+                "beeld": {
+                  "src": "https://salesup.be/hubfs/446%20x%20316%20px-Mar-26-2026-01-31-59-3301-PM.png",
+                  "alt": "salesUp-teamlid met een drankje op een event, ontspannen sfeer na een geslaagde actie."
+                },
+                "caption": "Events en borrels — want targets haal je samen, en dat mag gevierd worden."
+              },
+              {
+                "beeld": {
+                  "src": "https://salesup.be/hubfs/Group%20201-2.png",
+                  "alt": "Trainer presenteert voor een groep salesUp-collega's met laptops tijdens een opleiding."
+                },
+                "caption": "De salesUp Academy — opleiding en bijscholing horen er van bij de start bij."
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/open-vacatures",
+          eyebrow="Open vacatures",
+          heading="Waar wil jij aan de slag?",
+          intro="<p>Kies de rol die bij je past en solliciteer. Niks voor jou vandaag? Solliciteer dan spontaan — er komt voortdurend iets bij.</p>",
+          api_url="https://salesup.recruitee.com/api/offers/",
+          department="",
+          detail_base="/werken-bij/vacature"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om mee te groeien?",
+          tekst="<p>Kies je profiel, bekijk de open vacatures en solliciteer — of laat spontaan van je horen. We kijken vooral naar je goesting om te groeien, niet naar een dik cv.</p>",
+          cta1_text="Solliciteer",
+          cta1_url={
+              "url": {
+                "href": "#vacatures",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Studenten & Face2Face",
+                "url": {
+                  "url": {
+                    "href": "/jobs-studenten",
+                    "type": "CONTENT", "content_id": 453268169949
+                  }
+                }
+              },
+              {
+                "link_label": "Contact Center",
+                "url": {
+                  "url": {
+                    "href": "/jobs-contact-center",
+                    "type": "CONTENT", "content_id": 453268166896
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Consultants",
+                "url": {
+                  "url": {
+                    "href": "/jobs-sales-consultants",
+                    "type": "CONTENT", "content_id": 453268168921
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}
+{% block extra_js %}{{ require_js(get_asset_url('../js/recruitee.js')) }}{% endblock %}

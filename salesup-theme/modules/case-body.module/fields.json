@@ -1,0 +1,10 @@
+[ {
+  "id" : "html",
+  "name" : "html",
+  "label" : "Artikel-HTML",
+  "required" : false,
+  "locked" : false,
+  "type" : "html",
+  "display_width" : null,
+  "default" : ""
+} ]

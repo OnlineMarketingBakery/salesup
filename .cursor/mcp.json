@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "HubSpotDev": {
+      "command": "npx",
+      "args": ["-y", "-p", "@hubspot/cli@8.13.0", "hs", "mcp", "start"],
+      "env": {
+        "HUBSPOT_MCP_STANDALONE": "true",
+        "HUBSPOT_CLI_VERSION": "8.13.0"
+      }
+    }
+  }
+}

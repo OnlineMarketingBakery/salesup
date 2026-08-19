@@ -1,0 +1,153 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Vacature detail (Recruitee)
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/vacatures.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"Studentenjob - Face2Face\", \"description\": \" Student en zin om wat extra centjes te verdienen, nieuwe mensen te leren kennen én skills op te doen die je later nog goed kunt gebruiken? 👀  Wij zijn op zoek naar  enthousiaste studenten voor ons F2F-team!  🚀   Wat houdt F2F in?  F2F staat voor  Face-to-Face . Je gaat rechtstreeks in gesprek met mensen op verschillende locaties.  Je spreekt hen persoonlijk aan, voert leuke gesprekken en vertelt hen op een enthousiaste manier over het project waarvoor je werkt.  Geen saaie dagen achter een bureau dus! 😎  Je bent actief bezig, ontmoet voortdurend nieuwe mensen en leert ondertussen hoe je  sterk communiceert, mensen overtuigt en zelfverzekerd voor een groep staat.     Waarom kiezen voor deze studentenjob?   Lekker bijverdienen  naast je studies  Flexibel werken  vanaf 1 dag per week of meer  Een jong &amp; gezellig team  waar je samenwerkt en plezier maakt  Sterke communicatie- &amp; sales skills  die je overal kunt gebruiken  Nieuwe mensen &amp; nieuwe ervaringen  elke dag is anders  Persoonlijke ontwikkeling  stap voor stap sterker worden  Doorgroeimogelijkheden  wie ambitie heeft, kan op termijn meer verantwoordelijkheid opnemen    Meer dan zomaar een studentenjob  Je start minimum  1 dag per week , ideaal om te combineren met je studies en studentenleven. Maar daar hoeft het zeker niet te stoppen. 👀  Ben je gemotiveerd, neem je graag initiatief en heb je ambitie?  Dan krijg je de kans om  door te groeien en steeds meer verantwoordelijkheid op te nemen binnen het team .📈  Je krijgt bij ons dus niet alleen de kans om  bij te verdienen , maar ook om jezelf te ontwikkelen, nieuwe skills te leren en ervaring op te doen die je later nog goed kunt gebruiken. 💪  En wie weet? Misschien start je vandaag als student, maar groei je op termijn door naar een grotere rol binnen het team zelfs nadat je studententijd voorbij is.   Je start als student, maar wie weet waar je eindigt. 🚀        Minimum 18 jaar zijn       Sociaal en spontaan  en maakt makkelijk een praatje    Je vindt het leuk om  nieuwe mensen te leren kennen     Durft uit je comfortzone te stappen en bent niet snel verlegen    Je bent  gemotiveerd  en wil jezelf blijven ontwikkelen    Staat open om  nieuwe skills te leren  en beter te worden    Je bent een echte  teamplayer  en krijgt energie van samenwerken    Een positieve mindset en denkt:  “Waarom niet? Let's go!”         Geen ervaring? Helemaal oké.  🙌 Je hoeft niet alles al te kunnen. Met de juiste attitude en motivatie leren wij je de rest!  Het belangrijkste?  Je brengt jezelf mee.   De rest bouwen we samen. 🚀   \", \"datePosted\": \"2026-06-23\", \"employmentType\": \"PART_TIME\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"sameAs\": \"https://www.salesup.be\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"Gent\", \"addressCountry\": \"BE\"}}, \"directApply\": true}",
+  hreflang_nl="https://www.salesup.be/werken-bij/vacature?slug=studentenjob-face2face",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Werken bij",
+                "url": {
+                  "url": {
+                    "href": "/werken-bij",
+                    "type": "CONTENT", "content_id": 453268312260
+                  }
+                }
+              },
+              {
+                "link_label": "Studenten & Face2Face",
+                "url": {
+                  "url": {
+                    "href": "/jobs-studenten",
+                    "type": "CONTENT", "content_id": 453268169949
+                  }
+                }
+              },
+              {
+                "link_label": "Studentenjob - Face2Face",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/vacature-hero",
+          eyebrow="VACATURE · FACE2FACE",
+          title="Studentenjob - Face2Face",
+          chips=[
+              {
+                "link_label": "Gent"
+              },
+              {
+                "link_label": "Studentenjob / tijdelijk"
+              },
+              {
+                "link_label": "Face2Face"
+              }
+            ],
+          apply_text="Solliciteer nu",
+          apply_url={
+              "url": {
+                "href": "https://salesup.recruitee.com/o/studentenjob-face2face/c/new",
+                "type": "EXTERNAL"
+              }
+            },
+          back_text="Alle vacatures",
+          back_url={
+              "url": {
+                "href": "/werken-bij",
+                "type": "CONTENT", "content_id": 453268312260
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+  <section class="vacd wrap"><div class="vacd-grid">
+    {% module "vacature_body" path="../modules/vacature-body",
+  fallback_html="<p>Student en zin om wat extra centjes te verdienen, nieuwe mensen te leren kennen én skills op te doen die je later nog goed kunt gebruiken? 👀</p><p>Wij zijn op zoek naar <strong>enthousiaste studenten voor ons F2F-team!</strong> 🚀<br></p><h4>Wat houdt F2F in?</h4><p>F2F staat voor <strong>Face-to-Face</strong>. Je gaat rechtstreeks in gesprek met mensen op verschillende locaties. <br>Je spreekt hen persoonlijk aan, voert leuke gesprekken en vertelt hen op een enthousiaste manier over het project waarvoor je werkt.</p><p>Geen saaie dagen achter een bureau dus! 😎 <br>Je bent actief bezig, ontmoet voortdurend nieuwe mensen en leert ondertussen hoe je <strong>sterk communiceert, mensen overtuigt en zelfverzekerd voor een groep staat.</strong></p><p></p><h4>Waarom kiezen voor deze studentenjob?</h4><p><strong>Lekker bijverdienen</strong> naast je studies<br><strong>Flexibel werken</strong> vanaf 1 dag per week of meer<br><strong>Een jong &amp; gezellig team</strong> waar je samenwerkt en plezier maakt<br><strong>Sterke communicatie- &amp; sales skills</strong> die je overal kunt gebruiken<br><strong>Nieuwe mensen &amp; nieuwe ervaringen</strong> elke dag is anders<br><strong>Persoonlijke ontwikkeling</strong> stap voor stap sterker worden<br><strong>Doorgroeimogelijkheden</strong> wie ambitie heeft, kan op termijn meer verantwoordelijkheid opnemen</p><p></p><h4>Meer dan zomaar een studentenjob</h4><p>Je start minimum <strong>1 dag per week</strong>, ideaal om te combineren met je studies en studentenleven. Maar daar hoeft het zeker niet te stoppen. 👀</p><p>Ben je gemotiveerd, neem je graag initiatief en heb je ambitie? <br>Dan krijg je de kans om <strong>door te groeien en steeds meer verantwoordelijkheid op te nemen binnen het team</strong>.📈</p><p>Je krijgt bij ons dus niet alleen de kans om <strong>bij te verdienen</strong>, maar ook om jezelf te ontwikkelen, nieuwe skills te leren en ervaring op te doen die je later nog goed kunt gebruiken. 💪</p><p>En wie weet? Misschien start je vandaag als student, maar groei je op termijn door naar een grotere rol binnen het team zelfs nadat je studententijd voorbij is.</p><p><strong>Je start als student, maar wie weet waar je eindigt. 🚀</strong></p><p></p>\n    <h2>Wat we zoeken</h2><ul><li><p>Minimum 18 jaar zijn</p></li></ul><ul><li><p><strong>Sociaal en spontaan</strong> en maakt makkelijk een praatje</p></li><li><p>Je vindt het leuk om <strong>nieuwe mensen te leren kennen</strong></p></li><li><p>Durft uit je comfortzone te stappen en bent niet snel verlegen</p></li><li><p>Je bent <strong>gemotiveerd</strong> en wil jezelf blijven ontwikkelen</p></li><li><p>Staat open om <strong>nieuwe skills te leren</strong> en beter te worden</p></li><li><p>Je bent een echte <strong>teamplayer</strong> en krijgt energie van samenwerken</p></li><li><p>Een positieve mindset en denkt: <strong>“Waarom niet? Let's go!”<br></strong></p><p></p></li></ul><p><strong>Geen ervaring? Helemaal oké.</strong> 🙌<br>Je hoeft niet alles al te kunnen. Met de juiste attitude en motivatie leren wij je de rest!</p><p>Het belangrijkste? <strong>Je brengt jezelf mee.</strong> <br>De rest bouwen we samen. 🚀</p><p></p>" %}
+    {% module "apply" path="../modules/apply",
+  heading="In het kort",
+  apply_text="Solliciteer nu",
+  apply_url={
+    "url": {
+      "href": "https://salesup.recruitee.com/o/studentenjob-face2face/c/new",
+      "type": "EXTERNAL"
+    }
+  },
+  note="Je solliciteert veilig via Recruitee (Tellent).",
+  careers_text="Bekijk op Recruitee ↗",
+  careers_url={
+    "url": {
+      "href": "https://salesup.recruitee.com/o/studentenjob-face2face",
+      "type": "EXTERNAL"
+    }
+  } %}
+  </div></section>
+  {% dnd_area "cta" label="Final CTA" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Past deze job bij jou?",
+          tekst="<p>Twijfel je nog? Stuur ons een seintje — we bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Solliciteer via Recruitee",
+          cta1_url={
+              "url": {
+                "href": "https://salesup.recruitee.com/o/studentenjob-face2face/c/new",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=true,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}
+{% block extra_js %}{{ require_js(get_asset_url('../js/recruitee.js')) }}{% endblock %}

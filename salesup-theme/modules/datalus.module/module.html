@@ -1,0 +1,56 @@
+<section class="datalus" id="datalus" aria-labelledby="datalus-titel">
+  <div class="wrap">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="datalus-titel">{{ module.heading }}</h2>
+    {% if module.claim %}<p class="loop-claim">{{ module.claim }}</p>{% endif %}
+    <figure>
+      <div class="lus-scroll">
+<svg viewBox="0 0 1000 380" role="img" aria-label="Diagram van de salesUp-keten: een stijgende lijn met oranje datapunten die Marketing, Sales Contact Center, Training, Face2Face Sales en Sales Consultants verbindt, met een retourlus van omzet en data naar de volgende campagne. Het volledige tekst-equivalent staat hieronder." xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="aip-up" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+                <path class="lus-arrow" d="M2,10 L6,2 L10,10"/>
+              </marker>
+              <marker id="aip-back" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+                <path class="lus-arrow-back" d="M10,2 L2,6 L10,10"/>
+              </marker>
+            </defs>
+            <!-- Stijgende ketenlijn -->
+            <polyline class="lus-line" points="110,300 320,250 530,190 740,140 900,90" marker-end="url(#aip-up)"/>
+            <!-- Retourlus: omzet + data terug naar Marketing -->
+            <path class="lus-return" d="M900,110 C900,340 500,360 130,318" marker-end="url(#aip-back)"/>
+            <text class="lus-return-label" x="500" y="352" text-anchor="middle">omzet en data stromen terug naar de volgende campagne</text>
+            <!-- Nodes (canonieke volgorde) -->
+            <g>
+              <circle class="lus-node" cx="110" cy="300" r="9"/>
+              <text class="lus-node-label" x="110" y="330" text-anchor="middle">Marketing</text>
+              <text class="lus-sub" x="110" y="284" text-anchor="middle">lead + ideaal moment</text>
+
+              <circle class="lus-node" cx="320" cy="250" r="9"/>
+              <text class="lus-node-label" x="320" y="232" text-anchor="middle">Sales Contact Center</text>
+              <text class="lus-sub" x="320" y="216" text-anchor="middle">binnen 30 min gebeld · elk gesprek gescoord</text>
+
+              <circle class="lus-node" cx="530" cy="190" r="9"/>
+              <text class="lus-node-label" x="530" y="172" text-anchor="middle">Training</text>
+              <text class="lus-sub" x="530" y="156" text-anchor="middle">scores voeden AI-roleplays</text>
+
+              <circle class="lus-node" cx="740" cy="140" r="9"/>
+              <text class="lus-node-label" x="740" y="122" text-anchor="middle">Face2Face Sales</text>
+              <text class="lus-sub" x="740" y="106" text-anchor="middle">sterkere mensen in het veld</text>
+
+              <circle class="lus-node" cx="900" cy="90" r="9"/>
+              <text class="lus-node-label" x="900" y="72" text-anchor="middle">Sales Consultants</text>
+              <text class="lus-sub" x="900" y="56" text-anchor="middle">extra capaciteit, zelfde omkadering</text>
+            </g>
+          </svg>
+      </div>
+      {% if module.figcaption %}<figcaption>{{ module.figcaption }}</figcaption>{% endif %}
+    </figure>
+    {% if module.contrast %}<p class="loop-contrast">{{ module.contrast }}</p>{% endif %}
+    {% if module.quote %}
+    <blockquote class="loop-quote">
+      {{ module.quote }}
+      {% if module.quote_who %}<footer>{{ module.quote_who }}</footer>{% endif %}
+    </blockquote>
+    {% endif %}
+  </div>
+</section>

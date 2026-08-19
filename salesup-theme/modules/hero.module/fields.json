@@ -1,0 +1,395 @@
+[
+  {
+    "id": "eyebrow",
+    "name": "eyebrow",
+    "label": "Eyebrow (mono-labeltje)",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Face2Face Sales"
+  },
+  {
+    "id": "heading",
+    "name": "heading",
+    "label": "Titel (H1, zonder omhullende h1)",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": "Verkopen waar het telt: <em>oog in oog</em> met je klant."
+  },
+  {
+    "id": "subtext",
+    "name": "subtext",
+    "label": "Subtekst",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": "<p>Korte introzin onder de titel.</p>"
+  },
+  {
+    "id": "cta1_text",
+    "name": "cta1_text",
+    "label": "CTA 1 — tekst",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Plan een gesprek"
+  },
+  {
+    "id": "cta1_url",
+    "name": "cta1_url",
+    "label": "CTA 1 — link",
+    "required": false,
+    "locked": false,
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG"
+    ],
+    "show_advanced_rel_options": false,
+    "type": "link",
+    "display_width": null,
+    "default": {
+      "url": {
+        "type": "EXTERNAL",
+        "content_id": null,
+        "href": "/contact"
+      }
+    }
+  },
+  {
+    "id": "cta2_text",
+    "name": "cta2_text",
+    "label": "CTA 2 — tekst",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "cta2_url",
+    "name": "cta2_url",
+    "label": "CTA 2 — link",
+    "required": false,
+    "locked": false,
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG"
+    ],
+    "show_advanced_rel_options": false,
+    "type": "link",
+    "display_width": null,
+    "default": {
+      "url": {
+        "type": "EXTERNAL",
+        "content_id": null,
+        "href": "#"
+      }
+    }
+  },
+  {
+    "id": "terugbelnote",
+    "name": "terugbelnote",
+    "label": "Terugbel-notitie",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": "Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>"
+  },
+  {
+    "id": "note_energie",
+    "name": "note_energie",
+    "label": "Employer-brand accent op de notitie",
+    "required": false,
+    "locked": false,
+    "display": "checkbox",
+    "type": "boolean",
+    "display_width": null,
+    "default": false
+  },
+  {
+    "id": "chips",
+    "name": "chips",
+    "label": "Chips",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 0,
+      "max": 8,
+      "sorting_label_field": null,
+      "default": 0
+    },
+    "children": [
+      {
+        "id": "chips.link_label",
+        "name": "link_label",
+        "label": "Chip-tekst",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": "Chip"
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  },
+  {
+    "id": "trust_chips",
+    "name": "trust_chips",
+    "label": "Trust-chips (erkenningen)",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "sorting_label_field": null,
+      "default": 0
+    },
+    "children": [
+      {
+        "id": "trust_chips.link_label",
+        "name": "link_label",
+        "label": "Chip-HTML",
+        "required": false,
+        "locked": false,
+        "type": "html",
+        "display_width": null,
+        "default": ""
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  },
+  {
+    "id": "trust_aria",
+    "name": "trust_aria",
+    "label": "Trust-chips — aria-label",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Erkenningen en reviews"
+  },
+  {
+    "id": "media_type",
+    "name": "media_type",
+    "label": "Hero-media",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      [
+        "none",
+        "Geen"
+      ],
+      [
+        "collage",
+        "Collage (2 beelden)"
+      ],
+      [
+        "trustcard",
+        "Trustcard"
+      ],
+      [
+        "demopaneel",
+        "AI-demopaneel"
+      ]
+    ],
+    "multiple": false,
+    "reordering_enabled": true,
+    "preset": null,
+    "type": "choice",
+    "display_width": null,
+    "default": "trustcard"
+  },
+  {
+    "id": "image_main",
+    "name": "image_main",
+    "label": "Collage — hoofdbeeld",
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": true,
+    "show_loading": false,
+    "type": "image",
+    "display_width": null,
+    "default": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": "image_fit",
+    "name": "image_fit",
+    "label": "Beeldweergave (collage + trustcard)",
+    "help_text": "Cover vult het kader en kan bijsnijden. Contain toont het hele beeld, zonder afsnijden.",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      [
+        "cover",
+        "Cover (vullen)"
+      ],
+      [
+        "contain",
+        "Contain (volledig zichtbaar)"
+      ]
+    ],
+    "multiple": false,
+    "reordering_enabled": false,
+    "preset": null,
+    "type": "choice",
+    "display_width": null,
+    "default": "cover"
+  },
+  {
+    "id": "image_sub",
+    "name": "image_sub",
+    "label": "Collage — subbeeld",
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": true,
+    "show_loading": false,
+    "type": "image",
+    "display_width": null,
+    "default": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": "trustcard_aria",
+    "name": "trustcard_aria",
+    "label": "Trustcard — aria-label",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Bewijs"
+  },
+  {
+    "id": "trustcard_image",
+    "name": "trustcard_image",
+    "label": "Trustcard — beeld",
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": true,
+    "show_loading": false,
+    "type": "image",
+    "display_width": null,
+    "default": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": "trustcard_badge",
+    "name": "trustcard_badge",
+    "label": "Trustcard — badge (optioneel)",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "trustcard_stat",
+    "name": "trustcard_stat",
+    "label": "Trustcard — cijfer",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": "91%"
+  },
+  {
+    "id": "trustcard_label",
+    "name": "trustcard_label",
+    "label": "Trustcard — toelichting",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "trustcard_quote",
+    "name": "trustcard_quote",
+    "label": "Trustcard — quote",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "trustcard_quote_who",
+    "name": "trustcard_quote_who",
+    "label": "Trustcard — attributie",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "demo_aria",
+    "name": "demo_aria",
+    "label": "Demopaneel — aria-label",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Voorbeeldweergave van het salesUp-platform"
+  },
+  {
+    "id": "demo_html",
+    "name": "demo_html",
+    "label": "Demopaneel — HTML",
+    "required": false,
+    "locked": false,
+    "type": "html",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "demo_caption",
+    "name": "demo_caption",
+    "label": "Demopaneel — bijschrift",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": ""
+  }
+]

@@ -1,0 +1,5 @@
+/* HubSpot wrapt global modules soms; behoud navy-footer. */
+footer.site-footer,
+body > footer{
+  background:var(--grad-navy); color:var(--ink-dim); padding:64px 0 32px;
+}

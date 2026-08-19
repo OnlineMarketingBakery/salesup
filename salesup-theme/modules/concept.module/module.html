@@ -1,0 +1,16 @@
+{% if module.heading %}
+<section class="concept" aria-labelledby="concept-titel">
+  <div class="wrap concept-grid">
+    <div class="concept-lead">
+      {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
+      <h2 id="concept-titel">{{ module.heading }}</h2>
+      {% if module.tekst %}<div>{{ module.tekst }}</div>{% endif %}
+    </div>
+    <ul class="concept-chain">
+      {% for item in module.chain %}
+      <li><span class="cc-num">{{ item.num }}</span><div><strong>{{ item.title }}</strong><div>{{ item.tekst }}</div></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

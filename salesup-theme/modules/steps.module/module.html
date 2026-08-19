@@ -1,0 +1,12 @@
+<section class="section tight wrap" id="{{ module.anchor }}" aria-labelledby="{{ module.anchor }}-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="{{ module.anchor }}-titel">{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="steps">
+    {% for s in module.steps %}
+    <div class="step"><span class="mono">{{ s.num }}</span><div><strong>{{ s.title }}</strong><div>{{ s.tekst }}</div></div></div>
+    {% endfor %}
+  </div>
+</section>

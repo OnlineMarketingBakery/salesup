@@ -1,0 +1,168 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Hivolta
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Hivolta: De weg naar zonovergoten succes in online marketing\", \"about\": \"Hivolta\", \"description\": \"Hivolta - een toen nog startUp- klopte bij salesUp aan om hun merkbekendheid te vergroten, hun online aanwezigheid te versterken en leads te genereren.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/hivolta\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Hivolta\", \"item\": \"https://www.salesup.be/cases/hivolta\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/hivolta",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Hivolta",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Duurzame energie",
+          heading="Hivolta: De weg naar zonovergoten succes in online marketing",
+          subtext="<p>Hivolta - een toen nog startUp- klopte bij salesUp aan om hun merkbekendheid te vergroten, hun online aanwezigheid te versterken en leads te genereren.</p>",
+          meta_tags=[
+              {
+                "link_label": "Marketing"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "75",
+                "toelichting": "75 aanvragen op één kwartaal via de Google Advertentiecampagnes"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>In het zonovergoten landschap van Oost-Vlaanderen schittert een uniek verhaal van duurzame energie: Hivolta. Dit bedrijf omarmt de zon en maatwerk als geen ander. Geen standaardoplossingen hier, maar een persoonlijke benadering van elke klant.  Hivolta - een toen nog startUp- klopte bij salesUp aan om hun merkbekendheid te vergroten, hun online aanwezigheid te versterken en leads te genereren. We nemen je graag mee op een reis door het inspirerende succesverhaal van Hivolta.</p>\n<h2>De marketing uitdaging</h2>\n<p>De belangrijkste uitdaging waarmee Hivolta werd geconfronteerd, was het bereiken van de volgende marketingdoelstellingen:</p>\n<ul><li><strong>Awareness in Oost- en West-Vlaanderen</strong>: Het vergroten van de naamsbekendheid van Hivolta en hun producten in de aangegeven regio.</li><li><strong>Vindbaarheid in Google</strong>: Zorgen dat Hivolta verschijnt in Google-zoekresultaten wanneer potentiële klanten zochten naar termen zoals \"zonnepanelen\", \"thuisbatterijen\" en \"laadpalen\".<strong>Online</strong></li><li><strong>Leadgeneratie</strong>: Het laten groeien van de salesfunnel door het genereren van online leads.</li></ul>\n<h2>Verbluffende resultaten</h2>\n<p>Dankzij onze inspanningen hebben we opmerkelijke resultaten behaald:</p>\n<ul><li><strong>Awareness</strong>: Hivolta genoot een aanzienlijke toename in naamsbekendheid in Oost- en West-Vlaanderen.</li><li><strong>Vindbaarheid in Google</strong>: De website van Hivolta verscheen hoog in de zoekresultaten voor relevante zoekwoorden, en de SEO-inspanningen blijven de ranking verbeteren.</li><li><strong>Online leadgeneratie</strong>: We genereerden waardevolle online leads via <a href=\"/sea\">SEA</a> en <a href=\"/seo-geo\">SEO</a>, wat de salesfunnel aanzienlijk heeft vergroot.</li></ul>\n<h2>Ook jouw marketing uitbesteden?</h2>\n<p>\"Op één kwartaal haalden we 75 aanvragen met de Google Advertentiecampagnes die salesUp voor ons opzette. We zijn dan ook super enthousiast naar de volgende kwartalen\" - Cedric van Hivolta</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Hivolta deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/ichoosr",
+                    "type": "CONTENT", "content_id": 453268374754
+                  }
+                },
+                "sector": "Energie",
+                "naam": "iChoosr",
+                "stat": "Op rustige momenten enkele tientallen oproepen per dag, tijdens piekperiodes honderden per dag",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/immo-van-middelem",
+                    "type": "CONTENT", "content_id": 453268375760
+                  }
+                },
+                "sector": "Vastgoed",
+                "naam": "Immo Van Middelem",
+                "stat": "Bekijk de volledige case.",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/orange",
+                    "type": "CONTENT", "content_id": 453268493508
+                  }
+                },
+                "sector": "Telecom",
+                "naam": "Orange",
+                "stat": "Telesales België behaalde een score van 91% in de Europese audit – de hoogste score van Europa",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

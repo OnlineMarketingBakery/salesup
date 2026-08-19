@@ -1,0 +1,127 @@
+[
+  {
+    "id": "anchor",
+    "name": "anchor",
+    "label": "Sectie-id",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "platform"
+  },
+  {
+    "id": "eyebrow",
+    "name": "eyebrow",
+    "label": "Eyebrow",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Onze methodiek"
+  },
+  {
+    "id": "heading",
+    "name": "heading",
+    "label": "Titel (H2)",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Onderbouwd. Nooit buikgevoel."
+  },
+  {
+    "id": "intro",
+    "name": "intro",
+    "label": "Intro",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "points",
+    "name": "points",
+    "label": "Punten",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "sorting_label_field": null,
+      "default": 4
+    },
+    "children": [
+      {
+        "id": "points.num",
+        "name": "num",
+        "label": "Nummer",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": "01"
+      },
+      {
+        "id": "points.text",
+        "name": "text",
+        "label": "Tekst",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "display_width": null,
+        "default": ""
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  },
+  {
+    "id": "image",
+    "name": "image",
+    "label": "Beeld",
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": true,
+    "show_loading": false,
+    "type": "image",
+    "display_width": null,
+    "default": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": "image_fit",
+    "name": "image_fit",
+    "label": "Beeldweergave (object-fit)",
+    "help_text": "Cover vult het kader en kan bijsnijden. Contain toont het hele beeld, zonder afsnijden.",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      [
+        "cover",
+        "Cover (vullen)"
+      ],
+      [
+        "contain",
+        "Contain (volledig zichtbaar)"
+      ]
+    ],
+    "multiple": false,
+    "reordering_enabled": false,
+    "preset": null,
+    "type": "choice",
+    "display_width": null,
+    "default": "cover"
+  }
+]

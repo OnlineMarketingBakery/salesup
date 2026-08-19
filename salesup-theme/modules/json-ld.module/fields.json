@@ -1,0 +1,30 @@
+[ {
+  "id" : "json_ld",
+  "name" : "json_ld",
+  "label" : "JSON-LD (schema.org)",
+  "required" : false,
+  "locked" : false,
+  "type" : "html",
+  "display_width" : null,
+  "default" : "{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\"@type\":\"Service\",\"name\":\"Marketing\",\"serviceType\":\"Data-gedreven marketing\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/marketing\"},\n    {\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"serviceType\":\"Outbound sales & afsprakenplanning\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/sales-contact-center\"},\n    {\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"serviceType\":\"Field sales & werving\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/face2face-sales\"},\n    {\"@type\":\"Service\",\"name\":\"Training\",\"serviceType\":\"Sales training & meten\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/training\"},\n    {\"@type\":\"Service\",\"name\":\"Sales Consultants\",\"serviceType\":\"Sales detachering & advies\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/sales-consultants\"},\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"}\n      ]\n    }\n  ]\n}"
+}, {
+  "id" : "hreflang_nl",
+  "name" : "hreflang_nl",
+  "label" : "hreflang NL-URL",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "hreflang_fr",
+  "name" : "hreflang_fr",
+  "label" : "hreflang FR-URL (lokalisatie)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : ""
+} ]

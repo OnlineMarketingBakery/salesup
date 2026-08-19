@@ -1,0 +1,176 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Eurocircuits
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Meer verkopen voor Eurocircuits\", \"about\": \"Eurocircuits\", \"description\": \"Ontdek hoe salesUp Eurocircuits hielp om hun verkoopcijfers te verhogen met slimme strategieën.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/eurocircuits\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Eurocircuits\", \"item\": \"https://www.salesup.be/cases/eurocircuits\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/eurocircuits",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Eurocircuits",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          logo={
+              "src": "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg",
+              "alt": "Eurocircuits logo"
+            },
+          eyebrow="Client case · Elektronica (PCB's)",
+          heading="Meer verkopen voor Eurocircuits",
+          subtext="<p>Ontdek hoe salesUp Eurocircuits hielp om hun verkoopcijfers te verhogen met slimme strategieën.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "2019",
+                "toelichting": "Vijfjarige samenwerking (2019-2023): meer dan 140.653 belpogingen uitgevoerd"
+              },
+              {
+                "cijfer": "91,64%",
+                "toelichting": "Gemiddeld 91,64% van de klanten geholpen, verspreid over heel Europa"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>De samenwerking tussen salesUp en Eurocircuits vormt een indrukwekkend voorbeeld van hoe een effectieve <a href=\"/sales-contact-center\">telemarketingstrategie</a> kan bijdragen aan zakelijk succes. Dit partnership illustreert eens temeer het belang van een persoonlijke benadering in de B2B-sector en hoe een oprecht gesprek meer omzet oplevert dan een scriptgedreven strategie.</p>\n<h2>Prospectie voor Eurocircuits</h2>\n<p>Eurocircuits, gevestigd in Mechelen, is een vooraanstaande fabrikant van PCB's en PCBA's. Het bedrijf, opgericht in 1991, speelt een cruciale rol in de elektronicasector en biedt essentiële diensten aan die ontwikkelaars helpen om hun marktintroductietijd te verkorten​​​​​​.</p>\n<p>Eurocircuits is gespecialiseerd in de creatie van Printed Circuit Boards (PCB's) en de daaropvolgende Printed Circuit Board Assembly (PCBA), die fundamentele elementen zijn in de wereld van de elektronica. Hun state-of-the-art productieproces levert PCB's van hoge kwaliteit, variërend van eenvoudige single-layer ontwerpen tot complexe multi-layer structuren, essentieel voor diverse elektronische apparaten.</p>\n<p>In de PCBA-fase gaat Eurocircuits verder dan alleen het vervaardigen van PCB's, door elektronische componenten nauwkeurig te assembleren op de PCB's. Het ervaren team van Eurocircuits zorgt voor een nauwgezette plaatsing en soldeerwerk, een proces dat zowel precisie als expertise vereist. Dit stelt hen in staat om zowel prototypes als kleine productievolumes te ondersteunen, en garandeert betrouwbare en efficiënt functionerende elektronische apparaten voor hun klanten.</p>\n<p>Eurocircuits schakelde salesUp in voor het verwelkomen van nieuwe online geregistreerde klanten. Een tweede en gelijktijdig project was het bevragen van klanten die hun eerste levering ontvingen. Hier betrof het een tevredenheidsonderzoek.</p>\n<h2>Het project van salesUp met Eurocircuits</h2>\n<p>Het project van salesUp met Eurocircuits kenmerkte zich door een intensieve samenwerking en een gedetailleerd proces van klantencontact en -beheer.<br><br>Opstartfase: In de beginfase richtte salesUp zich op het bellen van klanten in België, Italië en Nederland, wat later uitgebreid werd naar andere landen, waaronder het Verenigd Koninkrijk en Duitsland. Dit vereiste een aanpassing in de taalvaardigheden en culturele benaderingen van het team. Om dit gevarieerd klantenbestand vlekkeloos te kunnen servicen, stond salesUp paraat met een meertalig salesteam dat in staat was iedereen aan te spreken in hun eigen voertaal.<br><br>Klantcontact: salesUp richtte zich op klanten die zich hadden geregistreerd op de website van Eurocircuits of een eerste bestelling hadden geplaatst. De gesprekken gingen over de ervaringen van de klant met de producten, het gebruik van de tools van Eurocircuits, en de achtergrond van de inschrijving of bestelling. Dit waren vooral gesprekken met ingenieurs, aankopers, binnendienstmedewerkers en productmanagers.</p>\n<h2>Uitdagingen</h2>\n<p>Een van de grootste uitdagingen was de variërende reactiesnelheid van de area managers, wat soms leidde tot vertragingen. salesUp overbrugde deze uitdaging door te focussen op directe en oprechte gesprekken met de klanten, waarbij ze hun snelle en kwalitatieve levering benadrukten, vooral tegenover concurrentie uit China.</p>\n<p>Een andere challenge was dat de targetgroep van deze campagne drukbezette profielen zijn die doorheen de werkdag meestal niet veel tijd over hebben, laat staan voor salesgesprekken. Om dit probleem het hoofd te bieden, was het cruciaal om de klanten en klanten meteen écht vast te grijpen. Om dit te realiseren, was het bovenal essentieel om te begrijpen wat hen bezighoudt in hun professionele bezigheden. Dit deed het salesUp team door hun gesprek volledig af te stemmen op de zorgen en behoeften van de klanten. Het begrijpen van hun uitdagingen, prioriteiten en wat zij waardevol vinden in een oplossing, stond steeds centraal. Dit vereiste een oprechte benadering, waarbij actief en aandachtig luisteren naar hun verhalen cruciaal was. Hierbij was de scriptloze aanpak, die salesUp reeds sinds 2005 toepast, het succesrecept. Alleen door volledige aandacht te geven aan het gesprek, zonder afgeleid te worden door vooraf bepaalde vragen, kan je immers écht luisteren en dus meer inzichten verzamelen over de behoeften van de klant.</p>\n<p>Deze gedetailleerde en persoonlijke aanpak resulteerde in een diepe klantenbinding en het succesvol adresseren van de specifieke behoeften van Eurocircuits klanten. Het illustreert hoe een zorgvuldig gecoördineerde telemarketingstrategie, verrijkt met persoonlijke interacties en culturele sensitiviteit, kan leiden tot significante zakelijke voordelen</p>\n<h2>Resultaten en bevindingen</h2>\n<p>Gedurende de vijfjarige samenwerking (2019-2023) voerde salesUp meer dan 140.653 belpogingen uit, waarbij gemiddeld 91.64% van de klanten werd geholpen, verspreid over heel Europa. Gezien de geldende benchmarks en de uitdagingen rond het onderwerp en de markt, zijn dit uitmuntende cijfers die de verwachtingen meer dan inlosten.</p>\n<p>De feedback die salesUp achteraf kreeg van Eurocircuits kreeg was dan ook unaniem: “We konden een heel aantal jaren gebruikmaken van de diensten van SalesUp. Dit was enkel mogelijk dankzij de zeer aangename samenwerking, de correcte opvolging en duidelijke communicatie. Kortom, steeds de professionele benadering die je van een dergelijke organisatie verwacht. Ik wens het bedrijf en alle medewerkers dan ook een uitermate mooie toekomst toe. Want we weten het allemaal... the only way is UP!!!</p>\n<h2>Conclusie: een oprecht gesprek is het beste saleswapen</h2>\n<p>De samenwerking tussen salesUp en Eurocircuits illustreert hoe essentieel menselijke interactie is in de wereld van <a href=\"/telesales\">telesales</a>. Het succes van dit project toont aan dat een scriptloze aanpak, waarbij echte gesprekken en actief luisteren centraal staan, leidt tot betere relaties en bedrijfsresultaten.</p>\n<p>Deze case benadrukt dat succes in telesales niet alleen wordt bepaald door aantallen en statistieken, maar vooral door de kwaliteit van de interacties en het vermogen om echt te verbinden met klanten.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Eurocircuits deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/jaguar-land-rover",
+                    "type": "CONTENT", "content_id": 453268397251
+                  }
+                },
+                "sector": "Automotive",
+                "naam": "Jaguar Land Rover",
+                "stat": "In totaal 154 leads doorgestuurd naar de dealers (34 aanvragen proefrit, 40 verzoeken offerte, 80 aanvragen direct dealercontact) in de periode dec. 2023 t/m juli 2024",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/astara",
+                    "type": "CONTENT", "content_id": 453268364479
+                  }
+                },
+                "sector": "Autosector",
+                "naam": "Astara",
+                "stat": "Gemiddelde productiviteit per informant lag 19% hoger dan tijdens het vorige Autosalon",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/liantis",
+                    "type": "CONTENT", "content_id": 453268379883
+                  }
+                },
+                "sector": "HR-dienstengroep",
+                "naam": "Liantis",
+                "stat": "Keynote van 90 minuten voor het volledige sales-team",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

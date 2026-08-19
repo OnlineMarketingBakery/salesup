@@ -1,0 +1,81 @@
+{# GLOBAL header. Mega-menu volgt de nieuwe IA (niet het live Attract/Boost/Keep-menu). #}
+{% macro page_url(id, fallback) -%}
+{%- set item = content_by_id(id) -%}
+{{- item.absolute_url if item and item.absolute_url else fallback -}}
+{%- endmacro %}
+{% set contact_href = page_url(453268184310, '/contact') %}
+<header>
+  <nav class="wrap" aria-label="Hoofdnavigatie">
+    <a href="{{ page_url(453268163816, '/') }}" class="logo" aria-label="salesUp home">
+      <img src="https://salesup.be/hubfs/Website%202024/logo-footer.svg" alt="salesUp" width="116" height="42" decoding="async">
+    </a>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="navlinks">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="navlinks" id="navlinks">
+      <div class="nav-item has-mega">
+        <a class="nav-top" href="{{ page_url(453268163816, '/') }}#diensten" aria-haspopup="true" aria-expanded="false">Wat we doen</a>
+        <div class="nav-mega" role="region" aria-label="Diensten">
+          <div class="wrap nav-mega-inner">
+            <p class="nav-mega-kicker mono">Vijf diensten, één keten</p>
+            <div class="nav-mega-grid">
+              <div class="nav-mega-col">
+                <a class="nav-mega-parent" href="{{ page_url(453268170965, '/marketing') }}">Marketing</a>
+                <a href="{{ page_url(453268311272, '/website') }}">Website</a>
+                <a href="{{ page_url(453268282609, '/social-ads') }}">Social ads</a>
+                <a href="{{ page_url(453268282562, '/seo-geo') }}">SEO / GEO</a>
+                <a href="{{ page_url(453268178164, '/sea') }}">SEA</a>
+                <a href="{{ page_url(453268161744, '/email') }}">E-mail</a>
+              </div>
+              <div class="nav-mega-col">
+                <a class="nav-mega-parent" href="{{ page_url(453268175089, '/sales-contact-center') }}">Sales Contact Center</a>
+                <a href="{{ page_url(453268307183, '/telesales') }}">Telesales</a>
+                <a href="{{ page_url(453268356322, '/afspraakplanning') }}">Afspraakplanning</a>
+                <a href="{{ page_url(453268358390, '/after-sales') }}">After sales</a>
+              </div>
+              <div class="nav-mega-col">
+                <a class="nav-mega-parent" href="{{ page_url(453268189404, '/face2face-sales') }}">Face2Face Sales</a>
+                <a href="{{ page_url(453268312296, '/events-beurzen') }}">Events &amp; beurzen</a>
+                <a href="{{ page_url(453268284621, '/studenten-promoteams') }}">Studenten &amp; promoteams</a>
+                <a href="{{ page_url(453268195575, '/retail-winkelvloer') }}">Retail &amp; winkelvloer</a>
+                <a href="{{ page_url(453268186333, '/deur-aan-deur') }}">Deur-aan-deur</a>
+              </div>
+              <div class="nav-mega-col">
+                <a class="nav-mega-parent" href="{{ page_url(453268285669, '/training') }}">Training</a>
+                <a href="{{ page_url(453268285688, '/trainingsplatform') }}">Trainingsplatform</a>
+                <a href="{{ page_url(453268171975, '/off-sites') }}">Off-sites</a>
+                <a href="{{ page_url(453268164824, '/inspiratiesessie') }}">Inspiratiesessie</a>
+                <a href="{{ page_url(453268184281, '/coachingstraject') }}">Coachingtraject</a>
+              </div>
+              <div class="nav-mega-col">
+                <a class="nav-mega-parent" href="{{ page_url(453268196580, '/sales-consultants') }}">Sales Consultants</a>
+                <a href="{{ page_url(453268177096, '/sales-audit') }}">Sales-audit</a>
+                <a href="{{ page_url(453268197610, '/sales-as-a-service') }}">Sales-as-a-service</a>
+                <a href="{{ page_url(453268185305, '/detachering') }}">Detachering</a>
+                <a href="{{ page_url(453268165858, '/interim-sales-management') }}">Interim sales management</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="{{ page_url(453268184251, '/cases') }}">Cases</a>
+      <a href="{{ page_url(453268195517, '/over-ons') }}">Over ons</a>
+      <a href="/blog">Blog</a>
+      <a href="{{ page_url(453268195541, '/groeipodcast-salesup') }}">Podcast</a>
+      <a href="{{ page_url(453268359396, '/ai-aanpak') }}">AI-aanpak</a>
+      <div class="nav-item has-drop">
+        <a class="nav-top" href="{{ page_url(453268312260, '/werken-bij') }}" aria-haspopup="true" aria-expanded="false">Vacatures</a>
+        <div class="nav-drop" role="region" aria-label="Vacatures">
+          <a href="{{ page_url(453268312260, '/werken-bij') }}">Alle jobs</a>
+          <a href="{{ page_url(453268169949, '/jobs-studenten') }}">Studenten &amp; Face2Face</a>
+          <a href="{{ page_url(453268166896, '/jobs-contact-center') }}">Contact Center</a>
+          <a href="{{ page_url(453268168921, '/jobs-sales-consultants') }}">Sales Consultants</a>
+        </div>
+      </div>
+      <a href="{{ module.cta_url.url.href|default(contact_href) }}" class="btn">{{ module.cta_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+    <div class="nav-cta">
+      <a href="{{ module.cta_url.url.href|default(contact_href) }}" class="btn">{{ module.cta_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </nav>
+</header>

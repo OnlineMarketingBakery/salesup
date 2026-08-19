@@ -1,0 +1,3088 @@
+{
+  "note": "Proposed HubSpot page Settings metadata. Applied in Step 6 immediately before publish (scripts/apply-step6-page-metadata.py). Not written until Step 6.",
+  "hubSpotPageSettings": {
+    "htmlTitle": "Required. HubSpot Settings → Page title. Blocks Publish if empty.",
+    "metaDescription": "Recommended. Settings → Meta description. SERP snippet, aim 140–160 characters.",
+    "language": "Recommended. nl for these drafts.",
+    "featuredImageUrl": "Optional. Settings → Featured image. Used for social share. Most templates still have empty src.",
+    "slug": "Separate Step 1. Still -temporary-slug-… on existing drafts. Three new cases use /cases/<slug> once HubSpot pages are created."
+  },
+  "totals": {
+    "draftPages": 66,
+    "missingHtmlTitle": 66,
+    "missingMetaDescription": 66,
+    "missingFeaturedImage": 66,
+    "pagesWithContentWarnings": 7,
+    "genericTemplatePagesDoNotPublish": 5
+  },
+  "pages": [
+    {
+      "id": "453268184251",
+      "name": "Cases",
+      "currentSlug": "-temporary-slug-16d80ae4-83f0-4b34-a5b7-48a47debfd88",
+      "draftSlugNow": "cases",
+      "goLiveSlug": "cases",
+      "templatePath": "salesup-theme/templates/cases.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Cases | salesUp",
+        "htmlTitleChars": 15,
+        "metaDescription": "De gepubliceerde client-cases van salesUp, telkens met de klantnaam en het harde cijfer erbij. Elke case hieronder is een echte samenwerking van salesUp",
+        "metaDescriptionChars": 152,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Cases",
+        "heading": "De resultaten die we mochten publiceren — zwart op wit.",
+        "subtext": "Elke case hieronder is een echte samenwerking van salesUp, met de klantnaam en het harde cijfer erbij. We meten elk resultaat tegenover een vooraf afgesproken doel — en wat we niet zwart op wit kunnen maken, publiceren we niet. Filter op de dienst die je zoekt.",
+        "jsonLdName": "Cases van salesUp",
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "De gepubliceerde client-cases van salesUp, telkens met de klantnaam en het harde cijfer erbij."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268386037",
+      "name": "Cases - Alindus",
+      "currentSlug": "-temporary-slug-3ed0359e-0d81-489d-830d-d8d7c233a87a",
+      "draftSlugNow": "cases/alindus",
+      "goLiveSlug": "cases/alindus",
+      "templatePath": "salesup-theme/templates/case-alindus.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Alindus | Case | salesUp",
+        "htmlTitleChars": 24,
+        "metaDescription": "Lees hoe salesUp Alindus ondersteunt met strategische telefonische prospectie voor groei. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 145,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Groothandel & distributie",
+        "heading": "salesUp strategische telefonische prospectie partner van Alindus",
+        "subtext": "Lees hoe salesUp Alindus ondersteunt met strategische telefonische prospectie voor groei.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "salesUp strategische telefonische prospectie partner van Alindus",
+        "jsonLdDescription": "Lees hoe salesUp Alindus ondersteunt met strategische telefonische prospectie voor groei."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268364479",
+      "name": "Cases - Astara",
+      "currentSlug": "-temporary-slug-06f8aa51-9e93-4d05-8f13-26b5772f9e41",
+      "draftSlugNow": "cases/astara",
+      "goLiveSlug": "cases/astara",
+      "templatePath": "salesup-theme/templates/case-astara.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Astara | Case | salesUp",
+        "htmlTitleChars": 23,
+        "metaDescription": "Ontdek hoe Astara en salesUp tijdens het Brussels Motor Show inzetten op menselijk contact, energie en klantbeleving om meer leads, vertrouwen en duurzame",
+        "metaDescriptionChars": 154,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Autosector",
+        "heading": "Astara x salesUp: hoe menselijk contact het verschil maakt in de autosector",
+        "subtext": "Ontdek hoe Astara en salesUp tijdens het Brussels Motor Show inzetten op menselijk contact, energie en klantbeleving om meer leads, vertrouwen en duurzame groei te realiseren.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Astara x salesUp: hoe menselijk contact het verschil maakt in de autosector",
+        "jsonLdDescription": "Ontdek hoe Astara en salesUp tijdens het Brussels Motor Show inzetten op menselijk contact, energie en klantbeleving om meer leads, vertrouwen en duurzame groei te realiseren."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268364529",
+      "name": "Cases - Axians",
+      "currentSlug": "-temporary-slug-65b18326-fc92-4cc1-9b7d-ae706f8f528b",
+      "draftSlugNow": "cases/axians",
+      "goLiveSlug": "cases/axians",
+      "templatePath": "salesup-theme/templates/case-axians.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Axians | Case | salesUp",
+        "htmlTitleChars": 23,
+        "metaDescription": "Lees hoe salesUp Axians heeft geholpen om meer klanten te bereiken met gerichte prospectie. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 147,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Audiovisuele oplossingen",
+        "heading": "salesUp verhoogt leads & sales voor Axians Audiovisual",
+        "subtext": "Lees hoe salesUp Axians heeft geholpen om meer klanten te bereiken met gerichte prospectie.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "salesUp verhoogt leads & sales voor Axians Audiovisual",
+        "jsonLdDescription": "Lees hoe salesUp Axians heeft geholpen om meer klanten te bereiken met gerichte prospectie."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268183261",
+      "name": "Cases - Detail",
+      "currentSlug": "-temporary-slug-26d2a488-2456-4b02-8fe6-9271c28045ff",
+      "draftSlugNow": "template-case-detail",
+      "goLiveSlug": null,
+      "templatePath": "salesup-theme/templates/case-detail.html",
+      "doNotPublish": true,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Cases - Detail | salesUp",
+        "htmlTitleChars": 24,
+        "metaDescription": "Cases - Detail. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 71,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": null,
+        "heading": null,
+        "subtext": null,
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268393162",
+      "name": "Cases - EV Shop",
+      "currentSlug": "-temporary-slug-2a3d5ec8-41f6-43fd-bca2-c019fb20b00d",
+      "draftSlugNow": "cases/ev-shop",
+      "goLiveSlug": "cases/ev-shop",
+      "templatePath": "salesup-theme/templates/case-ev-shop.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "EV Shop | Case | salesUp",
+        "htmlTitleChars": 24,
+        "metaDescription": "Ontdek hoe salesUp EV Shop hielp met succesvolle telefonische prospectie voor groei. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 140,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Elektrische voertuigen",
+        "heading": "Telefonische prospectie voor EV Shop",
+        "subtext": "Ontdek hoe salesUp EV Shop hielp met succesvolle telefonische prospectie voor groei.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Telefonische prospectie voor EV Shop",
+        "jsonLdDescription": "Ontdek hoe salesUp EV Shop hielp met succesvolle telefonische prospectie voor groei."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268371675",
+      "name": "Cases - Eurocircuits",
+      "currentSlug": "-temporary-slug-2a2cc9eb-b598-4d2e-a530-89ff8bae86f6",
+      "draftSlugNow": "cases/eurocircuits",
+      "goLiveSlug": "cases/eurocircuits",
+      "templatePath": "salesup-theme/templates/case-eurocircuits.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Eurocircuits | Case | salesUp",
+        "htmlTitleChars": 29,
+        "metaDescription": "Ontdek hoe salesUp Eurocircuits hielp om hun verkoopcijfers te verhogen met slimme strategieën. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 151,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Elektronica (PCB's)",
+        "heading": "Meer verkopen voor Eurocircuits",
+        "subtext": "Ontdek hoe salesUp Eurocircuits hielp om hun verkoopcijfers te verhogen met slimme strategieën.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Meer verkopen voor Eurocircuits",
+        "jsonLdDescription": "Ontdek hoe salesUp Eurocircuits hielp om hun verkoopcijfers te verhogen met slimme strategieën."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268372723",
+      "name": "Cases - Geodis",
+      "currentSlug": "-temporary-slug-3b2ab3aa-cca6-4d64-a983-463f28252e41",
+      "draftSlugNow": "cases/geodis",
+      "goLiveSlug": "cases/geodis",
+      "templatePath": "salesup-theme/templates/case-geodis.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Geodis | Case | salesUp",
+        "htmlTitleChars": 23,
+        "metaDescription": "Ontdek hoe salesUp de wereldwijde groei van Geodis heeft ondersteund met effectieve strategieën. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 152,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Logistiek",
+        "heading": "salesUp versterkt de wereldwijde aanwezigheid van GEODIS",
+        "subtext": "Ontdek hoe salesUp de wereldwijde groei van Geodis heeft ondersteund met effectieve strategieën.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "salesUp versterkt de wereldwijde aanwezigheid van GEODIS",
+        "jsonLdDescription": "Ontdek hoe salesUp de wereldwijde groei van Geodis heeft ondersteund met effectieve strategieën."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268393209",
+      "name": "Cases - Hivolta",
+      "currentSlug": "-temporary-slug-8358bf07-b2ee-47ea-9bb6-7e6e5f28100d",
+      "draftSlugNow": "cases/hivolta",
+      "goLiveSlug": "cases/hivolta",
+      "templatePath": "salesup-theme/templates/case-hivolta.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Hivolta | Case | salesUp",
+        "htmlTitleChars": 24,
+        "metaDescription": "Hivolta - een toen nog startUp- klopte bij salesUp aan om hun merkbekendheid te vergroten, hun online aanwezigheid te versterken en leads te genereren.",
+        "metaDescriptionChars": 151,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Duurzame energie",
+        "heading": "Hivolta: De weg naar zonovergoten succes in online marketing",
+        "subtext": "Hivolta - een toen nog startUp- klopte bij salesUp aan om hun merkbekendheid te vergroten, hun online aanwezigheid te versterken en leads te genereren.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Hivolta: De weg naar zonovergoten succes in online marketing",
+        "jsonLdDescription": "Hivolta - een toen nog startUp- klopte bij salesUp aan om hun merkbekendheid te vergroten, hun online aanwezigheid te versterken en leads te genereren."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268375760",
+      "name": "Cases - Immo Van Middelem",
+      "currentSlug": "-temporary-slug-b62509ee-83cf-4813-9317-283c963d80c8",
+      "draftSlugNow": "cases/immo-van-middelem",
+      "goLiveSlug": "cases/immo-van-middelem",
+      "templatePath": "salesup-theme/templates/case-immo-van-middelem.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Immo Van Middelem | Case | salesUp",
+        "htmlTitleChars": 34,
+        "metaDescription": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice.",
+        "metaDescriptionChars": 117,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Vastgoed",
+        "heading": "Een Naadloze Samenwerking tussen salesUp en Immo Van Middelem",
+        "subtext": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Een Naadloze Samenwerking tussen salesUp en Immo Van Middelem",
+        "jsonLdDescription": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268397251",
+      "name": "Cases - Jaguar Land Rover",
+      "currentSlug": "-temporary-slug-1fe19b91-3021-460d-a37c-144fc39dcc45",
+      "draftSlugNow": "cases/jaguar-land-rover",
+      "goLiveSlug": "cases/jaguar-land-rover",
+      "templatePath": "salesup-theme/templates/case-jaguar-land-rover.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Jaguar Land Rover | Case | salesUp",
+        "htmlTitleChars": 34,
+        "metaDescription": "Ontdek hoe salesUp Jaguar Land Rover Benelux hielp om effectieve leads te genereren. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 140,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Automotive",
+        "heading": "Jaguar Land Rover BeNeLux kiest salesUp voor effectieve leads",
+        "subtext": "Ontdek hoe salesUp Jaguar Land Rover Benelux hielp om effectieve leads te genereren.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Jaguar Land Rover BeNeLux kiest salesUp voor effectieve leads",
+        "jsonLdDescription": "Ontdek hoe salesUp Jaguar Land Rover Benelux hielp om effectieve leads te genereren."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268379883",
+      "name": "Cases - Liantis",
+      "currentSlug": "-temporary-slug-d03da23c-5198-4a43-993a-424783dcc177",
+      "draftSlugNow": "cases/liantis",
+      "goLiveSlug": "cases/liantis",
+      "templatePath": "salesup-theme/templates/case-liantis.html",
+      "doNotPublish": false,
+      "contentWarnings": [
+        "JSON-LD description mentions Immo Van Middelem, not Liantis; using hero subtext instead.",
+        "Hero/JSON-LD copy also mentions Immo Van Middelem; proposed meta uses case heading instead."
+      ],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Liantis | Case | salesUp",
+        "htmlTitleChars": 24,
+        "metaDescription": "Liantis x salesUp: mensen laten groeien om groei mogelijk te maken. Resultaten van salesUp voor Liantis.",
+        "metaDescriptionChars": 104,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · HR-dienstengroep",
+        "heading": "Liantis x salesUp: mensen laten groeien om groei mogelijk te maken",
+        "subtext": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Liantis x salesUp: mensen laten groeien om groei mogelijk te maken",
+        "jsonLdDescription": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268491493",
+      "name": "Cases - Messer Group",
+      "currentSlug": "-temporary-slug-19b81cb5-de16-4ddb-86ac-a265d34af72a",
+      "draftSlugNow": "cases/messer-group",
+      "goLiveSlug": "cases/messer-group",
+      "templatePath": "salesup-theme/templates/case-messer-group.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Messer Group | Case | salesUp",
+        "htmlTitleChars": 29,
+        "metaDescription": "Lees over de duurzame samenwerking tussen salesUp en Messer Group voor betere resultaten. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 145,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Industriële gassen",
+        "heading": "Duurzame samenwerking tussen Messer Group en salesUp",
+        "subtext": "Lees over de duurzame samenwerking tussen salesUp en Messer Group voor betere resultaten.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Duurzame samenwerking tussen Messer Group en salesUp",
+        "jsonLdDescription": "Lees over de duurzame samenwerking tussen salesUp en Messer Group voor betere resultaten."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268493508",
+      "name": "Cases - Orange",
+      "currentSlug": "-temporary-slug-b542140c-df81-4b4a-9907-4b7755ef0003",
+      "draftSlugNow": "cases/orange",
+      "goLiveSlug": "cases/orange",
+      "templatePath": "salesup-theme/templates/case-orange.html",
+      "doNotPublish": false,
+      "contentWarnings": [
+        "JSON-LD description mentions Immo Van Middelem, not Orange; using hero subtext instead.",
+        "Hero/JSON-LD copy also mentions Immo Van Middelem; proposed meta uses case heading instead."
+      ],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Orange | Case | salesUp",
+        "htmlTitleChars": 23,
+        "metaDescription": "Orange en salesUp: één team, één doel, één constante groei. Resultaten van salesUp voor Orange.",
+        "metaDescriptionChars": 95,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Telecom",
+        "heading": "Orange en salesUp: één team, één doel, één constante groei",
+        "subtext": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Orange en salesUp: één team, één doel, één constante groei",
+        "jsonLdDescription": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268494546",
+      "name": "Cases - Q8 Oils",
+      "currentSlug": "-temporary-slug-fba2c8a4-025a-4133-b59e-b1cfccd8f456",
+      "draftSlugNow": "cases/q8oils",
+      "goLiveSlug": "cases/q8oils",
+      "templatePath": "salesup-theme/templates/case-q8oils.html",
+      "doNotPublish": false,
+      "contentWarnings": [
+        "JSON-LD description mentions Q8Oils, not Q8 Oils; using hero subtext instead.",
+        "Hero/JSON-LD copy also mentions Q8Oils; proposed meta uses case heading instead."
+      ],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Q8 Oils | Case | salesUp",
+        "htmlTitleChars": 24,
+        "metaDescription": "Q8Oils: Een geoliede samenwerking voor B2B-prospectie. Resultaten van salesUp voor Q8 Oils.",
+        "metaDescriptionChars": 91,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Brandstoffen & smeermiddelen",
+        "heading": "Q8Oils: Een geoliede samenwerking voor B2B-prospectie",
+        "subtext": "Ontdek hoe salesUp Q8Oils heeft geholpen om hun salesstrategie en resultaten te versterken.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Q8Oils: Een geoliede samenwerking voor B2B-prospectie",
+        "jsonLdDescription": "Ontdek hoe salesUp Q8Oils heeft geholpen om hun salesstrategie en resultaten te versterken."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268029669",
+      "name": "Cases - Radiance Energy",
+      "currentSlug": "-temporary-slug-cab19822-beef-4ba7-8f12-93e4b4def8b5",
+      "draftSlugNow": "cases/radiance-energy",
+      "goLiveSlug": "cases/radiance-energy",
+      "templatePath": "salesup-theme/templates/case-radiance-energy.html",
+      "doNotPublish": false,
+      "contentWarnings": [
+        "JSON-LD description mentions Ikaros, not Radiance Energy; using hero subtext instead.",
+        "Hero/JSON-LD copy also mentions Ikaros; proposed meta uses case heading instead."
+      ],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Radiance Energy | Case | salesUp",
+        "htmlTitleChars": 32,
+        "metaDescription": "Telefonische prospectie voor Radiance Energy. Resultaten van salesUp voor Radiance Energy.",
+        "metaDescriptionChars": 90,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Duurzame energie",
+        "heading": "Telefonische prospectie voor Radiance Energy",
+        "subtext": "Lees hoe salesUp Ikaros Solar ondersteunde met gerichte prospectie voor betere verkoopresultaten.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Telefonische prospectie voor Radiance Energy",
+        "jsonLdDescription": "Lees hoe salesUp Ikaros Solar ondersteunde met gerichte prospectie voor betere verkoopresultaten."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268038868",
+      "name": "Cases - SPM Technologies",
+      "currentSlug": "-temporary-slug-a8bb2237-9c89-422b-9cff-18844aa528b5",
+      "draftSlugNow": "cases/spm",
+      "goLiveSlug": "cases/spm",
+      "templatePath": "salesup-theme/templates/case-spm.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "SPM Technologies | Case | salesUp",
+        "htmlTitleChars": 33,
+        "metaDescription": "Ontdek hoe salesUp de verwachtingen van SPM overtrof met resultaatgerichte salesstrategieën. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 148,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Proptech / software voor syndici",
+        "heading": "Meer verkopen voor SPM",
+        "subtext": "Ontdek hoe salesUp de verwachtingen van SPM overtrof met resultaatgerichte salesstrategieën.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Meer verkopen voor SPM",
+        "jsonLdDescription": "Ontdek hoe salesUp de verwachtingen van SPM overtrof met resultaatgerichte salesstrategieën."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268665592",
+      "name": "Cases - Trustteam",
+      "currentSlug": "-temporary-slug-37f28b2a-f32d-4475-94d4-40ab40c970a0",
+      "draftSlugNow": "cases/trustteam",
+      "goLiveSlug": "cases/trustteam",
+      "templatePath": "salesup-theme/templates/case-trustteam.html",
+      "doNotPublish": false,
+      "contentWarnings": [
+        "JSON-LD description mentions Immo Van Middelem, not Trustteam; using hero subtext instead.",
+        "Hero/JSON-LD copy also mentions Immo Van Middelem; proposed meta uses case heading instead."
+      ],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Trustteam | Case | salesUp",
+        "htmlTitleChars": 26,
+        "metaDescription": "Trustteam x salesUp: groei versnellen met hetzelfde DNA. Resultaten van salesUp voor Trustteam.",
+        "metaDescriptionChars": 95,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · IT-diensten",
+        "heading": "Trustteam x salesUp: groei versnellen met hetzelfde DNA",
+        "subtext": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Trustteam x salesUp: groei versnellen met hetzelfde DNA",
+        "jsonLdDescription": "Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268041941",
+      "name": "Cases - UNIZO",
+      "currentSlug": "-temporary-slug-f77215f8-419a-4bb3-926e-60da03271bc4",
+      "draftSlugNow": "cases/unizo",
+      "goLiveSlug": "cases/unizo",
+      "templatePath": "salesup-theme/templates/case-unizo.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "UNIZO | Case | salesUp",
+        "htmlTitleChars": 22,
+        "metaDescription": "Ontdek hoe salesUp samenwerkte met Unizo om ondernemers te ondersteunen in groei en succes. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 147,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Ondernemersorganisatie",
+        "heading": "Prospectie voor Unizo",
+        "subtext": "Ontdek hoe salesUp samenwerkte met Unizo om ondernemers te ondersteunen in groei en succes.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Prospectie voor Unizo",
+        "jsonLdDescription": "Ontdek hoe salesUp samenwerkte met Unizo om ondernemers te ondersteunen in groei en succes."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268668617",
+      "name": "Cases - Upgrade Estate",
+      "currentSlug": "-temporary-slug-81ffbb54-1f52-466f-a2db-b98043009497",
+      "draftSlugNow": "cases/upgrade-estate",
+      "goLiveSlug": "cases/upgrade-estate",
+      "templatePath": "salesup-theme/templates/case-upgrade-estate.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Upgrade Estate | Case | salesUp",
+        "htmlTitleChars": 31,
+        "metaDescription": "Verbeter je verkoopresultaten met gerichte telefonische prospectie. Upgrade Estate en salesUp behalen samen succesvolle afspraken en zorgen voor groei in",
+        "metaDescriptionChars": 153,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Vastgoed",
+        "heading": "Telefonische prospectie voor Upgrade Estate",
+        "subtext": "Verbeter je verkoopresultaten met gerichte telefonische prospectie. Upgrade Estate en salesUp behalen samen succesvolle afspraken en zorgen voor groei in de vastgoedsector.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Telefonische prospectie voor Upgrade Estate",
+        "jsonLdDescription": "Verbeter je verkoopresultaten met gerichte telefonische prospectie. Upgrade Estate en salesUp behalen samen succesvolle afspraken en zorgen voor groei in de vastgoedsector."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268043979",
+      "name": "Cases - VM Building Solutions",
+      "currentSlug": "-temporary-slug-e3e9ce6f-25bc-48a8-a0b1-98bf97937ae2",
+      "draftSlugNow": "cases/vm-building",
+      "goLiveSlug": "cases/vm-building",
+      "templatePath": "salesup-theme/templates/case-vm-building.html",
+      "doNotPublish": false,
+      "contentWarnings": [
+        "JSON-LD description mentions VM Building, not VM Building Solutions; using hero subtext instead.",
+        "Hero/JSON-LD copy also mentions VM Building; proposed meta uses case heading instead."
+      ],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "VM Building Solutions | Case | salesUp",
+        "htmlTitleChars": 38,
+        "metaDescription": "Telefonische prospectie voor VM Building Solutions. Resultaten van salesUp voor VM Building Solutions.",
+        "metaDescriptionChars": 102,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Bouw",
+        "heading": "Telefonische prospectie voor VM Building Solutions",
+        "subtext": "Lees hoe salesUp VM Building Services hielp met het genereren van meer afspraken en leads.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Telefonische prospectie voor VM Building Solutions",
+        "jsonLdDescription": "Lees hoe salesUp VM Building Services hielp met het genereren van meer afspraken en leads."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268669671",
+      "name": "Cases - Van Heurck",
+      "currentSlug": "-temporary-slug-e0a5b12b-78bd-48f5-b4f0-5817260de206",
+      "draftSlugNow": "cases/van-heurck",
+      "goLiveSlug": "cases/van-heurck",
+      "templatePath": "salesup-theme/templates/case-van-heurck.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Van Heurck | Case | salesUp",
+        "htmlTitleChars": 27,
+        "metaDescription": "Ontdek hoe VH met salesUp's strategische marktbevraging 26,28% conversie behaalt. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 137,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Bedrijfskleding",
+        "heading": "Van Heurck: Strategische marktbevraging transformeert verkoopaanpak",
+        "subtext": "Ontdek hoe VH met salesUp's strategische marktbevraging 26,28% conversie behaalt.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Van Heurck: Strategische marktbevraging transformeert verkoopaanpak",
+        "jsonLdDescription": "Ontdek hoe VH met salesUp's strategische marktbevraging 26,28% conversie behaalt."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268044009",
+      "name": "Cases - Zambon",
+      "currentSlug": "-temporary-slug-f4f903a7-be6b-4f59-85e4-18858572203f",
+      "draftSlugNow": "cases/zambon",
+      "goLiveSlug": "cases/zambon",
+      "templatePath": "salesup-theme/templates/case-zambon.html",
+      "doNotPublish": false,
+      "contentWarnings": [
+        "JSON-LD description mentions iChoosr, not Zambon; using hero subtext instead.",
+        "Hero/JSON-LD copy also mentions iChoosr; proposed meta uses case heading instead."
+      ],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Zambon | Case | salesUp",
+        "htmlTitleChars": 23,
+        "metaDescription": "Zambon – Hybrid Sales Training: Vlot schakelen van face-to-face naar telesales. Resultaten van salesUp voor Zambon.",
+        "metaDescriptionChars": 115,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Farmaceutisch",
+        "heading": "Zambon – Hybrid Sales Training: Vlot schakelen van face-to-face naar telesales",
+        "subtext": "salesUp helpt iChoosr met proactieve klantopvolging en flexibele ondersteuning tijdens piekperiodes.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Zambon – Hybrid Sales Training: Vlot schakelen van face-to-face naar telesales",
+        "jsonLdDescription": "salesUp helpt iChoosr met proactieve klantopvolging en flexibele ondersteuning tijdens piekperiodes."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268374754",
+      "name": "Cases - iChoosr",
+      "currentSlug": "-temporary-slug-d842a9d6-0bf3-495e-90ef-42e9bc3ce3cc",
+      "draftSlugNow": "cases/ichoosr",
+      "goLiveSlug": "cases/ichoosr",
+      "templatePath": "salesup-theme/templates/case-ichoosr.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "iChoosr | Case | salesUp",
+        "htmlTitleChars": 24,
+        "metaDescription": "salesUp helpt iChoosr met proactieve klantopvolging en flexibele ondersteuning tijdens piekperiodes. salesUp, Belgische commerciële groeipartner sinds",
+        "metaDescriptionChars": 150,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Client case · Energie",
+        "heading": "Flexibele klantondersteuning voor iChoosr",
+        "subtext": "salesUp helpt iChoosr met proactieve klantopvolging en flexibele ondersteuning tijdens piekperiodes.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Flexibele klantondersteuning voor iChoosr",
+        "jsonLdDescription": "salesUp helpt iChoosr met proactieve klantopvolging en flexibele ondersteuning tijdens piekperiodes."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268184310",
+      "name": "Contact",
+      "currentSlug": "-temporary-slug-83c796f3-bdef-4773-bbcb-0810d6a5d73d",
+      "draftSlugNow": "contact-nieuw",
+      "goLiveSlug": "contact",
+      "templatePath": "salesup-theme/templates/contact.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Contact | salesUp",
+        "htmlTitleChars": 17,
+        "metaDescription": "Vertel ons kort waar je staat en wat je wil bereiken. We denken meteen met je mee — en we bellen je binnen 30 minuten terug.",
+        "metaDescriptionChars": 124,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Contact",
+        "heading": "Zin om te groeien? Eén gesprek volstaat.",
+        "subtext": "Vertel ons kort waar je staat en wat je wil bereiken. We denken meteen met je mee — en we bellen je binnen 30 minuten terug.",
+        "jsonLdName": "Contact salesUp",
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268189404",
+      "name": "Diensten - Face2Face Sales",
+      "currentSlug": "-temporary-slug-ca85a715-6c1b-41ce-a303-f2e7826ec984",
+      "draftSlugNow": "face2face-sales",
+      "goLiveSlug": "face2face-sales",
+      "templatePath": "salesup-theme/templates/dienst-face2face.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Face2Face Sales | salesUp",
+        "htmlTitleChars": 25,
+        "metaDescription": "Verkopers en wervers face-to-face in het veld, bij de prospect of op locatie. Omnichannel opgevolgd, met dezelfde kwaliteitsbewaking en",
+        "metaDescriptionChars": 135,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Face2Face Sales",
+        "heading": "Verkopen waar het telt: oog in oog met je klant.",
+        "subtext": "Wij zetten verkopers en wervers face-to-face in het veld — bij je prospect op locatie, op events en beurzen, op de winkelvloer of deur-aan-deur. Elk contact wordt omnichannel opgevolgd tot in je CRM, met dezelfde kwaliteitsbewaking en het afrekenen-op-resultaat van ons Sales Contact Center.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Verkopers en wervers face-to-face in het veld, bij de prospect of op locatie. Omnichannel opgevolgd, met dezelfde kwaliteitsbewaking en afrekenen-op-resultaat als het Sales Contact Center."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268186333",
+      "name": "Diensten - Face2Face Sales - Deur-aan-deur (D2D)",
+      "currentSlug": "-temporary-slug-890168c9-9428-4032-bfd4-8df1f44fa55d",
+      "draftSlugNow": "deur-aan-deur",
+      "goLiveSlug": "deur-aan-deur",
+      "templatePath": "salesup-theme/templates/deur-aan-deur.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Face2Face Sales · Deur-aan-deur | salesUp",
+        "htmlTitleChars": 41,
+        "metaDescription": "Persoonlijke werving en verkoop aan de deur door een getraind team, met kwaliteitsscreening, omnichannel-opvolging tot in het CRM en afrekenen op",
+        "metaDescriptionChars": 145,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Face2Face Sales · Deur-aan-deur",
+        "heading": "Verkoop aan de deur, zonder de slechte reputatie.",
+        "subtext": "Persoonlijke werving en verkoop aan de deur door een getraind team dat met respect voor de bewoner werkt. We zetten in op kwaliteit boven volume: elk gesprek wordt gescoord, een vaste salescoach loopt mee in de wijk en elk contact wordt omnichannel opgevolgd tot in je CRM — met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Persoonlijke werving en verkoop aan de deur door een getraind team, met kwaliteitsscreening, omnichannel-opvolging tot in het CRM en afrekenen op resultaat."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268312296",
+      "name": "Diensten - Face2Face Sales - Events & beurzen",
+      "currentSlug": "-temporary-slug-500477ff-cb09-4605-9bce-bffe700576fa",
+      "draftSlugNow": "events-beurzen",
+      "goLiveSlug": "events-beurzen",
+      "templatePath": "salesup-theme/templates/events-beurzen.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Face2Face Sales · Events & beurzen | salesUp",
+        "htmlTitleChars": 44,
+        "metaDescription": "Een getraind verkoopteam op je stand of event dat leads capteert, kwalificeert en warm doorgeeft, met een creatief standconcept en omnichannel-opvolging",
+        "metaDescriptionChars": 152,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Face2Face Sales · Events & beurzen",
+        "heading": "Van je stand een verkoopmachine maken.",
+        "subtext": "Een getraind verkoopteam op je stand of event dat bezoekers actief aanspreekt, leads capteert én kwalificeert en warm doorgeeft. Rond je aanwezigheid bouwen we een creatief concept dat mensen doet stoppen, elk gesprek wordt gescoord en omnichannel opgevolgd tot in je CRM — met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een getraind verkoopteam op je stand of event dat leads capteert, kwalificeert en warm doorgeeft, met een creatief standconcept en omnichannel-opvolging tot in het CRM."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268195575",
+      "name": "Diensten - Face2Face Sales - Retail & winkelvloer",
+      "currentSlug": "-temporary-slug-9e6bf081-f381-4563-aa70-512c90b224ae",
+      "draftSlugNow": "retail-winkelvloer",
+      "goLiveSlug": "retail-winkelvloer",
+      "templatePath": "salesup-theme/templates/retail-winkelvloer.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Face2Face Sales · Retail & winkelvloer | salesUp",
+        "htmlTitleChars": 48,
+        "metaDescription": "Getrainde verkopers op de winkelvloer die klanten aanspreken, adviseren en de verkoop afronden, opgeleid op jouw assortiment, dagelijks gecoacht en",
+        "metaDescriptionChars": 147,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Face2Face Sales · Retail & winkelvloer",
+        "heading": "Verkopers op de vloer die écht verkopen.",
+        "subtext": "Getrainde verkopers op je winkelvloer die klanten aanspreken, adviseren en de verkoop afronden — geen ingevulde uren, maar salesmensen opgeleid op jouw assortiment. Ze worden dagelijks gecoacht door een vaste salescoach en gescoord op elk gesprek, met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Getrainde verkopers op de winkelvloer die klanten aanspreken, adviseren en de verkoop afronden, opgeleid op jouw assortiment, dagelijks gecoacht en gescoord."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268284621",
+      "name": "Diensten - Face2Face Sales - Studenten & promoteams",
+      "currentSlug": "-temporary-slug-f5c12e14-1870-46e0-8a32-e9fb7894ed1b",
+      "draftSlugNow": "studenten-promoteams",
+      "goLiveSlug": "studenten-promoteams",
+      "templatePath": "salesup-theme/templates/studenten-promoteams.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Face2Face Sales · Studenten & promoteams | salesUp",
+        "htmlTitleChars": 50,
+        "metaDescription": "Getrainde studenten en promoteams die op locatie werven en promoten, met elke actie als creatief concept, dagelijks gecoacht door een vaste salescoach en",
+        "metaDescriptionChars": 153,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Face2Face Sales · Studenten & promoteams",
+        "heading": "Promoteams die opvallen — en converteren.",
+        "subtext": "Getrainde studenten die op locatie werven en promoten voor je merk, met de energie en de schaal van een promoteam. Elke actie bouwen we rond een creatief concept, een vaste salescoach loopt dagelijks mee, en elk contact wordt omnichannel opgevolgd tot in je CRM — met dezelfde kwaliteitsbewaking en het afrekenen-op-resultaat van ons Sales Contact Center.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Getrainde studenten en promoteams die op locatie werven en promoten, met elke actie als creatief concept, dagelijks gecoacht door een vaste salescoach en omnichannel opgevolgd tot in het CRM."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268170965",
+      "name": "Diensten - Marketing",
+      "currentSlug": "-temporary-slug-dae960c0-9df9-46c5-be32-10f0372a12f7",
+      "draftSlugNow": "marketing",
+      "goLiveSlug": "marketing",
+      "templatePath": "salesup-theme/templates/marketing.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Marketing | salesUp",
+        "htmlTitleChars": 19,
+        "metaDescription": "De bovenkant van je commerciële motor: websites, SEA, SEO/GEO, social ads en e-mail op één datalaag, aangestuurd via ons eigen AI-platform. Marketing",
+        "metaDescriptionChars": 149,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Marketing",
+        "heading": "Marketing die je zelf kan controleren, niet enkel afwachten.",
+        "subtext": "Websites, SEA, SEO/GEO, social ads en e-mail — vijf disciplines op één datalaag, aangestuurd via ons eigen AI-platform. Dit is de bovenkant van je commerciële motor: geen losse leads die in een rapport verdwijnen, maar leads die rechtstreeks naar sales stromen en binnen 30 minuten gebeld worden.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "De bovenkant van je commerciële motor: websites, SEA, SEO/GEO, social ads en e-mail op één datalaag, aangestuurd via ons eigen AI-platform. Marketing levert geen losse leads af, maar voedt rechtstreeks sales, training en consultants op dezelfde data."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268161744",
+      "name": "Diensten - Marketing - E-mail",
+      "currentSlug": "-temporary-slug-7295d007-271d-4b45-8740-cf9cdefa99e8",
+      "draftSlugNow": "email",
+      "goLiveSlug": "email",
+      "templatePath": "salesup-theme/templates/email.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Marketing · E-mail | salesUp",
+        "htmlTitleChars": 28,
+        "metaDescription": "E-mailflows en nurturing per segment die leads warm houden tot ze koopklaar zijn: de juiste boodschap op het juiste moment, op één datalaag met je andere",
+        "metaDescriptionChars": 153,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Marketing · E-mail",
+        "heading": "E-mail die je leads warm houdt tot ze koopklaar zijn.",
+        "subtext": "Flows en nurturing per segment, met de juiste boodschap op het juiste moment — geen massamail naar iedereen tegelijk. E-mail houdt je leads betrokken tot het gesprek, en wie koopklaar is, stroomt rechtstreeks door naar sales en wordt binnen 30 minuten gebeld.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "E-mailflows en nurturing per segment die leads warm houden tot ze koopklaar zijn: de juiste boodschap op het juiste moment, op één datalaag met je andere kanalen."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268178164",
+      "name": "Diensten - Marketing - SEA",
+      "currentSlug": "-temporary-slug-84be0935-28de-4820-85eb-ce5ed6138593",
+      "draftSlugNow": "sea",
+      "goLiveSlug": "sea",
+      "templatePath": "salesup-theme/templates/sea.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Marketing · SEA | salesUp",
+        "htmlTitleChars": 25,
+        "metaDescription": "Betaalde zoekcampagnes op Google en Bing, continu bijgestuurd op resultaat en meetbaar op gekwalificeerde aanvragen, met de leads die rechtstreeks naar",
+        "metaDescriptionChars": 151,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Marketing · SEA",
+        "heading": "SEA die je afrekent op aanvragen, niet op kliks.",
+        "subtext": "Betaalde zoekcampagnes op Google en Bing, continu bijgestuurd op resultaat en niet op gevoel. We meten op gekwalificeerde aanvragen, en die aanvragen verdwijnen niet in een rapport — ze stromen rechtstreeks door naar sales en worden binnen 30 minuten gebeld.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Betaalde zoekcampagnes op Google en Bing, continu bijgestuurd op resultaat en meetbaar op gekwalificeerde aanvragen, met de leads die rechtstreeks naar sales stromen."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268282562",
+      "name": "Diensten - Marketing - SEO/GEO",
+      "currentSlug": "-temporary-slug-4593e081-f197-4528-8ac6-fd1d18247208",
+      "draftSlugNow": "seo-geo",
+      "goLiveSlug": "seo-geo",
+      "templatePath": "salesup-theme/templates/seo-geo.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Marketing · SEO/GEO | salesUp",
+        "htmlTitleChars": 29,
+        "metaDescription": "Vindbaarheid in klassieke zoekresultaten én in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews, zodat je gevonden wordt waar je klant",
+        "metaDescriptionChars": 148,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Marketing · SEO/GEO",
+        "heading": "Gevonden worden in Google én in AI-antwoorden.",
+        "subtext": "Klassieke zoekmachine-optimalisatie, aangevuld met GEO — Generative Engine Optimization: vindbaarheid in ChatGPT, Perplexity en Google AI Overviews, waar steeds meer zoekopdrachten landen zonder klik naar je site. Zo word je gevonden waar je klant vandaag écht zoekt.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Vindbaarheid in klassieke zoekresultaten én in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews, zodat je gevonden wordt waar je klant vandaag zoekt."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268282609",
+      "name": "Diensten - Marketing - Social ads",
+      "currentSlug": "-temporary-slug-7681fb39-a229-4bb1-8c47-1e540e877bb6",
+      "draftSlugNow": "social-ads",
+      "goLiveSlug": "social-ads",
+      "templatePath": "salesup-theme/templates/social-ads.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Marketing · Social ads | salesUp",
+        "htmlTitleChars": 32,
+        "metaDescription": "Betaalde social-mediacampagnes op Meta, LinkedIn en TikTok, on-brand en getest op wat écht klikt, gericht op gekwalificeerde leads die rechtstreeks naar",
+        "metaDescriptionChars": 152,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Marketing · Social ads",
+        "heading": "Social ads die je afrekent op gekwalificeerde leads.",
+        "subtext": "Betaalde campagnes op Meta, LinkedIn en TikTok, telkens on-brand en getest op wat écht klikt — niet dezelfde ad overal. We richten op gekwalificeerde leads, en die leads stromen rechtstreeks door naar sales en worden binnen 30 minuten gebeld.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Betaalde social-mediacampagnes op Meta, LinkedIn en TikTok, on-brand en getest op wat écht klikt, gericht op gekwalificeerde leads die rechtstreeks naar sales stromen."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268311272",
+      "name": "Diensten - Marketing - Website",
+      "currentSlug": "-temporary-slug-ce05759b-72b4-457f-82a9-c303eb771398",
+      "draftSlugNow": "website",
+      "goLiveSlug": "website",
+      "templatePath": "salesup-theme/templates/website.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Marketing · Website | salesUp",
+        "htmlTitleChars": 29,
+        "metaDescription": "Websites gebouwd om te converteren: elke pagina gericht op één doel, gekoppeld aan je campagnes op één datalaag, met leads die rechtstreeks naar sales",
+        "metaDescriptionChars": 150,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Marketing · Website",
+        "heading": "Een website die leads oplevert, niet enkel mooi oogt.",
+        "subtext": "Een website is geen digitaal visitekaartje, maar het beginpunt van je commerciële motor. We bouwen elke pagina rond één doel — de bezoeker naar een afspraak of aanvraag brengen — en koppelen de site aan dezelfde datalaag als je campagnes, zodat de leads rechtstreeks naar sales stromen en binnen 30 minuten gebeld worden.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Websites gebouwd om te converteren: elke pagina gericht op één doel, gekoppeld aan je campagnes op één datalaag, met leads die rechtstreeks naar sales stromen."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268196580",
+      "name": "Diensten - Sales Consultants",
+      "currentSlug": "-temporary-slug-ea5f85aa-ecc3-4ddc-bd5f-d877715e3191",
+      "draftSlugNow": "sales-consultants",
+      "goLiveSlug": "sales-consultants",
+      "templatePath": "salesup-theme/templates/sales-consultants.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Consultants | salesUp",
+        "htmlTitleChars": 27,
+        "metaDescription": "Ervaren salesconsultants die bij de klant zelf aan de slag gaan via detachering, op de payroll van salesUp, met tooling, coaching en de datalus mee",
+        "metaDescriptionChars": 147,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Consultants",
+        "heading": "Ervaren sales, gedetacheerd in jouw team.",
+        "subtext": "Ervaren salesconsultants die bij jou aan de slag gaan via detachering — op onze payroll, maar met de tooling, de dagelijkse coaching en de datalus van salesUp mee. Extra salescapaciteit zonder wervingsrisico, vanaf minstens 3 maanden fulltime en afgerekend op resultaat.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Ervaren salesconsultants die bij de klant zelf aan de slag gaan via detachering, op de payroll van salesUp, met tooling, coaching en de datalus mee. Opdrachten vanaf minstens 3 maanden fulltime, afgerekend op resultaat."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268185305",
+      "name": "Diensten - Sales Consultants - Detachering/interim sales",
+      "currentSlug": "-temporary-slug-04af0d68-e9fc-4fca-9e39-7c4b7a722193",
+      "draftSlugNow": "detachering",
+      "goLiveSlug": "detachering",
+      "templatePath": "salesup-theme/templates/detachering.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Consultants · Detachering / interim sales | salesUp",
+        "htmlTitleChars": 57,
+        "metaDescription": "Een ervaren salesconsultant die fulltime je team versterkt via detachering, op de payroll van salesUp, met tooling, coaching en de datalus mee. Vanaf",
+        "metaDescriptionChars": 149,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Consultants · Detachering / interim sales",
+        "heading": "Ervaren sales, gedetacheerd zonder wervingsrisico.",
+        "subtext": "Een doorgewinterde salesconsultant die fulltime jouw team komt versterken, op de payroll van salesUp maar met de tooling, de dagelijkse coaching en de datalus mee. Extra salescapaciteit zonder de maandenlange zoektocht en zonder aanwervingsrisico — vanaf minstens 3 maanden fulltime en afgerekend op resultaat.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een ervaren salesconsultant die fulltime je team versterkt via detachering, op de payroll van salesUp, met tooling, coaching en de datalus mee. Vanaf minstens 3 maanden, afgerekend op resultaat."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268165858",
+      "name": "Diensten - Sales Consultants - Sales management ad interim",
+      "currentSlug": "-temporary-slug-208e3b09-fef3-4255-9705-092d4deaa4cb",
+      "draftSlugNow": "interim-sales-management",
+      "goLiveSlug": "interim-sales-management",
+      "templatePath": "salesup-theme/templates/interim-sales-management.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Consultants · Sales management ad interim | salesUp",
+        "htmlTitleChars": 57,
+        "metaDescription": "Een ervaren salesmanager die je commercieel team tijdelijk aanstuurt en coacht, datagedreven via onze eigen platformen, met kennisoverdracht bij",
+        "metaDescriptionChars": 144,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Consultants · Sales management ad interim",
+        "heading": "Een salesmanager ad interim die je team op koers zet.",
+        "subtext": "Een ervaren salesmanager die je commercieel team tijdelijk aanstuurt en coacht — om een vertrek te overbruggen, een groeifase te begeleiden of structuur en ritme terug te brengen. Datagedreven via onze eigen platformen, met kennisoverdracht bij afronding zodat je team er sterker uitkomt.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een ervaren salesmanager die je commercieel team tijdelijk aanstuurt en coacht, datagedreven via onze eigen platformen, met kennisoverdracht bij afronding. Vanaf minstens 3 maanden."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268197610",
+      "name": "Diensten - Sales Consultants - Sales-as-a-service",
+      "currentSlug": "-temporary-slug-a4f25346-e09d-43b3-a2a4-00dd37b8ac03",
+      "draftSlugNow": "sales-as-a-service",
+      "goLiveSlug": "sales-as-a-service",
+      "templatePath": "salesup-theme/templates/sales-as-a-service.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Consultants · Sales-as-a-Service | salesUp",
+        "htmlTitleChars": 48,
+        "metaDescription": "Je volledige salesfunctie uitbesteed aan een team van salesUp, van prospectie tot closing, met tooling, coaching en de datalus mee. Meetbaar via onze",
+        "metaDescriptionChars": 149,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Consultants · Sales-as-a-Service",
+        "heading": "Je volledige salesfunctie, uitbesteed.",
+        "subtext": "Je commerciële motor uitbesteed aan een team van salesUp, van prospectie tot closing. Wij bellen, volgen op, maken afspraken en sluiten af — met onze tooling, coaching en de datalus mee. Zo bouw je verkoop uit zonder zelf een salesteam te moeten opzetten en managen, meetbaar via onze eigen platformen en afgerekend op resultaat.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Je volledige salesfunctie uitbesteed aan een team van salesUp, van prospectie tot closing, met tooling, coaching en de datalus mee. Meetbaar via onze eigen platformen en afgerekend op resultaat."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268177096",
+      "name": "Diensten - Sales Consultants - Sales-audit & optimalisatie",
+      "currentSlug": "-temporary-slug-fd8e4308-d970-4ec5-b060-1a2f169dcc1d",
+      "draftSlugNow": "sales-audit",
+      "goLiveSlug": "sales-audit",
+      "templatePath": "salesup-theme/templates/sales-audit.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Consultants · Sales-audit & optimalisatie | salesUp",
+        "htmlTitleChars": 57,
+        "metaDescription": "Een doorlichting van je salesproces met concrete verbeterpunten, gestaafd met data uit onze eigen platformen — van pipeline tot gesprekskwaliteit",
+        "metaDescriptionChars": 145,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Consultants · Sales-audit & optimalisatie",
+        "heading": "Weten wáár je sales lekt — en het dichten.",
+        "subtext": "Een doorlichting van je salesproces van pipeline tot gesprekskwaliteit, met concrete verbeterpunten die je kan prioriteren. We staven elke bevinding met data uit onze eigen platformen, zodat je op feiten stuurt in plaats van op buikgevoel — en de verbeteringen kunnen we optioneel samen met je uitvoeren.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een doorlichting van je salesproces met concrete verbeterpunten, gestaafd met data uit onze eigen platformen — van pipeline tot gesprekskwaliteit, prioriteerbaar en optioneel mee uit te voeren."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268175089",
+      "name": "Diensten - Sales Contact Center",
+      "currentSlug": "-temporary-slug-fa2a8f2a-9076-414d-8509-2b41eaf5dc89",
+      "draftSlugNow": "sales-contact-center",
+      "goLiveSlug": "sales-contact-center",
+      "templatePath": "salesup-theme/templates/sales-contact-center.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Contact Center | salesUp",
+        "htmlTitleChars": 30,
+        "metaDescription": "Een contact center dat verkoopt, géén klantendienst: outbound sales, telesales en warme opvolging binnen 30 minuten, met elk gesprek automatisch gescoord",
+        "metaDescriptionChars": 153,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Contact Center",
+        "heading": "Een contact center dat verkoopt, géén klantendienst.",
+        "subtext": "Wij bellen om te verkopen: outbound sales, telesales en warme opvolging van je leads binnen 30 minuten. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans — en je rekent ons af op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een contact center dat verkoopt, géén klantendienst: outbound sales, telesales en warme opvolging binnen 30 minuten, met elk gesprek automatisch gescoord op kwaliteit en koopkans."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268307183",
+      "name": "Diensten - Sales Contact Center - Telesales",
+      "currentSlug": "-temporary-slug-037e9430-1a84-4332-912b-766084361de7",
+      "draftSlugNow": "telesales-nieuw",
+      "goLiveSlug": "telesales",
+      "templatePath": "salesup-theme/templates/telesales.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Contact Center · Telesales | salesUp",
+        "htmlTitleChars": 42,
+        "metaDescription": "Telesales die de verkoop afsluit tijdens het gesprek zelf, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op conversie",
+        "metaDescriptionChars": 147,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Contact Center · Telesales",
+        "heading": "Telesales die sluit tijdens het gesprek zelf.",
+        "subtext": "Voor een aanbod dat je in één gesprek kan uitleggen, sluiten we de verkoop meteen af — geen afspraak voor later. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en je rekent ons af op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Telesales die de verkoop afsluit tijdens het gesprek zelf, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op conversie tegenover een vooraf afgesproken doel."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268285669",
+      "name": "Diensten - Training",
+      "currentSlug": "-temporary-slug-8b60028d-dbb5-4e32-a287-c5bb13c8748c",
+      "draftSlugNow": "training",
+      "goLiveSlug": "training",
+      "templatePath": "salesup-theme/templates/training.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Training | salesUp",
+        "htmlTitleChars": 18,
+        "metaDescription": "Sales-training die meetbaar gedrag verandert: elk verkoopgesprek geanalyseerd, iedereen oefent op zijn eigen werkpunt met AI-avatars, en alles gekoppeld",
+        "metaDescriptionChars": 152,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Training",
+        "heading": "Training die meetbaar gedrag verandert.",
+        "subtext": "Geen dagje training en klaar. Wij vertrekken van wat er écht gebeurt in je verkoopgesprekken: elk gesprek wordt geanalyseerd, iedereen oefent op zijn eigen werkpunt met AI-avatars, en alles is gekoppeld aan je live sales-data. Zo zie je zwart op wit of training ook omzet oplevert.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Sales-training die meetbaar gedrag verandert: elk verkoopgesprek geanalyseerd, iedereen oefent op zijn eigen werkpunt met AI-avatars, en alles gekoppeld aan de live sales-data via het platform salesUp Academy. Geen dagje training en klaar."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268184281",
+      "name": "Diensten - Training - Coachingtraject",
+      "currentSlug": "-temporary-slug-2190afd9-0138-4e5e-b0c3-c6be4bb0afde",
+      "draftSlugNow": "coachingstraject",
+      "goLiveSlug": "coachingstraject",
+      "templatePath": "salesup-theme/templates/coachingstraject.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Training · Coachingstraject | salesUp",
+        "htmlTitleChars": 37,
+        "metaDescription": "Een langlopend coachingstraject over weken tot maanden, met 1-op-1- en teamcoaching en meetpunten uit de echte verkoopgesprekken, zodat gedrag structureel",
+        "metaDescriptionChars": 154,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Training · Coachingstraject",
+        "heading": "Coaching die gedrag structureel verandert.",
+        "subtext": "Een langlopend traject over weken tot maanden: 1-op-1- en teamcoaching met meetpunten uit je echte verkoopgesprekken. Geen eenmalige dag inspiratie, maar laag na laag bouwen aan blijvend gedrag — en dat zwart op wit zien in je omzet.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een langlopend coachingstraject over weken tot maanden, met 1-op-1- en teamcoaching en meetpunten uit de echte verkoopgesprekken, zodat gedrag structureel verandert en zichtbaar wordt in de omzet."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268164824",
+      "name": "Diensten - Training - Inspiratiesessie",
+      "currentSlug": "-temporary-slug-12fc3c84-9dbf-4766-bb57-0d6f3bda397a",
+      "draftSlugNow": "inspiratiesessie",
+      "goLiveSlug": "inspiratiesessie",
+      "templatePath": "salesup-theme/templates/inspiratiesessie.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Training · Inspiratiesessie | salesUp",
+        "htmlTitleChars": 37,
+        "metaDescription": "Een korte, high-energy keynote van een halve dag die een salesteam activeert en op één lijn zet, als kick-off of energieboost.",
+        "metaDescriptionChars": 126,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Training · Inspiratiesessie",
+        "heading": "Een keynote die je team in beweging zet.",
+        "subtext": "Een korte, high-energy inspiratiesessie van een halve dag die je salesteam activeert en op één lijn zet. Ideaal als kick-off, energieboost of vonk vóór een langer traject. Geen generiek motivatieverhaal, maar de echte thema's van jouw team.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een korte, high-energy keynote van een halve dag die een salesteam activeert en op één lijn zet, als kick-off of energieboost."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268171975",
+      "name": "Diensten - Training - Off-sites",
+      "currentSlug": "-temporary-slug-f98dd7ed-3f68-4ced-8895-1bf7cee25109",
+      "draftSlugNow": "off-sites",
+      "goLiveSlug": "off-sites",
+      "templatePath": "salesup-theme/templates/off-sites.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Training · Off-sites | salesUp",
+        "htmlTitleChars": 30,
+        "metaDescription": "Een meerdaagse sales-offsite op locatie die het team op één lijn zet en echte verkoopgesprekken intensief laat oefenen, met werkpunten uit de eigen",
+        "metaDescriptionChars": 147,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Training · Off-sites",
+        "heading": "Een off-site waar je team écht op scherp komt.",
+        "subtext": "Meerdaagse sales-offsite op locatie, weg van de dagelijkse ruis. Genoeg tijd om je team op één lijn te zetten en echte verkoopgesprekken intensief te oefenen — op de werkpunten die uit je eigen gesprekanalyse komen, niet op een algemeen scenario.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een meerdaagse sales-offsite op locatie die het team op één lijn zet en echte verkoopgesprekken intensief laat oefenen, met werkpunten uit de eigen gesprekanalyse."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268285688",
+      "name": "Diensten - Training - Trainingsplatform",
+      "currentSlug": "-temporary-slug-b09e51a7-b1c9-405e-a3b5-3e7b7019eb48",
+      "draftSlugNow": "trainingsplatform",
+      "goLiveSlug": "trainingsplatform",
+      "templatePath": "salesup-theme/templates/trainingsplatform.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Training · Trainingsplatform | salesUp",
+        "htmlTitleChars": 38,
+        "metaDescription": "salesUp Academy: een trainingsplatform met gesprekanalyse en AI-scoring, AI-avatar-roleplays, scorecards, gamification en een wekelijkse coach-mail",
+        "metaDescriptionChars": 147,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Training · Trainingsplatform",
+        "heading": "salesUp Academy: trainen op wat de data toont.",
+        "subtext": "Ons eigen trainingsplatform analyseert echte verkoopgesprekken, laat iedereen oefenen op zijn werkpunt met AI-avatars, houdt de voortgang bij op scorecards en koppelt alles aan je live sales-data. Zo train je op het échte werkpunt — en zie je of het omzet oplevert.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "salesUp Academy: een trainingsplatform met gesprekanalyse en AI-scoring, AI-avatar-roleplays, scorecards, gamification en een wekelijkse coach-mail, gekoppeld aan de live sales-data van de klant."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268188375",
+      "name": "Dienstpagina",
+      "currentSlug": "-temporary-slug-6ce09b0a-9c42-41bc-9568-a3cfa0b8d703",
+      "draftSlugNow": "template-dienst",
+      "goLiveSlug": null,
+      "templatePath": "salesup-theme/templates/dienst.html",
+      "doNotPublish": true,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Dienstpagina | salesUp",
+        "htmlTitleChars": 22,
+        "metaDescription": "Dienstpagina. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 69,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": null,
+        "heading": null,
+        "subtext": null,
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268359396",
+      "name": "Home - AI aanpak",
+      "currentSlug": "-temporary-slug-f4dfe541-363a-4bfe-89d6-cc33a5ed674d",
+      "draftSlugNow": "ai-aanpak",
+      "goLiveSlug": "ai-aanpak",
+      "templatePath": "salesup-theme/templates/ai-aanpak.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "AI-aanpak | salesUp",
+        "htmlTitleChars": 19,
+        "metaDescription": "salesUp zet AI operationeel in over de hele commerciële keten: elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, koopsignalen en bezwaren",
+        "metaDescriptionChars": 152,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "De AI-aanpak · methodologie",
+        "heading": "AI die door de héle keten werkt — geen gimmick.",
+        "subtext": "Zo zet salesUp AI operationeel in over de vijf diensten. Elk verkoopgesprek wordt automatisch gescoord op kwaliteit en koopkans, koopsignalen en bezwaren worden live herkend en de medewerker wordt bijgestuurd. De platformen zijn in eigen beheer gebouwd, dus je data blijft in één keten. De AI meet en signaleert; de mens beslist en verkoopt.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "salesUp zet AI operationeel in over de hele commerciële keten: elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, koopsignalen en bezwaren worden live herkend, verkopers trainen tegen AI-avatars op de scorecard van hun klant en elk gesprek wordt omgezet in een verslag. De platformen zijn in eigen beheer. De AI meet en signaleert; de mens beslist en verkoopt."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268163816",
+      "name": "Homepage",
+      "currentSlug": "-temporary-slug-7b9fe360-97a3-45c2-ae37-93ad82475def",
+      "draftSlugNow": "home-nieuw",
+      "goLiveSlug": "",
+      "templatePath": "salesup-theme/templates/home.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "salesUp | Commerciële groei in één machine",
+        "htmlTitleChars": 42,
+        "metaDescription": "salesUp brengt marketing, sales, training en consultants samen op dezelfde data — zodat elk onderdeel het andere sterker maakt. Alles samen, of gewoon één",
+        "metaDescriptionChars": 154,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Eén partner · vijf onderdelen · één motor",
+        "heading": "Commerciële groei is geen los project. Het is één machine.",
+        "subtext": "salesUp brengt marketing, sales, training en consultants samen op dezelfde data — zodat elk onderdeel het andere sterker maakt. Alles samen, of gewoon één dienst. Aan jou de keuze.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268167916",
+      "name": "Jobs doelgroep",
+      "currentSlug": "-temporary-slug-a0fab9ea-6ae5-4cd1-bf49-1046dd9bbbce",
+      "draftSlugNow": "template-jobs-doelgroep",
+      "goLiveSlug": null,
+      "templatePath": "salesup-theme/templates/jobs-doelgroep.html",
+      "doNotPublish": true,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Jobs doelgroep | salesUp",
+        "htmlTitleChars": 24,
+        "metaDescription": "Jobs doelgroep. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 71,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": null,
+        "heading": null,
+        "subtext": null,
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268195517",
+      "name": "Over ons",
+      "currentSlug": "-temporary-slug-ea67f091-eae5-44b3-8718-0aca076eb3d1",
+      "draftSlugNow": "over-ons-nieuw",
+      "goLiveSlug": "over-ons",
+      "templatePath": "salesup-theme/templates/over-ons.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Over ons | salesUp",
+        "htmlTitleChars": 18,
+        "metaDescription": "Het verhaal, de waarden, de mensen en de vestigingen van salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 112,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Over salesUp",
+        "heading": "Technologie versterkt de mens, ze vervangt hem niet.",
+        "subtext": "salesUp is sinds 2005 een Belgische commerciële groeipartner. We namen marketing, sales contact center, veldverkoop, training en sales consultants in één hand — voor grote Belgische bedrijven. Je werkt met vaste mensen die je bij naam kent, versterkt door AI-platformen die we zelf bouwen. De AI meet en signaleert; de mens beslist en verkoopt.",
+        "jsonLdName": "Over ons — salesUp",
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Het verhaal, de waarden, de mensen en de vestigingen van salesUp, Belgische commerciële groeipartner sinds 2005."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268195541",
+      "name": "Podcast",
+      "currentSlug": "-temporary-slug-bd736e8b-980a-4719-95d2-392458cac2c2",
+      "draftSlugNow": "podcast",
+      "goLiveSlug": "groeipodcast-salesup",
+      "templatePath": "salesup-theme/templates/podcast.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Groeipodcast | salesUp",
+        "htmlTitleChars": 22,
+        "metaDescription": "De groeipodcast van salesUp met commerciële leiders. Eerlijke gesprekken met commerciële leiders over groei, leiderschap en de mensen achter de cijfers",
+        "metaDescriptionChars": 151,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "GROWTH SESSIONS",
+        "heading": "De groeipodcast van salesUp.",
+        "subtext": "Eerlijke gesprekken met commerciële leiders over groei, leiderschap en de mensen achter de cijfers. Luister & ontdek.",
+        "jsonLdName": "salesUp Growth Sessions",
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "De groeipodcast van salesUp met commerciële leiders."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268358390",
+      "name": "Siensten - Sales COntact Center - After sales",
+      "currentSlug": "-temporary-slug-696383d0-1f56-4caf-a334-7a08812c1ce9",
+      "draftSlugNow": "after-sales",
+      "goLiveSlug": "after-sales",
+      "templatePath": "salesup-theme/templates/after-sales.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Contact Center · After sales | salesUp",
+        "htmlTitleChars": 44,
+        "metaDescription": "Een verkoopkanaal op je bestaande klantenbestand: heractivatie van slapende klanten, upsell en cross-sell en winback via de telefoon, met elk gesprek",
+        "metaDescriptionChars": 149,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Contact Center · After sales",
+        "heading": "De meeste omzet zit in de klanten die je al hebt.",
+        "subtext": "Heractivatie van slapende klanten, upsell en cross-sell en winback via de telefoon — een verkoopkanaal op je bestaande basis, géén klantendienst. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en je rekent ons af op extra omzet tegenover een vooraf afgesproken doel.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Een verkoopkanaal op je bestaande klantenbestand: heractivatie van slapende klanten, upsell en cross-sell en winback via de telefoon, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op extra omzet tegenover een vooraf afgesproken doel."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268305108",
+      "name": "Standaardpagina (dnd)",
+      "currentSlug": "-temporary-slug-c2687a6b-b865-404a-8f1e-9401041b11f2",
+      "draftSlugNow": "template-page",
+      "goLiveSlug": null,
+      "templatePath": "salesup-theme/templates/page.html",
+      "doNotPublish": true,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Standaardpagina (dnd) | salesUp",
+        "htmlTitleChars": 31,
+        "metaDescription": "Standaardpagina (dnd). salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 78,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": null,
+        "heading": null,
+        "subtext": null,
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268284652",
+      "name": "Subdienstpagina",
+      "currentSlug": "-temporary-slug-2208ea25-b37d-4c3b-9eb7-d193a47ddc5f",
+      "draftSlugNow": "template-subdienst",
+      "goLiveSlug": null,
+      "templatePath": "salesup-theme/templates/subdienst.html",
+      "doNotPublish": true,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Subdienstpagina | salesUp",
+        "htmlTitleChars": 25,
+        "metaDescription": "Subdienstpagina. salesUp, Belgische commerciële groeipartner sinds 2005.",
+        "metaDescriptionChars": 72,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": null,
+        "heading": null,
+        "subtext": null,
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268312260",
+      "name": "Werken bij",
+      "currentSlug": "-temporary-slug-06cc76f3-bbb5-4c86-82bc-6c1f8416689d",
+      "draftSlugNow": "werken-bij",
+      "goLiveSlug": "werken-bij",
+      "templatePath": "salesup-theme/templates/werken-bij.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Werken bij salesUp",
+        "htmlTitleChars": 18,
+        "metaDescription": "Kies je profiel en ontdek de jobs bij salesUp: studentenjob Face2Face, contact center of sales consultant. salesUp, Belgische commerciële groeipartner",
+        "metaDescriptionChars": 150,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Werken bij salesUp",
+        "heading": "Kom groeien bij een Belgische salesgroep.",
+        "subtext": "Of je nu je eerste studentenjob zoekt of al jaren op de baan bent: bij salesUp verkoop je, leer je en groei je. Wij leren je het vak via de salesUp Academy en geven je een coach, doorgroeikansen en collega's die je erdoor trekken.",
+        "jsonLdName": "Werken bij salesUp",
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Kies je profiel en ontdek de jobs bij salesUp: studentenjob Face2Face, contact center of sales consultant."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268166896",
+      "name": "Werken bij - Contact Center",
+      "currentSlug": "-temporary-slug-5d0a5f5f-78da-4733-8477-edf25d3bff75",
+      "draftSlugNow": "jobs-contact-center",
+      "goLiveSlug": "jobs-contact-center",
+      "templatePath": "salesup-theme/templates/jobs-contact-center.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Werken bij  — Contact Center | salesUp",
+        "htmlTitleChars": 38,
+        "metaDescription": "Wil je vooruit in sales? In ons contact center bel je, verkoop je en groei je — met warme leads uit onze eigen marketing, een vast contract met bonus op",
+        "metaDescriptionChars": 152,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Werken bij salesUp — Contact Center",
+        "heading": "Start of versnel je salescarrière.",
+        "subtext": "Wil je vooruit in sales? In ons contact center bel je, verkoop je en groei je — met warme leads uit onze eigen marketing, een vast contract met bonus op resultaat, coaching via de salesUp Academy en AI-tools die je gerichter beter maken.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268168921",
+      "name": "Werken bij - Sales Consultants",
+      "currentSlug": "-temporary-slug-b3f42042-04f8-4d15-9dc6-de3cca9f77d5",
+      "draftSlugNow": "jobs-sales-consultants",
+      "goLiveSlug": "jobs-sales-consultants",
+      "templatePath": "salesup-theme/templates/jobs-sales-consultants.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Werken bij  — Sales Consultants | salesUp",
+        "htmlTitleChars": 41,
+        "metaDescription": "Je kent het commerciële gesprek en je haalt resultaat. Bij salesUp krijg je afwisselende opdrachten bij toonaangevende bedrijven — met de coaching",
+        "metaDescriptionChars": 146,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Werken bij salesUp — Sales Consultants",
+        "heading": "De vrijheid van de baan, de kracht van een groep.",
+        "subtext": "Je kent het commerciële gesprek en je haalt resultaat. Bij salesUp krijg je afwisselende opdrachten bij toonaangevende bedrijven — met de coaching, tooling en structuur van een gevestigde groep achter je. Autonomie mét omkadering.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268169949",
+      "name": "Werken bij - Studenten & Face2Face",
+      "currentSlug": "-temporary-slug-0e509f59-44ee-4530-96d3-3ef1cc342416",
+      "draftSlugNow": "jobs-studenten",
+      "goLiveSlug": "jobs-studenten",
+      "templatePath": "salesup-theme/templates/jobs-studenten.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Studentenjob — Face2Face | salesUp",
+        "htmlTitleChars": 34,
+        "metaDescription": "De studentenjob waar je effectief iets aan overhoudt: een toptarief, échte sales-skills en de leukste crew van je weekend. Op events, festivals en",
+        "metaDescriptionChars": 146,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Studentenjob — Face2Face",
+        "heading": "Verdien goed, leer verkopen en beleef events.",
+        "subtext": "De studentenjob waar je effectief iets aan overhoudt: een toptarief, échte sales-skills en de leukste crew van je weekend. Op events, festivals en straatacties — geen ervaring nodig, wij leren je alles.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": null
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268310210",
+      "name": "Werken bij - Studenten & Face2Face - Studentenjob - Face2Face",
+      "currentSlug": "-temporary-slug-e7740488-960c-4197-b9ec-4561dbf87415",
+      "draftSlugNow": "werken-bij/vacature",
+      "goLiveSlug": "werken-bij/vacature",
+      "templatePath": "salesup-theme/templates/vacature-detail.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "VACATURE · FACE2FACE | salesUp",
+        "htmlTitleChars": 30,
+        "metaDescription": "Student en zin om wat extra centjes te verdienen, nieuwe mensen te leren kennen én skills op te doen die je later nog goed kunt gebruiken? 👀 Wij zijn op",
+        "metaDescriptionChars": 152,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "VACATURE · FACE2FACE",
+        "heading": "Studentenjob - Face2Face",
+        "subtext": null,
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Student en zin om wat extra centjes te verdienen, nieuwe mensen te leren kennen én skills op te doen die je later nog goed kunt gebruiken? 👀 Wij zijn op zoek naar enthousiaste studenten voor ons F2F-team! 🚀 Wat houdt F2F in? F2F staat voor Face-to-Face . Je gaat rechtstreeks in gesprek met mensen op verschillende locaties. Je spreekt hen persoonlijk aan, voert leuke gesprekken en vertelt hen op een enthousiaste manier over het project waarvoor je werkt. Geen saaie dagen achter een bureau dus! 😎 Je bent actief bezig, ontmoet voortdurend nieuwe mensen en leert ondertussen hoe je sterk communiceert, mensen overtuigt en zelfverzekerd voor een groep staat. Waarom kiezen voor deze studentenjob? Lekker bijverdienen naast je studies Flexibel werken vanaf 1 dag per week of meer Een jong & gezellig team waar je samenwerkt en plezier maakt Sterke communicatie- & sales skills die je overal kunt gebruiken Nieuwe mensen & nieuwe ervaringen elke dag is anders Persoonlijke ontwikkeling stap voor stap sterker worden Doorgroeimogelijkheden wie ambitie heeft, kan op termijn meer verantwoordelijkheid opnemen Meer dan zomaar een studentenjob Je start minimum 1 dag per week , ideaal om te combineren met je studies en studentenleven. Maar daar hoeft het zeker niet te stoppen. 👀 Ben je gemotiveerd, neem je graag initiatief en heb je ambitie? Dan krijg je de kans om door te groeien en steeds meer verantwoordelijkheid op te nemen binnen het team .📈 Je krijgt bij ons dus niet alleen de kans om bij te verdienen , maar ook om jezelf te ontwikkelen, nieuwe skills te leren en ervaring op te doen die je later nog goed kunt gebruiken. 💪 En wie weet? Misschien start je vandaag als student, maar groei je op termijn door naar een grotere rol binnen het team zelfs nadat je studententijd voorbij is. Je start als student, maar wie weet waar je eindigt. 🚀 Minimum 18 jaar zijn Sociaal en spontaan en maakt makkelijk een praatje Je vindt het leuk om nieuwe mensen te leren kennen Durft uit je comfortzone te stappen en bent niet snel verlegen Je bent gemotiveerd en wil jezelf blijven ontwikkelen Staat open om nieuwe skills te leren en beter te worden Je bent een echte teamplayer en krijgt energie van samenwerken Een positieve mindset en denkt: “Waarom niet? Let's go!” Geen ervaring? Helemaal oké. 🙌 Je hoeft niet alles al te kunnen. Met de juiste attitude en motivatie leren wij je de rest! Het belangrijkste? Je brengt jezelf mee. De rest bouwen we samen. 🚀"
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "453268356322",
+      "name": "diensten - sales contact center - telefonische prospectie & afspraakplanning",
+      "currentSlug": "-temporary-slug-a7a308ca-881b-4832-b546-47165603a440",
+      "draftSlugNow": "afspraakplanning",
+      "goLiveSlug": "afspraakplanning",
+      "templatePath": "salesup-theme/templates/afspraakplanning.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sales Contact Center · Afspraakplanning | salesUp",
+        "htmlTitleChars": 49,
+        "metaDescription": "Warme en koude telefonische prospectie die kwalitatieve afspraken rechtstreeks in de agenda van je vertegenwoordiger zet, met elk gesprek automatisch",
+        "metaDescriptionChars": 149,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": "Sales Contact Center · Afspraakplanning",
+        "heading": "Kwalitatieve afspraken rechtstreeks in je agenda.",
+        "subtext": "Via warme en koude telefonische prospectie zetten we bevestigde afspraken met de juiste persoon in de agenda van jouw vertegenwoordiger — geen losse leads. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en je rekent ons af op conversie tegenover een vooraf afgesproken doel.",
+        "jsonLdName": null,
+        "jsonLdHeadline": null,
+        "jsonLdDescription": "Warme en koude telefonische prospectie die kwalitatieve afspraken rechtstreeks in de agenda van je vertegenwoordiger zet, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op conversie tegenover een vooraf afgesproken doel."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1 (still temporary on all drafts)"
+      }
+    },
+    {
+      "id": "455643379910",
+      "name": "Cases - Ikaros Solar",
+      "currentSlug": "cases/ikaros-solar",
+      "draftSlugNow": "cases/ikaros-solar",
+      "goLiveSlug": "cases/ikaros-solar",
+      "templatePath": "salesup-theme/templates/case-ikaros-solar.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Ikaros Solar | Case | salesUp",
+        "htmlTitleChars": 29,
+        "metaDescription": "salesUp hielp Ikaros Solar naar 39% conversie via slimme data en gerichte telefonische prospectie. Tientallen offertes en een volle agenda.",
+        "metaDescriptionChars": 139,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": null,
+        "heading": "Hoe Ikaros Solar hun conversies verdubbelde met gerichte telesales en slimme data",
+        "subtext": "salesUp hielp Ikaros Solar om met zorgvuldig geselecteerde data en doelgerichte telefonische prospectie een conversieratio van 39% te behalen.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Hoe Ikaros Solar hun conversies verdubbelde met gerichte telesales en slimme data",
+        "jsonLdDescription": "salesUp hielp Ikaros Solar om met zorgvuldig geselecteerde data en doelgerichte telefonische prospectie een conversieratio van 39% te behalen."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1"
+      }
+    },
+    {
+      "id": "455643379912",
+      "name": "Cases - Cesano",
+      "currentSlug": "cases/cesano",
+      "draftSlugNow": "cases/cesano",
+      "goLiveSlug": "cases/cesano",
+      "templatePath": "salesup-theme/templates/case-cesano.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Cesano | Case | salesUp",
+        "htmlTitleChars": 23,
+        "metaDescription": "Cesano klopte bij salesUp aan voor telefonische prospectie van hun e-bikeconcept in de horeca. Doel: 250 geplaatste e-bikes. Mission accomplished.",
+        "metaDescriptionChars": 146,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": null,
+        "heading": "Telefonische prospectie voor Cesano",
+        "subtext": "Cesano is een start-up die elektrische fietsen plaatst in de horeca. salesUp nam de prospectie over en haalde de doelstelling van 250 geplaatste e-bikes.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Telefonische prospectie voor Cesano",
+        "jsonLdDescription": "Cesano is een start-up die elektrische fietsen plaatst in de horeca. salesUp nam de prospectie over en haalde de doelstelling van 250 geplaatste e-bikes."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1"
+      }
+    },
+    {
+      "id": "455643379914",
+      "name": "Cases - Sobelhor",
+      "currentSlug": "cases/sobelhor",
+      "draftSlugNow": "cases/sobelhor",
+      "goLiveSlug": "cases/sobelhor",
+      "templatePath": "salesup-theme/templates/case-sobelhor.html",
+      "doNotPublish": false,
+      "contentWarnings": [],
+      "current": {
+        "htmlTitle": "",
+        "metaDescription": "",
+        "featuredImageUrl": "",
+        "language": ""
+      },
+      "proposed": {
+        "htmlTitle": "Sobelhor | Case | salesUp",
+        "htmlTitleChars": 25,
+        "metaDescription": "Sinds 2020 beheert salesUp inbound, logistieke codering en facturen via het ERP van Sobelhor. Benutting steeg van 60% naar 80%.",
+        "metaDescriptionChars": 127,
+        "language": "nl",
+        "featuredImageUrl": null
+      },
+      "sourceFromTemplate": {
+        "eyebrow": null,
+        "heading": "Efficiënter voorraadbeheer en orderverwerking voor Sobelhor",
+        "subtext": "Sinds 2020 beheert salesUp inbound, logistiek en facturatie voor Sobelhor. ERP-benutting steeg van 60% naar 80%.",
+        "jsonLdName": null,
+        "jsonLdHeadline": "Efficiënter voorraadbeheer en orderverwerking voor Sobelhor",
+        "jsonLdDescription": "Sinds 2020 beheert salesUp inbound, logistiek en facturatie voor Sobelhor. ERP-benutting steeg van 60% naar 80%."
+      },
+      "hubSpotSettings": {
+        "requiredToPublish": [
+          "htmlTitle"
+        ],
+        "recommended": [
+          "htmlTitle",
+          "metaDescription",
+          "language"
+        ],
+        "optional": [
+          "featuredImageUrl"
+        ],
+        "slugHandledIn": "Step 1"
+      }
+    }
+  ],
+  "step6Workflow": {
+    "order": [
+      "Complete redirect map and activate 301s in HubSpot",
+      "Apply final slugs if not already done (scripts/apply-step1-slugs.py)",
+      "Apply htmlTitle, metaDescription, language from this file (scripts/apply-step6-page-metadata.py)",
+      "Preview check: no missing Page title warnings",
+      "Publish drafts / domain swap",
+      "Spot-check top 15-20 old URLs"
+    ],
+    "doNotPublishGenericTemplates": true
+  }
+}

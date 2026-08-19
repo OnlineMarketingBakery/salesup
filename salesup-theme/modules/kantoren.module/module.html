@@ -1,0 +1,18 @@
+<section class="section wrap" aria-labelledby="kantoren-titel">
+  {% if module.eyebrow %}<span class="mono" style="color:var(--slate)">{{ module.eyebrow }}</span>{% endif %}
+  <h2 id="kantoren-titel" style="margin:6px 0 0">{{ module.heading }}</h2>
+  <div class="kantoor-grid">
+    {% for k in module.kantoren %}
+    <article class="kantoor-kaart">
+      {% if k.beeld.src %}<div class="k-media"><img src="{{ k.beeld.src }}" alt="{{ k.beeld.alt }}" loading="lazy" decoding="async"></div>{% endif %}
+      <div class="k-body">
+        <span class="k-status">{{ k.status }}</span>
+        <h3>{{ k.naam }}</h3>
+        <address>{{ k.adres }}</address>
+        {% if k.maps_url %}<a class="k-route" href="{{ k.maps_url }}" target="_blank" rel="noopener">Route via Google Maps <span class="arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% if module.soon %}<p class="kantoor-soon">{{ module.soon }}</p>{% endif %}
+</section>

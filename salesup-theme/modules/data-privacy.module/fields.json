@@ -1,0 +1,126 @@
+[
+  {
+    "id": "eyebrow",
+    "name": "eyebrow",
+    "label": "Eyebrow",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Data & privacy"
+  },
+  {
+    "id": "heading",
+    "name": "heading",
+    "label": "Titel (H2)",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Je data blijft in de keten — en van jou."
+  },
+  {
+    "id": "intro",
+    "name": "intro",
+    "label": "Intro",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "media",
+    "name": "media",
+    "label": "Beeld",
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": true,
+    "show_loading": false,
+    "type": "image",
+    "display_width": null,
+    "default": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": "image_fit",
+    "name": "image_fit",
+    "label": "Beeldweergave (object-fit)",
+    "help_text": "Cover vult het kader en kan bijsnijden. Contain toont het hele beeld, zonder afsnijden.",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      [
+        "cover",
+        "Cover (vullen)"
+      ],
+      [
+        "contain",
+        "Contain (volledig zichtbaar)"
+      ]
+    ],
+    "multiple": false,
+    "reordering_enabled": false,
+    "preset": null,
+    "type": "choice",
+    "display_width": null,
+    "default": "cover"
+  },
+  {
+    "id": "trust_rows",
+    "name": "trust_rows",
+    "label": "Rijen",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "sorting_label_field": null,
+      "default": 4
+    },
+    "children": [
+      {
+        "id": "trust_rows.titel",
+        "name": "titel",
+        "label": "Titel",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": ""
+      },
+      {
+        "id": "trust_rows.uitleg",
+        "name": "uitleg",
+        "label": "Uitleg",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "display_width": null,
+        "default": ""
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  },
+  {
+    "id": "slot",
+    "name": "slot",
+    "label": "Slotzin (VERIFIEER GDPR)",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  }
+]

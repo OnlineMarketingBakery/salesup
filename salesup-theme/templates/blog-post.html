@@ -1,0 +1,121 @@
+<!--
+  templateType: blog_article
+  isAvailableForNewContent: true
+  label: salesUp — Blogartikel
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{% endblock %}
+{% block extra_head %}
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BlogPosting",
+  "headline":{{ content.name|tojson }},
+  "description":{{ content.meta_description|tojson }},
+  "image":{{ content.featured_image|tojson }},
+  "datePublished":"{{ content.publish_date|datetimeformat('%Y-%m-%d') }}",
+  "author":{"@type":"Organization","name":"salesUp"},
+  "publisher":{"@type":"Organization","name":"salesUp"},
+  "mainEntityOfPage":"{{ content.absolute_url }}"
+}
+</script>
+{% endblock %}
+{% block content %}
+{% module "breadcrumb_post" path="../modules/breadcrumb",
+  crumbs=[
+    {
+      "link_label": "Home",
+      "url": {
+        "url": {
+          "href": "/",
+          "type": "CONTENT",
+          "content_id": 453268163816
+        }
+      }
+    },
+    {
+      "link_label": "Blog",
+      "url": {
+        "url": {
+          "href": "/blog",
+          "type": "EXTERNAL"
+        }
+      }
+    },
+    {
+      "link_label": content.name,
+      "url": {
+        "url": {
+          "href": "",
+          "type": "EXTERNAL"
+        }
+      }
+    }
+  ],
+  emit_schema=false
+%}
+
+<article class="article wrap">
+  <span class="mono article-eyebrow">BLOG</span>
+  <h1>{{ content.name }}</h1>
+  <div class="post-meta">
+    <span>{{ content.publish_date|datetimeformat('%d-%m-%Y') }}</span>
+    {% if content.blog_post_author and content.blog_post_author.display_name %}
+    <span class="dot" aria-hidden="true">&bull;</span>
+    <span>{{ content.blog_post_author.display_name }}</span>
+    {% endif %}
+  </div>
+  {% if content.featured_image %}
+  <figure class="article-hero">
+    <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text|default(content.name) }}" fetchpriority="high" loading="eager" decoding="async">
+  </figure>
+  {% endif %}
+  <div class="article-body">
+    {{ content.post_body }}
+  </div>
+</article>
+
+{% macro related_post_card(post, index, total) %}
+<a class="blog-card" href="{{ post.absolute_url }}">
+  <div class="thumb">
+    {% if post.featured_image %}
+    <img src="{{ post.featured_image }}" alt="{{ post.featured_image_alt_text|default(post.name) }}" loading="lazy" decoding="async">
+    {% endif %}
+  </div>
+  <div class="body">
+    <span class="meta">{{ post.publish_date|datetimeformat('%d-%m-%Y') }}</span>
+    <h3>{{ post.name }}</h3>
+    <span class="go">Start met lezen <span class="arrow" aria-hidden="true">&rarr;</span></span>
+  </div>
+</a>
+{% endmacro %}
+
+<section class="blog-related wrap" aria-label="Gerelateerde artikels">
+  <span class="mono">MEER LEZEN</span>
+  <h2>Andere artikels</h2>
+  <div class="blog-grid blog-grid--related">
+    {% related_blog_posts limit=3, post_formatter="related_post_card" %}
+  </div>
+</section>
+
+{% module "final_cta_post" path="../modules/final-cta",
+  heading="Zin om dit in de praktijk te brengen?",
+  tekst="<p>Wil je sparren over je commerciële groei? We bellen je binnen 30 minuten terug.</p>",
+  cta1_text="Plan een gesprek",
+  cta1_url={
+    "url": {
+      "href": "/contact",
+      "type": "CONTENT",
+      "content_id": 453268184310
+    }
+  },
+  cta1_new_tab=false,
+  cta2_text="Of bel ons: 053 78 28 30",
+  cta2_url={
+    "url": {
+      "href": "tel:+3253782830",
+      "type": "EXTERNAL"
+    }
+  }
+%}
+{% endblock content %}

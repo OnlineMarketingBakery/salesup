@@ -1,0 +1,17 @@
+<section class="section wrap" id="capabilities" aria-labelledby="cap-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="cap-titel">{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="aip-caps">
+    {% for c in module.capability_cards %}
+    <article class="aip-cap">
+      <span class="num">{{ c.num }}</span>
+      <h3>{{ c.title }}</h3>
+      <div>{{ c.tekst }}</div>
+      {% if c.signal %}<span class="signal">{{ c.signal }}</span>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>

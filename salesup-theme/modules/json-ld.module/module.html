@@ -1,0 +1,8 @@
+{% if module.json_ld %}
+<script type="application/ld+json">{{ module.json_ld }}</script>
+{% endif %}
+{% if module.hreflang_nl or module.hreflang_fr %}
+  {% if module.hreflang_nl %}<link rel="alternate" hreflang="nl" href="{{ module.hreflang_nl }}">{% endif %}
+  {% if module.hreflang_fr %}<link rel="alternate" hreflang="fr" href="{{ module.hreflang_fr }}">{% endif %}
+  <link rel="alternate" hreflang="x-default" href="{{ module.hreflang_nl|default(request.full_url) }}">
+{% endif %}

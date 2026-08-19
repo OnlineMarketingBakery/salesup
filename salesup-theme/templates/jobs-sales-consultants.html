@@ -1,0 +1,313 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Jobs sales consultants
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/vacatures.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"foundingDate\":\"2005\",\n      \"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Evenbroekveld 14\",\"postalCode\":\"9420\",\"addressLocality\":\"Erpe-Mere\",\"addressCountry\":\"BE\"},\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\n      \"sameAs\":[\"https://www.linkedin.com/company/salesup-be\"]\n    },\n    {\n      \"@type\":\"ItemList\",\n      \"name\":\"Openstaande rollen voor sales consultants bij salesUp\",\n      \"itemListOrder\":\"https://schema.org/ItemListUnordered\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Sales Consultant B2B\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Account Manager buitendienst\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Business Development\"}\n      ]\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Werken bij\",\"item\":\"https://www.salesup.be/werken-bij\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Consultants\",\"item\":\"https://www.salesup.be/jobs-sales-consultants\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\"@type\":\"Question\",\"name\":\"Onder welk statuut of contract werk ik?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Dat hangt af van de opdracht en van je eigen situatie. We werken zowel met bedienden op contract binnen de salesUp-groep als met zelfstandige consultants. In een eerste gesprek bekijken we samen welk statuut het best bij jou en bij de opdracht past.\"}},\n        {\"@type\":\"Question\",\"name\":\"Hoe zien de opdrachten eruit?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je wordt ingezet op een opdracht bij een klant van de salesUp-groep, in terbeschikkingstelling van je buitendienst-salesprofiel. Een typische opdracht loopt minimum 3 maanden fulltime en focust op een afgebakend commercieel doel: nieuwe klanten winnen, een portefeuille uitbouwen of een marktsegment openen.\"}},\n        {\"@type\":\"Question\",\"name\":\"Welke omkadering krijg ik?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Coaching, de salesUp Academy, quality monitoring en AI-ondersteuning zitten inbegrepen in je werkwijze. Je krijgt een vast aanspreekpunt binnen de groep, feedback op je gesprekken en toegang tot de methodiek en tooling. Je staat er dus nooit alleen voor.\"}},\n        {\"@type\":\"Question\",\"name\":\"In welke sectoren kom ik terecht?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De salesUp-groep werkt voor toonaangevende bedrijven in uiteenlopende sectoren, van telecom en energie tot technologie en dienstverlening. Net die variatie is een van de redenen waarom ervaren profielen voor deze rol kiezen. Bij de indeling houden we rekening met je ervaring en voorkeuren.\"}},\n        {\"@type\":\"Question\",\"name\":\"Wat verwachten jullie qua ervaring?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We zoeken profielen die al aantoonbare ervaring hebben in buitendienst-sales, account management of business development. Je bent zelfstandig, je kent het commerciële gesprek en je haalt resultaat. De methodiek en tooling van de groep leer je bij ons; het vak beheers je al.\"}}\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/jobs-sales-consultants",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Werken bij",
+                "url": {
+                  "url": {
+                    "content_id": 453268312260,
+                    "href": "/werken-bij",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Consultants",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "content_id": 453268168921,
+                    "type": "CONTENT"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Werken bij salesUp — Sales Consultants",
+          heading="De vrijheid van de baan, de kracht van een <em>groep</em>.",
+          subtext="<p>Je kent het commerciële gesprek en je haalt resultaat. Bij salesUp krijg je afwisselende opdrachten bij toonaangevende bedrijven — met de coaching, tooling en structuur van een gevestigde groep achter je. Autonomie mét omkadering.</p>",
+          cta1_text="Bekijk de opdrachten",
+          cta1_url={
+              "url": {
+                "href": "#vacatures",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Hoe het werkt",
+          cta2_url={
+              "url": {
+                "href": "#hoe-het-werkt",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Je behoudt je autonomie. <strong>Maar je staat er nooit alleen voor.</strong>",
+          note_energie=true,
+          chips=[
+              {
+                "link_label": "Ervaren profielen"
+              },
+              {
+                "link_label": "Variatie aan sectoren"
+              },
+              {
+                "link_label": "Autonomie mét omkadering"
+              },
+              {
+                "link_label": "±200 experten"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Sfeer bij de sales consultants",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2058.jpg",
+              "alt": "salesUp-consultant in overleg met een laptop."
+            },
+          trustcard_badge="Sales consultant",
+          trustcard_stat="3<em> mnd+</em>",
+          trustcard_label="een typische opdracht loopt minimum 3 maanden fulltime, zodat je je echt kunt inwerken en resultaat neerzet.",
+          trustcard_quote="\"Het vak beheers je al. De methodiek en tooling van de groep leer je bij ons.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over ervaren profielen"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="troeven",
+          eyebrow="Waarom bij salesUp",
+          heading="Variatie én omkadering, in één rol.",
+          intro="<p>Veel ervaren salesprofielen missen ofwel variatie, ofwel omkadering. Bij salesUp krijg je allebei: je werkt zelfstandig op je opdracht, met de opleiding, tooling en collega's van een gevestigde groep achter je.</p>",
+          vac_troef=true,
+          feature_cards=[
+              {
+                "title": "Variatie aan klanten en sectoren",
+                "tekst": "<p>Je werkt niet vast aan één product of één markt. Van telecom en energie tot technologie en dienstverlening: je bouwt een brede commerciële ervaring op.</p>"
+              },
+              {
+                "title": "Autonomie mét sterke omkadering",
+                "tekst": "<p>Je houdt de vrijheid om je gesprekken en je agenda zelf in te vullen. Tegelijk krijg je een coach, een methodiek en een aanspreekpunt die je scherp houden.</p>"
+              },
+              {
+                "title": "AI-tooling en quality monitoring",
+                "tekst": "<p>Feedback op je gesprekken, AI-ondersteuning en quality monitoring zitten inbegrepen in je werkwijze. De technologie versterkt je, ze vervangt je niet.</p>"
+              },
+              {
+                "title": "Deel van een groep van ±200 experten",
+                "tekst": "<p>Je staat er nooit alleen voor. Je maakt deel uit van een Belgische salesgroep met twintig jaar ervaring en collega's die hetzelfde vak beheersen.</p>"
+              },
+              {
+                "title": "Opdrachten bij toonaangevende bedrijven",
+                "tekst": "<p>De groep werkt voor grote, gevestigde opdrachtgevers. Jij komt terecht op commerciële opdrachten die ertoe doen, met echte doelstellingen.</p>"
+              },
+              {
+                "title": "Eigen salesUp Academy",
+                "tekst": "<p>Ook doorgewinterde profielen blijven zich ontwikkelen. Via de salesUp Academy scherp je je methodiek aan en blijf je bij met wat werkt in de markt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload office-two-men-chat.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hoe-het-werkt",
+          anchor="hoe-het-werkt",
+          eyebrow="Hoe het werkt",
+          heading="Ingezet op opdracht, met je eigen methodiek mee.",
+          intro="<p>Als sales consultant word je door salesUp ingezet op een opdracht bij een klant van de groep — een terbeschikkingstelling van je buitendienst-salesprofiel. Je werkt aan een concreet commercieel doel: nieuwe klanten winnen, een portefeuille uitbouwen of een marktsegment openen. Een typische opdracht loopt <strong>minimum 3 maanden fulltime</strong>, zodat je je echt kunt inwerken in de markt van de klant.</p>",
+          checklist=[
+              {
+                "text": "<strong>Coaching.</strong> Een vaste coach kijkt met je mee, spart over lastige dossiers en helpt je gericht bijsturen."
+              },
+              {
+                "text": "<strong>salesUp Academy.</strong> Toegang tot de opleidingen en de methodiek van de groep, ook voor ervaren profielen."
+              },
+              {
+                "text": "<strong>Quality monitoring.</strong> Objectieve feedback op je gesprekken, zodat je ziet wat werkt en waar je nog wint."
+              },
+              {
+                "text": "<strong>AI-ondersteuning.</strong> Tooling die je voorbereiding en opvolging lichter maakt, zonder je gesprek over te nemen."
+              }
+            ],
+          media={
+              "src": "https://salesup.be/hubfs/Rectangle%2059.jpg",
+              "alt": "Twee salesprofessionals in een informeel werkgesprek op kantoor."
+            },
+          caption="Overleg tussen consultants — sfeerbeeld."
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/open-vacatures",
+          eyebrow="Open vacatures",
+          heading="Rollen voor sales consultants.",
+          intro="<p>Dit zijn de profielen waarvoor we doorlopend ervaren mensen zoeken. Herken je jezelf in een van deze rollen? Laat van je horen — we bekijken samen welke opdracht bij jou past.</p>",
+          api_url="https://salesup.recruitee.com/api/offers/",
+          department="Consulting",
+          detail_base="/werken-bij/vacature"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat je nog wil weten.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Onder welk statuut of contract werk ik?",
+                "answer": "<p>Dat hangt af van de opdracht en van je eigen situatie. We werken zowel met bedienden op contract binnen de salesUp-groep als met zelfstandige consultants. In een eerste gesprek bekijken we samen welk statuut het best bij jou en bij de opdracht past.</p>"
+              },
+              {
+                "question": "Hoe zien de opdrachten eruit?",
+                "answer": "<p>Je wordt ingezet op een opdracht bij een klant van de salesUp-groep, in terbeschikkingstelling van je buitendienst-salesprofiel. Een typische opdracht loopt minimum 3 maanden fulltime en focust op een afgebakend commercieel doel: nieuwe klanten winnen, een portefeuille uitbouwen of een marktsegment openen.</p>"
+              },
+              {
+                "question": "Welke omkadering krijg ik?",
+                "answer": "<p>Coaching, de salesUp Academy, quality monitoring en AI-ondersteuning zitten inbegrepen in je werkwijze. Je krijgt een vast aanspreekpunt binnen de groep, feedback op je gesprekken en toegang tot de methodiek en tooling. Je staat er dus nooit alleen voor.</p>"
+              },
+              {
+                "question": "In welke sectoren kom ik terecht?",
+                "answer": "<p>De salesUp-groep werkt voor toonaangevende bedrijven in uiteenlopende sectoren, van telecom en energie tot technologie en dienstverlening. Net die variatie is een van de redenen waarom ervaren profielen voor deze rol kiezen. Bij de indeling houden we rekening met je ervaring en voorkeuren.</p>"
+              },
+              {
+                "question": "Wat verwachten jullie qua ervaring?",
+                "answer": "<p>We zoeken profielen die al aantoonbare ervaring hebben in buitendienst-sales, account management of business development. Je bent zelfstandig, je kent het commerciële gesprek en je haalt resultaat. De methodiek en tooling van de groep leer je bij ons; het vak beheers je al.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar voor een volgende opdracht met omkadering?",
+          tekst="<p>Solliciteer op een rol hierboven of stuur ons spontaan je gegevens. Vertel welke rol je aanspreekt en in welke sectoren je ervaring hebt — we bekijken snel welke opdracht binnen de groep bij jou past.</p>",
+          cta1_text="Solliciteer",
+          cta1_url={
+              "url": {
+                "href": "#vacatures",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Alle profielen",
+                "url": {
+                  "url": {
+                    "content_id": 453268312260,
+                    "href": "/werken-bij",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Studenten & Face2Face",
+                "url": {
+                  "url": {
+                    "content_id": 453268169949,
+                    "href": "/jobs-studenten",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Contact Center",
+                "url": {
+                  "url": {
+                    "content_id": 453268166896,
+                    "href": "/jobs-contact-center",
+                    "type": "CONTENT"
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}
+{% block extra_js %}{{ require_js(get_asset_url('../js/recruitee.js')) }}{% endblock %}

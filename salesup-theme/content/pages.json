@@ -1,0 +1,368 @@
+[
+  {
+    "template": "home.html",
+    "slug": "/",
+    "source": "index.html",
+    "name": "Homepage"
+  },
+  {
+    "template": "contact.html",
+    "slug": "/contact",
+    "source": "contact.html",
+    "name": "Contact"
+  },
+  {
+    "template": "cases.html",
+    "slug": "/cases",
+    "source": "cases.html",
+    "name": "Cases"
+  },
+  {
+    "template": "over-ons.html",
+    "slug": "/over-ons",
+    "source": "over-ons.html",
+    "name": "Over ons"
+  },
+  {
+    "template": "ai-aanpak.html",
+    "slug": "/ai-aanpak",
+    "source": "ai-aanpak.html",
+    "name": "AI-aanpak"
+  },
+  {
+    "template": "marketing.html",
+    "slug": "/marketing",
+    "source": "marketing.html",
+    "name": "Marketing"
+  },
+  {
+    "template": "sales-contact-center.html",
+    "slug": "/sales-contact-center",
+    "source": "sales-contact-center.html",
+    "name": "Sales Contact Center"
+  },
+  {
+    "template": "dienst-face2face.html",
+    "slug": "/face2face-sales",
+    "source": "face2face-sales.html",
+    "name": "Face2Face Sales"
+  },
+  {
+    "template": "training.html",
+    "slug": "/training",
+    "source": "training.html",
+    "name": "Training"
+  },
+  {
+    "template": "sales-consultants.html",
+    "slug": "/sales-consultants",
+    "source": "sales-consultants.html",
+    "name": "Sales Consultants"
+  },
+  {
+    "template": "website.html",
+    "slug": "/website",
+    "source": "website.html",
+    "name": "Website"
+  },
+  {
+    "template": "sea.html",
+    "slug": "/sea",
+    "source": "sea.html",
+    "name": "SEA"
+  },
+  {
+    "template": "seo-geo.html",
+    "slug": "/seo-geo",
+    "source": "seo-geo.html",
+    "name": "SEO/GEO"
+  },
+  {
+    "template": "social-ads.html",
+    "slug": "/social-ads",
+    "source": "social-ads.html",
+    "name": "Social ads"
+  },
+  {
+    "template": "email.html",
+    "slug": "/email",
+    "source": "email.html",
+    "name": "E-mail"
+  },
+  {
+    "template": "telesales.html",
+    "slug": "/telesales",
+    "source": "telesales.html",
+    "name": "Telesales"
+  },
+  {
+    "template": "afspraakplanning.html",
+    "slug": "/afspraakplanning",
+    "source": "afspraakplanning.html",
+    "name": "Afspraakplanning"
+  },
+  {
+    "template": "after-sales.html",
+    "slug": "/after-sales",
+    "source": "after-sales.html",
+    "name": "After-sales"
+  },
+  {
+    "template": "off-sites.html",
+    "slug": "/off-sites",
+    "source": "off-sites.html",
+    "name": "Off-sites"
+  },
+  {
+    "template": "inspiratiesessie.html",
+    "slug": "/inspiratiesessie",
+    "source": "inspiratiesessie.html",
+    "name": "Inspiratiesessie"
+  },
+  {
+    "template": "coachingstraject.html",
+    "slug": "/coachingstraject",
+    "source": "coachingstraject.html",
+    "name": "Coachingstraject"
+  },
+  {
+    "template": "trainingsplatform.html",
+    "slug": "/trainingsplatform",
+    "source": "trainingsplatform.html",
+    "name": "Trainingsplatform"
+  },
+  {
+    "template": "werken-bij.html",
+    "slug": "/werken-bij",
+    "source": "werken-bij.html",
+    "name": "Werken bij"
+  },
+  {
+    "template": "jobs-studenten.html",
+    "slug": "/jobs-studenten",
+    "source": "jobs-studenten.html",
+    "name": "Jobs studenten"
+  },
+  {
+    "template": "jobs-contact-center.html",
+    "slug": "/jobs-contact-center",
+    "source": "jobs-contact-center.html",
+    "name": "Jobs contact center"
+  },
+  {
+    "template": "jobs-sales-consultants.html",
+    "slug": "/jobs-sales-consultants",
+    "source": "jobs-sales-consultants.html",
+    "name": "Jobs sales consultants"
+  },
+  {
+    "template": "vacature-detail.html",
+    "slug": "/werken-bij/vacature?slug=studentenjob-face2face",
+    "source": "vacature-studentenjob-face2face.html",
+    "name": "Vacature detail (Recruitee)"
+  },
+  {
+    "template": "podcast.html",
+    "slug": "/groeipodcast-salesup",
+    "source": "groeipodcast.html",
+    "name": "Podcast"
+  },
+  {
+    "template": "studenten-promoteams.html",
+    "slug": "/studenten-promoteams",
+    "source": "studenten-promoteams.html",
+    "name": "Studenten & promoteams"
+  },
+  {
+    "template": "deur-aan-deur.html",
+    "slug": "/deur-aan-deur",
+    "source": "deur-aan-deur.html",
+    "name": "Deur-aan-deur"
+  },
+  {
+    "template": "events-beurzen.html",
+    "slug": "/events-beurzen",
+    "source": "events-beurzen.html",
+    "name": "Events & beurzen"
+  },
+  {
+    "template": "retail-winkelvloer.html",
+    "slug": "/retail-winkelvloer",
+    "source": "retail-winkelvloer.html",
+    "name": "Retail & winkelvloer"
+  },
+  {
+    "template": "detachering.html",
+    "slug": "/detachering",
+    "source": "detachering.html",
+    "name": "Detachering"
+  },
+  {
+    "template": "sales-as-a-service.html",
+    "slug": "/sales-as-a-service",
+    "source": "sales-as-a-service.html",
+    "name": "Sales-as-a-Service"
+  },
+  {
+    "template": "interim-sales-management.html",
+    "slug": "/interim-sales-management",
+    "source": "interim-sales-management.html",
+    "name": "Interim sales management"
+  },
+  {
+    "template": "sales-audit.html",
+    "slug": "/sales-audit",
+    "source": "sales-audit.html",
+    "name": "Sales-audit"
+  },
+  {
+    "template": "case-orange.html",
+    "slug": "/cases/orange",
+    "source": "case-orange.html",
+    "name": "Case Orange"
+  },
+  {
+    "template": "case-van-heurck.html",
+    "slug": "/cases/van-heurck",
+    "source": "case-van-heurck.html",
+    "name": "Case Van Heurck"
+  },
+  {
+    "template": "case-q8oils.html",
+    "slug": "/cases/q8oils",
+    "source": "case-q8oils.html",
+    "name": "Case Q8Oils"
+  },
+  {
+    "template": "case-axians.html",
+    "slug": "/cases/axians",
+    "source": "case-axians.html",
+    "name": "Case Axians"
+  },
+  {
+    "template": "case-unizo.html",
+    "slug": "/cases/unizo",
+    "source": "case-unizo.html",
+    "name": "Case Unizo"
+  },
+  {
+    "template": "case-vm-building.html",
+    "slug": "/cases/vm-building",
+    "source": "case-vm-building.html",
+    "name": "Case Vm Building"
+  },
+  {
+    "template": "case-trustteam.html",
+    "slug": "/cases/trustteam",
+    "source": "case-trustteam.html",
+    "name": "Case Trustteam"
+  },
+  {
+    "template": "case-geodis.html",
+    "slug": "/cases/geodis",
+    "source": "case-geodis.html",
+    "name": "Case Geodis"
+  },
+  {
+    "template": "case-radiance-energy.html",
+    "slug": "/cases/radiance-energy",
+    "source": "case-radiance-energy.html",
+    "name": "Case Radiance Energy"
+  },
+  {
+    "template": "case-upgrade-estate.html",
+    "slug": "/cases/upgrade-estate",
+    "source": "case-upgrade-estate.html",
+    "name": "Case Upgrade Estate"
+  },
+  {
+    "template": "case-messer-group.html",
+    "slug": "/cases/messer-group",
+    "source": "case-messer-group.html",
+    "name": "Case Messer Group"
+  },
+  {
+    "template": "case-alindus.html",
+    "slug": "/cases/alindus",
+    "source": "case-alindus.html",
+    "name": "Case Alindus"
+  },
+  {
+    "template": "case-ev-shop.html",
+    "slug": "/cases/ev-shop",
+    "source": "case-ev-shop.html",
+    "name": "Case Ev Shop"
+  },
+  {
+    "template": "case-spm.html",
+    "slug": "/cases/spm",
+    "source": "case-spm.html",
+    "name": "Case Spm"
+  },
+  {
+    "template": "case-eurocircuits.html",
+    "slug": "/cases/eurocircuits",
+    "source": "case-eurocircuits.html",
+    "name": "Case Eurocircuits"
+  },
+  {
+    "template": "case-jaguar-land-rover.html",
+    "slug": "/cases/jaguar-land-rover",
+    "source": "case-jaguar-land-rover.html",
+    "name": "Case Jaguar Land Rover"
+  },
+  {
+    "template": "case-astara.html",
+    "slug": "/cases/astara",
+    "source": "case-astara.html",
+    "name": "Case Astara"
+  },
+  {
+    "template": "case-liantis.html",
+    "slug": "/cases/liantis",
+    "source": "case-liantis.html",
+    "name": "Case Liantis"
+  },
+  {
+    "template": "case-zambon.html",
+    "slug": "/cases/zambon",
+    "source": "case-zambon.html",
+    "name": "Case Zambon"
+  },
+  {
+    "template": "case-hivolta.html",
+    "slug": "/cases/hivolta",
+    "source": "case-hivolta.html",
+    "name": "Case Hivolta"
+  },
+  {
+    "template": "case-ichoosr.html",
+    "slug": "/cases/ichoosr",
+    "source": "case-ichoosr.html",
+    "name": "Case Ichoosr"
+  },
+  {
+    "template": "case-immo-van-middelem.html",
+    "slug": "/cases/immo-van-middelem",
+    "source": "case-immo-van-middelem.html",
+    "name": "Case Immo Van Middelem"
+  },
+  {
+    "template": "case-ikaros-solar.html",
+    "slug": "/cases/ikaros-solar",
+    "source": "https://salesup.be/telefonische-prospectie",
+    "name": "Case Ikaros Solar"
+  },
+  {
+    "template": "case-cesano.html",
+    "slug": "/cases/cesano",
+    "source": "https://salesup.be/cesano",
+    "name": "Case Cesano"
+  },
+  {
+    "template": "case-sobelhor.html",
+    "slug": "/cases/sobelhor",
+    "source": "https://salesup.be/sobelhor",
+    "name": "Case Sobelhor"
+  }
+]

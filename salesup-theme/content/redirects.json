@@ -1,0 +1,648 @@
+[
+  {
+    "from": "/index.html",
+    "to": "/",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/contact.html",
+    "to": "/contact",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/cases.html",
+    "to": "/cases",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/over-ons.html",
+    "to": "/over-ons",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/ai-aanpak.html",
+    "to": "/ai-aanpak",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/marketing.html",
+    "to": "/marketing",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/sales-contact-center.html",
+    "to": "/sales-contact-center",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/face2face-sales.html",
+    "to": "/face2face-sales",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/training.html",
+    "to": "/training",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/sales-consultants.html",
+    "to": "/sales-consultants",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/website.html",
+    "to": "/website",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/sea.html",
+    "to": "/sea",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/seo-geo.html",
+    "to": "/seo-geo",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/social-ads.html",
+    "to": "/social-ads",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/email.html",
+    "to": "/email",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/telesales.html",
+    "to": "/telesales",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/afspraakplanning.html",
+    "to": "/afspraakplanning",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/after-sales.html",
+    "to": "/after-sales",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/off-sites.html",
+    "to": "/off-sites",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/inspiratiesessie.html",
+    "to": "/inspiratiesessie",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/coachingstraject.html",
+    "to": "/coachingstraject",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/trainingsplatform.html",
+    "to": "/trainingsplatform",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/werken-bij.html",
+    "to": "/werken-bij",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/jobs-studenten.html",
+    "to": "/jobs-studenten",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/jobs-contact-center.html",
+    "to": "/jobs-contact-center",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/jobs-sales-consultants.html",
+    "to": "/jobs-sales-consultants",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/vacature-studentenjob-face2face.html",
+    "to": "/werken-bij/vacature?slug=studentenjob-face2face",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/blog.html",
+    "to": "/blog",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/groeipodcast.html",
+    "to": "/groeipodcast-salesup",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/diensten/sales-contact-center.html",
+    "to": "/sales-contact-center"
+  },
+  {
+    "from": "/diensten/sales-contact-center/telesales",
+    "to": "/telesales"
+  },
+  {
+    "from": "/diensten/sales-contact-center/afspraakplanning",
+    "to": "/afspraakplanning"
+  },
+  {
+    "from": "/diensten/sales-contact-center/after-sales",
+    "to": "/after-sales"
+  },
+  {
+    "from": "/diensten/marketing/website",
+    "to": "/website"
+  },
+  {
+    "from": "/diensten/marketing/sea",
+    "to": "/sea"
+  },
+  {
+    "from": "/diensten/marketing/seo-geo",
+    "to": "/seo-geo"
+  },
+  {
+    "from": "/diensten/marketing/social-ads",
+    "to": "/social-ads"
+  },
+  {
+    "from": "/diensten/marketing/email",
+    "to": "/email"
+  },
+  {
+    "from": "/vacatures/",
+    "to": "/werken-bij"
+  },
+  {
+    "from": "/vacatures/index.html",
+    "to": "/werken-bij"
+  },
+  {
+    "from": "/vacatures/studenten.html",
+    "to": "/jobs-studenten"
+  },
+  {
+    "from": "/vacatures/contact-center.html",
+    "to": "/jobs-contact-center"
+  },
+  {
+    "from": "/vacatures/sales-consultants.html",
+    "to": "/jobs-sales-consultants"
+  },
+  {
+    "from": "/blog-4-gouden-lessen-van-stig-van-hauwermeiren-managing-director-bij-salesup.html",
+    "to": "/blog/4-gouden-lessen-van-stig-van-hauwermeiren-managing-director-bij-salesup"
+  },
+  {
+    "from": "/blog/blog-4-gouden-lessen-van-stig-van-hauwermeiren-managing-director-bij-salesup.html",
+    "to": "/blog/4-gouden-lessen-van-stig-van-hauwermeiren-managing-director-bij-salesup"
+  },
+  {
+    "from": "/blog-4-lessen-van-didier-blokland-vertrouwen-emotie-en-groei-in-een-veranderende-markt.html",
+    "to": "/blog/4-lessen-van-didier-blokland-vertrouwen-emotie-en-groei-in-een-veranderende-markt"
+  },
+  {
+    "from": "/blog/blog-4-lessen-van-didier-blokland-vertrouwen-emotie-en-groei-in-een-veranderende-markt.html",
+    "to": "/blog/4-lessen-van-didier-blokland-vertrouwen-emotie-en-groei-in-een-veranderende-markt"
+  },
+  {
+    "from": "/blog-4-lessen-van-pascal-pinket-over-vertrouwen-klantgerichtheid-en-duurzame-groei-in-it-sales.html",
+    "to": "/blog/4-lessen-van-pascal-pinket-over-vertrouwen-klantgerichtheid-en-duurzame-groei-in-it-sales"
+  },
+  {
+    "from": "/blog/blog-4-lessen-van-pascal-pinket-over-vertrouwen-klantgerichtheid-en-duurzame-groei-in-it-sales.html",
+    "to": "/blog/4-lessen-van-pascal-pinket-over-vertrouwen-klantgerichtheid-en-duurzame-groei-in-it-sales"
+  },
+  {
+    "from": "/blog-5-tips-voor-telefonische-prospectie.html",
+    "to": "/blog/5-tips-voor-telefonische-prospectie"
+  },
+  {
+    "from": "/blog/blog-5-tips-voor-telefonische-prospectie.html",
+    "to": "/blog/5-tips-voor-telefonische-prospectie"
+  },
+  {
+    "from": "/blog-bewezen-winback-strategieen.html",
+    "to": "/blog/bewezen-winback-strategieen"
+  },
+  {
+    "from": "/blog/blog-bewezen-winback-strategieen.html",
+    "to": "/blog/bewezen-winback-strategieen"
+  },
+  {
+    "from": "/blog-commerciele-strategie-versterken.html",
+    "to": "/blog/commerciele-strategie-versterken"
+  },
+  {
+    "from": "/blog/blog-commerciele-strategie-versterken.html",
+    "to": "/blog/commerciele-strategie-versterken"
+  },
+  {
+    "from": "/blog-gespreksstructuur-opbouwen.html",
+    "to": "/blog/gespreksstructuur-opbouwen"
+  },
+  {
+    "from": "/blog/blog-gespreksstructuur-opbouwen.html",
+    "to": "/blog/gespreksstructuur-opbouwen"
+  },
+  {
+    "from": "/blog-hoe-linde-biesmans-bij-eneco-inzet-op-groei-faalkracht-en-veilige-teams.html",
+    "to": "/blog/hoe-linde-biesmans-bij-eneco-inzet-op-groei-faalkracht-en-veilige-teams"
+  },
+  {
+    "from": "/blog/blog-hoe-linde-biesmans-bij-eneco-inzet-op-groei-faalkracht-en-veilige-teams.html",
+    "to": "/blog/hoe-linde-biesmans-bij-eneco-inzet-op-groei-faalkracht-en-veilige-teams"
+  },
+  {
+    "from": "/blog-klantbehoud-slimste-strategie-voor-groei.html",
+    "to": "/blog/klantbehoud-slimste-strategie-voor-groei"
+  },
+  {
+    "from": "/blog/blog-klantbehoud-slimste-strategie-voor-groei.html",
+    "to": "/blog/klantbehoud-slimste-strategie-voor-groei"
+  },
+  {
+    "from": "/blog-maak-je-content-geo-proof-salesup.html",
+    "to": "/blog/maak-je-content-geo-proof-salesup"
+  },
+  {
+    "from": "/blog/blog-maak-je-content-geo-proof-salesup.html",
+    "to": "/blog/maak-je-content-geo-proof-salesup"
+  },
+  {
+    "from": "/blog-meer-omzet-uit-bestaande-klanten.html",
+    "to": "/blog/meer-omzet-uit-bestaande-klanten"
+  },
+  {
+    "from": "/blog/blog-meer-omzet-uit-bestaande-klanten.html",
+    "to": "/blog/meer-omzet-uit-bestaande-klanten"
+  },
+  {
+    "from": "/blog-meer-omzet-uit-je-salesinspanningen.html",
+    "to": "/blog/meer-omzet-uit-je-salesinspanningen"
+  },
+  {
+    "from": "/blog/blog-meer-omzet-uit-je-salesinspanningen.html",
+    "to": "/blog/meer-omzet-uit-je-salesinspanningen"
+  },
+  {
+    "from": "/blog-meest-gemaakte-verkoopfouten.html",
+    "to": "/blog/meest-gemaakte-verkoopfouten"
+  },
+  {
+    "from": "/blog/blog-meest-gemaakte-verkoopfouten.html",
+    "to": "/blog/meest-gemaakte-verkoopfouten"
+  },
+  {
+    "from": "/blog-saleslessen-stefanie-van-rillaer-orange.html",
+    "to": "/blog/saleslessen-stefanie-van-rillaer-orange"
+  },
+  {
+    "from": "/blog/blog-saleslessen-stefanie-van-rillaer-orange.html",
+    "to": "/blog/saleslessen-stefanie-van-rillaer-orange"
+  },
+  {
+    "from": "/blog-telefonische-prospectie-tijdens-bouwverlof.html",
+    "to": "/blog/telefonische-prospectie-tijdens-bouwverlof"
+  },
+  {
+    "from": "/blog/blog-telefonische-prospectie-tijdens-bouwverlof.html",
+    "to": "/blog/telefonische-prospectie-tijdens-bouwverlof"
+  },
+  {
+    "from": "/blog-tips-voor-cold-calling.html",
+    "to": "/blog/tips-voor-cold-calling"
+  },
+  {
+    "from": "/blog/blog-tips-voor-cold-calling.html",
+    "to": "/blog/tips-voor-cold-calling"
+  },
+  {
+    "from": "/blog-tips-voor-klantbehoud-2025.html",
+    "to": "/blog/tips-voor-klantbehoud-2025"
+  },
+  {
+    "from": "/blog/blog-tips-voor-klantbehoud-2025.html",
+    "to": "/blog/tips-voor-klantbehoud-2025"
+  },
+  {
+    "from": "/blog-tips-voor-meer-inbound-leads.html",
+    "to": "/blog/tips-voor-meer-inbound-leads"
+  },
+  {
+    "from": "/blog/blog-tips-voor-meer-inbound-leads.html",
+    "to": "/blog/tips-voor-meer-inbound-leads"
+  },
+  {
+    "from": "/blog-welke-elementen-moeten-in-een-goed-belscript.html",
+    "to": "/blog/welke-elementen-moeten-in-een-goed-belscript"
+  },
+  {
+    "from": "/blog/blog-welke-elementen-moeten-in-een-goed-belscript.html",
+    "to": "/blog/welke-elementen-moeten-in-een-goed-belscript"
+  },
+  {
+    "from": "/blog-welke-salesaanpak-past-bij-jouw-bedrijf.html",
+    "to": "/blog/welke-salesaanpak-past-bij-jouw-bedrijf"
+  },
+  {
+    "from": "/blog/blog-welke-salesaanpak-past-bij-jouw-bedrijf.html",
+    "to": "/blog/welke-salesaanpak-past-bij-jouw-bedrijf"
+  },
+  {
+    "from": "/studenten-promoteams.html",
+    "to": "/studenten-promoteams",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/deur-aan-deur.html",
+    "to": "/deur-aan-deur",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/events-beurzen.html",
+    "to": "/events-beurzen",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/retail-winkelvloer.html",
+    "to": "/retail-winkelvloer",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/detachering.html",
+    "to": "/detachering",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/sales-as-a-service.html",
+    "to": "/sales-as-a-service",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/interim-sales-management.html",
+    "to": "/interim-sales-management",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/sales-audit.html",
+    "to": "/sales-audit",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/case-orange.html",
+    "to": "/cases/orange",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/orange",
+    "to": "/cases/orange",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-van-heurck.html",
+    "to": "/cases/van-heurck",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/van-heurck",
+    "to": "/cases/van-heurck",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-q8oils.html",
+    "to": "/cases/q8oils",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/q8oils",
+    "to": "/cases/q8oils",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-axians.html",
+    "to": "/cases/axians",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/axians",
+    "to": "/cases/axians",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-unizo.html",
+    "to": "/cases/unizo",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/unizo",
+    "to": "/cases/unizo",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-vm-building.html",
+    "to": "/cases/vm-building",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/vm-building",
+    "to": "/cases/vm-building",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-trustteam.html",
+    "to": "/cases/trustteam",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/trustteam",
+    "to": "/cases/trustteam",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-geodis.html",
+    "to": "/cases/geodis",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/geodis",
+    "to": "/cases/geodis",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-radiance-energy.html",
+    "to": "/cases/radiance-energy",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/radiance-energy",
+    "to": "/cases/radiance-energy",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-upgrade-estate.html",
+    "to": "/cases/upgrade-estate",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/upgrade-estate",
+    "to": "/cases/upgrade-estate",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-messer-group.html",
+    "to": "/cases/messer-group",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/messer-group",
+    "to": "/cases/messer-group",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-alindus.html",
+    "to": "/cases/alindus",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/alindus",
+    "to": "/cases/alindus",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-ev-shop.html",
+    "to": "/cases/ev-shop",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/ev-shop",
+    "to": "/cases/ev-shop",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-spm.html",
+    "to": "/cases/spm",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/spm",
+    "to": "/cases/spm",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-eurocircuits.html",
+    "to": "/cases/eurocircuits",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/eurocircuits",
+    "to": "/cases/eurocircuits",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-jaguar-land-rover.html",
+    "to": "/cases/jaguar-land-rover",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/jaguar-land-rover",
+    "to": "/cases/jaguar-land-rover",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-astara.html",
+    "to": "/cases/astara",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/astara",
+    "to": "/cases/astara",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-liantis.html",
+    "to": "/cases/liantis",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/liantis",
+    "to": "/cases/liantis",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-zambon.html",
+    "to": "/cases/zambon",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/zambon",
+    "to": "/cases/zambon",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-hivolta.html",
+    "to": "/cases/hivolta",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/hivolta",
+    "to": "/cases/hivolta",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-ichoosr.html",
+    "to": "/cases/ichoosr",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/ichoosr",
+    "to": "/cases/ichoosr",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/case-immo-van-middelem.html",
+    "to": "/cases/immo-van-middelem",
+    "note": "mockup .html → schone HubSpot-URL"
+  },
+  {
+    "from": "/client-cases/immo-van-middelem",
+    "to": "/cases/immo-van-middelem",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/cesano",
+    "to": "/cases/cesano",
+    "note": "live case-URL → /cases/cesano (activate in Step 6)"
+  },
+  {
+    "from": "/client-cases/cesano",
+    "to": "/cases/cesano",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/sobelhor",
+    "to": "/cases/sobelhor",
+    "note": "live case-URL → /cases/sobelhor (activate in Step 6)"
+  },
+  {
+    "from": "/client-cases/sobelhor",
+    "to": "/cases/sobelhor",
+    "note": "oude client-cases-URL → /cases/<slug>"
+  },
+  {
+    "from": "/client-cases/ikaros-solar",
+    "to": "/cases/ikaros-solar",
+    "note": "geen live dedicated URL; Ikaros stond op /telefonische-prospectie (dienstpagina, niet redirecten)"
+  }
+]

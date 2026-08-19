@@ -1,0 +1,168 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Ichoosr
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Flexibele klantondersteuning voor iChoosr\", \"about\": \"iChoosr\", \"description\": \"salesUp helpt iChoosr met proactieve klantopvolging en flexibele ondersteuning tijdens piekperiodes.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/ichoosr\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"iChoosr\", \"item\": \"https://www.salesup.be/cases/ichoosr\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/ichoosr",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "iChoosr",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Energie",
+          heading="Flexibele klantondersteuning voor iChoosr",
+          subtext="<p>salesUp helpt iChoosr met proactieve klantopvolging en flexibele ondersteuning tijdens piekperiodes.</p>",
+          meta_tags=[
+              {
+                "link_label": "Klantcontact"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "•",
+                "toelichting": "Op rustige momenten enkele tientallen oproepen per dag, tijdens piekperiodes honderden per dag"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>iChoosr, specialist in groepsaankopen voor groene energie, helpt jaarlijks duizenden consumenten bij het vinden van een voordelig energiecontract. Een sterk concept met één grote uitdaging: de communicatie met deelnemers verloopt in pieken en dalen. Tijdens inschrijvingsperiodes en na veilingen stijgt het aantal klantvragen enorm, wat vraagt om flexibiliteit, snelheid en heldere communicatie.</p>\n<p>Om deze uitdaging aan te gaan, ging iChoosr op zoek naar een partner die niet alleen de capaciteit had om deze pieken op te vangen, maar ook actief meedacht over hoe het <a href=\"/sales-contact-center\">klantcontact</a> soepeler kon verlopen.</p>\n<h2>Een uitdaging met pieken en dalen</h2>\n<p>Tijdens de groepsaankopen komt alles in beweging. Consumenten hebben hulp nodig bij hun inschrijving, willen hun persoonlijk aanbod bespreken of hebben vragen over de overstap naar hun nieuwe energieleverancier. Dit leidt tot enorme pieken in klantcontact. Op rustige momenten kwamen er enkele tientallen oproepen per dag binnen, maar tijdens piekperiodes steeg dat naar honderden.<br><br>De bestaande aanpak bood geen oplossing voor deze fluctuaties. De ondersteuning was niet flexibel genoeg en optimalisaties bleven uit. Dit zorgde niet alleen voor lange wachttijden, maar ook voor frustratie bij zowel klanten als het team van iChoosr.<br><br>Samen met salesUp werd een oplossing ontwikkeld die verder ging dan alleen het beantwoorden van vragen. De focus lag op proactief begeleiden, continu verbeteren en een samenwerking waarin beide partijen elkaar versterken.</p>\n<h2>Van leverancier naar strategische partner</h2>\n<p>In plaats van alleen capaciteit bij te schakelen op drukke momenten, werd de hele klantreis onder de loep genomen. Door heldere structuren op te zetten en slimmer samen te werken, ontstond een werkwijze die niet alleen piekbelasting kon opvangen, maar ook zorgde voor een betere klantervaring.</p>\n<h2>Soepelere inschrijvingen</h2>\n<p>Veel consumenten liepen vast bij het invoeren van hun verbruiksgegevens of EAN-codes. In plaats van hen te laten worstelen met onduidelijkheden, werd er actief meegedacht over hoe de ondersteuning verbeterd kon worden. Klanten kregen duidelijke begeleiding, wat zorgde voor minder uitval en snellere inschrijvingen.</p>\n<h2>Duidelijke communicatie na de veiling</h2>\n<p>Zodra de winnende energieleverancier bekend was, kwamen er veel vragen. Wat betekent dit bod voor mij? Wat als ik nog een lopend contract heb? Door klantvragen te analyseren en processen te optimaliseren, werden antwoorden sneller en consistenter gegeven. Dit verhoogde niet alleen het vertrouwen bij consumenten, maar verlichtte ook de druk op de backoffice van iChoosr.</p>\n<h2>Meedenken in plaats van uitvoeren</h2>\n<p>De samenwerking tussen iChoosr en salesUp groeide uit tot meer dan alleen operationele ondersteuning. Door wekelijks inzichten en klantfeedback te delen, werd het proces continu verbeterd. Gespreksanalyses hielpen om de veelgestelde vragen beter te structureren en processen efficiënter in te richten.</p>\n<h2>Het resultaat: een soepele en betrouwbare klantreis</h2>\n<p>Dankzij de samenwerking werd klantcontact geen knelpunt meer, maar een krachtig onderdeel van de groepsaankoop.</p>\n<ul><li>Klantvragen werden sneller en consistenter beantwoord.</li><li>De piekbelasting werd efficiënt opgevangen, zonder kwaliteitsverlies.</li><li>Processen werden continu verbeterd, waardoor de klantervaring steeds sterker werd.</li></ul>\n<p><br>Wat begon als een oplossing voor capaciteitsproblemen, groeide uit tot een strategisch partnerschap waarin beide partijen elkaar versterken.</p>\n<h2>Meer impact maken met salesUp?</h2>\n<p>Wil je, net als iChoosr, klantvragen efficiënter afhandelen en je klantbeleving verbeteren? Ontdek hoe een slimme en flexibele samenwerking kan bijdragen aan een soepelere klantreis. Vul dan snel het formulier in en we nemen spoedig contact op!<br></p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor iChoosr deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/immo-van-middelem",
+                    "type": "CONTENT", "content_id": 453268375760
+                  }
+                },
+                "sector": "Vastgoed",
+                "naam": "Immo Van Middelem",
+                "stat": "Bekijk de volledige case.",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/orange",
+                    "type": "CONTENT", "content_id": 453268493508
+                  }
+                },
+                "sector": "Telecom",
+                "naam": "Orange",
+                "stat": "Telesales België behaalde een score van 91% in de Europese audit – de hoogste score van Europa",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/van-heurck",
+                    "type": "CONTENT", "content_id": 453268669671
+                  }
+                },
+                "sector": "Bedrijfskleding",
+                "naam": "Van Heurck",
+                "stat": "Een bruto conversie van 26,28% in België (ruim boven de doelstelling van 10%)",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

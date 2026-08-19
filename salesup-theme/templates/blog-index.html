@@ -1,0 +1,138 @@
+<!--
+  templateType: blog_listing
+  isAvailableForNewContent: true
+  label: salesUp — Blog listing
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Blog\",\n      \"@id\":\"https://www.salesup.be/blog#blog\",\n      \"name\":\"salesUp Blog\",\n      \"url\":\"https://www.salesup.be/blog\",\n      \"description\":\"Praktische inzichten over sales, groei en commerciële strategie van salesUp.\",\n      \"publisher\":{\"@id\":\"https://www.salesup.be/#org\"}\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://www.salesup.be/blog\"}\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/blog",
+  hreflang_fr="" %}
+
+{% module "breadcrumb_blog" path="../modules/breadcrumb",
+  crumbs=[
+    {
+      "link_label": "Home",
+      "url": {
+        "url": {
+          "href": "/",
+          "type": "CONTENT",
+          "content_id": 453268163816
+        }
+      }
+    },
+    {
+      "link_label": "Blog",
+      "url": {
+        "url": {
+          "href": "",
+          "type": "EXTERNAL"
+        }
+      }
+    }
+  ],
+  emit_schema=false
+%}
+
+{% module "hero_blog" path="../modules/hero",
+  eyebrow="BLOG",
+  heading="Inzichten over <em>sales &amp; groei</em>.",
+  subtext="<p>Praktische lessen uit onze eigen praktijk en die van commerciële leiders — over prospectie, klantbehoud, strategie en de mensen achter de cijfers.</p>",
+  media_type="trustcard",
+  trustcard_aria="salesUp blog",
+  trustcard_image={
+    "src": "https://salesup.be/hubfs/Frame%20252-1.png",
+    "alt": "salesUp-team in gesprek over commerciële groei en salesstrategie."
+  },
+  trustcard_stat="",
+  trustcard_label="",
+  trustcard_quote="",
+  trustcard_quote_who=""
+%}
+
+{% set all_tags = blog_tags(group.id, 250) %}
+<section class="blog-listing wrap" aria-label="Blogartikels">
+  <nav class="blog-tags" aria-label="Filter op categorie">
+    <a class="blog-tag{% unless tag %} is-active{% endunless %}" href="{{ group.absolute_url }}"{% unless tag %} aria-current="true"{% endunless %}>Toon alles</a>
+    {% for item in all_tags %}
+    <a class="blog-tag{% if tag and tag.slug == item.slug %} is-active{% endif %}" href="{{ blog_tag_url(group.id, item.slug) }}"{% if tag and tag.slug == item.slug %} aria-current="true"{% endif %}>{{ item.name|default(item) }}</a>
+    {% endfor %}
+  </nav>
+  <label class="blog-tags-mobile-label mono" for="blog-tag-select">Filter</label>
+  <select id="blog-tag-select" class="blog-tags-select" aria-label="Filter op categorie" onchange="if(this.value){location.href=this.value;}">
+    <option value="{{ group.absolute_url }}"{% unless tag %} selected{% endunless %}>Toon alles</option>
+    {% for item in all_tags %}
+    <option value="{{ blog_tag_url(group.id, item.slug) }}"{% if tag and tag.slug == item.slug %} selected{% endif %}>{{ item.name|default(item) }}</option>
+    {% endfor %}
+  </select>
+
+  <div class="blog-grid">
+    {% for content in contents %}
+    <a class="blog-card" href="{{ content.absolute_url }}">
+      <div class="thumb">
+        {% if content.featured_image %}
+        <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text|default(content.name) }}" loading="lazy" decoding="async">
+        {% endif %}
+      </div>
+      <div class="body">
+        <span class="meta">{{ content.publish_date|datetimeformat('%d-%m-%Y') }}</span>
+        <h3>{{ content.name }}</h3>
+        <p>{{ content.meta_description or content.post_list_content|striptags|truncatehtml(160) }}</p>
+        <span class="go">Start met lezen <span class="arrow" aria-hidden="true">&rarr;</span></span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  {% if next_page_num %}
+  <div class="blog-load-more">
+    <a class="btn" href="{{ blog_page_link(next_page_num) }}">Meer laden <span class="arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+  {% endif %}
+</section>
+
+{% module "soft_cta_blog" path="../modules/soft-cta",
+  aria="Schrijf je in op de nieuwsbrief",
+  sc_eyebrow="Blijf scherp",
+  heading="Elke maand één praktische salesles in je inbox",
+  tekst="<p>Geen ruis, wel bruikbare inzichten uit onze eigen praktijk. Schrijf je in en groei mee.</p>",
+  veldenset={
+    "naam": false,
+    "email": true,
+    "telefoon": false,
+    "website": false
+  },
+  link_label="Schrijf me in",
+  note="Eén mail per maand — uitschrijven kan altijd.",
+  form={
+    "form_id": "6fc8a15c-f755-4a64-96cd-00681b17ce96",
+    "response_type": "inline",
+    "message": "Bedankt voor je inschrijving."
+  },
+  navy=false
+%}
+
+{% module "final_cta_blog" path="../modules/final-cta",
+  anchor="contact",
+  heading="Zin om dit in de praktijk te brengen?",
+  tekst="<p>Wil je sparren over je commerciële groei? We bellen je binnen 30 minuten terug.</p>",
+  cta1_text="Plan een gesprek",
+  cta1_url={
+    "url": {
+      "href": "/contact",
+      "type": "CONTENT",
+      "content_id": 453268184310
+    }
+  },
+  cta1_new_tab=false,
+  cta2_text="Of bel ons: 053 78 28 30",
+  cta2_url={
+    "url": {
+      "href": "tel:+3253782830",
+      "type": "EXTERNAL"
+    }
+  }
+%}
+{% endblock content %}

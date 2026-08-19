@@ -1,0 +1,71 @@
+[ {
+  "id" : "blok",
+  "name" : "blok",
+  "label" : "Blok",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "hero", "Hero" ], [ "host", "Host" ] ],
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "hero"
+}, {
+  "id" : "eyebrow",
+  "name" : "eyebrow",
+  "label" : "Eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "GROWTH SESSIONS"
+}, {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Titel (H1)",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "De <em>groeipodcast</em> van salesUp."
+}, {
+  "id" : "subtext",
+  "name" : "subtext",
+  "label" : "Subtekst",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Eerlijke gesprekken met commerciële leiders over groei, leiderschap en de mensen achter de cijfers. Luister & ontdek."
+}, {
+  "id" : "host_label",
+  "name" : "host_label",
+  "label" : "Host — label",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "MEET THE HOST"
+}, {
+  "id" : "host_name",
+  "name" : "host_name",
+  "label" : "Host — naam",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Andy Vlaeminck"
+}, {
+  "id" : "host_bio",
+  "name" : "host_bio",
+  "label" : "Host — bio",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Business Unit Manager bij salesUp en host van de Growth Sessions."
+} ]

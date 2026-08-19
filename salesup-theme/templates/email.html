@@ -1,0 +1,340 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — E-mail
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"E-mail\",\n      \"serviceType\":\"E-mailmarketing, flows & nurturing\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/email\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Marketing\",\"url\":\"https://www.salesup.be/marketing\"},\n      \"description\":\"E-mailflows en nurturing per segment die leads warm houden tot ze koopklaar zijn: de juiste boodschap op het juiste moment, op één datalaag met je andere kanalen.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Marketing\",\"item\":\"https://www.salesup.be/marketing\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"E-mail\",\"item\":\"https://www.salesup.be/email\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Sturen jullie massamails of gerichte flows?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Gerichte flows, geen massamail naar iedereen tegelijk. We segmenteren per doelgroep zodat leads, klanten en prospects elk relevante content krijgen, en we bepalen het verzendmoment op basis van data. Zo houdt e-mail je leads warm tot ze koopklaar zijn, in plaats van in de spam te belanden.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Werkt e-mail ook echt voor koude of lauwe leads?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, mits je op een laagdrempelige manier contacteert en test wat aankomt. Voor UNIZO combineerden we een LinkedIn- en multichannel-outbound funnel met mail en social tot 385 adviesgesprekken op vijf maanden, met een 80% hogere responsgraad dan 'spammy' content. Nurturing houdt de lead warm tot het gesprek.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Met welke mailingplatformen werken jullie?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We sluiten aan op courante platformen zoals Mailchimp, Klaviyo en ActiveCampaign, en houden alles op dezelfde datalaag als je andere kanalen. Nieuwe blogs of pagina's stromen automatisch door naar je mailings, en A/B-testen op onderwerpregels laat zien wat effectief geopend wordt.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat gebeurt er als een lead reageert?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Wie koopklaar is, verdwijnt niet in een mailinglijst: de lead stroomt rechtstreeks door naar ons Sales Contact Center dat binnen 30 minuten opvolgt. De gespreksdata komt terug om je segmenten en boodschappen te verfijnen. Dat is de datalus die een los e-mailbureau niet kan sluiten.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/email",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              },
+              {
+                "link_label": "E-mail",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: set heeft geen echt e-mail-/campagnebeeld; dichtstbijzijnde is kantoor-/overlegsfeer -->
+        <!-- VERIFIEER: functie niet op de bronpagina vermeld -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Marketing · E-mail",
+          heading="E-mail die je leads <em>warm houdt</em> tot ze koopklaar zijn.",
+          subtext="<p>Flows en nurturing per segment, met de juiste boodschap op het juiste moment — geen massamail naar iedereen tegelijk. E-mail houdt je leads betrokken tot het gesprek, en wie koopklaar is, stroomt rechtstreeks door naar sales en wordt binnen 30 minuten gebeld.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo werken onze e-mailflows",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Segment, geen massa"
+              },
+              {
+                "link_label": "Nurturing-flows"
+              },
+              {
+                "link_label": "A/B op onderwerpregels"
+              },
+              {
+                "link_label": "Voedt je sales"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij UNIZO",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2055.jpg",
+              "alt": "salesUp-team overlegt over een e-mailcampagne aan een sta-tafel."
+            },
+          trustcard_badge="",
+          trustcard_stat="385",
+          trustcard_label="Succesvolle adviesgesprekken op vijf maanden voor UNIZO, via een LinkedIn- en multichannel-outbound funnel met mail en social — met 80% hogere responsgraad dan 'spammy' content.",
+          trustcard_quote="\"De resultaten van de outbound funnel overstegen onze verwachtingen. Mensen werden op een laagdrempelige manier gecontacteerd, waardoor we gemiddeld 20 ingevulde scans per week kregen.\"",
+          trustcard_quote_who="— <strong>Nele Creuwels</strong>, UNIZO <!-- VERIFIEER: functie niet op de bronpagina vermeld -->"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat je krijgt",
+          heading="De juiste boodschap, bij de juiste persoon, op het juiste moment.",
+          intro="<p>E-mail is er om je leads warm te houden tot ze koopklaar zijn. Elke mailing is gericht — en wie reageert, gaat rechtstreeks door naar sales.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Segmentatie per doelgroep",
+                "tekst": "<p>Leads, klanten en prospects krijgen elk relevante content, niet één lijst voor iedereen. Zo blijft elke mail bruikbaar in plaats van ruis.</p>"
+              },
+              {
+                "title": "Nurturing-flows die warm houden",
+                "tekst": "<p>Geautomatiseerde reeksen die je lead betrokken houden tot het moment van kopen. Voor UNIZO gaf een laagdrempelige aanpak 80% hogere respons dan 'spammy' content.</p>"
+              },
+              {
+                "title": "A/B-testen & datagedreven timing",
+                "tekst": "<p>We testen onderwerpregels op wat effectief geopend wordt, en versturen op het moment dat historisch de beste respons oplevert — niet op buikgevoel.</p>"
+              },
+              {
+                "title": "Koopklare leads naar sales",
+                "tekst": "<p>Wie reageert, gaat door naar ons Sales Contact Center dat binnen 30 minuten belt. De gespreksdata komt terug om je segmenten en boodschappen te verfijnen — de datalus die een los bureau niet sluit.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van segment tot verstuurde flow.",
+          intro="<p>Welke groepen krijgen welke boodschap, en wat moet elke flow uiteindelijk opbrengen aan gesprekken.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Segmenten & doel bepalen",
+                "tekst": "<p>Welke groepen krijgen welke boodschap, en wat moet elke flow uiteindelijk opbrengen aan gesprekken.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Contentkalender & flows",
+                "tekst": "<p>Wanneer welke mailing en welke nurturing-reeks vertrekt, op één datalaag met je andere kanalen.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Opstellen, testen & versturen",
+                "tekst": "<p>Copy, design en onderwerpregel-varianten, getest op wat geopend en gelezen wordt.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Doorgeven, meten & verfijnen",
+                "tekst": "<p>Koopklare leads gaan door naar sales voor opvolging binnen 30 minuten; hun gespreksdata verfijnt het volgende segment.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over e-mail vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Sturen jullie massamails of gerichte flows?",
+                "answer": "<p>Gerichte flows, geen massamail naar iedereen tegelijk. We segmenteren per doelgroep zodat leads, klanten en prospects elk relevante content krijgen, en we bepalen het verzendmoment op basis van data. Zo houdt e-mail je leads warm tot ze koopklaar zijn, in plaats van in de spam te belanden.</p>"
+              },
+              {
+                "question": "Werkt e-mail ook echt voor koude of lauwe leads?",
+                "answer": "<p>Ja, mits je op een laagdrempelige manier contacteert en test wat aankomt. Voor UNIZO combineerden we een LinkedIn- en multichannel-outbound funnel met mail en social tot 385 adviesgesprekken op vijf maanden, met een 80% hogere responsgraad dan 'spammy' content. Nurturing houdt de lead warm tot het gesprek.</p>"
+              },
+              {
+                "question": "Met welke mailingplatformen werken jullie?",
+                "answer": "<p>We sluiten aan op courante platformen zoals Mailchimp, Klaviyo en ActiveCampaign, en houden alles op dezelfde datalaag als je andere kanalen. Nieuwe blogs of pagina's stromen automatisch door naar je mailings, en A/B-testen op onderwerpregels laat zien wat effectief geopend wordt.</p>"
+              },
+              {
+                "question": "Wat gebeurt er als een lead reageert?",
+                "answer": "<p>Wie koopklaar is, verdwijnt niet in een mailinglijst: de lead stroomt rechtstreeks door naar ons Sales Contact Center dat binnen 30 minuten opvolgt. De gespreksdata komt terug om je segmenten en boodschappen te verfijnen. Dat is de datalus die een los e-mailbureau niet kan sluiten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met onze marketing werken",
+          eyebrow="Bedrijven die met onze marketing werken",
+          logos=[
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Hivolta",
+                "slug": ""
+              },
+              {
+                "naam": "Jaguar Land Rover",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om je leads warm te houden tot ze kopen?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat e-mail voor jouw klantenbestand kan betekenen. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Website",
+                "url": {
+                  "url": {
+                    "href": "/website",
+                    "type": "CONTENT", "content_id": 453268311272
+                  }
+                }
+              },
+              {
+                "link_label": "SEA",
+                "url": {
+                  "url": {
+                    "href": "/sea",
+                    "type": "CONTENT", "content_id": 453268178164
+                  }
+                }
+              },
+              {
+                "link_label": "SEO/GEO",
+                "url": {
+                  "url": {
+                    "href": "/seo-geo",
+                    "type": "CONTENT", "content_id": 453268282562
+                  }
+                }
+              },
+              {
+                "link_label": "Social ads",
+                "url": {
+                  "url": {
+                    "href": "/social-ads",
+                    "type": "CONTENT", "content_id": 453268282609
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

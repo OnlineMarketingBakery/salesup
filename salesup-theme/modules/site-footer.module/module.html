@@ -1,0 +1,64 @@
+{# GLOBAL footer. Kolommen via herhaalbare links (niet live Footer-SalesUp menu — dat is oude IA). #}
+{% set home_page = content_by_id(453268163816) %}
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="{{ home_page.absolute_url if home_page and home_page.absolute_url else '/' }}" class="foot-logo" aria-label="salesUp home">
+          <img src="https://salesup.be/hubfs/logo-salesup.svg" alt="salesUp" width="116" height="42" decoding="async">
+        </a>
+        <p class="foot-addr">{{ module.adres }} · <a href="tel:{{ module.tel_href }}">{{ module.tel_display }}</a> · <a href="mailto:{{ module.email }}">{{ module.email }}</a></p>
+      </div>
+      {% if module.columns %}
+      {% for col in module.columns %}
+      <div class="foot-col">
+        <span class="mono">{{ col.title }}</span>
+        {% for l in col.links %}
+          <a href="{{ l.url.url.href|default(l.url.href)|default('#') }}">{{ l.link_label }}</a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      {% else %}
+      <div class="foot-col">
+        <span class="mono">Wat we doen</span>
+        <a href="/marketing">Marketing</a>
+        <a href="/sales-contact-center">Sales Contact Center</a>
+        <a href="/face2face-sales">Face2Face Sales</a>
+        <a href="/training">Training</a>
+        <a href="/sales-consultants">Sales Consultants</a>
+      </div>
+      <div class="foot-col">
+        <span class="mono">Bedrijf</span>
+        <a href="/over-ons">Over ons</a>
+        <a href="/cases">Cases</a>
+        <a href="/werken-bij">Vacatures</a>
+        <a href="/blog">Blog</a>
+        <a href="/groeipodcast-salesup">Podcast</a>
+      </div>
+      <div class="foot-col">
+        <span class="mono">Contact</span>
+        <a href="/contact">Plan een gesprek</a>
+        <a href="https://www.linkedin.com/company/salesup-be">LinkedIn</a>
+        <a href="tel:{{ module.tel_href }}">{{ module.tel_display }}</a>
+      </div>
+      {% endif %}
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; {{ year }} salesUp</span>
+      <span>
+        {% if module.legal_links %}
+          {% for l in module.legal_links %}
+            {% if not loop.first %} · {% endif %}
+            {% set href = l.url.url.href|default(l.url.href)|default('#') %}
+            {% if href == '/privacy' %}{% set href = '/privacy-policy' %}{% endif %}
+            <a href="{{ href }}">{{ l.link_label }}</a>
+          {% endfor %}
+        {% else %}
+          <a href="/algemene-voorwaarden">Algemene voorwaarden</a>
+          ·
+          <a href="/privacy-policy">Privacy &amp; cookiebeleid</a>
+        {% endif %}
+      </span>
+    </div>
+  </div>
+</footer>

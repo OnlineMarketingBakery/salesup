@@ -1,0 +1,22 @@
+<section class="section aip-ghost" id="data-privacy" aria-labelledby="privacy-titel">
+  <div class="wrap">
+    <div class="section-head">
+      {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+      <h2 id="privacy-titel">{{ module.heading }}</h2>
+      {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+    </div>
+    <div class="aip-split">
+      <figure class="aip-media">
+        <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if module.media.src %}{{ module.media.src }}{% else %}https://salesup.be/hubfs/Rectangle%2060.jpg{% endif %}" alt="{{ module.media.alt }}" width="1600" height="2000" loading="lazy" decoding="async">
+      </figure>
+      <div>
+        <ul class="aip-trust">
+          {% for row in module.trust_rows %}
+          <li><b>{{ row.titel }}</b><span>{{ row.uitleg }}</span></li>
+          {% endfor %}
+        </ul>
+        {% if module.slot %}<p class="aip-privacy-slot">{{ module.slot }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>

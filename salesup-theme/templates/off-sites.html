@@ -1,0 +1,347 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Off-sites
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Off-sites\",\n      \"serviceType\":\"Meerdaagse sales-offsite op locatie\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/off-sites\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Training\",\"url\":\"https://www.salesup.be/training\"},\n      \"description\":\"Een meerdaagse sales-offsite op locatie die het team op één lijn zet en echte verkoopgesprekken intensief laat oefenen, met werkpunten uit de eigen gesprekanalyse.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Training\",\"item\":\"https://www.salesup.be/training\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Off-sites\",\"item\":\"https://www.salesup.be/off-sites\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe lang duurt een off-site?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een off-site is meerdaags: genoeg tijd om weg te zijn van de dagelijkse ruis, het team op één lijn te zetten en echte gesprekken intensief te oefenen. De exacte duur en de locatie stemmen we af op je team en je doel; het kan bij jou, op een externe locatie of in een combinatie.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarin verschilt een off-site van een gewone trainingsdag?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een gewone trainingsdag is inspiratie tussen de vergaderingen door. Een off-site haalt het team er bewust uit, meerdere dagen, zodat er tijd is om echte gesprekken te oefenen, feedback te verwerken en het opnieuw te doen. De werkpunten komen uit je eigen gesprekanalyse, dus je oefent op wat écht misloopt, niet op een algemeen scenario.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Blijft het beklijven na de off-site?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, want de off-site staat niet los. Wat er geoefend wordt, staat op scorecards in ons platform salesUp Academy, en iedereen oefent daarna verder op zijn werkpunt met AI-avatars. Zo verwatert de energie van de off-site niet, maar wordt ze zichtbaar in de gesprekken en in de omzet via de koppeling met je CRM/ERP.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor hoeveel mensen is een off-site geschikt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Van een compact salesteam tot een groot event-team. Bij Astara stoomden we op die manier 85 informanten klaar voor het Brussels Motor Show, met leeftijden van 18 tot 78 jaar. We stemmen het programma af op de grootte en het niveau van je groep. Liever eerst overleggen? We bellen je binnen 30 minuten terug.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/off-sites",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              },
+              {
+                "link_label": "Off-sites",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload presentatie-groep.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: nog geen echte off-site-locatiefoto; presentatie-groep als sterkste trainingsbeeld. -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Training · Off-sites",
+          heading="Een off-site waar je team écht op <em>scherp</em> komt.",
+          subtext="<p>Meerdaagse sales-offsite op locatie, weg van de dagelijkse ruis. Genoeg tijd om je team op één lijn te zetten en echte verkoopgesprekken intensief te oefenen — op de werkpunten die uit je eigen gesprekanalyse komen, niet op een algemeen scenario.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo verloopt een off-site",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Meerdaags op locatie"
+              },
+              {
+                "link_label": "Team op één lijn"
+              },
+              {
+                "link_label": "Echte gesprekken oefenen"
+              },
+              {
+                "link_label": "Werkpunten uit de data"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Astara",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Group%20201-2.png",
+              "alt": "Groep verkopers volgt een intensieve sales-training met een salesUp-trainer vooraan."
+            },
+          trustcard_badge="",
+          trustcard_stat="85",
+          trustcard_label="Verkopers klaargestoomd voor Astara op het Brussels Motor Show — goed voor +19% productiviteit per verkoper tegenover het vorige event.",
+          trustcard_quote="\"Door zo hard te focussen op plezier, goesting en energie is niemand in die 'vallei van ellende' gesukkeld.\"",
+          trustcard_quote_who="— <strong>Andy Vlaeminck</strong>, Business Unit Manager bij salesUp"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het oplevert",
+          heading="Weg van de ruis. Op één lijn terug.",
+          intro="<p>Een off-site geeft je wat een losse trainingsdag nooit kan: tijd en focus. Tijd om echt te oefenen, en focus om het team achter dezelfde aanpak te krijgen.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Team op één lijn",
+                "tekst": "<p>Meerdere dagen samen, weg van de dagelijkse ruis, brengt je team achter dezelfde verkoopaanpak en dezelfde taal. Zo trekken junior en senior aan hetzelfde zeel.</p>"
+              },
+              {
+                "title": "Echte gesprekken, intensief geoefend",
+                "tekst": "<p>Geen theorie voor een zaal, maar oefenen, feedback krijgen en het meteen opnieuw doen. De werkpunten komen uit je eigen gesprekanalyse, dus je oefent op wat écht misloopt.</p>"
+              },
+              {
+                "title": "Energie die aanstekelijk is",
+                "tekst": "<p>Een off-site draait ook op plezier, goesting en energie. Die energie tilt de hele groep op — en dat is precies wat je terug meeneemt naar de verkoopvloer.</p>"
+              },
+              {
+                "title": "Meetbaar, ook nadien",
+                "tekst": "<p>Wat je oefent, staat op scorecards in salesUp Academy. Iedereen oefent daarna verder op zijn werkpunt met AI-avatars, zodat de off-site niet verwatert maar blijft plakken.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van doelstelling tot blijvende gewoonte.",
+          intro="<p>We bepalen samen het doel van de off-site en halen de werkpunten uit de gesprekanalyse van je team.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Doel & werkpunten scherpstellen",
+                "tekst": "<p>We bepalen samen het doel van de off-site en halen de werkpunten uit de gesprekanalyse van je team.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Meerdaags oefenen op locatie",
+                "tekst": "<p>Weg van de dagelijkse ruis oefent je team echte gesprekken, krijgt feedback en doet het opnieuw — tot het zit.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Vastleggen op scorecards",
+                "tekst": "<p>De voortgang van iedere verkoper leggen we vast op een scorecard in salesUp Academy, tegenover jouw eigen sales-methodologie.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Doortrainen & koppelen aan omzet",
+                "tekst": "<p>Na de off-site oefent iedereen verder met AI-avatars, en via je CRM/ERP zie je of de aanpak ook meer omzet oplevert.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over off-sites vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Hoe lang duurt een off-site?",
+                "answer": "<p>Een off-site is meerdaags: genoeg tijd om weg te zijn van de dagelijkse ruis, het team op één lijn te zetten en echte gesprekken intensief te oefenen. De exacte duur en de locatie stemmen we af op je team en je doel; het kan bij jou, op een externe locatie of in een combinatie.</p>"
+              },
+              {
+                "question": "Waarin verschilt een off-site van een gewone trainingsdag?",
+                "answer": "<p>Een gewone trainingsdag is inspiratie tussen de vergaderingen door. Een off-site haalt het team er bewust uit, meerdere dagen, zodat er tijd is om echte gesprekken te oefenen, feedback te verwerken en het opnieuw te doen. De werkpunten komen uit je eigen gesprekanalyse, dus je oefent op wat écht misloopt, niet op een algemeen scenario.</p>"
+              },
+              {
+                "question": "Blijft het beklijven na de off-site?",
+                "answer": "<p>Ja, want de off-site staat niet los. Wat er geoefend wordt, staat op scorecards in ons platform salesUp Academy, en iedereen oefent daarna verder op zijn werkpunt met AI-avatars. Zo verwatert de energie van de off-site niet, maar wordt ze zichtbaar in de gesprekken en in de omzet via de koppeling met je CRM/ERP.</p>"
+              },
+              {
+                "question": "Voor hoeveel mensen is een off-site geschikt?",
+                "answer": "<p>Van een compact salesteam tot een groot event-team. Bij Astara stoomden we op die manier 85 informanten klaar voor het Brussels Motor Show, met leeftijden van 18 tot 78 jaar. We stemmen het programma af op de grootte en het niveau van je groep. Liever eerst overleggen? We bellen je binnen 30 minuten terug.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met salesUp werken",
+          eyebrow="Bedrijven die met salesUp werken",
+          logos=[
+              {
+                "naam": "Astara",
+                "slug": ""
+              },
+              {
+                "naam": "Liantis",
+                "slug": ""
+              },
+              {
+                "naam": "Zambon",
+                "slug": ""
+              },
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om je team er echt eens uit te halen?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een off-site voor jouw team kan betekenen. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Inspiratiesessie",
+                "url": {
+                  "url": {
+                    "href": "/inspiratiesessie",
+                    "type": "CONTENT", "content_id": 453268164824
+                  }
+                }
+              },
+              {
+                "link_label": "Coachingstraject",
+                "url": {
+                  "url": {
+                    "href": "/coachingstraject",
+                    "type": "CONTENT", "content_id": 453268184281
+                  }
+                }
+              },
+              {
+                "link_label": "Trainingsplatform (salesUp Academy)",
+                "url": {
+                  "url": {
+                    "href": "/trainingsplatform",
+                    "type": "CONTENT", "content_id": 453268285688
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

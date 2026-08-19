@@ -1,0 +1,48 @@
+{% if module.heading %}
+<section class="vac-split wrap" id="{{ module.anchor }}" aria-labelledby="{{ module.anchor }}-titel">
+  <div class="vac-split-grid">
+    <div>
+      {% if module.eyebrow %}<span class="mono" style="color:var(--orange);display:block;margin-bottom:14px;">{{ module.eyebrow }}</span>{% endif %}
+      <h2 id="{{ module.anchor }}-titel">{{ module.heading }}</h2>
+      {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+      <ul class="vac-check">
+        {% for item in module.checklist %}
+        <li>{{ item.text }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% set video = module.video_url|default('') %}
+    {% if 'jNQXAC9IVRw' in video %}{% set video = '' %}{% endif %}
+    {% set video_lower = video|lower %}
+    {% set is_embed = 'youtube.com' in video_lower or 'youtu.be' in video_lower or 'vimeo.com' in video_lower or 'hubspotvideo.com' in video_lower %}
+    {% set is_file = '.mp4' in video_lower or '.webm' in video_lower or '.mov' in video_lower or '.m4v' in video_lower %}
+    {% if video %}
+    <figure class="vac-split-figure">
+      <div class="vac-split-media vac-split-video{% if is_file or (not is_embed and 'hubfs/' in video_lower) %} is-portrait{% else %} is-embed{% endif %}">
+        {% if is_file or (not is_embed and 'hubfs/' in video_lower) %}
+        <video
+          src="{{ video }}"
+          title="{{ module.video_title|default('Studentenjob video') }}"
+          controls
+          playsinline
+          preload="metadata"></video>
+        {% else %}
+        <iframe
+          src="{{ video }}"
+          title="{{ module.video_title|default('Studentenjob video') }}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        {% endif %}
+      </div>
+      {% if module.caption %}<figcaption>{{ module.caption }}</figcaption>{% endif %}
+    </figure>
+    {% else %}
+    <figure>
+      <div class="vac-split-media"><img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if module.media.src %}{{ module.media.src }}{% else %}https://salesup.be/hubfs/Rectangle%2057.jpg{% endif %}" alt="{{ module.media.alt }}" loading="lazy" decoding="async"></div>
+      {% if module.caption %}<figcaption>{{ module.caption }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,167 @@
+[
+  {
+    "klant": "Orange",
+    "sector": "Telecom",
+    "diensten": "sales-contact-center face2face",
+    "tags": "Sales Contact Center, Face2Face Sales",
+    "cijfer": "91%",
+    "unit": "auditscore — de hoogste van Europa",
+    "context": "Een dedicated team van 65+ medewerkers voor outbound telesales, cross- en upsell én veldverkoop, goed voor tienduizenden contacten per maand.",
+    "quote": "\"Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.\"",
+    "quote_who": "— <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+  },
+  {
+    "klant": "Van Heurck",
+    "sector": "Bedrijfskleding",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "26,28%",
+    "unit": "bruto conversie, tegenover een doel van 10%",
+    "context": "Telefonische prospectie in België en Nederland sinds januari 2025. Uit 293 afgewerkte contacten kwamen 77 hoogwaardige leads — 2,6 keer boven je doel.",
+    "quote": "\"Ze weten onze behoeften feilloos te vertalen naar effectieve en klantgerichte telefoongesprekken. Hun flexibiliteit en snelheid maken hen een waardevolle partner voor ons.\"",
+    "quote_who": "— <strong>Danny Lenselink</strong>, Chief Commercial Officer bij Van Heurck"
+  },
+  {
+    "klant": "Q8Oils",
+    "sector": "Brandstoffen &amp; smeermiddelen",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "&gt;50%",
+    "unit": "conversie op de Antwerpen-campagne",
+    "context": "Telefonische prospectie in de Haven van Antwerpen in twee fasen: eerst een enquête, dan een kennismakingsgesprek. Die context vermelden we er bewust altijd bij.",
+    "quote": "\"Onze aangename samenwerking met salesUp blijft consequent leiden tot blijvende successen.\"",
+    "quote_who": "— <strong>Isabella Hauquier</strong>, Sales Manager bij Q8Oils"
+  },
+  {
+    "klant": "UNIZO",
+    "sector": "Ondernemersorganisatie",
+    "diensten": "sales-contact-center marketing",
+    "tags": "Sales Contact Center, Marketing",
+    "cijfer": "385",
+    "unit": "adviesgesprekken op vijf maanden",
+    "context": "Warme prospectie plus een multichannel outbound funnel voor het ETAB-project, met een responsgraad die 80% hoger lag dan onpersoonlijke content en gemiddeld 20 ingevulde HR-scans per week.",
+    "quote": "\"De resultaten van de outbound funnel overstegen onze verwachtingen. Mensen werden op een laagdrempelige manier gecontacteerd.\"",
+    "quote_who": "— <strong>Nele Creuwels</strong>, UNIZO"
+  },
+  {
+    "klant": "VM Building Solutions",
+    "sector": "Bouw",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "535",
+    "unit": "afspraken, aan 16,21% conversie",
+    "context": "Telefonische prospectie naar architecten plus marktonderzoek bij bouwbedrijven. De conversie lag boven de doelstelling van 10%, met 981 enquête-antwoorden uit het marktonderzoek.",
+    "quote": "\"Heel goede professionele samenwerking met salesUp. Vlotte communicatie en sympathieke medewerkers.\"",
+    "quote_who": "— <strong>Filine Steijaert</strong>, VM Building Solutions"
+  },
+  {
+    "klant": "Astara",
+    "sector": "Autosector",
+    "diensten": "training",
+    "tags": "Training",
+    "cijfer": "+19%",
+    "unit": "productiviteit per informant",
+    "context": "85 informanten getraind via salesUp Academy voor het Brussels Motor Show, met 13% van de leads omgezet naar verkoop en een doorlopend gemeten bezoekerstevredenheid van 9,4 tot 9,6 op 10.",
+    "quote": "",
+    "quote_who": ""
+  },
+  {
+    "klant": "Trustteam",
+    "sector": "IT-diensten",
+    "diensten": "sales-contact-center marketing",
+    "tags": "Sales Contact Center, Marketing",
+    "cijfer": "19,05%",
+    "unit": "bruto conversie op cold calling",
+    "context": "Telefonische prospectie en telesales rond Dell, Microsoft, MyZen en cybersecurity. De MyZen-campagne haalde daarnaast 18,24% bruto conversie.",
+    "quote": "\"Het is een kwestie van gelijklopend DNA. Dicht bij de klant, reactiesnelheid en vooral veel beweging.\"",
+    "quote_who": "— <strong>Pascal Pinket</strong>, Sales Director bij Trustteam"
+  },
+  {
+    "klant": "GEODIS",
+    "sector": "Logistiek",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "25–28%",
+    "unit": "conversie op de prospectlijsten",
+    "context": "Telefonische prospectie in meerdere fasen voor de logistieke groep, met conversies tussen 25 en 28% op de prospect- en suspectlijsten en demo's van de IRIS-tool.",
+    "quote": "",
+    "quote_who": ""
+  },
+  {
+    "klant": "Axians",
+    "sector": "Audiovisuele oplossingen",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "78%",
+    "unit": "van meeting naar offerte",
+    "context": "36 meetings met warme prospects leverden 28 offertes op, met maandelijkse ‘resultsUp’-meetings en een uitbreiding naar meerdere locaties bij tevreden klanten.",
+    "quote": "",
+    "quote_who": ""
+  },
+  {
+    "klant": "Upgrade Estate",
+    "sector": "Vastgoed",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "1 / beluur",
+    "unit": "afspraak, op deals vanaf €110.000",
+    "context": "Bijna 500 beluren voor prospectie en de opvolging van inbound leads uit Google Ads, Meta-ads en de website, aan 15,29% conversie, met 129 callbacks in de pipeline.",
+    "quote": "",
+    "quote_who": ""
+  },
+  {
+    "klant": "Jaguar Land Rover",
+    "sector": "Automotive",
+    "diensten": "sales-contact-center marketing",
+    "tags": "Sales Contact Center, Marketing",
+    "cijfer": "154",
+    "unit": "gekwalificeerde leads",
+    "context": "Leadkwalificatie en social-mediabeheer voor BeNeLux (dec. 2023 – juli 2024): testritten, offertes en dealercontacten, plus een lost-lead-pilot die 14 leads recupereerde.",
+    "quote": "",
+    "quote_who": ""
+  },
+  {
+    "klant": "Hivolta",
+    "sector": "Duurzame energie",
+    "diensten": "marketing",
+    "tags": "Marketing",
+    "cijfer": "75",
+    "unit": "aanvragen in één kwartaal",
+    "context": "Google-advertentiecampagnes en SEO voor zonnepanelen, thuisbatterijen en laadpalen, met een verbeterde Google-ranking op de kernzoektermen.",
+    "quote": "",
+    "quote_who": ""
+  },
+  {
+    "klant": "Ikaros Solar",
+    "sector": "Duurzame energie",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "39%",
+    "unit": "conversie via slimme data en gerichte telefonische prospectie",
+    "context": "salesUp hielp Ikaros Solar met zorgvuldig geselecteerde data en doelgerichte telesales. Resultaat: tientallen offerteaanvragen en een gevuld salesschema.",
+    "quote": "",
+    "quote_who": ""
+  },
+  {
+    "klant": "Cesano",
+    "sector": "E-bikes &amp; horeca",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "250",
+    "unit": "e-bikes geplaatst",
+    "context": "Cesano valideerde de markt zelf met 100 hotels; salesUp nam daarna de prospectie over en haalde de doelstelling van 250 geplaatste e-bikes.",
+    "quote": "\"Het is enorm fijn dat een externe partner aanvoelt als een extra schakel van je eigen bedrijf.\"",
+    "quote_who": "— <strong>Yves Van Sante</strong>, Founder &amp; Managing Partner van Cesano"
+  },
+  {
+    "klant": "Sobelhor",
+    "sector": "Horeca-leverancier",
+    "diensten": "sales-contact-center",
+    "tags": "Sales Contact Center",
+    "cijfer": "60% → 80%",
+    "unit": "ERP-benutting sinds 2020",
+    "context": "Inbound, logistieke codering en facturatie via hun ERP. Orders, voorraad en klantcontact werden gestructureerd.",
+    "quote": "\"De meertaligheid van het personeel is bovendien een echte aanrader.\"",
+    "quote_who": "— <strong>Marc Wodon</strong>, Sobelhor"
+  }
+]

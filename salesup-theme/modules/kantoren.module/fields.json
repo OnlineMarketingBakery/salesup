@@ -1,0 +1,102 @@
+[ {
+  "id" : "eyebrow",
+  "name" : "eyebrow",
+  "label" : "Eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Onze kantoren"
+}, {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Titel (H2)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Kom gerust eens langs."
+}, {
+  "id" : "kantoren",
+  "name" : "kantoren",
+  "label" : "Kantoren",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "kantoren.status",
+    "name" : "status",
+    "label" : "Status",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Hoofdzetel"
+  }, {
+    "id" : "kantoren.naam",
+    "name" : "naam",
+    "label" : "Naam",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "salesUp Erpe-Mere"
+  }, {
+    "id" : "kantoren.adres",
+    "name" : "adres",
+    "label" : "Adres",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "Evenbroekveld 14, 9420 Erpe-Mere"
+  }, {
+    "id" : "kantoren.maps_url",
+    "name" : "maps_url",
+    "label" : "Google Maps-URL",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "https://www.google.com/maps/search/?api=1&query=Evenbroekveld+14+9420+Erpe-Mere"
+  }, {
+    "id" : "kantoren.beeld",
+    "name" : "beeld",
+    "label" : "Beeld",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "",
+      "alt" : ""
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "soon",
+  "name" : "soon",
+  "label" : "Op de planning (VERIFIEER)",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "Op de planning: nieuwe vestigingen in Mechelen, Gent en Tanger. <!-- VERIFIEER: geplande vestigingen + exacte adressen -->"
+} ]

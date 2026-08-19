@@ -1,0 +1,116 @@
+<section class="proof" aria-label="{{ module.aria|default('Klanten van salesUp') }}">
+  <div class="wrap">{% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}</div>
+  <div class="marquee">
+    <div class="marquee-track">
+      {# Live salesup.be File Manager logos. Square/padded files get is-pad so the bar stays 40px tall on every page. #}
+      {% set live = {
+        "q8oils": "https://salesup.be/hubfs/Q8.png",
+        "Q8Oils": "https://salesup.be/hubfs/Q8.png",
+        "Q8 Oils": "https://salesup.be/hubfs/Q8.png",
+        "Q8": "https://salesup.be/hubfs/Q8.png",
+        "geodis": "https://salesup.be/hubfs/Geodis.svg",
+        "GEODIS": "https://salesup.be/hubfs/Geodis.svg",
+        "Geodis": "https://salesup.be/hubfs/Geodis.svg",
+        "liantis": "https://salesup.be/hubfs/liantis.png",
+        "Liantis": "https://salesup.be/hubfs/liantis.png",
+        "zambon": "https://salesup.be/hubfs/zambon%20good.png",
+        "Zambon": "https://salesup.be/hubfs/zambon%20good.png",
+        "astara": "https://salesup.be/hubfs/astra%20good.png",
+        "Astara": "https://salesup.be/hubfs/astra%20good.png",
+        "ichoosr": "https://salesup.be/hubfs/ichoosr-logo-white%20(1).png",
+        "iChoosr": "https://salesup.be/hubfs/ichoosr-logo-white%20(1).png",
+        "iChoosr.": "https://salesup.be/hubfs/ichoosr-logo-white%20(1).png",
+        "upgrade-estate": "https://salesup.be/hubfs/Attract%20Leads%20logos/UpgradeEstate.svg",
+        "Upgrade Estate": "https://salesup.be/hubfs/Attract%20Leads%20logos/UpgradeEstate.svg",
+        "UpgradeEstate": "https://salesup.be/hubfs/Attract%20Leads%20logos/UpgradeEstate.svg",
+        "eurocircuits": "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg",
+        "Eurocircuits": "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg",
+        "EuroCircuits": "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg",
+        "jaguar-land-rover": "https://salesup.be/hubfs/Keep%20clients%20logos/JLR.svg",
+        "Jaguar Land Rover": "https://salesup.be/hubfs/Keep%20clients%20logos/JLR.svg",
+        "JLR": "https://salesup.be/hubfs/Keep%20clients%20logos/JLR.svg",
+        "contractify": "https://salesup.be/hubfs/Attract%20Leads%20logos/Contractify.svg",
+        "Contractify": "https://salesup.be/hubfs/Attract%20Leads%20logos/Contractify.svg",
+        "guylian": "https://salesup.be/hubfs/Attract%20Leads%20logos/Guylian.svg",
+        "Guylian": "https://salesup.be/hubfs/Attract%20Leads%20logos/Guylian.svg",
+        "culligan": "https://salesup.be/hubfs/Keep%20clients%20logos/Culligan.svg",
+        "Culligan": "https://salesup.be/hubfs/Keep%20clients%20logos/Culligan.svg",
+        "europabank": "https://salesup.be/hubfs/Keep%20clients%20logos/Europabank.svg",
+        "Europabank": "https://salesup.be/hubfs/Keep%20clients%20logos/Europabank.svg",
+        "solidaris": "https://salesup.be/hubfs/Keep%20clients%20logos/Kopie%20van%20Solidaris.svg",
+        "Solidaris": "https://salesup.be/hubfs/Keep%20clients%20logos/Kopie%20van%20Solidaris.svg",
+        "atradius": "https://salesup.be/hubfs/Atradius.png",
+        "Atradius": "https://salesup.be/hubfs/Atradius.png",
+        "joule": "https://salesup.be/hubfs/joule%20good.png",
+        "Joule": "https://salesup.be/hubfs/joule%20good.png",
+        "JOULE": "https://salesup.be/hubfs/joule%20good.png",
+        "orange": "https://salesup.be/hubfs/Orange%20-%20tevreden%20klant%20van%20salesUp.png",
+        "Orange": "https://salesup.be/hubfs/Orange%20-%20tevreden%20klant%20van%20salesUp.png",
+        "trustteam": "https://salesup.be/hubfs/edited-photo.png",
+        "Trustteam": "https://salesup.be/hubfs/edited-photo.png",
+        "audika": "https://salesup.be/hubfs/Audika%20%E2%80%94%20tevreden%20klant%20van%20salesUp.png",
+        "Audika": "https://salesup.be/hubfs/Audika%20%E2%80%94%20tevreden%20klant%20van%20salesUp.png",
+        "Audika Group": "https://salesup.be/hubfs/Audika%20%E2%80%94%20tevreden%20klant%20van%20salesUp.png",
+        "hivolta": "https://salesup.be/hubfs/hivolta.png",
+        "Hivolta": "https://salesup.be/hubfs/hivolta.png",
+        "spadel": "https://salesup.be/hubfs/Spadel%20-%20tevreden%20klant%20van%20salesUp.png",
+        "Spadel": "https://salesup.be/hubfs/Spadel%20-%20tevreden%20klant%20van%20salesUp.png",
+        "murprotec": "https://salesup.be/hubfs/murprotec%20good.png",
+        "Murprotec": "https://salesup.be/hubfs/murprotec%20good.png",
+        "verisure": "https://salesup.be/hubfs/Verisure%20-%20tevreden%20klant%20van%20salesUp.png",
+        "Verisure": "https://salesup.be/hubfs/Verisure%20-%20tevreden%20klant%20van%20salesUp.png",
+        "nova": "https://salesup.be/hubfs/nova%20good.png",
+        "Nova Reperta": "https://salesup.be/hubfs/nova%20good.png",
+        "fraikin": "https://salesup.be/hubfs/fraikin%20good.png",
+        "Fraikin": "https://salesup.be/hubfs/fraikin%20good.png",
+        "juvah": "https://salesup.be/hubfs/juvah%20good.png",
+        "Juvah": "https://salesup.be/hubfs/juvah%20good.png",
+        "tunap": "https://salesup.be/hubfs/Tunap%20-%20tevreden%20klant%20van%20salesUp.png",
+        "Tunap": "https://salesup.be/hubfs/Tunap%20-%20tevreden%20klant%20van%20salesUp.png",
+        "locquet": "https://salesup.be/hubfs/Attract%20Leads%20logos/Locquet.svg",
+        "Locquet": "https://salesup.be/hubfs/Attract%20Leads%20logos/Locquet.svg",
+        "vokans": "https://salesup.be/hubfs/Boost%20business%20logos/Vokans.svg",
+        "Vokans": "https://salesup.be/hubfs/Boost%20business%20logos/Vokans.svg",
+        "mdo": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png",
+        "MDO Group": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png"
+      } %}
+      {% set padded = ["Liantis", "Zambon", "Trustteam", "Jaguar Land Rover", "JLR", "Culligan", "Europabank", "Solidaris", "Upgrade Estate", "UpgradeEstate", "Eurocircuits", "EuroCircuits", "Contractify", "Guylian", "Locquet", "Vokans", "Q8", "Q8 Oils", "Q8Oils"] %}
+      {% macro logo_item(src, naam, pass) %}
+        <span class="marquee-item{% if naam in padded %} is-pad{% endif %}{% if naam == 'Hivolta' or naam == 'hivolta' %} is-white{% endif %}"{% if pass %} aria-hidden="true"{% endif %}><img class="marquee-logo" src="{{ src }}" alt="{% if pass %}{% else %}{{ naam }}{% endif %}" decoding="async"></span>
+      {% endmacro %}
+      {% for pass in range(0, 2) %}
+        {% for logo in module.logos %}
+          {% if live[logo.naam] %}
+            {{ logo_item(live[logo.naam], logo.naam, pass) }}
+          {% elif logo.slug and live[logo.slug] %}
+            {{ logo_item(live[logo.slug], logo.naam, pass) }}
+          {% elif logo.beeld.src %}
+            {{ logo_item(logo.beeld.src, logo.naam, pass) }}
+          {% elif logo.naam %}
+            <span class="marquee-item"{% if pass %} aria-hidden="true"{% endif %}><span class="logo-type">{{ logo.naam }}</span></span>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<script>
+(function () {
+  var root = document.currentScript && document.currentScript.previousElementSibling;
+  if (!root || !root.classList || !root.classList.contains('proof')) {
+    root = document.querySelector('.proof:last-of-type');
+  }
+  if (!root) return;
+  var scroller = root.querySelector('.marquee');
+  var track = root.querySelector('.marquee-track');
+  if (!scroller || !track || track.dataset.filled === 'true') return;
+  var originals = Array.prototype.slice.call(track.children);
+  if (!originals.length) return;
+  var i = 0;
+  while (track.scrollWidth < scroller.clientWidth * 2 && i < 8) {
+    originals.forEach(function (node) { track.appendChild(node.cloneNode(true)); });
+    i++;
+  }
+  track.dataset.filled = 'true';
+})();
+</script>

@@ -1,0 +1,347 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Studenten & promoteams
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Studenten & promoteams\",\n      \"serviceType\":\"Werving en promotie in het veld met getrainde studenten\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/studenten-promoteams\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"url\":\"https://www.salesup.be/face2face-sales\"},\n      \"description\":\"Getrainde studenten en promoteams die op locatie werven en promoten, met elke actie als creatief concept, dagelijks gecoacht door een vaste salescoach en omnichannel opgevolgd tot in het CRM.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Studenten & promoteams\",\"item\":\"https://www.salesup.be/studenten-promoteams\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Werken jullie met studenten of met vaste mensen?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Met getrainde studenten in het veld, aangestuurd door vaste salescoaches van salesUp. De studenten brengen de energie en de schaal; de coach zorgt voor de kwaliteit en loopt dagelijks mee. Zo krijg je de dynamiek van een promoteam met de kwaliteitsbewaking van een vast salesteam, in plaats van losse flyeraars zonder opvolging.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat bedoelen jullie met een creatief concept?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Waar de meeste bureaus mensen met een flyer de straat op sturen, bouwen wij rond elke actie een idee dat opvalt en mensen doet stoppen. Dat trekt je doelgroep aan nog voor het gesprek begint, maakt de job leuker voor onze wervers en levert zo meer kwalitatieve gesprekken op. Het concept stemmen we af op je merk en je doel.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit van de gesprekken?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Gesprekken worden gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van het team via ons trainingsplatform salesUp Academy. Een vaste salescoach volgt elke shift op en stuurt meteen bij. Zo betaal je niet voor volume, maar voor kwaliteit.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op wat het team oplevert tegenover een vooraf afgesproken doel — ingeschreven leden, kwalitatieve leads of afspraken — niet op het aantal aangesproken mensen. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Elk contact wordt omnichannel opgevolgd via telefoon en mail tot in je CRM.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/studenten-promoteams",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Face2Face Sales",
+                "url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                }
+              },
+              {
+                "link_label": "Studenten & promoteams",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload presentatie-groep.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: geen echt promoteam-beeld beschikbaar; sfeerbeeld uit ../assets -->
+        <!-- VERIFIEER: hier hoort een echt cijfer (bv. conversie of ingeschreven leden per actie) zodra beschikbaar; nu kwalitatief. -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Face2Face Sales · Studenten & promoteams",
+          heading="Promoteams die opvallen — en <em>converteren</em>.",
+          subtext="<p>Getrainde studenten die op locatie werven en promoten voor je merk, met de energie en de schaal van een promoteam. Elke actie bouwen we rond een creatief concept, een vaste salescoach loopt dagelijks mee, en elk contact wordt omnichannel opgevolgd tot in je CRM — met dezelfde kwaliteitsbewaking en het afrekenen-op-resultaat van ons Sales Contact Center.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta2_text="Zo werkt het",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Getrainde studenten"
+              },
+              {
+                "link_label": "Elke actie een concept"
+              },
+              {
+                "link_label": "Dagelijkse coaching"
+              },
+              {
+                "link_label": "Afgerekend op resultaat"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Onze aanpak met studenten en promoteams",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Group%20201-2.png",
+              "alt": "Een groep enthousiaste salesUp-medewerkers tijdens een briefing voor een veldactie."
+            },
+          trustcard_badge="",
+          trustcard_stat="",
+          trustcard_label="De schaal en de energie van een promoteam, met de kwaliteitsbewaking van een vast salesteam — geen losse flyeraars, maar getrainde mensen met een creatief concept.",
+          trustcard_quote="\"Een sterk concept doet mensen stoppen — de rest is een goed gesprek dat we kunnen meten.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak in het veld"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het oplevert",
+          heading="Zichtbaarheid die tot inschrijvingen leidt.",
+          intro="<p>Een promoteam moet meer doen dan opvallen. Wij zetten getrainde studenten in met een creatief concept, coachen ze dagelijks en volgen elk contact op — zodat aandacht ook resultaat wordt.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Energie en schaal in het veld",
+                "tekst": "<p>Getrainde studenten die je merk op locatie brengen met de dynamiek van een promoteam. Ideaal om snel op te schalen tijdens een campagne, een lancering of een piekperiode.</p>"
+              },
+              {
+                "title": "Elke actie een creatief concept",
+                "tekst": "<p>Geen mensen met een flyer, maar een idee dat opvalt en je doelgroep doet stoppen — nog vóór het gesprek begint. Dat maakt de job leuker voor onze wervers en levert meer kwalitatieve gesprekken op.</p>"
+              },
+              {
+                "title": "Een vaste salescoach loopt mee",
+                "tekst": "<p>Geen anonieme freelancers: een vaste salescoach volgt elke shift op, stuurt meteen bij en bewaakt de kwaliteit. Gesprekken worden gescoord en gevoed naar de training via salesUp Academy.</p>"
+              },
+              {
+                "title": "Omnichannel opgevolgd, afgerekend op resultaat",
+                "tekst": "<p>Een contact in het veld blijft niet op straat liggen: we volgen op via telefoon en mail tot in je CRM. Je rekent ons af op wat het team oplevert tegenover een vooraf afgesproken doel, met 100% kostentransparantie.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van concept tot afgerekend resultaat.",
+          intro="<p>We spreken vooraf een doelstelling af en bouwen een creatief concept rond je merk, je doelgroep en de locaties.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Concept & doel bepalen",
+                "tekst": "<p>We spreken vooraf een doelstelling af en bouwen een creatief concept rond je merk, je doelgroep en de locaties.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Team samenstellen & briefen",
+                "tekst": "<p>We stellen een team van getrainde studenten samen met een vaste salescoach en briefen ze op je aanbod en pitch.</p>"
+              },
+              {
+                "num": "03",
+                "title": "In het veld: werven & promoten",
+                "tekst": "<p>Het team gaat op locatie in gesprek, capteert leden of leads en geeft warme contacten door voor opvolging.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Scoren, coachen & wekelijks rapporteren",
+                "tekst": "<p>Gesprekken worden gescoord, de coach stuurt dagelijks bij en je krijgt een wekelijkse rapportering met 100% kostentransparantie.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over promoteams vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Werken jullie met studenten of met vaste mensen?",
+                "answer": "<p>Met getrainde studenten in het veld, aangestuurd door vaste salescoaches van salesUp. De studenten brengen de energie en de schaal; de coach zorgt voor de kwaliteit en loopt dagelijks mee. Zo krijg je de dynamiek van een promoteam met de kwaliteitsbewaking van een vast salesteam, in plaats van losse flyeraars zonder opvolging.</p>"
+              },
+              {
+                "question": "Wat bedoelen jullie met een creatief concept?",
+                "answer": "<p>Waar de meeste bureaus mensen met een flyer de straat op sturen, bouwen wij rond elke actie een idee dat opvalt en mensen doet stoppen. Dat trekt je doelgroep aan nog voor het gesprek begint, maakt de job leuker voor onze wervers en levert zo meer kwalitatieve gesprekken op. Het concept stemmen we af op je merk en je doel.</p>"
+              },
+              {
+                "question": "Hoe bewaken jullie de kwaliteit van de gesprekken?",
+                "answer": "<p>Gesprekken worden gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van het team via ons trainingsplatform salesUp Academy. Een vaste salescoach volgt elke shift op en stuurt meteen bij. Zo betaal je niet voor volume, maar voor kwaliteit.</p>"
+              },
+              {
+                "question": "Waarop rekenen jullie ons af?",
+                "answer": "<p>Op wat het team oplevert tegenover een vooraf afgesproken doel — ingeschreven leden, kwalitatieve leads of afspraken — niet op het aantal aangesproken mensen. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Elk contact wordt omnichannel opgevolgd via telefoon en mail tot in je CRM.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met salesUp werken",
+          eyebrow="Bedrijven die met salesUp werken",
+          logos=[
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "Geodis",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "VM Building",
+                "slug": ""
+              },
+              {
+                "naam": "Upgrade Estate",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om je merk in het veld te laten opvallen?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een promoteam voor jou kan betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Deur-aan-deur (D2D)",
+                "url": {
+                  "url": {
+                    "href": "/deur-aan-deur",
+                    "type": "CONTENT", "content_id": 453268186333
+                  }
+                }
+              },
+              {
+                "link_label": "Events & beurzen",
+                "url": {
+                  "url": {
+                    "href": "/events-beurzen",
+                    "type": "CONTENT", "content_id": 453268312296
+                  }
+                }
+              },
+              {
+                "link_label": "Retail & winkelvloer",
+                "url": {
+                  "url": {
+                    "href": "/retail-winkelvloer",
+                    "type": "CONTENT", "content_id": 453268195575
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Face2Face Sales",
+                "url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

@@ -1,0 +1,192 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Liantis
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Liantis x salesUp: mensen laten groeien om groei mogelijk te maken\", \"about\": \"Liantis\", \"description\": \"Liantis x salesUp: mensen laten groeien om groei mogelijk te maken — keynote, managementsessies en hybride sales training.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/liantis\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Liantis\", \"item\": \"https://www.salesup.be/cases/liantis\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/liantis",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Liantis",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          logo={
+              "src": "https://salesup.be/hubfs/liantis.png",
+              "alt": "Liantis logo"
+            },
+          eyebrow="Client case · HR-dienstengroep",
+          heading="Liantis x salesUp: mensen laten groeien om groei mogelijk te maken",
+          subtext="<p>Liantis x salesUp: mensen laten groeien om groei mogelijk te maken — keynote, managementsessies en hybride sales training.</p>",
+          meta_tags=[
+              {
+                "link_label": "Training"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "90",
+                "toelichting": "Keynote van 90 minuten voor het volledige sales-team"
+              },
+              {
+                "cijfer": "4",
+                "toelichting": "Managementsessies van telkens 4 uur"
+              },
+              {
+                "cijfer": "70",
+                "toelichting": "Commercieel team van ongeveer 70 à 80 medewerkers (context, geen resultaatcijfer)"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<h2>Elke dag het verschil maken</h2>\n<p>Sterke partnerships ontstaan wanneer twee organisaties dezelfde overtuiging delen. Voor Liantis en salesUp ligt die overtuiging duidelijk bij mensen. Want duurzame groei begint niet bij processen of cijfers alleen, maar bij de mensen die elke dag het verschil maken.</p>\n<p>Vanuit die gedeelde visie groeide de samenwerking tussen Liantis en salesUp uit tot een traject waarin talentontwikkeling, sales excellence en ondernemerschap centraal staan. Geen standaardtrainingen of losse workshops, maar een partnership op maat van de ambities van Liantis.</p>\n<p>Liantis is vandaag een toonaangevende HR-dienstengroep die ondernemers ondersteunt van opstart tot personeelsbeheer, payroll, preventie, welzijn, verzekeringen en consultancy. Alles rond mensen en werk, onder één dak.</p>\n<p>Binnen deze samenwerking werkte salesUp drie gerichte trajecten uit: een keynote voor het volledige business development team, een inspiratiesessie voor het management en twee verdiepende follow-up sessies. In totaal werden meerdere teams begeleid, met een duidelijke focus op duurzame impact en groei.</p>\n<h2>Een partnership gebouwd op échte noden</h2>\n<p>Binnen de samenwerking met salesUp staat één principe centraal: vertrekken vanuit de realiteit van het team. Geen generieke aanpak, maar eerst luisteren, analyseren en scherp zien waar de noden liggen.</p>\n<p>Dat maakte vanaf de start het verschil.</p>\n<p><em>“Super positief in die zin dat jullie, toen jullie bij ons gekomen zijn, eerst echt hebben afgetoetst: wat willen jullie, wat zijn de noden en waar zijn jullie mee bezig?” </em>- <strong>Eveline Boúúaert, Head of Sales KMO bij Liantis</strong></p>\n<p>Vanuit die input ontwikkelde salesUp gerichte trainings- en inspiratiesessies die aansluiten op de dagelijkse praktijk van sales managers en commerciële teams binnen Liantis.</p>\n<p>Zo werd onder meer een keynote van 90 minuten ontwikkeld voor het volledige sales-team rond verkopen aan de klant van de toekomst, volledig afgestemd op de context en verwachtingen van Liantis.</p>\n<h2>Training die blijft hangen</h2>\n<p>Een goede training inspireert op het moment zelf. Een sterke training blijft je nog lang bij, ook als die al lang voorbij is.</p>\n<p>Net dat effect zag Liantis terug in de samenwerking met salesUp. Geen theoretische sessies vol slides, maar interactieve trajecten waarin inzichten tastbaar werden gemaakt en mensen in beweging kwamen.</p>\n<p><em>“Jullie hebben de mensen tot inzichten gebracht. Soms ook wat shocking. En dat werkt. Ook maanden later bleef de impact voelbaar binnen de teams.”</em>- <strong>Eveline Boúúaert</strong></p>\n<p>Dat is precies waar salesUp voor staat: geen vrijblijvende inspiratie, maar concrete verandering in gedrag, mindset en resultaten.</p>\n<p>Voor het managementteam werden daarnaast sessies van telkens 4 uur uitgewerkt, waarin groei, leiderschap, communicatie en ownership centraal stonden. Theorie werd telkens vertaald naar concrete actiepunten voor de dagelijkse praktijk.</p>\n<h2>Ondernemerschap activeren binnen grote organisaties</h2>\n<p>Hoewel Liantis vandaag een grote organisatie is, blijft het bewust vasthouden aan een sterke KMO-mentaliteit. Wendbaarheid, initiatief nemen en ownership zijn daarbij essentieel.</p>\n<p><em>“Wij proberen echt down to earth te blijven en compagnon te zijn voor onze ondernemer, met een echte KMO-mentaliteit.”</em> - <strong>Eveline Boúúaert</strong></p>\n<p>Dat ondernemerschap sluit perfect aan bij de aanpak van salesUp. Binnen de samenwerking wordt sterk ingezet op ownership binnen teams: verantwoordelijkheid opnemen, kansen zien en zelf mee bouwen aan groei.</p>\n<p>Zo versterken beide organisaties elkaar in een omgeving waar mensen niet alleen targets krijgen, maar ook vertrouwen en ruimte om hun eigen pad uit te tekenen.</p>\n<h2>Groei begint bij vertrouwen</h2>\n<p>Binnen Liantis staat Eveline aan het hoofd van een commercieel team van ongeveer 70 à 80 medewerkers. In zo’n omgeving zijn duidelijke doelstellingen, structuur en opvolging belangrijk. Tegelijk wordt succes nooit enkel bepaald door cijfers of processen. Volgens Eveline blijft vertrouwen de echte basis waarop performante teams gebouwd worden.</p>\n<p><em>“Vertrouwen is een sleutel en een fundament.” -</em> <strong>Eveline Boúúaert</strong></p>\n<p>Die visie loopt ook door in de samenwerking met salesUp. Door open communicatie, transparante feedback en een gedeelde focus op verbetering ontstond een partnership waarin snel kan worden geschakeld en waarin ideeën ruimte krijgen om te groeien.</p>\n<p>Wanneer medewerkers voelen dat er vertrouwen is, durven ze initiatief nemen, verantwoordelijkheid opnemen en sterker presteren. Dat vertrouwen creëert niet alleen betere resultaten op korte termijn, maar ook duurzame groei op lange termijn.</p>\n<h2>Samen bouwen aan de toekomst van sales</h2>\n<p>De wereld van sales verandert sneller dan ooit. Klanten zijn beter geïnformeerd, aankooptrajecten worden complexer en technologie zoals AI verandert de manier waarop commerciële teams werken.</p>\n<p>Liantis kijkt bewust vooruit naar die evolutie. Binnen de samenwerking met salesUp wordt daarom niet alleen gewerkt aan de noden van vandaag, maar ook aan de kansen van morgen. Teams worden voorbereid op nieuwe manieren van prospecteren, betere klantgesprekken en efficiëntere processen.</p>\n<p><a href=\"/training\">Training, coaching en begeleiding</a> spelen daarin een centrale rol. Niet éénmalig, maar als continu traject waarin mensen blijven leren en groeien.</p>\n<p><em>“Trainen, trainen en faciliteren.”</em>- <strong>Eveline Boúúaert</strong></p>\n<p>Zo bouwen Liantis en salesUp samen aan een salesorganisatie die wendbaar blijft, klaar is voor verandering en sterker wordt met elke volgende stap.</p>\n<p>Tijdens de follow-up sessies werd sterk ingezet op growth mindset, actieplannen, communicatiestijlen, storytelling en het scherpstellen van de interne en externe waardepropositie van het team.</p>\n<h2>Eén gedeelde ambitie</h2>\n<p>De samenwerking tussen Liantis en salesUp draait niet rond een losse training of tijdelijk project. Het is een partnership gebaseerd op een gedeelde overtuiging: wanneer mensen groeien, groeit de organisatie mee.</p>\n<p>Beide partijen geloven in ondernemerschap, verantwoordelijkheid nemen en blijven investeren in talent. Daardoor ontstaat een samenwerking waarin kennis wordt gedeeld, teams worden versterkt en commerciële impact tastbaar wordt.</p>\n<p>Wanneer mensen ownership nemen, versnelt vooruitgang.<br>Wanneer training impact heeft, volgt resultaat vanzelf.<br>Wanneer vertrouwen aanwezig is, wordt groei duurzaam.</p>\n<p>Net daarom blijft deze samenwerking bouwen aan hetzelfde doel: mensen sterker maken om organisaties sterker te laten groeien.</p>\n<p>Wat begon als een trainingsvraag groeide uit tot een breder traject waarin mindset, leiderschap en commerciële slagkracht samenkomen.</p>\n<p>Benieuwd naar de inzichten achter deze samenwerking?</p>\n<p>In onze blog deelt Eveline Boúúaert van Liantis 4 krachtige lessen over leiderschap, ondernemerschap en duurzame groei. Ontdek hoe mindset, vertrouwen en wendbaarheid het verschil maken in moderne salesorganisaties.</p>\n<h2><strong>Up your sales met salesUp</strong></h2>\n<p>Op zoek naar een partner die jouw teams helpt groeien met impactvolle training, strategische begeleiding en commerciële expertise?</p>\n<p>salesUp helpt ambitieuze organisaties groeien, via hun mensen.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;Jullie hebben de mensen tot inzichten gebracht. Soms ook wat shocking. En dat werkt. Ook maanden later bleef de impact voelbaar binnen de teams.&rdquo;</p>",
+          who="&mdash; <strong>Eveline Boúúaert</strong>, Head of Sales KMO bij Liantis"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Liantis deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/zambon",
+                    "type": "CONTENT", "content_id": 453268044009
+                  }
+                },
+                "sector": "Farmaceutisch",
+                "naam": "Zambon",
+                "stat": "Traject met zes verkopers en het management (geen resultaatcijfer)",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/hivolta",
+                    "type": "CONTENT", "content_id": 453268393209
+                  }
+                },
+                "sector": "Duurzame energie",
+                "naam": "Hivolta",
+                "stat": "75 aanvragen op één kwartaal via de Google Advertentiecampagnes",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/ichoosr",
+                    "type": "CONTENT", "content_id": 453268374754
+                  }
+                },
+                "sector": "Energie",
+                "naam": "iChoosr",
+                "stat": "Op rustige momenten enkele tientallen oproepen per dag, tijdens piekperiodes honderden per dag",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

@@ -1,0 +1,2583 @@
+{
+  "drafted_live": [
+    {
+      "id": "199911766255",
+      "name": "Client cases",
+      "from": "client-cases-old",
+      "to": "legacy-2026-client-cases-old",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "200493511873",
+      "name": "Meer klanten terugwinnen V2",
+      "from": "meer-klanten-terugwinnen-old",
+      "to": "legacy-2026-meer-klanten-terugwinnen-old",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "200497919212",
+      "name": "Meer klanttevredenheid V2",
+      "from": "meer-klanttevredenheid-old",
+      "to": "legacy-2026-meer-klanttevredenheid-old",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "202161459428",
+      "name": "User case: Duurzame samenwerking tussen Messer Group en salesUp",
+      "from": "duurzame-samenwerking-tussen-messer-group-en-salesup",
+      "to": "legacy-2026-duurzame-samenwerking-tussen-messer-group-en-salesup",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "202615934145",
+      "name": "User case: Jaguar Land Rover BeNeLux kiest salesUp voor effectieve leads",
+      "from": "jaguar-land-rover-benelux-kiest-salesup-voor-effectieve-leads",
+      "to": "legacy-2026-jaguar-land-rover-benelux-kiest-salesup-voor-effectieve-leads",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "202626627773",
+      "name": "User case: Telefonische prospectie voor EV Shop",
+      "from": "telefonische-prospectie-voor-ev-shop",
+      "to": "legacy-2026-telefonische-prospectie-voor-ev-shop",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "203093580997",
+      "name": "User case: salesUp strategische telefonische prospectie partner van Alindus",
+      "from": "salesup-strategische-telefonische-prospectie-partner-van-alindus",
+      "to": "legacy-2026-salesup-strategische-telefonische-prospectie-partner-van-alindus",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "203093744834",
+      "name": "User case: salesUp versterkt de wereldwijde aanwezigheid van GEODIS",
+      "from": "salesup-versterkt-de-wereldwijde-aanwezigheid-van-geodis",
+      "to": "legacy-2026-salesup-versterkt-de-wereldwijde-aanwezigheid-van-geodis",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "203097023730",
+      "name": "User case: Telefonische prospectie voor Ikaros Solar",
+      "from": "telefonische-prospectie-voor-ikaros-solar",
+      "to": "legacy-2026-telefonische-prospectie-voor-ikaros-solar",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "204638917865",
+      "name": "User case: Telefonische prospectie voor Upgrade Estate",
+      "from": "telefonische-prospectie-voor-upgrade",
+      "to": "legacy-2026-telefonische-prospectie-voor-upgrade",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "204765631736",
+      "name": "Telefonische prospectie voor VM Building Solutions",
+      "from": "meer-afspraken-voor-vm-building-services",
+      "to": "legacy-2026-meer-afspraken-voor-vm-building-services",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "204765632726",
+      "name": "User case: Meer verkopen voor Eurocircuits",
+      "from": "meer-verkopen-voor-eurocircuits",
+      "to": "legacy-2026-meer-verkopen-voor-eurocircuits",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "204765633735",
+      "name": "User case: Q8Oils, een geoliede samenwerking voor B2B-prospectie",
+      "from": "q8oils",
+      "to": "legacy-2026-q8oils",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "204818649330",
+      "name": "User case: salesUp overstijgt de verwachting SPM",
+      "from": "salesup-overstijgt-de-verwachting-spm",
+      "to": "legacy-2026-salesup-overstijgt-de-verwachting-spm",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "204825372913",
+      "name": "User case: Prospectie voor Unizo",
+      "from": "unizo",
+      "to": "legacy-2026-unizo",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "204830535895",
+      "name": "User case: salesUp verhoogt leads & sales voor Axians Audiovisual",
+      "from": "axians",
+      "to": "legacy-2026-axians",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "204831517924",
+      "name": "User case: Telefonische prospectie voor Cesano",
+      "from": "cesano",
+      "to": "legacy-2026-cesano",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "205083052241",
+      "name": "User case: Keep clients voor Immo Van Middelem",
+      "from": "immo-van-middelem",
+      "to": "legacy-2026-immo-van-middelem",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "205089627334",
+      "name": "User case: Leadgeneratie voor hivolta",
+      "from": "hivolta",
+      "to": "legacy-2026-hivolta",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "212804903125",
+      "name": "User case: Efficiëntere processen voor Sobelhor | salesUp",
+      "from": "sobelhor",
+      "to": "legacy-2026-sobelhor",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "212810253509",
+      "name": "User case: Telefonische klantondersteuning voor iChoosr | salesUp",
+      "from": "ichoosr",
+      "to": "legacy-2026-ichoosr",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "239919445208",
+      "name": "User case: Marktbevraging voor Van Heurck",
+      "from": "van-heurck-strategische-marktbevraging",
+      "to": "legacy-2026-van-heurck-strategische-marktbevraging",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "245701340403",
+      "name": "Online Marketing",
+      "from": "online-marketing",
+      "to": "legacy-2026-online-marketing",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "246821162220",
+      "name": "Telesales",
+      "from": "telesales",
+      "to": "legacy-2026-telesales",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "248184940793",
+      "name": "CROSS & UPSELLING CUSTOMERS",
+      "from": "cross-en-upselling",
+      "to": "legacy-2026-cross-en-upselling",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "248324774083",
+      "name": "Sales Training",
+      "from": "sales-traingen",
+      "to": "legacy-2026-sales-traingen",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "248674814140",
+      "name": "Klanttevredenheids Campagnes",
+      "from": "klanttevredenheids-campagnes",
+      "to": "legacy-2026-klanttevredenheids-campagnes",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "248681357517",
+      "name": "Customer Winback Campagnes",
+      "from": "meer-klanten-terugwinnen",
+      "to": "legacy-2026-meer-klanten-terugwinnen",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "250204901615",
+      "name": "Inbound Customer Service",
+      "from": "inbound-customer-service",
+      "to": "legacy-2026-inbound-customer-service",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "250204917970",
+      "name": "Contact",
+      "from": "contact",
+      "to": "legacy-2026-contact",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "250348390593",
+      "name": "Over Ons",
+      "from": "over-ons",
+      "to": "legacy-2026-over-ons",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "250381106390",
+      "name": "Home",
+      "from": "",
+      "to": "legacy-2026-home",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "252768707778",
+      "name": "Start To Sell - Summer Edition",
+      "from": "start-to-sell-summer-edition",
+      "to": "legacy-2026-start-to-sell-summer-edition",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "258218470617",
+      "name": "B2B callcenter",
+      "from": "callcenter-b2b",
+      "to": "legacy-2026-callcenter-b2b",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "279783169215",
+      "name": "Attract leads",
+      "from": "attract-leads",
+      "to": "legacy-2026-attract-leads",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "279880983740",
+      "name": "Boost Sales",
+      "from": "boost-sales",
+      "to": "legacy-2026-boost-sales",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "279893895382",
+      "name": "Keep clients",
+      "from": "keep-clients",
+      "to": "legacy-2026-keep-clients",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "290978097377",
+      "name": "AI Prospectie",
+      "from": "ai-prospectie",
+      "to": "legacy-2026-ai-prospectie",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "293528315123",
+      "name": "Website Laten Maken",
+      "from": "website-laten-maken",
+      "to": "legacy-2026-website-laten-maken",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "362315121912",
+      "name": "Groeipodcast",
+      "from": "groeipodcast-salesup",
+      "to": "legacy-2026-groeipodcast-salesup",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "401467866303",
+      "name": "Face2Face",
+      "from": "face2face",
+      "to": "legacy-2026-face2face",
+      "http": 200,
+      "state": "DRAFT"
+    }
+  ],
+  "slug_meta": [
+    {
+      "id": "453268163816",
+      "name": "Homepage",
+      "slug": "",
+      "htmlTitle": "salesUp | Commerciële groei in één machine",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268359396",
+      "name": "Home - AI aanpak",
+      "slug": "ai-aanpak",
+      "htmlTitle": "AI-aanpak | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268195517",
+      "name": "Over ons",
+      "slug": "over-ons",
+      "htmlTitle": "Over ons | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268184310",
+      "name": "Contact",
+      "slug": "contact",
+      "htmlTitle": "Contact | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268195541",
+      "name": "Podcast",
+      "slug": "groeipodcast-salesup",
+      "htmlTitle": "Groeipodcast | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268184251",
+      "name": "Cases",
+      "slug": "cases",
+      "htmlTitle": "Cases | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268170965",
+      "name": "Diensten - Marketing",
+      "slug": "marketing",
+      "htmlTitle": "Marketing | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268311272",
+      "name": "Diensten - Marketing - Website",
+      "slug": "website",
+      "htmlTitle": "Marketing · Website | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268282609",
+      "name": "Diensten - Marketing - Social ads",
+      "slug": "social-ads",
+      "htmlTitle": "Marketing · Social ads | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268282562",
+      "name": "Diensten - Marketing - SEO/GEO",
+      "slug": "seo-geo",
+      "htmlTitle": "Marketing · SEO/GEO | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268178164",
+      "name": "Diensten - Marketing - SEA",
+      "slug": "sea",
+      "htmlTitle": "Marketing · SEA | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268161744",
+      "name": "Diensten - Marketing - E-mail",
+      "slug": "email",
+      "htmlTitle": "Marketing · E-mail | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268285669",
+      "name": "Diensten - Training",
+      "slug": "training",
+      "htmlTitle": "Training | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268285688",
+      "name": "Diensten - Training - Trainingsplatform",
+      "slug": "trainingsplatform",
+      "htmlTitle": "Training · Trainingsplatform | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268171975",
+      "name": "Diensten - Training - Off-sites",
+      "slug": "off-sites",
+      "htmlTitle": "Training · Off-sites | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268164824",
+      "name": "Diensten - Training - Inspiratiesessie",
+      "slug": "inspiratiesessie",
+      "htmlTitle": "Training · Inspiratiesessie | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268184281",
+      "name": "Diensten - Training - Coachingtraject",
+      "slug": "coachingstraject",
+      "htmlTitle": "Training · Coachingstraject | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268175089",
+      "name": "Diensten - Sales Contact Center",
+      "slug": "sales-contact-center",
+      "htmlTitle": "Sales Contact Center | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268307183",
+      "name": "Diensten - Sales Contact Center - Telesales",
+      "slug": "telesales",
+      "htmlTitle": "Sales Contact Center · Telesales | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268358390",
+      "name": "Siensten - Sales COntact Center - After sales",
+      "slug": "after-sales",
+      "htmlTitle": "Sales Contact Center · After sales | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268356322",
+      "name": "diensten - sales contact center - telefonische prospectie & afspraakplanning",
+      "slug": "afspraakplanning",
+      "htmlTitle": "Sales Contact Center · Afspraakplanning | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268196580",
+      "name": "Diensten - Sales Consultants",
+      "slug": "sales-consultants",
+      "htmlTitle": "Sales Consultants | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268177096",
+      "name": "Diensten - Sales Consultants - Sales-audit & optimalisatie",
+      "slug": "sales-audit",
+      "htmlTitle": "Sales Consultants · Sales-audit & optimalisatie | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268197610",
+      "name": "Diensten - Sales Consultants - Sales-as-a-service",
+      "slug": "sales-as-a-service",
+      "htmlTitle": "Sales Consultants · Sales-as-a-Service | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268185305",
+      "name": "Diensten - Sales Consultants - Detachering/interim sales",
+      "slug": "detachering",
+      "htmlTitle": "Sales Consultants · Detachering / interim sales | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268165858",
+      "name": "Diensten - Sales Consultants - Sales management ad interim",
+      "slug": "interim-sales-management",
+      "htmlTitle": "Sales Consultants · Sales management ad interim | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268189404",
+      "name": "Diensten - Face2Face Sales",
+      "slug": "face2face-sales",
+      "htmlTitle": "Face2Face Sales | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268312296",
+      "name": "Diensten - Face2Face Sales - Events & beurzen",
+      "slug": "events-beurzen",
+      "htmlTitle": "Face2Face Sales · Events & beurzen | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268284621",
+      "name": "Diensten - Face2Face Sales - Studenten & promoteams",
+      "slug": "studenten-promoteams",
+      "htmlTitle": "Face2Face Sales · Studenten & promoteams | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268195575",
+      "name": "Diensten - Face2Face Sales - Retail & winkelvloer",
+      "slug": "retail-winkelvloer",
+      "htmlTitle": "Face2Face Sales · Retail & winkelvloer | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268186333",
+      "name": "Diensten - Face2Face Sales - Deur-aan-deur (D2D)",
+      "slug": "deur-aan-deur",
+      "htmlTitle": "Face2Face Sales · Deur-aan-deur | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268312260",
+      "name": "Werken bij",
+      "slug": "werken-bij",
+      "htmlTitle": "Werken bij salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268166896",
+      "name": "Werken bij - Contact Center",
+      "slug": "jobs-contact-center",
+      "htmlTitle": "Werken bij  — Contact Center | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268168921",
+      "name": "Werken bij - Sales Consultants",
+      "slug": "jobs-sales-consultants",
+      "htmlTitle": "Werken bij  — Sales Consultants | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268169949",
+      "name": "Werken bij - Studenten & Face2Face",
+      "slug": "jobs-studenten",
+      "htmlTitle": "Studentenjob — Face2Face | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268310210",
+      "name": "Werken bij - Studenten & Face2Face - Studentenjob - Face2Face",
+      "slug": "werken-bij/vacature",
+      "htmlTitle": "VACATURE · FACE2FACE | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268386037",
+      "name": "Cases - Alindus",
+      "slug": "cases/alindus",
+      "htmlTitle": "Alindus | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268364479",
+      "name": "Cases - Astara",
+      "slug": "cases/astara",
+      "htmlTitle": "Astara | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268364529",
+      "name": "Cases - Axians",
+      "slug": "cases/axians",
+      "htmlTitle": "Axians | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268371675",
+      "name": "Cases - Eurocircuits",
+      "slug": "cases/eurocircuits",
+      "htmlTitle": "Eurocircuits | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268393162",
+      "name": "Cases - EV Shop",
+      "slug": "cases/ev-shop",
+      "htmlTitle": "EV Shop | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268372723",
+      "name": "Cases - Geodis",
+      "slug": "cases/geodis",
+      "htmlTitle": "Geodis | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268393209",
+      "name": "Cases - Hivolta",
+      "slug": "cases/hivolta",
+      "htmlTitle": "Hivolta | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268374754",
+      "name": "Cases - iChoosr",
+      "slug": "cases/ichoosr",
+      "htmlTitle": "iChoosr | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268375760",
+      "name": "Cases - Immo Van Middelem",
+      "slug": "cases/immo-van-middelem",
+      "htmlTitle": "Immo Van Middelem | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268397251",
+      "name": "Cases - Jaguar Land Rover",
+      "slug": "cases/jaguar-land-rover",
+      "htmlTitle": "Jaguar Land Rover | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268379883",
+      "name": "Cases - Liantis",
+      "slug": "cases/liantis",
+      "htmlTitle": "Liantis | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268491493",
+      "name": "Cases - Messer Group",
+      "slug": "cases/messer-group",
+      "htmlTitle": "Messer Group | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268493508",
+      "name": "Cases - Orange",
+      "slug": "cases/orange",
+      "htmlTitle": "Orange | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268494546",
+      "name": "Cases - Q8 Oils",
+      "slug": "cases/q8oils",
+      "htmlTitle": "Q8 Oils | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268029669",
+      "name": "Cases - Radiance Energy",
+      "slug": "cases/radiance-energy",
+      "htmlTitle": "Radiance Energy | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268038868",
+      "name": "Cases - SPM Technologies",
+      "slug": "cases/spm",
+      "htmlTitle": "SPM Technologies | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268665592",
+      "name": "Cases - Trustteam",
+      "slug": "cases/trustteam",
+      "htmlTitle": "Trustteam | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268041941",
+      "name": "Cases - UNIZO",
+      "slug": "cases/unizo",
+      "htmlTitle": "UNIZO | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268668617",
+      "name": "Cases - Upgrade Estate",
+      "slug": "cases/upgrade-estate",
+      "htmlTitle": "Upgrade Estate | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268669671",
+      "name": "Cases - Van Heurck",
+      "slug": "cases/van-heurck",
+      "htmlTitle": "Van Heurck | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268043979",
+      "name": "Cases - VM Building Solutions",
+      "slug": "cases/vm-building",
+      "htmlTitle": "VM Building Solutions | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "453268044009",
+      "name": "Cases - Zambon",
+      "slug": "cases/zambon",
+      "htmlTitle": "Zambon | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "455643379910",
+      "name": "Cases - Ikaros Solar",
+      "slug": "cases/ikaros-solar",
+      "htmlTitle": "Ikaros Solar | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "455643379912",
+      "name": "Cases - Cesano",
+      "slug": "cases/cesano",
+      "htmlTitle": "Cesano | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    },
+    {
+      "id": "455643379914",
+      "name": "Cases - Sobelhor",
+      "slug": "cases/sobelhor",
+      "htmlTitle": "Sobelhor | Case | salesUp",
+      "http": 200,
+      "state": "DRAFT"
+    }
+  ],
+  "published": [
+    {
+      "id": "453268163816",
+      "name": "Homepage",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-7b9fe360-97a3-45c2-ae37-93ad82475def",
+      "url": "https://salesup.be/-temporary-slug-7b9fe360-97a3-45c2-ae37-93ad82475def"
+    },
+    {
+      "id": "453268359396",
+      "name": "Home - AI aanpak",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-f4dfe541-363a-4bfe-89d6-cc33a5ed674d",
+      "url": "https://salesup.be/-temporary-slug-f4dfe541-363a-4bfe-89d6-cc33a5ed674d"
+    },
+    {
+      "id": "453268195517",
+      "name": "Over ons",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-ea67f091-eae5-44b3-8718-0aca076eb3d1",
+      "url": "https://salesup.be/-temporary-slug-ea67f091-eae5-44b3-8718-0aca076eb3d1"
+    },
+    {
+      "id": "453268184310",
+      "name": "Contact",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-83c796f3-bdef-4773-bbcb-0810d6a5d73d",
+      "url": "https://salesup.be/-temporary-slug-83c796f3-bdef-4773-bbcb-0810d6a5d73d"
+    },
+    {
+      "id": "453268195541",
+      "name": "Podcast",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-bd736e8b-980a-4719-95d2-392458cac2c2",
+      "url": "https://salesup.be/-temporary-slug-bd736e8b-980a-4719-95d2-392458cac2c2"
+    },
+    {
+      "id": "453268184251",
+      "name": "Cases",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-16d80ae4-83f0-4b34-a5b7-48a47debfd88",
+      "url": "https://salesup.be/-temporary-slug-16d80ae4-83f0-4b34-a5b7-48a47debfd88"
+    },
+    {
+      "id": "453268170965",
+      "name": "Diensten - Marketing",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-dae960c0-9df9-46c5-be32-10f0372a12f7",
+      "url": "https://salesup.be/-temporary-slug-dae960c0-9df9-46c5-be32-10f0372a12f7"
+    },
+    {
+      "id": "453268311272",
+      "name": "Diensten - Marketing - Website",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-ce05759b-72b4-457f-82a9-c303eb771398",
+      "url": "https://salesup.be/-temporary-slug-ce05759b-72b4-457f-82a9-c303eb771398"
+    },
+    {
+      "id": "453268282609",
+      "name": "Diensten - Marketing - Social ads",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-7681fb39-a229-4bb1-8c47-1e540e877bb6",
+      "url": "https://salesup.be/-temporary-slug-7681fb39-a229-4bb1-8c47-1e540e877bb6"
+    },
+    {
+      "id": "453268282562",
+      "name": "Diensten - Marketing - SEO/GEO",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-4593e081-f197-4528-8ac6-fd1d18247208",
+      "url": "https://salesup.be/-temporary-slug-4593e081-f197-4528-8ac6-fd1d18247208"
+    },
+    {
+      "id": "453268178164",
+      "name": "Diensten - Marketing - SEA",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-84be0935-28de-4820-85eb-ce5ed6138593",
+      "url": "https://salesup.be/-temporary-slug-84be0935-28de-4820-85eb-ce5ed6138593"
+    },
+    {
+      "id": "453268161744",
+      "name": "Diensten - Marketing - E-mail",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-7295d007-271d-4b45-8740-cf9cdefa99e8",
+      "url": "https://salesup.be/-temporary-slug-7295d007-271d-4b45-8740-cf9cdefa99e8"
+    },
+    {
+      "id": "453268285669",
+      "name": "Diensten - Training",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-8b60028d-dbb5-4e32-a287-c5bb13c8748c",
+      "url": "https://salesup.be/-temporary-slug-8b60028d-dbb5-4e32-a287-c5bb13c8748c"
+    },
+    {
+      "id": "453268285688",
+      "name": "Diensten - Training - Trainingsplatform",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-b09e51a7-b1c9-405e-a3b5-3e7b7019eb48",
+      "url": "https://salesup.be/-temporary-slug-b09e51a7-b1c9-405e-a3b5-3e7b7019eb48"
+    },
+    {
+      "id": "453268171975",
+      "name": "Diensten - Training - Off-sites",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-f98dd7ed-3f68-4ced-8895-1bf7cee25109",
+      "url": "https://salesup.be/-temporary-slug-f98dd7ed-3f68-4ced-8895-1bf7cee25109"
+    },
+    {
+      "id": "453268164824",
+      "name": "Diensten - Training - Inspiratiesessie",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-12fc3c84-9dbf-4766-bb57-0d6f3bda397a",
+      "url": "https://salesup.be/-temporary-slug-12fc3c84-9dbf-4766-bb57-0d6f3bda397a"
+    },
+    {
+      "id": "453268184281",
+      "name": "Diensten - Training - Coachingtraject",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-2190afd9-0138-4e5e-b0c3-c6be4bb0afde",
+      "url": "https://salesup.be/-temporary-slug-2190afd9-0138-4e5e-b0c3-c6be4bb0afde"
+    },
+    {
+      "id": "453268175089",
+      "name": "Diensten - Sales Contact Center",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-fa2a8f2a-9076-414d-8509-2b41eaf5dc89",
+      "url": "https://salesup.be/-temporary-slug-fa2a8f2a-9076-414d-8509-2b41eaf5dc89"
+    },
+    {
+      "id": "453268307183",
+      "name": "Diensten - Sales Contact Center - Telesales",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-037e9430-1a84-4332-912b-766084361de7",
+      "url": "https://salesup.be/-temporary-slug-037e9430-1a84-4332-912b-766084361de7"
+    },
+    {
+      "id": "453268358390",
+      "name": "Siensten - Sales COntact Center - After sales",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-696383d0-1f56-4caf-a334-7a08812c1ce9",
+      "url": "https://salesup.be/-temporary-slug-696383d0-1f56-4caf-a334-7a08812c1ce9"
+    },
+    {
+      "id": "453268356322",
+      "name": "diensten - sales contact center - telefonische prospectie & afspraakplanning",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-a7a308ca-881b-4832-b546-47165603a440",
+      "url": "https://salesup.be/-temporary-slug-a7a308ca-881b-4832-b546-47165603a440"
+    },
+    {
+      "id": "453268196580",
+      "name": "Diensten - Sales Consultants",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-ea5f85aa-ecc3-4ddc-bd5f-d877715e3191",
+      "url": "https://salesup.be/-temporary-slug-ea5f85aa-ecc3-4ddc-bd5f-d877715e3191"
+    },
+    {
+      "id": "453268177096",
+      "name": "Diensten - Sales Consultants - Sales-audit & optimalisatie",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-fd8e4308-d970-4ec5-b060-1a2f169dcc1d",
+      "url": "https://salesup.be/-temporary-slug-fd8e4308-d970-4ec5-b060-1a2f169dcc1d"
+    },
+    {
+      "id": "453268197610",
+      "name": "Diensten - Sales Consultants - Sales-as-a-service",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-a4f25346-e09d-43b3-a2a4-00dd37b8ac03",
+      "url": "https://salesup.be/-temporary-slug-a4f25346-e09d-43b3-a2a4-00dd37b8ac03"
+    },
+    {
+      "id": "453268185305",
+      "name": "Diensten - Sales Consultants - Detachering/interim sales",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-04af0d68-e9fc-4fca-9e39-7c4b7a722193",
+      "url": "https://salesup.be/-temporary-slug-04af0d68-e9fc-4fca-9e39-7c4b7a722193"
+    },
+    {
+      "id": "453268165858",
+      "name": "Diensten - Sales Consultants - Sales management ad interim",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-208e3b09-fef3-4255-9705-092d4deaa4cb",
+      "url": "https://salesup.be/-temporary-slug-208e3b09-fef3-4255-9705-092d4deaa4cb"
+    },
+    {
+      "id": "453268189404",
+      "name": "Diensten - Face2Face Sales",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-ca85a715-6c1b-41ce-a303-f2e7826ec984",
+      "url": "https://salesup.be/-temporary-slug-ca85a715-6c1b-41ce-a303-f2e7826ec984"
+    },
+    {
+      "id": "453268312296",
+      "name": "Diensten - Face2Face Sales - Events & beurzen",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-500477ff-cb09-4605-9bce-bffe700576fa",
+      "url": "https://salesup.be/-temporary-slug-500477ff-cb09-4605-9bce-bffe700576fa"
+    },
+    {
+      "id": "453268284621",
+      "name": "Diensten - Face2Face Sales - Studenten & promoteams",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-f5c12e14-1870-46e0-8a32-e9fb7894ed1b",
+      "url": "https://salesup.be/-temporary-slug-f5c12e14-1870-46e0-8a32-e9fb7894ed1b"
+    },
+    {
+      "id": "453268195575",
+      "name": "Diensten - Face2Face Sales - Retail & winkelvloer",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-9e6bf081-f381-4563-aa70-512c90b224ae",
+      "url": "https://salesup.be/-temporary-slug-9e6bf081-f381-4563-aa70-512c90b224ae"
+    },
+    {
+      "id": "453268186333",
+      "name": "Diensten - Face2Face Sales - Deur-aan-deur (D2D)",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-890168c9-9428-4032-bfd4-8df1f44fa55d",
+      "url": "https://salesup.be/-temporary-slug-890168c9-9428-4032-bfd4-8df1f44fa55d"
+    },
+    {
+      "id": "453268312260",
+      "name": "Werken bij",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-06cc76f3-bbb5-4c86-82bc-6c1f8416689d",
+      "url": "https://salesup.be/-temporary-slug-06cc76f3-bbb5-4c86-82bc-6c1f8416689d"
+    },
+    {
+      "id": "453268166896",
+      "name": "Werken bij - Contact Center",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-5d0a5f5f-78da-4733-8477-edf25d3bff75",
+      "url": "https://salesup.be/-temporary-slug-5d0a5f5f-78da-4733-8477-edf25d3bff75"
+    },
+    {
+      "id": "453268168921",
+      "name": "Werken bij - Sales Consultants",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-b3f42042-04f8-4d15-9dc6-de3cca9f77d5",
+      "url": "https://salesup.be/-temporary-slug-b3f42042-04f8-4d15-9dc6-de3cca9f77d5"
+    },
+    {
+      "id": "453268169949",
+      "name": "Werken bij - Studenten & Face2Face",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-0e509f59-44ee-4530-96d3-3ef1cc342416",
+      "url": "https://salesup.be/-temporary-slug-0e509f59-44ee-4530-96d3-3ef1cc342416"
+    },
+    {
+      "id": "453268310210",
+      "name": "Werken bij - Studenten & Face2Face - Studentenjob - Face2Face",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-e7740488-960c-4197-b9ec-4561dbf87415",
+      "url": "https://salesup.be/-temporary-slug-e7740488-960c-4197-b9ec-4561dbf87415"
+    },
+    {
+      "id": "453268386037",
+      "name": "Cases - Alindus",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-3ed0359e-0d81-489d-830d-d8d7c233a87a",
+      "url": "https://salesup.be/-temporary-slug-3ed0359e-0d81-489d-830d-d8d7c233a87a"
+    },
+    {
+      "id": "453268364479",
+      "name": "Cases - Astara",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-06f8aa51-9e93-4d05-8f13-26b5772f9e41",
+      "url": "https://salesup.be/-temporary-slug-06f8aa51-9e93-4d05-8f13-26b5772f9e41"
+    },
+    {
+      "id": "453268364529",
+      "name": "Cases - Axians",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-65b18326-fc92-4cc1-9b7d-ae706f8f528b",
+      "url": "https://salesup.be/-temporary-slug-65b18326-fc92-4cc1-9b7d-ae706f8f528b"
+    },
+    {
+      "id": "453268371675",
+      "name": "Cases - Eurocircuits",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-2a2cc9eb-b598-4d2e-a530-89ff8bae86f6",
+      "url": "https://salesup.be/-temporary-slug-2a2cc9eb-b598-4d2e-a530-89ff8bae86f6"
+    },
+    {
+      "id": "453268393162",
+      "name": "Cases - EV Shop",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-2a3d5ec8-41f6-43fd-bca2-c019fb20b00d",
+      "url": "https://salesup.be/-temporary-slug-2a3d5ec8-41f6-43fd-bca2-c019fb20b00d"
+    },
+    {
+      "id": "453268372723",
+      "name": "Cases - Geodis",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-3b2ab3aa-cca6-4d64-a983-463f28252e41",
+      "url": "https://salesup.be/-temporary-slug-3b2ab3aa-cca6-4d64-a983-463f28252e41"
+    },
+    {
+      "id": "453268393209",
+      "name": "Cases - Hivolta",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-8358bf07-b2ee-47ea-9bb6-7e6e5f28100d",
+      "url": "https://salesup.be/-temporary-slug-8358bf07-b2ee-47ea-9bb6-7e6e5f28100d"
+    },
+    {
+      "id": "453268374754",
+      "name": "Cases - iChoosr",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-d842a9d6-0bf3-495e-90ef-42e9bc3ce3cc",
+      "url": "https://salesup.be/-temporary-slug-d842a9d6-0bf3-495e-90ef-42e9bc3ce3cc"
+    },
+    {
+      "id": "453268375760",
+      "name": "Cases - Immo Van Middelem",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-b62509ee-83cf-4813-9317-283c963d80c8",
+      "url": "https://salesup.be/-temporary-slug-b62509ee-83cf-4813-9317-283c963d80c8"
+    },
+    {
+      "id": "453268397251",
+      "name": "Cases - Jaguar Land Rover",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-1fe19b91-3021-460d-a37c-144fc39dcc45",
+      "url": "https://salesup.be/-temporary-slug-1fe19b91-3021-460d-a37c-144fc39dcc45"
+    },
+    {
+      "id": "453268379883",
+      "name": "Cases - Liantis",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-d03da23c-5198-4a43-993a-424783dcc177",
+      "url": "https://salesup.be/-temporary-slug-d03da23c-5198-4a43-993a-424783dcc177"
+    },
+    {
+      "id": "453268491493",
+      "name": "Cases - Messer Group",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-19b81cb5-de16-4ddb-86ac-a265d34af72a",
+      "url": "https://salesup.be/-temporary-slug-19b81cb5-de16-4ddb-86ac-a265d34af72a"
+    },
+    {
+      "id": "453268493508",
+      "name": "Cases - Orange",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-b542140c-df81-4b4a-9907-4b7755ef0003",
+      "url": "https://salesup.be/-temporary-slug-b542140c-df81-4b4a-9907-4b7755ef0003"
+    },
+    {
+      "id": "453268494546",
+      "name": "Cases - Q8 Oils",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-fba2c8a4-025a-4133-b59e-b1cfccd8f456",
+      "url": "https://salesup.be/-temporary-slug-fba2c8a4-025a-4133-b59e-b1cfccd8f456"
+    },
+    {
+      "id": "453268029669",
+      "name": "Cases - Radiance Energy",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-cab19822-beef-4ba7-8f12-93e4b4def8b5",
+      "url": "https://salesup.be/-temporary-slug-cab19822-beef-4ba7-8f12-93e4b4def8b5"
+    },
+    {
+      "id": "453268038868",
+      "name": "Cases - SPM Technologies",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-a8bb2237-9c89-422b-9cff-18844aa528b5",
+      "url": "https://salesup.be/-temporary-slug-a8bb2237-9c89-422b-9cff-18844aa528b5"
+    },
+    {
+      "id": "453268665592",
+      "name": "Cases - Trustteam",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-37f28b2a-f32d-4475-94d4-40ab40c970a0",
+      "url": "https://salesup.be/-temporary-slug-37f28b2a-f32d-4475-94d4-40ab40c970a0"
+    },
+    {
+      "id": "453268041941",
+      "name": "Cases - UNIZO",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-f77215f8-419a-4bb3-926e-60da03271bc4",
+      "url": "https://salesup.be/-temporary-slug-f77215f8-419a-4bb3-926e-60da03271bc4"
+    },
+    {
+      "id": "453268668617",
+      "name": "Cases - Upgrade Estate",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-81ffbb54-1f52-466f-a2db-b98043009497",
+      "url": "https://salesup.be/-temporary-slug-81ffbb54-1f52-466f-a2db-b98043009497"
+    },
+    {
+      "id": "453268669671",
+      "name": "Cases - Van Heurck",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-e0a5b12b-78bd-48f5-b4f0-5817260de206",
+      "url": "https://salesup.be/-temporary-slug-e0a5b12b-78bd-48f5-b4f0-5817260de206"
+    },
+    {
+      "id": "453268043979",
+      "name": "Cases - VM Building Solutions",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-e3e9ce6f-25bc-48a8-a0b1-98bf97937ae2",
+      "url": "https://salesup.be/-temporary-slug-e3e9ce6f-25bc-48a8-a0b1-98bf97937ae2"
+    },
+    {
+      "id": "453268044009",
+      "name": "Cases - Zambon",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "-temporary-slug-f4f903a7-be6b-4f59-85e4-18858572203f",
+      "url": "https://salesup.be/-temporary-slug-f4f903a7-be6b-4f59-85e4-18858572203f"
+    },
+    {
+      "id": "455643379910",
+      "name": "Cases - Ikaros Solar",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "cases/ikaros-solar",
+      "url": "https://salesup.be/cases/ikaros-solar"
+    },
+    {
+      "id": "455643379912",
+      "name": "Cases - Cesano",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "cases/cesano",
+      "url": "https://salesup.be/cases/cesano"
+    },
+    {
+      "id": "455643379914",
+      "name": "Cases - Sobelhor",
+      "http": 200,
+      "state": "PUBLISHED",
+      "slug": "cases/sobelhor",
+      "url": "https://salesup.be/cases/sobelhor"
+    }
+  ],
+  "redirects_created": [
+    {
+      "from": "/index.html",
+      "to": "/",
+      "http": 201,
+      "id": "455653991670"
+    },
+    {
+      "from": "/contact.html",
+      "to": "/contact",
+      "http": 201,
+      "id": "455667697882"
+    },
+    {
+      "from": "/cases.html",
+      "to": "/cases",
+      "http": 201,
+      "id": "455653991671"
+    },
+    {
+      "from": "/over-ons.html",
+      "to": "/over-ons",
+      "http": 201,
+      "id": "455667697883"
+    },
+    {
+      "from": "/ai-aanpak.html",
+      "to": "/ai-aanpak",
+      "http": 201,
+      "id": "455653991673"
+    },
+    {
+      "from": "/marketing.html",
+      "to": "/marketing",
+      "http": 201,
+      "id": "455667697886"
+    },
+    {
+      "from": "/sales-contact-center.html",
+      "to": "/sales-contact-center",
+      "http": 201,
+      "id": "455667697889"
+    },
+    {
+      "from": "/face2face-sales.html",
+      "to": "/face2face-sales",
+      "http": 201,
+      "id": "455649096896"
+    },
+    {
+      "from": "/training.html",
+      "to": "/training",
+      "http": 201,
+      "id": "455667697891"
+    },
+    {
+      "from": "/sales-consultants.html",
+      "to": "/sales-consultants",
+      "http": 201,
+      "id": "455653992637"
+    },
+    {
+      "from": "/website.html",
+      "to": "/website",
+      "http": 201,
+      "id": "455653992638"
+    },
+    {
+      "from": "/sea.html",
+      "to": "/sea",
+      "http": 201,
+      "id": "455649096898"
+    },
+    {
+      "from": "/seo-geo.html",
+      "to": "/seo-geo",
+      "http": 201,
+      "id": "455653992639"
+    },
+    {
+      "from": "/social-ads.html",
+      "to": "/social-ads",
+      "http": 201,
+      "id": "455667697894"
+    },
+    {
+      "from": "/email.html",
+      "to": "/email",
+      "http": 201,
+      "id": "455667697897"
+    },
+    {
+      "from": "/telesales.html",
+      "to": "/telesales",
+      "http": 201,
+      "id": "455667697898"
+    },
+    {
+      "from": "/afspraakplanning.html",
+      "to": "/afspraakplanning",
+      "http": 201,
+      "id": "455653992640"
+    },
+    {
+      "from": "/after-sales.html",
+      "to": "/after-sales",
+      "http": 201,
+      "id": "455649096901"
+    },
+    {
+      "from": "/off-sites.html",
+      "to": "/off-sites",
+      "http": 201,
+      "id": "455649096903"
+    },
+    {
+      "from": "/inspiratiesessie.html",
+      "to": "/inspiratiesessie",
+      "http": 201,
+      "id": "455653992642"
+    },
+    {
+      "from": "/coachingstraject.html",
+      "to": "/coachingstraject",
+      "http": 201,
+      "id": "455667697900"
+    },
+    {
+      "from": "/trainingsplatform.html",
+      "to": "/trainingsplatform",
+      "http": 201,
+      "id": "455649096905"
+    },
+    {
+      "from": "/werken-bij.html",
+      "to": "/werken-bij",
+      "http": 201,
+      "id": "455667697904"
+    },
+    {
+      "from": "/jobs-studenten.html",
+      "to": "/jobs-studenten",
+      "http": 201,
+      "id": "455649096908"
+    },
+    {
+      "from": "/jobs-contact-center.html",
+      "to": "/jobs-contact-center",
+      "http": 201,
+      "id": "455649096909"
+    },
+    {
+      "from": "/jobs-sales-consultants.html",
+      "to": "/jobs-sales-consultants",
+      "http": 201,
+      "id": "455649096911"
+    },
+    {
+      "from": "/vacature-studentenjob-face2face.html",
+      "to": "/werken-bij/vacature?slug=studentenjob-face2face",
+      "http": 201,
+      "id": "455667697906"
+    },
+    {
+      "from": "/blog.html",
+      "to": "/blog",
+      "http": 201,
+      "id": "455649096913"
+    },
+    {
+      "from": "/groeipodcast.html",
+      "to": "/groeipodcast-salesup",
+      "http": 201,
+      "id": "455653992646"
+    },
+    {
+      "from": "/diensten/sales-contact-center.html",
+      "to": "/sales-contact-center",
+      "http": 201,
+      "id": "455649096915"
+    },
+    {
+      "from": "/diensten/sales-contact-center/telesales",
+      "to": "/telesales",
+      "http": 201,
+      "id": "455667697907"
+    },
+    {
+      "from": "/diensten/sales-contact-center/afspraakplanning",
+      "to": "/afspraakplanning",
+      "http": 201,
+      "id": "455667697908"
+    },
+    {
+      "from": "/diensten/sales-contact-center/after-sales",
+      "to": "/after-sales",
+      "http": 201,
+      "id": "455653992650"
+    },
+    {
+      "from": "/diensten/marketing/website",
+      "to": "/website",
+      "http": 201,
+      "id": "455653992651"
+    },
+    {
+      "from": "/diensten/marketing/sea",
+      "to": "/sea",
+      "http": 201,
+      "id": "455667697912"
+    },
+    {
+      "from": "/diensten/marketing/seo-geo",
+      "to": "/seo-geo",
+      "http": 201,
+      "id": "455653992652"
+    },
+    {
+      "from": "/diensten/marketing/social-ads",
+      "to": "/social-ads",
+      "http": 201,
+      "id": "455649096920"
+    },
+    {
+      "from": "/diensten/marketing/email",
+      "to": "/email",
+      "http": 201,
+      "id": "455653992653"
+    },
+    {
+      "from": "/vacatures/",
+      "to": "/werken-bij",
+      "http": 201,
+      "id": "455667698876"
+    },
+    {
+      "from": "/vacatures/index.html",
+      "to": "/werken-bij",
+      "http": 201,
+      "id": "455667698878"
+    },
+    {
+      "from": "/vacatures/studenten.html",
+      "to": "/jobs-studenten",
+      "http": 201,
+      "id": "455653992654"
+    },
+    {
+      "from": "/vacatures/contact-center.html",
+      "to": "/jobs-contact-center",
+      "http": 201,
+      "id": "455653992656"
+    },
+    {
+      "from": "/vacatures/sales-consultants.html",
+      "to": "/jobs-sales-consultants",
+      "http": 201,
+      "id": "455649096924"
+    },
+    {
+      "from": "/blog-4-gouden-lessen-van-stig-van-hauwermeiren-managing-director-bij-salesup.html",
+      "to": "/blog/4-gouden-lessen-van-stig-van-hauwermeiren-managing-director-bij-salesup",
+      "http": 201,
+      "id": "455653992657"
+    },
+    {
+      "from": "/blog/blog-4-gouden-lessen-van-stig-van-hauwermeiren-managing-director-bij-salesup.html",
+      "to": "/blog/4-gouden-lessen-van-stig-van-hauwermeiren-managing-director-bij-salesup",
+      "http": 201,
+      "id": "455649096927"
+    },
+    {
+      "from": "/blog-4-lessen-van-didier-blokland-vertrouwen-emotie-en-groei-in-een-veranderende-markt.html",
+      "to": "/blog/4-lessen-van-didier-blokland-vertrouwen-emotie-en-groei-in-een-veranderende-markt",
+      "http": 201,
+      "id": "455653992658"
+    },
+    {
+      "from": "/blog/blog-4-lessen-van-didier-blokland-vertrouwen-emotie-en-groei-in-een-veranderende-markt.html",
+      "to": "/blog/4-lessen-van-didier-blokland-vertrouwen-emotie-en-groei-in-een-veranderende-markt",
+      "http": 201,
+      "id": "455649096930"
+    },
+    {
+      "from": "/blog-4-lessen-van-pascal-pinket-over-vertrouwen-klantgerichtheid-en-duurzame-groei-in-it-sales.html",
+      "to": "/blog/4-lessen-van-pascal-pinket-over-vertrouwen-klantgerichtheid-en-duurzame-groei-in-it-sales",
+      "http": 201,
+      "id": "455649096932"
+    },
+    {
+      "from": "/blog/blog-4-lessen-van-pascal-pinket-over-vertrouwen-klantgerichtheid-en-duurzame-groei-in-it-sales.html",
+      "to": "/blog/4-lessen-van-pascal-pinket-over-vertrouwen-klantgerichtheid-en-duurzame-groei-in-it-sales",
+      "http": 201,
+      "id": "455653992659"
+    },
+    {
+      "from": "/blog-5-tips-voor-telefonische-prospectie.html",
+      "to": "/blog/5-tips-voor-telefonische-prospectie",
+      "http": 201,
+      "id": "455653992661"
+    },
+    {
+      "from": "/blog/blog-5-tips-voor-telefonische-prospectie.html",
+      "to": "/blog/5-tips-voor-telefonische-prospectie",
+      "http": 201,
+      "id": "455649096935"
+    },
+    {
+      "from": "/blog-bewezen-winback-strategieen.html",
+      "to": "/blog/bewezen-winback-strategieen",
+      "http": 201,
+      "id": "455653992662"
+    },
+    {
+      "from": "/blog/blog-bewezen-winback-strategieen.html",
+      "to": "/blog/bewezen-winback-strategieen",
+      "http": 201,
+      "id": "455653992663"
+    },
+    {
+      "from": "/blog-commerciele-strategie-versterken.html",
+      "to": "/blog/commerciele-strategie-versterken",
+      "http": 201,
+      "id": "455649096936"
+    },
+    {
+      "from": "/blog/blog-commerciele-strategie-versterken.html",
+      "to": "/blog/commerciele-strategie-versterken",
+      "http": 201,
+      "id": "455653992666"
+    },
+    {
+      "from": "/blog-gespreksstructuur-opbouwen.html",
+      "to": "/blog/gespreksstructuur-opbouwen",
+      "http": 201,
+      "id": "455649096938"
+    },
+    {
+      "from": "/blog/blog-gespreksstructuur-opbouwen.html",
+      "to": "/blog/gespreksstructuur-opbouwen",
+      "http": 201,
+      "id": "455667698886"
+    },
+    {
+      "from": "/blog-hoe-linde-biesmans-bij-eneco-inzet-op-groei-faalkracht-en-veilige-teams.html",
+      "to": "/blog/hoe-linde-biesmans-bij-eneco-inzet-op-groei-faalkracht-en-veilige-teams",
+      "http": 201,
+      "id": "455649096939"
+    },
+    {
+      "from": "/blog/blog-hoe-linde-biesmans-bij-eneco-inzet-op-groei-faalkracht-en-veilige-teams.html",
+      "to": "/blog/hoe-linde-biesmans-bij-eneco-inzet-op-groei-faalkracht-en-veilige-teams",
+      "http": 201,
+      "id": "455667698888"
+    },
+    {
+      "from": "/blog-klantbehoud-slimste-strategie-voor-groei.html",
+      "to": "/blog/klantbehoud-slimste-strategie-voor-groei",
+      "http": 201,
+      "id": "455667698889"
+    },
+    {
+      "from": "/blog/blog-klantbehoud-slimste-strategie-voor-groei.html",
+      "to": "/blog/klantbehoud-slimste-strategie-voor-groei",
+      "http": 201,
+      "id": "455653992669"
+    },
+    {
+      "from": "/blog-maak-je-content-geo-proof-salesup.html",
+      "to": "/blog/maak-je-content-geo-proof-salesup",
+      "http": 201,
+      "id": "455667698893"
+    },
+    {
+      "from": "/blog/blog-maak-je-content-geo-proof-salesup.html",
+      "to": "/blog/maak-je-content-geo-proof-salesup",
+      "http": 201,
+      "id": "455649096942"
+    },
+    {
+      "from": "/blog-meer-omzet-uit-bestaande-klanten.html",
+      "to": "/blog/meer-omzet-uit-bestaande-klanten",
+      "http": 201,
+      "id": "455667698895"
+    },
+    {
+      "from": "/blog/blog-meer-omzet-uit-bestaande-klanten.html",
+      "to": "/blog/meer-omzet-uit-bestaande-klanten",
+      "http": 201,
+      "id": "455667698897"
+    },
+    {
+      "from": "/blog-meer-omzet-uit-je-salesinspanningen.html",
+      "to": "/blog/meer-omzet-uit-je-salesinspanningen",
+      "http": 201,
+      "id": "455667698898"
+    },
+    {
+      "from": "/blog/blog-meer-omzet-uit-je-salesinspanningen.html",
+      "to": "/blog/meer-omzet-uit-je-salesinspanningen",
+      "http": 201,
+      "id": "455649096943"
+    },
+    {
+      "from": "/blog-meest-gemaakte-verkoopfouten.html",
+      "to": "/blog/meest-gemaakte-verkoopfouten",
+      "http": 201,
+      "id": "455653992678"
+    },
+    {
+      "from": "/blog/blog-meest-gemaakte-verkoopfouten.html",
+      "to": "/blog/meest-gemaakte-verkoopfouten",
+      "http": 201,
+      "id": "455667698900"
+    },
+    {
+      "from": "/blog-saleslessen-stefanie-van-rillaer-orange.html",
+      "to": "/blog/saleslessen-stefanie-van-rillaer-orange",
+      "http": 201,
+      "id": "455653992679"
+    },
+    {
+      "from": "/blog/blog-saleslessen-stefanie-van-rillaer-orange.html",
+      "to": "/blog/saleslessen-stefanie-van-rillaer-orange",
+      "http": 201,
+      "id": "455653992680"
+    },
+    {
+      "from": "/blog-telefonische-prospectie-tijdens-bouwverlof.html",
+      "to": "/blog/telefonische-prospectie-tijdens-bouwverlof",
+      "http": 201,
+      "id": "455667698901"
+    },
+    {
+      "from": "/blog/blog-telefonische-prospectie-tijdens-bouwverlof.html",
+      "to": "/blog/telefonische-prospectie-tijdens-bouwverlof",
+      "http": 201,
+      "id": "455667698904"
+    },
+    {
+      "from": "/blog-tips-voor-cold-calling.html",
+      "to": "/blog/tips-voor-cold-calling",
+      "http": 201,
+      "id": "455649096947"
+    },
+    {
+      "from": "/blog/blog-tips-voor-cold-calling.html",
+      "to": "/blog/tips-voor-cold-calling",
+      "http": 201,
+      "id": "455667698905"
+    },
+    {
+      "from": "/blog-tips-voor-klantbehoud-2025.html",
+      "to": "/blog/tips-voor-klantbehoud-2025",
+      "http": 201,
+      "id": "455649096949"
+    },
+    {
+      "from": "/blog/blog-tips-voor-klantbehoud-2025.html",
+      "to": "/blog/tips-voor-klantbehoud-2025",
+      "http": 201,
+      "id": "455649096950"
+    },
+    {
+      "from": "/blog-tips-voor-meer-inbound-leads.html",
+      "to": "/blog/tips-voor-meer-inbound-leads",
+      "http": 201,
+      "id": "455649096951"
+    },
+    {
+      "from": "/blog/blog-tips-voor-meer-inbound-leads.html",
+      "to": "/blog/tips-voor-meer-inbound-leads",
+      "http": 201,
+      "id": "455649096952"
+    },
+    {
+      "from": "/blog-welke-elementen-moeten-in-een-goed-belscript.html",
+      "to": "/blog/welke-elementen-moeten-in-een-goed-belscript",
+      "http": 201,
+      "id": "455667698908"
+    },
+    {
+      "from": "/blog/blog-welke-elementen-moeten-in-een-goed-belscript.html",
+      "to": "/blog/welke-elementen-moeten-in-een-goed-belscript",
+      "http": 201,
+      "id": "455649097916"
+    },
+    {
+      "from": "/blog-welke-salesaanpak-past-bij-jouw-bedrijf.html",
+      "to": "/blog/welke-salesaanpak-past-bij-jouw-bedrijf",
+      "http": 201,
+      "id": "455649097917"
+    },
+    {
+      "from": "/blog/blog-welke-salesaanpak-past-bij-jouw-bedrijf.html",
+      "to": "/blog/welke-salesaanpak-past-bij-jouw-bedrijf",
+      "http": 201,
+      "id": "455649097918"
+    },
+    {
+      "from": "/studenten-promoteams.html",
+      "to": "/studenten-promoteams",
+      "http": 201,
+      "id": "455649097919"
+    },
+    {
+      "from": "/deur-aan-deur.html",
+      "to": "/deur-aan-deur",
+      "http": 201,
+      "id": "455667698911"
+    },
+    {
+      "from": "/events-beurzen.html",
+      "to": "/events-beurzen",
+      "http": 201,
+      "id": "455649097920"
+    },
+    {
+      "from": "/retail-winkelvloer.html",
+      "to": "/retail-winkelvloer",
+      "http": 201,
+      "id": "455649097921"
+    },
+    {
+      "from": "/detachering.html",
+      "to": "/detachering",
+      "http": 201,
+      "id": "455667698912"
+    },
+    {
+      "from": "/sales-as-a-service.html",
+      "to": "/sales-as-a-service",
+      "http": 201,
+      "id": "455653992694"
+    },
+    {
+      "from": "/interim-sales-management.html",
+      "to": "/interim-sales-management",
+      "http": 201,
+      "id": "455649097922"
+    },
+    {
+      "from": "/sales-audit.html",
+      "to": "/sales-audit",
+      "http": 201,
+      "id": "455649097923"
+    },
+    {
+      "from": "/case-orange.html",
+      "to": "/cases/orange",
+      "http": 201,
+      "id": "455653992696"
+    },
+    {
+      "from": "/client-cases/orange",
+      "to": "/cases/orange",
+      "http": 201,
+      "id": "455667698913"
+    },
+    {
+      "from": "/case-van-heurck.html",
+      "to": "/cases/van-heurck",
+      "http": 201,
+      "id": "455649097928"
+    },
+    {
+      "from": "/client-cases/van-heurck",
+      "to": "/cases/van-heurck",
+      "http": 201,
+      "id": "455649097930"
+    },
+    {
+      "from": "/case-q8oils.html",
+      "to": "/cases/q8oils",
+      "http": 201,
+      "id": "455653993659"
+    },
+    {
+      "from": "/client-cases/q8oils",
+      "to": "/cases/q8oils",
+      "http": 201,
+      "id": "455653993660"
+    },
+    {
+      "from": "/case-axians.html",
+      "to": "/cases/axians",
+      "http": 201,
+      "id": "455653993661"
+    },
+    {
+      "from": "/client-cases/axians",
+      "to": "/cases/axians",
+      "http": 201,
+      "id": "455667698917"
+    },
+    {
+      "from": "/case-unizo.html",
+      "to": "/cases/unizo",
+      "http": 201,
+      "id": "455653993662"
+    },
+    {
+      "from": "/client-cases/unizo",
+      "to": "/cases/unizo",
+      "http": 201,
+      "id": "455667698919"
+    },
+    {
+      "from": "/case-vm-building.html",
+      "to": "/cases/vm-building",
+      "http": 201,
+      "id": "455653993663"
+    },
+    {
+      "from": "/client-cases/vm-building",
+      "to": "/cases/vm-building",
+      "http": 201,
+      "id": "455667698921"
+    },
+    {
+      "from": "/case-trustteam.html",
+      "to": "/cases/trustteam",
+      "http": 201,
+      "id": "455649097935"
+    },
+    {
+      "from": "/client-cases/trustteam",
+      "to": "/cases/trustteam",
+      "http": 201,
+      "id": "455653993664"
+    },
+    {
+      "from": "/case-geodis.html",
+      "to": "/cases/geodis",
+      "http": 201,
+      "id": "455649097937"
+    },
+    {
+      "from": "/client-cases/geodis",
+      "to": "/cases/geodis",
+      "http": 201,
+      "id": "455653993665"
+    },
+    {
+      "from": "/case-radiance-energy.html",
+      "to": "/cases/radiance-energy",
+      "http": 201,
+      "id": "455649097940"
+    },
+    {
+      "from": "/client-cases/radiance-energy",
+      "to": "/cases/radiance-energy",
+      "http": 201,
+      "id": "455667698926"
+    },
+    {
+      "from": "/case-upgrade-estate.html",
+      "to": "/cases/upgrade-estate",
+      "http": 201,
+      "id": "455667698929"
+    },
+    {
+      "from": "/client-cases/upgrade-estate",
+      "to": "/cases/upgrade-estate",
+      "http": 201,
+      "id": "455653993668"
+    },
+    {
+      "from": "/case-messer-group.html",
+      "to": "/cases/messer-group",
+      "http": 201,
+      "id": "455649097944"
+    },
+    {
+      "from": "/client-cases/messer-group",
+      "to": "/cases/messer-group",
+      "http": 201,
+      "id": "455649097945"
+    },
+    {
+      "from": "/case-alindus.html",
+      "to": "/cases/alindus",
+      "http": 201,
+      "id": "455667698932"
+    },
+    {
+      "from": "/client-cases/alindus",
+      "to": "/cases/alindus",
+      "http": 201,
+      "id": "455667698933"
+    },
+    {
+      "from": "/case-ev-shop.html",
+      "to": "/cases/ev-shop",
+      "http": 201,
+      "id": "455649097948"
+    },
+    {
+      "from": "/client-cases/ev-shop",
+      "to": "/cases/ev-shop",
+      "http": 201,
+      "id": "455667698934"
+    },
+    {
+      "from": "/case-spm.html",
+      "to": "/cases/spm",
+      "http": 201,
+      "id": "455667698935"
+    },
+    {
+      "from": "/client-cases/spm",
+      "to": "/cases/spm",
+      "http": 201,
+      "id": "455649097951"
+    },
+    {
+      "from": "/case-eurocircuits.html",
+      "to": "/cases/eurocircuits",
+      "http": 201,
+      "id": "455649097953"
+    },
+    {
+      "from": "/client-cases/eurocircuits",
+      "to": "/cases/eurocircuits",
+      "http": 201,
+      "id": "455653993669"
+    },
+    {
+      "from": "/case-jaguar-land-rover.html",
+      "to": "/cases/jaguar-land-rover",
+      "http": 201,
+      "id": "455653993671"
+    },
+    {
+      "from": "/client-cases/jaguar-land-rover",
+      "to": "/cases/jaguar-land-rover",
+      "http": 201,
+      "id": "455649097955"
+    },
+    {
+      "from": "/case-astara.html",
+      "to": "/cases/astara",
+      "http": 201,
+      "id": "455649097958"
+    },
+    {
+      "from": "/client-cases/astara",
+      "to": "/cases/astara",
+      "http": 201,
+      "id": "455667699898"
+    },
+    {
+      "from": "/case-liantis.html",
+      "to": "/cases/liantis",
+      "http": 201,
+      "id": "455667699899"
+    },
+    {
+      "from": "/client-cases/liantis",
+      "to": "/cases/liantis",
+      "http": 201,
+      "id": "455667699902"
+    },
+    {
+      "from": "/case-zambon.html",
+      "to": "/cases/zambon",
+      "http": 201,
+      "id": "455649097961"
+    },
+    {
+      "from": "/client-cases/zambon",
+      "to": "/cases/zambon",
+      "http": 201,
+      "id": "455667699904"
+    },
+    {
+      "from": "/case-hivolta.html",
+      "to": "/cases/hivolta",
+      "http": 201,
+      "id": "455653993676"
+    },
+    {
+      "from": "/client-cases/hivolta",
+      "to": "/cases/hivolta",
+      "http": 201,
+      "id": "455653993677"
+    },
+    {
+      "from": "/case-ichoosr.html",
+      "to": "/cases/ichoosr",
+      "http": 201,
+      "id": "455667699905"
+    },
+    {
+      "from": "/client-cases/ichoosr",
+      "to": "/cases/ichoosr",
+      "http": 201,
+      "id": "455653993678"
+    },
+    {
+      "from": "/case-immo-van-middelem.html",
+      "to": "/cases/immo-van-middelem",
+      "http": 201,
+      "id": "455653993679"
+    },
+    {
+      "from": "/client-cases/immo-van-middelem",
+      "to": "/cases/immo-van-middelem",
+      "http": 201,
+      "id": "455667699907"
+    },
+    {
+      "from": "/cesano",
+      "to": "/cases/cesano",
+      "http": 201,
+      "id": "455667699908"
+    },
+    {
+      "from": "/client-cases/cesano",
+      "to": "/cases/cesano",
+      "http": 201,
+      "id": "455667699909"
+    },
+    {
+      "from": "/sobelhor",
+      "to": "/cases/sobelhor",
+      "http": 201,
+      "id": "455667699911"
+    },
+    {
+      "from": "/client-cases/sobelhor",
+      "to": "/cases/sobelhor",
+      "http": 201,
+      "id": "455649097967"
+    },
+    {
+      "from": "/client-cases/ikaros-solar",
+      "to": "/cases/ikaros-solar",
+      "http": 201,
+      "id": "455653993684"
+    },
+    {
+      "from": "/client-cases",
+      "to": "/cases",
+      "http": 201,
+      "id": "455653993688"
+    },
+    {
+      "from": "/client-cases-old",
+      "to": "/cases",
+      "http": 201,
+      "id": "455653993689"
+    },
+    {
+      "from": "/jobs",
+      "to": "/werken-bij",
+      "http": 201,
+      "id": "455649097969"
+    },
+    {
+      "from": "/attract-leads",
+      "to": "/marketing",
+      "http": 201,
+      "id": "455667699916"
+    },
+    {
+      "from": "/boost-sales",
+      "to": "/sales-contact-center",
+      "http": 201,
+      "id": "455653993691"
+    },
+    {
+      "from": "/keep-clients",
+      "to": "/after-sales",
+      "http": 201,
+      "id": "455653993692"
+    },
+    {
+      "from": "/online-marketing",
+      "to": "/marketing",
+      "http": 201,
+      "id": "455649097971"
+    },
+    {
+      "from": "/callcenter-b2b",
+      "to": "/sales-contact-center",
+      "http": 201,
+      "id": "455653993693"
+    },
+    {
+      "from": "/face2face",
+      "to": "/face2face-sales",
+      "http": 201,
+      "id": "455667699919"
+    },
+    {
+      "from": "/website-laten-maken",
+      "to": "/website",
+      "http": 201,
+      "id": "455649097972"
+    },
+    {
+      "from": "/sales-traingen",
+      "to": "/training",
+      "http": 201,
+      "id": "455653993697"
+    },
+    {
+      "from": "/ai-prospectie",
+      "to": "/ai-aanpak",
+      "http": 201,
+      "id": "455649097975"
+    },
+    {
+      "from": "/inbound-customer-service",
+      "to": "/after-sales",
+      "http": 201,
+      "id": "455667699921"
+    },
+    {
+      "from": "/klanttevredenheids-campagnes",
+      "to": "/after-sales",
+      "http": 201,
+      "id": "455653993699"
+    },
+    {
+      "from": "/meer-klanten-terugwinnen",
+      "to": "/after-sales",
+      "http": 201,
+      "id": "455667699925"
+    },
+    {
+      "from": "/cross-en-upselling",
+      "to": "/after-sales",
+      "http": 201,
+      "id": "455649097977"
+    },
+    {
+      "from": "/axians",
+      "to": "/cases/axians",
+      "http": 201,
+      "id": "455653993703"
+    },
+    {
+      "from": "/hivolta",
+      "to": "/cases/hivolta",
+      "http": 201,
+      "id": "455653993704"
+    },
+    {
+      "from": "/ichoosr",
+      "to": "/cases/ichoosr",
+      "http": 201,
+      "id": "455667699927"
+    },
+    {
+      "from": "/immo-van-middelem",
+      "to": "/cases/immo-van-middelem",
+      "http": 201,
+      "id": "455667699928"
+    },
+    {
+      "from": "/q8oils",
+      "to": "/cases/q8oils",
+      "http": 201,
+      "id": "455653993705"
+    },
+    {
+      "from": "/unizo",
+      "to": "/cases/unizo",
+      "http": 201,
+      "id": "455667699930"
+    },
+    {
+      "from": "/meer-afspraken-voor-vm-building-services",
+      "to": "/cases/vm-building",
+      "http": 201,
+      "id": "455653993706"
+    },
+    {
+      "from": "/meer-verkopen-voor-eurocircuits",
+      "to": "/cases/eurocircuits",
+      "http": 201,
+      "id": "455653993709"
+    },
+    {
+      "from": "/jaguar-land-rover-benelux-kiest-salesup-voor-effectieve-leads",
+      "to": "/cases/jaguar-land-rover",
+      "http": 201,
+      "id": "455649098942"
+    },
+    {
+      "from": "/salesup-overstijgt-de-verwachting-spm",
+      "to": "/cases/spm",
+      "http": 201,
+      "id": "455649098944"
+    },
+    {
+      "from": "/salesup-strategische-telefonische-prospectie-partner-van-alindus",
+      "to": "/cases/alindus",
+      "http": 201,
+      "id": "455649098945"
+    },
+    {
+      "from": "/salesup-versterkt-de-wereldwijde-aanwezigheid-van-geodis",
+      "to": "/cases/geodis",
+      "http": 201,
+      "id": "455653993712"
+    },
+    {
+      "from": "/telefonische-prospectie-voor-ev-shop",
+      "to": "/cases/ev-shop",
+      "http": 201,
+      "id": "455649098947"
+    },
+    {
+      "from": "/telefonische-prospectie-voor-ikaros-solar",
+      "to": "/cases/ikaros-solar",
+      "http": 201,
+      "id": "455667699938"
+    },
+    {
+      "from": "/telefonische-prospectie-voor-upgrade",
+      "to": "/cases/upgrade-estate",
+      "http": 201,
+      "id": "455653993716"
+    },
+    {
+      "from": "/duurzame-samenwerking-tussen-messer-group-en-salesup",
+      "to": "/cases/messer-group",
+      "http": 201,
+      "id": "455649098950"
+    },
+    {
+      "from": "/van-heurck-strategische-marktbevraging",
+      "to": "/cases/van-heurck",
+      "http": 201,
+      "id": "455667699939"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "195184691445",
+      "slug": "old-home",
+      "reason": "keep-live"
+    },
+    {
+      "id": "199760180454",
+      "slug": "over-ons-old",
+      "reason": "keep-live"
+    },
+    {
+      "id": "199911766212",
+      "slug": "contact-old",
+      "reason": "keep-live"
+    },
+    {
+      "id": "200214634712",
+      "slug": "test-animatie",
+      "reason": "keep-live"
+    },
+    {
+      "id": "203541727470",
+      "slug": "bluedragontest",
+      "reason": "keep-live"
+    },
+    {
+      "id": "204084225269",
+      "slug": "privacy-policy",
+      "reason": "keep-live"
+    },
+    {
+      "id": "204095084742",
+      "slug": "algemene-voorwaarden",
+      "reason": "keep-live"
+    },
+    {
+      "id": "218251187434",
+      "slug": "fr-be/",
+      "reason": "keep-live"
+    },
+    {
+      "id": "218251188425",
+      "slug": "fr-be/hivolta",
+      "reason": "keep-live"
+    },
+    {
+      "id": "219478830312",
+      "slug": "fr-be/over-ons",
+      "reason": "keep-live"
+    },
+    {
+      "id": "246659453120",
+      "slug": "telefonische-prospectie",
+      "reason": "keep-live"
+    },
+    {
+      "id": "247034011897",
+      "slug": "widget-testing",
+      "reason": "keep-live"
+    },
+    {
+      "id": "289329964264",
+      "slug": "fr-be/stimuler-les-ventes",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113571038",
+      "slug": "fr-be/page-daccueil-salesup",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113576169",
+      "slug": "fr-be/podcast-salesup",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113846506",
+      "slug": "fr-be/à-propos-de-nous",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113849553",
+      "slug": "fr-be/avoir-un-site-web-réalisé-avec-salesup",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113854708",
+      "slug": "fr-be/telefonische-prospectie-voor-ikaros-solar",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113856709",
+      "slug": "fr-be/telefonische-prospectie-voor-ev-shop",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113887468",
+      "slug": "fr-be/télésales",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113892576",
+      "slug": "fr-be/formation-commerciale",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113894640",
+      "slug": "fr-be/politique-de-confidentialité",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113902778",
+      "slug": "fr-be/meer-klanttevredenheid-old",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113905911",
+      "slug": "fr-be/meer-klanten-terugwinnen-old",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113909981",
+      "slug": "fr-be/campagnes-de-satisfaction-de-la-clientèle",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368113913039",
+      "slug": "fr-be/garder-les-clients",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368114298064",
+      "slug": "fr-be/campagnes-de-reconquête-des-clients",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368114300124",
+      "slug": "fr-be/cross-en-upselling",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368114302141",
+      "slug": "fr-be/contact",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368114309368",
+      "slug": "fr-be/callcenter-b2b",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368115049710",
+      "slug": "fr-be/telefonische-prospectie-voor-upgrade",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368115072240",
+      "slug": "fr-be/meer-afspraken-voor-vm-building-services",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368115073245",
+      "slug": "fr-be/prospection-téléphonique",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368115077364",
+      "slug": "fr-be/marketing-en-ligne",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368115089640",
+      "slug": "fr-be/service-clientèle-inbound",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368115392754",
+      "slug": "fr-be/attirer-des-prospects",
+      "reason": "keep-live"
+    },
+    {
+      "id": "368115394778",
+      "slug": "fr-be/conditions-générales",
+      "reason": "keep-live"
+    },
+    {
+      "id": "382404118721",
+      "slug": "fr/algemene-voorwaarden",
+      "reason": "keep-live"
+    },
+    {
+      "id": "408229051604",
+      "slug": "fr-be/face2face",
+      "reason": "keep-live"
+    },
+    {
+      "id": "453268183261",
+      "name": "Cases - Detail",
+      "reason": "doNotPublish"
+    },
+    {
+      "id": "453268188375",
+      "name": "Dienstpagina",
+      "reason": "doNotPublish"
+    },
+    {
+      "id": "453268284652",
+      "name": "Subdienstpagina",
+      "reason": "doNotPublish"
+    },
+    {
+      "id": "453268305108",
+      "name": "Standaardpagina (dnd)",
+      "reason": "doNotPublish"
+    },
+    {
+      "id": "453268167916",
+      "name": "Jobs doelgroep",
+      "reason": "doNotPublish"
+    }
+  ],
+  "errors": [],
+  "counts": {
+    "drafted_live": 41,
+    "slug_meta": 61,
+    "published": 61,
+    "redirects_created": 173,
+    "skipped": 44,
+    "errors": 0
+  }
+}

@@ -1,0 +1,19 @@
+{% if module.heading %}
+<section class="method" id="{{ module.anchor }}" aria-labelledby="{{ module.anchor }}-titel">
+  <div class="wrap method-grid">
+    <div>
+      {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+      <h2 id="{{ module.anchor }}-titel">{{ module.heading }}</h2>
+      {% if module.intro %}<p class="method-intro">{{ module.intro }}</p>{% endif %}
+      <div class="method-points">
+        {% for p in module.points %}
+        <div class="method-point"><span class="mono">{{ p.num }}</span><div>{{ p.text }}</div></div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="method-media">
+      <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if module.image.src %}{{ module.image.src }}{% else %}https://salesup.be/hubfs/Rectangle%2058.jpg{% endif %}" alt="{{ module.image.alt }}" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+{% endif %}

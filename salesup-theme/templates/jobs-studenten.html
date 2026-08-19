@@ -1,0 +1,349 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Jobs studenten
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/vacatures.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"foundingDate\":\"2005\",\n      \"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Evenbroekveld 14\",\"postalCode\":\"9420\",\"addressLocality\":\"Erpe-Mere\",\"addressCountry\":\"BE\"},\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\n      \"sameAs\":[\"https://www.linkedin.com/company/salesup-be\"]\n    },\n    {\n      \"@type\":\"ItemList\",\n      \"name\":\"Openstaande studentenjobs bij salesUp Face2Face\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Promotor / Brand Ambassador\",\"description\":\"Promoot en verkoop merken op events, festivals en high-traffic locaties. Geen ervaring nodig — wij leiden je op.\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Weekendjob events\",\"description\":\"Werk in het weekend op events en beursstanden met een vaste crew. Flexibel te combineren met je studie.\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Deur-aan-deur sales\",\"description\":\"Ga per wijk op pad met een ludiek actieconcept en verkoop face to face, met coaching op de baan.\"}\n      ]\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Werken bij\",\"item\":\"https://www.salesup.be/werken-bij\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Studenten & Face2Face\",\"item\":\"https://www.salesup.be/jobs-studenten\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\"@type\":\"Question\",\"name\":\"Heb ik ervaring nodig?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. De meeste studenten starten zonder een dag verkoopervaring. Je krijgt een korte opleiding via de salesUp Academy, een vaste coach en de eerste acties loop je mee met een ervaren collega. Goesting en durf tellen zwaarder dan je cv.\"}},\n        {\"@type\":\"Question\",\"name\":\"Hoeveel verdien ik?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je krijgt een correct studentenloon volgens de geldende barema's, aangevuld met bonussen op basis van je resultaten. Hoe beter je scoort, hoe meer je verdient. De exacte tarieven en bonusregeling overlopen we tijdens het kennismakingsgesprek.\"}},\n        {\"@type\":\"Question\",\"name\":\"Welke uren doe ik en hoe flexibel is het?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Jij plant rond je lessen en examens. De meeste acties vallen in het weekend, tijdens vakanties en in het festivalseizoen. Je geeft je beschikbaarheid door en wij puzzelen de planning daarrond.\"}},\n        {\"@type\":\"Question\",\"name\":\"Heb ik een auto nodig?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Niet altijd. Veel acties zijn bereikbaar met het openbaar vervoer en voor deur-aan-deur rijden we vaak samen met de crew. Een rijbewijs is een plus voor acties buiten de stad, maar geen absolute voorwaarde.\"}},\n        {\"@type\":\"Question\",\"name\":\"Werk ik met een studentencontract?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Je werkt met een officieel studentencontract, met de voordelige RSZ-regeling voor studenten. Alles wordt correct en op tijd geregeld, zodat jij je enkel op de job moet focussen.\"}}\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/jobs-studenten",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Werken bij",
+                "url": {
+                  "url": {
+                    "content_id": 453268312260,
+                    "href": "/werken-bij",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Studenten & Face2Face",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "content_id": 453268169949,
+                    "type": "CONTENT"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-hoodie-back.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Studentenjob — Face2Face",
+          heading="<em>Verdien</em> goed, leer verkopen en beleef events.",
+          subtext="<p>De studentenjob waar je effectief iets aan overhoudt: een toptarief, échte sales-skills en de leukste crew van je weekend. Op events, festivals en straatacties — geen ervaring nodig, wij leren je alles.</p>",
+          cta1_text="Solliciteer nu",
+          cta1_url={
+              "url": {
+                "href": "#solliciteren",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Bekijk de jobs",
+          cta2_url={
+              "url": {
+                "href": "#vacatures",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Jij plant rond je lessen. <strong>Wij puzzelen de planning daarrond.</strong>",
+          note_energie=true,
+          chips=[
+              {
+                "link_label": "Flexibel naast je studie"
+              },
+              {
+                "link_label": "Toptarief + bonus"
+              },
+              {
+                "link_label": "Events & festivals"
+              },
+              {
+                "link_label": "Geen ervaring nodig"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Sfeer op een salesUp-event",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/446%20x%20316%20px-Mar-26-2026-01-31-59-3301-PM.png",
+              "alt": "Medewerker met een salesUp-hoodie: A job in sales?"
+            },
+          trustcard_badge="Werken = leute",
+          trustcard_stat="0<em> ervaring</em>",
+          trustcard_label="nodig om te starten. Je leert alles via de salesUp Academy, met een vaste coach en je eerste acties samen met een ervaren collega.",
+          trustcard_quote="\"Goesting en durf tellen bij ons zwaarder dan je cv.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over starten zonder ervaring"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="troeven",
+          eyebrow="Waarom salesUp",
+          heading="Een studentenjob die niet aanvoelt als werken.",
+          intro="<p>Je verdient goed, je leert iets waar je later écht mee verder kan, en je zit tussen leeftijdsgenoten die er samen voor gaan.</p>",
+          vac_troef=true,
+          feature_cards=[
+              {
+                "title": "Flexibel naast je studie",
+                "tekst": "<p>Jij geeft je beschikbaarheid door, wij plannen daarrond. Weekends, vakanties, het festivalseizoen — combineer het met je lessen en examens.</p>"
+              },
+              {
+                "title": "Toptarief + bonussen",
+                "tekst": "<p>Een correct studentenloon én bonussen op je resultaten. Hoe beter je scoort, hoe meer je verdient. Je merkt meteen wat je waard bent.</p>"
+              },
+              {
+                "title": "Events, festivals & straatacties",
+                "tekst": "<p>Geen saaie kassa of vakkenvullen: je staat middenin de actie op events, festivals en drukke locaties. Elke dag ziet er anders uit.</p>"
+              },
+              {
+                "title": "Geen ervaring? Wij leren het je",
+                "tekst": "<p>Nog nooit iets verkocht? Geen probleem. Via de salesUp Academy krijg je een vliegende start en loop je je eerste acties mee met een ervaren collega.</p>"
+              },
+              {
+                "title": "Teamspirit",
+                "tekst": "<p>Je scoort niet alleen. Je zit in een hechte crew die elkaar pusht, samen wint en samen naar de afterdrink trekt. Vrienden maken hoort erbij.</p>"
+              },
+              {
+                "title": "Skills voor later",
+                "tekst": "<p>Overtuigen, doorzetten, met mensen praten: sales-skills die op elk cv en in elk leven scoren. Deze job leert je meer dan je denkt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload gesprek-1op1.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: er is nog géén sterk Face2Face-veldbeeld in de assets (zie ../assets/BEELDEN_overzicht.md). Tijdelijk het recruitment-hoodiebeeld tot een echt veldbeeld is aangeleverd. -->
+        <!-- INTERIM: vervangen door echt Face2Face-veldbeeld -->
+        <!-- INTERIM: er is nog géén sterk Face2Face-veldbeeld in de assets (zie ../assets/BEELDEN_overzicht.md). Tijdelijk het recruitment-hoodiebeeld tot een echt veldbeeld is aangeleverd. -->
+        <!-- INTERIM: vervangen door echt Face2Face-veldbeeld -->
+            {% dnd_module
+          path="../modules/face2face-uitleg",
+          anchor="wat-je-doet",
+          eyebrow="Wat je doet",
+          heading="Face to face, waar het gebeurt.",
+          intro="<p>Als Face2Face-student ben jij het gezicht van een merk. Je stapt op mensen af, brengt een verhaal en sluit de deal — live, in het echt, met een ludiek concept dat mensen doet glimlachen.</p>",
+          checklist=[
+              {
+                "text": "<strong>Promoten &amp; verkopen op events en festivals.</strong> Je enthousiasmeert bezoekers en zet interesse om in een ja."
+              },
+              {
+                "text": "<strong>High-traffic locaties &amp; straatacties.</strong> Op drukke plekken spreek je voorbijgangers aan met een frisse insteek."
+              },
+              {
+                "text": "<strong>Deur-aan-deur sales.</strong> Per wijk ga je op pad met een uniek, ludiek actieconcept — nooit twee keer hetzelfde."
+              },
+              {
+                "text": "<strong>Telesales als ondersteuning.</strong> Achter de acties draait een belteam dat afspraken en leads aanlevert, zodat jij scoort waar het telt."
+              }
+            ],
+          video_url="https://www.youtube.com/embed/jNQXAC9IVRw",
+          video_title="Studentenjob bij salesUp",
+          media={
+              "src": "https://salesup.be/hubfs/Rectangle%2057.jpg",
+              "alt": "Twee salesUp-collega's in gesprek — face to face op locatie."
+            },
+          caption="Sfeerbeeld salesUp. <!-- INTERIM: vervangen door echt Face2Face-veldbeeld -->"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/concept",
+          eyebrow="Waarom het bij ons leuker werkt",
+          heading="Geen saaie flyer. Jij werkt met <em>straffe concepten</em>.",
+          tekst="<p>Bij salesUp sta je nooit met een saaie folder op straat. Elke actie is een uitgewerkt, creatief concept dat opvalt — en dat maakt je job leuker, je gesprekken makkelijker en je resultaten (en dus je centen) beter.</p>",
+          chain=[
+              {
+                "num": "01",
+                "title": "Je valt op",
+                "tekst": "<p>Met een straf concept komen mensen naar jóu — je hoeft niemand lastig te vallen.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Leuker om te doen",
+                "tekst": "<p>Creatieve acties op events en toplocaties: geen twee dagen zijn hetzelfde.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Meer succes = meer verdiensten",
+                "tekst": "<p>Meer aandacht en goesting = meer resultaat, en jij plukt daar de vruchten van.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/open-vacatures",
+          eyebrow="Open vacatures",
+          heading="Waar wil jij aan de slag?",
+          intro="<p>Kies de job die bij je past en solliciteer in twee minuten. Niks voor jou vandaag? Solliciteer dan spontaan — er komt voortdurend iets bij.</p>",
+          api_url="https://salesup.recruitee.com/api/offers/",
+          department="Face2Face",
+          detail_base="/werken-bij/vacature"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Nog vragen? We geven je de antwoorden.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Heb ik ervaring nodig?",
+                "answer": "<p>Nee. De meeste studenten starten zonder een dag verkoopervaring. Je krijgt een korte opleiding via de salesUp Academy, een vaste coach en de eerste acties loop je mee met een ervaren collega. Goesting en durf tellen zwaarder dan je cv.</p>"
+              },
+              {
+                "question": "Hoeveel verdien ik?",
+                "answer": "<p>Je krijgt een correct studentenloon volgens de geldende barema's, aangevuld met bonussen op basis van je resultaten. Hoe beter je scoort, hoe meer je verdient. De exacte tarieven en bonusregeling overlopen we tijdens het kennismakingsgesprek.</p>"
+              },
+              {
+                "question": "Welke uren doe ik en hoe flexibel is het?",
+                "answer": "<p>Jij plant rond je lessen en examens. De meeste acties vallen in het weekend, tijdens vakanties en in het festivalseizoen. Je geeft je beschikbaarheid door en wij puzzelen de planning daarrond.</p>"
+              },
+              {
+                "question": "Heb ik een auto nodig?",
+                "answer": "<p>Niet altijd. Veel acties zijn bereikbaar met het openbaar vervoer en voor deur-aan-deur rijden we vaak samen met de crew. Een rijbewijs is een plus voor acties buiten de stad, maar geen absolute voorwaarde.</p>"
+              },
+              {
+                "question": "Werk ik met een studentencontract?",
+                "answer": "<p>Ja. Je werkt met een officieel studentencontract, met de voordelige RSZ-regeling voor studenten. Alles wordt correct en op tijd geregeld, zodat jij je enkel op de job moet focussen.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zin om erbij te zijn? Stuur ons een seintje.",
+          tekst="<p>Solliciteer op een job hierboven of laat spontaan van je horen. Vertel kort wie je bent, waar je zit en wanneer je kan — wij nemen snel contact op.</p>",
+          cta1_text="Solliciteer nu",
+          cta1_url={
+              "url": {
+                "href": "#vacatures",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Alle profielen",
+                "url": {
+                  "url": {
+                    "content_id": 453268312260,
+                    "href": "/werken-bij",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Contact Center",
+                "url": {
+                  "url": {
+                    "content_id": 453268166896,
+                    "href": "/jobs-contact-center",
+                    "type": "CONTENT"
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Consultants",
+                "url": {
+                  "url": {
+                    "content_id": 453268168921,
+                    "href": "/jobs-sales-consultants",
+                    "type": "CONTENT"
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}
+{% block extra_js %}{{ require_js(get_asset_url('../js/recruitee.js')) }}{% endblock %}

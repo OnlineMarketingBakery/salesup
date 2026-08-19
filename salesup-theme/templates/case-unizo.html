@@ -1,0 +1,191 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Unizo
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Prospectie voor Unizo\", \"about\": \"UNIZO\", \"description\": \"Ontdek hoe salesUp samenwerkte met Unizo om ondernemers te ondersteunen in groei en succes.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/unizo\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"UNIZO\", \"item\": \"https://www.salesup.be/cases/unizo\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/unizo",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "UNIZO",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Ondernemersorganisatie",
+          heading="Prospectie voor Unizo",
+          subtext="<p>Ontdek hoe salesUp samenwerkte met Unizo om ondernemers te ondersteunen in groei en succes.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              },
+              {
+                "link_label": "Marketing"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "80%",
+                "toelichting": "Responsgraad 80% hoger dan bij ‘spammy’ content"
+              },
+              {
+                "cijfer": "385",
+                "toelichting": "385 succesvolle adviesgesprekken ingepland over 5 maanden"
+              },
+              {
+                "cijfer": "20",
+                "toelichting": "Gemiddeld 20 ingevulde scans per week"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>UNIZO is de grootste ondernemersorganisatie van Vlaanderen en Brussel. Zij bieden ondernemers interessante <strong>begeleidingstrajecten</strong> aan. Hun doel? Bedrijven laten groeien. De grootste uitdaging bij UNIZO was het <strong>bereiken van de juiste doelgroep</strong>. Hiervoor klopten ze aan bij salesUp.</p>\n<h2>Prospects persoonlijk benaderen met outbound</h2>\n<p>Één van de begeleidingstrajecten van UNIZO is het ETAB-project (Elk Talent Aan Boord), waarbij hr-ondersteuning wordt verleend aan bedrijven. Om meer inschrijvingen te genereren, stelden we <a href=\"/afspraakplanning\">warme prospectie</a> voor. Een semi-automatische methode die prospects op een persoonlijke manier benadert.</p>\n<p>Interessante LinkedIn-profielen worden zo individueel aangesproken via verschillende kanalen (per mail, via <a href=\"/social-ads\">social media</a>, telefonisch…). Dankzij deze persoonlijke benadering is de <strong>responsgraad 80% hoger</strong>, dan bij '<em>spammy' </em>content.</p>\n<p>Wanneer een prospect interesse vertoont in de verzonden informatie, komt deze in een <strong>outboundfunnel </strong>terecht. Afhankelijk van de genomen stappen, wordt er slim ingespeeld op zijn/haar interesses.</p>\n<h2>Verbluffende resultaten</h2>\n<p>De voornaamste doelstelling was het <strong>invullen van de hr-scan</strong>, waarin de ondernemer aangaf waar de pijnpunten zaten in hun onderneming. Na het invullen van de hr-scan, werd er een afspraak gemaakt tussen het bedrijf en een UNIZO-vertegenwoordiger. Gedurende 5 maanden werden <strong>385 succesvolle adviesgesprekken</strong> ingepland.</p>\n<p><strong>Nele Creuwels</strong> <strong>van UNIZO</strong> getuigt enthousiast over de samenwerking:<br><br>“<em>De resultaten van de outbound funnel overstegen onze verwachtingen. In het begin wisten we niet goed wat te verwachten, maar al snel bleek deze aanpak de juiste. Mensen werden op een laagdrempelige manier gecontacteerd, waardoor we gemiddeld 20 ingevulde scans per week kregen.<br></em></p>\n<h2>Ook jouw prospectie uitbesteden?</h2>\n<p>salesUp bewees zich als de perfecte partner voor UNIZO. Door de combinatie van strategische planning, persoonlijke communicatie en nauwkeurige opvolging werden buitengewone resultaten behaald.</p>\n<p>Wil jouw bedrijf ook een boost geven aan prospectie en sales? Neem dan vandaag contact op.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;De resultaten van de outbound funnel overstegen onze verwachtingen. In het begin wisten we niet goed wat te verwachten, maar al snel bleek deze aanpak de juiste. Mensen werden op een laagdrempelige manier gecontacteerd, waardoor we gemiddeld 20 ingevulde scans per week kregen.&rdquo;</p>",
+          who="&mdash; <strong>Nele Creuwels</strong>, UNIZO"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor UNIZO deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/vm-building",
+                    "type": "CONTENT", "content_id": 453268043979
+                  }
+                },
+                "sector": "Bouw",
+                "naam": "VM Building Solutions",
+                "stat": "Succespercentage van 16,21% met al 535 gemaakte afspraken (ruim boven het doel van 10%)",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/trustteam",
+                    "type": "CONTENT", "content_id": 453268665592
+                  }
+                },
+                "sector": "IT-diensten",
+                "naam": "Trustteam",
+                "stat": "MyZen-campagne behaalde een bruto conversie van 18,24%",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/geodis",
+                    "type": "CONTENT", "content_id": 453268372723
+                  }
+                },
+                "sector": "Logistiek",
+                "naam": "GEODIS",
+                "stat": "Startdatabase van 1.210 potentiële contacten",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

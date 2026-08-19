@@ -1,0 +1,15 @@
+<section class="section wrap" id="{{ module.anchor }}" {% if module.heading %}aria-labelledby="{{ module.anchor }}-titel"{% endif %}>
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    {% if module.heading %}<h2 id="{{ module.anchor }}-titel">{{ module.heading }}</h2>{% endif %}
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="feature-grid">
+    {% for card in module.feature_cards %}
+    <div class="feature-card{% if module.vac_troef %} vac-troef{% endif %}">
+      <strong>{{ card.title }}</strong>
+      <div>{{ card.tekst }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

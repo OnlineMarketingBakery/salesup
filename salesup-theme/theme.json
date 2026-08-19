@@ -1,0 +1,21 @@
+{
+  "name": "salesup-theme",
+  "label": "salesUp",
+  "version": "1.1",
+  "preview_path": "./templates/home.html",
+  "enable_domain_stylesheets": false,
+  "hide_all_default_modules": true,
+  "author": {
+    "name": "salesUp",
+    "email": "info@salesup.be"
+  },
+  "responsive_breakpoints": [
+    {
+      "name": "mobile",
+      "mediaQuery": "@media (max-width: 767px)",
+      "previewWidth": {
+        "value": 375
+      }
+    }
+  ]
+}

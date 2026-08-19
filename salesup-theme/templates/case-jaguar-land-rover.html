@@ -1,0 +1,175 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Jaguar Land Rover
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Jaguar Land Rover BeNeLux kiest salesUp voor effectieve leads\", \"about\": \"Jaguar Land Rover\", \"description\": \"Ontdek hoe salesUp Jaguar Land Rover Benelux hielp om effectieve leads te genereren.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/jaguar-land-rover\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Jaguar Land Rover\", \"item\": \"https://www.salesup.be/cases/jaguar-land-rover\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/jaguar-land-rover",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Jaguar Land Rover",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Automotive",
+          heading="Jaguar Land Rover BeNeLux kiest salesUp voor effectieve leads",
+          subtext="<p>Ontdek hoe salesUp Jaguar Land Rover Benelux hielp om effectieve leads te genereren.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              },
+              {
+                "link_label": "Marketing"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "154",
+                "toelichting": "In totaal 154 leads doorgestuurd naar de dealers (34 aanvragen proefrit, 40 verzoeken offerte, 80 aanvragen direct dealercontact) in de periode dec. 2023 t/m juli 2024"
+              },
+              {
+                "cijfer": "14",
+                "toelichting": "Lost-Leads-pilot: 14 nieuwe waardevolle leads in slechts twee weken, waaronder vijf aanvragen voor een proefrit"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>In december 2023 kwam Jaguar Land Rover naar salesUp met een duidelijke uitdaging: hoe kunnen we niet alleen meer <a href=\"/marketing\">leads genereren</a>, maar vooral de kwaliteit ervan waarborgen? In een markt waar klantbeleving voorop staat, bleek dit cruciaal. Na een succesvolle eerste fase verlengde Jaguar Land Rover de samenwerking al snel tot maart 2025, met uitzicht op een nog langere samenwerking. Benieuwd hoe salesUp dit resultaat behaalde? Lees dan snel verder…</p>\n<h2>Van website downloads naar waardevolle leads</h2>\n<p>De samenwerking tussen Jaguar Land Rover en salesUp begon met het kwalificeren van leads die een gepersonaliseerde brochure of offerte hadden samengesteld via de websites van Jaguar en Land Rover. Klanten kunnen op deze sites hun ideale auto samenstellen, inclusief alle opties en accessoires, en vervolgens een offerte aanvragen. salesUp nam vervolgens contact op met deze klanten om te achterhalen of ze echt geïnteresseerd waren in een aankoop, of dat het slechts een oriënterende actie was.</p>\n<p>De leads werden geclassificeerd op basis van drie belangrijke criteria: de wens voor een proefrit, het ontvangen van een offerte, of het direct contact opnemen met een dealer. Deze aanpak zorgde ervoor dat alleen de meest waardevolle leads werden doorgestuurd naar de dealers van Jaguar en Land Rover in de Benelux-regio.</p>\n<h2>Resultaten die spreken</h2>\n<p>In de periode van december 2023 tot en met juli 2024 heeft salesUp in totaal 154 leads doorgestuurd naar de dealers, bestaande uit 34 aanvragen voor een proefrit, 40 verzoeken voor een offerte, en 80 aanvragen voor direct contact met een dealer. De kwaliteit van deze leads was buitengewoon hoog, wat blijkt uit de positieve reacties van de dealers. Dit bevestigt dat alle doorgestuurde leads een hoog potentieel hadden voor een succesvolle verkoop.</p>\n<h2>Uitbreiding naar SoMe campagne</h2>\n<p>Na het succes van de campagne voor gepersonaliseerde brochures, die liep tot eind juli 2024, besloot Jaguar Land Rover de samenwerking met salesUp verder uit te breiden. Begin augustus zijn we gestart met een nieuwe <a href=\"/social-ads\">Social Media-campagne</a> (SoMe), gericht op het kwalificeren van leads die via platforms zoals Facebook binnenkomen. Deze campagne is een antwoord op de nieuwe Europese richtlijnen en de groeiende focus van Jaguar Land Rover op social media-interacties in de Benelux-regio.</p>\n<p>In deze vroege fase van de SoMe-campagne is Jaguar Land Rover al zeer tevreden met de behaalde resultaten. De via social media gegenereerde leads worden met dezelfde zorgvuldigheid opgevolgd als bij eerdere campagnes.</p>\n<p>Om de kwaliteit van deze leads te waarborgen, stuurt Jaguar Land Rover eerst een bevestigingsmail naar geïnteresseerden, waarna zij zeven dagen de tijd hebben om hun interesse te bevestigen. Alleen degenen die hun interesse daadwerkelijk bevestigen, worden door ons benaderd, wat opnieuw de focus legt op kwaliteit boven kwantiteit.</p>\n<h2>Lost Leads: herkwalificeren voor succes</h2>\n<p>Naast het kwalificeren van nieuwe leads, startte salesUp in augustus 2024 ook een pilot campagne voor het herkwalificeren van zogenoemde \"Lost Leads\". Dit zijn klanten die eerder interesse toonden, maar uiteindelijk geen aankoop deden. In slechts twee weken tijd resulteerde deze aanpak in 14 nieuwe waardevolle leads, waaronder vijf aanvragen voor een proefrit. Dit toont aan dat zelfs in verloren gewaande leads nog potentieel schuilt, mits ze op de juiste manier worden benaderd.</p>\n<h2>Strikte naleving van GDPR voor klantveiligheid</h2>\n<p>Een ander belangrijk aspect van de samenwerking tussen salesUp en Jaguar Land Rover is de strikte naleving van de GDPR-richtlijnen. Zij hechten bijzonder veel waarde aan de privacy van hun klanten, en salesUp heeft ervoor gezorgd dat alle communicatie en rapportages volledig GDPR-compliant zijn. Dit niveau van zorg en aandacht voor de privacy van klanten past perfect bij het modern luxury imago van Jaguar Land Rover.</p>\n<h2>Een voortdurende samenwerking gericht op kwaliteit</h2>\n<p>De samenwerking tussen Jaguar Land Rover en salesUp is een schoolvoorbeeld van hoe een strategische aanpak in leadkwalificatie niet alleen de verkoopcijfers kan verbeteren, maar ook de algehele klantbeleving kan versterken. Met een voortdurende focus op kwaliteit en klanttevredenheid, is salesUp klaar om deze succesvolle samenwerking voort te zetten en nieuwe uitdagingen aan te gaan, alles met het oog op het waarborgen van de premium ervaring die klanten van Jaguar Land Rover gewend zijn.</p>\n<h2>Up your sales met salesUp</h2>\n<p>Met een proactieve en gedetailleerde aanpak heeft salesUp bewezen dat hoogwaardige leads direct bijdragen aan het behoud van een sterke merkbeleving. Ben je klaar om jouw verkoop naar een hoger niveau te tillen? Net zoals bij Jaguar Land Rover kunnen we ook jouw merk helpen groeien met gerichte en strategische campagnes.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Jaguar Land Rover deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/astara",
+                    "type": "CONTENT", "content_id": 453268364479
+                  }
+                },
+                "sector": "Autosector",
+                "naam": "Astara",
+                "stat": "Gemiddelde productiviteit per informant lag 19% hoger dan tijdens het vorige Autosalon",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/liantis",
+                    "type": "CONTENT", "content_id": 453268379883
+                  }
+                },
+                "sector": "HR-dienstengroep",
+                "naam": "Liantis",
+                "stat": "Keynote van 90 minuten voor het volledige sales-team",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/zambon",
+                    "type": "CONTENT", "content_id": 453268044009
+                  }
+                },
+                "sector": "Farmaceutisch",
+                "naam": "Zambon",
+                "stat": "Traject met zes verkopers en het management (geen resultaatcijfer)",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

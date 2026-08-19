@@ -1,0 +1,19 @@
+<section class="testi wrap" id="{{ module.anchor }}">
+  <div class="testi-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2>{{ module.heading }}</h2>
+  </div>
+  <div class="testi-carousel">
+    <button type="button" class="testi-nav prev" aria-label="Vorige quotes">&lsaquo;</button>
+    <div class="testi-track" id="testiTrack" tabindex="0" aria-label="Klant-quotes, horizontaal scrollbaar">
+      {% for card in module.cards %}
+      <figure class="testi-card">
+        <p>{{ card.quote }}</p>
+        <figcaption class="testi-who"><strong>{{ card.naam }}</strong><span>{{ card.role_company }}</span></figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+    <button type="button" class="testi-nav next" aria-label="Volgende quotes">&rsaquo;</button>
+  </div>
+  {% if module.hint %}<p class="testi-hint">{{ module.hint }}</p>{% endif %}
+</section>

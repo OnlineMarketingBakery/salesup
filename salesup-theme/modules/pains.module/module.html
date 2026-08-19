@@ -1,0 +1,15 @@
+<section class="pains">
+  <div class="wrap">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2>{{ module.heading }}</h2>
+    <div class="pain-grid">
+      {% for c in module.pain_cards %}
+      <div class="pain-card">
+        <span class="pain-num">{{ c.num }}</span>
+        <strong>{{ c.title }}</strong>
+        <div>{{ c.tekst }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

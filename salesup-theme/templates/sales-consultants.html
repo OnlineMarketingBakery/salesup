@@ -1,0 +1,501 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Sales Consultants
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Sales Consultants\",\n      \"serviceType\":\"Detachering van ervaren salesconsultants\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/sales-consultants\",\n      \"description\":\"Ervaren salesconsultants die bij de klant zelf aan de slag gaan via detachering, op de payroll van salesUp, met tooling, coaching en de datalus mee. Opdrachten vanaf minstens 3 maanden fulltime, afgerekend op resultaat.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Consultants\",\"item\":\"https://www.salesup.be/sales-consultants\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat is het verschil met een freelancer of een interimkantoor?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een salesUp-consultant is geen los cv. De consultant staat bij ons op de payroll en gaat gedetacheerd bij jouw team aan de slag, maar neemt het volledige salesUp-huis mee: onze tooling, dagelijkse coaching en de datalus die elk gesprek scoort en terugkoppelt naar training. Zo krijg je extra salescapaciteit zonder wervingsrisico, met een consultant die vóór en tijdens de opdracht objectief gemeten en bijgestuurd wordt.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe lang duurt een opdracht?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een detacheringsopdracht loopt vanaf minstens 3 maanden fulltime. Sales opbouwen kost tijd: een consultant moet je aanbod, markt en klanten leren kennen voor die rendeert. Een minimumlooptijd van 3 maanden zorgt dat je die investering ook terugverdient. Langere en verlengbare opdrachten zijn mogelijk.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Blijft de consultant bij jullie in dienst?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. De consultant blijft op onze payroll en houdt zijn plek in ons team: hij traint op hetzelfde platform als onze eigen salesmensen, wordt gecoacht en volgt onze certificeringsladder. Jij draagt geen aanwervingsrisico en geen administratieve last, en de consultant staat er nooit alleen voor.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat als het niet klikt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Klikt het niet met een consultant, dan zoeken we binnen de looptijd samen een vervanging via onze pool. Omdat we vooraf een doelstelling afspreken en het resultaat wekelijks rapporteren met volledige kostentransparantie, zie je snel of de match werkt. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/sales-consultants",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Consultants",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload man-desk-thinking.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: geen geposeerd portret beschikbaar; sfeerbeeld uit ../assets -->
+        <!-- VERIFIEER: Liantis-samenwerking omvat salestraining én coaching/begeleiding van het salesmanagement; geen publiek consulting-specifiek cijfer, dus kwalitatief. -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Sales Consultants",
+          heading="Ervaren sales, <em>gedetacheerd</em> in jouw team.",
+          subtext="<p>Ervaren salesconsultants die bij jou aan de slag gaan via detachering — op onze payroll, maar met de tooling, de dagelijkse coaching en de datalus van salesUp mee. Extra salescapaciteit zonder wervingsrisico, vanaf minstens 3 maanden fulltime en afgerekend op resultaat.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Hoe we hen scherp houden",
+          cta2_url={
+              "url": {
+                "href": "#ai",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Op onze payroll"
+              },
+              {
+                "link_label": "Vanaf 3 maanden fulltime"
+              },
+              {
+                "link_label": "Tooling + coaching mee"
+              },
+              {
+                "link_label": "Afgerekend op resultaat"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Liantis",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2060.jpg",
+              "alt": "Een ervaren salesconsultant aan een bureau, geconcentreerd aan het werk."
+            },
+          trustcard_badge="",
+          trustcard_stat="",
+          trustcard_label="Bij Liantis begeleidden en coachten we het salesmanagement van een commercieel team van 70 à 80 mensen — geen los advies, maar mee aan de tafel.",
+          trustcard_quote="\"Vertrouwen is een sleutel en een fundament.\"",
+          trustcard_quote_who="— <strong>Eveline Boúúaert</strong>, Head of Sales KMO bij Liantis"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met salesUp werken",
+          eyebrow="Bedrijven die met salesUp werken",
+          logos=[
+              {
+                "naam": "Liantis",
+                "slug": ""
+              },
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Geodis",
+                "slug": ""
+              },
+              {
+                "naam": "VM Building",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/subservices",
+          anchor="subdiensten",
+          eyebrow="De inzetvormen",
+          heading="Hoe je onze consultants inzet.",
+          intro="",
+          kaarten=[
+              {
+                "title": "Detachering / interim sales",
+                "desc": "<p>Een ervaren consultant die fulltime jouw salesteam komt versterken, op onze payroll en vanaf minstens 3 maanden.</p>",
+                "url": {
+                  "url": {
+                    "href": "/detachering",
+                    "type": "CONTENT", "content_id": 453268185305
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "Sales-as-a-Service",
+                "desc": "<p>Je volledige salesfunctie uitbesteed aan een team van salesUp, van prospectie tot closing.</p>",
+                "url": {
+                  "url": {
+                    "href": "/sales-as-a-service",
+                    "type": "CONTENT", "content_id": 453268197610
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "Sales management ad interim",
+                "desc": "<p>Een ervaren salesmanager die je commercieel team tijdelijk aanstuurt en coacht, datagedreven.</p>",
+                "url": {
+                  "url": {
+                    "href": "/interim-sales-management",
+                    "type": "CONTENT", "content_id": 453268165858
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "Sales-audit & optimalisatie",
+                "desc": "<p>Een doorlichting van je salesproces met concrete verbeterpunten, gestaafd met data.</p>",
+                "url": {
+                  "url": {
+                    "href": "/sales-audit",
+                    "type": "CONTENT", "content_id": 453268177096
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het oplevert",
+          heading="Geen los cv. Het hele huis mee.",
+          intro="<p>Een gedetacheerde consultant die er alleen voor staat, is een dure gok. Onze consultants nemen de tooling, de coaching en de datalus van salesUp mee — zodat ze sneller renderen en meetbaar blijven.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Ervaren & direct inzetbaar",
+                "tekst": "<p>Doorgewinterde salesmensen die je verkoop, je pipeline of je salesmanagement komen versterken — zonder de maandenlange zoektocht en het risico van een eigen aanwerving.</p>"
+              },
+              {
+                "title": "Op onze payroll, geen wervingsrisico",
+                "tekst": "<p>De consultant blijft bij ons in dienst en gedetacheerd bij jouw team. Jij draagt geen aanwervingsrisico en geen administratieve last, en de consultant staat er nooit alleen voor.</p>"
+              },
+              {
+                "title": "Tooling, coaching én de datalus mee",
+                "tekst": "<p>De consultant traint op hetzelfde platform als onze eigen salesteams: elk gesprek gescoord op kwaliteit en koopkans, met bijsturing via salesUp Academy tijdens de opdracht.</p>"
+              },
+              {
+                "title": "Vanaf 3 maanden, afgerekend op resultaat",
+                "tekst": "<p>Opdrachten lopen vanaf minstens 3 maanden fulltime, zodat de investering rendeert. We spreken vooraf een doel af en rapporteren het resultaat wekelijks, met 100% kostentransparantie.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload overleg-senior-woman.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/ai-differentiator",
+          anchor="ai",
+          eyebrow="De AI-differentiator",
+          heading="Objectief gemeten, vóór en tijdens de opdracht.",
+          intro="Onze consultants trainen op hetzelfde platform als onze eigen salesteams. Zo brengen we hun competenties scherp in kaart nog voor ze bij jou starten — en blijven we bijsturen tijdens de opdracht. De AI meet en signaleert; de consultant verkoopt. Dat is de datalus die geen interimkantoor kan sluiten.",
+          points=[
+              {
+                "num": "01",
+                "text": "<p><strong>Automated quality monitoring</strong> — elk gesprek gescoord op kwaliteit en koopkans, geen steekproef achteraf.</p>"
+              },
+              {
+                "num": "02",
+                "text": "<p><strong>Opportunity score</strong> — de warmste dossiers worden als eerste opgevolgd, zodat geen kans blijft liggen.</p>"
+              },
+              {
+                "num": "03",
+                "text": "<p><strong>Objection-detectie</strong> — terugkerende bezwaren worden herkend, zodat aanpak en aanbod meebewegen.</p>"
+              },
+              {
+                "num": "04",
+                "text": "<p><strong>Getraind &amp; gecertificeerd vooraf</strong> — elke consultant doorloopt onze eigen trainings- en certificeringsladder.</p>"
+              },
+              {
+                "num": "05",
+                "text": "<p><strong>Data gekoppeld aan salesUp Academy</strong> — waar de consultant hapert, wordt hij daar bijgestuurd.</p>"
+              }
+            ],
+          image={
+              "src": "https://salesup.be/hubfs/Rectangle%2058.jpg",
+              "alt": "Een senior consultant kijkt mee op het scherm van een collega tijdens een coachingmoment."
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van profiel tot afgerekend resultaat.",
+          intro="<p>We spreken vooraf een doelstelling af en bepalen welk profiel jouw team het snelst verder helpt.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Profiel & doel bepalen",
+                "tekst": "<p>We spreken vooraf een doelstelling af en bepalen welk profiel jouw team het snelst verder helpt.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Consultant matchen & briefen",
+                "tekst": "<p>We matchen een consultant uit ons team, brengen hem op jouw aanbod en markt, en certificeren op ons platform.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Aan de slag bij jouw team",
+                "tekst": "<p>De consultant werkt gedetacheerd mee, met tooling en de datalus mee — vanaf minstens 3 maanden fulltime.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Meten, coachen & wekelijks rapporteren",
+                "tekst": "<p>Gesprekken worden gescoord, we sturen bij via salesUp Academy en je krijgt een wekelijkse rapportering met 100% kostentransparantie.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat commercieel directeurs ons vragen.",
+          intro="<p>De vragen die commercieel directeurs en hun inkoop ons het vaakst stellen over Sales Consultants.</p>",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Wat is het verschil met een freelancer of een interimkantoor?",
+                "answer": "<p>Een salesUp-consultant is geen los cv. De consultant staat bij ons op de payroll en gaat gedetacheerd bij jouw team aan de slag, maar neemt het volledige salesUp-huis mee: onze tooling, dagelijkse coaching en de datalus die elk gesprek scoort en terugkoppelt naar training. Zo krijg je extra salescapaciteit zonder wervingsrisico, met een consultant die vóór en tijdens de opdracht objectief gemeten en bijgestuurd wordt.</p>"
+              },
+              {
+                "question": "Hoe lang duurt een opdracht?",
+                "answer": "<p>Een detacheringsopdracht loopt vanaf minstens 3 maanden fulltime. Sales opbouwen kost tijd: een consultant moet je aanbod, markt en klanten leren kennen voor die rendeert. Een minimumlooptijd van 3 maanden zorgt dat je die investering ook terugverdient. Langere en verlengbare opdrachten zijn mogelijk.</p>"
+              },
+              {
+                "question": "Blijft de consultant bij jullie in dienst?",
+                "answer": "<p>Ja. De consultant blijft op onze payroll en houdt zijn plek in ons team: hij traint op hetzelfde platform als onze eigen salesmensen, wordt gecoacht en volgt onze certificeringsladder. Jij draagt geen aanwervingsrisico en geen administratieve last, en de consultant staat er nooit alleen voor.</p>"
+              },
+              {
+                "question": "Wat als het niet klikt?",
+                "answer": "<p>Klikt het niet met een consultant, dan zoeken we binnen de looptijd samen een vervanging via onze pool. Omdat we vooraf een doelstelling afspreken en het resultaat wekelijks rapporteren met volledige kostentransparantie, zie je snel of de match werkt. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: nog te bouwen -->
+            {% dnd_module
+          path="../modules/crosssell",
+          eyebrow="Werkt sterker samen met",
+          heading="Los te boeken. Maar scherper in combinatie.",
+          cross_rows=[
+              {
+                "idx": "01",
+                "naam": "Sales Contact Center",
+                "desc": "Een contact center dat verkoopt: outbound sales, telesales en warme opvolging binnen 30 minuten, elk gesprek gescoord.",
+                "url": {
+                  "url": {
+                    "href": "/sales-contact-center",
+                    "type": "CONTENT", "content_id": 453268175089
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "02",
+                "naam": "Marketing",
+                "desc": "Websites, SEA, SEO/GEO, social ads en e-mail — data-gedreven via ons eigen AI-platform. Levert de leads waarmee je consultant aan de slag gaat.",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "03",
+                "naam": "Training",
+                "desc": "AI-gesprekanalyse, AI-avatar training en fysieke bijsturing via salesUp Academy, gekoppeld aan omzetimpact.",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "04",
+                "naam": "Face2Face Sales",
+                "desc": "Verkopers en wervers face-to-face in het veld, omnichannel opgevolgd tot in het CRM.",
+                "url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                },
+                "cta": "Bekijk dienst"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Versterk je team met sales die meteen renderen.",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van welk profiel jouw team het snelst verder helpt. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Sales Contact Center",
+                "url": {
+                  "url": {
+                    "href": "/sales-contact-center",
+                    "type": "CONTENT", "content_id": 453268175089
+                  }
+                }
+              },
+              {
+                "link_label": "Face2Face Sales",
+                "url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                }
+              },
+              {
+                "link_label": "Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

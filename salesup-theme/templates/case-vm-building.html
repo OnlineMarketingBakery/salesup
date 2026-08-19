@@ -1,0 +1,184 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Vm Building
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Telefonische prospectie voor VM Building Solutions\", \"about\": \"VM Building Solutions\", \"description\": \"Telefonische prospectie voor VM Building Solutions: meer afspraken en leads.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/vm-building\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"VM Building Solutions\", \"item\": \"https://www.salesup.be/cases/vm-building\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/vm-building",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "VM Building Solutions",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Bouw",
+          heading="Telefonische prospectie voor VM Building Solutions",
+          subtext="<p>Telefonische prospectie voor VM Building Solutions: meer afspraken en leads.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "16,21%",
+                "toelichting": "Succespercentage van 16,21% met al 535 gemaakte afspraken (ruim boven het doel van 10%)"
+              },
+              {
+                "cijfer": "981",
+                "toelichting": "Enquête: 981 complete antwoorden verzameld met een conversiepercentage van 31,08%"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>VM Building Solutions, een toonaangevende speler in de bouwsector, heeft dankzij salesUp een sterke toename in gekwalificeerde afspraken gerealiseerd. Door gerichte <a href=\"/afspraakplanning\">telefonische prospectie</a> en een nauwe samenwerking hebben beide bedrijven zeer mooie resultaten behaald. Lees je met ons mee?</p>\n<h2>Telefonische prospectie voor VM Building Solutions</h2>\n<p>VM Building Solutions, bekend om hun topkwaliteit zink- en EPDM-producten, ging in 2022 een nieuwe fase in na de overname van Modus door salesUp. Sindsdien werken wij, salesUp, nauw met hen samen. Onze belangrijkste taak? Telefonische prospectie, vooral gericht op architecten. We willen hen overtuigen vaker de producten van VM Building Solutions te gebruiken. En dat lukt ons goed: met een succespercentage van 16,21% hebben we al 535 afspraken gemaakt, wat ruim boven ons doel van 10% ligt. Deze afspraken plannen we altijd zorgvuldig per regio. Zo zorgen we ervoor dat elke salesmedewerker een eerlijk aantal afspraken krijgt, zonder dat er interne competitie ontstaat. Dit bevordert een goede sfeer en zorgt voor een gebalanceerde werklast voor ons team.</p>\n<h2>Enquête resultaten</h2>\n<p>Naast onze telefonische prospectie hebben we ook een enquête uitgevoerd gericht op bouwbedrijven. We wilden weten welke materialen ze gebruiken en waar die vandaan komen. Dankzij deze aanpak kreeg VM Building Solutions een helder beeld van de markt. De enquête was een groot succes: we verzamelden 981 complete antwoorden, met een indrukwekkend conversiepercentage van 31,08%. Dit hoge percentage bevestigt hoe effectief de enquête was in het verzamelen van waardevolle marktinformatie en het genereren van potentiële leads</p>\n<h2>Vooruitkijken: campagne optimalisaties</h2>\n<p>We zijn voortdurend bezig met het verbeteren van onze campagnes voor VM Building Solutions. Door onze focus op architecten te behouden en tegelijkertijd onze enquête-inspanningen op bouwbedrijven te richten, helpen we VM Building Solutions niet alleen hun product bekendheid te vergroten, maar ook waardevolle marktinzichten te verkrijgen. Door continu de resultaten te monitoren en onze strategieën aan te passen, zorgen we ervoor dat VM Building Solutions hun doelstellingen niet alleen bereikt, maar ook kan blijven groeien in een competitieve markt.</p>\n<h2>De samenwerking: jarenlange partners</h2>\n<p>De samenwerking tussen salesUp en VM Building Solutions is gebaseerd op professionaliteit en wederzijds vertrouwen. Door het succesvol uitvoeren van diverse telemarketing projecten hebben we een sterke band opgebouwd. Deze solide relatie zorgt ervoor dat we samen steeds betere resultaten kunnen behalen.</p>\n<p><em>“Heel goede professionele samenwerking met salesUp. Reeds verschillende telemarketingprojecten succesvol voor ons uitgevoerd. Vlotte communicatie en sympathieke medewerkers. Bedrijf waar je op kunt rekenen.” - Filine Steijaert</em></p>\n<h2>Up your sales met salesUp</h2>\n<p>Ben je klaar om jouw B2B verkoop naar een hoger niveau te tillen en je merk zichtbaarder dan ooit te maken door middel van B2B <a href=\"/marketing\">leadgeneratie</a>? Bij salesUp zijn we experts in het creëren van strategische, doelgerichte campagnes die echte resultaten opleveren. Net zoals we voor VM Building Solutions hebben gedaan, kunnen we ook voor jouw B2B bedrijf een verschil maken.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;Heel goede professionele samenwerking met salesUp. Reeds verschillende telemarketingprojecten succesvol voor ons uitgevoerd. Vlotte communicatie en sympathieke medewerkers. Bedrijf waar je op kunt rekenen.&rdquo;</p>",
+          who="&mdash; <strong>Filine Steijaert</strong>, VM Building Solutions"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor VM Building Solutions deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/trustteam",
+                    "type": "CONTENT", "content_id": 453268665592
+                  }
+                },
+                "sector": "IT-diensten",
+                "naam": "Trustteam",
+                "stat": "MyZen-campagne behaalde een bruto conversie van 18,24%",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/geodis",
+                    "type": "CONTENT", "content_id": 453268372723
+                  }
+                },
+                "sector": "Logistiek",
+                "naam": "GEODIS",
+                "stat": "Startdatabase van 1.210 potentiële contacten",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/radiance-energy",
+                    "type": "CONTENT", "content_id": 453268029669
+                  }
+                },
+                "sector": "Duurzame energie",
+                "naam": "Radiance Energy",
+                "stat": "65% van de aangeleverde contacten bereikt",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

@@ -1,0 +1,218 @@
+[
+  {
+    "id": "eyebrow",
+    "name": "eyebrow",
+    "label": "Eyebrow",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Vestigingen & cultuur"
+  },
+  {
+    "id": "heading",
+    "name": "heading",
+    "label": "Titel (H2)",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Lokaal verankerd, dicht bij je markt."
+  },
+  {
+    "id": "intro",
+    "name": "intro",
+    "label": "Intro",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "locaties",
+    "name": "locaties",
+    "label": "Locaties",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "sorting_label_field": null,
+      "default": 2
+    },
+    "children": [
+      {
+        "id": "locaties.status",
+        "name": "status",
+        "label": "Status",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": "Hoofdzetel"
+      },
+      {
+        "id": "locaties.plaats",
+        "name": "plaats",
+        "label": "Plaats",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": "Erpe-Mere"
+      },
+      {
+        "id": "locaties.tekst",
+        "name": "tekst",
+        "label": "Tekst",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "display_width": null,
+        "default": ""
+      },
+      {
+        "id": "locaties.beeld",
+        "name": "beeld",
+        "label": "Beeld",
+        "required": false,
+        "locked": false,
+        "responsive": false,
+        "resizable": true,
+        "show_loading": false,
+        "type": "image",
+        "display_width": null,
+        "default": {
+          "src": "",
+          "alt": ""
+        }
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  },
+  {
+    "id": "image_fit",
+    "name": "image_fit",
+    "label": "Beeldweergave (object-fit)",
+    "help_text": "Cover vult het kader en kan bijsnijden. Contain toont het hele beeld, zonder afsnijden.",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      [
+        "cover",
+        "Cover (vullen)"
+      ],
+      [
+        "contain",
+        "Contain (volledig zichtbaar)"
+      ]
+    ],
+    "multiple": false,
+    "reordering_enabled": false,
+    "preset": null,
+    "type": "choice",
+    "display_width": null,
+    "default": "cover"
+  },
+  {
+    "id": "opkomst",
+    "name": "opkomst",
+    "label": "Op komst",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "cultuur",
+    "name": "cultuur",
+    "label": "Cultuurbeelden",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "sorting_label_field": null,
+      "default": 3
+    },
+    "children": [
+      {
+        "id": "cultuur.beeld",
+        "name": "beeld",
+        "label": "Beeld",
+        "required": false,
+        "locked": false,
+        "responsive": false,
+        "resizable": true,
+        "show_loading": false,
+        "type": "image",
+        "display_width": null,
+        "default": {
+          "src": "",
+          "alt": ""
+        }
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  },
+  {
+    "id": "werken_bij_text",
+    "name": "werken_bij_text",
+    "label": "Werken-bij tekst",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "display_width": null,
+    "default": ""
+  },
+  {
+    "id": "werken_bij_cta",
+    "name": "werken_bij_cta",
+    "label": "Werken-bij CTA",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Bekijk de jobs"
+  },
+  {
+    "id": "werken_bij_url",
+    "name": "werken_bij_url",
+    "label": "Werken-bij URL",
+    "required": false,
+    "locked": false,
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG"
+    ],
+    "show_advanced_rel_options": false,
+    "type": "link",
+    "display_width": null,
+    "default": {
+      "url": {
+        "type": "EXTERNAL",
+        "content_id": null,
+        "href": "/werken-bij"
+      }
+    }
+  }
+]

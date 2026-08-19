@@ -1,0 +1,14 @@
+<section class="case-related wrap">
+  {% if module.eyebrow %}<span class="mono" style="color:var(--orange)">{{ module.eyebrow }}</span>{% endif %}
+  {% if module.heading %}<h2>{{ module.heading }}</h2>{% endif %}
+  <div class="related-grid">
+    {% for c in module.cards %}
+    <a class="related-card" href="{{ c.url.url.href|default('/cases') }}">
+      {% if c.sector %}<span class="r-sector">{{ c.sector }}</span>{% endif %}
+      <h3>{{ c.naam }}</h3>
+      {% if c.stat %}<p class="r-stat">{{ c.stat }}</p>{% endif %}
+      <span class="go">{{ c.link_label|default('Lees de case') }} <span class="arrow" aria-hidden="true">&rarr;</span></span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

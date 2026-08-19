@@ -1,0 +1,340 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Social ads
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Social ads\",\n      \"serviceType\":\"Betaalde social-mediacampagnes (Meta, LinkedIn, TikTok)\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/social-ads\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Marketing\",\"url\":\"https://www.salesup.be/marketing\"},\n      \"description\":\"Betaalde social-mediacampagnes op Meta, LinkedIn en TikTok, on-brand en getest op wat écht klikt, gericht op gekwalificeerde leads die rechtstreeks naar sales stromen.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Marketing\",\"item\":\"https://www.salesup.be/marketing\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Social ads\",\"item\":\"https://www.salesup.be/social-ads\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Op welke platformen adverteren jullie?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op Meta (Facebook en Instagram), LinkedIn en TikTok, afhankelijk van waar jouw doelgroep zit. Elk platform krijgt zijn eigen toon: wat werkt op LinkedIn werkt niet automatisch op TikTok. We adverteren gericht op gekwalificeerde leads, niet op zoveel mogelijk vertoningen. Voor Jaguar Land Rover waren de campagnes mee goed voor 154 gekwalificeerde leads.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Maken jullie ook de creatives?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, inclusief on-brand creatives op basis van je stijlgids. We testen doorlopend varianten van beeld en copy via A/B-testing en schuiven budget door naar wat wint. Zo blijft elke campagne on-brand en gericht op de leads die er echt toe doen.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop meten jullie social ads af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op gekwalificeerde leads, niet op likes of bereik. Je volgt de resultaten live in hetzelfde dashboard als je SEA- en SEO/GEO-cijfers, niet in een los bestand. Elke euro besteding is transparant en gekoppeld aan wat de campagne uiteindelijk opbrengt aan pipeline.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat gebeurt er met de leads die binnenkomen?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De leads verdwijnen niet in een rapport: ze stromen rechtstreeks door naar ons Sales Contact Center dat ze binnen 30 minuten opvolgt. De gespreksdata komt terug om je doelgroepen en creatives scherper te richten. Dat is de datalus die een los social-bureau niet kan sluiten.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/social-ads",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              },
+              {
+                "link_label": "Social ads",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: set heeft geen echt social-/campagnebeeld; dichtstbijzijnde is overleg-op-laptop -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Marketing · Social ads",
+          heading="Social ads die je afrekent op <em>gekwalificeerde leads</em>.",
+          subtext="<p>Betaalde campagnes op Meta, LinkedIn en TikTok, telkens on-brand en getest op wat écht klikt — niet dezelfde ad overal. We richten op gekwalificeerde leads, en die leads stromen rechtstreeks door naar sales en worden binnen 30 minuten gebeld.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo werken onze social ads",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Meta · LinkedIn · TikTok"
+              },
+              {
+                "link_label": "On-brand creatives"
+              },
+              {
+                "link_label": "Continue A/B-testing"
+              },
+              {
+                "link_label": "Gericht op leads"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Jaguar Land Rover",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2058.jpg",
+              "alt": "salesUp-collega's bekijken samen de resultaten van een social-campagne op een laptop."
+            },
+          trustcard_badge="",
+          trustcard_stat="154",
+          trustcard_label="Gekwalificeerde leads voor Jaguar Land Rover, mee via het beheer van de social-mediacampagnes — waarvan testritaanvragen, offerteaanvragen en directe dealercontacten.",
+          trustcard_quote="\"Een like betaalt geen rekeningen. We meten social ads op de gekwalificeerde leads die ze opleveren, niet op bereik.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van onze marketing"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat je krijgt",
+          heading="Ads die passen bij het platform waarop ze draaien.",
+          intro="<p>Social ads zijn er om gekwalificeerde leads binnen te halen. Elke euro wordt gestuurd naar wat wint — en wat binnenkomt, gaat rechtstreeks door naar sales.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "On-brand creatives",
+                "tekst": "<p>Altijd in lijn met jouw huisstijl, uit je eigen stijlgids. Je merk blijft herkenbaar, op elk platform en in elke variant die we testen.</p>"
+              },
+              {
+                "title": "Platform-specifieke toon",
+                "tekst": "<p>Wat werkt op LinkedIn werkt niet automatisch op TikTok. Elke ad krijgt de juiste toon voor het platform, in plaats van dezelfde boodschap overal te plakken.</p>"
+              },
+              {
+                "title": "Continue A/B-testing",
+                "tekst": "<p>We testen varianten van beeld en copy en schuiven budget door naar wat wint. Voor Jaguar Land Rover was dat mee goed voor 154 gekwalificeerde leads.</p>"
+              },
+              {
+                "title": "Leads rechtstreeks naar sales",
+                "tekst": "<p>De leads gaan door naar ons Sales Contact Center dat binnen 30 minuten belt, en de gespreksdata komt terug om je doelgroepen en creatives bij te sturen — de datalus die een los bureau niet sluit.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van stijlgids tot lopende campagne.",
+          intro="<p>We stemmen af op je merk en wie je wil bereiken, en spreken vooraf af wat een gekwalificeerde lead mag kosten.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Stijlgids & doelgroep",
+                "tekst": "<p>We stemmen af op je merk en wie je wil bereiken, en spreken vooraf af wat een gekwalificeerde lead mag kosten.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Creatie van ads",
+                "tekst": "<p>Visuals en copy per platform, on-brand en klaar om te testen, op één datalaag met je andere kanalen.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Live & testen",
+                "tekst": "<p>Meerdere varianten tegelijk, gemeten op resultaat; budget verschuift naar wat de beste leads oplevert.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Doorgeven, rapporteren & bijsturen",
+                "tekst": "<p>De leads gaan door naar sales voor opvolging binnen 30 minuten; hun gespreksdata komt terug en richt de volgende campagne.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over social ads vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Op welke platformen adverteren jullie?",
+                "answer": "<p>Op Meta (Facebook en Instagram), LinkedIn en TikTok, afhankelijk van waar jouw doelgroep zit. Elk platform krijgt zijn eigen toon: wat werkt op LinkedIn werkt niet automatisch op TikTok. We adverteren gericht op gekwalificeerde leads, niet op zoveel mogelijk vertoningen. Voor Jaguar Land Rover waren de campagnes mee goed voor 154 gekwalificeerde leads.</p>"
+              },
+              {
+                "question": "Maken jullie ook de creatives?",
+                "answer": "<p>Ja, inclusief on-brand creatives op basis van je stijlgids. We testen doorlopend varianten van beeld en copy via A/B-testing en schuiven budget door naar wat wint. Zo blijft elke campagne on-brand en gericht op de leads die er echt toe doen.</p>"
+              },
+              {
+                "question": "Waarop meten jullie social ads af?",
+                "answer": "<p>Op gekwalificeerde leads, niet op likes of bereik. Je volgt de resultaten live in hetzelfde dashboard als je SEA- en SEO/GEO-cijfers, niet in een los bestand. Elke euro besteding is transparant en gekoppeld aan wat de campagne uiteindelijk opbrengt aan pipeline.</p>"
+              },
+              {
+                "question": "Wat gebeurt er met de leads die binnenkomen?",
+                "answer": "<p>De leads verdwijnen niet in een rapport: ze stromen rechtstreeks door naar ons Sales Contact Center dat ze binnen 30 minuten opvolgt. De gespreksdata komt terug om je doelgroepen en creatives scherper te richten. Dat is de datalus die een los social-bureau niet kan sluiten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met onze marketing werken",
+          eyebrow="Bedrijven die met onze marketing werken",
+          logos=[
+              {
+                "naam": "Jaguar Land Rover",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Hivolta",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar voor ads die leads opleveren, geen likes?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat social ads voor jouw merk en doelgroep kunnen betekenen. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Website",
+                "url": {
+                  "url": {
+                    "href": "/website",
+                    "type": "CONTENT", "content_id": 453268311272
+                  }
+                }
+              },
+              {
+                "link_label": "SEA",
+                "url": {
+                  "url": {
+                    "href": "/sea",
+                    "type": "CONTENT", "content_id": 453268178164
+                  }
+                }
+              },
+              {
+                "link_label": "SEO/GEO",
+                "url": {
+                  "url": {
+                    "href": "/seo-geo",
+                    "type": "CONTENT", "content_id": 453268282562
+                  }
+                }
+              },
+              {
+                "link_label": "E-mail",
+                "url": {
+                  "url": {
+                    "href": "/email",
+                    "type": "CONTENT", "content_id": 453268161744
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

@@ -1,0 +1,340 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — SEA
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"SEA\",\n      \"serviceType\":\"Betaalde zoekcampagnes (Google & Bing Ads)\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/sea\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Marketing\",\"url\":\"https://www.salesup.be/marketing\"},\n      \"description\":\"Betaalde zoekcampagnes op Google en Bing, continu bijgestuurd op resultaat en meetbaar op gekwalificeerde aanvragen, met de leads die rechtstreeks naar sales stromen.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Marketing\",\"item\":\"https://www.salesup.be/marketing\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"SEA\",\"item\":\"https://www.salesup.be/sea\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop meten jullie een SEA-campagne af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op gekwalificeerde aanvragen, niet op kliks of vertoningen. We spreken vooraf af wat een campagne moet opleveren en sturen wekelijks bij op resultaat, niet op gevoel. Budget verschuift automatisch naar wat converteert. Voor Hivolta leverde dat 75 aanvragen op in één kwartaal via de zoekcampagnes.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Werken jullie enkel met Google of ook met Bing?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Naast Google Ads zetten we ook Microsoft/Bing Ads in waar dat relevant is voor jouw doelgroep. We kiezen de kanalen op basis van waar jouw prospect effectief zoekt, en houden alles op één datalaag zodat je website, social ads en e-mail meebewegen met wat de zoekcampagnes leren.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe transparant is de rapportering?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je krijgt zelf toegang tot het AI-platform achter je campagnes: live dashboards en automatische rapportages, geen zwarte doos en geen powerpoint achteraf. Je ziet elke euro besteding en wat ze oplevert, tot en met de conversie aan de andere kant van de lijn.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat gebeurt er met de aanvragen die binnenkomen?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De aanvragen verdwijnen niet in een rapport: ze stromen rechtstreeks door naar ons Sales Contact Center dat ze binnen 30 minuten opvolgt. De gespreksdata komt terug om je zoekwoorden en advertenties scherper te richten. Dat is de datalus die een los SEA-bureau niet kan sluiten.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/sea",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              },
+              {
+                "link_label": "SEA",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload man-desk-thinking.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: set heeft geen echt SEA-/campagnebeeld; dichtstbijzijnde is sales/exec-sfeer -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Marketing · SEA",
+          heading="SEA die je afrekent op <em>aanvragen</em>, niet op kliks.",
+          subtext="<p>Betaalde zoekcampagnes op Google en Bing, continu bijgestuurd op resultaat en niet op gevoel. We meten op gekwalificeerde aanvragen, en die aanvragen verdwijnen niet in een rapport — ze stromen rechtstreeks door naar sales en worden binnen 30 minuten gebeld.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo werkt onze SEA",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Meetbaar op aanvragen"
+              },
+              {
+                "link_label": "Wekelijkse bijsturing"
+              },
+              {
+                "link_label": "100% kostentransparantie"
+              },
+              {
+                "link_label": "Voedt je sales"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Hivolta",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2060.jpg",
+              "alt": "Salesmanager bekijkt de resultaten van een zoekcampagne op zijn scherm."
+            },
+          trustcard_badge="",
+          trustcard_stat="75",
+          trustcard_label="Aanvragen voor Hivolta in één kwartaal via de betaalde zoekcampagnes — meetbaar en toe te schrijven aan de campagnes zelf, niet aan belvolume.",
+          trustcard_quote="\"We meten wat een campagne aan aanvragen opbrengt, niet hoeveel kliks ze verzamelt. Budget volgt op resultaat.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van onze marketing"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat je krijgt",
+          heading="Geen ingestelde campagne die daarna met rust gelaten wordt.",
+          intro="<p>SEA is er om aanvragen binnen te halen. Elke euro wordt gestuurd naar wat converteert — en wat binnenkomt, gaat rechtstreeks door naar sales.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Zoekwoordstrategie op maat",
+                "tekst": "<p>We vertrekken van wat jouw doelgroep effectief intikt in Google en Bing, niet van een generieke woordenlijst. Zo bereik je mensen op het moment dat ze naar jouw aanbod zoeken.</p>"
+              },
+              {
+                "title": "Continue bijsturing op resultaat",
+                "tekst": "<p>Wekelijkse controle op wat wel en niet werkt, niet enkel bij de opstart. Budget verschuift automatisch naar de campagnes en zoekwoorden die aanvragen opleveren. Voor Hivolta gaf dat 75 aanvragen in één kwartaal.</p>"
+              },
+              {
+                "title": "Rapportage via ons AI-platform",
+                "tekst": "<p>Live inzicht in besteding, resultaat en volgende stappen — geen zwarte doos en geen powerpoint achteraf. Je ziet met 100% kostentransparantie wat elke euro opbrengt.</p>"
+              },
+              {
+                "title": "Aanvragen rechtstreeks naar sales",
+                "tekst": "<p>Wat de campagnes opleveren, belt ons Sales Contact Center binnen 30 minuten op. De gespreksdata komt terug en richt je volgende zoekcampagne bij — de datalus die een los bureau niet sluit.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van zoekwoord tot geoptimaliseerde campagne.",
+          intro="<p>We brengen in kaart waar jouw doelgroep op zoekt en spreken vooraf af wat een aanvraag mag kosten.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Zoekwoordonderzoek & doel",
+                "tekst": "<p>We brengen in kaart waar jouw doelgroep op zoekt en spreken vooraf af wat een aanvraag mag kosten.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Campagne opzetten",
+                "tekst": "<p>Structuur, advertenties en biedstrategie op maat, op één datalaag met je andere kanalen.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Live & wekelijks optimaliseren",
+                "tekst": "<p>We controleren en sturen wekelijks bij; budget verschuift naar wat aanvragen oplevert.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Doorgeven, rapporteren & bijsturen",
+                "tekst": "<p>De aanvragen gaan door naar sales voor opvolging binnen 30 minuten; hun gespreksdata komt terug en richt de volgende campagne.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over SEA vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Waarop meten jullie een SEA-campagne af?",
+                "answer": "<p>Op gekwalificeerde aanvragen, niet op kliks of vertoningen. We spreken vooraf af wat een campagne moet opleveren en sturen wekelijks bij op resultaat, niet op gevoel. Budget verschuift automatisch naar wat converteert. Voor Hivolta leverde dat 75 aanvragen op in één kwartaal via de zoekcampagnes.</p>"
+              },
+              {
+                "question": "Werken jullie enkel met Google of ook met Bing?",
+                "answer": "<p>Naast Google Ads zetten we ook Microsoft/Bing Ads in waar dat relevant is voor jouw doelgroep. We kiezen de kanalen op basis van waar jouw prospect effectief zoekt, en houden alles op één datalaag zodat je website, social ads en e-mail meebewegen met wat de zoekcampagnes leren.</p>"
+              },
+              {
+                "question": "Hoe transparant is de rapportering?",
+                "answer": "<p>Je krijgt zelf toegang tot het AI-platform achter je campagnes: live dashboards en automatische rapportages, geen zwarte doos en geen powerpoint achteraf. Je ziet elke euro besteding en wat ze oplevert, tot en met de conversie aan de andere kant van de lijn.</p>"
+              },
+              {
+                "question": "Wat gebeurt er met de aanvragen die binnenkomen?",
+                "answer": "<p>De aanvragen verdwijnen niet in een rapport: ze stromen rechtstreeks door naar ons Sales Contact Center dat ze binnen 30 minuten opvolgt. De gespreksdata komt terug om je zoekwoorden en advertenties scherper te richten. Dat is de datalus die een los SEA-bureau niet kan sluiten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met onze marketing werken",
+          eyebrow="Bedrijven die met onze marketing werken",
+          logos=[
+              {
+                "naam": "Hivolta",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Jaguar Land Rover",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om je budget naar aanvragen te sturen?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat SEA voor jouw markt kan opbrengen. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Website",
+                "url": {
+                  "url": {
+                    "href": "/website",
+                    "type": "CONTENT", "content_id": 453268311272
+                  }
+                }
+              },
+              {
+                "link_label": "SEO/GEO",
+                "url": {
+                  "url": {
+                    "href": "/seo-geo",
+                    "type": "CONTENT", "content_id": 453268282562
+                  }
+                }
+              },
+              {
+                "link_label": "Social ads",
+                "url": {
+                  "url": {
+                    "href": "/social-ads",
+                    "type": "CONTENT", "content_id": 453268282609
+                  }
+                }
+              },
+              {
+                "link_label": "E-mail",
+                "url": {
+                  "url": {
+                    "href": "/email",
+                    "type": "CONTENT", "content_id": 453268161744
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

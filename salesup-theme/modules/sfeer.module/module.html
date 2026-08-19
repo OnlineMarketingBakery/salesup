@@ -1,0 +1,15 @@
+<section class="vac-sfeer wrap" aria-labelledby="sfeer-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="sfeer-titel">{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="vac-sfeer-grid">
+    {% for shot in module.shots %}
+    <figure>
+      <div class="vac-shot"><img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if shot.beeld.src %}{{ shot.beeld.src }}{% elif loop.index == 1 %}https://salesup.be/hubfs/Untitled%20design.png{% elif loop.index == 2 %}https://salesup.be/hubfs/446%20x%20316%20px-Mar-26-2026-01-31-59-3301-PM.png{% else %}https://salesup.be/hubfs/Group%20201-2.png{% endif %}" alt="{{ shot.beeld.alt }}" loading="lazy" decoding="async"></div>
+      <figcaption>{{ shot.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+</section>

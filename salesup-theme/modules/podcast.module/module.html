@@ -1,0 +1,18 @@
+{% if module.blok != 'host' %}
+<section class="pod-hero wrap" id="podcast">
+  {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
+  <h1>{{ module.heading }}</h1>
+  {% if module.subtext %}<p class="hero-sub">{{ module.subtext }}</p>{% endif %}
+</section>
+{% endif %}
+{% if module.blok != 'hero' and module.host_name %}
+<section class="wrap">
+  <div class="host">
+    <div>
+      <span class="mono" style="color:var(--slate)">{{ module.host_label }}</span>
+      <h3 style="margin:4px 0 6px">{{ module.host_name }}</h3>
+      <p style="color:var(--slate);font-size:14.5px">{{ module.host_bio }}</p>
+    </div>
+  </div>
+</section>
+{% endif %}

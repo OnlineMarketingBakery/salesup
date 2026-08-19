@@ -1,0 +1,180 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Geodis
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"salesUp versterkt de wereldwijde aanwezigheid van GEODIS\", \"about\": \"GEODIS\", \"description\": \"Ontdek hoe salesUp de wereldwijde groei van Geodis heeft ondersteund met effectieve strategieën.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/geodis\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"GEODIS\", \"item\": \"https://www.salesup.be/cases/geodis\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/geodis",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "GEODIS",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          logo={
+              "src": "https://salesup.be/hubfs/Geodis.svg",
+              "alt": "GEODIS logo"
+            },
+          eyebrow="Client case · Logistiek",
+          heading="salesUp versterkt de wereldwijde aanwezigheid van GEODIS",
+          subtext="<p>Ontdek hoe salesUp de wereldwijde groei van Geodis heeft ondersteund met effectieve strategieën.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "1.210",
+                "toelichting": "Startdatabase van 1.210 potentiële contacten"
+              },
+              {
+                "cijfer": "49",
+                "toelichting": "Prospects: 49 hits uit 197 afgehandelde contacten – conversie van 25%"
+              },
+              {
+                "cijfer": "20",
+                "toelichting": "Suspects: 20 hits uit 71 afgehandelde contacten – conversie van 28%"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>Toen GEODIS, de wereldwijde leider in supply chain-oplossingen, ons benaderde, stonden ze voor een duidelijke uitdaging: hoe kunnen we onze merkbekendheid vergroten en meer sales genereren in een markt die constant evolueert? Met een ambitieuze visie en een database van 1.210 contacten, was het tijd voor actie. Ben je klaar om te ontdekken hoe we deze uitdaging samen hebben aangepakt?</p>\n<h2>Telefonische prospectie voor GEODIS</h2>\n<p>In onze campagne voor GEODIS hebben we ons echt ingezet om iets bijzonders neer te zetten. We wilden niet alleen hun naam groter maken in de wereld van logistiek, maar ook zorgen voor meetbare resultaten door middel van <a href=\"/afspraakplanning\">telefonische prospectie</a>. Onze aanpak was opgedeeld in drie heldere stappen, elk met een eigen doel maar allemaal met hetzelfde uitgangspunt: kwaliteit staat voorop.</p>\n<h2>Fase 1: De transportbeurs</h2>\n<p>Voor GEODIS was de transportbeurs een uitgelezen kans om directe connecties te leggen met zowel bestaande als potentiële klanten. We startten met een lijst van 1.210 potentiële contacten. Speciaal voor de transportbeurs selecteerden we 128 adressen, gericht op zowel huidige klanten als nieuwe prospects. Vanuit deze specifieke groep wisten we, ondanks de strakke deadline, 9 bevestigingen te verkrijgen voor de beurs. Dit resulteerde in een conversiepercentage van 14% op basis van de 63 daadwerkelijk afgehandelde contacten, een duidelijk teken van onze focus op kwalitatieve engagement, ondanks dat 33,60% aangaf niet aanwezig te kunnen zijn.</p>\n<h2>Fase 2: Benadering van Prospects en Suspects</h2>\n<p>Na de initiële fase breidden we onze inspanningen uit naar een breder spectrum van lost customers, prospects en suspects. Onze eerste stap was het opnieuw benaderen van 'Lost Customers'. Uit de 20 effectief afgehandelde contacten in deze groep, wisten we één afspraak vast te leggen en nog een extra inschrijving voor de transportbeurs te realiseren.<br><br>Vervolgens hebben we ons gericht op de 'Prospects', waar we een aantal van 197 contacten afhandelden. Uit deze inspanningen kwamen 49 hits voort, wat resulteert in een conversie van 25%. Deze succesvolle interacties omvatten zowel fysieke afspraken als online meetings, naast verzoeken om offertes en deelnames aan tenders. Bij de 'Suspects' groep, bestaande uit 71 afgehandelde contacten, behaalden we 20 hits, wat neerkomt op een conversie van 28%. Net als bij de prospects omvatte dit zowel directe afspraken als interesse in de diensten en oplossingen van GEODIS.</p>\n<h2>Fase 3: IRIS Tool Demonstraties</h2>\n<p>De introductie van de IRIS-tool bood een unieke kans om GEODIS' innovatieve aanpak in de spotlight te zetten. Voor deze campagne beschikten we over een lijst van 220 contacten, met als doel het inplannen van demo’s. Aanvankelijk hadden we de flexibiliteit van meerdere dagen voor deze demo's, maar uiteindelijk werd dit beperkt tot slechts twee dagen. Dit maakte onze planning aanzienlijk gecompliceerder.<br><br>Ondanks deze uitdaging hebben we uit 32 afgehandelde contacten 5 succesvolle hits weten te behalen, wat neerkomt op een conversie van 15%. Met nog 155 contacten die we nog niet hebben aangesproken, zien we volop mogelijkheden voor toekomstige prospectie.</p>\n<h2>Vooruitkijken: campagne optimalisaties</h2>\n<p>We kijken altijd vooruit, en voor onze volgende campagnes hebben we een paar slimme aanpassingen op de plank liggen. Kijk mee naar wat we van plan zijn:</p>\n<ol><li><strong>Verkoopcijfers als basis voor onze projecten</strong>: We gaan onze projecten inrichten rond de verkoopprestaties. Zo verdelen we de afspraken eerlijk over het hele team. Iedereen krijgt gelijke kansen, en we halen het beste uit ieders talent.</li><li><strong>Elke week even bijpraten: Snel schakelen is essentieel.</strong> Daarom houden we wekelijkse meetings om alles strak op de rails te houden. Zo kunnen we snel inspelen op veranderingen en onze plannen bijsturen waar nodig.</li><li><strong>Maandelijks de balans opmaken</strong>: Elke maand nemen we de tijd om te kijken hoe we ervoor staan. We duiken in de cijfers en houden het budget in de gaten. Zo blijven we op koers en zorgen we dat onze doelen binnen bereik blijven.</li></ol>\n<p>We kijken altijd vooruit, en voor onze volgende campagnes hebben we een paar slimme aanpassingen op de plank liggen. Kijk mee naar wat we van plan zijn.</p>\n<h2>Up your sales met salesUp</h2>\n<p>Door salesUp in te schakelen voor hun prospectie, zetten ze een stap extra richting uitbreiding en het versterken van hun marktpositie. Dit verhaal laat zien hoe een gerichte samenwerking leidt tot opmerkelijke resultaten, van een toename in leads tot succesvolle afspraken. Ben jij klaar om jouw groei een boost te geven met salesUp? Wat zou jouw volgende stap zijn om te groeien?</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor GEODIS deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/radiance-energy",
+                    "type": "CONTENT", "content_id": 453268029669
+                  }
+                },
+                "sector": "Duurzame energie",
+                "naam": "Radiance Energy",
+                "stat": "65% van de aangeleverde contacten bereikt",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/upgrade-estate",
+                    "type": "CONTENT", "content_id": 453268668617
+                  }
+                },
+                "sector": "Vastgoed",
+                "naam": "Upgrade Estate",
+                "stat": "Conversie van 15,29% (elke target behaald sinds de start in mei 2024)",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/messer-group",
+                    "type": "CONTENT", "content_id": 453268491493
+                  }
+                },
+                "sector": "Industriële gassen",
+                "naam": "Messer Group",
+                "stat": "182 'hits' behaald in het eerste jaar (van afspraken plannen tot uitnodigingen voor tenders)",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

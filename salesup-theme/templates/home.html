@@ -1,0 +1,479 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Homepage
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\"@type\":\"Service\",\"name\":\"Marketing\",\"serviceType\":\"Data-gedreven marketing\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/marketing\"},\n    {\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"serviceType\":\"Outbound sales & afsprakenplanning\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/sales-contact-center\"},\n    {\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"serviceType\":\"Field sales & werving\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/face2face-sales\"},\n    {\"@type\":\"Service\",\"name\":\"Training\",\"serviceType\":\"Sales training & meten\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/training\"},\n    {\"@type\":\"Service\",\"name\":\"Sales Consultants\",\"serviceType\":\"Sales detachering & advies\",\"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\"url\":\"https://www.salesup.be/sales-consultants\"},\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"}\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-team-floor.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Eén partner · vijf onderdelen · één motor",
+          heading="Commerciële groei is geen los project. Het is <em>één machine.</em>",
+          subtext="<p>salesUp brengt marketing, sales, training en consultants samen op dezelfde data — zodat elk onderdeel het andere sterker maakt. Alles samen, of gewoon één dienst. Aan jou de keuze.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Bekijk onze diensten apart",
+          cta2_url={
+              "url": {
+                "href": "#diensten",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Sinds 2005"
+              },
+              {
+                "link_label": "200+ experten"
+              },
+              {
+                "link_label": "5 kantoren"
+              },
+              {
+                "link_label": "Reactie binnen 30 minuten"
+              }
+            ],
+          trust_chips=[
+              {
+                "link_label": "Trends Gazelle · Nominee 2023"
+              },
+              {
+                "link_label": "Trends Gazelle · Nominee 2024"
+              },
+              {
+                "link_label": "Google 4,7 <span class='stars' aria-hidden='true'>★★★★★</span> <span class='chip-sub'>(93 reviews)</span>"
+              }
+            ],
+          trust_aria="Erkenningen en reviews",
+          media_type="collage",
+          image_main={
+              "src": "https://salesup.be/hubfs/Group%20201-2.png",
+              "alt": "salesUp vergadering met klanten rond de tafel"
+            },
+          image_sub={
+              "src": "https://salesup.be/hubfs/6037%20x%204058%20px%20(1)%20(1).png",
+              "alt": "Overleg aan de sta-tafel op het salesUp-kantoor"
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/pains",
+          eyebrow="Herkenbaar?",
+          heading="De meeste bedrijven schakelen vier of vijf losse leveranciers in — die elkaar nooit spreken.",
+          pain_cards=[
+              {
+                "num": "01",
+                "title": "Leadgeneratie stopt zodra de leads binnen zijn",
+                "tekst": "<p>Het marketingbureau levert leads af en is klaar. Wat ermee gebeurt, zien ze niet — en het interesseert ze ook niet.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Sales training eindigt na de workshop",
+                "tekst": "<p>Een dagje training, een goed gevoel, en dan? Niemand meet of het gedrag écht verandert, laat staan of het omzet oplevert.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Niemand voelt zich verantwoordelijk voor het geheel",
+                "tekst": "<p>Werkt het niet? Dan wijst iedereen naar de buurman. Er is geen partij die het hele traject — en het resultaat — in handen neemt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/engine",
+          eyebrow="De motor",
+          heading="Vijf onderdelen. Eén databasis. Eén cirkel die zichzelf voedt.",
+          sub="Wat een campagne oplevert, wordt een gesprek. Wat een gesprek oplevert, wordt trainingsdata. Wat trainingsdata oplevert, zie je terug in de omzet van de klant.",
+          nodes=[
+              {
+                "idx": "01",
+                "naam": "Marketing",
+                "desc": "<p>Websites, SEA, SEO/GEO, social ads &amp; e-mail — data-gedreven via ons AI-platform.</p>"
+              },
+              {
+                "idx": "02",
+                "naam": "Sales Contact Center",
+                "desc": "<p>Een contact center dat verkoopt, géén klantendienst: prospectie, telesales &amp; afspraken.</p>"
+              },
+              {
+                "idx": "03",
+                "naam": "Face2Face Sales",
+                "desc": "<p>Face-to-face werving en verkoop in het veld, omnichannel opgevolgd.</p>"
+              },
+              {
+                "idx": "04",
+                "naam": "Training",
+                "desc": "<p>AI-gesprekanalyse, AI-avatar en fysieke training — gekoppeld aan omzetimpact.</p>"
+              },
+              {
+                "idx": "05",
+                "naam": "Sales Consultants",
+                "desc": "<p>Ervaren sales consultants op onze payroll, gedetacheerd bij jouw team.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: dienstpagina nog te bouwen -->
+            {% dnd_module
+          path="../modules/services-list",
+          heading="Vijf onderdelen. Elk ook los te boeken.",
+          intro="<p>Wil je alles? Perfect. Wil je enkel een SEA-campagne of enkel sales training? Dat kan net zo goed — met evenveel aandacht.</p>",
+          service_rows=[
+              {
+                "idx": "01",
+                "naam": "Marketing",
+                "desc": "Websites · SEA · SEO/GEO · Social ads · E-mail — data-gedreven via ons eigen AI-platform.",
+                "tag_text": "Bekijk apart",
+                "tag_url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              },
+              {
+                "idx": "02",
+                "naam": "Sales Contact Center",
+                "desc": "Een contact center dat verkoopt, géén klantendienst: telefonische prospectie, telesales & afsprakenplanning.",
+                "tag_text": "Bekijk apart",
+                "tag_url": {
+                  "url": {
+                    "href": "/sales-contact-center",
+                    "type": "CONTENT", "content_id": 453268175089
+                  }
+                }
+              },
+              {
+                "idx": "03",
+                "naam": "Face2Face Sales",
+                "desc": "Face-to-face werving en verkoop in het veld, omnichannel opgevolgd tot in het CRM.",
+                "tag_text": "Bekijk apart",
+                "tag_url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                }
+              },
+              {
+                "idx": "04",
+                "naam": "Training",
+                "desc": "AI-gesprekanalyse, AI-avatar training en fysieke bijsturing, gekoppeld aan omzetimpact.",
+                "tag_text": "Bekijk apart",
+                "tag_url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              },
+              {
+                "idx": "05",
+                "naam": "Sales Consultants",
+                "desc": "Ervaren sales consultants op onze payroll, gedetacheerd bij jouw team op dagtarief.",
+                "tag_text": "Bekijk apart",
+                "tag_url": {
+                  "url": {
+                    "href": "/sales-consultants",
+                    "type": "CONTENT", "content_id": 453268196580
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/results",
+          eyebrow="Wat het oplevert",
+          heading="Meetbaar, niet in vage beloftes.",
+          kpis=[
+              {
+                "num": "91<em>%</em>",
+                "who": "Orange",
+                "context": "<p>Auditscore op kwaliteit — de hoogste van Europa.</p>"
+              },
+              {
+                "num": "5–7<em>/w</em>",
+                "who": "Geodis",
+                "context": "<p>Afspraken per week in de agenda van de vertegenwoordiger.</p>"
+              },
+              {
+                "num": "75<em>+</em>",
+                "who": "Hivolta",
+                "context": "<p>Nieuwe leads per kwartaal via onze aanpak.</p>"
+              },
+              {
+                "num": "26,28<em>%</em>",
+                "who": "Van Heurck",
+                "context": "<p>Conversie behaald — waar de doelstelling 10% was.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Klanten van salesUp",
+          eyebrow="Vertrouwd door",
+          logos=[
+              {
+                "naam": "Contractify",
+                "slug": "contractify"
+              },
+              {
+                "naam": "Atradius",
+                "slug": "atradius"
+              },
+              {
+                "naam": "Guylian",
+                "slug": "guylian"
+              },
+              {
+                "naam": "JLR",
+                "slug": "jaguar-land-rover"
+              },
+              {
+                "naam": "Culligan",
+                "slug": "culligan"
+              },
+              {
+                "naam": "Europabank",
+                "slug": "europabank"
+              },
+              {
+                "naam": "Solidaris",
+                "slug": "solidaris"
+              },
+              {
+                "naam": "Q8Oils",
+                "slug": "q8oils"
+              },
+              {
+                "naam": "GEODIS",
+                "slug": "geodis"
+              },
+              {
+                "naam": "Liantis",
+                "slug": "liantis"
+              },
+              {
+                "naam": "Astara",
+                "slug": "astara"
+              },
+              {
+                "naam": "Zambon",
+                "slug": "zambon"
+              },
+              {
+                "naam": "Upgrade Estate",
+                "slug": "upgrade-estate"
+              },
+              {
+                "naam": "iChoosr",
+                "slug": "ichoosr"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- VERIFIEER: functie niet vermeld op de bronpagina -->
+            {% dnd_module
+          path="../modules/testimonials",
+          anchor="cases",
+          eyebrow="Waarom klanten blijven",
+          heading="Niet onze mening. Die van hen.",
+          cards=[
+              {
+                "quote": "<p>“Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.”</p>",
+                "naam": "Stefanie Van Rillaer",
+                "role_company": "Head of Hunting — Orange"
+              },
+              {
+                "quote": "<p>“Het is een kwestie van gelijklopend DNA. Dicht bij de klant, reactiesnelheid en vooral veel beweging.”</p>",
+                "naam": "Pascal Pinket",
+                "role_company": "Sales Director — Trustteam"
+              },
+              {
+                "quote": "<p>“Onze aangename samenwerking met salesUp blijft consequent leiden tot blijvende successen.”</p>",
+                "naam": "Isabella Hauquier",
+                "role_company": "Sales Manager — Q8Oils"
+              },
+              {
+                "quote": "<p>“Jullie hebben de mensen tot inzichten gebracht. Soms ook wat shocking. En dat werkt — ook maanden later bleef de impact voelbaar binnen de teams.”</p>",
+                "naam": "Eveline Boúúaert",
+                "role_company": "Head of Sales KMO — Liantis"
+              },
+              {
+                "quote": "<p>“De resultaten van de outbound funnel overstegen onze verwachtingen. Al snel bleek deze aanpak de juiste — we kregen gemiddeld 20 ingevulde scans per week.”</p>",
+                "naam": "Nele Creuwels",
+                "role_company": "UNIZO"
+              }
+            ],
+          hint="Sleep of swipe om meer quotes te zien →"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/method",
+          anchor="platform",
+          eyebrow="Onze methodiek",
+          heading="Onderbouwd. Nooit buikgevoel.",
+          intro="Elke keuze — in copy, in een campagne, in een trainingsadvies — is gebaseerd op data en gedrag, niet op smaak. Zo weet je vooraf waaróm iets werkt, in plaats van achteraf te hopen dat het werkte.",
+          points=[
+              {
+                "num": "01",
+                "text": "<p>Elke beslissing is onderbouwd — geen discussies op buikgevoel.</p>"
+              },
+              {
+                "num": "02",
+                "text": "<p>Volledig gepersonaliseerd per klant — geen templates, geen kant-en-klare pakketten.</p>"
+              },
+              {
+                "num": "03",
+                "text": "<p>We meten door tot in het CRM/ERP van de klant, tot op het niveau van omzet.</p>"
+              },
+              {
+                "num": "04",
+                "text": "<p>Alles gebouwd zodat je er meteen mee aan de slag kan, niet iets voor in de schuif.</p>"
+              }
+            ],
+          image={
+              "src": "https://salesup.be/hubfs/6037%20x%204058%20px%20(1)%20(1).png",
+              "alt": "salesUp-team in overleg aan de sta-tafel op kantoor"
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/dual-cta",
+          option1_eyebrow="Optie 1",
+          option1_h3="Geef je hele groeimotor uit handen",
+          option1_body="<p>Eén aanspreekpunt voor marketing, sales, training en consultants — samen sturend op hetzelfde resultaat.</p>",
+          option1_cta_text="Plan een gesprek",
+          option1_cta_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT",
+                "content_id": 453268184310
+              }
+            },
+          option2_eyebrow="Optie 2",
+          option2_h3="Kies gewoon één dienst",
+          option2_body="<p>Nog niet toe aan het hele systeem? Begin bij wat je vandaag nodig hebt.</p>",
+          quicklinks=[
+              {
+                "link_label": "Marketing",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Contact Center",
+                "url": {
+                  "url": {
+                    "href": "/sales-contact-center",
+                    "type": "CONTENT", "content_id": 453268175089
+                  }
+                }
+              },
+              {
+                "link_label": "Face2Face Sales",
+                "url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                }
+              },
+              {
+                "link_label": "Training",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Consultants",
+                "url": {
+                  "url": {
+                    "href": "/sales-consultants",
+                    "type": "CONTENT", "content_id": 453268196580
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

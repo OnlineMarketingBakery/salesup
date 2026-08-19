@@ -1,0 +1,7 @@
+<aside class="vacd-aside" aria-label="Vacature-info en solliciteren" data-recruitee-aside>
+  <h2>{{ module.heading }}</h2>
+  <ul class="vacd-meta" data-vac-meta></ul>
+  <a class="btn" data-vac-apply href="{{ module.apply_url.url.href|default('#') }}" target="_blank" rel="noopener">{{ module.apply_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>
+  <p class="vacd-note">{{ module.note }}</p>
+  <a class="vacd-recruitee" data-vac-careers href="{{ module.careers_url.url.href|default('#') }}" target="_blank" rel="noopener">{{ module.careers_text }}</a>
+</aside>

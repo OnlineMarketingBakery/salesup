@@ -1,0 +1,23 @@
+<section class="subservices wrap" id="{{ module.anchor }}" aria-labelledby="{{ module.anchor }}-titel">
+  {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+  <h2 id="{{ module.anchor }}-titel">{{ module.heading }}</h2>
+  {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  <div class="sub-grid">
+    {% for card in module.kaarten %}
+      {% if card.proposed or not card.url.url.href %}
+      <div class="sub-card proposed">
+        {% if card.tag %}<span class="tag-soon">{{ card.tag }}</span>{% endif %}
+        <h3>{{ card.title }}</h3>
+        <div>{{ card.desc }}</div>
+        <span class="sub-go">{{ card.cta|default('Binnenkort') }}</span>
+      </div>
+      {% else %}
+      <a class="sub-card" href="{{ card.url.url.href }}">
+        <h3>{{ card.title }}</h3>
+        <div>{{ card.desc }}</div>
+        <span class="sub-go">{{ card.cta|default('Bekijk') }} <span class="arrow" aria-hidden="true">&rarr;</span></span>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

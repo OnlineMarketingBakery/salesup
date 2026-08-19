@@ -1,0 +1,175 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Immo Van Middelem
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Een Naadloze Samenwerking tussen salesUp en Immo Van Middelem\", \"about\": \"Immo Van Middelem\", \"description\": \"Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/immo-van-middelem\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Immo Van Middelem\", \"item\": \"https://www.salesup.be/cases/immo-van-middelem\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/immo-van-middelem",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Immo Van Middelem",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Vastgoed",
+          heading="Een Naadloze Samenwerking tussen salesUp en Immo Van Middelem",
+          subtext="<p>Ontdek de samenwerking tussen salesUp en Immo Van Middelem. Ervaar de meerwaarde van geautomatiseerde klantenservice.</p>",
+          meta_tags=[
+              {
+                "link_label": "Klantcontact"
+              }
+            ],
+          stats=[]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>Vanaf het allereerste contact verliep de samenwerking tussen salesUp en Immo Van Middelem uiterst positief, soepel en efficiënt. Hierover vertelt Dirk Van Roy, zaakvoerder van Immo Van Middelem meer.</p>\n<h2>De meerwaarde van salesUp</h2>\n<p>Voor Immo Van Middelem is de samenwerking met salesUp veel meer dan alleen een zakelijke relatie. Het betekent een aanzienlijke meerwaarde voor hun dagelijkse bedrijfsvoering. Een van de grootste voordelen die zij ervaren, is de enorme ontlasting van dagelijkse e-mails en telefoontjes. In de vastgoedwereld is het geen uitzondering dat bij elke telefoonoproep dezelfde uitleg herhaald moet worden.<br><br>Dit repetitieve proces, gecombineerd met administratieve taken en andere verantwoordelijkheden, kan een ondernemer elke keer weer uit de kern van zijn zaak halen. Hier komt de toegevoegde waarde van salesUp naar voren.Het team van Immo Van Middelem heeft de geruststellende wetenschap dat salesUp deze taken met grote zorg overneemt.</p>\n<h2>Een geweldige samenwerking</h2>\n<p>In het begin was de drempel voor Immo Van Middelem hoog om bepaalde taken uit handen te geven, vooral omdat er veel waarde werd gehecht aan de persoonlijke connectie die uit sommige telefoongesprekken kan voortkomen. Begrijpelijk, gezien een goed gesprek vaak de kans bood om direct een persoonlijkere connectie te leggen. Echter, al vroeg in de samenwerking met salesUp merkte Immo Van Middelem dat het uitbesteden van taken van ondergeschikt belang was vergeleken met de impact van voortdurende <a href=\"/sales-contact-center\">telefoongesprekken</a> op hun dagelijkse werkzaamheden.</p>\n<h2>Ook jouw klanten service uitbesteden?</h2>\n<p>\"Ik heb echt gemerkt dat iets uit handen durven geven van ondergeschikt belang is tegenover de impact van constant telefoons te hebben in dagdagelijks werk. Als jij ondertussen al de rest moet regelen, dan is constant de telefoon opnemen super vervelend. Had ik dat vroeger geweten, was ik vroeger beginnen samenwerken met salesUp. Puur commercieel kunnen wij dus echt niet zonder salesUp\", aldus Dirk Van Roy.<br><br></p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;Ik heb echt gemerkt dat iets uit handen durven geven van ondergeschikt belang is tegenover de impact van constant telefoons te hebben in dagdagelijks werk. Had ik dat vroeger geweten, was ik vroeger beginnen samenwerken met salesUp. Puur commercieel kunnen wij dus echt niet zonder salesUp.&rdquo;</p>",
+          who="&mdash; <strong>Dirk Van Roy</strong>, zaakvoerder van Immo Van Middelem"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Immo Van Middelem deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/orange",
+                    "type": "CONTENT", "content_id": 453268493508
+                  }
+                },
+                "sector": "Telecom",
+                "naam": "Orange",
+                "stat": "Telesales België behaalde een score van 91% in de Europese audit – de hoogste score van Europa",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/van-heurck",
+                    "type": "CONTENT", "content_id": 453268669671
+                  }
+                },
+                "sector": "Bedrijfskleding",
+                "naam": "Van Heurck",
+                "stat": "Een bruto conversie van 26,28% in België (ruim boven de doelstelling van 10%)",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/q8oils",
+                    "type": "CONTENT", "content_id": 453268494546
+                  }
+                },
+                "sector": "Brandstoffen & smeermiddelen",
+                "naam": "Q8Oils",
+                "stat": "Conversieratio van meer dan 50% bij de enquête-aanpak in de campagne haven van Antwerpen",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

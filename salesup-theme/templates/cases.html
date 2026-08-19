@@ -1,0 +1,746 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Cases
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/cases.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"CollectionPage\",\n      \"@id\":\"https://www.salesup.be/cases#page\",\n      \"name\":\"Cases van salesUp\",\n      \"description\":\"De gepubliceerde client-cases van salesUp, telkens met de klantnaam en het harde cijfer erbij.\",\n      \"url\":\"https://www.salesup.be/cases\",\n      \"isPartOf\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"mainEntity\":{\n        \"@type\":\"ItemList\",\n        \"name\":\"Client-cases van salesUp\",\n        \"itemListOrder\":\"https://schema.org/ItemListUnordered\",\n        \"numberOfItems\":22,\n        \"itemListElement\":[\n          {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Orange — 91% auditscore, de hoogste van Europa\"},\n          {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Van Heurck — 26,28% bruto conversie in België, tegenover een doel van 10%\"},\n          {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Q8Oils — meer dan 50% conversie in de haven van Antwerpen\"},\n          {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Axians — 78% van meeting naar offerte\"},\n          {\"@type\":\"ListItem\",\"position\":5,\"name\":\"UNIZO — 385 adviesgesprekken op vijf maanden\"},\n          {\"@type\":\"ListItem\",\"position\":6,\"name\":\"VM Building Solutions — 535 afspraken aan 16,21% conversie\"},\n          {\"@type\":\"ListItem\",\"position\":7,\"name\":\"Trustteam — 19,05% bruto conversie op cold calling\"},\n          {\"@type\":\"ListItem\",\"position\":8,\"name\":\"GEODIS — 25 tot 28% conversie op de prospect- en suspectlijsten\"},\n          {\"@type\":\"ListItem\",\"position\":9,\"name\":\"Radiance Energy — 39,30% netto conversie van contact naar afspraak\"},\n          {\"@type\":\"ListItem\",\"position\":10,\"name\":\"Upgrade Estate — gemiddeld één afspraak per beluur aan 15,29% conversie\"},\n          {\"@type\":\"ListItem\",\"position\":11,\"name\":\"Messer Group — 182 hits in het eerste jaar\"},\n          {\"@type\":\"ListItem\",\"position\":12,\"name\":\"Alindus — 22,22% conversie op de Showa-actie\"},\n          {\"@type\":\"ListItem\",\"position\":13,\"name\":\"EV Shop — 19 afspraken in 60 beluren aan bijna 15% conversie\"},\n          {\"@type\":\"ListItem\",\"position\":14,\"name\":\"SPM Technologies — gemiddeld 8 afspraken per week bij syndici\"},\n          {\"@type\":\"ListItem\",\"position\":15,\"name\":\"Eurocircuits — 91,64% van de klanten geholpen over heel Europa\"},\n          {\"@type\":\"ListItem\",\"position\":16,\"name\":\"Jaguar Land Rover — 154 gekwalificeerde leads naar de dealers\"},\n          {\"@type\":\"ListItem\",\"position\":17,\"name\":\"Astara — 19% hogere productiviteit per informant\"},\n          {\"@type\":\"ListItem\",\"position\":18,\"name\":\"Liantis — keynote en managementsessies voor het volledige sales-team\"},\n          {\"@type\":\"ListItem\",\"position\":19,\"name\":\"Zambon — zes verkopers en het management getraind in hybride sales\"},\n          {\"@type\":\"ListItem\",\"position\":20,\"name\":\"Hivolta — 75 aanvragen in één kwartaal\"},\n          {\"@type\":\"ListItem\",\"position\":21,\"name\":\"iChoosr — inbound klantcontact bij pieken tot honderden oproepen per dag\"},\n          {\"@type\":\"ListItem\",\"position\":22,\"name\":\"Immo Van Middelem — inbound klantcontact via serviceUp\"}\n        ]\n      }\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Cases\",\"item\":\"https://www.salesup.be/cases\"}\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/cases",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-team-floor.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Cases",
+          heading="De resultaten die we mochten publiceren — <em>zwart op wit</em>.",
+          subtext="<p>Elke case hieronder is een echte samenwerking van salesUp, met de klantnaam en het harde cijfer erbij. We meten elk resultaat tegenover een vooraf afgesproken doel — en wat we niet zwart op wit kunnen maken, publiceren we niet. Filter op de dienst die je zoekt.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Bekijk alle cases",
+          cta2_url={
+              "url": {
+                "href": "#cases",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Echte klantnamen"
+              },
+              {
+                "link_label": "Harde cijfers"
+              },
+              {
+                "link_label": "Gemeten vs. doel"
+              },
+              {
+                "link_label": "Filter per dienst"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Orange",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Untitled%20design.png",
+              "alt": "Medewerkers van het salesUp Sales Contact Center voeren verkoopgesprekken in het kantoor."
+            },
+          trustcard_badge="",
+          trustcard_stat="91<em>%</em>",
+          trustcard_label="Auditscore van ons team bij Orange — de hoogste score van Europa in de Orange Europe-audit.",
+          trustcard_quote="\"Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.\"",
+          trustcard_quote_who="— <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven achter deze cases",
+          eyebrow="Bedrijven achter deze cases",
+          logos=[
+              {
+                "naam": "Orange",
+                "slug": "orange"
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": "van-heurck"
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": "q8oils"
+              },
+              {
+                "naam": "Axians",
+                "slug": "axians"
+              },
+              {
+                "naam": "UNIZO",
+                "slug": "unizo"
+              },
+              {
+                "naam": "VM Building",
+                "slug": "vm-building"
+              },
+              {
+                "naam": "Trustteam",
+                "slug": "trustteam"
+              },
+              {
+                "naam": "Geodis",
+                "slug": "geodis"
+              },
+              {
+                "naam": "Radiance Energy",
+                "slug": "radiance-energy"
+              },
+              {
+                "naam": "Upgrade Estate",
+                "slug": "upgrade-estate"
+              },
+              {
+                "naam": "Messer Group",
+                "slug": "messer-group"
+              },
+              {
+                "naam": "Alindus",
+                "slug": "alindus"
+              },
+              {
+                "naam": "EV Shop",
+                "slug": "ev-shop"
+              },
+              {
+                "naam": "SPM",
+                "slug": "spm"
+              },
+              {
+                "naam": "Eurocircuits",
+                "slug": "eurocircuits"
+              },
+              {
+                "naam": "Jaguar Land Rover",
+                "slug": "jaguar-land-rover"
+              },
+              {
+                "naam": "Astara",
+                "slug": "astara"
+              },
+              {
+                "naam": "Liantis",
+                "slug": "liantis"
+              },
+              {
+                "naam": "Zambon",
+                "slug": "zambon"
+              },
+              {
+                "naam": "Hivolta",
+                "slug": "hivolta"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/cases",
+          eyebrow="Filter op dienst",
+          heading="Kies de dienst die je zoekt.",
+          intro="salesUp levert vijf diensten zelf. Kies er één om enkel de bijbehorende cases te zien, of blijf op ‘Alle cases’. Zonder JavaScript blijven alle cases gewoon zichtbaar.",
+          empty_state="<strong>Voor deze dienst is er nog geen publieke case met cijfer.</strong>\n        <p>Voor Sales Consultants leveren we ervaren buitendienstprofielen uit onze eigen groep; die resultaten zitten in de cijfers van onze klanten, niet in een aparte case. Wil je weten wat dat voor jouw team betekent? <a href=\"#contact\">Plan een gesprek →</a></p>",
+          filters=[
+              {
+                "link_label": "Alle",
+                "dienst": "all",
+                "telbadge": "25"
+              },
+              {
+                "link_label": "Marketing",
+                "dienst": "marketing",
+                "telbadge": "3"
+              },
+              {
+                "link_label": "Sales Contact Center",
+                "dienst": "sales-contact-center",
+                "telbadge": "19"
+              },
+              {
+                "link_label": "Face2Face",
+                "dienst": "face2face",
+                "telbadge": "2"
+              },
+              {
+                "link_label": "Training",
+                "dienst": "training",
+                "telbadge": "3"
+              },
+              {
+                "link_label": "Sales Consultants",
+                "dienst": "sales-consultants",
+                "telbadge": "0"
+              }
+            ],
+          case_cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/orange",
+                    "type": "CONTENT", "content_id": 453268493508
+                  }
+                },
+                "logo_slug": "orange",
+                "klant": "Orange",
+                "sector": "Telecom",
+                "diensten": "sales-contact-center face2face",
+                "tags": "Sales Contact Center, Face2Face Sales",
+                "cijfer": "91%",
+                "unit": "score in de Europese audit — de hoogste van Europa",
+                "context": "Geïntegreerd multichannel team van 65+ medewerkers (telesales, face-to-face, WhatsApp, cross-sell), ondersteund door 3 teamcoaches en 5 senior agents, goed voor tienduizenden contacten per maand.",
+                "quote": "“Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.”",
+                "quote_who": "— <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/van-heurck",
+                    "type": "CONTENT", "content_id": 453268669671
+                  }
+                },
+                "logo_slug": "van-heurck",
+                "klant": "Van Heurck",
+                "sector": "Bedrijfskleding",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "26,28%",
+                "unit": "bruto conversie in België, tegenover een doel van 10%",
+                "context": "Strategische telefonische marktbevraging bij aankoop- en werfverantwoordelijken in België en Nederland sinds januari 2025. Uit 293 afgewerkte contacten kwamen 77 hoogwaardige leads — kwaliteit boven kwantiteit.",
+                "quote": "“Ze weten onze behoeften feilloos te vertalen naar effectieve en klantgerichte telefoongesprekken. Hun flexibiliteit en snelheid maken hen een waardevolle partner voor ons.”",
+                "quote_who": "— <strong>Danny Lenselink</strong>, Chief Commercial Officer bij Van Heurck"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/q8oils",
+                    "type": "CONTENT", "content_id": 453268494546
+                  }
+                },
+                "logo_slug": "q8oils",
+                "logo": {
+                  "src": "https://salesup.be/hubfs/Q8.png",
+                  "alt": ""
+                },
+                "klant": "Q8Oils",
+                "sector": "Brandstoffen & smeermiddelen",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": ">50%",
+                "unit": "conversie met de enquête-aanpak in de haven van Antwerpen",
+                "context": "Externe B2B-prospectiepartner met campagnes in Zuid-Nederland, de haven van Antwerpen en Wallonië; scriptloze gesprekken, producttraining en wekelijkse rapportage.",
+                "quote": "“Onze aangename samenwerking met salesUp blijft consequent leiden tot blijvende successen.”",
+                "quote_who": "— <strong>Isabella Hauquier</strong>, Sales Manager bij Q8Oils"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/axians",
+                    "type": "CONTENT", "content_id": 453268364529
+                  }
+                },
+                "logo_slug": "axians",
+                "klant": "Axians",
+                "sector": "Audiovisuele oplossingen",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "78%",
+                "unit": "van meeting naar offerte",
+                "context": "Een meer-staps cold-calling-campagne, gesplitst per facility- en IT-managers en maandelijks bijgestuurd via ‘resultsUp’-meetings. 36 meetings met warme prospects leverden 28 offertes op, met uitbreiding naar meerdere sites bij tevreden klanten.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/unizo",
+                    "type": "CONTENT", "content_id": 453268041941
+                  }
+                },
+                "logo_slug": "unizo",
+                "klant": "UNIZO",
+                "sector": "Ondernemersorganisatie",
+                "diensten": "sales-contact-center marketing",
+                "tags": "Sales Contact Center, Marketing",
+                "cijfer": "385",
+                "unit": "adviesgesprekken ingepland over 5 maanden",
+                "context": "Warme, semi-automatische multichannel prospectie voor het ETAB-project (Elk Talent Aan Boord), met een responsgraad die 80% hoger lag dan bij spammy content en gemiddeld 20 ingevulde scans per week.",
+                "quote": "“De resultaten van de outbound funnel overstegen onze verwachtingen. Mensen werden op een laagdrempelige manier gecontacteerd, waardoor we gemiddeld 20 ingevulde scans per week kregen.”",
+                "quote_who": "— <strong>Nele Creuwels</strong>, UNIZO"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/vm-building",
+                    "type": "CONTENT", "content_id": 453268043979
+                  }
+                },
+                "logo_slug": "vm-building",
+                "klant": "VM Building Solutions",
+                "sector": "Bouw",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "535",
+                "unit": "afspraken aan 16,21% conversie, boven het doel van 10%",
+                "context": "Telefonische prospectie naar architecten plus een marktonderzoek bij bouwbedrijven, dat 981 complete antwoorden opleverde aan 31,08% conversie. Samenwerking sinds de overname van Modus (2022).",
+                "quote": "“Heel goede professionele samenwerking met salesUp. Reeds verschillende telemarketingprojecten succesvol voor ons uitgevoerd. Vlotte communicatie en sympathieke medewerkers.”",
+                "quote_who": "— <strong>Filine Steijaert</strong>, VM Building Solutions"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/trustteam",
+                    "type": "CONTENT", "content_id": 453268665592
+                  }
+                },
+                "logo_slug": "trustteam",
+                "klant": "Trustteam",
+                "sector": "IT-diensten",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "19,05%",
+                "unit": "bruto conversie op de cold-calling-campagne",
+                "context": "Projectmatige, in waves opgezette prospectie en telesales (o.a. Dell, Microsoft, MyZen, kwetsbaarheidstesten), met snelle opvolging en continue bijsturing. De MyZen-campagne behaalde daarnaast 18,24% bruto conversie.",
+                "quote": "“Het is een kwestie van gelijklopend DNA. Dicht bij de klant, reactiesnelheid en vooral veel beweging.”",
+                "quote_who": "— <strong>Pascal Pinket</strong>, Sales Director bij Trustteam"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/geodis",
+                    "type": "CONTENT", "content_id": 453268372723
+                  }
+                },
+                "logo_slug": "geodis",
+                "logo": {
+                  "src": "https://salesup.be/hubfs/Geodis.svg",
+                  "alt": ""
+                },
+                "klant": "GEODIS",
+                "sector": "Logistiek",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "25–28%",
+                "unit": "conversie op de prospect- en suspectlijsten",
+                "context": "Gefaseerde telefonische prospectie voor de wereldwijde logistiekgroep, vertrekkend van een database van 1.210 contacten: transportbeurs-werving, benadering van prospects (25%) en suspects (28%) en demo's van de IRIS-tool.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/radiance-energy",
+                    "type": "CONTENT", "content_id": 453268029669
+                  }
+                },
+                "logo_slug": "radiance-energy",
+                "klant": "Radiance Energy",
+                "sector": "Duurzame energie",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "39,30%",
+                "unit": "netto conversie van eerste contact naar afspraak",
+                "context": "Datagedreven prospectie bij eigenaren van grote bedrijfspanden en syndici voor het zonnepark-participatieproject. Dankzij een zorgvuldig gekwalificeerde lijst werd 65% van de contacten bereikt en volgden 20 offerteaanvragen (50% van meeting naar offerte) over 7 maanden.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/upgrade-estate",
+                    "type": "CONTENT", "content_id": 453268668617
+                  }
+                },
+                "logo_slug": "upgrade-estate",
+                "klant": "Upgrade Estate",
+                "sector": "Vastgoed",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "1 afspraak / beluur",
+                "unit": "aan 15,29% conversie, op deals vanaf €110.000",
+                "context": "Sinds mei 2024 volgt salesUp de inkomende leads (Google Ads, Meta-ads, website) van het Upkot-segment op. Bijna 500 beluren leverden gemiddeld één afspraak per uur op, met 129 callbacks in de pipeline.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/messer-group",
+                    "type": "CONTENT", "content_id": 453268491493
+                  }
+                },
+                "logo_slug": "messer-group",
+                "klant": "Messer Group",
+                "sector": "Industriële gassen",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "182",
+                "unit": "'hits' in het eerste jaar — afspraken, klanten en tender-uitnodigingen",
+                "context": "Strategische telefonische prospectie voor de industriële-gassenproducent in Vlaanderen en Wallonië, gevoed door tijdige en complete data. Na één jaar werd de samenwerking uitgebreid naar Nederland.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/alindus",
+                    "type": "CONTENT", "content_id": 453268386037
+                  }
+                },
+                "logo_slug": "alindus",
+                "klant": "Alindus",
+                "sector": "Groothandel & distributie",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "22,22%",
+                "unit": "conversie op de Showa-werkhandschoenenactie",
+                "context": "Telefonische prospectie voor Alindus (dochter van het Nederlandse Wiltec): naast de Showa-actie (7 conversies op 35 contacten) lanceerde salesUp het sporttextielmerk YouFocus in België met 22 afspraken op 208 contacten (11,32%).",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/ev-shop",
+                    "type": "CONTENT", "content_id": 453268393162
+                  }
+                },
+                "logo_slug": "ev-shop",
+                "klant": "EV Shop",
+                "sector": "Elektrische voertuigen",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "19",
+                "unit": "afspraken in 60 beluren, aan bijna 15% conversie",
+                "context": "Gerichte B2B-prospectie bij zaakvoerders, fleetmanagers en wagenparkbeheerders in Oost-Vlaanderen (mei–juli 2023), met 129 callbacks in de pipeline voor verdere groei.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/spm",
+                    "type": "CONTENT", "content_id": 453268038868
+                  }
+                },
+                "logo_slug": "spm",
+                "klant": "SPM Technologies",
+                "sector": "Proptech / software voor syndici",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "8 / week",
+                "unit": "afspraken bij syndici, boven de doelstelling van vijf",
+                "context": "Een opvallende aanpak — een postmailing-ijsbreker gevolgd door warme telefoongesprekken — brak door bij drukbezette syndici in Vlaanderen en boekte in enkele weken gemiddeld acht afspraken per week.",
+                "quote": "“SalesUp heeft ons geweldig geholpen met het maken van afspraken binnen onze doelgroep van syndici in het Vlaamse landsgedeelte. Dankzij hun skills en positieve vasthoudendheid is deze actie een succes geworden!”",
+                "quote_who": "— <strong>Erik Van Esbroeck</strong>, zaakvoerder van SPM"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/eurocircuits",
+                    "type": "CONTENT", "content_id": 453268371675
+                  }
+                },
+                "logo_slug": "eurocircuits",
+                "logo": {
+                  "src": "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg",
+                  "alt": ""
+                },
+                "klant": "Eurocircuits",
+                "sector": "Elektronica (PCB's)",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "91,64%",
+                "unit": "van de klanten geholpen, over heel Europa",
+                "context": "Vijf jaar lang (2019–2023) verzorgde een meertalig salesUp-team de onboarding en tevredenheidsbevraging van nieuwe klanten van PCB-fabrikant Eurocircuits, met een scriptloze aanpak over meer dan 140.653 belpogingen.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/jaguar-land-rover",
+                    "type": "CONTENT", "content_id": 453268397251
+                  }
+                },
+                "logo_slug": "jaguar-land-rover",
+                "klant": "Jaguar Land Rover",
+                "sector": "Automotive",
+                "diensten": "sales-contact-center marketing",
+                "tags": "Sales Contact Center, Marketing",
+                "cijfer": "154",
+                "unit": "gekwalificeerde leads doorgestuurd naar de dealers",
+                "context": "Leadkwalificatie en social-mediabeheer voor de Benelux (dec. 2023 – juli 2024): 34 proefritten, 40 offertes en 80 dealercontacten, volledig GDPR-compliant, plus een lost-lead-pilot die in twee weken 14 leads recupereerde.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/astara",
+                    "type": "CONTENT", "content_id": 453268364479
+                  }
+                },
+                "logo_slug": "astara",
+                "logo": {
+                  "src": "https://salesup.be/hubfs/astra%20good.png",
+                  "alt": ""
+                },
+                "klant": "Astara",
+                "sector": "Autosector",
+                "diensten": "training face2face",
+                "tags": "Training, Face2Face Sales",
+                "cijfer": "+19%",
+                "unit": "hogere productiviteit per informant dan tijdens het vorige Autosalon",
+                "context": "Een team van 85 informanten (18 tot 78 jaar) voorbereid op het Brussels Motor Show via salesUp Academy, met coaching op de stand. Ongeveer 13% van de gegenereerde leads werd omgezet naar een wagenverkoop.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/liantis",
+                    "type": "CONTENT", "content_id": 453268379883
+                  }
+                },
+                "logo_slug": "liantis",
+                "logo": {
+                  "src": "https://salesup.be/hubfs/liantis.png",
+                  "alt": ""
+                },
+                "klant": "Liantis",
+                "sector": "HR-dienstengroep",
+                "diensten": "training",
+                "tags": "Training",
+                "cijfer": "90 min",
+                "unit": "keynote voor het volledige sales-team, plus managementsessies van 4 uur",
+                "context": "Drie trajecten op maat rond sales excellence, leiderschap en ownership voor een commercieel team van ongeveer 70 à 80 medewerkers. De impact bleef volgens Liantis maanden later voelbaar binnen de teams.",
+                "quote": "“Jullie hebben de mensen tot inzichten gebracht. Soms ook wat shocking. En dat werkt. Ook maanden later bleef de impact voelbaar binnen de teams.”",
+                "quote_who": "— <strong>Eveline Boúúaert</strong>, Head of Sales KMO bij Liantis"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/zambon",
+                    "type": "CONTENT", "content_id": 453268044009
+                  }
+                },
+                "logo_slug": "zambon",
+                "logo": {
+                  "src": "https://salesup.be/hubfs/zambon%20good.png",
+                  "alt": ""
+                },
+                "klant": "Zambon",
+                "sector": "Farmaceutisch",
+                "diensten": "training",
+                "tags": "Training",
+                "cijfer": "6",
+                "unit": "verkopers + het management getraind om te schakelen naar telesales",
+                "context": "Sessies rond energie, intonatie, actief luisteren, gespreksstructuur en afsluittechnieken, met live meeluisteren en directe feedback. De verkopers voeren nu zelfzekerder telefonische gesprekken.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/hivolta",
+                    "type": "CONTENT", "content_id": 453268393209
+                  }
+                },
+                "logo_slug": "hivolta",
+                "klant": "Hivolta",
+                "sector": "Duurzame energie",
+                "diensten": "marketing",
+                "tags": "Marketing",
+                "cijfer": "75",
+                "unit": "aanvragen op één kwartaal via de Google-advertentiecampagnes",
+                "context": "salesUp-marketing zette merkbekendheid, Google-vindbaarheid (SEA/SEO) en online leadgeneratie op voor zonnepanelen, thuisbatterijen en laadpalen in Oost- en West-Vlaanderen.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/ichoosr",
+                    "type": "CONTENT", "content_id": 453268374754
+                  }
+                },
+                "logo_slug": "ichoosr",
+                "klant": "iChoosr",
+                "sector": "Energie",
+                "diensten": "klantcontact",
+                "tags": "Klantcontact",
+                "cijfer": "tientallen → honderden",
+                "unit": "oproepen per dag, van rustige momenten tot piekperiodes",
+                "context": "Flexibele inbound klantondersteuning die de sterke pieken en dalen rond de groepsaankopen van groene energie opvangt, met proactieve optimalisatie van de klantreis en wekelijkse gespreksanalyses.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/immo-van-middelem",
+                    "type": "CONTENT", "content_id": 453268375760
+                  }
+                },
+                "logo_slug": "immo-van-middelem",
+                "klant": "Immo Van Middelem",
+                "sector": "Vastgoed",
+                "diensten": "klantcontact",
+                "tags": "Klantcontact",
+                "cijfer": "",
+                "unit": "",
+                "context": "Via serviceUp neemt salesUp de dagelijkse inkomende telefoons en e-mails van dit vastgoedkantoor over. Dat ontlast de zaakvoerder van repetitief klantcontact, zodat hij zich op de kern van zijn zaak kan concentreren.",
+                "quote": "“Iets uit handen durven geven is van ondergeschikt belang tegenover de impact van constant de telefoon te moeten opnemen in je dagdagelijks werk. Puur commercieel kunnen wij echt niet zonder salesUp.”",
+                "quote_who": "— <strong>Dirk Van Roy</strong>, zaakvoerder van Immo Van Middelem"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/ikaros-solar",
+                    "type": "CONTENT", "content_id": 455643379910
+                  }
+                },
+                "klant": "Ikaros Solar",
+                "sector": "Duurzame energie",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "39%",
+                "unit": "conversie via slimme data en gerichte telefonische prospectie",
+                "context": "salesUp hielp Ikaros Solar met zorgvuldig geselecteerde data en doelgerichte telesales. Resultaat: tientallen offerteaanvragen en een gevuld salesschema.",
+                "quote": "",
+                "quote_who": ""
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/cesano",
+                    "type": "CONTENT", "content_id": 455643379912
+                  }
+                },
+                "klant": "Cesano",
+                "sector": "E-bikes & horeca",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "250",
+                "unit": "e-bikes geplaatst — de doelstelling van Cesano",
+                "context": "Cesano valideerde de markt zelf met 100 hotels, daarna nam salesUp de prospectie over. Yves Van Sante: de resultaten van salesUp waren beter dan die van Cesano zelf.",
+                "quote": "“Het is enorm fijn dat een externe partner aanvoelt als een extra schakel van je eigen bedrijf. Zo zou het altijd moeten zijn!”",
+                "quote_who": "— <strong>Yves Van Sante</strong>, Founder &amp; Managing Partner van Cesano"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/sobelhor",
+                    "type": "CONTENT", "content_id": 455643379914
+                  }
+                },
+                "klant": "Sobelhor",
+                "sector": "Horeca-leverancier",
+                "diensten": "sales-contact-center",
+                "tags": "Sales Contact Center",
+                "cijfer": "60% → 80%",
+                "unit": "van het ERP-systeem benut, vs. 60% bij de start in 2020",
+                "context": "Inbound, logistieke codering en facturatie via hun ERP. Orders, voorraad en klantcontact werden gestructureerd; facturen gaan zonder dubbele invoer de deur uit.",
+                "quote": "“De meertaligheid van het personeel is bovendien een echte aanrader.”",
+                "quote_who": "— <strong>Marc Wodon</strong>, Sobelhor"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat wij zwart op wit durven zetten. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}
+{% block extra_js %}{{ require_js(get_asset_url('../js/cases-filter.js')) }}{% endblock %}

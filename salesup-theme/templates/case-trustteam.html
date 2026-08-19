@@ -1,0 +1,184 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Trustteam
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Trustteam x salesUp: groei versnellen met hetzelfde DNA\", \"about\": \"Trustteam\", \"description\": \"Trustteam x salesUp: groei versnellen met hetzelfde DNA in IT-diensten.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/trustteam\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Trustteam\", \"item\": \"https://www.salesup.be/cases/trustteam\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/trustteam",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Trustteam",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · IT-diensten",
+          heading="Trustteam x salesUp: groei versnellen met hetzelfde DNA",
+          subtext="<p>Trustteam x salesUp: groei versnellen met hetzelfde DNA in IT-diensten.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "18,24%",
+                "toelichting": "MyZen-campagne behaalde een bruto conversie van 18,24%"
+              },
+              {
+                "cijfer": "19,05%",
+                "toelichting": "Cold calling campagne kwam uit op een bruto conversie van 19,05%"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<h2>Waar gedeelde waarden groei versnellen</h2>\n<p>Wanneer twee bedrijven samenwerken, draait het niet alleen om expertise of resultaten. De sterkste partnerships ontstaan wanneer ook de manier van denken overeenkomt. Voor Trustteam was dat meteen voelbaar in de samenwerking met salesUp.</p>\n<p>Wat begon als een commerciële samenwerking groeide uit tot een partnership waarin snelheid, betrokkenheid en een gedeelde focus op groei centraal staan. Geen losse processen of oppervlakkige aanpak, maar korte lijnen, directe feedback en een team dat actief meedenkt.</p>\n<p><em>“Het is een kwestie van gelijklopend DNA. Dicht bij de klant, reactiesnelheid en vooral veel beweging.”</em> <strong>– Pascal Pinket, Sales Director bij Trustteam</strong></p>\n<h2>Een partnership dat meebeweegt</h2>\n<p>Trustteam is vandaag een gevestigde waarde binnen de Belgische IT-sector, met bijna 25 jaar ervaring, ongeveer 750 medewerkers en een breed klantenbestand van kleine ondernemingen tot grotere organisaties.</p>\n<p>In een markt waar technologie snel evolueert, is commerciële ondersteuning meer dan zichtbaarheid alleen. Het vraagt een partner die begrijpt hoe je doelgroepen benadert, hoe je opportuniteiten omzet in concrete acties en hoe je snel kunt schakelen wanneer de markt beweegt.</p>\n<p>Net daar maakt salesUp het verschil voor Trustteam.</p>\n<p>Wanneer er een nieuw idee, project of doelgroep op tafel ligt, wordt er snel gehandeld. Geen eindeloze wachttijden, maar directe opvolging en concrete voorstellen die meteen in beweging zetten.</p>\n<p><em>“Als je die mensen belt en zegt: we hebben een idee of een project, dan komt er vlug respons op. Er zit interactie op, en dat vinden wij bij Trustteam belangrijk, en dat doet salesUp ook echt.”</em> <strong>– Pascal Pinket, Sales Director bij Trustteam</strong></p>\n<p>De samenwerking kreeg de voorbije jaren vorm via gerichte, projectmatige campagnes. Geen standaardtrajecten, maar flexibele samenwerkingen in waves, afgestemd op concrete doelstellingen en actuele opportuniteiten binnen Trustteam. Zo werden campagnes opgezet rond onder meer Dell, Microsoft, recyclage, MyZen en kwetsbaarheidstesten voor bedrijven.</p>\n<p><em>“Wat deze samenwerking sterk maakt, is dat er telkens snel geschakeld kan worden wanneer er een nieuwe opportuniteit ontstaat. We denken projectmatig mee en bewegen mee met hun behoeftes.” </em><strong>– Zahra Vanwijnsberghe, Business Unit Manager bij salesUp</strong></p>\n<h2>Meedenken tot in de details</h2>\n<p>Voor Trustteam stopt een goede samenwerking niet bij uitvoering alleen. Een partner moet mee verantwoordelijkheid nemen, kritisch durven meedenken en samen blijven optimaliseren.</p>\n<p>Dat is exact hoe salesUp de samenwerking invult.</p>\n<p>Van databasebeheer en doelgroepsegmentatie tot scripting, evaluatie en bijsturing: elk onderdeel wordt serieus genomen en continu verfijnd. Daardoor ontstaat niet alleen actie, maar ook vertrouwen.</p>\n<p><em>“Die mensen nemen het au sérieux. Ze denken mee met u over database, scripting, evaluatie en bijsturen. Dat geeft een goed gevoel.” </em><strong>– Pascal Pinket</strong>.</p>\n<h2>Klantgericht denken als gedeelde basis</h2>\n<p>Wat Trustteam en salesUp sterk met elkaar verbindt, is een gedeelde visie op hoe je duurzame relaties opbouwt. Zowel Trustteam als salesUp geloven dat echte groei begint bij luisteren, begrijpen en dicht bij de klant blijven staan.</p>\n<p>Voor Trustteam betekent dat ondernemingen ontzorgen met oplossingen die niet alleen technisch sterk zijn, maar ook praktisch en relevant voor de dagelijkse werking. Voor salesUp betekent het commerciële trajecten uitwerken die vertrekken vanuit de realiteit van de klant, niet vanuit standaardmodellen of theoretische aannames.</p>\n<p>Die gedeelde klantgerichtheid zorgt ervoor dat beide teams elkaar snel begrijpen en vlot kunnen samenwerken. Beslissingen worden genomen met dezelfde prioriteit voor ogen: waarde creëren voor de eindklant. Net daardoor voelt deze samenwerking niet aan als een klassieke klantrelatie, maar als een gezamenlijk traject richting groei.</p>\n<p>De relatie tussen beide partijen werd doorheen de jaren opgebouwd op vertrouwen, open communicatie en wederzijds respect. Net daardoor blijft Trustteam ook terugkeren voor nieuwe campagnes en projecten.</p>\n<p><em>“Pascal is iemand waarvan je weet wat je aan hem hebt. Correct, transparant en altijd duidelijk. Dat maakt samenwerken aangenaam en efficiënt.” </em><strong>– Zahra Vanwijnsberghe</strong></p>\n<h2>Resultaat met snelheid</h2>\n<p>Sterke ideeën hebben pas impact wanneer ze ook snel en juist worden uitgevoerd. Binnen de samenwerking tussen Trustteam en salesUp is snelheid daarom geen detail, maar een belangrijk onderdeel van het succes.</p>\n<p>Wanneer nieuwe opportuniteiten zich aandienen, wordt er meteen gekeken hoe die kunnen worden benut. Campagnes worden snel opgestart, feedback wordt onmiddellijk verwerkt en voorstellen worden efficiënt vertaald naar concrete acties. Daardoor blijft Trustteam wendbaar in een snel veranderende markt.</p>\n<p>Die reactiesnelheid creëert ook vertrouwen. Trustteam weet dat er niet alleen wordt geluisterd, maar ook effectief wordt gehandeld. Dat maakt het mogelijk om sneller kansen te grijpen en projecten met meer slagkracht uit te voeren.</p>\n<p>Ook de resultaten tonen dat gerichte campagnes impact kunnen maken. Zo behaalde de MyZen-campagne een bruto conversie van 18,24%, terwijl een <a href=\"/afspraakplanning\">cold calling</a> campagne voor Trustteam uitkwam op een bruto conversie van 19,05%.</p>\n<p>Die cijfers tonen hoe een doordachte aanpak, sterke opvolging en gerichte targeting kunnen leiden tot tastbare commerciële resultaten.</p>\n<h2>Samen vooruit</h2>\n<p>De samenwerking tussen Trustteam en salesUp draait niet rond losse acties of tijdelijke campagnes. Het is een partnership dat stap voor stap verder bouwt, met een duidelijke langetermijnvisie en een gedeelde ambitie om te blijven groeien.</p>\n<p>Door regelmatig bij te sturen, open te communiceren en samen nieuwe opportuniteiten te verkennen, blijft de samenwerking evolueren. Beide partijen dagen elkaar uit, houden elkaar scherp en zoeken continu naar manieren om nog sterker te presteren.</p>\n<p>Dat maakt van deze samenwerking meer dan een commerciële ondersteuning. Het is een partnerschap waarin expertise, snelheid en betrokkenheid samenkomen om duurzame resultaten neer te zetten.</p>\n<p>Door de combinatie van projectmatige flexibiliteit, transparante samenwerking en focus op kwaliteit blijft deze samenwerking waardevol voor beide partijen. Niet elk traject hoeft hetzelfde te zijn, zolang de aanpak juist zit en het vertrouwen sterk blijft.</p>\n<p>Of zoals Pascal het samenvat: “Je voelt dat er beweging op zit.”</p>\n<p>Benieuwd naar de inzichten achter dit succesverhaal?</p>\n<p>In onze blog deelt Pascal Pinket van Trustteam 4 krachtige lessen over vertrouwen, klantgerichtheid en duurzame groei in IT-sales. Ontdek hoe sterke klantrelaties het verschil maken in een competitieve markt.</p>\n<h2><strong>Up your sales met salesUp</strong></h2>\n<p>Op zoek naar een partner die niet alleen uitvoert, maar ook meedenkt, versnelt en verantwoordelijkheid neemt voor jouw groei?</p>\n<p>salesUp helpt ambitieuze bedrijven groeien — strategisch, commercieel en duurzaam.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;Het is een kwestie van gelijklopend DNA. Dicht bij de klant, reactiesnelheid en vooral veel beweging.&rdquo;</p>",
+          who="&mdash; <strong>Pascal Pinket</strong>, Sales Director bij Trustteam"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Trustteam deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/geodis",
+                    "type": "CONTENT", "content_id": 453268372723
+                  }
+                },
+                "sector": "Logistiek",
+                "naam": "GEODIS",
+                "stat": "Startdatabase van 1.210 potentiële contacten",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/radiance-energy",
+                    "type": "CONTENT", "content_id": 453268029669
+                  }
+                },
+                "sector": "Duurzame energie",
+                "naam": "Radiance Energy",
+                "stat": "65% van de aangeleverde contacten bereikt",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/upgrade-estate",
+                    "type": "CONTENT", "content_id": 453268668617
+                  }
+                },
+                "sector": "Vastgoed",
+                "naam": "Upgrade Estate",
+                "stat": "Conversie van 15,29% (elke target behaald sinds de start in mei 2024)",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

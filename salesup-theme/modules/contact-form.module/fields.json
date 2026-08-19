@@ -1,0 +1,63 @@
+[ {
+  "id" : "form_heading",
+  "name" : "form_heading",
+  "label" : "Formulier — titel",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Laat je gegevens achter"
+}, {
+  "id" : "form_note",
+  "name" : "form_note",
+  "label" : "Formulier — noot",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Maximaal 4 velden. We bellen je binnen 30 minuten terug."
+}, {
+  "id" : "form",
+  "name" : "form",
+  "label" : "HubSpot-formulier",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "display_width" : null,
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Bedankt. We bellen je binnen 30 minuten terug."
+  }
+}, {
+  "id" : "meet_heading",
+  "name" : "meet_heading",
+  "label" : "Meetings — titel",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Of plan meteen een moment"
+}, {
+  "id" : "meet_note",
+  "name" : "meet_note",
+  "label" : "Meetings — noot",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Kies zelf een tijdslot dat past."
+}, {
+  "id" : "meetings_url",
+  "name" : "meetings_url",
+  "label" : "HubSpot Meetings-embed URL",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : ""
+} ]

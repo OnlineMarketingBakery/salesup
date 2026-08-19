@@ -1,0 +1,15 @@
+<section class="crosssell wrap" aria-labelledby="crosssell-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="crosssell-titel">{{ module.heading }}</h2>
+  </div>
+  <div class="cross-grid">
+    {% for row in module.cross_rows %}
+    <a class="cross-row" href="{{ row.url.url.href|default('#') }}">
+      <span class="idx">{{ row.idx }}</span>
+      <span class="name">{{ row.naam }}<span>{{ row.desc }}</span></span>
+      <span class="go">{{ row.cta|default('Bekijk dienst') }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

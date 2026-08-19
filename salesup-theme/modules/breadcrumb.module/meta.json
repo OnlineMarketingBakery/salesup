@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 452882850038,
+  "label" : "salesUp — Breadcrumb",
+  "icon" : "@hubspot/sitemap",
+  "is_available_for_new_content" : true
+}

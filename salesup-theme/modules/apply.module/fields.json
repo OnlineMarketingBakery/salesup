@@ -1,0 +1,75 @@
+[ {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Titel",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "In het kort"
+}, {
+  "id" : "apply_text",
+  "name" : "apply_text",
+  "label" : "Solliciteer-tekst",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Solliciteer nu"
+}, {
+  "id" : "apply_url",
+  "name" : "apply_url",
+  "label" : "Apply-URL fallback",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "content_id" : null,
+      "href" : "https://salesup.recruitee.com/"
+    }
+  }
+}, {
+  "id" : "note",
+  "name" : "note",
+  "label" : "Noot",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Je solliciteert veilig via Recruitee (Tellent)."
+}, {
+  "id" : "careers_text",
+  "name" : "careers_text",
+  "label" : "Recruitee-link tekst",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Bekijk op Recruitee ↗"
+}, {
+  "id" : "careers_url",
+  "name" : "careers_url",
+  "label" : "Careers-URL fallback",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "content_id" : null,
+      "href" : "https://salesup.recruitee.com/"
+    }
+  }
+} ]

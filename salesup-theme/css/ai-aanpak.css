@@ -1,0 +1,136 @@
+/* =====================================================================
+   salesUp — AI-aanpak (methodologie): PAGINASPECIFIEKE CSS
+   Aanvulling op het gedeelde styles.css (Vincent-layout + BrandBook-tokens).
+   REGELS: styles.css NIET wijzigen. Alleen bestaande tokens gebruiken
+   (var(--orange) als accent), geen nieuwe hex-kleuren, radius ≤16px.
+   Componenten hier: capability-panelen (demo-UI), capability-grid,
+   datalus-omkadering + SVG-styling, AI-per-dienst-lijst, data & privacy-blok,
+   mens-tegendraad-blok.
+   ===================================================================== */
+
+/* ---------- sectie-helpers ---------- */
+.aip-ghost{background:var(--ghost);}
+
+/* ---------- capability-demopaneel (leesbare product-UI, geen tech-abstractie) ---------- */
+.aip-panel{
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  overflow:hidden; box-shadow:0 24px 48px -30px rgba(21,30,53,0.35);
+}
+.aip-panel-head{
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px;
+  padding:14px 18px; border-bottom:1px solid var(--line); background:var(--ghost);
+}
+.aip-panel-title{font-family:'Poppins',sans-serif; font-weight:600; font-size:14px; color:var(--navy-deep);}
+.aip-panel-title span{display:block; font-family:'Inter',sans-serif; font-weight:400; font-size:12px; color:var(--slate);}
+.aip-demo-badge{
+  font-family:'Poppins',sans-serif; font-size:10.5px; font-weight:600; text-transform:uppercase;
+  letter-spacing:0.06em; background:var(--orange-tint); color:var(--orange-deep);
+  border:1px solid var(--line); padding:5px 10px; border-radius:100px; white-space:nowrap;
+}
+.aip-panel-body{padding:18px;}
+.aip-score{display:flex; align-items:baseline; gap:8px;}
+.aip-score-num{font-family:'Poppins',sans-serif; font-weight:900; font-size:2.6rem; color:var(--navy-deep); line-height:1; font-variant-numeric:tabular-nums;}
+.aip-score-num .of{font-size:1rem; font-weight:500; color:var(--slate);}
+.aip-score-label{font-size:13px; color:var(--slate); margin:2px 0 16px;}
+.aip-bar{height:9px; border-radius:100px; background:var(--line); overflow:hidden; margin:6px 0 2px;}
+.aip-bar>span{display:block; height:100%; border-radius:100px; background:var(--orange);}
+.aip-metric{display:flex; align-items:center; justify-content:space-between; gap:12px; font-size:13.5px; margin:12px 0;}
+.aip-metric .k{color:var(--slate);}
+.aip-metric .v{font-family:'Poppins',sans-serif; font-weight:600; color:var(--navy-deep);}
+.aip-sub{margin-top:14px; border-top:1px solid var(--line); padding-top:14px;}
+.aip-subscore{margin:10px 0;}
+.aip-subscore .row{display:flex; justify-content:space-between; font-size:12.5px; margin-bottom:3px; color:var(--slate);}
+.aip-subscore .row b{font-family:'Poppins',sans-serif; font-weight:600; color:var(--navy-deep);}
+.aip-tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+.aip-tag{
+  font-family:'Poppins',sans-serif; font-size:11.5px; font-weight:600; padding:5px 11px;
+  border-radius:100px; background:var(--orange-tint); color:var(--navy-deep); border:1px solid var(--line);
+}
+
+/* ---------- hero-visual: demopaneel op een navy kleurvlak (anti-AI-look) ---------- */
+.aip-visual{position:relative;}
+.aip-visual-frame{position:relative; isolation:isolate;}
+.aip-visual-frame::before{
+  content:''; position:absolute; z-index:0; inset:24px 0 -16px 24px;
+  background:var(--grad-navy); border-radius:var(--radius);
+}
+.aip-visual .aip-panel{position:relative; z-index:1;}
+.aip-visual figcaption{position:relative; z-index:1; font-size:12px; color:var(--slate); margin-top:22px;}
+
+/* ---------- capability-grid ---------- */
+.aip-caps{
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px;
+  background:var(--line); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; margin-top:44px;
+}
+.aip-cap{background:var(--white); padding:28px 26px; display:flex; flex-direction:column; gap:10px;}
+.aip-cap .num{font-family:'Poppins',sans-serif; font-weight:700; font-size:12px; color:var(--slate-light);}
+.aip-cap h3{font-family:'Poppins',sans-serif; font-size:17px; color:var(--navy-deep);}
+.aip-cap p{color:var(--slate); font-size:14px; line-height:1.55;}
+.aip-cap .signal{margin-top:auto; padding-top:12px; border-top:1px solid var(--line); font-size:12.5px; font-weight:600; color:var(--navy);}
+.aip-cap .signal::before{content:'\21B3\00a0'; color:var(--orange); font-weight:700;}
+@media(max-width:980px){.aip-caps{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:620px){.aip-caps{grid-template-columns:1fr;}}
+
+/* ---------- de datalus (donker kleurvlak, gedeelde --grad-navy) ---------- */
+.datalus{background:var(--grad-navy); color:var(--ink-dim); padding:clamp(72px,10vw,110px) 0;}
+.datalus .mono{color:var(--orange); display:block; margin-bottom:16px;}
+.datalus h2{color:var(--white); font-size:clamp(1.8rem,3.6vw,2.6rem); margin-bottom:14px; max-width:22ch;}
+.datalus .loop-claim{color:var(--white); font-size:19px; font-weight:500; max-width:60ch; margin:0 0 8px;}
+.datalus figure{margin:26px 0 0;}
+.lus-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.lus-scroll svg{min-width:560px; width:100%; height:auto; display:block;}
+.datalus figcaption{font-size:15px; color:var(--ink-dim); margin-top:18px; max-width:80ch; line-height:1.7;}
+.loop-contrast{margin-top:22px; background:rgba(255,255,255,0.06); border-radius:var(--radius); padding:18px 22px; font-size:15px; color:var(--ink-dim); max-width:62ch;}
+.loop-quote{margin:22px 0 0; border-left:3px solid var(--orange); padding-left:18px; font-style:italic; color:var(--white); max-width:48ch;}
+.loop-quote footer{display:block; margin-top:8px; font-style:normal; font-size:13px; color:var(--slate-light);}
+
+/* SVG in huisstijl-vormtaal — kleuren via tokens (geen losse hex) */
+.lus-line{fill:none; stroke:var(--orange); stroke-width:3; stroke-linecap:round; stroke-linejoin:round;}
+.lus-return{fill:none; stroke:var(--ink-dim); stroke-width:2; stroke-dasharray:6 8;}
+.lus-node{fill:var(--orange);}
+.lus-node-label{fill:var(--white); font-family:'Poppins',sans-serif; font-size:15px; font-weight:600;}
+.lus-sub{fill:var(--ink-dim); font-family:'Inter',sans-serif; font-size:12px;}
+.lus-return-label{fill:var(--slate-light); font-family:'Inter',sans-serif; font-size:14px;}
+.lus-arrow{fill:none; stroke:var(--orange); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round;}
+.lus-arrow-back{fill:none; stroke:var(--ink-dim); stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}
+
+/* ---------- AI per dienst ---------- */
+.aip-dienst{list-style:none; margin:34px 0 0; padding:0; border-top:1px solid var(--line);}
+.aip-dienst li{display:grid; gap:6px 28px; padding:22px 0; border-bottom:1px solid var(--line);}
+@media(min-width:760px){.aip-dienst li{grid-template-columns:minmax(0,220px) minmax(0,1fr); align-items:baseline;}}
+.aip-dienst .dn{font-family:'Poppins',sans-serif; font-weight:700; color:var(--navy-deep); font-size:17px;}
+.aip-dienst .dn::before{content:''; display:inline-block; width:9px; height:9px; margin-right:10px; background:var(--orange); clip-path:polygon(50% 0,100% 100%,0 100%);}
+.aip-dienst .wat{color:var(--slate); font-size:15px; line-height:1.6; margin:0;}
+.aip-dienst .wat b{color:var(--navy); font-weight:700;}
+
+/* ---------- data & privacy (nuchter vertrouwensblok) ---------- */
+.aip-split{display:grid; gap:40px; margin-top:24px; align-items:start;}
+@media(min-width:900px){.aip-split{grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:56px;}}
+.aip-media{border-radius:var(--radius); overflow:hidden; box-shadow:0 24px 48px -30px rgba(21,30,53,0.35);}
+.aip-media img{width:100%; height:100%; object-fit:cover; aspect-ratio:4/5;}
+.aip-media img.img-fit-contain{object-fit:contain !important; object-position:center;}
+.aip-media img.img-fit-cover{object-fit:cover !important;}
+.aip-trust{list-style:none; margin:0; padding:0;}
+.aip-trust li{padding:14px 0 14px 28px; position:relative; border-bottom:1px solid var(--line); color:var(--navy-deep); font-family:'Poppins',sans-serif; font-weight:600; font-size:15px;}
+.aip-trust li:last-child{border-bottom:0;}
+.aip-trust li::before{content:''; position:absolute; left:0; top:20px; width:10px; height:10px; background:var(--orange); clip-path:polygon(50% 0,100% 100%,0 100%);}
+.aip-trust li span{display:block; font-family:'Inter',sans-serif; font-weight:400; font-size:14px; color:var(--slate); margin-top:3px; line-height:1.55;}
+.aip-privacy-slot{margin-top:22px; font-size:13.5px; color:var(--slate-light);}
+.aip-privacy-slot a{color:var(--navy); font-weight:600;}
+.aip-privacy-slot a:hover{color:var(--orange-deep);}
+
+/* ---------- mens-tegendraad ---------- */
+.aip-mens-grid{display:grid; gap:40px; margin-top:8px; align-items:center;}
+@media(min-width:900px){.aip-mens-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:56px;}}
+.aip-mens-grid .aip-media img{aspect-ratio:4/3;}
+.aip-mens-pull{background:var(--ghost); border:1px solid var(--line); border-left:4px solid var(--orange); border-radius:0 var(--radius) var(--radius) 0; padding:24px 26px; margin-top:20px;}
+.aip-mens-pull strong{display:block; font-family:'Poppins',sans-serif; font-size:19px; color:var(--navy-deep); margin-bottom:0.4em; line-height:1.25;}
+.aip-mens-pull p{color:var(--slate); font-size:15px; margin:0; line-height:1.6;}
+.aip-lead{color:var(--slate); font-size:16px; max-width:56ch; margin-top:14px;}
+
+/* ---------- motion-guard: diagram-animatie uit bij voorkeur ----------
+   (styles.css schakelt animaties al globaal uit onder reduced-motion;
+    dit blok is de expliciete diagram-garantie.) */
+@media (prefers-reduced-motion: reduce){
+  .datalus svg *{animation:none !important;}
+}

@@ -1,0 +1,553 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Marketing
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Marketing\",\n      \"serviceType\":\"Websites, SEA, SEO/GEO, social ads & e-mailmarketing\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/marketing\",\n      \"description\":\"De bovenkant van je commerciële motor: websites, SEA, SEO/GEO, social ads en e-mail op één datalaag, aangestuurd via ons eigen AI-platform. Marketing levert geen losse leads af, maar voedt rechtstreeks sales, training en consultants op dezelfde data.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Marketing\",\"item\":\"https://www.salesup.be/marketing\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarin verschilt dit van een klassiek marketingbureau?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze marketing is de bovenkant van je commerciële motor, geen losstaande campagne. Websites, SEA, SEO/GEO, social ads en e-mail draaien op één datalaag via ons eigen AI-platform. De leads die eruit komen, verdwijnen niet in een rapport: ze gaan rechtstreeks naar ons Sales Contact Center dat ze binnen 30 minuten opvolgt, en de gespreksdata stroomt terug om je campagnes scherper te richten. Zo voedt marketing rechtstreeks je sales, training en consultants op dezelfde data — de datalus die een los bureau niet kan sluiten.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Moet ik alle vijf de disciplines afnemen?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. Website, SEA, SEO/GEO, social ads en e-mail zijn los te boeken; je start waar je vandaag het meeste rendement mist. Ze werken wel sterker samen omdat ze op dezelfde datalaag draaien: wat een zoekwoordcampagne leert, stuurt je website en je e-mails mee aan. Voor UNIZO combineerden we een LinkedIn- en multichannel-outbound funnel tot 385 adviesgesprekken op vijf maanden.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe meten jullie?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je krijgt zelf toegang tot het AI-platform achter je campagnes: live dashboards, automatisch gegenereerde maandrapportages en concrete aanbevelingen die je zelf goedkeurt. Geen zwarte doos, geen powerpoint achteraf. Elke keuze is onderbouwd met data, en omdat de leads doorstromen naar ons Sales Contact Center meten we niet alleen kliks, maar wat een campagne uiteindelijk opbrengt aan conversie en pipeline.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe snel kunnen we starten en hoe verloopt een RFP?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je start met een strategiegesprek van een half uur, telefonisch of bij jou op kantoor. Daarna krijg je een voorstel met doelstellingen, kanaalkeuze en volledige prijszetting; wat erin staat, is wat je betaalt. Werk je met een RFP of RFI, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt dat het dossier tot de gunning opvolgt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/marketing",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Marketing",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+        <!-- INTERIM: set heeft geen echt campagne-/marketingbeeld; dichtstbijzijnde is overleg-op-laptop -->
+        <!-- VERIFIEER: functie niet op de brontpagina vermeld -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Marketing",
+          heading="Marketing die je zelf kan <em>controleren</em>, niet enkel afwachten.",
+          subtext="<p>Websites, SEA, SEO/GEO, social ads en e-mail — vijf disciplines op één datalaag, aangestuurd via ons eigen AI-platform. Dit is de bovenkant van je commerciële motor: geen losse leads die in een rapport verdwijnen, maar leads die rechtstreeks naar sales stromen en binnen 30 minuten gebeld worden.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo werkt de datalus",
+          cta2_url={
+              "url": {
+                "href": "#platform",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Eén datalaag"
+              },
+              {
+                "link_label": "Eigen AI-platform"
+              },
+              {
+                "link_label": "Voedt je sales"
+              },
+              {
+                "link_label": "Data-gedreven, geen buikgevoel"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij UNIZO",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Rectangle%2058.jpg",
+              "alt": "Twee salesUp-collega's bekijken samen een campagne op een laptop."
+            },
+          trustcard_badge="",
+          trustcard_stat="385",
+          trustcard_label="Succesvolle adviesgesprekken ingepland op vijf maanden voor UNIZO, via een LinkedIn- en multichannel-outbound funnel — met 80% hogere responsgraad dan 'spammy' content.",
+          trustcard_quote="\"De resultaten van de outbound funnel overstegen onze verwachtingen. Mensen werden op een laagdrempelige manier gecontacteerd, waardoor we gemiddeld 20 ingevulde scans per week kregen.\"",
+          trustcard_quote_who="— <strong>Nele Creuwels</strong>, UNIZO <!-- VERIFIEER: functie niet op de brontpagina vermeld -->"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met onze marketing werken",
+          eyebrow="Bedrijven die met onze marketing werken",
+          logos=[
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              },
+              {
+                "naam": "Hivolta",
+                "slug": ""
+              },
+              {
+                "naam": "Jaguar Land Rover",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/subservices",
+          anchor="subdiensten",
+          eyebrow="De onderdelen",
+          heading="Vijf disciplines, elk met een eigen pagina.",
+          intro="",
+          kaarten=[
+              {
+                "title": "Website",
+                "desc": "<p>Conversiegerichte sites die leads opleveren, niet enkel mooi ogen — de basis waar elk ander kanaal op landt.</p>",
+                "url": {
+                  "url": {
+                    "href": "/website",
+                    "type": "CONTENT", "content_id": 453268311272
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "SEA",
+                "desc": "<p>Betaalde zoekcampagnes op Google en Bing, meetbaar op gekwalificeerde aanvragen. Voor Hivolta 75 aanvragen in één kwartaal.</p>",
+                "url": {
+                  "url": {
+                    "href": "/sea",
+                    "type": "CONTENT", "content_id": 453268178164
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "SEO/GEO",
+                "desc": "<p>Organische én AI-vindbaarheid: gevonden worden in Google én in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews.</p>",
+                "url": {
+                  "url": {
+                    "href": "/seo-geo",
+                    "type": "CONTENT", "content_id": 453268282562
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "Social ads",
+                "desc": "<p>Betaalde campagnes op Meta, LinkedIn en TikTok, gericht op gekwalificeerde leads. Voor Jaguar Land Rover mee goed voor 154 leads.</p>",
+                "url": {
+                  "url": {
+                    "href": "/social-ads",
+                    "type": "CONTENT", "content_id": 453268282609
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "E-mail",
+                "desc": "<p>Flows en nurturing die leads warm houden tot ze koopklaar zijn — de juiste boodschap op het juiste moment, geen massamail.</p>",
+                "url": {
+                  "url": {
+                    "href": "/email",
+                    "type": "CONTENT", "content_id": 453268161744
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="disciplines",
+          eyebrow="Vijf disciplines, één datalaag",
+          heading="Alles om gevonden, gekozen en gecontacteerd te worden.",
+          intro="<p>Elke discipline is los te boeken, maar draait op dezelfde data — geen losse rapportjes die elkaar tegenspreken. Wat de ene leert, stuurt de andere aan.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Website",
+                "tekst": "<p>Sites die niet enkel mooi zijn, maar gebouwd zijn om te converteren — van eerste bezoek tot ingevulde afspraak. De basis waar elk ander kanaal op landt.</p>"
+              },
+              {
+                "title": "SEA",
+                "tekst": "<p>Zoekwoordcampagnes op Google en Bing, continu bijgestuurd op resultaat en niet op gevoel. Voor Hivolta leverde dat 75 aanvragen op in één kwartaal.</p>"
+              },
+              {
+                "title": "SEO/GEO",
+                "tekst": "<p>Vindbaarheid in klassieke zoekresultaten én in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews — zodat je gevonden wordt waar je klant vandaag zoekt.</p>"
+              },
+              {
+                "title": "Social ads",
+                "tekst": "<p>Advertenties op Meta, LinkedIn en TikTok, telkens on-brand en getest op wat écht klikt. Voor Jaguar Land Rover mee goed voor 154 gekwalificeerde leads.</p>"
+              },
+              {
+                "title": "E-mail",
+                "tekst": "<p>Nieuwsbrieven per segment, met de juiste boodschap op het juiste moment voor de juiste doelgroep — nurturing die leads warm houdt tot ze klaar zijn voor het gesprek.</p>"
+              },
+              {
+                "title": "Eén datalaag",
+                "tekst": "<p>Alle vijf de disciplines draaien op dezelfde data. Dat is de bovenkant van de commerciële motor: de leads gaan rechtstreeks door naar sales, de gespreksdata komt terug om je campagnes te richten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload man-desk-thinking.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/ai-differentiator",
+          anchor="platform",
+          eyebrow="De datalus",
+          heading="Geen zwarte doos. Je stuurt zelf mee.",
+          intro="Onze marketing draait op ons eigen AI-platform — geen bureau dat achteraf een powerpoint komt tonen. Je krijgt zelf toegang: live dashboards, automatische maandrapportages en aanbevelingen die je zelf goedkeurt. En omdat marketing de bovenkant van dezelfde motor is, stromen de leads rechtstreeks door naar sales en komt hun gespreksdata terug om je campagnes scherper te richten. Dat is de datalus die een los bureau niet kan sluiten.",
+          points=[
+              {
+                "num": "01",
+                "text": "<p><strong>Eigen AI-agencyplatform</strong> — live dashboards en automatische rapportages, geen zwarte doos en geen powerpoint achteraf.</p>"
+              },
+              {
+                "num": "02",
+                "text": "<p><strong>Eén datalaag over vijf disciplines</strong> — website, SEA, SEO/GEO, social ads en e-mail spreken elkaar niet tegen.</p>"
+              },
+              {
+                "num": "03",
+                "text": "<p><strong>Leads rechtstreeks naar sales</strong> — wat de campagnes opleveren, belt ons Sales Contact Center binnen 30 minuten op.</p>"
+              },
+              {
+                "num": "04",
+                "text": "<p><strong>Gespreksdata terug naar marketing</strong> — wat werkt aan de lijn, richt de volgende campagne; wat hapert, wordt getraind via salesUp Academy.</p>"
+              },
+              {
+                "num": "05",
+                "text": "<p><strong>Aanbevelingen die jij goedkeurt</strong> — de AI meet en stelt voor; jij houdt de knop in handen.</p>"
+              }
+            ],
+          image={
+              "src": "https://salesup.be/hubfs/Rectangle%2060.jpg",
+              "alt": "Salesmanager kijkt naar de resultaten van een marketingcampagne op zijn scherm."
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van strategiegesprek tot leads in je pipeline.",
+          intro="<p>We spreken in een half uur af wat je nodig hebt: meer aanvragen, betere vindbaarheid, of een site die eindelijk converteert. Het doel bepaalt de kanaalkeuze, niet omgekeerd.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Intake & doel afstemmen",
+                "tekst": "<p>We spreken in een half uur af wat je nodig hebt: meer aanvragen, betere vindbaarheid, of een site die eindelijk converteert. Het doel bepaalt de kanaalkeuze, niet omgekeerd.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Strategie & kanaalkeuze",
+                "tekst": "<p>We kiezen data-gedreven welke van de vijf disciplines het meeste rendement geven en zetten ze op één datalaag, zodat ze elkaar versterken.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Bouwen & lanceren",
+                "tekst": "<p>Website, campagnes, content en e-mailflows gaan live — on-brand en getest op wat écht werkt, niet op buikgevoel.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Meten, doorgeven & bijsturen",
+                "tekst": "<p>Je volgt alles live in het platform. De leads gaan door naar sales voor opvolging binnen 30 minuten; hun gespreksdata komt terug en stuurt de volgende campagne bij.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat marketingverantwoordelijken ons vragen.",
+          intro="<p>De vragen die marketing- en commercieel verantwoordelijken ons het vaakst stellen over onze aanpak.</p>",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Waarin verschilt dit van een klassiek marketingbureau?",
+                "answer": "<p>Onze marketing is de bovenkant van je commerciële motor, geen losstaande campagne. Websites, SEA, SEO/GEO, social ads en e-mail draaien op één datalaag via ons eigen AI-platform. De leads die eruit komen, verdwijnen niet in een rapport: ze gaan rechtstreeks naar ons Sales Contact Center dat ze binnen 30 minuten opvolgt, en de gespreksdata stroomt terug om je campagnes scherper te richten. Zo voedt marketing rechtstreeks je sales, training en consultants op dezelfde data — de datalus die een los bureau niet kan sluiten.</p>"
+              },
+              {
+                "question": "Moet ik alle vijf de disciplines afnemen?",
+                "answer": "<p>Nee. Website, SEA, SEO/GEO, social ads en e-mail zijn los te boeken; je start waar je vandaag het meeste rendement mist. Ze werken wel sterker samen omdat ze op dezelfde datalaag draaien: wat een zoekwoordcampagne leert, stuurt je website en je e-mails mee aan. Voor UNIZO combineerden we een LinkedIn- en multichannel-outbound funnel tot 385 adviesgesprekken op vijf maanden.</p>"
+              },
+              {
+                "question": "Hoe meten jullie?",
+                "answer": "<p>Je krijgt zelf toegang tot het AI-platform achter je campagnes: live dashboards, automatisch gegenereerde maandrapportages en concrete aanbevelingen die je zelf goedkeurt. Geen zwarte doos, geen powerpoint achteraf. Elke keuze is onderbouwd met data, en omdat de leads doorstromen naar ons Sales Contact Center meten we niet alleen kliks, maar wat een campagne uiteindelijk opbrengt aan conversie en pipeline.</p>"
+              },
+              {
+                "question": "Hoe snel kunnen we starten en hoe verloopt een RFP?",
+                "answer": "<p>Je start met een strategiegesprek van een half uur, telefonisch of bij jou op kantoor. Daarna krijg je een voorstel met doelstellingen, kanaalkeuze en volledige prijszetting; wat erin staat, is wat je betaalt. Werk je met een RFP of RFI, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt dat het dossier tot de gunning opvolgt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: dienstpagina nog te bouwen -->
+            {% dnd_module
+          path="../modules/crosssell",
+          eyebrow="Werkt sterker samen met",
+          heading="Los te boeken. Maar scherper in combinatie.",
+          cross_rows=[
+              {
+                "idx": "01",
+                "naam": "Sales Contact Center",
+                "desc": "Het verkoopkanaal dat de leads uit je marketing binnen 30 minuten belt — elk gesprek gescoord op kwaliteit en koopkans.",
+                "url": {
+                  "url": {
+                    "href": "/sales-contact-center",
+                    "type": "CONTENT", "content_id": 453268175089
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "02",
+                "naam": "Face2Face Sales",
+                "desc": "Face-to-face werving en verkoop in het veld, omnichannel opgevolgd tot in het CRM.",
+                "url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "03",
+                "naam": "Training",
+                "desc": "AI-gesprekanalyse, AI-avatar training en fysieke bijsturing via salesUp Academy, gekoppeld aan omzetimpact.",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "04",
+                "naam": "Sales Consultants",
+                "desc": "Ervaren sales consultants op onze payroll, gedetacheerd bij jouw team op dagtarief.",
+                "url": {
+                  "url": {
+                    "href": "/sales-consultants",
+                    "type": "CONTENT", "content_id": 453268196580
+                  }
+                },
+                "cta": "Bekijk dienst"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/soft-cta",
+          aria="Vraag een gratis GEO-check aan",
+          sc_eyebrow="Gratis GEO-check",
+          heading="Word jij nog gevonden in het tijdperk van AI-zoekopdrachten?",
+          tekst="<p>We checken gratis hoe goed je content scoort in Google én in AI-antwoorden (GEO) — en waar je snel wint. Je krijgt een concreet lijstje actiepunten terug.</p>",
+          veldenset={
+              "naam": true,
+              "email": true,
+              "telefoon": false,
+              "website": true
+            },
+          link_label="Vraag je GEO-check aan",
+          note="Vrijblijvend — je krijgt meteen bruikbare inzichten.",
+          navy=false,
+          form={
+              "form_id": "79c85a00-56e9-4014-be21-cb8af40feb9d",
+              "response_type": "inline",
+              "message": "Bedankt. We bellen je binnen 30 minuten terug."
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw pipeline aan de bron in beweging.",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van waar in je marketing het meeste rendement blijft liggen. Wij bellen je binnen 30 minuten terug.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Website",
+                "url": {
+                  "url": {
+                    "href": "/website",
+                    "type": "CONTENT", "content_id": 453268311272
+                  }
+                }
+              },
+              {
+                "link_label": "SEA",
+                "url": {
+                  "url": {
+                    "href": "/sea",
+                    "type": "CONTENT", "content_id": 453268178164
+                  }
+                }
+              },
+              {
+                "link_label": "SEO/GEO",
+                "url": {
+                  "url": {
+                    "href": "/seo-geo",
+                    "type": "CONTENT", "content_id": 453268282562
+                  }
+                }
+              },
+              {
+                "link_label": "Social ads",
+                "url": {
+                  "url": {
+                    "href": "/social-ads",
+                    "type": "CONTENT", "content_id": 453268282609
+                  }
+                }
+              },
+              {
+                "link_label": "E-mail",
+                "url": {
+                  "url": {
+                    "href": "/email",
+                    "type": "CONTENT", "content_id": 453268161744
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

@@ -1,0 +1,514 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Sales Contact Center
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Sales Contact Center\",\n      \"serviceType\":\"Outbound sales, telesales & afsprakenplanning\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/sales-contact-center\",\n      \"description\":\"Een contact center dat verkoopt, géén klantendienst: outbound sales, telesales en warme opvolging binnen 30 minuten, met elk gesprek automatisch gescoord op kwaliteit en koopkans.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Contact Center\",\"item\":\"https://www.salesup.be/sales-contact-center\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarin verschilt dit van een klassiek callcenter?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ons Sales Contact Center is een verkoopkanaal, geen klantendienst. We bellen om te verkopen: outbound sales, conversie en warme opvolging van leads. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van de mensen aan de lijn. Je rekent ons af op conversie tegenover een vooraf afgesproken doelstelling, niet op belvolume of gespreksduur. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat kost het?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De prijs hangt af van de schaal en het doel, maar het principe is altijd hetzelfde: 100% kostentransparantie. Je krijgt de volledige prijszetting vooraf, zonder verborgen kosten achteraf, en de wekelijkse rapportering toont wat elk beluur opbrengt. Zo lees je zwart op wit wat je per euro terugkrijgt in conversie en pipeline.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe meten jullie?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We spreken vooraf een doelstelling af en rapporteren de conversie daartegenover, per gesprek en niet per belminuut. Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans; die opportunity- en objection-scores sturen de opvolging en de ontwikkeling van het team via ons trainingsplatform salesUp Academy. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, en externe audits zoals de Orange Europe-audit toetsen ons werk onafhankelijk.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe verloopt een RFP of RFI?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Je start met een strategiegesprek van een half uur, telefonisch of bij jou op kantoor. Daarna krijg je een voorstel met doelstellingen, aanpak en volledige prijszetting; wat erin staat, is wat je betaalt. Werk je met een RFP of RFI, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt dat het dossier tot de gunning opvolgt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/sales-contact-center",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Contact Center",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-woman-headset.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Sales Contact Center",
+          heading="Een contact center dat <em>verkoopt</em>, géén klantendienst.",
+          subtext="<p>Wij bellen om te verkopen: outbound sales, telesales en warme opvolging van je leads binnen 30 minuten. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans — en je rekent ons af op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo scoren we elk gesprek",
+          cta2_url={
+              "url": {
+                "href": "#ai",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Elk gesprek gescoord"
+              },
+              {
+                "link_label": "Opvolging < 30 min"
+              },
+              {
+                "link_label": "Conversie vs. doel"
+              },
+              {
+                "link_label": "Wekelijkse rapportering"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Orange",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Untitled%20design.png",
+              "alt": "Medewerker van het salesUp Sales Contact Center met headset in een verkoopgesprek, collega op de achtergrond."
+            },
+          trustcard_badge="",
+          trustcard_stat="91<em>%</em>",
+          trustcard_label="Auditscore van ons Sales Contact Center-team bij Orange — de hoogste score van Europa in de Orange Europe-audit.",
+          trustcard_quote="\"Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.\"",
+          trustcard_quote_who="— <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met ons Sales Contact Center werken",
+          eyebrow="Bedrijven die met ons Sales Contact Center werken",
+          logos=[
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "Geodis",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "VM Building",
+                "slug": ""
+              },
+              {
+                "naam": "Upgrade Estate",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/subservices",
+          anchor="subdiensten",
+          eyebrow="De kanalen",
+          heading="Drie manieren waarop we voor je bellen.",
+          intro="",
+          kaarten=[
+              {
+                "title": "Telesales",
+                "desc": "<p>We sluiten de verkoop af tijdens het gesprek zelf — elk gesprek gescoord op kwaliteit en koopkans, afgerekend op conversie tegenover je doel.</p>",
+                "url": {
+                  "url": {
+                    "href": "/telesales",
+                    "type": "CONTENT", "content_id": 453268307183
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "Telefonische prospectie & afspraakplanning",
+                "desc": "<p>Kwalitatieve afspraken rechtstreeks in de agenda van je vertegenwoordiger, via warme en koude telefonische prospectie.</p>",
+                "url": {
+                  "url": {
+                    "href": "/afspraakplanning",
+                    "type": "CONTENT", "content_id": 453268356322
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              },
+              {
+                "title": "After sales & heractivatie",
+                "desc": "<p>Heractivatie van slapende klanten, upsell, cross-sell en winback via de telefoon — extra omzet uit je bestaande klantenbestand.</p>",
+                "url": {
+                  "url": {
+                    "href": "/after-sales",
+                    "type": "CONTENT", "content_id": 453268358390
+                  }
+                },
+                "cta": "Bekijk →",
+                "proposed": false,
+                "tag": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het oplevert",
+          heading="Verkoop, geen belminuten.",
+          intro="<p>Een klassiek callcenter meet gespreksduur en bereik. Wij meten wat je eraan verdient. Elk gesprek is een stap naar de deal — via telesales of via telefonische prospectie &amp; afsprakenplanning.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Outbound sales & conversie",
+                "tekst": "<p>We prospecteren, kwalificeren en sluiten. Elk gesprek is gericht op de volgende stap in jouw verkoop — een afspraak, een offerte, een order — en niet op belvolume. Zo haalde Van Heurck 26,28% conversie, tegenover een doel van 10%.</p>"
+              },
+              {
+                "title": "Warme opvolging binnen 30 minuten",
+                "tekst": "<p>Een lead die binnen 30 minuten gebeld wordt, is nog warm. We volgen je leads op en kwalificeren ze volgens BANT — budget, autoriteit, behoefte en timing — zodat je verkopers alleen dossiers krijgen die klaar zijn voor het gesprek.</p>"
+              },
+              {
+                "title": "Telesales & afsprakenplanning",
+                "tekst": "<p>Twee kanalen, één kwaliteitsbewaking. Telesales sluit de verkoop af tijdens het gesprek zelf; telefonische prospectie &amp; afsprakenplanning zet kwalitatieve afspraken rechtstreeks in de agenda van jouw vertegenwoordiger.</p>"
+              },
+              {
+                "title": "Relatiegericht & meetbaar per gesprek",
+                "tekst": "<p>We verkopen door te luisteren, niet door te pushen. Elk gesprek wordt gescoord op kwaliteit én koopkans, dus je ziet per gesprek wat werkt. Je rekent ons af op conversie tegenover een vooraf afgesproken doel, niet op belminuten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-woman-desk.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/ai-differentiator",
+          anchor="ai",
+          eyebrow="De AI-differentiator",
+          heading="Elk gesprek automatisch gescoord.",
+          intro="Onze platformen zijn eigen bouw. Ze meten wat er in elk gesprek gebeurt en signaleren waar omzet zit. De gespreksscores stromen door naar ons trainingsplatform salesUp Academy, dat de mensen aan de lijn scherper maakt — de datalus die geen concurrent kan sluiten. De AI meet en signaleert; de mens verkoopt.",
+          points=[
+              {
+                "num": "01",
+                "text": "<p><strong>Automated quality monitoring</strong> — elk gesprek gescoord op kwaliteit en koopkans, geen steekproef achteraf.</p>"
+              },
+              {
+                "num": "02",
+                "text": "<p><strong>Opportunity score</strong> — de warmste dossiers worden als eerste opgevolgd, zodat geen kans blijft liggen.</p>"
+              },
+              {
+                "num": "03",
+                "text": "<p><strong>Objection-detectie</strong> — terugkerende bezwaren worden herkend, zodat script en aanbod meebewegen.</p>"
+              },
+              {
+                "num": "04",
+                "text": "<p><strong>Live bijsturing tijdens het gesprek</strong> — de medewerker krijgt suggesties terwijl hij belt; de coach zit mee aan de lijn.</p>"
+              },
+              {
+                "num": "05",
+                "text": "<p><strong>Data gekoppeld aan salesUp Academy</strong> — wie waar hapert, wordt daar getraind.</p>"
+              }
+            ],
+          image={
+              "src": "https://salesup.be/hubfs/Rectangle%2058.jpg",
+              "alt": "salesUp-medewerker bekijkt de gespreksscores van een belsessie op een scherm."
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van doelstelling tot afgerekend resultaat.",
+          intro="<p>We spreken vooraf een doelstelling af en bouwen het gesprek rond jouw aanbod, prijszetting en objectiehandling.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Doel & script afstemmen",
+                "tekst": "<p>We spreken vooraf een doelstelling af en bouwen het gesprek rond jouw aanbod, prijszetting en objectiehandling.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Bellen & kwalificeren",
+                "tekst": "<p>Een dedicated team met vaste salescoach belt, verkoopt of plant afspraken en kwalificeert elke lead volgens BANT.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Elk gesprek gescoord & opgevolgd",
+                "tekst": "<p>Onze eigen software scoort elk gesprek op kwaliteit en koopkans; de warmste dossiers worden binnen 30 minuten opgevolgd.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Wekelijks rapporteren & bijsturen",
+                "tekst": "<p>Je krijgt een wekelijkse rapportering die toont wat elk beluur opbrengt — conversie, pipeline en gesprekskwaliteit — met 100% kostentransparantie.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat commercieel directeurs ons vragen.",
+          intro="<p>De vragen die commercieel directeurs en hun inkoop ons het vaakst stellen over het Sales Contact Center.</p>",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Waarin verschilt dit van een klassiek callcenter?",
+                "answer": "<p>Ons Sales Contact Center is een verkoopkanaal, geen klantendienst. We bellen om te verkopen: outbound sales, conversie en warme opvolging van leads. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van de mensen aan de lijn. Je rekent ons af op conversie tegenover een vooraf afgesproken doelstelling, niet op belvolume of gespreksduur. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.</p>"
+              },
+              {
+                "question": "Wat kost het?",
+                "answer": "<p>De prijs hangt af van de schaal en het doel, maar het principe is altijd hetzelfde: 100% kostentransparantie. Je krijgt de volledige prijszetting vooraf, zonder verborgen kosten achteraf, en de wekelijkse rapportering toont wat elk beluur opbrengt. Zo lees je zwart op wit wat je per euro terugkrijgt in conversie en pipeline.</p>"
+              },
+              {
+                "question": "Hoe meten jullie?",
+                "answer": "<p>We spreken vooraf een doelstelling af en rapporteren de conversie daartegenover, per gesprek en niet per belminuut. Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans; die opportunity- en objection-scores sturen de opvolging en de ontwikkeling van het team via ons trainingsplatform salesUp Academy. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, en externe audits zoals de Orange Europe-audit toetsen ons werk onafhankelijk.</p>"
+              },
+              {
+                "question": "Hoe verloopt een RFP of RFI?",
+                "answer": "<p>Je start met een strategiegesprek van een half uur, telefonisch of bij jou op kantoor. Daarna krijg je een voorstel met doelstellingen, aanpak en volledige prijszetting; wat erin staat, is wat je betaalt. Werk je met een RFP of RFI, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt dat het dossier tot de gunning opvolgt.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: nog te bouwen -->
+            {% dnd_module
+          path="../modules/crosssell",
+          eyebrow="Werkt sterker samen met",
+          heading="Los te boeken. Maar scherper in combinatie.",
+          cross_rows=[
+              {
+                "idx": "01",
+                "naam": "Marketing",
+                "desc": "Websites, SEA, SEO/GEO, social ads en e-mail — data-gedreven via ons eigen AI-platform. Levert de leads die dit contact center binnen 30 minuten belt.",
+                "url": {
+                  "url": {
+                    "href": "/marketing",
+                    "type": "CONTENT", "content_id": 453268170965
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "02",
+                "naam": "Face2Face Sales",
+                "desc": "Face-to-face werving en verkoop in het veld, omnichannel opgevolgd tot in het CRM.",
+                "url": {
+                  "url": {
+                    "href": "/face2face-sales",
+                    "type": "CONTENT", "content_id": 453268189404
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "03",
+                "naam": "Training",
+                "desc": "AI-gesprekanalyse, AI-avatar training en fysieke bijsturing via salesUp Academy, gekoppeld aan omzetimpact.",
+                "url": {
+                  "url": {
+                    "href": "/training",
+                    "type": "CONTENT", "content_id": 453268285669
+                  }
+                },
+                "cta": "Bekijk dienst"
+              },
+              {
+                "idx": "04",
+                "naam": "Sales Consultants",
+                "desc": "Ervaren sales consultants op onze payroll, gedetacheerd bij jouw team op dagtarief.",
+                "url": {
+                  "url": {
+                    "href": "/sales-consultants",
+                    "type": "CONTENT", "content_id": 453268196580
+                  }
+                },
+                "cta": "Bekijk dienst"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/soft-cta",
+          aria="Vraag een gratis sales-scan aan",
+          sc_eyebrow="Gratis sales-scan",
+          heading="Waar laat jouw commerciële motor rendement liggen?",
+          tekst="<p>In 20 minuten brengen we samen je grootste hefbomen in kaart — van prospectie tot opvolging. Concreet, vrijblijvend en meteen bruikbaar.</p>",
+          veldenset={
+              "naam": true,
+              "email": true,
+              "telefoon": true,
+              "website": false
+            },
+          link_label="Vraag je sales-scan aan",
+          note="Vrijblijvend — je zit nergens aan vast.",
+          navy=false,
+          form={
+              "form_id": "79c85a00-56e9-4014-be21-cb8af40feb9d",
+              "response_type": "inline",
+              "message": "Bedankt. We bellen je binnen 30 minuten terug."
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw conversie hier volgend jaar tussen.",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Telesales",
+                "url": {
+                  "url": {
+                    "href": "/telesales",
+                    "type": "CONTENT", "content_id": 453268307183
+                  }
+                }
+              },
+              {
+                "link_label": "Telefonische prospectie & afspraakplanning",
+                "url": {
+                  "url": {
+                    "href": "/afspraakplanning",
+                    "type": "CONTENT", "content_id": 453268356322
+                  }
+                }
+              },
+              {
+                "link_label": "After sales & heractivatie",
+                "url": {
+                  "url": {
+                    "href": "/after-sales",
+                    "type": "CONTENT", "content_id": 453268358390
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

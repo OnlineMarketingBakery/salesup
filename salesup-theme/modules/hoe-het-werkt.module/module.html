@@ -1,0 +1,20 @@
+{% if module.heading %}
+<section class="vac-split wrap" id="{{ module.anchor }}" aria-labelledby="{{ module.anchor }}-titel">
+  <div class="vac-split-grid">
+    <div>
+      {% if module.eyebrow %}<span class="mono" style="color:var(--orange);display:block;margin-bottom:14px;">{{ module.eyebrow }}</span>{% endif %}
+      <h2 id="{{ module.anchor }}-titel">{{ module.heading }}</h2>
+      {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+      <ul class="vac-check">
+        {% for item in module.checklist %}
+        <li>{{ item.text }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <figure>
+      <div class="vac-split-media"><img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if module.media.src %}{{ module.media.src }}{% else %}https://salesup.be/hubfs/Rectangle%2058.jpg{% endif %}" alt="{{ module.media.alt }}" loading="lazy" decoding="async"></div>
+      {% if module.caption %}<figcaption>{{ module.caption }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+{% endif %}

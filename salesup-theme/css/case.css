@@ -1,0 +1,93 @@
+/* =====================================================================
+   salesUp — Case-detailpagina (pagina-specifieke laag)
+   Wordt NÁ styles.css (en blog.css/cases.css) geladen. Wijzigt styles.css
+   niet; hergebruikt uitsluitend de gedeelde tokens (--orange, --navy,
+   --ghost, --line, --radius, --grad-navy, ...) en dezelfde visuele taal.
+   Nieuw hier: case-hero + kerncijfer-strook + uitgelichte klant-quote +
+   verwante-cases-grid.
+   ===================================================================== */
+
+/* ---------- CASE-HERO ---------- */
+.case-hero{padding:34px 0 8px;}
+.case-hero-logo{
+  display:block; height:56px; width:auto; max-width:220px; object-fit:contain;
+  margin:0 0 22px;
+}
+.case-hero .eyebrow{margin-bottom:18px;}
+.case-hero h1{
+  font-family:'Poppins',sans-serif; font-weight:700;
+  font-size:clamp(1.9rem,4vw,3rem); line-height:1.08; letter-spacing:-0.02em;
+  color:var(--navy-deep); max-width:20ch;
+}
+.case-hero .case-sub{
+  color:var(--slate); font-size:17px; line-height:1.6; max-width:60ch; margin-top:18px;
+}
+.case-hero .case-meta{
+  display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; padding:0; list-style:none;
+}
+.case-hero .case-meta li{
+  font-family:'Poppins',sans-serif; font-weight:600; font-size:11px; letter-spacing:0.04em;
+  text-transform:uppercase; color:var(--navy);
+  background:var(--ghost); border:1px solid var(--line); border-radius:100px; padding:6px 13px;
+}
+
+/* ---------- KERNCIJFER-STROOK ---------- */
+.stat-strook{
+  display:grid; gap:1px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  background:var(--line); border:1px solid var(--line); border-radius:var(--radius);
+  overflow:hidden; margin:30px 0 8px;
+}
+.stat-strook .stat-item{background:var(--white); padding:24px 26px;}
+.stat-strook .stat-num{
+  display:block; font-family:'Poppins',sans-serif; font-weight:900;
+  color:var(--navy-deep); line-height:0.95; letter-spacing:-0.03em;
+  font-variant-numeric:tabular-nums; font-size:clamp(2rem,3.4vw,2.7rem);
+  overflow-wrap:break-word;
+}
+.stat-strook .stat-label{
+  display:block; font-size:13px; font-weight:500; color:var(--slate); margin-top:10px; line-height:1.5;
+}
+
+/* ---------- UITGELICHTE KLANT-QUOTE ---------- */
+.case-quote{padding:8px 0 8px;}
+.case-quote .quote-card{
+  background:var(--grad-navy); border-radius:var(--radius);
+  padding:clamp(30px,4vw,48px) clamp(26px,4vw,52px); color:var(--white);
+  max-width:1000px; margin:0 auto;
+}
+.case-quote .quote-card p{
+  font-family:'Poppins',sans-serif; font-weight:600;
+  font-size:clamp(1.15rem,2vw,1.5rem); line-height:1.4; color:var(--white); margin:0;
+}
+.case-quote .quote-card footer{
+  margin-top:20px; font-size:14px; color:var(--ink-dim);
+}
+.case-quote .quote-card footer strong{color:var(--orange); font-weight:700;}
+
+/* ---------- VERWANTE CASES ---------- */
+.case-related{padding:clamp(48px,7vw,80px) 0 8px;}
+.case-related .related-grid{
+  display:grid; gap:22px; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); margin-top:26px;
+}
+.related-card{
+  display:flex; flex-direction:column; gap:8px;
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  padding:24px 24px 26px; color:inherit;
+  transition:border-color .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+a.related-card:hover{border-color:var(--orange); transform:translateY(-3px); box-shadow:0 22px 44px -30px rgba(21,30,53,.45);}
+.related-card .r-sector{
+  font-family:'Poppins',sans-serif; font-weight:600; font-size:11px; letter-spacing:0.08em;
+  text-transform:uppercase; color:var(--slate-light);
+}
+.related-card h3{font-family:'Poppins',sans-serif; font-weight:700; font-size:1.15rem; color:var(--navy-deep); margin:0;}
+.related-card .r-stat{font-size:13.5px; color:var(--slate); line-height:1.5; flex:1;}
+.related-card .go{
+  font-family:'Poppins',sans-serif; font-weight:600; font-size:13px; color:var(--navy-deep);
+  display:inline-flex; align-items:center; gap:8px;
+}
+.related-card .go .arrow{color:var(--orange);}
+
+/* Body: hergebruik .article + .article-body uit blog.css.
+   Kleine correctie: geen article-hero-beeld op case-detail. */
+.case-body.article{padding-top:22px;}

@@ -1,0 +1,92 @@
+{% macro resolve_href(link, fallback='/contact') -%}
+{%- set href = link.url.href if link and link.url else '' -%}
+{%- if link and link.url and link.url.content_id and (not href or href == '#' or href == '#contact') -%}
+  {%- set page = content_by_id(link.url.content_id) -%}
+  {%- set href = page.absolute_url if page and page.absolute_url else fallback -%}
+{%- endif -%}
+{%- if href == '#contact' or not href or href == '#' -%}
+  {%- set page = content_by_id(453268184310) -%}
+  {{- page.absolute_url if page and page.absolute_url else fallback -}}
+{%- else -%}
+  {{- href -}}
+{%- endif -%}
+{%- endmacro %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
+      {% if module.heading %}<h1>{{ module.heading }}</h1>{% endif %}
+      {% if module.subtext %}<div class="hero-sub">{{ module.subtext }}</div>{% endif %}
+      {% if module.cta1_text or module.cta2_text %}
+      <div class="hero-cta">
+        {% if module.cta1_text %}
+          {% set cta1 = module.cta1_url.url.href if module.cta1_url and module.cta1_url.url else '' %}
+          {% if cta1 == '#contact' or ((not cta1 or cta1 == '#') and ('gesprek' in module.cta1_text|lower or 'contact' in module.cta1_text|lower)) %}
+            {% set cta1 = resolve_href(module.cta1_url, '/contact') %}
+          {% elif not cta1 or cta1 == '#' %}
+            {% if 'vacature' in module.cta1_text|lower %}{% set cta1 = '#vacatures' %}{% else %}{% set cta1 = resolve_href(module.cta1_url, '/contact') %}{% endif %}
+          {% endif %}
+          <a href="{{ cta1 }}" class="btn">{{ module.cta1_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        {% endif %}
+        {% if module.cta2_text %}<a href="{{ module.cta2_url.url.href|default('#') }}" class="btn ghost">{{ module.cta2_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+      </div>
+      {% endif %}
+      {% if module.terugbelnote %}<p class="hero-note{% if module.note_energie %} vac-energie{% endif %}">{{ module.terugbelnote }}</p>{% endif %}
+      {% if module.chips %}
+      <ul class="stat-chips">
+        {% for c in module.chips %}<li><span class="chip">{{ c.link_label }}</span></li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if module.trust_chips %}
+      <ul class="stat-chips trust-chips" aria-label="{{ module.trust_aria|default('Erkenningen en reviews') }}">
+        {% for c in module.trust_chips %}<li><span class="chip">{{ c.link_label }}</span></li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+
+    {% set img_meeting = "https://salesup.be/hubfs/Group%20201-2.png" %}
+    {% set img_team = "https://salesup.be/hubfs/6037%20x%204058%20px%20(1)%20(1).png" %}
+    {% set img_cc = "https://salesup.be/hubfs/Untitled%20design.png" %}
+    {% set img_overleg = "https://salesup.be/hubfs/Rectangle%2058.jpg" %}
+    {% set img_office = "https://salesup.be/hubfs/Rectangle%2055.jpg" %}
+    {% set img_office_sub = "https://salesup.be/hubfs/Rectangle%2056.png" %}
+    {% set img_f2f = "https://salesup.be/hubfs/Rectangle%2057.jpg" %}
+    {% set img_consult = "https://salesup.be/hubfs/Rectangle%2060.jpg" %}
+    {% set img_happy = "https://salesup.be/hubfs/446%20x%20316%20px-Mar-26-2026-01-31-59-3301-PM.png" %}
+    {% set eb = module.eyebrow|default("") %}
+
+    {% if module.media_type == "collage" %}
+    <div class="hero-media">
+      <div class="ph ph-main"><img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if module.image_main.src %}{{ module.image_main.src }}{% elif 'Over salesUp' in eb %}{{ img_office }}{% else %}{{ img_meeting }}{% endif %}" alt="{{ module.image_main.alt }}" width="1600" height="1068" fetchpriority="high" loading="eager" decoding="async"></div>
+      <div class="ph ph-sub"><img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if module.image_sub.src %}{{ module.image_sub.src }}{% elif 'Over salesUp' in eb %}{{ img_office_sub }}{% else %}{{ img_team }}{% endif %}" alt="{{ module.image_sub.alt }}" width="1200" height="800" fetchpriority="high" loading="eager" decoding="async"></div>
+    </div>
+    {% elif module.media_type == "trustcard" %}
+    <aside class="trustcard" aria-label="{{ module.trustcard_aria|default('Bewijs') }}">
+      <div class="trustcard-media img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}">
+        <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if module.trustcard_image.src %}{{ module.trustcard_image.src }}{% elif 'Training' in eb or 'Off-site' in eb or 'Inspiratie' in eb or 'Coaching' in eb or 'Trainingsplatform' in eb %}{{ img_meeting }}{% elif 'Face2Face' in eb or 'Event' in eb or 'Studenten' in eb or 'Retail' in eb or 'Deur' in eb %}{{ img_f2f }}{% elif 'Marketing' in eb or 'Website' in eb or 'SEA' in eb or 'SEO' in eb or 'Social' in eb or 'E-mail' in eb or 'Email' in eb %}{{ img_overleg }}{% elif 'Consultant' in eb or 'Audit' in eb or 'Detachering' in eb or 'Interim' in eb or 'Sales as a service' in eb %}{{ img_consult }}{% elif eb == 'Werken bij salesUp' %}{{ img_happy }}{% else %}{{ img_cc }}{% endif %}" alt="{{ module.trustcard_image.alt }}" width="1600" height="1000" fetchpriority="high" loading="eager" decoding="async">
+        {% if module.trustcard_badge %}<span class="vac-badge" aria-hidden="true">{{ module.trustcard_badge }}</span>{% endif %}
+      </div>
+      <div>
+        {% if module.trustcard_stat %}<div class="stat">{{ module.trustcard_stat }}</div>{% endif %}
+        {% if module.trustcard_label %}<p class="label">{{ module.trustcard_label }}</p>{% endif %}
+      </div>
+      {% if module.trustcard_quote %}
+      <hr>
+      <blockquote>
+        <p>{{ module.trustcard_quote }}</p>
+        {% if module.trustcard_quote_who %}<footer>{{ module.trustcard_quote_who }}</footer>{% endif %}
+      </blockquote>
+      {% endif %}
+    </aside>
+    {% elif module.media_type == "demopaneel" %}
+    <figure class="aip-visual" aria-label="{{ module.demo_aria|default('Voorbeeldweergave van het salesUp-platform') }}">
+      <div class="aip-visual-frame">
+        <div class="aip-panel" role="img" aria-label="{{ module.demo_aria }}">
+          {{ module.demo_html }}
+        </div>
+      </div>
+      {% if module.demo_caption %}<figcaption>{{ module.demo_caption }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+  </div>
+</section>

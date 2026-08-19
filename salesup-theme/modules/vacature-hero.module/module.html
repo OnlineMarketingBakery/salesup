@@ -1,0 +1,13 @@
+<section class="vacd-hero" data-recruitee-hero>
+  <div class="wrap">
+    <span class="eyebrow mono">{{ module.eyebrow }}</span>
+    <h1 data-vac-title>{{ module.title }}</h1>
+    <ul class="stat-chips" data-vac-chips>
+      {% for c in module.chips %}<li><span class="chip">{{ c.link_label }}</span></li>{% endfor %}
+    </ul>
+    <div class="vacd-actions">
+      <a class="btn" data-vac-apply href="{{ module.apply_url.url.href|default('#') }}" target="_blank" rel="noopener">{{ module.apply_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="vacd-back" href="{{ module.back_url.url.href|default('/werken-bij') }}">&larr; {{ module.back_text }}</a>
+    </div>
+  </div>
+</section>

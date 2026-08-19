@@ -1,0 +1,184 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Cesano
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Telefonische prospectie voor Cesano\", \"about\": \"Cesano\", \"description\": \"Cesano klopte bij salesUp aan voor telefonische prospectie van hun e-bikeconcept in de horeca. Doel: 250 geplaatste e-bikes. Mission accomplished.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/cesano\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Cesano\", \"item\": \"https://www.salesup.be/cases/cesano\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/cesano",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Cesano",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · E-bikes &amp; horeca",
+          heading="Telefonische prospectie voor Cesano",
+          subtext="<p>Cesano is een start-up die elektrische fietsen plaatst in de horeca. salesUp nam de prospectie over — en haalde de doelstelling van 250 geplaatste e-bikes.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "250",
+                "toelichting": "Geplaatste e-bikes — de doelstelling van Cesano, mission accomplished"
+              },
+              {
+                "cijfer": "100",
+                "toelichting": "Hotels die Cesano eerst zelf belde om de markt te valideren"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>Cesano is een start-up die zich focust op het plaatsen van elektrische fietsen in de horecasector. Het gaat om een uniek concept, omdat de investering — onder andere een onderhoudscontract, VAB, pechbijstand — volledig gedragen wordt door Cesano. Hun klanten hoeven zich dus enkel te focussen op het verhuur van deze fietsen.</p>\n<h2>Prospectie voor Cesano</h2>\n<p>Iets minder dan een halfjaar geleden klopte Cesano aan bij salesUp om hen bij te staan bij de verdere uitbouw van hun bedrijf.</p>\n<p>Cesano startte in eerste instantie zelf met bellen. Om te weten of dit concept zou aanslaan, belde het bedrijf eerst zelf 100 hotels op. Er was wel degelijk een markt. Uit die eerste gesprekken haalden ze enkele mooie learnings:</p>\n<ul><li>Hoe ze het Cesano-verhaal het beste naar voren brengen</li><li>Hoelang zo’n salesgesprek mag duren</li><li>Wat de hit rate is voor het sluiten van contracten</li></ul>\n<h2>De expertise van een externe partner</h2>\n<p>Met die informatie klopten ze aan bij salesUp. We zetten met plezier onze schouders onder dit project. Yves Van Sante, Founder &amp; Managing Partner van Cesano, onderstreepte dat de resultaten van salesUp eigenlijk beter waren dan die van Cesano zelf.</p>\n<p>Yves vertelde verder dat salesUp het verhaal vol overgave bracht zoals zij dat zelf zouden doen: het is enorm fijn dat een externe partner aanvoelt als een extra schakel van je eigen bedrijf.</p>\n<h2>Indrukwekkende resultaten</h2>\n<p>Cesano ontdekte dat er wel degelijk een markt is voor hun product én dat het mogelijk is om een stukje van je salesproces toe te vertrouwen aan een externe partij — mits je de juiste keuze maakt. En de doelstelling van het plaatsen van 250 e-bikes? Mission accomplished.</p>\n<p>Het bedrijf heeft daarnaast succesvol zijn Winwinner-campagne afgerond, een platform dat ondernemers en investeerders samenbrengt, om extra budget op te halen voor het aantrekken van klanten.</p>\n<p>salesUp bewees zich als partner voor Cesano met een kwalitatieve <a href=\"/telesales\">cold calling</a>-aanpak: strategische planning, persoonlijke communicatie en nauwkeurige opvolging.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;Ik heb dat zelden meegemaakt.. well done! Graag wil ik onderstrepen dat wij zeer tevreden zijn over de behaalde resultaten &amp; voor de passie dat je legt in ons product. Het is enorm fijn dat een externe partner aanvoelt als een extra schakel van je eigen bedrijf. Zo zou het altijd moeten zijn!&rdquo;</p>",
+          who="&mdash; <strong>Yves Van Sante</strong>, Founder &amp; Managing Partner van Cesano"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Cesano deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/van-heurck",
+                    "type": "CONTENT", "content_id": 453268669671
+                  }
+                },
+                "sector": "Bedrijfskleding",
+                "naam": "Van Heurck",
+                "stat": "26,28% bruto conversie in België, tegenover een doel van 10%",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/unizo",
+                    "type": "CONTENT", "content_id": 453268041941
+                  }
+                },
+                "sector": "Ondernemersorganisatie",
+                "naam": "UNIZO",
+                "stat": "385 adviesgesprekken ingepland over 5 maanden",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/orange",
+                    "type": "CONTENT", "content_id": 453268493508
+                  }
+                },
+                "sector": "Telecom",
+                "naam": "Orange",
+                "stat": "91% in de Europese audit — de hoogste score van Europa",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

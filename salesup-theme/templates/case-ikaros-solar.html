@@ -1,0 +1,172 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Ikaros Solar
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Hoe Ikaros Solar hun conversies verdubbelde met gerichte telesales en slimme data\", \"about\": \"Ikaros Solar\", \"description\": \"salesUp hielp Ikaros Solar om met zorgvuldig geselecteerde data en doelgerichte telefonische prospectie een conversieratio van 39% te behalen, goed voor tientallen offerteaanvragen en een gevuld salesschema.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/ikaros-solar\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Ikaros Solar\", \"item\": \"https://www.salesup.be/cases/ikaros-solar\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/ikaros-solar",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Ikaros Solar",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Duurzame energie",
+          heading="Hoe Ikaros Solar hun conversies verdubbelde met gerichte telesales en slimme data",
+          subtext="<p>salesUp hielp Ikaros Solar om met zorgvuldig geselecteerde data en doelgerichte telefonische prospectie een conversieratio van 39% te behalen, goed voor tientallen offerteaanvragen en een gevuld salesschema.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "39%",
+                "toelichting": "Conversieratio via slimme data en gerichte telefonische prospectie"
+              },
+              {
+                "cijfer": "tientallen",
+                "toelichting": "Offerteaanvragen en een gevuld salesschema"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>Ikaros Solar richt zich op het verduurzamen van de energievoorziening voor bedrijven, investeerders en overheden. Voor hun commerciële groei klopten ze aan bij salesUp voor gerichte <a href=\"/telesales\">telefonische prospectie</a> — geen volume-calls, maar gesprekken die op de juiste data stoelen.</p>\n<h2>De aanpak: data eerst, dan bellen</h2>\n<p>salesUp combineerde zorgvuldig geselecteerde data met doelgerichte telesales. Elke lead werd geselecteerd op relevantie, daarna persoonlijk benaderd. Het resultaat zat niet in meer belletjes, maar in hogere conversie op de gesprekken die wél plaatsvonden.</p>\n<h2>Het resultaat</h2>\n<p>Ikaros Solar behaalde een conversieratio van <strong>39%</strong> — een verdubbeling tegenover hun vertrekpunt. Dat leverde tientallen offerteaanvragen op en een gevuld salesschema voor het interne team.</p>\n<p>Die cijfers staan ook op de live salesUp-pagina’s over telefonische prospectie en B2B-callcenter: dezelfde case, nu als volwaardige client-case in de nieuwe site.</p>\n<h2>Ook jouw prospectie datagedreven aanpakken?</h2>\n<p>Wil je, net als Ikaros Solar, conversie tillen met slimme data en gerichte gesprekken? <a href=\"/contact\">Plan een gesprek</a> — we bellen je binnen 30 minuten terug.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Ikaros Solar deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/hivolta",
+                    "type": "CONTENT", "content_id": 453268393209
+                  }
+                },
+                "sector": "Duurzame energie",
+                "naam": "Hivolta",
+                "stat": "75 aanvragen op één kwartaal via Google-advertentiecampagnes",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/radiance-energy",
+                    "type": "CONTENT", "content_id": 453268029669
+                  }
+                },
+                "sector": "Duurzame energie",
+                "naam": "Radiance Energy",
+                "stat": "39,30% netto conversie van eerste contact naar afspraak",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/van-heurck",
+                    "type": "CONTENT", "content_id": 453268669671
+                  }
+                },
+                "sector": "Bedrijfskleding",
+                "naam": "Van Heurck",
+                "stat": "26,28% bruto conversie in België, tegenover een doel van 10%",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

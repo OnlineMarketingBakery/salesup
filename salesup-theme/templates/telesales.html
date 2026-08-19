@@ -1,0 +1,338 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Telesales
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Telesales\",\n      \"serviceType\":\"Telesales met closing tijdens het gesprek\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/telesales\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"url\":\"https://www.salesup.be/sales-contact-center\"},\n      \"description\":\"Telesales die de verkoop afsluit tijdens het gesprek zelf, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op conversie tegenover een vooraf afgesproken doel.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Contact Center\",\"item\":\"https://www.salesup.be/sales-contact-center\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Telesales\",\"item\":\"https://www.salesup.be/telesales\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor welke producten werkt telesales het best?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Telesales werkt het best voor een aanbod met een duidelijke, uitlegbare waarde binnen één gesprek. Kan je prospect op basis van het telefoongesprek beslissen, dan sluiten we de verkoop meteen af in plaats van een afspraak voor later in te plannen. Voor complexere sales combineren we telesales met telefonische prospectie en afsprakenplanning.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit van elk gesprek?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. Die opportunity- en objection-scores sturen de opvolging én de ontwikkeling van de mensen aan de lijn via ons trainingsplatform salesUp Academy. Wie waar hapert, wordt daar getraind. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie. Zo lees je zwart op wit wat je per euro terugkrijgt. Bij Van Heurck haalden we 26,28% conversie, tegenover een doel van 10%.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Kan telesales gecombineerd worden met afsprakenplanning?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Voor eenvoudige closings sluiten we tijdens het gesprek zelf af; voor complexere trajecten zet telefonische prospectie en afsprakenplanning eerst een kwalitatieve afspraak in de agenda van je vertegenwoordiger. Beide kanalen draaien onder dezelfde kwaliteitsbewaking en dezelfde datalus naar salesUp Academy.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/telesales",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT",
+                    "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Diensten",
+                "url": {
+                  "url": {
+                    "href": "/#diensten",
+                    "type": "EXTERNAL"
+                  }
+                }
+              },
+              {
+                "link_label": "Sales Contact Center",
+                "url": {
+                  "url": {
+                    "href": "/sales-contact-center",
+                    "type": "CONTENT",
+                    "content_id": 453268175089
+                  }
+                }
+              },
+              {
+                "link_label": "Telesales",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+        <!-- TODO: upload cc-man-headset.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
+            {% dnd_module
+          path="../modules/hero",
+          eyebrow="Sales Contact Center · Telesales",
+          heading="Telesales die <em>sluit</em> tijdens het gesprek zelf.",
+          subtext="<p>Voor een aanbod dat je in één gesprek kan uitleggen, sluiten we de verkoop meteen af — geen afspraak voor later. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en je rekent ons af op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta2_text="Zo werkt telesales",
+          cta2_url={
+              "url": {
+                "href": "#aanpak",
+                "type": "EXTERNAL"
+              }
+            },
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false,
+          chips=[
+              {
+                "link_label": "Closing in het gesprek"
+              },
+              {
+                "link_label": "Elk gesprek gescoord"
+              },
+              {
+                "link_label": "Conversie vs. doel"
+              },
+              {
+                "link_label": "Wekelijkse rapportering"
+              }
+            ],
+          trust_chips=[],
+          trust_aria="Erkenningen en reviews",
+          media_type="trustcard",
+          trustcard_aria="Bewijs bij Van Heurck",
+          trustcard_image={
+              "src": "https://salesup.be/hubfs/Untitled%20design.png",
+              "alt": "Telesales-medewerker van salesUp met headset en bril sluit een verkoopgesprek af."
+            },
+          trustcard_badge="",
+          trustcard_stat="26,28<em>%</em>",
+          trustcard_label="Conversie bij Van Heurck via ons Sales Contact Center — tegenover een vooraf afgesproken doel van 10%.",
+          trustcard_quote="\"Elk gesprek is een stap naar de deal — we meten wat je eraan verdient, niet hoe lang je belt.\"",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van het Sales Contact Center"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/features",
+          anchor="oplevert",
+          eyebrow="Wat het oplevert",
+          heading="Verkoop afgesloten, geen belminuten geteld.",
+          intro="<p>Telesales is er om te sluiten. Elk gesprek is gericht op de order op het moment zelf — en op wat die order jou oplevert, niet op belvolume.</p>",
+          vac_troef=false,
+          feature_cards=[
+              {
+                "title": "Closing op het moment zelf",
+                "tekst": "<p>Een dedicated team met vaste salescoach voert het gesprek en sluit de verkoop af tijdens het gesprek, in plaats van enkel interesse te polsen. Zo haalde Van Heurck 26,28% conversie, tegenover een doel van 10%.</p>"
+              },
+              {
+                "title": "Elk gesprek automatisch gescoord",
+                "tekst": "<p>Onze eigen software scoort elk gesprek op kwaliteit en koopkans — geen steekproef achteraf. Opportunity-scores tonen waar omzet zit, objection-detectie herkent terugkerende bezwaren zodat script en aanbod meebewegen.</p>"
+              },
+              {
+                "title": "Afgerekend op conversie vs. doel",
+                "tekst": "<p>We spreken vooraf een doelstelling af en rapporteren de conversie daartegenover, per gesprek en niet per belminuut. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie.</p>"
+              },
+              {
+                "title": "Data gekoppeld aan salesUp Academy",
+                "tekst": "<p>De gespreksscores stromen door naar ons trainingsplatform salesUp Academy, dat de mensen aan de lijn scherper maakt. Wie waar hapert, wordt daar getraind — de datalus die geen concurrent kan sluiten.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/steps",
+          anchor="aanpak",
+          eyebrow="Hoe het werkt",
+          heading="Van script tot afgesloten verkoop.",
+          intro="<p>We spreken vooraf een doelstelling af en bouwen het gesprek rond jouw aanbod, prijszetting en objectiehandling.</p>",
+          steps=[
+              {
+                "num": "01",
+                "title": "Doel & script afstemmen",
+                "tekst": "<p>We spreken vooraf een doelstelling af en bouwen het gesprek rond jouw aanbod, prijszetting en objectiehandling.</p>"
+              },
+              {
+                "num": "02",
+                "title": "Bellen & sluiten",
+                "tekst": "<p>Ons telesales-team voert het gesprek en sluit de verkoop meteen af, met een vaste salescoach die mee aan de lijn zit.</p>"
+              },
+              {
+                "num": "03",
+                "title": "Elk gesprek gescoord & geverifieerd",
+                "tekst": "<p>Onze eigen software scoort elk gesprek op kwaliteit en koopkans; elke sale wordt gecontroleerd en netjes geregistreerd.</p>"
+              },
+              {
+                "num": "04",
+                "title": "Wekelijks rapporteren & bijsturen",
+                "tekst": "<p>Je krijgt een wekelijkse rapportering die toont wat elk beluur opbrengt — conversie per script en per medewerker — met 100% kostentransparantie.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/faq",
+          eyebrow="Veelgestelde vragen",
+          heading="Wat klanten ons over telesales vragen.",
+          intro="",
+          emit_schema=true,
+          faq_items=[
+              {
+                "question": "Voor welke producten werkt telesales het best?",
+                "answer": "<p>Telesales werkt het best voor een aanbod met een duidelijke, uitlegbare waarde binnen één gesprek. Kan je prospect op basis van het telefoongesprek beslissen, dan sluiten we de verkoop meteen af in plaats van een afspraak voor later in te plannen. Voor complexere sales combineren we telesales met telefonische prospectie en afsprakenplanning.</p>"
+              },
+              {
+                "question": "Hoe bewaken jullie de kwaliteit van elk gesprek?",
+                "answer": "<p>Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. Die opportunity- en objection-scores sturen de opvolging én de ontwikkeling van de mensen aan de lijn via ons trainingsplatform salesUp Academy. Wie waar hapert, wordt daar getraind. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.</p>"
+              },
+              {
+                "question": "Waarop rekenen jullie ons af?",
+                "answer": "<p>Op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie. Zo lees je zwart op wit wat je per euro terugkrijgt. Bij Van Heurck haalden we 26,28% conversie, tegenover een doel van 10%.</p>"
+              },
+              {
+                "question": "Kan telesales gecombineerd worden met afsprakenplanning?",
+                "answer": "<p>Ja. Voor eenvoudige closings sluiten we tijdens het gesprek zelf af; voor complexere trajecten zet telefonische prospectie en afsprakenplanning eerst een kwalitatieve afspraak in de agenda van je vertegenwoordiger. Beide kanalen draaien onder dezelfde kwaliteitsbewaking en dezelfde datalus naar salesUp Academy.</p>"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/proof-marquee",
+          aria="Bedrijven die met ons Sales Contact Center werken",
+          eyebrow="Bedrijven die met ons Sales Contact Center werken",
+          logos=[
+              {
+                "naam": "Orange",
+                "slug": ""
+              },
+              {
+                "naam": "Van Heurck",
+                "slug": ""
+              },
+              {
+                "naam": "Q8 Oils",
+                "slug": ""
+              },
+              {
+                "naam": "Geodis",
+                "slug": ""
+              },
+              {
+                "naam": "UNIZO",
+                "slug": ""
+              },
+              {
+                "naam": "VM Building",
+                "slug": ""
+              },
+              {
+                "naam": "Upgrade Estate",
+                "slug": ""
+              },
+              {
+                "naam": "Trustteam",
+                "slug": ""
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Klaar om meer af te sluiten per gesprek?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat telesales voor jouw aanbod kan betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "#contact",
+                "type": "EXTERNAL"
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/related",
+          link_label="Ook interessant:",
+          links=[
+              {
+                "link_label": "Telefonische prospectie & afspraakplanning",
+                "url": {
+                  "url": {
+                    "href": "/afspraakplanning",
+                    "type": "CONTENT", "content_id": 453268356322
+                  }
+                }
+              },
+              {
+                "link_label": "After sales & heractivatie",
+                "url": {
+                  "url": {
+                    "href": "/after-sales",
+                    "type": "CONTENT", "content_id": 453268358390
+                  }
+                }
+              },
+              {
+                "link_label": "Alles over het Sales Contact Center",
+                "url": {
+                  "url": {
+                    "href": "/sales-contact-center",
+                    "type": "CONTENT", "content_id": 453268175089
+                  }
+                }
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

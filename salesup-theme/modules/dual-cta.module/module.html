@@ -1,0 +1,33 @@
+{% macro resolve_href(link, fallback='/contact') -%}
+{%- set href = link.url.href if link and link.url else '' -%}
+{%- if link and link.url and link.url.content_id and (not href or href == '#' or href == '#contact') -%}
+  {%- set page = content_by_id(link.url.content_id) -%}
+  {%- set href = page.absolute_url if page and page.absolute_url else fallback -%}
+{%- endif -%}
+{%- if not href or href == '#' or href == '#contact' -%}
+  {%- set page = content_by_id(453268184310) -%}
+  {{- page.absolute_url if page and page.absolute_url else fallback -}}
+{%- else -%}
+  {{- href -}}
+{%- endif -%}
+{%- endmacro %}
+<section class="dual wrap" id="voorwie">
+  <div class="dual-grid">
+    <div class="dual-card dark">
+      <span class="mono">{{ module.option1_eyebrow }}</span>
+      <h3>{{ module.option1_h3 }}</h3>
+      <div>{{ module.option1_body }}</div>
+      {% if module.option1_cta_text %}<a href="{{ resolve_href(module.option1_cta_url, '/contact') }}" class="btn on-dark">{{ module.option1_cta_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+    </div>
+    <div class="dual-card">
+      <span class="mono">{{ module.option2_eyebrow }}</span>
+      <h3>{{ module.option2_h3 }}</h3>
+      <div>{{ module.option2_body }}</div>
+      <div class="quicklinks">
+        {% for l in module.quicklinks %}
+        <a href="{{ l.url.url.href|default('#') }}">{{ l.link_label }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

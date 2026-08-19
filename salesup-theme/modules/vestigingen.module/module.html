@@ -1,0 +1,38 @@
+<section class="section wrap" id="vestigingen" aria-labelledby="vest-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="vest-titel">{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <div class="locatie-grid">
+    {% for loc in module.locaties %}
+    <article class="locatie-kaart">
+      <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if loc.beeld.src %}{{ loc.beeld.src }}{% elif 'Erpe-Mere' in loc.plaats %}https://salesup.be/hubfs/Rectangle%2049-1.png{% else %}https://salesup.be/hubfs/Rectangle%2056.png{% endif %}" alt="{{ loc.beeld.alt }}" width="1600" height="1068" loading="lazy" decoding="async">
+      <div class="locatie-tekst">
+        <span class="locatie-status">{{ loc.status }}</span>
+        <h3>{{ loc.plaats }}</h3>
+        <div>{{ loc.tekst }}</div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% if module.opkomst %}<p class="opkomst">{{ module.opkomst }}</p>{% endif %}
+  {% if module.cultuur %}
+  <div class="cultuur-strook" aria-label="Sfeerbeelden van de salesUp-cultuur">
+    {% for imgx in module.cultuur %}
+      <img class="img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if imgx.beeld.src %}{{ imgx.beeld.src }}{% elif loop.index == 1 %}https://salesup.be/hubfs/Rectangle%2058.jpg{% elif loop.index == 2 %}https://salesup.be/hubfs/Rectangle%2059.jpg{% else %}https://salesup.be/hubfs/446%20x%20316%20px-Mar-26-2026-01-31-59-3301-PM.png{% endif %}" alt="{{ imgx.beeld.alt }}" loading="lazy" decoding="async">
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if module.werken_bij_text %}
+  <div class="werken-bij">
+    <p>{{ module.werken_bij_text }}</p>
+    {% set wb = module.werken_bij_url.url.href if module.werken_bij_url and module.werken_bij_url.url else '' %}
+    {% if not wb or wb == '#' or wb == '#contact' %}
+      {% set contact_page = content_by_id(453268184310) %}
+      {% set wb = contact_page.absolute_url if contact_page and contact_page.absolute_url else '/contact' %}
+    {% endif %}
+    <a class="btn ghost" href="{{ wb }}">{{ module.werken_bij_cta }} <span class="arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+  {% endif %}
+</section>

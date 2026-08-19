@@ -1,0 +1,71 @@
+{
+  "columns": [
+    {
+      "title": "Wat we doen",
+      "links": [
+        [
+          "Marketing",
+          "/marketing"
+        ],
+        [
+          "Sales Contact Center",
+          "/sales-contact-center"
+        ],
+        [
+          "Face2Face Sales",
+          "/face2face-sales"
+        ],
+        [
+          "Training",
+          "/training"
+        ],
+        [
+          "Sales Consultants",
+          "/sales-consultants"
+        ]
+      ]
+    },
+    {
+      "title": "Bedrijf",
+      "links": [
+        [
+          "Over ons",
+          "/over-ons"
+        ],
+        [
+          "Cases",
+          "/cases"
+        ],
+        [
+          "Vacatures",
+          "/werken-bij"
+        ],
+        [
+          "Blog",
+          "/blog"
+        ],
+        [
+          "Podcast",
+          "/groeipodcast-salesup"
+        ]
+      ]
+    },
+    {
+      "title": "Contact",
+      "links": [
+        [
+          "Plan een gesprek",
+          "/contact"
+        ],
+        [
+          "LinkedIn",
+          "https://www.linkedin.com/company/salesup-be"
+        ],
+        [
+          "053 78 28 30",
+          "tel:+3253782830"
+        ]
+      ]
+    }
+  ]
+}

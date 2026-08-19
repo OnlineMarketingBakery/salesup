@@ -1,0 +1,105 @@
+[ {
+  "id" : "aria",
+  "name" : "aria",
+  "label" : "Aria-label",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Klanten van salesUp"
+}, {
+  "id" : "eyebrow",
+  "name" : "eyebrow",
+  "label" : "Eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Vertrouwd door"
+}, {
+  "id" : "logos",
+  "name" : "logos",
+  "label" : "Logo's / wordmarks",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 24,
+    "sorting_label_field" : null,
+    "default" : 10
+  },
+  "children" : [ {
+    "id" : "logos.naam",
+    "name" : "naam",
+    "label" : "Naam / alt-tekst",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Q8Oils"
+  }, {
+    "id" : "logos.slug",
+    "name" : "slug",
+    "label" : "Logo-slug (theme images/logos/<slug>.svg)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : ""
+  }, {
+    "id" : "logos.beeld",
+    "name" : "beeld",
+    "label" : "Logo (File Manager — overschrijft slug)",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "",
+      "alt" : ""
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "naam" : "Q8Oils",
+    "slug" : "q8oils"
+  }, {
+    "naam" : "GEODIS",
+    "slug" : "geodis"
+  }, {
+    "naam" : "Liantis",
+    "slug" : "liantis"
+  }, {
+    "naam" : "Astara",
+    "slug" : "astara"
+  }, {
+    "naam" : "Zambon",
+    "slug" : "zambon"
+  }, {
+    "naam" : "Upgrade Estate",
+    "slug" : "upgrade-estate"
+  }, {
+    "naam" : "JLR",
+    "slug" : "jaguar-land-rover"
+  }, {
+    "naam" : "Culligan",
+    "slug" : "culligan"
+  }, {
+    "naam" : "iChoosr",
+    "slug" : "ichoosr"
+  }, {
+    "naam" : "Atradius",
+    "slug" : "atradius"
+  } ]
+} ]

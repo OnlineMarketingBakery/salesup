@@ -1,0 +1,134 @@
+[ {
+  "id" : "aria",
+  "name" : "aria",
+  "label" : "Aria-label",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Vraag een demo aan"
+}, {
+  "id" : "sc_eyebrow",
+  "name" : "sc_eyebrow",
+  "label" : "Eyebrow",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Demo op maat"
+}, {
+  "id" : "heading",
+  "name" : "heading",
+  "label" : "Titel (H2)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Zie onze aanpak live in een demo"
+}, {
+  "id" : "tekst",
+  "name" : "tekst",
+  "label" : "Tekst",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Laat je gegevens achter voor een demo op maat van jouw situatie.</p>"
+}, {
+  "id" : "veldenset",
+  "name" : "veldenset",
+  "label" : "Placeholder-velden (tot HubSpot-form is gekoppeld)",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "veldenset.naam",
+    "name" : "naam",
+    "label" : "Naam",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "veldenset.email",
+    "name" : "email",
+    "label" : "E-mail",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "veldenset.telefoon",
+    "name" : "telefoon",
+    "label" : "Telefoon",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "veldenset.website",
+    "name" : "website",
+    "label" : "Website",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "link_label",
+  "name" : "link_label",
+  "label" : "Knoptekst",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Vraag je demo aan"
+}, {
+  "id" : "note",
+  "name" : "note",
+  "label" : "Noot onder het formulier",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Binnen 30 minuten een reactie."
+}, {
+  "id" : "navy",
+  "name" : "navy",
+  "label" : "Navy-variant",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "form",
+  "name" : "form",
+  "label" : "HubSpot-formulier (vervangt de placeholder bij livegang)",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "display_width" : null,
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Bedankt. We nemen zo snel mogelijk contact op."
+  }
+} ]

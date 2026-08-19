@@ -1,0 +1,6 @@
+<section class="related wrap" aria-label="{{ module.link_label|default('Ook interessant') }}">
+  <span>{{ module.link_label }}</span>
+  {% for l in module.links %}
+    <a href="{{ l.url.url.href|default(l.url.href)|default('#') }}">{{ l.link_label }}</a>
+  {% endfor %}
+</section>

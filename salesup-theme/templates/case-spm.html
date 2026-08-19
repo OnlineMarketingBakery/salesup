@@ -1,0 +1,180 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Spm
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Meer verkopen voor SPM\", \"about\": \"SPM Technologies\", \"description\": \"Ontdek hoe salesUp de verwachtingen van SPM overtrof met resultaatgerichte salesstrategieën.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/spm\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"SPM Technologies\", \"item\": \"https://www.salesup.be/cases/spm\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/spm",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "SPM Technologies",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          eyebrow="Client case · Proptech / software voor syndici",
+          heading="Meer verkopen voor SPM",
+          subtext="<p>Ontdek hoe salesUp de verwachtingen van SPM overtrof met resultaatgerichte salesstrategieën.</p>",
+          meta_tags=[
+              {
+                "link_label": "Sales Contact Center"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "8",
+                "toelichting": "Gemiddeld 8 afspraken per week geboekt in slechts enkele weken (aanvankelijke doelstelling was een vijftal per week)"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<p>Toen SPM Technologies de samenwerking met salesUp aanging, hadden ze concrete doelen voor ogen. Ze wilden hun diensten extra bekend maken binnen de doelgroep door introducties en <a href=\"/afspraakplanning\">afspraken</a> bij syndici in België te genereren. Op deze manier wilden ze uiteindelijk langdurige relaties met hen opbouwen. De syndic-sector kampt met verschillende zeer specifieke uitdagingen. Eén ervan is het chronische tijdsgebrek van de syndici. Hierdoor is hun bereikbaarheid beperkt en vermijden ze vaak communicatie die niet uiterst noodzakelijk is. In deze campagne zou het dus meer dan ooit van essentieel belang zijn om vanaf het allereerste moment op te vallen en de aandacht vast te grijpen. Out-of-the-box communicatie? Yes please! Stoute schoenen aan? Check! Uitdaging aanvaard!</p>\n<h2>Uitdagingen en kansen</h2>\n<p>Concreet wilde SPM met behulp van salesUp meer kwalitatieve afspraken vastleggen met mogelijke toekomstige partners die een beroep willen doen op de soft- en hardware van SPM. Zowel grote syndicus kantoren als kleine zelfstandigen werden getarget. Na de rampUp periode mikte SPM op een vijftal afspraken per week.</p>\n<p>Een uitdaging waarmee ze werden geconfronteerd, was het gebrek aan diepgaande informatie over hun potentiële klanten. De markt waarin ze opereren, wordt gedomineerd door enkele grote spelers, en overstappen naar een nieuwe aanbieder kan een complex proces zijn vanwege bestaande contractvoorwaarden. Ook hierin zou salesUp ondersteunen om meer inzicht te genereren in het werkveld.</p>\n<h2>Resultaten die verwachtingen overtroffen</h2>\n<p>De resultaten van de samenwerking overtroffen ruimschoots de verwachtingen. In slechts enkele weken wist salesUp gemiddeld 8 afspraken per week te boeken, wat aanzienlijk hoger was dan de aanvankelijke doelstelling. Erik Van Esbroeck, de zaakvoerder van SPM, was vol lof over de samenwerking:</p>\n<p>“SalesUp heeft ons geweldig geholpen met het maken van afspraken binnen onze doelgroep van syndici in het Vlaamse landsgedeelte. Dankzij hun skills en positieve vasthoudendheid is deze actie een succes geworden!”</p>\n<h2>Wat kunnen we leren?</h2>\n<p>De sleutel tot dit succesverhaal ligt bij de effectieve ijsbreker en de strategische aanpak van salesUp. Eerst een impactvolle postmailing sturen, gevolgd door warme en oprechte telefoongesprekken, leverde verbluffende resultaten op. De boarding pass gaf de doelgroep al een voorsprong in kennis over de diensten van SPM, waardoor de telefoongesprekken soepeler verliepen. De mensen aan de andere kant van de lijn waren al enigszins ‘opgewarmd’ en voorbereid op de inhoud van het gesprek.</p>\n<p>Nee, het versturen van een ijsbreker per post voorafgaand aan telefonische prospectie is geen praktijk uit de middeleeuwen. Het blijft een buitengewoon effectieve methode om leads op te warmen, mits enkele belangrijke vereisten worden vervuld. Overweeg zorgvuldig of de inspanning en de kosten de moeite waard zijn, maak een kostenanalyse en onthoud dat ervaring en een opvallend ontwerp van cruciaal belang zijn voor het succes van deze aanpak. Tijd om die gele briefkaarten weer uit de kast te halen!</p>\n<h2>Ook meer verkopen?</h2>\n<p>Wil je ook ontdekken hoe telefonische prospectie strategisch en met een originele invalshoek kan worden aangepakt? Neem contact op met salesUp en laat ons samen werken aan jouw groei en succes.</p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-quote",
+          quote="<p>&ldquo;SalesUp heeft ons geweldig geholpen met het maken van afspraken binnen onze doelgroep van syndici in het Vlaamse landsgedeelte. Dankzij hun skills en positieve vasthoudendheid is deze actie een succes geworden!&rdquo;</p>",
+          who="&mdash; <strong>Erik Van Esbroeck</strong>, zaakvoerder van SPM"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor SPM Technologies deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/eurocircuits",
+                    "type": "CONTENT", "content_id": 453268371675
+                  }
+                },
+                "sector": "Elektronica (PCB's)",
+                "naam": "Eurocircuits",
+                "stat": "Vijfjarige samenwerking (2019-2023): meer dan 140.653 belpogingen uitgevoerd",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/jaguar-land-rover",
+                    "type": "CONTENT", "content_id": 453268397251
+                  }
+                },
+                "sector": "Automotive",
+                "naam": "Jaguar Land Rover",
+                "stat": "In totaal 154 leads doorgestuurd naar de dealers (34 aanvragen proefrit, 40 verzoeken offerte, 80 aanvragen direct dealercontact) in de periode dec. 2023 t/m juli 2024",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/astara",
+                    "type": "CONTENT", "content_id": 453268364479
+                  }
+                },
+                "sector": "Autosector",
+                "naam": "Astara",
+                "stat": "Gemiddelde productiviteit per informant lag 19% hoger dan tijdens het vorige Autosalon",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

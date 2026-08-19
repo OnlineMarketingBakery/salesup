@@ -1,0 +1,172 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Case Zambon
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Zambon – Hybrid Sales Training: Vlot schakelen van face-to-face naar telesales\", \"about\": \"Zambon\", \"description\": \"Zambon – Hybrid Sales Training: vlot schakelen van face-to-face naar telesales.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/zambon\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Zambon\", \"item\": \"https://www.salesup.be/cases/zambon\"}]}]}",
+  hreflang_nl="https://www.salesup.be/cases/zambon",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/breadcrumb",
+          crumbs=[
+              {
+                "link_label": "Home",
+                "url": {
+                  "url": {
+                    "href": "/",
+                    "type": "CONTENT", "content_id": 453268163816
+                  }
+                }
+              },
+              {
+                "link_label": "Cases",
+                "url": {
+                  "url": {
+                    "href": "/cases",
+                    "type": "CONTENT", "content_id": 453268184251
+                  }
+                }
+              },
+              {
+                "link_label": "Zambon",
+                "url": {
+                  "url": {
+                    "href": "",
+                    "type": "EXTERNAL"
+                  }
+                }
+              }
+            ],
+          emit_schema=false
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-hero",
+          logo={
+              "src": "https://salesup.be/hubfs/zambon%20good.png",
+              "alt": "Zambon logo"
+            },
+          eyebrow="Client case · Farmaceutisch",
+          heading="Zambon – Hybrid Sales Training: Vlot schakelen van face-to-face naar telesales",
+          subtext="<p>Zambon – Hybrid Sales Training: vlot schakelen van face-to-face naar telesales.</p>",
+          meta_tags=[
+              {
+                "link_label": "Training"
+              }
+            ],
+          stats=[
+              {
+                "cijfer": "6",
+                "toelichting": "verkopers en het management getraind in hybride sales"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-body",
+          html="<h2>De uitdaging</h2>\n<p>Het sales team van Zambon bezoekt dagelijks apotheken. Ze bespreken het gebruik van het huidige assortiment  en introduceren nieuwe producten. Uiteraard staan de unieke rol die de apotheker speelt in de eerstelijns gezondheidszorg en het belang van de patiënt, altijd voorop.</p>\n<p>Het opbouwen van vertrouwen en het uitbouwen van duurzame relaties is daarbij cruciaal. Maar daar is niet altijd genoeg tijd voor. Want tijd is niet onbeperkt. Zowel voor het sales team als voor de apotheker. Niet bij alle bezoeken komt het tot een echt grondig gesprek. Soms is er niet veel meer mogelijk dan het noteren van een bestelling.</p>\n<p>Daarom wil Zambon een deel van de contacten telefonisch doen. Zo nemen de routine bezoeken veel minder tijd in beslag. Tijd dat het sales team beter kan investeren in de bezoeken die er echt toe doen en in het uitbouwen van de relatie met de apotheker. Alleen had  het team vooral ervaring met face-to-face verkoop. Telefonisch verkopen voelde onwennig en minder krachtig. Hoe zorg je er dan voor dat je ook via de telefoon impact maakt?</p>\n<h2>Onze aanpak</h2>\n<p>We gingen samen met de zes verkopers en het management aan de slag. In een eerste sessie legden we de basis voor hun succes.</p>\n<ul><li>Eerst luisterden we naar hun ervaringen en bezwaren.</li><li>We brachten de verschillen én gelijkenissen tussen face-to-face en telesales in kaart.</li><li>We werkten rond energie, intonatie, actief luisteren en koopsignalen oppikken.</li><li>We leerden hen hoe ze gesprekken structureren, weerstand ombuigen en zelfzeker afsluiten.<br><br></li></ul>\n<p>In een tweede sessie luisterden we mee tijdens het bellen  en gaven direct feedback. Na elke sessie kregen ze concrete opdrachten mee.</p>\n<h2>Het resultaat: van leverancier naar strategische partner</h2>\n<p>De verkopers ontdekten dat je ook telefonisch sterke relaties kan opbouwen. Ze leerden schakelen tussen <a href=\"/face2face-sales\">face-to-face</a> en <a href=\"/telesales\">telesales</a>. Ze voeren nu doelgerichte telefoongesprekken met meer zelfvertrouwen en authenticiteit. Het resultaat? Betere gesprekken, meer impact en meer rendement.</p>\n<h2>Wil jij je sales team ook futureproof maken?</h2>\n<p>Laat ons samen kijken hoe we jouw team helpen schakelen naar hybride sales.<br></p>"
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/final-cta",
+          anchor="contact",
+          heading="Zet jouw cijfers hier volgend jaar tussen.",
+          tekst="<p>Je hebt gezien wat we voor Zambon deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek",
+          cta1_url={
+              "url": {
+                "href": "/contact",
+                "type": "CONTENT", "content_id": 453268184310
+              }
+            },
+          cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30",
+          cta2_url={
+              "url": {
+                "href": "tel:+3253782830",
+                "type": "EXTERNAL"
+              }
+            }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {% dnd_section %}
+        {% dnd_column %}
+          {% dnd_row %}
+            {% dnd_module
+          path="../modules/case-related",
+          eyebrow="MEER CASES",
+          heading="Andere samenwerkingen",
+          cards=[
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/hivolta",
+                    "type": "CONTENT", "content_id": 453268393209
+                  }
+                },
+                "sector": "Duurzame energie",
+                "naam": "Hivolta",
+                "stat": "75 aanvragen op één kwartaal via de Google Advertentiecampagnes",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/ichoosr",
+                    "type": "CONTENT", "content_id": 453268374754
+                  }
+                },
+                "sector": "Energie",
+                "naam": "iChoosr",
+                "stat": "Op rustige momenten enkele tientallen oproepen per dag, tijdens piekperiodes honderden per dag",
+                "link_label": "Lees de case →"
+              },
+              {
+                "url": {
+                  "url": {
+                    "href": "/cases/immo-van-middelem",
+                    "type": "CONTENT", "content_id": 453268375760
+                  }
+                },
+                "sector": "Vastgoed",
+                "naam": "Immo Van Middelem",
+                "stat": "Bekijk de volledige case.",
+                "link_label": "Lees de case →"
+              }
+            ]
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

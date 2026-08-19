@@ -1,0 +1,12 @@
+<section class="section wrap" id="per-dienst" aria-labelledby="perdienst-titel">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
+    <h2 id="perdienst-titel">{{ module.heading }}</h2>
+    {% if module.intro %}<div>{{ module.intro }}</div>{% endif %}
+  </div>
+  <ul class="aip-dienst">
+    {% for row in module.dienst_rows %}
+    <li><span class="dn">{{ row.naam }}</span><div class="wat">{{ row.wat }}</div></li>
+    {% endfor %}
+  </ul>
+</section>
