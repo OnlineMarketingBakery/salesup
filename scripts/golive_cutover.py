@@ -34,7 +34,6 @@ TEST_SLUGS = {
     "bluedragontest",
     "test-animatie",
     "widget-testing",
-    "old-home",
     "contact-old",
     "over-ons-old",
 }

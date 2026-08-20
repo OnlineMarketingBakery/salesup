@@ -1,5 +1,20 @@
 [
   {
+    "from": "/nl",
+    "to": "/",
+    "note": "language-prefix homepage → canonical root (trailing slash optional in HubSpot)"
+  },
+  {
+    "from": "/nl/",
+    "to": "/",
+    "note": "language-prefix homepage → canonical root"
+  },
+  {
+    "from": "/old-home",
+    "to": "/",
+    "note": "retired Power Theme home → new homepage"
+  },
+  {
     "from": "/index.html",
     "to": "/",
     "note": "mockup .html → schone HubSpot-URL"
