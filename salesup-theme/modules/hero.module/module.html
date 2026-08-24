@@ -16,7 +16,11 @@
     <div class="hero-copy">
       {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
       {% if module.heading %}<h1>{{ module.heading }}</h1>{% endif %}
-      {% if module.subtext %}<div class="hero-sub">{{ module.subtext }}</div>{% endif %}
+      {% if module.subtext %}
+        {# Temporary: drop outdated Training opener until page field is re-saved in CMS. #}
+        {% set hero_sub = module.subtext|replace('Geen dagje training en klaar. ', '')|replace('Geen dagje training en klaar.', '') %}
+        <div class="hero-sub">{{ hero_sub }}</div>
+      {% endif %}
       {% if module.cta1_text or module.cta2_text %}
       <div class="hero-cta">
         {% if module.cta1_text %}

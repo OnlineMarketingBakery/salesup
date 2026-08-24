@@ -6,13 +6,20 @@
 </section>
 {% endif %}
 {% if module.blok != 'hero' and module.host_name %}
-<section class="wrap">
+{% set host_bio = module.host_bio|default('') %}
+{% if host_bio == 'Business Unit Manager bij salesUp en host van de Growth Sessions.' or not host_bio %}
+  {% set host_bio = 'Andy is Business Unit Manager Training bij salesUp en host van de Growth Sessions. Hij praat met commerciële leiders over groei, leiderschap en de mensen achter de cijfers — eerlijk, praktisch en zonder jargon.' %}
+{% endif %}
+{% set host_img = module.host_image.src if module.host_image.src else 'https://salesup.be/hubfs/IZ6A0354%201%20(2).png' %}
+{% set host_alt = module.host_image.alt|default(module.host_name ~ ', host van de salesUp Growth Sessions.') %}
+<section class="wrap" aria-labelledby="host-naam">
   <div class="host">
-    <div>
-      <span class="mono" style="color:var(--slate)">{{ module.host_label }}</span>
-      <h3 style="margin:4px 0 6px">{{ module.host_name }}</h3>
-      <p style="color:var(--slate);font-size:14.5px">{{ module.host_bio }}</p>
+    <div class="host-copy">
+      <span class="mono host-label">{{ module.host_label }}</span>
+      <h3 id="host-naam">{{ module.host_name }}</h3>
+      <p>{{ host_bio }}</p>
     </div>
+    <img class="host-photo" src="{{ host_img }}" alt="{{ host_alt }}" width="280" height="280" loading="lazy" decoding="async">
   </div>
 </section>
 {% endif %}

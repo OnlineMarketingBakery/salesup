@@ -15,7 +15,7 @@
       <a class="sub-card" href="{{ card.url.url.href }}">
         <h3>{{ card.title }}</h3>
         <div>{{ card.desc }}</div>
-        <span class="sub-go">{{ card.cta|default('Bekijk') }} <span class="arrow" aria-hidden="true">&rarr;</span></span>
+        <span class="sub-go">{{ card.cta|default('Bekijk')|replace('→', '')|replace('&rarr;', '')|trim }} <span class="arrow" aria-hidden="true">&rarr;</span></span>
       </a>
       {% endif %}
     {% endfor %}

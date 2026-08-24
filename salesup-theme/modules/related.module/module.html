@@ -1,6 +1,17 @@
-<section class="related wrap" aria-label="{{ module.link_label|default('Ook interessant') }}">
-  <span>{{ module.link_label }}</span>
-  {% for l in module.links %}
-    <a href="{{ l.url.url.href|default(l.url.href)|default('#') }}">{{ l.link_label }}</a>
-  {% endfor %}
+{# Related service chips between soft-CTA and footer. #}
+{% set raw_label = module.link_label|default('Gerelateerde diensten')|trim %}
+{% if raw_label == 'Ook interessant:' or raw_label == 'Ook interessant' %}
+  {% set label = 'Gerelateerde diensten' %}
+{% else %}
+  {% set label = raw_label|regex_replace(':$', '') %}
+{% endif %}
+<section class="related wrap" aria-labelledby="related-titel">
+  <div class="related-inner">
+    <p class="related-label mono" id="related-titel">{{ label }}</p>
+    <div class="related-chips">
+      {% for l in module.links %}
+        <a class="related-chip" href="{{ l.url.url.href|default(l.url.href)|default('#') }}">{{ l.link_label }} <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      {% endfor %}
+    </div>
+  </div>
 </section>

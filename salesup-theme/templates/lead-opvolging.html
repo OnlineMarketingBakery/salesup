@@ -1,0 +1,264 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Lead opvolging
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Lead opvolging\",\n      \"serviceType\":\"Snelle opvolging en kwalificatie van inkomende leads via de telefoon\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/lead-opvolging\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"url\":\"https://www.salesup.be/sales-contact-center\"},\n      \"description\":\"Snelle, gestructureerde opvolging van inkomende leads uit marketing, website en campagnes: snel bellen, kwalificeren en de afspraak zetten of de lead warm doorgeven aan sales, met elk gesprek gescoord en terugkoppeling naar marketing.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Contact Center\",\"item\":\"https://www.salesup.be/sales-contact-center\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Lead opvolging\",\"item\":\"https://www.salesup.be/lead-opvolging\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe snel volgen jullie een nieuwe lead op?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zo snel mogelijk, want de kans op contact daalt met de minuut. We koppelen je leadbron aan ons systeem zodat een nieuwe lead meteen bij ons team belandt en snel wordt opgebeld, idealiter binnen enkele minuten. Die snelheid, speed-to-lead, is vaak het verschil tussen een gesprek en een gemiste kans.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waar komen die leads vandaan?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Uit je eigen kanalen: campagnes, je website en formulieren, SEA en social ads, of beurzen en events. Komen die leads uit onze eigen marketingdienst, dan sluit de opvolging naadloos aan op de bovenkant van je commerciële motor.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat gebeurt er met leads die nog niet koopklaar zijn?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Die gaan niet verloren. We kwalificeren elke lead en zetten wie nog niet klaar is in een opvolg- of nurtureflow, zodat we op het juiste moment opnieuw contact opnemen. Alleen de warme, gekwalificeerde leads geven we door aan je sales of zetten we als afspraak in de agenda.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe koppelt dit terug naar onze marketing?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Elk gesprek wordt gescoord op kwaliteit en koopkans en netjes geregistreerd in je CRM. Die data koppelt terug naar marketing, zodat je ziet welke bron en welke campagne écht koopklare leads oplevert. Zo verbetert je marketing en je opvolging elkaar, de datalus die geen losse leverancier kan sluiten.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/lead-opvolging",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/breadcrumb", emit_schema=false,
+          crumbs=[
+  {
+    "link_label": "Home",
+    "url": {
+      "url": {
+        "href": "/",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Diensten",
+    "url": {
+      "url": {
+        "href": "/#diensten",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Sales Contact Center",
+    "url": {
+      "url": {
+        "href": "/sales-contact-center",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Lead opvolging",
+    "url": {
+      "url": {
+        "href": "",
+        "type": "EXTERNAL"
+      }
+    }
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/hero",
+          eyebrow="Sales Contact Center · Lead opvolging",
+          heading="Elke lead opgevolgd, <em>voor hij koud wordt</em>.",
+          subtext="<p>Je betaalt voor leads, maar de meeste koelen af omdat niemand ze op tijd opvolgt. Wij bellen je inkomende leads snel op, kwalificeren ze en zetten meteen de afspraak of geven de warme lead door aan je sales. Elk gesprek wordt gescoord op kwaliteit en koopkans, tot in je CRM, met terugkoppeling naar je marketing.</p>",
+          cta1_text="Plan een gesprek", cta1_url={
+  "url": {
+    "url": {
+      "href": "#contact",
+      "type": "EXTERNAL"
+    }
+  }
+},
+          cta2_text="Zo werkt lead opvolging", cta2_url={
+  "url": {
+    "url": {
+      "href": "#aanpak",
+      "type": "EXTERNAL"
+    }
+  }
+},
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false, trust_chips=[], trust_aria="Erkenningen en reviews",
+          chips=[
+  {
+    "link_label": "Snelle opvolging"
+  },
+  {
+    "link_label": "Kwalificeren &amp; scoren"
+  },
+  {
+    "link_label": "Tot in je CRM"
+  },
+  {
+    "link_label": "Terugkoppeling naar marketing"
+  }
+],
+          media_type="trustcard", trustcard_aria="Bewijs kwaliteitsbewaking",
+          trustcard_image={
+  "src": "https://salesup.be/hs-fs/hubfs/Rectangle%2058.jpg?width=1600&height=1000&name=Rectangle%2058.jpg",
+  "alt": "Medewerker van salesUp volgt aan de laptop een net binnengekomen lead telefonisch op."
+},
+          trustcard_badge="", trustcard_stat="91<em>%</em>",
+          trustcard_label="Auditscore van ons Sales Contact Center-team bij Orange, de hoogste van Europa. Dezelfde kwaliteitsbewaking bewaakt elk opvolggesprek.",
+          trustcard_quote="“Een lead is op zijn warmst in de eerste minuten. Wij bellen snel, kwalificeren scherp en geven alleen de koopklare leads door aan je sales.”",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van lead opvolging" %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/features", anchor="oplevert", eyebrow="Wat het oplevert", vac_troef=false,
+          heading="Meer rendement uit de leads die je al betaalt.",
+          intro="<p>Lead opvolging haalt het maximum uit je bestaande leadstroom. Geen nieuwe advertentiebudgetten nodig, wel snelle en consistente opvolging van wat al binnenkomt.</p>",
+          feature_cards=[
+  {
+    "title": "Snelle opvolging (speed-to-lead)",
+    "tekst": "<p>Een nieuwe lead belandt meteen bij ons team en wordt snel opgebeld, idealiter binnen enkele minuten. Die snelheid is vaak het verschil tussen een gesprek en een gemiste kans.</p>"
+  },
+  {
+    "title": "Scherp gekwalificeerd",
+    "tekst": "<p>We toetsen elke lead af op behoefte, budget en timing, en scoren het gesprek op koopkans. Alleen de warme, gekwalificeerde leads gaan door naar je sales.</p>"
+  },
+  {
+    "title": "Niet-koopklare leads warm gehouden",
+    "tekst": "<p>Wie nog niet klaar is, verdwijnt niet. We zetten die leads in een opvolgflow zodat we op het juiste moment opnieuw contact opnemen, in plaats van ze te laten vallen.</p>"
+  },
+  {
+    "title": "Terugkoppeling naar je marketing",
+    "tekst": "<p>Elk gesprek registreren we in je CRM. Die data koppelt terug naar marketing, zodat je ziet welke bron en campagne écht koopklare leads oplevert. De datalus die je motor sterker maakt.</p>"
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/steps", anchor="aanpak", eyebrow="Hoe het werkt", intro="",
+          heading="Van binnengekomen lead tot warme afspraak.",
+          steps=[
+  {
+    "num": "01",
+    "title": "Leadbron koppelen",
+    "tekst": "<p>We verbinden je campagnes, formulieren en website met ons systeem, zodat elke nieuwe lead automatisch bij het juiste team terechtkomt.</p>"
+  },
+  {
+    "num": "02",
+    "title": "Snel contact opnemen",
+    "tekst": "<p>Ons team belt de lead snel op, in de juiste taal en toon, terwijl de interesse nog vers is.</p>"
+  },
+  {
+    "num": "03",
+    "title": "Kwalificeren &amp; scoren",
+    "tekst": "<p>We toetsen de lead af, scoren het gesprek op kwaliteit en koopkans, en beslissen: afspraak, doorgeven aan sales of in de nurtureflow.</p>"
+  },
+  {
+    "num": "04",
+    "title": "Doorgeven &amp; terugkoppelen",
+    "tekst": "<p>Warme leads zetten we als afspraak of geven we door aan je sales. De resultaten koppelen terug naar je marketing, met een transparante rapportering.</p>"
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/faq", eyebrow="Veelgestelde vragen", intro="", emit_schema=true,
+          heading="Wat klanten ons over lead opvolging vragen.",
+          faq_items=[
+  {
+    "question": "Hoe snel volgen jullie een nieuwe lead op?",
+    "answer": "<p>Zo snel mogelijk, want de kans op contact daalt met de minuut. We koppelen je leadbron aan ons systeem zodat een nieuwe lead meteen bij ons team belandt en snel wordt opgebeld, idealiter binnen enkele minuten. Die snelheid, speed-to-lead, is vaak het verschil tussen een gesprek en een gemiste kans.</p>"
+  },
+  {
+    "question": "Waar komen die leads vandaan?",
+    "answer": "<p>Uit je eigen kanalen: campagnes, je website en formulieren, SEA en social ads, of beurzen en events. Komen die leads uit onze eigen <a href='/marketing'>marketingdienst</a>, dan sluit de opvolging naadloos aan op de bovenkant van je commerciële motor.</p>"
+  },
+  {
+    "question": "Wat gebeurt er met leads die nog niet koopklaar zijn?",
+    "answer": "<p>Die gaan niet verloren. We kwalificeren elke lead en zetten wie nog niet klaar is in een opvolg- of nurtureflow, zodat we op het juiste moment opnieuw contact opnemen. Alleen de warme, gekwalificeerde leads geven we door aan je sales of zetten we als afspraak in de agenda.</p>"
+  },
+  {
+    "question": "Hoe koppelt dit terug naar onze marketing?",
+    "answer": "<p>Elk gesprek wordt gescoord op kwaliteit en koopkans en netjes geregistreerd in je CRM. Die data koppelt terug naar marketing, zodat je ziet welke bron en welke campagne écht koopklare leads oplevert. Zo verbeteren je marketing en je opvolging elkaar, de datalus die geen losse leverancier kan sluiten.</p>"
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/proof-marquee", aria="Bedrijven die met ons Sales Contact Center werken", eyebrow="Bedrijven die met ons Sales Contact Center werken",
+          logos=[
+  {
+    "naam": "Orange",
+    "slug": ""
+  },
+  {
+    "naam": "Van Heurck",
+    "slug": ""
+  },
+  {
+    "naam": "Q8 Oils",
+    "slug": ""
+  },
+  {
+    "naam": "Geodis",
+    "slug": ""
+  },
+  {
+    "naam": "UNIZO",
+    "slug": ""
+  },
+  {
+    "naam": "VM Building",
+    "slug": ""
+  },
+  {
+    "naam": "Upgrade Estate",
+    "slug": ""
+  },
+  {
+    "naam": "Trustteam",
+    "slug": ""
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/final-cta", anchor="contact",
+          heading="Klaar om geen lead meer koud te laten worden?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in je huidige leadstroom blijft liggen. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek", cta1_url={
+  "url": {
+    "url": {
+      "href": "#contact",
+      "type": "EXTERNAL"
+    }
+  }
+}, cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30", cta2_url={
+  "url": {
+    "url": {
+      "href": "tel:+3253782830",
+      "type": "EXTERNAL"
+    }
+  }
+} %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/related", link_label="Gerelateerde diensten",
+          links=[
+  {
+    "link_label": "Telefonische prospectie &amp; afspraakplanning",
+    "url": {
+      "url": {
+        "href": "/afspraakplanning",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Telesales",
+    "url": {
+      "url": {
+        "href": "/telesales",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Alles over het Sales Contact Center",
+    "url": {
+      "url": {
+        "href": "/sales-contact-center",
+        "type": "EXTERNAL"
+      }
+    }
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

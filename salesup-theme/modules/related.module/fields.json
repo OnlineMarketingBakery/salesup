@@ -7,7 +7,7 @@
   "allow_new_line" : false,
   "type" : "text",
   "display_width" : null,
-  "default" : "Ook interessant:"
+  "default" : "Gerelateerde diensten"
 }, {
   "id" : "links",
   "name" : "links",

@@ -22,6 +22,8 @@ Stemt af op de JSON-LD-paden (`www.salesup.be/…` zonder `.html`). `overzicht.h
 | `telesales.html` | `/telesales` |
 | `afspraakplanning.html` | `/afspraakplanning` |
 | `after-sales.html` | `/after-sales` |
+| `lead-opvolging.html` | `/lead-opvolging` |
+| `collections.html` | `/collections` |
 | `off-sites.html` | `/off-sites` |
 | `inspiratiesessie.html` | `/inspiratiesessie` |
 | `coachingstraject.html` | `/coachingstraject` |

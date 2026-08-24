@@ -19,15 +19,23 @@
 .proof .marquee-track{
   display:flex;
   align-items:center;
-  gap:40px;
+  /* was: gap:40px; */
+  gap:60px;
   width:max-content;
   padding:0;
   animation:proof-marquee 42s linear infinite !important;
   will-change:transform;
+  /* Pause until JS sets --marquee-distance after images load.
+     Must use !important: the animation shorthand above resets play-state to running. */
+  animation-play-state:paused !important;
+}
+.proof .marquee-track.is-ready{
+  animation-play-state:running !important;
 }
 @keyframes proof-marquee{
   from{transform:translateX(0);}
-  to{transform:translateX(-50%);}
+  /* was: translateX(-50%); pixel distance = one logo set (incl. flex gap) */
+  to{transform:translateX(calc(-1 * var(--marquee-distance, 50%)));}
 }
 .proof .marquee-item{
   flex:0 0 auto;
@@ -43,13 +51,15 @@
   overflow:visible;
 }
 .proof .marquee-item.is-pad{
-  width:180px;
+  /* was: width:180px; */
+  width:auto;
   overflow:hidden;
 }
 .proof .marquee-logo{
   display:block;
   height:60px !important;
-  width:180px !important;
+  /* was: width:180px !important; */
+  width:auto !important;
   max-height:60px !important;
   max-width:180px !important;
   object-fit:contain !important;
@@ -60,15 +70,12 @@
   filter:none;
 }
 .proof .marquee-item.is-pad .marquee-logo{
-  width:180px !important;
+  /* was: width:180px !important; max-width:180px !important; */
+  width:auto !important;
   max-width:180px !important;
   height:60px !important;
   max-height:60px !important;
   object-fit:contain !important;
-}
-.proof .marquee-item.is-white .marquee-logo{
-  filter:invert(1);
-  mix-blend-mode:screen;
 }
 .proof .logo-type{
   font-family:'Poppins',sans-serif;

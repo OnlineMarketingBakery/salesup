@@ -108,6 +108,18 @@
     "name": "After-sales"
   },
   {
+    "template": "lead-opvolging.html",
+    "slug": "/lead-opvolging",
+    "source": "lead-opvolging.html",
+    "name": "Lead Opvolging"
+  },
+  {
+    "template": "collections.html",
+    "slug": "/collections",
+    "source": "collections.html",
+    "name": "Collections"
+  },
+  {
     "template": "off-sites.html",
     "slug": "/off-sites",
     "source": "off-sites.html",

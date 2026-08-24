@@ -67,5 +67,20 @@
   "allow_new_line" : false,
   "type" : "text",
   "display_width" : null,
-  "default" : "Business Unit Manager bij salesUp en host van de Growth Sessions."
+  "default" : "Andy is Business Unit Manager Training bij salesUp en host van de Growth Sessions. Hij praat met commerciële leiders over groei, leiderschap en de mensen achter de cijfers — eerlijk, praktisch en zonder jargon."
+}, {
+  "id" : "host_image",
+  "name" : "host_image",
+  "label" : "Host — foto",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://salesup.be/hubfs/IZ6A0354%201%20(2).png",
+    "alt" : "Andy Vlaeminck, host van de salesUp Growth Sessions."
+  }
 } ]

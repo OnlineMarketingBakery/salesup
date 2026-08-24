@@ -1,0 +1,264 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: salesUp — Collections
+-->
+{% extends "./base.html" %}
+{% block extra_css %}{% endblock %}
+{% block content %}
+{% module "json_ld" path="../modules/json-ld",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Collections\",\n      \"serviceType\":\"Minnelijke betalingsopvolging en debiteurenbeheer via de telefoon\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/collections\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"url\":\"https://www.salesup.be/sales-contact-center\"},\n      \"description\":\"Minnelijke betalingsopvolging via de telefoon die openstaande facturen int met behoud van de klantrelatie, met elk gesprek gescoord op kwaliteit en dezelfde kwaliteitsbewaking als het Sales Contact Center.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Contact Center\",\"item\":\"https://www.salesup.be/sales-contact-center\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Collections\",\"item\":\"https://www.salesup.be/collections\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat is minnelijke betalingsopvolging precies?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Minnelijke betalingsopvolging is het opvolgen en innen van openstaande facturen via gesprek en herinnering, vóór er een gerechtelijke procedure aan te pas komt. We bellen je klant professioneel en respectvol op, sturen aan op betaling of een haalbare betaalregeling, en houden de relatie intact. Voor dossiers die minnelijk niet betalen, draag je gestructureerd over aan je incasso- of gerechtsdeurwaarderspartner.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Beschadigt collections onze klantrelatie niet?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Net omgekeerd is het onze insteek. Een openstaande factuur is vaak een vergetelheid of een tijdelijk probleem, geen onwil. We voeren het gesprek als een verlengstuk van jouw bedrijf, met de juiste toon en meertalig waar nodig. De klant blijft klant, en jij krijgt je geld sneller binnen.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit van elk gesprek?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze eigen software scoort elk gesprek automatisch op kwaliteit, geen steekproef achteraf. Die scores sturen de opvolging én de ontwikkeling van de mensen aan de lijn via ons trainingsplatform salesUp Academy. Het is dezelfde kwaliteitsbewaking die ons Sales Contact Center bij Orange een auditscore van 91% opleverde, de hoogste van Europa.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We werken resultaatgericht. We spreken vooraf een doelstelling af, bijvoorbeeld het aandeel opgeloste dossiers, en rapporteren daar transparant tegenover. Zo zie je zwart op wit wat de opvolging opbrengt en hoeveel openstaand bedrag terugstroomt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  hreflang_nl="https://www.salesup.be/collections",
+  hreflang_fr="" %}
+  {% dnd_area "inhoud" label="Pagina-inhoud" %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/breadcrumb", emit_schema=false,
+          crumbs=[
+  {
+    "link_label": "Home",
+    "url": {
+      "url": {
+        "href": "/",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Diensten",
+    "url": {
+      "url": {
+        "href": "/#diensten",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Sales Contact Center",
+    "url": {
+      "url": {
+        "href": "/sales-contact-center",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Collections",
+    "url": {
+      "url": {
+        "href": "",
+        "type": "EXTERNAL"
+      }
+    }
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/hero",
+          eyebrow="Sales Contact Center · Collections",
+          heading="Openstaande facturen innen, zonder je <em>klantrelatie</em> te schaden.",
+          subtext="<p>Onbetaalde facturen kosten je cash én tijd. Onze collections-aanpak volgt je openstaande dossiers minnelijk op via de telefoon: professioneel, respectvol en meertalig. Elk gesprek wordt gescoord op kwaliteit en netjes opgevolgd tot in je boekhouding, met dezelfde kwaliteitsbewaking als het Sales Contact Center.</p>",
+          cta1_text="Plan een gesprek", cta1_url={
+  "url": {
+    "url": {
+      "href": "#contact",
+      "type": "EXTERNAL"
+    }
+  }
+},
+          cta2_text="Zo werkt collections", cta2_url={
+  "url": {
+    "url": {
+      "href": "#aanpak",
+      "type": "EXTERNAL"
+    }
+  }
+},
+          terugbelnote="Liever gebeld? <strong>We bellen je binnen 30 minuten terug.</strong>",
+          note_energie=false, trust_chips=[], trust_aria="Erkenningen en reviews",
+          chips=[
+  {
+    "link_label": "Minnelijke opvolging"
+  },
+  {
+    "link_label": "Elk gesprek gescoord"
+  },
+  {
+    "link_label": "Klantrelatie eerst"
+  },
+  {
+    "link_label": "Tot in je boekhouding"
+  }
+],
+          media_type="trustcard", trustcard_aria="Bewijs kwaliteitsbewaking",
+          trustcard_image={
+  "src": "https://salesup.be/hs-fs/hubfs/Rectangle%2058.jpg?width=1600&height=1000&name=Rectangle%2058.jpg",
+  "alt": "Medewerker van salesUp met headset volgt telefonisch een openstaande factuur op vanaf haar bureau."
+},
+          trustcard_badge="", trustcard_stat="91<em>%</em>",
+          trustcard_label="Auditscore van ons Sales Contact Center-team bij Orange, de hoogste van Europa. Dezelfde kwaliteitsbewaking bewaakt elk collections-gesprek.",
+          trustcard_quote="“Een openstaande factuur is zelden onwil. Wij bellen als een verlengstuk van jouw bedrijf, zodat de klant klant blijft en jij sneller betaald wordt.”",
+          trustcard_quote_who="— <strong>salesUp</strong>, over de collections-aanpak" %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/features", anchor="oplevert", eyebrow="Wat het oplevert", vac_troef=false,
+          heading="Cash sneller binnen, relatie intact.",
+          intro="<p>Collections is geen incassobureau dat je klant tegen zich in het harnas jaagt. Het is gestructureerde, menselijke opvolging die je werkkapitaal vrijmaakt zonder omzet van morgen te verbranden.</p>",
+          feature_cards=[
+  {
+    "title": "Minnelijk, met behoud van de relatie",
+    "tekst": "<p>We bellen je klant professioneel en respectvol op, sturen aan op betaling of een haalbare betaalregeling en houden de toon van jouw merk aan. De klant blijft klant.</p>"
+  },
+  {
+    "title": "Elk gesprek automatisch gescoord",
+    "tekst": "<p>Onze eigen software scoort elk gesprek op kwaliteit, geen steekproef achteraf. Zo blijft de opvolging correct, consistent en herhaalbaar over je hele debiteurenbestand.</p>"
+  },
+  {
+    "title": "Meertalig en professioneel",
+    "tekst": "<p>Nederlands, Frans of Engels: we spreken je klant aan in de juiste taal en de juiste toon, zodat het gesprek ontmijnt in plaats van escaleert.</p>"
+  },
+  {
+    "title": "Opgevolgd tot in je systeem",
+    "tekst": "<p>Elke afspraak, betaalbelofte en betaling koppelen we netjes terug in je boekhouding of CRM. Je krijgt een heldere, transparante rapportering van wat er terugstroomt.</p>"
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/steps", anchor="aanpak", eyebrow="Hoe het werkt", intro="",
+          heading="Van openstaand dossier tot betaling.",
+          steps=[
+  {
+    "num": "01",
+    "title": "Dossiers &amp; toon afstemmen",
+    "tekst": "<p>We nemen je openstaande dossiers over, spreken de gewenste toon af en bepalen vanaf welk moment we contact opnemen.</p>"
+  },
+  {
+    "num": "02",
+    "title": "Minnelijke belronde",
+    "tekst": "<p>Ons team belt je klanten op, achterhaalt de reden van de achterstand en stuurt aan op betaling of een concrete betaalregeling.</p>"
+  },
+  {
+    "num": "03",
+    "title": "Herinneren &amp; opvolgen",
+    "tekst": "<p>Beloftes en regelingen volgen we omnichannel op via telefoon en mail, tot de factuur betaald is of de afspraak is nagekomen.</p>"
+  },
+  {
+    "num": "04",
+    "title": "Rapporteren &amp; overdragen",
+    "tekst": "<p>Je krijgt een transparante rapportering van wat er terugstroomt. Blijft een dossier minnelijk onbetaald, dan draag je het gestructureerd over aan je incasso- of gerechtsdeurwaarderspartner.</p>"
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/faq", eyebrow="Veelgestelde vragen", intro="", emit_schema=true,
+          heading="Wat klanten ons over collections vragen.",
+          faq_items=[
+  {
+    "question": "Wat is minnelijke betalingsopvolging precies?",
+    "answer": "<p>Minnelijke betalingsopvolging is het opvolgen en innen van openstaande facturen via gesprek en herinnering, vóór er een gerechtelijke procedure aan te pas komt. We bellen je klant professioneel en respectvol op, sturen aan op betaling of een haalbare betaalregeling, en houden de relatie intact. Voor dossiers die minnelijk niet betalen, draag je gestructureerd over aan je incasso- of gerechtsdeurwaarderspartner.</p>"
+  },
+  {
+    "question": "Beschadigt collections onze klantrelatie niet?",
+    "answer": "<p>Net omgekeerd is het onze insteek. Een openstaande factuur is vaak een vergetelheid of een tijdelijk probleem, geen onwil. We voeren het gesprek als een verlengstuk van jouw bedrijf, met de juiste toon en meertalig waar nodig. De klant blijft klant, en jij krijgt je geld sneller binnen.</p>"
+  },
+  {
+    "question": "Hoe bewaken jullie de kwaliteit van elk gesprek?",
+    "answer": "<p>Onze eigen software scoort elk gesprek automatisch op kwaliteit, geen steekproef achteraf. Die scores sturen de opvolging én de ontwikkeling van de mensen aan de lijn via ons trainingsplatform salesUp Academy. Het is dezelfde kwaliteitsbewaking die ons Sales Contact Center bij Orange een auditscore van 91% opleverde, de hoogste van Europa.</p>"
+  },
+  {
+    "question": "Waarop rekenen jullie ons af?",
+    "answer": "<p>We werken resultaatgericht. We spreken vooraf een doelstelling af, bijvoorbeeld het aandeel opgeloste dossiers, en rapporteren daar transparant tegenover. Zo zie je zwart op wit wat de opvolging opbrengt en hoeveel openstaand bedrag terugstroomt.</p>"
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/proof-marquee", aria="Bedrijven die met ons Sales Contact Center werken", eyebrow="Bedrijven die met ons Sales Contact Center werken",
+          logos=[
+  {
+    "naam": "Orange",
+    "slug": ""
+  },
+  {
+    "naam": "Van Heurck",
+    "slug": ""
+  },
+  {
+    "naam": "Q8 Oils",
+    "slug": ""
+  },
+  {
+    "naam": "Geodis",
+    "slug": ""
+  },
+  {
+    "naam": "UNIZO",
+    "slug": ""
+  },
+  {
+    "naam": "VM Building",
+    "slug": ""
+  },
+  {
+    "naam": "Upgrade Estate",
+    "slug": ""
+  },
+  {
+    "naam": "Trustteam",
+    "slug": ""
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/final-cta", anchor="contact",
+          heading="Klaar om je openstaande facturen los te trekken?",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in je debiteurenbestand vastzit. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
+          cta1_text="Plan een gesprek", cta1_url={
+  "url": {
+    "url": {
+      "href": "#contact",
+      "type": "EXTERNAL"
+    }
+  }
+}, cta1_new_tab=false,
+          cta2_text="Of bel ons: 053 78 28 30", cta2_url={
+  "url": {
+    "url": {
+      "href": "tel:+3253782830",
+      "type": "EXTERNAL"
+    }
+  }
+} %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+      {% dnd_section %}{% dnd_column %}{% dnd_row %}
+        {% dnd_module path="../modules/related", link_label="Gerelateerde diensten",
+          links=[
+  {
+    "link_label": "Lead opvolging",
+    "url": {
+      "url": {
+        "href": "/lead-opvolging",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "After sales &amp; heractivatie",
+    "url": {
+      "url": {
+        "href": "/after-sales",
+        "type": "EXTERNAL"
+      }
+    }
+  },
+  {
+    "link_label": "Alles over het Sales Contact Center",
+    "url": {
+      "url": {
+        "href": "/sales-contact-center",
+        "type": "EXTERNAL"
+      }
+    }
+  }
+] %}{% end_dnd_module %}
+      {% end_dnd_row %}{% end_dnd_column %}{% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock content %}

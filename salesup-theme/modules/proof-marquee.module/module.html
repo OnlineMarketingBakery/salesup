@@ -15,14 +15,14 @@
         "Liantis": "https://salesup.be/hubfs/liantis.png",
         "zambon": "https://salesup.be/hubfs/zambon%20good.png",
         "Zambon": "https://salesup.be/hubfs/zambon%20good.png",
-        "astara": "https://salesup.be/hubfs/astra%20good.png",
-        "Astara": "https://salesup.be/hubfs/astra%20good.png",
+        "astara": "https://salesup.be/hubfs/astra%20good-3.png",
+        "Astara": "https://salesup.be/hubfs/astra%20good-3.png",
         "ichoosr": "https://salesup.be/hubfs/ichoosr-logo-white%20(1).png",
         "iChoosr": "https://salesup.be/hubfs/ichoosr-logo-white%20(1).png",
         "iChoosr.": "https://salesup.be/hubfs/ichoosr-logo-white%20(1).png",
-        "upgrade-estate": "https://salesup.be/hubfs/Attract%20Leads%20logos/UpgradeEstate.svg",
-        "Upgrade Estate": "https://salesup.be/hubfs/Attract%20Leads%20logos/UpgradeEstate.svg",
-        "UpgradeEstate": "https://salesup.be/hubfs/Attract%20Leads%20logos/UpgradeEstate.svg",
+        "upgrade-estate": "https://salesup.be/hubfs/UpgradeEstate.png",
+        "Upgrade Estate": "https://salesup.be/hubfs/UpgradeEstate.png",
+        "UpgradeEstate": "https://salesup.be/hubfs/UpgradeEstate.png",
         "eurocircuits": "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg",
         "Eurocircuits": "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg",
         "EuroCircuits": "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg",
@@ -46,8 +46,8 @@
         "JOULE": "https://salesup.be/hubfs/joule%20good.png",
         "orange": "https://salesup.be/hubfs/Orange%20-%20tevreden%20klant%20van%20salesUp.png",
         "Orange": "https://salesup.be/hubfs/Orange%20-%20tevreden%20klant%20van%20salesUp.png",
-        "trustteam": "https://salesup.be/hubfs/edited-photo.png",
-        "Trustteam": "https://salesup.be/hubfs/edited-photo.png",
+        "trustteam": "https://salesup.be/hubfs/edited-photo-4.png",
+        "Trustteam": "https://salesup.be/hubfs/edited-photo-4.png",
         "audika": "https://salesup.be/hubfs/Audika%20%E2%80%94%20tevreden%20klant%20van%20salesUp.png",
         "Audika": "https://salesup.be/hubfs/Audika%20%E2%80%94%20tevreden%20klant%20van%20salesUp.png",
         "Audika Group": "https://salesup.be/hubfs/Audika%20%E2%80%94%20tevreden%20klant%20van%20salesUp.png",
@@ -76,41 +76,133 @@
       } %}
       {% set padded = ["Liantis", "Zambon", "Trustteam", "Jaguar Land Rover", "JLR", "Culligan", "Europabank", "Solidaris", "Upgrade Estate", "UpgradeEstate", "Eurocircuits", "EuroCircuits", "Contractify", "Guylian", "Locquet", "Vokans", "Q8", "Q8 Oils", "Q8Oils"] %}
       {% macro logo_item(src, naam, pass) %}
-        <span class="marquee-item{% if naam in padded %} is-pad{% endif %}{% if naam == 'Hivolta' or naam == 'hivolta' %} is-white{% endif %}"{% if pass %} aria-hidden="true"{% endif %}><img class="marquee-logo" src="{{ src }}" alt="{% if pass %}{% else %}{{ naam }}{% endif %}" decoding="async"></span>
+        <span class="marquee-item{% if naam in padded %} is-pad{% endif %}"{% if pass %} aria-hidden="true"{% endif %}><img class="marquee-logo" src="{{ src }}" alt="{% if pass %}{% else %}{{ naam }}{% endif %}" decoding="async"></span>
       {% endmacro %}
-      {% for pass in range(0, 2) %}
-        {% for logo in module.logos %}
-          {% if live[logo.naam] %}
-            {{ logo_item(live[logo.naam], logo.naam, pass) }}
-          {% elif logo.slug and live[logo.slug] %}
-            {{ logo_item(live[logo.slug], logo.naam, pass) }}
-          {% elif logo.beeld.src %}
-            {{ logo_item(logo.beeld.src, logo.naam, pass) }}
-          {% elif logo.naam %}
-            <span class="marquee-item"{% if pass %} aria-hidden="true"{% endif %}><span class="logo-type">{{ logo.naam }}</span></span>
-          {% endif %}
-        {% endfor %}
+      {# One logo set only; JS duplicates + measures width for a seamless loop (works with auto-width logos). #}
+      {% for logo in module.logos %}
+        {% if live[logo.naam] %}
+          {{ logo_item(live[logo.naam], logo.naam, false) }}
+        {% elif logo.slug and live[logo.slug] %}
+          {{ logo_item(live[logo.slug], logo.naam, false) }}
+        {% elif logo.beeld.src %}
+          {{ logo_item(logo.beeld.src, logo.naam, false) }}
+        {% elif logo.naam %}
+          <span class="marquee-item"><span class="logo-type">{{ logo.naam }}</span></span>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
 </section>
 <script>
 (function () {
-  var root = document.currentScript && document.currentScript.previousElementSibling;
+  var script = document.currentScript;
+  var root = script && script.previousElementSibling;
   if (!root || !root.classList || !root.classList.contains('proof')) {
-    root = document.querySelector('.proof:last-of-type');
+    root = (script && script.parentElement && script.parentElement.querySelector('.proof'))
+      || document.querySelector('.proof:last-of-type');
   }
   if (!root) return;
   var scroller = root.querySelector('.marquee');
   var track = root.querySelector('.marquee-track');
-  if (!scroller || !track || track.dataset.filled === 'true') return;
-  var originals = Array.prototype.slice.call(track.children);
-  if (!originals.length) return;
-  var i = 0;
-  while (track.scrollWidth < scroller.clientWidth * 2 && i < 8) {
-    originals.forEach(function (node) { track.appendChild(node.cloneNode(true)); });
-    i++;
+  if (!scroller || !track) return;
+
+  function itemKey(el) {
+    var img = el.querySelector('img');
+    if (img) return img.currentSrc || img.src || '';
+    return (el.textContent || '').trim();
   }
-  track.dataset.filled = 'true';
+
+  function setup() {
+    // Re-run if a previous pass marked filled but never set the loop distance
+    if (track.dataset.marqueeReady === 'true' && track.style.getPropertyValue('--marquee-distance')) return;
+
+    var all = Array.prototype.slice.call(track.children);
+    if (!all.length) return;
+
+    // Detect one set length: first time the opening key repeats
+    var keys = all.map(itemKey);
+    var setCount = keys.length;
+    var i;
+    for (i = 1; i < keys.length; i++) {
+      if (keys[i] && keys[i] === keys[0]) {
+        setCount = i;
+        break;
+      }
+    }
+
+    // Collapse back to a single set, then rebuild clones from that
+    while (track.children.length > setCount) {
+      track.removeChild(track.lastChild);
+    }
+    var setItems = Array.prototype.slice.call(track.children);
+    if (!setItems.length) return;
+
+    function appendSet() {
+      setItems.forEach(function (node) {
+        var clone = node.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        var img = clone.querySelector('img');
+        if (img) img.alt = '';
+        track.appendChild(clone);
+      });
+    }
+
+    // Need a second set so we can measure the exact pixel distance (includes flex gap)
+    appendSet();
+    var second = track.children[setCount];
+    if (!second) return;
+    var distance = second.offsetLeft - track.children[0].offsetLeft;
+    if (!distance || distance < 1) {
+      // Fallback if layout not ready yet
+      var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 0;
+      distance = track.children[0].parentElement
+        ? (function () {
+            var w = 0;
+            var n;
+            for (n = 0; n < setCount; n++) w += setItems[n].getBoundingClientRect().width;
+            return w + gap * setCount;
+          })()
+        : 0;
+    }
+    if (!distance || distance < 1) return;
+
+    var guard = 0;
+    while (track.scrollWidth < scroller.clientWidth * 2 && guard < 12) {
+      appendSet();
+      guard += 1;
+    }
+
+    track.style.setProperty('--marquee-distance', Math.round(distance) + 'px');
+    track.style.setProperty('animation-duration', Math.max(28, Math.min(70, Math.round(distance / 45))) + 's', 'important');
+    track.style.setProperty('animation-play-state', 'running', 'important');
+    track.dataset.marqueeReady = 'true';
+    track.dataset.filled = 'true';
+    track.classList.add('is-ready');
+  }
+
+  function whenImagesReady(cb) {
+    var imgs = track.querySelectorAll('img');
+    var pending = 0;
+    var done = false;
+    function finish() {
+      if (done) return;
+      done = true;
+      requestAnimationFrame(function () { requestAnimationFrame(cb); });
+    }
+    function onOne() {
+      pending -= 1;
+      if (pending <= 0) finish();
+    }
+    Array.prototype.forEach.call(imgs, function (img) {
+      if (img.complete && img.naturalWidth) return;
+      pending += 1;
+      img.addEventListener('load', onOne);
+      img.addEventListener('error', onOne);
+    });
+    if (pending === 0) finish();
+    else setTimeout(finish, 2500); // don't hang forever on a broken asset
+  }
+
+  whenImagesReady(setup);
 })();
 </script>

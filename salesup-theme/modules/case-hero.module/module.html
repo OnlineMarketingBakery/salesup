@@ -1,67 +1,135 @@
+{# Case hero: two-column layout (copy + trustcard) — same visual language as service heroes. #}
+{% set heading = module.heading|default("") %}
+{% set eyebrow = module.eyebrow|default("") %}
+{% set fit = module.image_fit|default("cover") %}
+{% set tags_str = module.meta_tags|map(attribute='link_label')|join(' ')|default('') %}
+{% set hint = (eyebrow ~ " " ~ tags_str)|lower %}
+
+{% set img_meeting = "https://salesup.be/hubfs/Group%20201-2.png" %}
+{% set img_cc = "https://salesup.be/hubfs/Untitled%20design.png" %}
+{% set img_overleg = "https://salesup.be/hubfs/Rectangle%2058.jpg" %}
+{% set img_f2f = "https://salesup.be/hubfs/Rectangle%2057.jpg" %}
+{% set img_consult = "https://salesup.be/hubfs/Rectangle%2060.jpg" %}
+
+{% if module.hero_image.src %}
+  {% set hero_img = module.hero_image.src %}
+  {% set hero_alt = module.hero_image.alt|default(heading) %}
+{% elif "training" in hint or "coaching" in hint or "off-site" in hint or "inspiratie" in hint or "academy" in hint %}
+  {% set hero_img = img_meeting %}
+  {% set hero_alt = "salesUp-training en coaching in actie" %}
+{% elif "face2face" in hint or "face-to-face" in hint or "face 2 face" in hint or "event" in hint or "studenten" in hint or "retail" in hint or "deur" in hint %}
+  {% set hero_img = img_f2f %}
+  {% set hero_alt = "salesUp face-to-face team in het veld" %}
+{% elif "marketing" in hint or "website" in hint or "sea" in hint or "seo" in hint or "social" in hint or "e-mail" in hint or "email" in hint %}
+  {% set hero_img = img_overleg %}
+  {% set hero_alt = "salesUp marketing- en groeisessie" %}
+{% elif "consultant" in hint or "detachering" in hint or "interim" in hint or "audit" in hint %}
+  {% set hero_img = img_consult %}
+  {% set hero_alt = "salesUp sales consultant aan het werk" %}
+{% else %}
+  {% set hero_img = img_cc %}
+  {% set hero_alt = "salesUp Sales Contact Center" %}
+{% endif %}
+
+{# Real logos only — skip theme text-SVG placeholders that duplicate the H1.
+   logo_light = white/light assets meant for navy bars; get a navy chip on white heroes. #}
+{% set logo_src = "" %}
+{% set logo_alt = heading %}
+{% set logo_light = false %}
+{% if module.logo.src %}
+  {% set logo_src = module.logo.src %}
+  {% set logo_alt = module.logo.alt|default(heading) %}
+  {% if "white" in (module.logo.src|lower) or "astra" in (module.logo.src|lower) or "Orange" in module.logo.src or "ichoosr" in (module.logo.src|lower) or "Geodis" in module.logo.src or "edited-photo" in module.logo.src %}
+    {% set logo_light = true %}
+  {% endif %}
+{% elif "Zambon" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/zambon%20good.png" %}
+  {% set logo_alt = "Zambon logo" %}
+{% elif "Orange" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/Orange%20-%20tevreden%20klant%20van%20salesUp.png" %}
+  {% set logo_alt = "Orange logo" %}
+  {% set logo_light = true %}
+{% elif "Q8" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/Q8.png" %}
+  {% set logo_alt = "Q8Oils logo" %}
+{% elif "GEODIS" in heading or "Geodis" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/Geodis.svg" %}
+  {% set logo_alt = "GEODIS logo" %}
+  {% set logo_light = true %}
+{% elif "Eurocircuits" in heading or "EuroCircuits" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg" %}
+  {% set logo_alt = "Eurocircuits logo" %}
+{% elif "Astara" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/astra%20good-3.png" %}
+  {% set logo_alt = "Astara logo" %}
+  {% set logo_light = true %}
+{% elif "Liantis" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/liantis.png" %}
+  {% set logo_alt = "Liantis logo" %}
+{% elif "Trustteam" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/edited-photo-4.png" %}
+  {% set logo_alt = "Trustteam logo" %}
+  {% set logo_light = true %}
+{% elif "Hivolta" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/hivolta.png" %}
+  {% set logo_alt = "Hivolta logo" %}
+{% elif "iChoosr" in heading or "ichoosr" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/ichoosr-logo-white%20(1).png" %}
+  {% set logo_alt = "iChoosr logo" %}
+  {% set logo_light = true %}
+{% elif "Upgrade Estate" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/UpgradeEstate.png" %}
+  {% set logo_alt = "Upgrade Estate logo" %}
+{% elif "Jaguar" in heading or "Land Rover" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/Keep%20clients%20logos/JLR.svg" %}
+  {% set logo_alt = "Jaguar Land Rover logo" %}
+{% elif "Atradius" in heading %}
+  {% set logo_src = "https://salesup.be/hubfs/Atradius.png" %}
+  {% set logo_alt = "Atradius logo" %}
+{% endif %}
+
+{% set primary = module.stats|first %}
+{% set primary_on_card = primary and primary.cijfer and primary.cijfer != "•" %}
+
 <section class="case-hero">
+  <div class="wrap case-hero-grid">
+    <div class="case-hero-copy">
+      {% if logo_src %}
+      <img class="case-hero-logo img-fit-contain{% if logo_light %} is-light{% endif %}" src="{{ logo_src }}" alt="{{ logo_alt }}" width="220" height="80" decoding="async">
+      {% endif %}
+      {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
+      {% if module.heading %}<h1>{{ module.heading }}</h1>{% endif %}
+      {% if module.subtext %}<div class="case-sub">{{ module.subtext }}</div>{% endif %}
+      {% if module.meta_tags %}
+      <ul class="case-meta">
+        {% for t in module.meta_tags %}<li>{{ t.link_label }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+
+    <aside class="trustcard case-trustcard" aria-label="{{ module.trustcard_aria|default('Bewijs uit deze case') }}">
+      <div class="trustcard-media img-fit-{{ fit }}">
+        <img class="img-fit-{{ fit }}" src="{{ hero_img }}" alt="{{ hero_alt }}" width="1600" height="1000" fetchpriority="high" loading="eager" decoding="async">
+      </div>
+      {% if primary_on_card %}
+      <div>
+        <div class="stat">{{ primary.cijfer }}</div>
+        {% if primary.toelichting %}<p class="label">{{ primary.toelichting }}</p>{% endif %}
+      </div>
+      {% endif %}
+    </aside>
+  </div>
+
+  {% if module.stats and (not primary_on_card or module.stats|length > 1) %}
   <div class="wrap">
-    {% set heading = module.heading|default("") %}
-    {% if module.logo.src %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ module.logo.src }}" alt="{{ module.logo.alt|default(heading) }}" width="220" height="80">
-    {% elif "Zambon" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/zambon%20good.png" alt="Zambon logo" width="220" height="80">
-    {% elif "Orange" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/orange.svg') }}" alt="Orange logo" width="220" height="80">
-    {% elif "Van Heurck" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/van-heurck.svg') }}" alt="Van Heurck logo" width="220" height="80">
-    {% elif "Q8" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/Q8.png" alt="Q8Oils logo" width="220" height="80">
-    {% elif "Axians" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/axians.svg') }}" alt="Axians logo" width="220" height="80">
-    {% elif "UNIZO" in heading or "Unizo" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/unizo.svg') }}" alt="UNIZO logo" width="220" height="80">
-    {% elif "VM Building" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/vm-building.svg') }}" alt="VM Building Solutions logo" width="220" height="80">
-    {% elif "Trustteam" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/trustteam.svg') }}" alt="Trustteam logo" width="220" height="80">
-    {% elif "GEODIS" in heading or "Geodis" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/Geodis.svg" alt="GEODIS logo" width="220" height="80">
-    {% elif "Radiance" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/radiance-energy.svg') }}" alt="Radiance Energy logo" width="220" height="80">
-    {% elif "Upgrade Estate" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/upgrade-estate.svg') }}" alt="Upgrade Estate logo" width="220" height="80">
-    {% elif "Messer" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/messer-group.svg') }}" alt="Messer Group logo" width="220" height="80">
-    {% elif "Alindus" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/alindus.svg') }}" alt="Alindus logo" width="220" height="80">
-    {% elif "EV Shop" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/ev-shop.svg') }}" alt="EV Shop logo" width="220" height="80">
-    {% elif "SPM" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/spm.svg') }}" alt="SPM Technologies logo" width="220" height="80">
-    {% elif "Eurocircuits" in heading or "EuroCircuits" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg" alt="Eurocircuits logo" width="220" height="80">
-    {% elif "Jaguar" in heading or "Land Rover" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/jaguar-land-rover.svg') }}" alt="Jaguar Land Rover logo" width="220" height="80">
-    {% elif "Astara" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/astra%20good.png" alt="Astara logo" width="220" height="80">
-    {% elif "Liantis" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="https://salesup.be/hubfs/liantis.png" alt="Liantis logo" width="220" height="80">
-    {% elif "Hivolta" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/hivolta.svg') }}" alt="Hivolta logo" width="220" height="80">
-    {% elif "iChoosr" in heading or "ichoosr" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/ichoosr.svg') }}" alt="iChoosr logo" width="220" height="80">
-    {% elif "Immo" in heading or "Van Middelem" in heading %}
-    <img class="case-hero-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{{ get_asset_url('../images/logos/immo-van-middelem.svg') }}" alt="Immo Van Middelem logo" width="220" height="80">
-    {% endif %}
-    {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
-    {% if module.heading %}<h1>{{ module.heading }}</h1>{% endif %}
-    {% if module.subtext %}<div class="case-sub">{{ module.subtext }}</div>{% endif %}
-    {% if module.meta_tags %}
-    <ul class="case-meta">
-      {% for t in module.meta_tags %}<li>{{ t.link_label }}</li>{% endfor %}
-    </ul>
-    {% endif %}
-    {% if module.stats %}
     <div class="stat-strook" aria-label="Kerncijfers">
       {% for s in module.stats %}
-      <div class="stat-item"><span class="stat-num">{{ s.cijfer }}</span><span class="stat-label">{{ s.toelichting }}</span></div>
+        {% if primary_on_card and loop.first %}
+        {% else %}
+        <div class="stat-item"><span class="stat-num">{{ s.cijfer }}</span><span class="stat-label">{{ s.toelichting }}</span></div>
+        {% endif %}
       {% endfor %}
     </div>
-    {% endif %}
   </div>
+  {% endif %}
 </section>

@@ -7,7 +7,11 @@
         <a href="{{ home_page.absolute_url if home_page and home_page.absolute_url else '/' }}" class="foot-logo" aria-label="salesUp home">
           <img src="https://salesup.be/hubfs/logo-salesup.svg" alt="salesUp" width="116" height="42" decoding="async">
         </a>
-        <p class="foot-addr">{{ module.adres }} · <a href="tel:{{ module.tel_href }}">{{ module.tel_display }}</a> · <a href="mailto:{{ module.email }}">{{ module.email }}</a></p>
+        <p class="foot-locations">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Evenbroekveld+14+9420+Erpe-Mere" target="_blank" rel="noopener noreferrer">Evenbroekveld 14, 9420 Erpe-Mere</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Kerkstraat+39+8400+Oostende" target="_blank" rel="noopener noreferrer">Kerkstraat 39, 8400 Oostende</a>
+        </p>
+        <p class="foot-addr"><a href="tel:{{ module.tel_href }}">{{ module.tel_display }}</a> · <a href="mailto:{{ module.email }}">{{ module.email }}</a></p>
       </div>
       {% if module.columns %}
       {% for col in module.columns %}

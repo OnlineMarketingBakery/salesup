@@ -1,7 +1,12 @@
 <section class="section wrap" id="cases" aria-labelledby="cases-titel">
   <div class="section-head case-filter">
     {% if module.eyebrow %}<span class="mono">{{ module.eyebrow }}</span>{% endif %}
-    <h2 id="cases-titel">{{ module.heading }}</h2>
+    {# Remap outdated CMS heading until the page field is re-saved. #}
+    {% set cases_heading = module.heading|default('Ontdek onze cases') %}
+    {% if cases_heading == 'Kies de dienst die je zoekt.' %}
+      {% set cases_heading = 'Ontdek onze cases' %}
+    {% endif %}
+    <h2 id="cases-titel">{{ cases_heading }}</h2>
     {% if module.intro %}<p class="filter-intro">{{ module.intro }}</p>{% endif %}
     <div class="filter-toolbar" role="group" aria-label="Filter cases op dienst">
       {% for f in module.filters %}
@@ -16,9 +21,7 @@
   <div class="cases-grid" id="cases-grid">
     {% for c in module.case_cards %}
     <a class="case-kaart" data-diensten="{{ c.diensten }}" href="{{ c.url.url.href|default('/cases') }}">
-      {% if c.logo.src or c.logo_slug or c.klant == 'Zambon' or 'Q8' in c.klant or c.klant == 'Astara' or c.klant == 'Liantis' or 'GEODIS' in c.klant or 'Geodis' in c.klant or 'Eurocircuit' in c.klant or c.klant == 'Orange' %}
-      <img class="case-logo img-fit-{% if module.image_fit == 'contain' %}contain{% else %}cover{% endif %}" src="{% if c.logo.src %}{{ c.logo.src }}{% elif c.logo_slug %}{{ get_asset_url('../images/logos/' ~ c.logo_slug ~ '.svg') }}{% elif c.klant == 'Zambon' %}https://salesup.be/hubfs/zambon%20good.png{% elif 'Q8' in c.klant %}https://salesup.be/hubfs/Q8.png{% elif c.klant == 'Astara' %}https://salesup.be/hubfs/astra%20good.png{% elif c.klant == 'Liantis' %}https://salesup.be/hubfs/liantis.png{% elif 'GEODIS' in c.klant or 'Geodis' in c.klant %}https://salesup.be/hubfs/Geodis.svg{% elif 'Eurocircuit' in c.klant %}https://salesup.be/hubfs/Attract%20Leads%20logos/EuroCircuits.svg{% elif c.klant == 'Orange' %}{{ get_asset_url('../images/logos/orange.svg') }}{% endif %}" alt="{{ c.logo.alt|default(c.klant ~ ' logo') }}" loading="lazy" decoding="async">
-      {% endif %}
+      {# Brand name once: placeholder logo SVGs were wordmarks that duplicated the h3. #}
       <div class="case-kop">
         <h3>{{ c.klant }}</h3>
         <span class="case-sector">{{ c.sector }}</span>

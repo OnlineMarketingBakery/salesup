@@ -16,6 +16,34 @@
     }
   },
   {
+    "id": "hero_image",
+    "name": "hero_image",
+    "label": "Hero-beeld (optioneel)",
+    "help_text": "Laat leeg om automatisch een sfeerbeeld te kiezen op basis van de diensten-tags.",
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": true,
+    "show_loading": false,
+    "type": "image",
+    "display_width": null,
+    "default": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": "trustcard_aria",
+    "name": "trustcard_aria",
+    "label": "Aria-label trustcard",
+    "required": false,
+    "locked": false,
+    "allow_new_line": false,
+    "type": "text",
+    "display_width": null,
+    "default": "Bewijs uit deze case"
+  },
+  {
     "id": "image_fit",
     "name": "image_fit",
     "label": "Beeldweergave (object-fit)",

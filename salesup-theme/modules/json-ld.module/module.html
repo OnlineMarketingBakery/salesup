@@ -1,5 +1,5 @@
 {% if module.json_ld %}
-<script type="application/ld+json">{{ module.json_ld }}</script>
+<script type="application/ld+json">{{ module.json_ld|replace(' Geen dagje training en klaar.', '')|replace('Geen dagje training en klaar. ', '')|replace('Geen dagje training en klaar.', '') }}</script>
 {% endif %}
 {% if module.hreflang_nl or module.hreflang_fr %}
   {% if module.hreflang_nl %}<link rel="alternate" hreflang="nl" href="{{ module.hreflang_nl }}">{% endif %}

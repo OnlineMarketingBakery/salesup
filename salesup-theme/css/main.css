@@ -304,10 +304,12 @@ header nav{
 .proof .wrap{margin-bottom:0;}
 .marquee{overflow:hidden; -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
 .proof .marquee-track{
-  display:flex; align-items:center; gap:40px; width:max-content; padding:0;
+  display:flex; align-items:center; gap:60px; /* was: gap:40px; */ width:max-content; padding:0;
   animation:proof-marquee 42s linear infinite !important;
+  animation-play-state:paused !important;
 }
-@keyframes proof-marquee{from{transform:translateX(0);} to{transform:translateX(-50%);}}
+.proof .marquee-track.is-ready{animation-play-state:running !important;}
+@keyframes proof-marquee{from{transform:translateX(0);} to{transform:translateX(calc(-1 * var(--marquee-distance, 50%)));}}
 .proof .logo-type{
   font-family:'Poppins',sans-serif; font-weight:700; font-size:22px; line-height:60px; height:60px;
   color:#fff; letter-spacing:-0.03em; white-space:nowrap;
@@ -367,7 +369,29 @@ body > footer{background:var(--grad-navy); color:var(--ink-dim); padding:64px 0 
   width:auto !important;
   max-height:36px !important;
 }
+.foot-locations{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  margin:0 0 10px;
+  line-height:1.4;
+}
+.foot-locations a{
+  color:var(--orange);
+  font-family:'Poppins',sans-serif;
+  font-weight:600;
+  font-size:14px;
+  letter-spacing:.01em;
+  text-decoration:none;
+}
+.foot-locations a:hover,
+.foot-locations a:focus-visible{
+  color:var(--white);
+  text-decoration:underline;
+}
 .foot-addr{color:var(--slate-light); font-size:14px; max-width:28ch; line-height:1.6;}
+.foot-addr a{color:inherit;}
+.foot-addr a:hover{color:var(--white);}
 .foot-col .mono{color:var(--slate-light); margin-bottom:14px; display:block;}
 .foot-col a{display:block; font-size:14px; padding:6px 0; color:var(--ink-dim);}
 .foot-col a:hover{color:var(--white);}
@@ -580,10 +604,59 @@ html.reduced-motion .flow-dot{animation:none; offset-distance:0%;}
 @media(max-width:700px){.cross-row{grid-template-columns:1fr; gap:6px;} .cross-row .go{justify-self:start;}}
 
 /* ---------- RELATED (ook interessant) ---------- */
-.related{padding:0 0 60px;}
-.related .wrap{display:flex; gap:20px; flex-wrap:wrap; align-items:center; font-size:13.5px; color:var(--slate);}
-.related a{color:var(--navy); font-weight:600;}
-.related a:hover{color:var(--orange-deep); text-decoration:underline;}
+.related{
+  padding:28px 0 64px;
+}
+.related-inner{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  padding:22px 24px;
+  background:var(--ghost);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+}
+.related-label{
+  color:var(--orange);
+  margin:0;
+  display:block;
+}
+.related-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.related-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 16px;
+  border-radius:100px;
+  border:1.5px solid var(--line);
+  background:var(--white);
+  color:var(--navy-deep);
+  font-family:'Poppins',sans-serif;
+  font-weight:600;
+  font-size:13.5px;
+  line-height:1.2;
+  text-decoration:none;
+  transition:border-color .18s ease, color .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+.related-chip .arrow{
+  color:var(--orange);
+  transition:transform .18s ease;
+}
+.related-chip:hover,
+.related-chip:focus-visible{
+  border-color:var(--orange);
+  color:var(--orange-deep);
+  transform:translateY(-1px);
+  box-shadow:0 12px 24px -18px rgba(21,30,53,.4);
+}
+.related-chip:hover .arrow,
+.related-chip:focus-visible .arrow{
+  transform:translateX(3px);
+}
 
 /* ---------- SUBDIENSTEN-GRID (knoppen/links naar de subpagina's — op elke hoofddienstpagina) ---------- */
 .subservices{padding:clamp(56px,8vw,90px) 0;}
@@ -610,14 +683,16 @@ a.sub-card:hover{border-color:var(--orange); transform:translateY(-2px); box-sha
   overflow:visible;
 }
 .proof .marquee-track .marquee-item.is-pad{
-  width:180px;
+  /* was: width:180px; */
+  width:auto;
   overflow:hidden;
 }
 .proof .marquee-track .marquee-item img,
 .proof .marquee-track img.marquee-logo{
   display:block;
   height:60px !important;
-  width:180px !important;
+  /* was: width:180px !important; */
+  width:auto !important;
   max-height:60px !important;
   max-width:180px !important;
   object-fit:contain !important;
@@ -631,16 +706,12 @@ a.sub-card:hover{border-color:var(--orange); transform:translateY(-2px); box-sha
 }
 .proof .marquee-track .marquee-item.is-pad img,
 .proof .marquee-track .marquee-item.is-pad .marquee-logo{
-  width:180px !important;
+  /* was: width:180px !important; max-width:180px !important; */
+  width:auto !important;
   max-width:180px !important;
   height:60px !important;
   max-height:60px !important;
   object-fit:contain !important;
-}
-.proof .marquee-track .marquee-item.is-white img,
-.proof .marquee-track .marquee-item.is-white .marquee-logo{
-  filter:invert(1);
-  mix-blend-mode:screen;
 }
 .proof .marquee-track .logo-slot{display:none;}
 
@@ -716,6 +787,10 @@ a.sub-card:hover .sub-go .arrow{transform:translateX(3px);}
 .dnd-section:has(.proof){
   padding-top:0 !important;
   padding-bottom:0 !important;
+}
+/* Logo banner is full-bleed; keep air before Demo op maat / other soft-cta cards. */
+.dnd-section:has(.proof) + .dnd-section:has(.soft-cta){
+  padding-top:clamp(40px, 5.5vw, 64px) !important;
 }
 .dnd-section:has(#vestigingen),
 .dnd-section:has(#verhaal){

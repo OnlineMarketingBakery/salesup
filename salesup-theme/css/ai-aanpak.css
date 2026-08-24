@@ -84,7 +84,62 @@
 .loop-quote{margin:22px 0 0; border-left:3px solid var(--orange); padding-left:18px; font-style:italic; color:var(--white); max-width:48ch;}
 .loop-quote footer{display:block; margin-top:8px; font-style:normal; font-size:13px; color:var(--slate-light);}
 
-/* SVG in huisstijl-vormtaal — kleuren via tokens (geen losse hex) */
+/* NEW: step-card keten (toggle via chain_visual in module.html) */
+.keten{margin-top:8px;}
+.keten-steps{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+}
+.keten-step{
+  position:relative;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--radius);
+  padding:18px 16px 20px;
+  display:flex; flex-direction:column; gap:8px;
+  min-height:100%;
+}
+.keten-step::after{
+  content:'';
+  position:absolute; top:50%; right:-10px; z-index:1;
+  width:8px; height:8px;
+  border-right:2px solid var(--orange); border-top:2px solid var(--orange);
+  transform:translateY(-50%) rotate(45deg);
+}
+.keten-step:last-child::after{display:none;}
+.keten-num{
+  font-family:'Poppins',sans-serif; font-weight:700; font-size:12px;
+  letter-spacing:.08em; color:var(--orange);
+}
+.keten-step strong{
+  font-family:'Poppins',sans-serif; font-weight:700; font-size:15px;
+  color:var(--white); line-height:1.25;
+}
+.keten-sub{
+  font-size:13px; line-height:1.45; color:var(--ink-dim);
+}
+.keten-return{
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  margin:18px 0 0; padding:14px 18px;
+  border:1px dashed rgba(255,255,255,.22);
+  border-radius:100px;
+  color:var(--slate-light); font-size:14px; text-align:center;
+}
+.keten-return-icon{
+  color:var(--orange); font-size:18px; line-height:1; flex-shrink:0;
+}
+@media (max-width:980px){
+  .keten-steps{grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px;}
+  .keten-step::after{display:none;}
+}
+@media (max-width:560px){
+  .keten-steps{grid-template-columns:1fr;}
+  .keten-return{border-radius:var(--radius); flex-direction:column; gap:6px;}
+}
+
+/* OLD SVG line diagram (kept for revert) */
 .lus-line{fill:none; stroke:var(--orange); stroke-width:3; stroke-linecap:round; stroke-linejoin:round;}
 .lus-return{fill:none; stroke:var(--ink-dim); stroke-width:2; stroke-dasharray:6 8;}
 .lus-node{fill:var(--orange);}
