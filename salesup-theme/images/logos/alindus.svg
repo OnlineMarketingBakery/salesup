@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" width="140" height="40"><text x="4" y="28" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">Alindus</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+  <g transform="translate(6, 7)">
+    <path fill="#EF7D00" d="M13 0L0 26h8l2.6-5.5h10.8L24 26h8L19 0h-6zm0 6.5l3.6 8.5H9.4L13 6.5z"/>
+  </g>
+  <text x="44" y="27" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="19" letter-spacing="0.04em" fill="#FFFFFF">ALINDUS</text>
+</svg>

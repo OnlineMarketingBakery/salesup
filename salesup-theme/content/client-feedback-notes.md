@@ -66,6 +66,23 @@ Running list for the client. Append new sheet items under each round.
 - **Listing Cards (`/cases`):** Standardized all cards to use a consistent 44px dark navy badge (`.case-logo-wrap`) with optical scaling classes (`is-pad` and `is-pad-large`) for padded and square assets (`Liantis`, `Zambon`, `JLR`, `Astara`, `Orange`, `Trustteam`, `Hivolta`, etc.).
 - **Case Hero Detail Pages (`/cases/<slug>`):** Standardized case heroes with a matching 44px dark navy badge (`.case-hero-logo-wrap`) aligned inline with the eyebrow label.
 
+#### Round 9 — Official Web Logos for Text-Only Cases & Complete Visual Polish
+- **Official Brand Assets Pulled & Integrated:**
+  - **UNIZO:** Extracted official SVG vector symbol from unizo.be, styled with signature orange badge (`#EF7D00`) and crisp white cutout typography.
+  - **Van Heurck:** Downloaded official vector logo mark (`logo.svg`) from vanheurck.com, rendered in crisp white on navy.
+  - **VM Building Solutions:** Downloaded official vector SVG (`logo-vmbso.svg`) from vmbuildingsolutions.com, rendered in crisp white on navy.
+  - **Messer Group:** Sourced official vector SVG from Wikimedia Commons, styled with brand gas emblem and white typography.
+  - **Axians:** Sourced official Axians brand logo and vector mark, rendered with orange accent and white lettering.
+  - **Radiance Energy:** Created dedicated vector solar icon badge with clean geometric typography.
+  - **Alindus:** Created dedicated vector badge with stylized A emblem and bold white wordmark.
+  - **EV Shop:** Created electric vehicle badge with plug/lightning motif and crisp typography.
+  - **SPM Technologies:** Created proptech symbol badge with clean white typography.
+  - **Immo Van Middelem:** Created real estate vector badge with property emblem and crisp typography.
+  - **Cesano, Sobelhor & Ikaros Solar:** Created matching vector SVGs with clean brand motifs.
+- **Full Fallback & Rollback Safety:**
+  - Backup branch created (`backup/case-logos-pre-fetch`) for instant reversion if needed.
+  - All logo `<img>` tags include `onerror` handlers gracefully revealing styled text if any network asset fails to load.
+
 ---
 
 #### Open / next

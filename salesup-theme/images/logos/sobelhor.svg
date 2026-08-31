@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 40" width="170" height="40">
+  <g transform="translate(6, 8)">
+    <rect x="0" y="2" width="20" height="20" rx="4" fill="#EF7D00"/>
+    <path d="M5 12h10M10 7v10" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <text x="34" y="27" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="17" letter-spacing="0.03em" fill="#FFFFFF">SOBELHOR</text>
+</svg>
