@@ -90,14 +90,24 @@
       "mdo": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png",
       "MDO Group": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png"
     } %}
+    {% set pad_large = ["zambon", "Zambon", "liantis", "Liantis", "jlr", "JLR", "jaguar-land-rover", "Jaguar Land Rover"] %}
+    {% set pad_medium = ["astara", "Astara", "orange", "Orange", "trustteam", "Trustteam", "hivolta", "Hivolta", "upgrade-estate", "Upgrade Estate", "UpgradeEstate", "q8", "Q8", "q8oils", "Q8Oils"] %}
+
     {% for c in module.case_cards %}
+    {% set logo_url = live_logos[c.klant]|default(live_logos[c.logo_slug]|default(c.logo.src)) %}
+    {% set clean_name = c.klant|replace('.', '') %}
+    {% if not logo_url and live_logos[clean_name] %}
+      {% set logo_url = live_logos[clean_name] %}
+    {% endif %}
     <a class="case-kaart" data-diensten="{{ c.diensten }}" href="{{ c.url.url.href|default('/cases') }}">
       <div class="case-kop">
-        {% if live_logos[c.klant] %}
-          <div class="case-logo-wrap is-light-bg"><img class="case-logo" src="{{ live_logos[c.klant] }}" alt="{{ c.klant }}" loading="lazy" decoding="async"></div>
-        {% else %}
-          <h3>{{ c.klant }}</h3>
-        {% endif %}
+        <div class="case-logo-wrap">
+          {% if logo_url %}
+            <img class="case-logo{% if c.klant in pad_large or c.logo_slug in pad_large %} is-pad-large{% elif c.klant in pad_medium or c.logo_slug in pad_medium %} is-pad{% endif %}" src="{{ logo_url }}" alt="{{ c.klant }}" loading="lazy" decoding="async">
+          {% else %}
+            <span class="case-logo-text">{{ c.klant }}</span>
+          {% endif %}
+        </div>
         <span class="case-sector">{{ c.sector }}</span>
       </div>
       {% if c.tags %}

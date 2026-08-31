@@ -114,22 +114,52 @@ a.case-kaart:focus-visible{outline:3px solid var(--orange); outline-offset:3px;}
 }
 .portfolio-intro{color:var(--slate); max-width:60ch; font-size:15px; margin:10px 0 0; line-height:1.55;}
 
-/* Case-kaart logo: badge chip for perfect contrast with light/white logos */
+/* Case-kaart logo: consistent dark navy badge chip for perfect contrast, legibility and unified sizing */
 .case-logo-wrap{
-  display:inline-flex; align-items:center; justify-content:center;
-  margin:0 0 14px;
-}
-.case-logo-wrap.is-light-bg{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   background:var(--navy-deep);
-  padding:6px 14px;
+  height:44px;
+  min-width:110px;
+  max-width:160px;
+  padding:6px 16px;
   border-radius:8px;
+  margin:0 0 16px;
   box-sizing:border-box;
-  min-height:38px;
+  overflow:hidden;
 }
 .case-logo{
-  height:24px; width:auto; max-width:130px; object-fit:contain;
-  display:block; margin:0; background:transparent;
-  filter:none; opacity:1;
+  height:26px;
+  width:auto;
+  max-width:128px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto;
+  background:transparent;
+  filter:none;
+  opacity:1;
+}
+.case-logo.is-pad{
+  height:34px;
+  max-height:34px;
+  transform:scale(1.35);
+  transform-origin:center;
+}
+.case-logo.is-pad-large{
+  height:40px;
+  max-height:40px;
+  transform:scale(1.6);
+  transform-origin:center;
+}
+.case-logo-text{
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:-0.01em;
+  color:var(--white);
+  white-space:nowrap;
+  display:inline-block;
 }
 
 /* "Lees meer" op elke doorklikbare case-tegel */

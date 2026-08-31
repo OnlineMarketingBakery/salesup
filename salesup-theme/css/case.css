@@ -19,17 +19,49 @@
   align-items:center;
 }
 .case-hero-copy{min-width:0;}
-.case-hero-logo{
-  display:block; height:44px; width:auto; max-width:160px; object-fit:contain;
-  margin:0 0 16px;
-}
-/* HubSpot marquee logos that are white/light — navy chip so they stay readable */
-.case-hero-logo.is-light{
-  height:32px; width:auto; max-width:150px;
-  padding:12px 18px;
+/* Unified Case Detail Hero Logo Badge */
+.case-hero-logo-wrap{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   background:var(--navy-deep);
+  height:52px;
+  min-width:130px;
+  max-width:190px;
+  padding:8px 20px;
   border-radius:10px;
-  box-sizing:content-box;
+  margin:0 0 20px;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.case-hero-logo{
+  height:32px;
+  width:auto;
+  max-width:150px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto;
+}
+.case-hero-logo.is-pad{
+  height:42px;
+  max-height:42px;
+  transform:scale(1.35);
+  transform-origin:center;
+}
+.case-hero-logo.is-pad-large{
+  height:50px;
+  max-height:50px;
+  transform:scale(1.6);
+  transform-origin:center;
+}
+.case-hero-logo-text{
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  font-size:16px;
+  letter-spacing:-0.01em;
+  color:var(--white);
+  white-space:nowrap;
+  display:inline-block;
 }
 .case-hero .eyebrow{margin-bottom:14px;}
 .case-hero h1{
