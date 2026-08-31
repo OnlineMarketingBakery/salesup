@@ -111,6 +111,11 @@ Running list for the client. Append new sheet items under each round.
 - **Cropped & Transparent Brand Assets:**
   - Extracted and tightly cropped transparent white/orange assets for `Liantis`, `Zambon`, `Astara`, `Trustteam`, `Upgrade Estate`, `Q8`, `Hivolta`, and vector `Orange`, eliminating any white square boxes or large transparent padding gaps.
 
+#### Round 13 — Case Study Body Link Styling Fix
+- **Scoped Blog Button CTA CSS:**
+  - Constrained HubSpot CTA pill button styles strictly to `.article-post` container so they only style blog post call-to-action buttons.
+  - Enforced `.case-body .article-body a` inline link typography (navy text with subtle orange underline) so inline links inside case stories (such as `<a href="/afspraakplanning">afspraken</a>`) never render as pill buttons.
+
 ---
 
 #### Open / next

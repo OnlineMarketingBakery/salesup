@@ -185,10 +185,23 @@ a.related-card:hover{border-color:var(--orange); transform:translateY(-3px); box
 .case-body .article-body ol{margin:0 0 1.1em 1.2em;}
 .case-body .article-body li{margin-bottom:.4em;}
 .case-body .article-body a{
-  color:var(--navy); font-weight:600;
-  text-decoration:underline; text-decoration-color:var(--orange); text-underline-offset:2px;
+  color:var(--navy) !important;
+  font-weight:600 !important;
+  text-decoration:underline !important;
+  text-decoration-color:var(--orange) !important;
+  text-underline-offset:2px !important;
+  background:none !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  display:inline !important;
+  padding:0 !important;
+  margin:0 !important;
 }
-.case-body .article-body a:hover{color:var(--orange-deep);}
+.case-body .article-body a:hover{
+  color:var(--orange-deep) !important;
+  transform:none !important;
+  box-shadow:none !important;
+}
 
 /* Quotes: simple orange rule — not stacked cream cards */
 .case-body .article-body blockquote,

@@ -150,11 +150,10 @@ a.blog-card:hover{border-color:var(--orange);transform:translateY(-3px);box-shad
   margin:28px 0 8px;
   clear:both;
 }
-.article-body p > a:only-child,
-.article-body p:has(> a:only-child) > a,
-.article-body .hs-web-interactive-inline .bd-cta,
-.article-body a.bd-cta,
-.article-body a[data-hubspot-cta-id]{
+/* Blog CTA Buttons: ONLY apply on blog pages / within actual HubSpot interactive embeds, NEVER inside case studies or standard inline links */
+.article-post .article-body .hs-web-interactive-inline .bd-cta,
+.article-post .article-body a.bd-cta,
+.article-post .article-body a[data-hubspot-cta-id]{
   background: #ef7d00 !important;
   background: -moz-linear-gradient(left,#ef7d00 0,#e63223 100%) !important;
   background: -webkit-linear-gradient(left,#ef7d00,#e63223) !important;
@@ -177,19 +176,13 @@ a.blog-card:hover{border-color:var(--orange);transform:translateY(-3px);box-shad
   box-shadow: 0 4px 14px rgba(239,125,0,0.3) !important;
   transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease !important;
 }
-.article-body p > a:only-child:hover,
-.article-body p:has(> a:only-child) > a:hover,
-.article-body .hs-web-interactive-inline .bd-cta:hover,
-.article-body a.bd-cta:hover,
-.article-body a[data-hubspot-cta-id]:hover{
+.article-post .article-body .hs-web-interactive-inline .bd-cta:hover,
+.article-post .article-body a.bd-cta:hover,
+.article-post .article-body a[data-hubspot-cta-id]:hover{
   color: #ffffff !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 8px 22px rgba(230,50,35,0.4) !important;
   opacity: 0.95 !important;
-}
-.article-body p > a:only-child::after,
-.article-body p:has(> a:only-child) > a::after{
-  display: none !important;
 }
 
 /* ---- Related posts ---- */
