@@ -92,6 +92,18 @@ Running list for the client. Append new sheet items under each round.
 - **Rollback Safety & Git Tags:**
   - Tagged `rollback-marquee-logos` and created backup branch `backup/marquee-logos-pre-update`.
 
+#### Round 11 — Automated Blog Re-Tagging to 5 Core Services & Legacy Tag Purge
+- **Created Core Service Tags in HubSpot:**
+  - `Marketing` (slug: `marketing`, id: `463135911159`)
+  - `Sales Contact Center` (slug: `sales-contact-center`, id: `463135911160`)
+  - `Face2Face Sales` (slug: `face2face-sales`, id: `463135911161`)
+  - `Training` (slug: `training`, id: `463135912122`)
+  - `Sales Consultants` (slug: `sales-consultants`, id: `463136420079`)
+- **Automated Post Re-Tagging:**
+  - Batch-updated all 98 blog posts (NL + FR-BE posts) via HubSpot CMS API to map strictly to their respective core service tag.
+- **Purged Legacy Tags:**
+  - Removed all 16 legacy tags (`Attract leads`, `Boost your sales`, `Keep clients`, `Algemeen`, `Nieuws`, etc.) from HubSpot so only the 5 new service categories appear on the blog filter bar.
+
 ---
 
 #### Open / next
