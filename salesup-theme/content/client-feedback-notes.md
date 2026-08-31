@@ -104,6 +104,13 @@ Running list for the client. Append new sheet items under each round.
 - **Purged Legacy Tags:**
   - Removed all 16 legacy tags (`Attract leads`, `Boost your sales`, `Keep clients`, `Algemeen`, `Nieuws`, etc.) from HubSpot so only the 5 new service categories appear on the blog filter bar.
 
+#### Round 12 — Standardized Logo Marquee Optical Sizing & Transparent Assets
+- **Standardized Visual Height & Optical Balance:**
+  - Standardized `.proof .marquee-logo` to a uniform `26-28px` height with responsive auto-width across all templates.
+  - Eliminated the optical imbalance where tight SVGs (e.g. `UNIZO`, `Van Heurck`, `Axians`) appeared disproportionately massive compared to wide/multi-word marks.
+- **Cropped & Transparent Brand Assets:**
+  - Extracted and tightly cropped transparent white/orange assets for `Liantis`, `Zambon`, `Astara`, `Trustteam`, `Upgrade Estate`, `Q8`, `Hivolta`, and vector `Orange`, eliminating any white square boxes or large transparent padding gaps.
+
 ---
 
 #### Open / next

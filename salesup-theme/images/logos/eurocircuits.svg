@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 46" role="img" aria-label="EuroCircuits">
-  <circle cx="18" cy="23" r="4.5" fill="#EF7D00"/>
-  <text x="30" y="28" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="14" fill="#FFFFFF">EuroCircuits</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 36" width="160" height="36">
+  <g transform="translate(2, 6)">
+    <rect x="0" y="0" width="24" height="24" rx="4" fill="none" stroke="#EF7D00" stroke-width="2.5"/>
+    <circle cx="12" cy="12" r="4" fill="#EF7D00"/>
+  </g>
+  <text x="34" y="24" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="0.02em" fill="#FFFFFF">Eurocircuits</text>
 </svg>
