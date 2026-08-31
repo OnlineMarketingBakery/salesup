@@ -72,20 +72,59 @@
         "vokans": "https://salesup.be/hubfs/Boost%20business%20logos/Vokans.svg",
         "Vokans": "https://salesup.be/hubfs/Boost%20business%20logos/Vokans.svg",
         "mdo": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png",
-        "MDO Group": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png"
+        "MDO Group": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png",
+        "unizo": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/unizo.svg",
+        "UNIZO": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/unizo.svg",
+        "Unizo": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/unizo.svg",
+        "van-heurck": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/van-heurck.svg",
+        "Van Heurck": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/van-heurck.svg",
+        "VanHeurck": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/van-heurck.svg",
+        "axians": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/axians.png",
+        "Axians": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/axians.png",
+        "vm-building": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/vm-building.svg",
+        "VM Building": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/vm-building.svg",
+        "VM Building Solutions": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/vm-building.svg",
+        "VMBuilding": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/vm-building.svg",
+        "radiance-energy": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/radiance-energy.svg",
+        "Radiance Energy": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/radiance-energy.svg",
+        "Radiance": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/radiance-energy.svg",
+        "messer-group": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/messer-group.svg",
+        "Messer Group": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/messer-group.svg",
+        "Messer": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/messer-group.svg",
+        "alindus": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/alindus.svg",
+        "Alindus": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/alindus.svg",
+        "ev-shop": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ev-shop.svg",
+        "EV Shop": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ev-shop.svg",
+        "EV-Shop": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ev-shop.svg",
+        "spm": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/spm.svg",
+        "SPM": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/spm.svg",
+        "SPM Technologies": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/spm.svg",
+        "immo-van-middelem": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/immo-van-middelem.svg",
+        "Immo Van Middelem": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/immo-van-middelem.svg",
+        "cesano": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/cesano.svg",
+        "Cesano": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/cesano.svg",
+        "sobelhor": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/sobelhor.svg",
+        "Sobelhor": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/sobelhor.svg",
+        "ikaros": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ikaros-solar.svg",
+        "Ikaros Solar": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ikaros-solar.svg",
+        "Ikaros": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ikaros-solar.svg"
       } %}
       {% set padded = ["Liantis", "Zambon", "Trustteam", "Jaguar Land Rover", "JLR", "Culligan", "Europabank", "Solidaris", "Upgrade Estate", "UpgradeEstate", "Eurocircuits", "EuroCircuits", "Contractify", "Guylian", "Locquet", "Vokans", "Q8", "Q8 Oils", "Q8Oils"] %}
       {% macro logo_item(src, naam, pass) %}
-        <span class="marquee-item{% if naam in padded %} is-pad{% endif %}"{% if pass %} aria-hidden="true"{% endif %}><img class="marquee-logo" src="{{ src }}" alt="{% if pass %}{% else %}{{ naam }}{% endif %}" decoding="async"></span>
+        <span class="marquee-item{% if naam in padded %} is-pad{% endif %}"{% if pass %} aria-hidden="true"{% endif %}><img class="marquee-logo" src="{{ src }}" alt="{% if pass %}{% else %}{{ naam }}{% endif %}" decoding="async" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'logo-type\'>{{ naam }}</span>';"></span>
       {% endmacro %}
       {# One logo set only; JS duplicates + measures width for a seamless loop (works with auto-width logos). #}
       {% for logo in module.logos %}
-        {% if live[logo.naam] %}
-          {{ logo_item(live[logo.naam], logo.naam, false) }}
-        {% elif logo.slug and live[logo.slug] %}
-          {{ logo_item(live[logo.slug], logo.naam, false) }}
-        {% elif logo.beeld.src %}
-          {{ logo_item(logo.beeld.src, logo.naam, false) }}
+        {% set logo_src = live[logo.naam]|default(live[logo.slug]|default(logo.beeld.src)) %}
+        {% set clean_name = (logo.naam|default(''))|replace('.', '')|trim %}
+        {% set clean_slug = (logo.slug|default(''))|replace('.', '')|trim %}
+        {% if not logo_src and live[clean_name] %}
+          {% set logo_src = live[clean_name] %}
+        {% elif not logo_src and live[clean_slug] %}
+          {% set logo_src = live[clean_slug] %}
+        {% endif %}
+        {% if logo_src %}
+          {{ logo_item(logo_src, logo.naam, false) }}
         {% elif logo.naam %}
           <span class="marquee-item"><span class="logo-type">{{ logo.naam }}</span></span>
         {% endif %}

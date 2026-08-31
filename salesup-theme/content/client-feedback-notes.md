@@ -83,6 +83,15 @@ Running list for the client. Append new sheet items under each round.
   - Backup branch created (`backup/case-logos-pre-fetch`) for instant reversion if needed.
   - All logo `<img>` tags include `onerror` handlers gracefully revealing styled text if any network asset fails to load.
 
+#### Round 10 — Global Logo Marquee Slider Upgrade (All Pages)
+- **Universal Logo Assets in Marquee Slider:**
+  - Mapped all new vector SVGs and official PNG assets (`UNIZO`, `Van Heurck`, `Axians`, `VM Building Solutions`, `Radiance Energy`, `Messer Group`, `Alindus`, `EV Shop`, `SPM Technologies`, `Immo Van Middelem`, `Cesano`, `Sobelhor`, `Ikaros Solar`) into `proof-marquee.module/module.html`.
+  - Replaced text fallbacks with high-contrast, scalable logo image assets across every page marquee slider on the entire website.
+  - Preserved individual custom logo arrays per template/page completely intact.
+  - Added robust `onerror` fallbacks to smoothly degrade to typography if any image fails.
+- **Rollback Safety & Git Tags:**
+  - Tagged `rollback-marquee-logos` and created backup branch `backup/marquee-logos-pre-update`.
+
 ---
 
 #### Open / next
