@@ -11,15 +11,30 @@
   {{- href -}}
 {%- endif -%}
 {%- endmacro %}
+{% set cta1_text = module.cta1_text %}
+{% set cta1_href = resolve_href(module.cta1_url, '/contact') %}
+{% set cta1_new_tab = module.cta1_new_tab %}
+{% set cta2_text = module.cta2_text %}
+{% set cta2_href = module.cta2_url.url.href|default('tel:+3253782830') %}
+{% set tekst = module.tekst %}
+{# Contact banner: callback first, keep a self-call button (survives stuck page fields). #}
+{% if module.heading == "Liever dat wij bellen?" %}
+  {% set cta1_text = "Laat je nummer achter" %}
+  {% set cta1_href = "#form" %}
+  {% set cta1_new_tab = false %}
+  {% set cta2_text = "Bel zelf 053 78 28 30" %}
+  {% set cta2_href = "tel:+3253782830" %}
+  {% set tekst = "<p>Laat je nummer achter — we bellen je binnen 30 minuten terug. Liever meteen iemand aan de lijn? Bel ons zelf.</p>" %}
+{% endif %}
 <section class="final wrap" id="{{ module.anchor|default('contact') }}">
   <div class="final-card">
     <div>
       <h2>{{ module.heading }}</h2>
-      {% if module.tekst %}<div>{{ module.tekst }}</div>{% endif %}
+      {% if tekst %}<div>{{ tekst }}</div>{% endif %}
     </div>
     <div class="final-cta">
-      {% if module.cta1_text %}<a href="{{ resolve_href(module.cta1_url, '/contact') }}" class="btn on-dark"{% if module.cta1_new_tab %} target="_blank" rel="noopener"{% endif %}>{{ module.cta1_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
-      {% if module.cta2_text %}<a href="{{ module.cta2_url.url.href|default('tel:+3253782830') }}" class="btn on-dark">{{ module.cta2_text }}</a>{% endif %}
+      {% if cta1_text %}<a href="{{ cta1_href }}" class="btn on-dark"{% if cta1_new_tab %} target="_blank" rel="noopener"{% endif %}>{{ cta1_text }} <span class="arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+      {% if cta2_text %}<a href="{{ cta2_href }}" class="btn on-dark ghost">{{ cta2_text }}</a>{% endif %}
     </div>
   </div>
 </section>

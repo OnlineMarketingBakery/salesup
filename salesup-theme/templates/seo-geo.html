@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — SEO/GEO
+  label: salesUp, SEO/GEO
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -64,13 +64,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: set heeft geen echt SEO-/campagnebeeld; dichtstbijzijnde is kantoor-/overlegsfeer -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Marketing · SEO/GEO",
           heading="Gevonden worden in Google <em>én</em> in AI-antwoorden.",
-          subtext="<p>Klassieke zoekmachine-optimalisatie, aangevuld met GEO — Generative Engine Optimization: vindbaarheid in ChatGPT, Perplexity en Google AI Overviews, waar steeds meer zoekopdrachten landen zonder klik naar je site. Zo word je gevonden waar je klant vandaag écht zoekt.</p>",
+          subtext="<p>Klassieke zoekmachine-optimalisatie, aangevuld met GEO, Generative Engine Optimization: vindbaarheid in ChatGPT, Perplexity en Google AI Overviews, waar steeds meer zoekopdrachten landen zonder klik naar je site. Zo word je gevonden waar je klant vandaag écht zoekt.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -111,9 +109,9 @@
             },
           trustcard_badge="",
           trustcard_stat="2<em> sporen</em>",
-          trustcard_label="Vindbaar in klassieke zoekresultaten én in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews — waar steeds meer zoekopdrachten landen zonder klik.",
+          trustcard_label="Vindbaar in klassieke zoekresultaten én in AI-antwoorden zoals ChatGPT, Perplexity en Google AI Overviews, waar steeds meer zoekopdrachten landen zonder klik.",
           trustcard_quote="\"Je klant zoekt niet meer alleen in Google. Wie niet in het AI-antwoord staat, bestaat straks niet voor de helft van de zoekopdrachten.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van onze marketing"
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak van onze marketing"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -170,7 +168,7 @@
               {
                 "num": "02",
                 "title": "Prioriteiten bepalen",
-                "tekst": "<p>Welke pagina's en onderwerpen leveren het meeste op — in verkeer én in citaties door AI-modellen.</p>"
+                "tekst": "<p>Welke pagina's en onderwerpen leveren het meeste op, in verkeer én in citaties door AI-modellen.</p>"
               },
               {
                 "num": "03",

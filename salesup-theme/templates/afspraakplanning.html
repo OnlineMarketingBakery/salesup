@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Afspraakplanning
+  label: salesUp, Afspraakplanning
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Telefonische prospectie & afspraakplanning\",\n      \"serviceType\":\"Telefonische prospectie en afspraakplanning\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/afspraakplanning\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"url\":\"https://www.salesup.be/sales-contact-center\"},\n      \"description\":\"Warme en koude telefonische prospectie die kwalitatieve afspraken rechtstreeks in de agenda van je vertegenwoordiger zet, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op conversie tegenover een vooraf afgesproken doel.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Contact Center\",\"item\":\"https://www.salesup.be/sales-contact-center\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Telefonische prospectie & afspraakplanning\",\"item\":\"https://www.salesup.be/afspraakplanning\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat is het verschil met telesales?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Bij afspraakplanning zetten we een kwalitatieve afspraak in de agenda van jouw vertegenwoordiger; bij telesales sluiten we het gesprek zelf af. Beide draaien onder dezelfde kwaliteitsbewaking, en voor complexere sales combineren we ze vaak: eerst de afspraak, dan de closing.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit van de afspraken?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. We kwalificeren elke lead volgens BANT — budget, autoriteit, behoefte en timing — zodat je verkoper alleen afspraken krijgt die klaar zijn voor het gesprek. Die opportunity- en objection-scores sturen de opvolging én de training via ons platform salesUp Academy. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Werken jullie met ons eigen CRM en agenda?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Bevestigde afspraken komen automatisch in de kalender van de juiste vertegenwoordiger terecht, zonder tussenstap en zonder mailtjes heen en weer. We koppelen met de courante CRM-systemen zodat rapportering en opvolging kloppen zonder extra werk.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op conversie tegenover een vooraf afgesproken doel — kwalitatieve, bevestigde afspraken — en niet op belvolume of gespreksduur. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie. Een lead die binnen 30 minuten gebeld wordt, is nog warm; die snelheid zit mee in de afspraak.\"}\n        }\n      ]\n    }\n  ]\n}",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Telefonische prospectie & afspraakplanning\",\n      \"serviceType\":\"Telefonische prospectie en afspraakplanning\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/afspraakplanning\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"url\":\"https://www.salesup.be/sales-contact-center\"},\n      \"description\":\"Warme en koude telefonische prospectie die kwalitatieve afspraken rechtstreeks in de agenda van je vertegenwoordiger zet, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op conversie tegenover een vooraf afgesproken doel.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Contact Center\",\"item\":\"https://www.salesup.be/sales-contact-center\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Telefonische prospectie & afspraakplanning\",\"item\":\"https://www.salesup.be/afspraakplanning\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat is het verschil met telesales?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Bij afspraakplanning zetten we een kwalitatieve afspraak in de agenda van jouw vertegenwoordiger; bij telesales sluiten we het gesprek zelf af. Beide draaien onder dezelfde kwaliteitsbewaking, en voor complexere sales combineren we ze vaak: eerst de afspraak, dan de closing.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit van de afspraken?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. We kwalificeren elke lead volgens BANT, budget, autoriteit, behoefte en timing, zodat je verkoper alleen afspraken krijgt die klaar zijn voor het gesprek. Die opportunity- en objection-scores sturen de opvolging én de training via ons platform salesUp Academy. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Werken jullie met ons eigen CRM en agenda?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Bevestigde afspraken komen automatisch in de kalender van de juiste vertegenwoordiger terecht, zonder tussenstap en zonder mailtjes heen en weer. We koppelen met de courante CRM-systemen zodat rapportering en opvolging kloppen zonder extra werk.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op conversie tegenover een vooraf afgesproken doel, kwalitatieve, bevestigde afspraken, en niet op belvolume of gespreksduur. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie. Een lead die binnen 30 minuten gebeld wordt, is nog warm; die snelheid zit mee in de afspraak.\"}\n        }\n      ]\n    }\n  ]\n}",
   hreflang_nl="https://www.salesup.be/afspraakplanning",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -65,14 +65,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geen specifiek agenda/planning-beeld in de dump; warm 1-op-1-overleg als benadering. -->
-        <!-- VERIFIEER: quote + functie overgenomen uit Vincent's bronpagina; bevestigen vóór livegang. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Sales Contact Center · Afspraakplanning",
           heading="Kwalitatieve afspraken <em>rechtstreeks</em> in je agenda.",
-          subtext="<p>Via warme en koude telefonische prospectie zetten we bevestigde afspraken met de juiste persoon in de agenda van jouw vertegenwoordiger — geen losse leads. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en je rekent ons af op conversie tegenover een vooraf afgesproken doel.</p>",
+          subtext="<p>Via warme en koude telefonische prospectie zetten we bevestigde afspraken met de juiste persoon in de agenda van jouw vertegenwoordiger, geen losse leads. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en je rekent ons af op conversie tegenover een vooraf afgesproken doel.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -115,7 +112,7 @@
           trustcard_stat="5<em>–7</em>",
           trustcard_label="Afspraken per week die salesUp gemiddeld in de agenda van één vertegenwoordiger inplant.",
           trustcard_quote="\"Ik had niet verwacht dat salesUp een gemiddelde van 5-7 afspraken per week kon inplannen in mijn agenda.\"",
-          trustcard_quote_who="— <strong>Ihab As'ad</strong>, Outside Sales Representative bij Geodis"
+          trustcard_quote_who=", <strong>Ihab As'ad</strong>, Outside Sales Representative bij Geodis"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -129,20 +126,20 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Een volle agenda, geen losse contactenlijst.",
-          intro="<p>We leveren geen leadlijst maar bevestigde gesprekken met de juiste persoon — gekwalificeerd, gescoord en klaar voor jouw vertegenwoordiger.</p>",
+          intro="<p>We leveren geen leadlijst maar bevestigde gesprekken met de juiste persoon, gekwalificeerd, gescoord en klaar voor jouw vertegenwoordiger.</p>",
           vac_troef=false,
           feature_cards=[
               {
                 "title": "Warme & koude prospectie",
-                "tekst": "<p>We benaderen bestaande contacten én nieuwe doelgroepen op basis van het profiel dat jij nodig hebt, en kwalificeren elke lead volgens BANT — budget, autoriteit, behoefte en timing.</p>"
+                "tekst": "<p>We benaderen bestaande contacten én nieuwe doelgroepen op basis van het profiel dat jij nodig hebt, en kwalificeren elke lead volgens BANT, budget, autoriteit, behoefte en timing.</p>"
               },
               {
                 "title": "Rechtstreeks in de agenda",
-                "tekst": "<p>Bevestigde afspraken komen automatisch in de kalender van de juiste vertegenwoordiger terecht — geen tussenstap, geen mailtjes heen en weer. Een warme lead volgen we op binnen 30 minuten.</p>"
+                "tekst": "<p>Bevestigde afspraken komen automatisch in de kalender van de juiste vertegenwoordiger terecht, geen tussenstap, geen mailtjes heen en weer. Een warme lead volgen we op binnen 30 minuten.</p>"
               },
               {
                 "title": "Elk gesprek automatisch gescoord",
-                "tekst": "<p>Onze eigen software scoort elk gesprek op kwaliteit en koopkans — geen steekproef achteraf. Opportunity-scores tonen de warmste dossiers, objection-detectie herkent terugkerende bezwaren zodat het script meebeweegt.</p>"
+                "tekst": "<p>Onze eigen software scoort elk gesprek op kwaliteit en koopkans, geen steekproef achteraf. Opportunity-scores tonen de warmste dossiers, objection-detectie herkent terugkerende bezwaren zodat het script meebeweegt.</p>"
               },
               {
                 "title": "Afgerekend op conversie, data → salesUp Academy",
@@ -182,7 +179,7 @@
               {
                 "num": "04",
                 "title": "Wekelijks rapporteren & bijsturen",
-                "tekst": "<p>Je krijgt een wekelijkse rapportering over conversie, no-shows en gesprekskwaliteit — met 100% kostentransparantie.</p>"
+                "tekst": "<p>Je krijgt een wekelijkse rapportering over conversie, no-shows en gesprekskwaliteit, met 100% kostentransparantie.</p>"
               }
             ]
             %}
@@ -206,7 +203,7 @@
               },
               {
                 "question": "Hoe bewaken jullie de kwaliteit van de afspraken?",
-                "answer": "<p>Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. We kwalificeren elke lead volgens BANT — budget, autoriteit, behoefte en timing — zodat je verkoper alleen afspraken krijgt die klaar zijn voor het gesprek. Die opportunity- en objection-scores sturen de opvolging én de training via ons platform salesUp Academy. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.</p>"
+                "answer": "<p>Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. We kwalificeren elke lead volgens BANT, budget, autoriteit, behoefte en timing, zodat je verkoper alleen afspraken krijgt die klaar zijn voor het gesprek. Die opportunity- en objection-scores sturen de opvolging én de training via ons platform salesUp Academy. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.</p>"
               },
               {
                 "question": "Werken jullie met ons eigen CRM en agenda?",
@@ -214,7 +211,7 @@
               },
               {
                 "question": "Waarop rekenen jullie ons af?",
-                "answer": "<p>Op conversie tegenover een vooraf afgesproken doel — kwalitatieve, bevestigde afspraken — en niet op belvolume of gespreksduur. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie. Een lead die binnen 30 minuten gebeld wordt, is nog warm; die snelheid zit mee in de afspraak.</p>"
+                "answer": "<p>Op conversie tegenover een vooraf afgesproken doel, kwalitatieve, bevestigde afspraken, en niet op belvolume of gespreksduur. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie. Een lead die binnen 30 minuten gebeld wordt, is nog warm; die snelheid zit mee in de afspraak.</p>"
               }
             ]
             %}
@@ -275,7 +272,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Klaar voor een volle agenda?",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw doelgroep zit. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw doelgroep zit. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

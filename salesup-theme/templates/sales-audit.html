@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Sales-audit
+  label: salesUp, Sales-audit
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Sales-audit & optimalisatie\",\n      \"serviceType\":\"Doorlichting en optimalisatie van het salesproces\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/sales-audit\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Consultants\",\"url\":\"https://www.salesup.be/sales-consultants\"},\n      \"description\":\"Een doorlichting van je salesproces met concrete verbeterpunten, gestaafd met data uit onze eigen platformen — van pipeline tot gesprekskwaliteit, prioriteerbaar en optioneel mee uit te voeren.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Consultants\",\"item\":\"https://www.salesup.be/sales-consultants\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Sales-audit & optimalisatie\",\"item\":\"https://www.salesup.be/sales-audit\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat houdt een sales-audit precies in?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We lichten je salesproces door van pipeline tot gesprekskwaliteit: waar lopen leads binnen, waar vallen ze af, hoe verlopen de gesprekken en waar blijft omzet liggen. Het resultaat is een helder overzicht van je sterke en zwakke punten, met concrete verbeterpunten die je kan prioriteren.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop baseren jullie de bevindingen?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op feiten, niet op buikgevoel. We werken met onze eigen platformen die gesprekken scoren op kwaliteit en koopkans, en combineren dat met je pipeline- en procesdata. Zo staven we elke bevinding met cijfers en zie je zwart op wit waar de winst zit.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voeren jullie de verbeteringen ook uit?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Dat kan. De audit levert op zich al een prioriteerbaar plan op dat je zelf kan oppakken. Wil je de verbeteringen samen doorvoeren, dan kunnen we dat begeleiden — met coaching en training via salesUp Academy of met een gedetacheerde consultant die mee uitvoert.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe snel weten we waar het schuurt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een audit is afgebakend in de tijd en levert een concreet rapport met prioriteiten op. We spreken vooraf de scope en de vragen af, en rapporteren met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Sales-audit & optimalisatie\",\n      \"serviceType\":\"Doorlichting en optimalisatie van het salesproces\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/sales-audit\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Consultants\",\"url\":\"https://www.salesup.be/sales-consultants\"},\n      \"description\":\"Een doorlichting van je salesproces met concrete verbeterpunten, gestaafd met data uit onze eigen platformen, van pipeline tot gesprekskwaliteit, prioriteerbaar en optioneel mee uit te voeren.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Consultants\",\"item\":\"https://www.salesup.be/sales-consultants\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Sales-audit & optimalisatie\",\"item\":\"https://www.salesup.be/sales-audit\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat houdt een sales-audit precies in?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We lichten je salesproces door van pipeline tot gesprekskwaliteit: waar lopen leads binnen, waar vallen ze af, hoe verlopen de gesprekken en waar blijft omzet liggen. Het resultaat is een helder overzicht van je sterke en zwakke punten, met concrete verbeterpunten die je kan prioriteren.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop baseren jullie de bevindingen?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op feiten, niet op buikgevoel. We werken met onze eigen platformen die gesprekken scoren op kwaliteit en koopkans, en combineren dat met je pipeline- en procesdata. Zo staven we elke bevinding met cijfers en zie je zwart op wit waar de winst zit.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voeren jullie de verbeteringen ook uit?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Dat kan. De audit levert op zich al een prioriteerbaar plan op dat je zelf kan oppakken. Wil je de verbeteringen samen doorvoeren, dan kunnen we dat begeleiden, met coaching en training via salesUp Academy of met een gedetacheerde consultant die mee uitvoert.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe snel weten we waar het schuurt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een audit is afgebakend in de tijd en levert een concreet rapport met prioriteiten op. We spreken vooraf de scope en de vragen af, en rapporteren met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
   hreflang_nl="https://www.salesup.be/sales-audit",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -63,14 +63,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geen specifiek auditbeeld beschikbaar; sfeerbeeld uit ../assets -->
-        <!-- VERIFIEER: hier hoort een echt cijfer (bv. gevonden conversieverlies of verbeterpotentieel) zodra beschikbaar; nu kwalitatief. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Sales Consultants · Sales-audit & optimalisatie",
-          heading="Weten wáár je sales lekt — en het <em>dichten</em>.",
-          subtext="<p>Een doorlichting van je salesproces van pipeline tot gesprekskwaliteit, met concrete verbeterpunten die je kan prioriteren. We staven elke bevinding met data uit onze eigen platformen, zodat je op feiten stuurt in plaats van op buikgevoel — en de verbeteringen kunnen we optioneel samen met je uitvoeren.</p>",
+          heading="Weten wáár je sales lekt, en het <em>dichten</em>.",
+          subtext="<p>Een doorlichting van je salesproces van pipeline tot gesprekskwaliteit, met concrete verbeterpunten die je kan prioriteren. We staven elke bevinding met data uit onze eigen platformen, zodat je op feiten stuurt in plaats van op buikgevoel, en de verbeteringen kunnen we optioneel samen met je uitvoeren.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -112,8 +109,8 @@
           trustcard_badge="",
           trustcard_stat="",
           trustcard_label="Feiten in plaats van buikgevoel: we staven elke bevinding met data uit onze eigen platformen, van pipeline tot gesprekskwaliteit, en zetten ze om in een prioriteerbaar plan.",
-          trustcard_quote="\"Je kan pas dichten wat je kan meten — daarom staven we elke bevinding met cijfers.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak met consultants"
+          trustcard_quote="\"Je kan pas dichten wat je kan meten, daarom staven we elke bevinding met cijfers.\"",
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak met consultants"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -136,7 +133,7 @@
               },
               {
                 "title": "Van pipeline tot gesprekskwaliteit",
-                "tekst": "<p>We kijken naar het volledige proces: waar leads binnenlopen, waar ze afvallen, hoe de gesprekken verlopen en waar omzet blijft liggen — niet alleen naar één symptoom.</p>"
+                "tekst": "<p>We kijken naar het volledige proces: waar leads binnenlopen, waar ze afvallen, hoe de gesprekken verlopen en waar omzet blijft liggen, niet alleen naar één symptoom.</p>"
               },
               {
                 "title": "Concreet en prioriteerbaar",
@@ -144,7 +141,7 @@
               },
               {
                 "title": "Optioneel: mee uitvoeren",
-                "tekst": "<p>Wil je de verbeteringen samen doorvoeren, dan begeleiden we dat — met coaching en training via salesUp Academy of met een gedetacheerde consultant die mee uitvoert.</p>"
+                "tekst": "<p>Wil je de verbeteringen samen doorvoeren, dan begeleiden we dat, met coaching en training via salesUp Academy of met een gedetacheerde consultant die mee uitvoert.</p>"
               }
             ]
             %}
@@ -208,11 +205,11 @@
               },
               {
                 "question": "Voeren jullie de verbeteringen ook uit?",
-                "answer": "<p>Dat kan. De audit levert op zich al een prioriteerbaar plan op dat je zelf kan oppakken. Wil je de verbeteringen samen doorvoeren, dan kunnen we dat begeleiden — met coaching en training via salesUp Academy of met een gedetacheerde consultant die mee uitvoert.</p>"
+                "answer": "<p>Dat kan. De audit levert op zich al een prioriteerbaar plan op dat je zelf kan oppakken. Wil je de verbeteringen samen doorvoeren, dan kunnen we dat begeleiden, met coaching en training via salesUp Academy of met een gedetacheerde consultant die mee uitvoert.</p>"
               },
               {
                 "question": "Hoe snel weten we waar het schuurt?",
-                "answer": "<p>Een audit is afgebakend in de tijd en levert een concreet rapport met prioriteiten op. We spreken vooraf de scope en de vragen af, en rapporteren met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
+                "answer": "<p>Een audit is afgebakend in de tijd en levert een concreet rapport met prioriteiten op. We spreken vooraf de scope en de vragen af, met duidelijke en transparante deliverables. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
               }
             ]
             %}
@@ -273,7 +270,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Klaar om te weten waar je omzet blijft liggen?",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een sales-audit voor jou kan opleveren. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een sales-audit voor jou kan opleveren. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Over ons
+  label: salesUp, Over ons
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{{ require_css(get_asset_url('../css/over-ons.css')) }}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"foundingDate\":\"2005\",\n      \"slogan\":\"Technologie versterkt de mens, ze vervangt hem niet.\",\n      \"description\":\"salesUp is een Belgische commerciële groeipartner die marketing, sales contact center, veldverkoop, training en sales consultants in één hand neemt, met vaste mensen die je bij naam kent en AI-platformen in eigen beheer.\",\n      \"foundingLocation\":{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Erpe-Mere\",\"addressCountry\":\"BE\"}},\n      \"address\":[\n        {\"@type\":\"PostalAddress\",\"streetAddress\":\"Evenbroekveld 14\",\"postalCode\":\"9420\",\"addressLocality\":\"Erpe-Mere\",\"addressCountry\":\"BE\"},\n        {\"@type\":\"PostalAddress\",\"addressLocality\":\"Oostende\",\"addressCountry\":\"BE\"}\n      ],\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\n      \"award\":[\"Trends Gazelle-nominatie 2023\",\"Trends Gazelle-nominatie 2024\"]\n    },\n    {\n      \"@type\":\"AboutPage\",\n      \"@id\":\"https://www.salesup.be/over-ons#aboutpage\",\n      \"url\":\"https://www.salesup.be/over-ons\",\n      \"name\":\"Over ons — salesUp\",\n      \"description\":\"Het verhaal, de waarden, de mensen en de vestigingen van salesUp, Belgische commerciële groeipartner sinds 2005.\",\n      \"inLanguage\":\"nl\",\n      \"isPartOf\":{\"@type\":\"WebSite\",\"url\":\"https://www.salesup.be/\"},\n      \"about\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"mainEntity\":{\"@id\":\"https://www.salesup.be/#org\"}\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Over ons\",\"item\":\"https://www.salesup.be/over-ons\"}\n      ]\n    }\n  ]\n}",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"foundingDate\":\"2005\",\n      \"slogan\":\"Technologie versterkt de mens, ze vervangt hem niet.\",\n      \"description\":\"salesUp is een Belgische commerciële groeipartner die marketing, sales contact center, veldverkoop, training en sales consultants in één hand neemt, met vaste mensen die je bij naam kent en AI-platformen in eigen beheer.\",\n      \"foundingLocation\":{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Erpe-Mere\",\"addressCountry\":\"BE\"}},\n      \"address\":[\n        {\"@type\":\"PostalAddress\",\"streetAddress\":\"Evenbroekveld 14\",\"postalCode\":\"9420\",\"addressLocality\":\"Erpe-Mere\",\"addressCountry\":\"BE\"},\n        {\"@type\":\"PostalAddress\",\"addressLocality\":\"Oostende\",\"addressCountry\":\"BE\"}\n      ],\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"},\n      \"award\":[\"Trends Gazelle-nominatie 2023\",\"Trends Gazelle-nominatie 2024\"]\n    },\n    {\n      \"@type\":\"AboutPage\",\n      \"@id\":\"https://www.salesup.be/over-ons#aboutpage\",\n      \"url\":\"https://www.salesup.be/over-ons\",\n      \"name\":\"Over ons, salesUp\",\n      \"description\":\"Het verhaal, de waarden, de mensen en de vestigingen van salesUp, Belgische commerciële groeipartner sinds 2005.\",\n      \"inLanguage\":\"nl\",\n      \"isPartOf\":{\"@type\":\"WebSite\",\"url\":\"https://www.salesup.be/\"},\n      \"about\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"mainEntity\":{\"@id\":\"https://www.salesup.be/#org\"}\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Over ons\",\"item\":\"https://www.salesup.be/over-ons\"}\n      ]\n    }\n  ]\n}",
   hreflang_nl="https://www.salesup.be/over-ons",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -46,13 +46,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- TODO: upload event-borrel.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Over salesUp",
           heading="Technologie versterkt de <em>mens</em>, ze vervangt hem niet.",
-          subtext="<p>salesUp is sinds 2005 een Belgische commerciële groeipartner. We namen marketing, sales contact center, veldverkoop, training en sales consultants in één hand — voor grote Belgische bedrijven. Je werkt met vaste mensen die je bij naam kent, versterkt door AI-platformen die we zelf bouwen. De AI meet en signaleert; de mens beslist en verkoopt.</p>",
+          subtext="<p>salesUp is sinds 2005 een Belgische commerciële groeipartner. We namen marketing, sales contact center, veldverkoop, training en sales consultants in één hand, voor grote Belgische bedrijven. Je werkt met vaste mensen die je bij naam kent, versterkt door AI-platformen die we zelf bouwen. De AI meet en signaleert; de mens beslist en verkoopt.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -102,13 +100,7 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload kantoor-brandscreen.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geposeerd geschiedenis-/groeimuurbeeld ontbreekt in de bank; nu de kantoor-merkmuur als beeldslot. -->
-        <!-- VERIFIEER: exact overname-jaar IBG -->
-        <!-- VERIFIEER: exact overname-jaar Filad -->
-        <!-- VERIFIEER: exact overname-jaar Calling Guru -->
-        <!-- VERIFIEER: exact overname-jaar MyModus -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/verhaal",
           eyebrow="Ons verhaal",
           heading="Van één salesbureau naar de hele commerciële keten.",
@@ -120,19 +112,19 @@
               },
               {
                 "jaar": "2018",
-                "tekst": "<!-- VERIFIEER: exact overname-jaar IBG --> Overname van <strong>IBG</strong> — de commerciële slagkracht verbreedt."
+                "tekst": "Overname van <strong>IBG</strong>, de commerciële slagkracht verbreedt."
               },
               {
                 "jaar": "2020",
-                "tekst": "<!-- VERIFIEER: exact overname-jaar Filad --> Overname van <strong>Filad</strong> — extra expertise in de groep."
+                "tekst": "Overname van <strong>Filad</strong>, extra expertise in de groep."
               },
               {
                 "jaar": "2021",
-                "tekst": "<!-- VERIFIEER: exact overname-jaar Calling Guru --> Overname van <strong>Calling Guru</strong> — contact center-kracht erbij."
+                "tekst": "Overname van <strong>Calling Guru</strong>, contact center-kracht erbij."
               },
               {
                 "jaar": "2022",
-                "tekst": "<!-- VERIFIEER: exact overname-jaar MyModus --> Overname van <strong>MyModus</strong> — de keten wordt compleet."
+                "tekst": "Overname van <strong>MyModus</strong>, de keten wordt compleet."
               },
               {
                 "jaar": "2023 & 2024",
@@ -147,7 +139,7 @@
               "src": "https://salesup.be/hubfs/Rectangle%2049-1.png",
               "alt": "Kantoor van salesUp met een scherm en muur die de bedrijfsgeschiedenis en het merk tonen."
             },
-          caption="De hoofdzetel in Erpe-Mere — waar salesUp in 2005 begon."
+          caption="De hoofdzetel in Erpe-Mere, waar salesUp in 2005 begon."
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -160,11 +152,11 @@
           path="../modules/waarden",
           eyebrow="Cultuur & waarden",
           heading="Hoe we werken, niet hoe het klinkt.",
-          intro="<p>Onze overtuiging vertaalt zich in vier manieren van werken. Ze bepalen hoe je klant het verschil voelt — en waarom je onze cijfers zwart op wit terugvindt.</p>",
+          intro="<p>Onze overtuiging vertaalt zich in vier manieren van werken. Ze bepalen hoe je klant het verschil voelt, en waarom je onze cijfers zwart op wit terugvindt.</p>",
           value_cards=[
               {
                 "title": "Mens eerst",
-                "tekst": "<p>Vaste, benoembare mensen die je klant leert kennen — geen roulerende poule. Technologie staat in dienst van wat zij doen.</p>"
+                "tekst": "<p>Vaste, benoembare mensen die je klant leert kennen, geen roulerende poule. Technologie staat in dienst van wat zij doen.</p>"
               },
               {
                 "title": "Bewijs boven belofte",
@@ -191,7 +183,7 @@
           path="../modules/team",
           eyebrow="De mensen",
           heading="De mensen achter het cijfer.",
-          intro="<p>salesUp is de som van de mensen die het werk doen. Hieronder een greep uit de gezichten die onze diensten dragen — met naam, rol en het werk waar ze voor staan. Bij een samenwerking leer je ze bij naam kennen.</p>",
+          intro="<p>salesUp is de som van de mensen die het werk doen. Hieronder een greep uit de gezichten die onze diensten dragen, met naam, rol en het werk waar ze voor staan. Bij een samenwerking leer je ze bij naam kennen.</p>",
           mensen=[
               {
                 "naam": "Kim Bulté",
@@ -266,7 +258,7 @@
                 }
               }
             ],
-          noot="Dit is een greep uit het team. Bij een samenwerking leer je deze mensen bij naam kennen — en de collega’s die het werk bij jouw klant doen."
+          noot="Dit is een greep uit het team. Bij een samenwerking leer je deze mensen bij naam kennen, en de collega’s die het werk bij jouw klant doen."
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -275,18 +267,16 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- VERIFIEER: straat + nummer (NAP) -->
-        <!-- VERIFIEER: aparte vacatures-/werken-bij-pagina zodra beschikbaar -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/vestigingen",
           eyebrow="Vestigingen & cultuur",
           heading="Lokaal verankerd, dicht bij je markt.",
-          intro="<p>salesUp is Belgisch en blijft dat. We zitten waar onze klanten en ons talent zitten — in Erpe-Mere en Oostende.</p>",
+          intro="<p>salesUp is Belgisch en blijft dat. We zitten waar onze klanten en ons talent zitten, in Erpe-Mere en Oostende.</p>",
           locaties=[
               {
                 "status": "Hoofdzetel",
                 "plaats": "Erpe-Mere",
-                "tekst": "Waar salesUp in 2005 begon en waar het grootste deel van het team werkt.<!-- VERIFIEER: straat + nummer (NAP) -->",
+                "tekst": "Waar salesUp in 2005 begon en waar het grootste deel van het team werkt.",
                 "beeld": {
                   "src": "https://salesup.be/hubfs/Rectangle%2049-1.png",
                   "alt": "Open kantoorvloer met bureaus op de hoofdzetel van salesUp in Erpe-Mere."
@@ -295,7 +285,7 @@
               {
                 "status": "Sinds 2025",
                 "plaats": "Oostende",
-                "tekst": "Onze tweede vestiging, geopend in 2025 om dichter bij de kust te zitten.<!-- VERIFIEER: straat + nummer (NAP) -->",
+                "tekst": "Onze tweede vestiging, geopend in 2025 om dichter bij de kust te zitten.",
                 "beeld": {
                   "src": "https://salesup.be/hubfs/Rectangle%2056.png",
                   "alt": "Medewerkers in overleg in het kantoor van salesUp in Oostende."
@@ -343,7 +333,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Liever eerst even kennismaken?",
-          tekst="<p>Geen offerte, geen verkoopgesprek — gewoon eens uitzoeken of we bij elkaar passen. Vertel ons in het kort wat je bezighoudt, dan bekijken we samen of en hoe we kunnen helpen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Geen offerte, geen verkoopgesprek, gewoon eens uitzoeken of we bij elkaar passen. Vertel ons in het kort wat je bezighoudt, dan bekijken we samen of en hoe we kunnen helpen. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Werken bij
+  label: salesUp, Werken bij
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{{ require_css(get_asset_url('../css/vacatures.css')) }}{% endblock %}
@@ -46,8 +46,7 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload cc-hoodie-back.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Werken bij salesUp",
           heading="Kom <em>groeien</em> bij een Belgische salesgroep.",
@@ -66,7 +65,7 @@
                 "type": "EXTERNAL"
               }
             },
-          terugbelnote="Nog aan het twijfelen? <strong>Solliciteer gerust spontaan — er komt voortdurend iets bij.</strong>",
+          terugbelnote="Nog aan het twijfelen? <strong>Solliciteer gerust spontaan, er komt voortdurend iets bij.</strong>",
           note_energie=true,
           chips=[
               {
@@ -92,9 +91,9 @@
             },
           trustcard_badge="A job in sales?",
           trustcard_stat="±200<em></em>",
-          trustcard_label="collega's in sales, marketing en coaching — twee keer Trends Gazelle (2023 &amp; 2024) en al twintig jaar groeiend.",
+          trustcard_label="collega's in sales, marketing en coaching, twee keer Trends Gazelle (2023 &amp; 2024) en al twintig jaar groeiend.",
           trustcard_quote="\"Technologie versterkt de mens, ze vervangt hem niet.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, sinds 2005"
+          trustcard_quote_who=", <strong>salesUp</strong>, sinds 2005"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -108,7 +107,7 @@
           anchor="troeven",
           eyebrow="Waarom salesUp",
           heading="Een plek waar je écht beter wordt in sales.",
-          intro="<p>Wat je profiel ook is, deze troeven deel je met elke collega: opleiding, coaching en de kans om door te groeien — in een groep die al twintig jaar groeit en blijft groeien.</p>",
+          intro="<p>Wat je profiel ook is, deze troeven deel je met elke collega: opleiding, coaching en de kans om door te groeien, in een groep die al twintig jaar groeit en blijft groeien.</p>",
           vac_troef=true,
           feature_cards=[
               {
@@ -153,7 +152,7 @@
           kaarten=[
               {
                 "title": "Studenten & Face2Face",
-                "desc": "<p>Flexibele studentenjob waarin je goed verdient, events beleeft en met een toffe crew op pad gaat — geen ervaring nodig, wij leren je alles.</p>",
+                "desc": "<p>Flexibele studentenjob waarin je goed verdient, events beleeft en met een toffe crew op pad gaat, geen ervaring nodig, wij leren je alles.</p>",
                 "url": {
                   "url": {
                     "content_id": 453268169949,
@@ -167,7 +166,7 @@
               },
               {
                 "title": "Contact Center",
-                "desc": "<p>Bel, verkoop en scoor: met coaching, de salesUp Academy en AI-tools die je sterker maken bouw je aan je targets — en aan je bonus.</p>",
+                "desc": "<p>Bel, verkoop en scoor: met coaching, de salesUp Academy en AI-tools die je sterker maken bouw je aan je targets, en aan je bonus.</p>",
                 "url": {
                   "url": {
                     "content_id": 453268166896,
@@ -202,8 +201,7 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- INTERIM: nog geen sterk Face2Face-veldbeeld in de assets (zie ../assets/BEELDEN_overzicht.md); veldbeeld toevoegen zodra aangeleverd. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/sfeer",
           eyebrow="De sfeer",
           heading="Werken bij salesUp, in beeld.",
@@ -214,21 +212,21 @@
                   "src": "https://salesup.be/hubfs/Untitled%20design.png",
                   "alt": "salesUp-collega's met headset aan hun bureaus in het contact center, met blauw-oranje schotten."
                 },
-                "caption": "De contact-center-vloer — hier bel en verkoop je met een team rond je."
+                "caption": "De contact-center-vloer, hier bel en verkoop je met een team rond je."
               },
               {
                 "beeld": {
                   "src": "https://salesup.be/hubfs/446%20x%20316%20px-Mar-26-2026-01-31-59-3301-PM.png",
                   "alt": "salesUp-teamlid met een drankje op een event, ontspannen sfeer na een geslaagde actie."
                 },
-                "caption": "Events en borrels — want targets haal je samen, en dat mag gevierd worden."
+                "caption": "Events en borrels, want targets haal je samen, en dat mag gevierd worden."
               },
               {
                 "beeld": {
                   "src": "https://salesup.be/hubfs/Group%20201-2.png",
                   "alt": "Trainer presenteert voor een groep salesUp-collega's met laptops tijdens een opleiding."
                 },
-                "caption": "De salesUp Academy — opleiding en bijscholing horen er van bij de start bij."
+                "caption": "De salesUp Academy, opleiding en bijscholing horen er van bij de start bij."
               }
             ]
             %}
@@ -243,7 +241,7 @@
           path="../modules/open-vacatures",
           eyebrow="Open vacatures",
           heading="Waar wil jij aan de slag?",
-          intro="<p>Kies de rol die bij je past en solliciteer. Niks voor jou vandaag? Solliciteer dan spontaan — er komt voortdurend iets bij.</p>",
+          intro="<p>Kies de rol die bij je past en solliciteer. Niks voor jou vandaag? Solliciteer dan spontaan, er komt voortdurend iets bij.</p>",
           api_url="https://salesup.recruitee.com/api/offers/",
           department="",
           detail_base="/werken-bij/vacature"
@@ -259,7 +257,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Klaar om mee te groeien?",
-          tekst="<p>Kies je profiel, bekijk de open vacatures en solliciteer — of laat spontaan van je horen. We kijken vooral naar je goesting om te groeien, niet naar een dik cv.</p>",
+          tekst="<p>Kies je profiel, bekijk de open vacatures en solliciteer, of laat spontaan van je horen. We kijken vooral naar je goesting om te groeien, niet naar een dik cv.</p>",
           cta1_text="Solliciteer",
           cta1_url={
               "url": {

@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Website
+  label: salesUp, Website
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -64,13 +64,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: set heeft geen echt website-/campagnebeeld; dichtstbijzijnde is overleg-op-laptop -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Marketing · Website",
           heading="Een website die <em>leads</em> oplevert, niet enkel mooi oogt.",
-          subtext="<p>Een website is geen digitaal visitekaartje, maar het beginpunt van je commerciële motor. We bouwen elke pagina rond één doel — de bezoeker naar een afspraak of aanvraag brengen — en koppelen de site aan dezelfde datalaag als je campagnes, zodat de leads rechtstreeks naar sales stromen en binnen 30 minuten gebeld worden.</p>",
+          subtext="<p>Een website is geen digitaal visitekaartje, maar het beginpunt van je commerciële motor. We bouwen elke pagina rond één doel, de bezoeker naar een afspraak of aanvraag brengen, en koppelen de site aan dezelfde datalaag als je campagnes, zodat de leads rechtstreeks naar sales stromen en binnen 30 minuten gebeld worden.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -111,9 +109,9 @@
             },
           trustcard_badge="",
           trustcard_stat="Conversie<em>.</em>",
-          trustcard_label="Elke pagina gebouwd rond één doel: de bezoeker naar een afspraak of aanvraag brengen — de basis waar SEA, social ads, SEO/GEO en e-mail op landen.",
+          trustcard_label="Elke pagina gebouwd rond één doel: de bezoeker naar een afspraak of aanvraag brengen, de basis waar SEA, social ads, SEO/GEO en e-mail op landen.",
           trustcard_quote="\"Een site die niet converteert, is een brochure met een adres. Wij bouwen het beginpunt van je pipeline.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van onze marketing"
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak van onze marketing"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -140,7 +138,7 @@
               },
               {
                 "title": "Gekoppeld aan je campagnes",
-                "tekst": "<p>De site draait op dezelfde datalaag als SEA, social ads en e-mail — geen losse silo's die elkaar tegenspreken. Wat een campagne leert, stuurt je landingspagina's mee aan.</p>"
+                "tekst": "<p>De site draait op dezelfde datalaag als SEA, social ads en e-mail, geen losse silo's die elkaar tegenspreken. Wat een campagne leert, stuurt je landingspagina's mee aan.</p>"
               },
               {
                 "title": "Leads rechtstreeks naar sales",
@@ -175,7 +173,7 @@
               {
                 "num": "03",
                 "title": "Design & copy",
-                "tekst": "<p>Visuele uitwerking en teksten die overtuigen, on-brand en gericht op conversie — niet enkel invullen.</p>"
+                "tekst": "<p>Visuele uitwerking en teksten die overtuigen, on-brand en gericht op conversie, niet enkel invullen.</p>"
               },
               {
                 "num": "04",

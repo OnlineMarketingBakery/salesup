@@ -1,0 +1,20 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: salesUp — 500 Serverfout
+-->
+{% extends "./base.html" %}
+
+{% block content %}
+<section class="hero wrap" style="padding: 100px 24px 120px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+  <span class="eyebrow mono" style="margin-bottom: 16px;">Error 500</span>
+  <h1 style="max-width: 20ch; margin: 0 auto 16px;">Er ging iets <em>mis</em>.</h1>
+  <div class="hero-sub" style="max-width: 48ch; margin: 0 auto 32px;">
+    <p>Er is een tijdelijke serverfout opgetreden. Probeer de pagina opnieuw te laden of neem contact met ons op als het probleem aanhoudt.</p>
+  </div>
+  <div class="hero-cta" style="justify-content: center; gap: 14px;">
+    <a class="btn" href="/">Terug naar startpagina <span class="arrow" aria-hidden="true">&rarr;</span></a>
+    <a class="btn ghost" href="/contact">Contacteer ons</a>
+  </div>
+</section>
+{% endblock %}

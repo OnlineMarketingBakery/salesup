@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Contact
+  label: salesUp, Contact
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{{ require_css(get_asset_url('../css/contact.css')) }}{% endblock %}
@@ -50,18 +50,18 @@
           path="../modules/contact-hero",
           eyebrow="Contact",
           heading="Zin om te <em>groeien</em>? Eén gesprek volstaat.",
-          subtext="<p>Vertel ons kort waar je staat en wat je wil bereiken. We denken meteen met je mee — en we bellen je <strong>binnen 30 minuten</strong> terug.</p>",
-          cta1_text="Bel 053 78 28 30",
+          subtext="<p>Vertel ons kort waar je staat en wat je wil bereiken. We denken meteen met je mee, en we bellen je <strong>binnen 30 minuten</strong> terug.</p>",
+          cta1_text="Laat je terugbellen",
           cta1_url={
               "url": {
-                "href": "tel:+3253782830",
+                "href": "#form",
                 "type": "EXTERNAL"
               }
             },
-          cta2_text="Mail ons",
+          cta2_text="Bel 053 78 28 30",
           cta2_url={
               "url": {
-                "href": "mailto:info@salesup.be",
+                "href": "tel:+3253782830",
                 "type": "EXTERNAL"
               }
             }
@@ -132,19 +132,19 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Liever dat wij bellen?",
-          tekst="<p>Laat je nummer achter of bel ons rechtstreeks — we bellen je binnen 30 minuten terug.</p>",
-          cta1_text="Bel 053 78 28 30",
+          tekst="<p>Laat je nummer achter, we bellen je binnen 30 minuten terug. Liever meteen iemand aan de lijn? Bel ons zelf.</p>",
+          cta1_text="Laat je nummer achter",
           cta1_url={
               "url": {
-                "href": "tel:+3253782830",
+                "href": "#form",
                 "type": "EXTERNAL"
               }
             },
           cta1_new_tab=false,
-          cta2_text="Mail info@salesup.be",
+          cta2_text="Bel zelf 053 78 28 30",
           cta2_url={
               "url": {
-                "href": "mailto:info@salesup.be",
+                "href": "tel:+3253782830",
                 "type": "EXTERNAL"
               }
             }

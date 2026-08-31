@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Sales Consultants
+  label: salesUp, Sales Consultants
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -54,14 +54,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload man-desk-thinking.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geen geposeerd portret beschikbaar; sfeerbeeld uit ../assets -->
-        <!-- VERIFIEER: Liantis-samenwerking omvat salestraining én coaching/begeleiding van het salesmanagement; geen publiek consulting-specifiek cijfer, dus kwalitatief. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Sales Consultants",
           heading="Ervaren sales, <em>gedetacheerd</em> in jouw team.",
-          subtext="<p>Ervaren salesconsultants die bij jou aan de slag gaan via detachering — op onze payroll, maar met de tooling, de dagelijkse coaching en de datalus van salesUp mee. Extra salescapaciteit zonder wervingsrisico, vanaf minstens 3 maanden fulltime en afgerekend op resultaat.</p>",
+          subtext="<p>Ervaren salesconsultants die bij jou aan de slag gaan via detachering, op onze payroll, maar met de tooling, de dagelijkse coaching en de datalus van salesUp mee. Extra salescapaciteit zonder wervingsrisico, vanaf minstens 3 maanden fulltime en gericht op meetbare resultaten.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -89,7 +86,7 @@
                 "link_label": "Tooling + coaching mee"
               },
               {
-                "link_label": "Afgerekend op resultaat"
+                "link_label": "Gericht op resultaat"
               }
             ],
           trust_chips=[],
@@ -102,9 +99,9 @@
             },
           trustcard_badge="",
           trustcard_stat="",
-          trustcard_label="Bij Liantis begeleidden en coachten we het salesmanagement van een commercieel team van 70 à 80 mensen — geen los advies, maar mee aan de tafel.",
+          trustcard_label="Bij Liantis begeleidden en coachten we het salesmanagement van een commercieel team van 70 à 80 mensen, geen los advies, maar mee aan de tafel.",
           trustcard_quote="\"Vertrouwen is een sleutel en een fundament.\"",
-          trustcard_quote_who="— <strong>Eveline Boúúaert</strong>, Head of Sales KMO bij Liantis"
+          trustcard_quote_who=", <strong>Eveline Boúúaert</strong>, Head of Sales KMO bij Liantis"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -232,12 +229,12 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Geen los cv. Het hele huis mee.",
-          intro="<p>Een gedetacheerde consultant die er alleen voor staat, is een dure gok. Onze consultants nemen de tooling, de coaching en de datalus van salesUp mee — zodat ze sneller renderen en meetbaar blijven.</p>",
+          intro="<p>Een gedetacheerde consultant die er alleen voor staat, is een dure gok. Onze consultants nemen de tooling, de coaching en de datalus van salesUp mee, zodat ze sneller renderen en meetbaar blijven.</p>",
           vac_troef=false,
           feature_cards=[
               {
                 "title": "Ervaren & direct inzetbaar",
-                "tekst": "<p>Doorgewinterde salesmensen die je verkoop, je pipeline of je salesmanagement komen versterken — zonder de maandenlange zoektocht en het risico van een eigen aanwerving.</p>"
+                "tekst": "<p>Doorgewinterde salesmensen die je verkoop, je pipeline of je salesmanagement komen versterken, zonder de maandenlange zoektocht en het risico van een eigen aanwerving.</p>"
               },
               {
                 "title": "Op onze payroll, geen wervingsrisico",
@@ -248,8 +245,8 @@
                 "tekst": "<p>De consultant traint op hetzelfde platform als onze eigen salesteams: elk gesprek gescoord op kwaliteit en koopkans, met bijsturing via salesUp Academy tijdens de opdracht.</p>"
               },
               {
-                "title": "Vanaf 3 maanden, afgerekend op resultaat",
-                "tekst": "<p>Opdrachten lopen vanaf minstens 3 maanden fulltime, zodat de investering rendeert. We spreken vooraf een doel af en rapporteren het resultaat wekelijks, met 100% kostentransparantie.</p>"
+                "title": "Vanaf 3 maanden, gericht op resultaat",
+                "tekst": "<p>Opdrachten lopen vanaf minstens 3 maanden fulltime, zodat de investering rendeert. We spreken vooraf duidelijke doelen af en rapporteren de voortgang wekelijks met heldere cijfers.</p>"
               }
             ]
             %}
@@ -260,33 +257,32 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload overleg-senior-woman.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/ai-differentiator",
           anchor="ai",
           eyebrow="De AI-differentiator",
           heading="Objectief gemeten, vóór en tijdens de opdracht.",
-          intro="Onze consultants trainen op hetzelfde platform als onze eigen salesteams. Zo brengen we hun competenties scherp in kaart nog voor ze bij jou starten — en blijven we bijsturen tijdens de opdracht. De AI meet en signaleert; de consultant verkoopt. Dat is de datalus die geen interimkantoor kan sluiten.",
+          intro="Onze consultants trainen op hetzelfde platform als onze eigen salesteams. Zo brengen we hun competenties scherp in kaart nog voor ze bij jou starten, en blijven we bijsturen tijdens de opdracht. De AI meet en signaleert; de consultant verkoopt. Dat is de datalus die geen interimkantoor kan sluiten.",
           points=[
               {
                 "num": "01",
-                "text": "<p><strong>Automated quality monitoring</strong> — elk gesprek gescoord op kwaliteit en koopkans, geen steekproef achteraf.</p>"
+                "text": "<p><strong>Automated quality monitoring</strong>, elk gesprek gescoord op kwaliteit en koopkans, geen steekproef achteraf.</p>"
               },
               {
                 "num": "02",
-                "text": "<p><strong>Opportunity score</strong> — de warmste dossiers worden als eerste opgevolgd, zodat geen kans blijft liggen.</p>"
+                "text": "<p><strong>Opportunity score</strong>, de warmste dossiers worden als eerste opgevolgd, zodat geen kans blijft liggen.</p>"
               },
               {
                 "num": "03",
-                "text": "<p><strong>Objection-detectie</strong> — terugkerende bezwaren worden herkend, zodat aanpak en aanbod meebewegen.</p>"
+                "text": "<p><strong>Objection-detectie</strong>, terugkerende bezwaren worden herkend, zodat aanpak en aanbod meebewegen.</p>"
               },
               {
                 "num": "04",
-                "text": "<p><strong>Getraind &amp; gecertificeerd vooraf</strong> — elke consultant doorloopt onze eigen trainings- en certificeringsladder.</p>"
+                "text": "<p><strong>Getraind &amp; gecertificeerd vooraf</strong>, elke consultant doorloopt onze eigen trainings- en certificeringsladder.</p>"
               },
               {
                 "num": "05",
-                "text": "<p><strong>Data gekoppeld aan salesUp Academy</strong> — waar de consultant hapert, wordt hij daar bijgestuurd.</p>"
+                "text": "<p><strong>Data gekoppeld aan salesUp Academy</strong>, waar de consultant hapert, wordt hij daar bijgestuurd.</p>"
               }
             ],
           image={
@@ -305,13 +301,13 @@
           path="../modules/steps",
           anchor="aanpak",
           eyebrow="Hoe het werkt",
-          heading="Van profiel tot afgerekend resultaat.",
-          intro="<p>We spreken vooraf een doelstelling af en bepalen welk profiel jouw team het snelst verder helpt.</p>",
+          heading="Van profiel tot meetbaar resultaat.",
+          intro="<p>We stemmen vooraf de doelstellingen af en bepalen welk profiel jouw team het snelst verder helpt.</p>",
           steps=[
               {
                 "num": "01",
                 "title": "Profiel & doel bepalen",
-                "tekst": "<p>We spreken vooraf een doelstelling af en bepalen welk profiel jouw team het snelst verder helpt.</p>"
+                "tekst": "<p>We stemmen vooraf de doelstellingen af en bepalen welk profiel jouw team het snelst verder helpt.</p>"
               },
               {
                 "num": "02",
@@ -321,12 +317,12 @@
               {
                 "num": "03",
                 "title": "Aan de slag bij jouw team",
-                "tekst": "<p>De consultant werkt gedetacheerd mee, met tooling en de datalus mee — vanaf minstens 3 maanden fulltime.</p>"
+                "tekst": "<p>De consultant werkt gedetacheerd mee, met tooling en de datalus mee, vanaf minstens 3 maanden fulltime.</p>"
               },
               {
                 "num": "04",
                 "title": "Meten, coachen & wekelijks rapporteren",
-                "tekst": "<p>Gesprekken worden gescoord, we sturen bij via salesUp Academy en je krijgt een wekelijkse rapportering met 100% kostentransparantie.</p>"
+                "tekst": "<p>Gesprekken worden gescoord, we sturen bij via salesUp Academy en je krijgt een wekelijkse rapportering met heldere resultaten.</p>"
               }
             ]
             %}
@@ -369,8 +365,7 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: nog te bouwen -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/crosssell",
           eyebrow="Werkt sterker samen met",
           heading="Los te boeken. Maar scherper in combinatie.",
@@ -390,7 +385,7 @@
               {
                 "idx": "02",
                 "naam": "Marketing",
-                "desc": "Websites, SEA, SEO/GEO, social ads en e-mail — data-gedreven via ons eigen AI-platform. Levert de leads waarmee je consultant aan de slag gaat.",
+                "desc": "Websites, SEA, SEO/GEO, social ads en e-mail, data-gedreven via ons eigen AI-platform. Levert de leads waarmee je consultant aan de slag gaat.",
                 "url": {
                   "url": {
                     "href": "/marketing",
@@ -436,7 +431,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Versterk je team met sales die meteen renderen.",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van welk profiel jouw team het snelst verder helpt. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van welk profiel jouw team het snelst verder helpt. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

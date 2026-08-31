@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Trainingsplatform
+  label: salesUp, Trainingsplatform
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -64,12 +64,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload kantoor-brandscreen.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Training · Trainingsplatform",
           heading="<em>salesUp Academy</em>: trainen op wat de data toont.",
-          subtext="<p>Ons eigen trainingsplatform analyseert echte verkoopgesprekken, laat iedereen oefenen op zijn werkpunt met AI-avatars, houdt de voortgang bij op scorecards en koppelt alles aan je live sales-data. Zo train je op het échte werkpunt — en zie je of het omzet oplevert.</p>",
+          subtext="<p>Ons eigen trainingsplatform analyseert echte verkoopgesprekken, laat iedereen oefenen op zijn werkpunt met AI-avatars, houdt de voortgang bij op scorecards en koppelt alles aan je live sales-data. Zo train je op het échte werkpunt, en zie je of het omzet oplevert.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -110,9 +109,9 @@
             },
           trustcard_badge="",
           trustcard_stat="9,4–9,6<em>/10</em>",
-          trustcard_label="Klanttevredenheid van de met salesUp getrainde ploeg bij Astara — bewijs dat datagedreven training aan de gesprekskwaliteit voelbaar is.",
-          trustcard_quote="\"Op basis van de gesprekanalyse oefent elke sales persoon met een AI-avatar — precies op het werkpunt dat voor hem telt, zo vaak als nodig.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van salesUp Academy"
+          trustcard_label="Klanttevredenheid van de met salesUp getrainde ploeg bij Astara, bewijs dat datagedreven training aan de gesprekskwaliteit voelbaar is.",
+          trustcard_quote="\"Op basis van de gesprekanalyse oefent elke sales persoon met een AI-avatar, precies op het werkpunt dat voor hem telt, zo vaak als nodig.\"",
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak van salesUp Academy"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -139,7 +138,7 @@
               },
               {
                 "title": "Scorecards & gamification",
-                "tekst": "<p>De voortgang staat per verkoper op een scorecard, tegenover jouw sales-methodologie. Punten, streak en percentiel houden het spel én de motivatie erin — coach en verkoper zien de evolutie.</p>"
+                "tekst": "<p>De voortgang staat per verkoper op een scorecard, tegenover jouw sales-methodologie. Punten, streak en percentiel houden het spel én de motivatie erin, coach en verkoper zien de evolutie.</p>"
               },
               {
                 "title": "Wekelijkse coach-mail & datakoppeling",
@@ -273,7 +272,7 @@
           aria="Vraag een demo aan",
           sc_eyebrow="Demo op maat",
           heading="Zie het trainingsplatform live in actie",
-          tekst="<p>Benieuwd hoe training, coaching en resultaat samenkomen op één scherm? Laat je gegevens achter en we geven je een rondleiding op maat van jouw team — geen verkooppraatje.</p>",
+          tekst="<p>Benieuwd hoe training, coaching en resultaat samenkomen op één scherm? Laat je gegevens achter en we geven je een rondleiding op maat van jouw team, geen verkooppraatje.</p>",
           veldenset={
               "naam": true,
               "email": true,

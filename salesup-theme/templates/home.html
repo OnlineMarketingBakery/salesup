@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Homepage
+  label: salesUp, Homepage
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -14,13 +14,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload cc-team-floor.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Eén partner · vijf onderdelen · één motor",
           heading="Commerciële groei is geen los project. Het is <em>één machine.</em>",
-          subtext="<p>salesUp brengt marketing, sales, training en consultants samen op dezelfde data — zodat elk onderdeel het andere sterker maakt. Alles samen, of gewoon één dienst. Aan jou de keuze.</p>",
+          subtext="<p>salesUp brengt marketing, sales, training en consultants samen op dezelfde data, zodat elk onderdeel het andere sterker maakt. Alles samen, of gewoon één dienst. Aan jou de keuze.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -83,12 +81,12 @@
             {% dnd_module
           path="../modules/pains",
           eyebrow="Herkenbaar?",
-          heading="De meeste bedrijven schakelen vier of vijf losse leveranciers in — die elkaar nooit spreken.",
+          heading="De meeste bedrijven schakelen vier of vijf losse leveranciers in, die elkaar nooit spreken.",
           pain_cards=[
               {
                 "num": "01",
                 "title": "Leadgeneratie stopt zodra de leads binnen zijn",
-                "tekst": "<p>Het marketingbureau levert leads af en is klaar. Wat ermee gebeurt, zien ze niet — en het interesseert ze ook niet.</p>"
+                "tekst": "<p>Het marketingbureau levert leads af en is klaar. Wat ermee gebeurt, zien ze niet, en het interesseert ze ook niet.</p>"
               },
               {
                 "num": "02",
@@ -98,7 +96,7 @@
               {
                 "num": "03",
                 "title": "Niemand voelt zich verantwoordelijk voor het geheel",
-                "tekst": "<p>Werkt het niet? Dan wijst iedereen naar de buurman. Er is geen partij die het hele traject — en het resultaat — in handen neemt.</p>"
+                "tekst": "<p>Werkt het niet? Dan wijst iedereen naar de buurman. Er is geen partij die het hele traject, en het resultaat, in handen neemt.</p>"
               }
             ]
             %}
@@ -118,7 +116,7 @@
               {
                 "idx": "01",
                 "naam": "Marketing",
-                "desc": "<p>Websites, SEA, SEO/GEO, social ads &amp; e-mail — data-gedreven via ons AI-platform.</p>"
+                "desc": "<p>Websites, SEA, SEO/GEO, social ads &amp; e-mail, data-gedreven via ons AI-platform.</p>"
               },
               {
                 "idx": "02",
@@ -133,7 +131,7 @@
               {
                 "idx": "04",
                 "naam": "Training",
-                "desc": "<p>AI-gesprekanalyse, AI-avatar en fysieke training — gekoppeld aan omzetimpact.</p>"
+                "desc": "<p>AI-gesprekanalyse, AI-avatar en fysieke training, gekoppeld aan omzetimpact.</p>"
               },
               {
                 "idx": "05",
@@ -149,16 +147,15 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: dienstpagina nog te bouwen -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/services-list",
           heading="Vijf onderdelen. Elk ook los te boeken.",
-          intro="<p>Wil je alles? Perfect. Wil je enkel een SEA-campagne of enkel sales training? Dat kan net zo goed — met evenveel aandacht.</p>",
+          intro="<p>Wil je alles? Perfect. Wil je enkel een SEA-campagne of enkel sales training? Dat kan net zo goed, met evenveel aandacht.</p>",
           service_rows=[
               {
                 "idx": "01",
                 "naam": "Marketing",
-                "desc": "Websites · SEA · SEO/GEO · Social ads · E-mail — data-gedreven via ons eigen AI-platform.",
+                "desc": "Websites · SEA · SEO/GEO · Social ads · E-mail, data-gedreven via ons eigen AI-platform.",
                 "tag_text": "Bekijk apart",
                 "tag_url": {
                   "url": {
@@ -232,7 +229,7 @@
               {
                 "num": "91<em>%</em>",
                 "who": "Orange",
-                "context": "<p>Auditscore op kwaliteit — de hoogste van Europa.</p>"
+                "context": "<p>Auditscore op kwaliteit, de hoogste van Europa.</p>"
               },
               {
                 "num": "5–7<em>/w</em>",
@@ -247,7 +244,7 @@
               {
                 "num": "26,28<em>%</em>",
                 "who": "Van Heurck",
-                "context": "<p>Conversie behaald — waar de doelstelling 10% was.</p>"
+                "context": "<p>Conversie behaald, waar de doelstelling 10% was.</p>"
               }
             ]
             %}
@@ -328,8 +325,7 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- VERIFIEER: functie niet vermeld op de bronpagina -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/testimonials",
           anchor="cases",
           eyebrow="Waarom klanten blijven",
@@ -338,25 +334,25 @@
               {
                 "quote": "<p>“Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.”</p>",
                 "naam": "Stefanie Van Rillaer",
-                "role_company": "Head of Hunting — Orange"
+                "role_company": "Head of Hunting, Orange"
               },
               {
                 "quote": "<p>“Het is een kwestie van gelijklopend DNA. Dicht bij de klant, reactiesnelheid en vooral veel beweging.”</p>",
                 "naam": "Pascal Pinket",
-                "role_company": "Sales Director — Trustteam"
+                "role_company": "Sales Director, Trustteam"
               },
               {
                 "quote": "<p>“Onze aangename samenwerking met salesUp blijft consequent leiden tot blijvende successen.”</p>",
                 "naam": "Isabella Hauquier",
-                "role_company": "Sales Manager — Q8Oils"
+                "role_company": "Sales Manager, Q8Oils"
               },
               {
-                "quote": "<p>“Jullie hebben de mensen tot inzichten gebracht. Soms ook wat shocking. En dat werkt — ook maanden later bleef de impact voelbaar binnen de teams.”</p>",
+                "quote": "<p>“Jullie hebben de mensen tot inzichten gebracht. Soms ook wat shocking. En dat werkt, ook maanden later bleef de impact voelbaar binnen de teams.”</p>",
                 "naam": "Eveline Boúúaert",
-                "role_company": "Head of Sales KMO — Liantis"
+                "role_company": "Head of Sales KMO, Liantis"
               },
               {
-                "quote": "<p>“De resultaten van de outbound funnel overstegen onze verwachtingen. Al snel bleek deze aanpak de juiste — we kregen gemiddeld 20 ingevulde scans per week.”</p>",
+                "quote": "<p>“De resultaten van de outbound funnel overstegen onze verwachtingen. Al snel bleek deze aanpak de juiste, we kregen gemiddeld 20 ingevulde scans per week.”</p>",
                 "naam": "Nele Creuwels",
                 "role_company": "UNIZO"
               }
@@ -370,21 +366,20 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/method",
           anchor="platform",
           eyebrow="Onze methodiek",
           heading="Onderbouwd. Nooit buikgevoel.",
-          intro="Elke keuze — in copy, in een campagne, in een trainingsadvies — is gebaseerd op data en gedrag, niet op smaak. Zo weet je vooraf waaróm iets werkt, in plaats van achteraf te hopen dat het werkte.",
+          intro="Elke keuze, in copy, in een campagne, in een trainingsadvies, is gebaseerd op data en gedrag, niet op smaak. Zo weet je vooraf waaróm iets werkt, in plaats van achteraf te hopen dat het werkte.",
           points=[
               {
                 "num": "01",
-                "text": "<p>Elke beslissing is onderbouwd — geen discussies op buikgevoel.</p>"
+                "text": "<p>Elke beslissing is onderbouwd, geen discussies op buikgevoel.</p>"
               },
               {
                 "num": "02",
-                "text": "<p>Volledig gepersonaliseerd per klant — geen templates, geen kant-en-klare pakketten.</p>"
+                "text": "<p>Volledig gepersonaliseerd per klant, geen templates, geen kant-en-klare pakketten.</p>"
               },
               {
                 "num": "03",
@@ -411,7 +406,7 @@
           path="../modules/dual-cta",
           option1_eyebrow="Optie 1",
           option1_h3="Geef je hele groeimotor uit handen",
-          option1_body="<p>Eén aanspreekpunt voor marketing, sales, training en consultants — samen sturend op hetzelfde resultaat.</p>",
+          option1_body="<p>Eén aanspreekpunt voor marketing, sales, training en consultants, samen sturend op hetzelfde resultaat.</p>",
           option1_cta_text="Plan een gesprek",
           option1_cta_url={
               "url": {

@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — SEA
+  label: salesUp, SEA
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -64,13 +64,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload man-desk-thinking.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: set heeft geen echt SEA-/campagnebeeld; dichtstbijzijnde is sales/exec-sfeer -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Marketing · SEA",
           heading="SEA die je afrekent op <em>aanvragen</em>, niet op kliks.",
-          subtext="<p>Betaalde zoekcampagnes op Google en Bing, continu bijgestuurd op resultaat en niet op gevoel. We meten op gekwalificeerde aanvragen, en die aanvragen verdwijnen niet in een rapport — ze stromen rechtstreeks door naar sales en worden binnen 30 minuten gebeld.</p>",
+          subtext="<p>Betaalde zoekcampagnes op Google en Bing, continu bijgestuurd op resultaat en niet op gevoel. We meten op gekwalificeerde aanvragen, en die aanvragen verdwijnen niet in een rapport, ze stromen rechtstreeks door naar sales en worden binnen 30 minuten gebeld.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -95,7 +93,7 @@
                 "link_label": "Wekelijkse bijsturing"
               },
               {
-                "link_label": "100% kostentransparantie"
+                "link_label": "Heldere rapportage"
               },
               {
                 "link_label": "Voedt je sales"
@@ -111,9 +109,9 @@
             },
           trustcard_badge="",
           trustcard_stat="75",
-          trustcard_label="Aanvragen voor Hivolta in één kwartaal via de betaalde zoekcampagnes — meetbaar en toe te schrijven aan de campagnes zelf, niet aan belvolume.",
+          trustcard_label="Aanvragen voor Hivolta in één kwartaal via de betaalde zoekcampagnes, meetbaar en toe te schrijven aan de campagnes zelf, niet aan belvolume.",
           trustcard_quote="\"We meten wat een campagne aan aanvragen opbrengt, niet hoeveel kliks ze verzamelt. Budget volgt op resultaat.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van onze marketing"
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak van onze marketing"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -127,7 +125,7 @@
           anchor="oplevert",
           eyebrow="Wat je krijgt",
           heading="Geen ingestelde campagne die daarna met rust gelaten wordt.",
-          intro="<p>SEA is er om aanvragen binnen te halen. Elke euro wordt gestuurd naar wat converteert — en wat binnenkomt, gaat rechtstreeks door naar sales.</p>",
+          intro="<p>SEA is er om aanvragen binnen te halen. Elke euro wordt gestuurd naar wat converteert, en wat binnenkomt, gaat rechtstreeks door naar sales.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -140,11 +138,11 @@
               },
               {
                 "title": "Rapportage via ons AI-platform",
-                "tekst": "<p>Live inzicht in besteding, resultaat en volgende stappen — geen zwarte doos en geen powerpoint achteraf. Je ziet met 100% kostentransparantie wat elke euro opbrengt.</p>"
+                "tekst": "<p>Live inzicht in besteding, resultaat en volgende stappen, geen zwarte doos en geen powerpoint achteraf. Je ziet transparant wat elke euro opbrengt.</p>"
               },
               {
                 "title": "Aanvragen rechtstreeks naar sales",
-                "tekst": "<p>Wat de campagnes opleveren, belt ons Sales Contact Center binnen 30 minuten op. De gespreksdata komt terug en richt je volgende zoekcampagne bij — de datalus die een los bureau niet sluit.</p>"
+                "tekst": "<p>Wat de campagnes opleveren, belt ons Sales Contact Center binnen 30 minuten op. De gespreksdata komt terug en richt je volgende zoekcampagne bij, de datalus die een los bureau niet sluit.</p>"
               }
             ]
             %}

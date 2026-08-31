@@ -21,7 +21,6 @@
   <div class="cases-grid" id="cases-grid">
     {% for c in module.case_cards %}
     <a class="case-kaart" data-diensten="{{ c.diensten }}" href="{{ c.url.url.href|default('/cases') }}">
-      {# Brand name once: placeholder logo SVGs were wordmarks that duplicated the h3. #}
       <div class="case-kop">
         <h3>{{ c.klant }}</h3>
         <span class="case-sector">{{ c.sector }}</span>

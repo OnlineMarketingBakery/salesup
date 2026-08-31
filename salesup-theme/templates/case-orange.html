@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Case Orange
+  label: salesUp, Case Orange
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
@@ -103,7 +103,7 @@
             {% dnd_module
           path="../modules/case-quote",
           quote="<p>&ldquo;Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.&rdquo;</p>",
-          who="&mdash; <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+          who=", <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -116,7 +116,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Zet jouw cijfers hier volgend jaar tussen.",
-          tekst="<p>Je hebt gezien wat we voor Orange deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          tekst="<p>Je hebt gezien wat we voor Orange deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

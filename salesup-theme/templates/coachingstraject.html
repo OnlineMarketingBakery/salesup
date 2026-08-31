@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Coachingstraject
+  label: salesUp, Coachingstraject
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -65,13 +65,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload gesprek-1op1.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- VERIFIEER: functie/bedrijf van Didier Blokland bevestigen vóór publicatie -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Training · Coachingstraject",
           heading="Coaching die gedrag <em>structureel</em> verandert.",
-          subtext="<p>Een langlopend traject over weken tot maanden: 1-op-1- en teamcoaching met meetpunten uit je echte verkoopgesprekken. Geen eenmalige dag inspiratie, maar laag na laag bouwen aan blijvend gedrag — en dat zwart op wit zien in je omzet.</p>",
+          subtext="<p>Een langlopend traject over weken tot maanden: 1-op-1- en teamcoaching met meetpunten uit je echte verkoopgesprekken. Geen eenmalige dag inspiratie, maar laag na laag bouwen aan blijvend gedrag, en dat zwart op wit zien in je omzet.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -114,7 +112,7 @@
           trustcard_stat="13<em>%</em>",
           trustcard_label="Van de gegenereerde leads bij Astara geconverteerd naar verkoop, met commerciële coaching op klantbeleving en mindset.",
           trustcard_quote="\"Een klant binnenhalen op korte termijn is makkelijk. Een klant houden op lange termijn, daar zit de investering.\"",
-          trustcard_quote_who="— <strong>Didier Blokland</strong>, Astara <!-- VERIFIEER: functie/bedrijf van Didier Blokland bevestigen vóór publicatie -->"
+          trustcard_quote_who=", <strong>Didier Blokland</strong>, Astara "
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -171,7 +169,7 @@
               {
                 "num": "02",
                 "title": "Coachen in cycli",
-                "tekst": "<p>Afwisselend 1-op-1 en in team, telkens terugkomend op wat er in de tussenliggende gesprekken gebeurde — laag na laag.</p>"
+                "tekst": "<p>Afwisselend 1-op-1 en in team, telkens terugkomend op wat er in de tussenliggende gesprekken gebeurde, laag na laag.</p>"
               },
               {
                 "num": "03",

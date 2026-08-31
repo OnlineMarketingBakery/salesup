@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Retail & winkelvloer
+  label: salesUp, Retail & winkelvloer
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Retail & winkelvloer\",\n      \"serviceType\":\"Verkopers op de winkelvloer\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/retail-winkelvloer\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"url\":\"https://www.salesup.be/face2face-sales\"},\n      \"description\":\"Getrainde verkopers op de winkelvloer die klanten aanspreken, adviseren en de verkoop afronden, opgeleid op jouw assortiment, dagelijks gecoacht en gescoord.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Retail & winkelvloer\",\"item\":\"https://www.salesup.be/retail-winkelvloer\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarin verschillen jullie verkopers van uitzendkrachten?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze verkopers zijn getrainde salesmensen, geen ingevulde uren. Ze worden opgeleid op jouw assortiment en verkooptechniek, dagelijks gecoacht door een vaste salescoach en gescoord op de kwaliteit van hun gesprekken. Zo krijg je mensen die klanten echt adviseren en de verkoop afronden, in plaats van enkel aanwezig te zijn op de vloer.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Kunnen jullie verkopers ons assortiment aan?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Voor de start leiden we het team op jouw assortiment, je merkverhaal en je verkoopargumenten op, zodat ze klanten met kennis van zaken adviseren. Loopt het assortiment of de actie tijdens de opdracht, dan sturen we via coaching en training bij zodat de kennis actueel blijft.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe meten jullie kwaliteit op de winkelvloer?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Gesprekken worden gescoord op kwaliteit en koopkans, en die scores sturen de coaching en de training via ons trainingsplatform salesUp Academy. Een vaste salescoach volgt de vloer op en stuurt meteen bij. Zo blijft ook retail meetbaar, in plaats van te varen op buikgevoel.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op wat het team op de vloer oplevert tegenover een vooraf afgesproken doel — verkopen, conversie van bezoeker naar koper of upsell — niet op gewerkte uren. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Retail & winkelvloer\",\n      \"serviceType\":\"Verkopers op de winkelvloer\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/retail-winkelvloer\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"url\":\"https://www.salesup.be/face2face-sales\"},\n      \"description\":\"Getrainde verkopers op de winkelvloer die klanten aanspreken, adviseren en de verkoop afronden, opgeleid op jouw assortiment, dagelijks gecoacht en gescoord.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Retail & winkelvloer\",\"item\":\"https://www.salesup.be/retail-winkelvloer\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarin verschillen jullie verkopers van uitzendkrachten?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze verkopers zijn getrainde salesmensen, geen ingevulde uren. Ze worden opgeleid op jouw assortiment en verkooptechniek, dagelijks gecoacht door een vaste salescoach en gescoord op de kwaliteit van hun gesprekken. Zo krijg je mensen die klanten echt adviseren en de verkoop afronden, in plaats van enkel aanwezig te zijn op de vloer.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Kunnen jullie verkopers ons assortiment aan?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Voor de start leiden we het team op jouw assortiment, je merkverhaal en je verkoopargumenten op, zodat ze klanten met kennis van zaken adviseren. Loopt het assortiment of de actie tijdens de opdracht, dan sturen we via coaching en training bij zodat de kennis actueel blijft.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe meten jullie kwaliteit op de winkelvloer?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Gesprekken worden gescoord op kwaliteit en koopkans, en die scores sturen de coaching en de training via ons trainingsplatform salesUp Academy. Een vaste salescoach volgt de vloer op en stuurt meteen bij. Zo blijft ook retail meetbaar, in plaats van te varen op buikgevoel.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op wat het team op de vloer oplevert tegenover een vooraf afgesproken doel, verkopen, conversie van bezoeker naar koper of upsell, niet op gewerkte uren. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
   hreflang_nl="https://www.salesup.be/retail-winkelvloer",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -65,14 +65,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload cc-interaction.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geen echt winkelvloer-beeld beschikbaar; sfeerbeeld uit ../assets -->
-        <!-- VERIFIEER: hier hoort een echt cijfer (bv. conversie bezoeker → koper of upsell) zodra beschikbaar; nu kwalitatief. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Face2Face Sales · Retail & winkelvloer",
           heading="Verkopers op de vloer die <em>écht</em> verkopen.",
-          subtext="<p>Getrainde verkopers op je winkelvloer die klanten aanspreken, adviseren en de verkoop afronden — geen ingevulde uren, maar salesmensen opgeleid op jouw assortiment. Ze worden dagelijks gecoacht door een vaste salescoach en gescoord op elk gesprek, met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.</p>",
+          subtext="<p>Getrainde verkopers op je winkelvloer die klanten aanspreken, adviseren en de verkoop afronden, geen ingevulde uren, maar salesmensen opgeleid op jouw assortiment. Ze worden dagelijks gecoacht door een vaste salescoach en gescoord op elk gesprek, met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -114,9 +111,9 @@
             },
           trustcard_badge="",
           trustcard_stat="",
-          trustcard_label="Getrainde salesmensen op je vloer, opgeleid op jouw assortiment en gescoord op elk gesprek — zo wordt een bezoeker een koper, in plaats van iemand die weer buitenwandelt.",
+          trustcard_label="Getrainde salesmensen op je vloer, opgeleid op jouw assortiment en gescoord op elk gesprek, zo wordt een bezoeker een koper, in plaats van iemand die weer buitenwandelt.",
           trustcard_quote="\"Op de vloer telt niet aanwezigheid, maar of je van een bezoeker een klant maakt.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak in het veld"
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak in het veld"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -130,12 +127,12 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Van bezoeker naar koper.",
-          intro="<p>Voetval op de winkelvloer betekent nog geen omzet. Wij zetten getrainde verkopers in, leiden ze op jouw assortiment op en coachen ze dagelijks — zodat elk bezoek een echte verkoopkans wordt.</p>",
+          intro="<p>Voetval op de winkelvloer betekent nog geen omzet. Wij zetten getrainde verkopers in, leiden ze op jouw assortiment op en coachen ze dagelijks, zodat elk bezoek een echte verkoopkans wordt.</p>",
           vac_troef=false,
           feature_cards=[
               {
                 "title": "Aanspreken, adviseren en afronden",
-                "tekst": "<p>Onze verkopers wachten niet af, maar spreken klanten aan, geven advies met kennis van zaken en ronden de verkoop af — in plaats van enkel aanwezig te zijn tussen de rekken.</p>"
+                "tekst": "<p>Onze verkopers wachten niet af, maar spreken klanten aan, geven advies met kennis van zaken en ronden de verkoop af, in plaats van enkel aanwezig te zijn tussen de rekken.</p>"
               },
               {
                 "title": "Getraind op jouw assortiment",
@@ -147,7 +144,7 @@
               },
               {
                 "title": "Meetbaar, ook in retail",
-                "tekst": "<p>Je rekent ons af op wat het team oplevert tegenover een vooraf afgesproken doel — conversie, verkopen of upsell — niet op gewerkte uren. Met een wekelijkse rapportering en 100% kostentransparantie.</p>"
+                "tekst": "<p>We focussen op wat het team oplevert tegenover duidelijke KPI's (conversie, verkopen of upsell). Met wekelijkse rapportering en heldere inzichten.</p>"
               }
             ]
             %}
@@ -162,13 +159,13 @@
           path="../modules/steps",
           anchor="aanpak",
           eyebrow="Hoe het werkt",
-          heading="Van assortiment tot afgerekend resultaat.",
-          intro="<p>We spreken vooraf een doelstelling af en stemmen af hoe het team op jouw vloer en in jouw beleving past.</p>",
+          heading="Van assortiment tot meetbaar resultaat.",
+          intro="<p>We stemmen vooraf de doelstellingen af en zorgen dat het team naadloos op jouw winkelvloer past.</p>",
           steps=[
               {
                 "num": "01",
                 "title": "Doel & winkelconcept bepalen",
-                "tekst": "<p>We spreken vooraf een doelstelling af en stemmen af hoe het team op jouw vloer en in jouw beleving past.</p>"
+                "tekst": "<p>We stemmen vooraf de doelstellingen af en zorgen dat het team naadloos op jouw winkelvloer past.</p>"
               },
               {
                 "num": "02",
@@ -183,7 +180,7 @@
               {
                 "num": "04",
                 "title": "Meten, coachen & wekelijks rapporteren",
-                "tekst": "<p>Gesprekken worden gescoord, de coach stuurt dagelijks bij en je krijgt een wekelijkse rapportering met 100% kostentransparantie.</p>"
+                "tekst": "<p>Gesprekken worden gescoord, de coach stuurt dagelijks bij en je krijgt wekelijks een heldere rapportage.</p>"
               }
             ]
             %}
@@ -214,8 +211,8 @@
                 "answer": "<p>Gesprekken worden gescoord op kwaliteit en koopkans, en die scores sturen de coaching en de training via ons trainingsplatform salesUp Academy. Een vaste salescoach volgt de vloer op en stuurt meteen bij. Zo blijft ook retail meetbaar, in plaats van te varen op buikgevoel.</p>"
               },
               {
-                "question": "Waarop rekenen jullie ons af?",
-                "answer": "<p>Op wat het team op de vloer oplevert tegenover een vooraf afgesproken doel — verkopen, conversie van bezoeker naar koper of upsell — niet op gewerkte uren. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
+                "question": "Hoe meten jullie het resultaat?",
+                "answer": "<p>We focussen op wat het team op de vloer oplevert tegenover een vooraf afgesproken doel (verkopen, conversie van bezoeker naar koper of upsell). Je krijgt een wekelijkse rapportering met heldere resultaten. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
               }
             ]
             %}
@@ -276,7 +273,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Klaar om van elke bezoeker een klant te maken?",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat verkopers op je winkelvloer kunnen betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat verkopers op je winkelvloer kunnen betekenen. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

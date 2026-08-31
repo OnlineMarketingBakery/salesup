@@ -13,26 +13,18 @@
           message="{{ module.form.message }}"
           gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
         %}
-      {% elif module.sc_eyebrow == "Blijf scherp" %}
+      {% elif module.sc_eyebrow == "Blijf scherp" or "nieuwsbrief" in (module.sc_eyebrow|lower) or "nieuwsbrief" in (module.heading|lower) %}
         {% form
           form_to_use="6fc8a15c-f755-4a64-96cd-00681b17ce96"
           response_type="inline"
           message="{{ module.form.message or 'Bedankt voor je inschrijving.' }}"
         %}
-      {% elif module.sc_eyebrow == "Demo op maat" or module.sc_eyebrow == "Gratis GEO-check" %}
+      {% else %}
         {% form
           form_to_use="79c85a00-56e9-4014-be21-cb8af40feb9d"
           response_type="inline"
           message="{{ module.form.message or 'Bedankt. We bellen je binnen 30 minuten terug.' }}"
         %}
-      {% else %}
-        <form class="sc-form" onsubmit="return false;" aria-label="{{ module.aria|default('Formulier') }}">
-          {% if module.veldenset.naam %}<input type="text" name="naam" placeholder="Je naam" aria-label="Je naam" autocomplete="name">{% endif %}
-          {% if module.veldenset.email %}<input type="email" name="email" placeholder="Je e-mailadres" aria-label="Je e-mailadres" autocomplete="email">{% endif %}
-          {% if module.veldenset.telefoon %}<input type="tel" name="telefoon" placeholder="Telefoon" aria-label="Telefoon" autocomplete="tel">{% endif %}
-          {% if module.veldenset.website %}<input type="url" name="website" placeholder="Je website" aria-label="Je website" autocomplete="url">{% endif %}
-          <button type="submit" class="btn">{{ module.link_label }} <span class="arrow" aria-hidden="true">&rarr;</span></button>
-        </form>
       {% endif %}
       {% if module.note %}<p class="sc-note">{{ module.note }}</p>{% endif %}
     </div>

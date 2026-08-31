@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Jobs sales consultants
+  label: salesUp, Jobs sales consultants
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{{ require_css(get_asset_url('../css/vacatures.css')) }}{% endblock %}
@@ -56,12 +56,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
-          eyebrow="Werken bij salesUp — Sales Consultants",
+          eyebrow="Werken bij salesUp, Sales Consultants",
           heading="De vrijheid van de baan, de kracht van een <em>groep</em>.",
-          subtext="<p>Je kent het commerciële gesprek en je haalt resultaat. Bij salesUp krijg je afwisselende opdrachten bij toonaangevende bedrijven — met de coaching, tooling en structuur van een gevestigde groep achter je. Autonomie mét omkadering.</p>",
+          subtext="<p>Je kent het commerciële gesprek en je haalt resultaat. Bij salesUp krijg je afwisselende opdrachten bij toonaangevende bedrijven, met de coaching, tooling en structuur van een gevestigde groep achter je. Autonomie mét omkadering.</p>",
           cta1_text="Bekijk de opdrachten",
           cta1_url={
               "url": {
@@ -104,7 +103,7 @@
           trustcard_stat="3<em> mnd+</em>",
           trustcard_label="een typische opdracht loopt minimum 3 maanden fulltime, zodat je je echt kunt inwerken en resultaat neerzet.",
           trustcard_quote="\"Het vak beheers je al. De methodiek en tooling van de groep leer je bij ons.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over ervaren profielen"
+          trustcard_quote_who=", <strong>salesUp</strong>, over ervaren profielen"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -154,13 +153,12 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload office-two-men-chat.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hoe-het-werkt",
           anchor="hoe-het-werkt",
           eyebrow="Hoe het werkt",
           heading="Ingezet op opdracht, met je eigen methodiek mee.",
-          intro="<p>Als sales consultant word je door salesUp ingezet op een opdracht bij een klant van de groep — een terbeschikkingstelling van je buitendienst-salesprofiel. Je werkt aan een concreet commercieel doel: nieuwe klanten winnen, een portefeuille uitbouwen of een marktsegment openen. Een typische opdracht loopt <strong>minimum 3 maanden fulltime</strong>, zodat je je echt kunt inwerken in de markt van de klant.</p>",
+          intro="<p>Als sales consultant word je door salesUp ingezet op een opdracht bij een klant van de groep, een terbeschikkingstelling van je buitendienst-salesprofiel. Je werkt aan een concreet commercieel doel: nieuwe klanten winnen, een portefeuille uitbouwen of een marktsegment openen. Een typische opdracht loopt <strong>minimum 3 maanden fulltime</strong>, zodat je je echt kunt inwerken in de markt van de klant.</p>",
           checklist=[
               {
                 "text": "<strong>Coaching.</strong> Een vaste coach kijkt met je mee, spart over lastige dossiers en helpt je gericht bijsturen."
@@ -179,7 +177,7 @@
               "src": "https://salesup.be/hubfs/Rectangle%2059.jpg",
               "alt": "Twee salesprofessionals in een informeel werkgesprek op kantoor."
             },
-          caption="Overleg tussen consultants — sfeerbeeld."
+          caption="Overleg tussen consultants, sfeerbeeld."
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -192,7 +190,7 @@
           path="../modules/open-vacatures",
           eyebrow="Open vacatures",
           heading="Rollen voor sales consultants.",
-          intro="<p>Dit zijn de profielen waarvoor we doorlopend ervaren mensen zoeken. Herken je jezelf in een van deze rollen? Laat van je horen — we bekijken samen welke opdracht bij jou past.</p>",
+          intro="<p>Dit zijn de profielen waarvoor we doorlopend ervaren mensen zoeken. Herken je jezelf in een van deze rollen? Laat van je horen, we bekijken samen welke opdracht bij jou past.</p>",
           api_url="https://salesup.recruitee.com/api/offers/",
           department="Consulting",
           detail_base="/werken-bij/vacature"
@@ -244,7 +242,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Klaar voor een volgende opdracht met omkadering?",
-          tekst="<p>Solliciteer op een rol hierboven of stuur ons spontaan je gegevens. Vertel welke rol je aanspreekt en in welke sectoren je ervaring hebt — we bekijken snel welke opdracht binnen de groep bij jou past.</p>",
+          tekst="<p>Solliciteer op een rol hierboven of stuur ons spontaan je gegevens. Vertel welke rol je aanspreekt en in welke sectoren je ervaring hebt, we bekijken snel welke opdracht binnen de groep bij jou past.</p>",
           cta1_text="Solliciteer",
           cta1_url={
               "url": {

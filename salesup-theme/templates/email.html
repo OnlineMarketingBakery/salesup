@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — E-mail
+  label: salesUp, E-mail
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -63,14 +63,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload office-overview.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: set heeft geen echt e-mail-/campagnebeeld; dichtstbijzijnde is kantoor-/overlegsfeer -->
-        <!-- VERIFIEER: functie niet op de bronpagina vermeld -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Marketing · E-mail",
           heading="E-mail die je leads <em>warm houdt</em> tot ze koopklaar zijn.",
-          subtext="<p>Flows en nurturing per segment, met de juiste boodschap op het juiste moment — geen massamail naar iedereen tegelijk. E-mail houdt je leads betrokken tot het gesprek, en wie koopklaar is, stroomt rechtstreeks door naar sales en wordt binnen 30 minuten gebeld.</p>",
+          subtext="<p>Flows en nurturing per segment, met de juiste boodschap op het juiste moment, geen massamail naar iedereen tegelijk. E-mail houdt je leads betrokken tot het gesprek, en wie koopklaar is, stroomt rechtstreeks door naar sales en wordt binnen 30 minuten gebeld.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -111,9 +108,9 @@
             },
           trustcard_badge="",
           trustcard_stat="385",
-          trustcard_label="Succesvolle adviesgesprekken op vijf maanden voor UNIZO, via een LinkedIn- en multichannel-outbound funnel met mail en social — met 80% hogere responsgraad dan 'spammy' content.",
+          trustcard_label="Succesvolle adviesgesprekken op vijf maanden voor UNIZO, via een LinkedIn- en multichannel-outbound funnel met mail en social, met 80% hogere responsgraad dan 'spammy' content.",
           trustcard_quote="\"De resultaten van de outbound funnel overstegen onze verwachtingen. Mensen werden op een laagdrempelige manier gecontacteerd, waardoor we gemiddeld 20 ingevulde scans per week kregen.\"",
-          trustcard_quote_who="— <strong>Nele Creuwels</strong>, UNIZO <!-- VERIFIEER: functie niet op de bronpagina vermeld -->"
+          trustcard_quote_who=", <strong>Nele Creuwels</strong>, UNIZO "
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -127,7 +124,7 @@
           anchor="oplevert",
           eyebrow="Wat je krijgt",
           heading="De juiste boodschap, bij de juiste persoon, op het juiste moment.",
-          intro="<p>E-mail is er om je leads warm te houden tot ze koopklaar zijn. Elke mailing is gericht — en wie reageert, gaat rechtstreeks door naar sales.</p>",
+          intro="<p>E-mail is er om je leads warm te houden tot ze koopklaar zijn. Elke mailing is gericht, en wie reageert, gaat rechtstreeks door naar sales.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -140,11 +137,11 @@
               },
               {
                 "title": "A/B-testen & datagedreven timing",
-                "tekst": "<p>We testen onderwerpregels op wat effectief geopend wordt, en versturen op het moment dat historisch de beste respons oplevert — niet op buikgevoel.</p>"
+                "tekst": "<p>We testen onderwerpregels op wat effectief geopend wordt, en versturen op het moment dat historisch de beste respons oplevert, niet op buikgevoel.</p>"
               },
               {
                 "title": "Koopklare leads naar sales",
-                "tekst": "<p>Wie reageert, gaat door naar ons Sales Contact Center dat binnen 30 minuten belt. De gespreksdata komt terug om je segmenten en boodschappen te verfijnen — de datalus die een los bureau niet sluit.</p>"
+                "tekst": "<p>Wie reageert, gaat door naar ons Sales Contact Center dat binnen 30 minuten belt. De gespreksdata komt terug om je segmenten en boodschappen te verfijnen, de datalus die een los bureau niet sluit.</p>"
               }
             ]
             %}

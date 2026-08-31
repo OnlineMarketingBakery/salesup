@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Telesales
+  label: salesUp, Telesales
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -65,12 +65,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload cc-man-headset.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Sales Contact Center · Telesales",
           heading="Telesales die <em>sluit</em> tijdens het gesprek zelf.",
-          subtext="<p>Voor een aanbod dat je in één gesprek kan uitleggen, sluiten we de verkoop meteen af — geen afspraak voor later. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en je rekent ons af op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut.</p>",
+          subtext="<p>Voor een aanbod dat je in één gesprek kan uitleggen, sluiten we de verkoop meteen af, geen afspraak voor later. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, met een duidelijke sturing op conversiedoelen per gesprek en niet per belminuut.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -111,9 +110,9 @@
             },
           trustcard_badge="",
           trustcard_stat="26,28<em>%</em>",
-          trustcard_label="Conversie bij Van Heurck via ons Sales Contact Center — tegenover een vooraf afgesproken doel van 10%.",
-          trustcard_quote="\"Elk gesprek is een stap naar de deal — we meten wat je eraan verdient, niet hoe lang je belt.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van het Sales Contact Center"
+          trustcard_label="Conversie bij Van Heurck via ons Sales Contact Center, tegenover een beoogde doelstelling van 10%.",
+          trustcard_quote="\"Elk gesprek is een stap naar de deal, we meten wat je eraan verdient, niet hoe lang je belt.\"",
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak van het Sales Contact Center"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -127,7 +126,7 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Verkoop afgesloten, geen belminuten geteld.",
-          intro="<p>Telesales is er om te sluiten. Elk gesprek is gericht op de order op het moment zelf — en op wat die order jou oplevert, niet op belvolume.</p>",
+          intro="<p>Telesales is er om te sluiten. Elk gesprek is gericht op de order op het moment zelf, en op wat die order jou oplevert, niet op belvolume.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -136,15 +135,15 @@
               },
               {
                 "title": "Elk gesprek automatisch gescoord",
-                "tekst": "<p>Onze eigen software scoort elk gesprek op kwaliteit en koopkans — geen steekproef achteraf. Opportunity-scores tonen waar omzet zit, objection-detectie herkent terugkerende bezwaren zodat script en aanbod meebewegen.</p>"
+                "tekst": "<p>Onze eigen software scoort elk gesprek op kwaliteit en koopkans, geen steekproef achteraf. Opportunity-scores tonen waar omzet zit, objection-detectie herkent terugkerende bezwaren zodat script en aanbod meebewegen.</p>"
               },
               {
-                "title": "Afgerekend op conversie vs. doel",
-                "tekst": "<p>We spreken vooraf een doelstelling af en rapporteren de conversie daartegenover, per gesprek en niet per belminuut. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie.</p>"
+                "title": "Gericht op conversie vs. doel",
+                "tekst": "<p>We stemmen vooraf de doelstelling af en rapporteren de conversie nauwkeurig per gesprek, niet per belminuut. Je krijgt wekelijks een helder overzicht van wat elk beluur oplevert.</p>"
               },
               {
                 "title": "Data gekoppeld aan salesUp Academy",
-                "tekst": "<p>De gespreksscores stromen door naar ons trainingsplatform salesUp Academy, dat de mensen aan de lijn scherper maakt. Wie waar hapert, wordt daar getraind — de datalus die geen concurrent kan sluiten.</p>"
+                "tekst": "<p>De gespreksscores stromen door naar ons trainingsplatform salesUp Academy, dat de mensen aan de lijn scherper maakt. Wie waar hapert, wordt daar getraind, de datalus die geen concurrent kan sluiten.</p>"
               }
             ]
             %}
@@ -180,7 +179,7 @@
               {
                 "num": "04",
                 "title": "Wekelijks rapporteren & bijsturen",
-                "tekst": "<p>Je krijgt een wekelijkse rapportering die toont wat elk beluur opbrengt — conversie per script en per medewerker — met 100% kostentransparantie.</p>"
+                "tekst": "<p>Je krijgt een wekelijkse rapportering die toont wat elk beluur oplevert in conversie per script en per medewerker, met volledige inzage in de resultaten.</p>"
               }
             ]
             %}
@@ -207,8 +206,8 @@
                 "answer": "<p>Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. Die opportunity- en objection-scores sturen de opvolging én de ontwikkeling van de mensen aan de lijn via ons trainingsplatform salesUp Academy. Wie waar hapert, wordt daar getraind. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.</p>"
               },
               {
-                "question": "Waarop rekenen jullie ons af?",
-                "answer": "<p>Op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie. Zo lees je zwart op wit wat je per euro terugkrijgt. Bij Van Heurck haalden we 26,28% conversie, tegenover een doel van 10%.</p>"
+                "question": "Hoe meten jullie het succes?",
+                "answer": "<p>We meten conversie tegenover de vooraf afgesproken doelstelling, per gesprek en niet per belminuut. Je krijgt elke week een rapportering die toont wat elk beluur oplevert in concrete resultaten. Bij Van Heurck haalden we 26,28% conversie, tegenover een doel van 10%.</p>"
               },
               {
                 "question": "Kan telesales gecombineerd worden met afsprakenplanning?",
@@ -273,7 +272,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Klaar om meer af te sluiten per gesprek?",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat telesales voor jouw aanbod kan betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat telesales voor jouw aanbod kan betekenen. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

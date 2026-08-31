@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Social ads
+  label: salesUp, Social ads
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -64,13 +64,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload overleg-woman-laptop.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: set heeft geen echt social-/campagnebeeld; dichtstbijzijnde is overleg-op-laptop -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Marketing · Social ads",
           heading="Social ads die je afrekent op <em>gekwalificeerde leads</em>.",
-          subtext="<p>Betaalde campagnes op Meta, LinkedIn en TikTok, telkens on-brand en getest op wat écht klikt — niet dezelfde ad overal. We richten op gekwalificeerde leads, en die leads stromen rechtstreeks door naar sales en worden binnen 30 minuten gebeld.</p>",
+          subtext="<p>Betaalde campagnes op Meta, LinkedIn en TikTok, telkens on-brand en getest op wat écht klikt, niet dezelfde ad overal. We richten op gekwalificeerde leads, en die leads stromen rechtstreeks door naar sales en worden binnen 30 minuten gebeld.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -111,9 +109,9 @@
             },
           trustcard_badge="",
           trustcard_stat="154",
-          trustcard_label="Gekwalificeerde leads voor Jaguar Land Rover, mee via het beheer van de social-mediacampagnes — waarvan testritaanvragen, offerteaanvragen en directe dealercontacten.",
+          trustcard_label="Gekwalificeerde leads voor Jaguar Land Rover, mee via het beheer van de social-mediacampagnes, waarvan testritaanvragen, offerteaanvragen en directe dealercontacten.",
           trustcard_quote="\"Een like betaalt geen rekeningen. We meten social ads op de gekwalificeerde leads die ze opleveren, niet op bereik.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak van onze marketing"
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak van onze marketing"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -127,7 +125,7 @@
           anchor="oplevert",
           eyebrow="Wat je krijgt",
           heading="Ads die passen bij het platform waarop ze draaien.",
-          intro="<p>Social ads zijn er om gekwalificeerde leads binnen te halen. Elke euro wordt gestuurd naar wat wint — en wat binnenkomt, gaat rechtstreeks door naar sales.</p>",
+          intro="<p>Social ads zijn er om gekwalificeerde leads binnen te halen. Elke euro wordt gestuurd naar wat wint, en wat binnenkomt, gaat rechtstreeks door naar sales.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -144,7 +142,7 @@
               },
               {
                 "title": "Leads rechtstreeks naar sales",
-                "tekst": "<p>De leads gaan door naar ons Sales Contact Center dat binnen 30 minuten belt, en de gespreksdata komt terug om je doelgroepen en creatives bij te sturen — de datalus die een los bureau niet sluit.</p>"
+                "tekst": "<p>De leads gaan door naar ons Sales Contact Center dat binnen 30 minuten belt, en de gespreksdata komt terug om je doelgroepen en creatives bij te sturen, de datalus die een los bureau niet sluit.</p>"
               }
             ]
             %}

@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Detachering
+  label: salesUp, Detachering
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -65,14 +65,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload overleg-young-man.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geen geposeerd portret beschikbaar; sfeerbeeld uit ../assets -->
-        <!-- VERIFIEER: hier hoort een echt cijfer (bv. tijd-tot-rendement of behaald doel) zodra beschikbaar; nu kwalitatief. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Sales Consultants · Detachering / interim sales",
           heading="Ervaren sales, <em>gedetacheerd</em> zonder wervingsrisico.",
-          subtext="<p>Een doorgewinterde salesconsultant die fulltime jouw team komt versterken, op de payroll van salesUp maar met de tooling, de dagelijkse coaching en de datalus mee. Extra salescapaciteit zonder de maandenlange zoektocht en zonder aanwervingsrisico — vanaf minstens 3 maanden fulltime en afgerekend op resultaat.</p>",
+          subtext="<p>Een doorgewinterde salesconsultant die fulltime jouw team komt versterken, op de payroll van salesUp maar met de tooling, de dagelijkse coaching en de datalus mee. Extra salescapaciteit zonder de maandenlange zoektocht en zonder aanwervingsrisico, vanaf minstens 3 maanden fulltime en gericht op concrete resultaten.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -115,8 +112,8 @@
           trustcard_badge="",
           trustcard_stat="",
           trustcard_label="Geen los cv, maar het hele salesUp-huis mee: een consultant op onze payroll, gedetacheerd bij jouw team, met tooling, coaching en de datalus die geen interimkantoor kan sluiten.",
-          trustcard_quote="\"Een gedetacheerde consultant die er alleen voor staat, is een dure gok — de onze staan er nooit alleen voor.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak met consultants"
+          trustcard_quote="\"Een gedetacheerde consultant die er alleen voor staat, is een dure gok, de onze staan er nooit alleen voor.\"",
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak met consultants"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -130,7 +127,7 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Extra salescapaciteit die meteen rendeert.",
-          intro="<p>Een eigen salesmens aanwerven kost maanden en houdt een risico in. Met detachering krijg je direct ervaring in je team — en die consultant blijft objectief gemeten en bijgestuurd.</p>",
+          intro="<p>Een eigen salesmens aanwerven kost maanden en houdt een risico in. Met detachering krijg je direct ervaring in je team, en die consultant blijft objectief gemeten en bijgestuurd.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -146,8 +143,8 @@
                 "tekst": "<p>De consultant traint op hetzelfde platform als onze eigen salesteams: elk gesprek gescoord op kwaliteit en koopkans, met bijsturing via salesUp Academy tijdens de opdracht.</p>"
               },
               {
-                "title": "Vanaf 3 maanden, afgerekend op resultaat",
-                "tekst": "<p>Opdrachten lopen vanaf minstens 3 maanden fulltime, zodat de investering rendeert. We spreken vooraf een doel af en rapporteren het resultaat wekelijks, met 100% kostentransparantie.</p>"
+                "title": "Vanaf 3 maanden, gericht op resultaat",
+                "tekst": "<p>Opdrachten lopen vanaf minstens 3 maanden fulltime, zodat de investering rendeert. We spreken vooraf duidelijke doelen af en rapporteren de voortgang wekelijks, met heldere cijfers.</p>"
               }
             ]
             %}
@@ -162,13 +159,13 @@
           path="../modules/steps",
           anchor="aanpak",
           eyebrow="Hoe het werkt",
-          heading="Van profiel tot afgerekend resultaat.",
-          intro="<p>We spreken vooraf een doelstelling af en bepalen welk profiel jouw team het snelst verder helpt.</p>",
+          heading="Van profiel tot meetbaar resultaat.",
+          intro="<p>We stemmen vooraf de doelstellingen af en bepalen welk profiel jouw team het snelst verder helpt.</p>",
           steps=[
               {
                 "num": "01",
                 "title": "Profiel & doel bepalen",
-                "tekst": "<p>We spreken vooraf een doelstelling af en bepalen welk profiel jouw team het snelst verder helpt.</p>"
+                "tekst": "<p>We stemmen vooraf de doelstellingen af en bepalen welk profiel jouw team het snelst verder helpt.</p>"
               },
               {
                 "num": "02",
@@ -178,12 +175,12 @@
               {
                 "num": "03",
                 "title": "Aan de slag bij jouw team",
-                "tekst": "<p>De consultant werkt gedetacheerd mee, met tooling en de datalus mee — vanaf minstens 3 maanden fulltime.</p>"
+                "tekst": "<p>De consultant werkt gedetacheerd mee, met tooling en de datalus mee, vanaf minstens 3 maanden fulltime.</p>"
               },
               {
                 "num": "04",
                 "title": "Meten, coachen & wekelijks rapporteren",
-                "tekst": "<p>Gesprekken worden gescoord, we sturen bij via salesUp Academy en je krijgt een wekelijkse rapportering met 100% kostentransparantie.</p>"
+                "tekst": "<p>Gesprekken worden gescoord, we sturen bij via salesUp Academy en je krijgt wekelijks een helder overzicht van de resultaten.</p>"
               }
             ]
             %}
@@ -276,7 +273,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Versterk je team met sales die meteen renderen.",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van welk profiel jouw team het snelst verder helpt. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van welk profiel jouw team het snelst verder helpt. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

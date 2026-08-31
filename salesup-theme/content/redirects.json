@@ -421,6 +421,16 @@
     "note": "mockup .html → schone HubSpot-URL"
   },
   {
+    "from": "/client-cases",
+    "to": "/cases",
+    "note": "oude client-cases overzicht → /cases"
+  },
+  {
+    "from": "/client-cases/",
+    "to": "/cases",
+    "note": "oude client-cases overzicht → /cases"
+  },
+  {
     "from": "/client-cases/orange",
     "to": "/cases/orange",
     "note": "oude client-cases-URL → /cases/<slug>"

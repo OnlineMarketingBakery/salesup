@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Sales Contact Center
+  label: salesUp, Sales Contact Center
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
@@ -54,12 +54,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload cc-woman-headset.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Sales Contact Center",
           heading="Een contact center dat <em>verkoopt</em>, géén klantendienst.",
-          subtext="<p>Wij bellen om te verkopen: outbound sales, telesales en warme opvolging van je leads binnen 30 minuten. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans — en je rekent ons af op conversie tegenover een vooraf afgesproken doel, per gesprek en niet per belminuut.</p>",
+          subtext="<p>Wij bellen om te verkopen: outbound sales, telesales en warme opvolging van je leads binnen 30 minuten. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, met een duidelijke focus op conversie tegenover afgesproken doelstellingen, per gesprek en niet per belminuut.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -100,9 +99,9 @@
             },
           trustcard_badge="",
           trustcard_stat="91<em>%</em>",
-          trustcard_label="Auditscore van ons Sales Contact Center-team bij Orange — de hoogste score van Europa in de Orange Europe-audit.",
+          trustcard_label="Auditscore van ons Sales Contact Center-team bij Orange, de hoogste score van Europa in de Orange Europe-audit.",
           trustcard_quote="\"Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.\"",
-          trustcard_quote_who="— <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+          trustcard_quote_who=", <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -166,7 +165,7 @@
           kaarten=[
               {
                 "title": "Telesales",
-                "desc": "<p>We sluiten de verkoop af tijdens het gesprek zelf — elk gesprek gescoord op kwaliteit en koopkans, afgerekend op conversie tegenover je doel.</p>",
+                "desc": "<p>We sluiten de verkoop af tijdens het gesprek zelf. Elk gesprek wordt gescoord op kwaliteit en koopkans, doelgericht gestuurd op jouw conversiedoelen.</p>",
                 "url": {
                   "url": {
                     "href": "/telesales",
@@ -192,7 +191,7 @@
               },
               {
                 "title": "After sales & heractivatie",
-                "desc": "<p>Heractivatie van slapende klanten, upsell, cross-sell en winback via de telefoon — extra omzet uit je bestaande klantenbestand.</p>",
+                "desc": "<p>Heractivatie van slapende klanten, upsell, cross-sell en winback via de telefoon, extra omzet uit je bestaande klantenbestand.</p>",
                 "url": {
                   "url": {
                     "href": "/after-sales",
@@ -217,16 +216,16 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Verkoop, geen belminuten.",
-          intro="<p>Een klassiek callcenter meet gespreksduur en bereik. Wij meten wat je eraan verdient. Elk gesprek is een stap naar de deal — via telesales of via telefonische prospectie &amp; afsprakenplanning.</p>",
+          intro="<p>Een klassiek callcenter meet gespreksduur en bereik. Wij meten wat je eraan verdient. Elk gesprek is een stap naar de deal, via telesales of via telefonische prospectie &amp; afsprakenplanning.</p>",
           vac_troef=false,
           feature_cards=[
               {
                 "title": "Outbound sales & conversie",
-                "tekst": "<p>We prospecteren, kwalificeren en sluiten. Elk gesprek is gericht op de volgende stap in jouw verkoop — een afspraak, een offerte, een order — en niet op belvolume. Zo haalde Van Heurck 26,28% conversie, tegenover een doel van 10%.</p>"
+                "tekst": "<p>We prospecteren, kwalificeren en sluiten. Elk gesprek is gericht op de volgende stap in jouw verkoop, een afspraak, een offerte, een order, en niet op belvolume. Zo haalde Van Heurck 26,28% conversie, tegenover een doel van 10%.</p>"
               },
               {
                 "title": "Warme opvolging binnen 30 minuten",
-                "tekst": "<p>Een lead die binnen 30 minuten gebeld wordt, is nog warm. We volgen je leads op en kwalificeren ze volgens BANT — budget, autoriteit, behoefte en timing — zodat je verkopers alleen dossiers krijgen die klaar zijn voor het gesprek.</p>"
+                "tekst": "<p>Een lead die binnen 30 minuten gebeld wordt, is nog warm. We volgen je leads op en kwalificeren ze volgens BANT, budget, autoriteit, behoefte en timing, zodat je verkopers alleen dossiers krijgen die klaar zijn voor het gesprek.</p>"
               },
               {
                 "title": "Telesales & afsprakenplanning",
@@ -234,7 +233,7 @@
               },
               {
                 "title": "Relatiegericht & meetbaar per gesprek",
-                "tekst": "<p>We verkopen door te luisteren, niet door te pushen. Elk gesprek wordt gescoord op kwaliteit én koopkans, dus je ziet per gesprek wat werkt. Je rekent ons af op conversie tegenover een vooraf afgesproken doel, niet op belminuten.</p>"
+                "tekst": "<p>We verkopen door te luisteren, niet door te pushen. Elk gesprek wordt gescoord op kwaliteit én koopkans, dus je ziet per gesprek wat werkt. We sturen continu bij op basis van duidelijke targets, niet op belminuten.</p>"
               }
             ]
             %}
@@ -245,33 +244,32 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload cc-woman-desk.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/ai-differentiator",
           anchor="ai",
           eyebrow="De AI-differentiator",
           heading="Elk gesprek automatisch gescoord.",
-          intro="Onze platformen zijn eigen bouw. Ze meten wat er in elk gesprek gebeurt en signaleren waar omzet zit. De gespreksscores stromen door naar ons trainingsplatform salesUp Academy, dat de mensen aan de lijn scherper maakt — de datalus die geen concurrent kan sluiten. De AI meet en signaleert; de mens verkoopt.",
+          intro="Onze platformen zijn eigen bouw. Ze meten wat er in elk gesprek gebeurt en signaleren waar omzet zit. De gespreksscores stromen door naar ons trainingsplatform salesUp Academy, dat de mensen aan de lijn scherper maakt, de datalus die geen concurrent kan sluiten. De AI meet en signaleert; de mens verkoopt.",
           points=[
               {
                 "num": "01",
-                "text": "<p><strong>Automated quality monitoring</strong> — elk gesprek gescoord op kwaliteit en koopkans, geen steekproef achteraf.</p>"
+                "text": "<p><strong>Automated quality monitoring</strong>, elk gesprek gescoord op kwaliteit en koopkans, geen steekproef achteraf.</p>"
               },
               {
                 "num": "02",
-                "text": "<p><strong>Opportunity score</strong> — de warmste dossiers worden als eerste opgevolgd, zodat geen kans blijft liggen.</p>"
+                "text": "<p><strong>Opportunity score</strong>, de warmste dossiers worden als eerste opgevolgd, zodat geen kans blijft liggen.</p>"
               },
               {
                 "num": "03",
-                "text": "<p><strong>Objection-detectie</strong> — terugkerende bezwaren worden herkend, zodat script en aanbod meebewegen.</p>"
+                "text": "<p><strong>Objection-detectie</strong>, terugkerende bezwaren worden herkend, zodat script en aanbod meebewegen.</p>"
               },
               {
                 "num": "04",
-                "text": "<p><strong>Live bijsturing tijdens het gesprek</strong> — de medewerker krijgt suggesties terwijl hij belt; de coach zit mee aan de lijn.</p>"
+                "text": "<p><strong>Live bijsturing tijdens het gesprek</strong>, de medewerker krijgt suggesties terwijl hij belt; de coach zit mee aan de lijn.</p>"
               },
               {
                 "num": "05",
-                "text": "<p><strong>Data gekoppeld aan salesUp Academy</strong> — wie waar hapert, wordt daar getraind.</p>"
+                "text": "<p><strong>Data gekoppeld aan salesUp Academy</strong>, wie waar hapert, wordt daar getraind.</p>"
               }
             ],
           image={
@@ -290,13 +288,13 @@
           path="../modules/steps",
           anchor="aanpak",
           eyebrow="Hoe het werkt",
-          heading="Van doelstelling tot afgerekend resultaat.",
-          intro="<p>We spreken vooraf een doelstelling af en bouwen het gesprek rond jouw aanbod, prijszetting en objectiehandling.</p>",
+          heading="Van doelstelling tot meetbaar resultaat.",
+          intro="<p>We spreken vooraf duidelijke KPI's af en bouwen het gesprek rond jouw aanbod, prijszetting en objectiehandling.</p>",
           steps=[
               {
                 "num": "01",
                 "title": "Doel & script afstemmen",
-                "tekst": "<p>We spreken vooraf een doelstelling af en bouwen het gesprek rond jouw aanbod, prijszetting en objectiehandling.</p>"
+                "tekst": "<p>We stemmen vooraf de doelstellingen af en bouwen het gesprek rond jouw aanbod, prijszetting en objectiehandling.</p>"
               },
               {
                 "num": "02",
@@ -311,7 +309,7 @@
               {
                 "num": "04",
                 "title": "Wekelijks rapporteren & bijsturen",
-                "tekst": "<p>Je krijgt een wekelijkse rapportering die toont wat elk beluur opbrengt — conversie, pipeline en gesprekskwaliteit — met 100% kostentransparantie.</p>"
+                "tekst": "<p>Je krijgt een wekelijkse rapportering die toont wat elk beluur oplevert in conversie, pipeline en gesprekskwaliteit, met heldere inzichten en cijfers.</p>"
               }
             ]
             %}
@@ -331,11 +329,11 @@
           faq_items=[
               {
                 "question": "Waarin verschilt dit van een klassiek callcenter?",
-                "answer": "<p>Ons Sales Contact Center is een verkoopkanaal, geen klantendienst. We bellen om te verkopen: outbound sales, conversie en warme opvolging van leads. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van de mensen aan de lijn. Je rekent ons af op conversie tegenover een vooraf afgesproken doelstelling, niet op belvolume of gespreksduur. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.</p>"
+                "answer": "<p>Ons Sales Contact Center is een verkoopkanaal, geen klantendienst. We bellen om te verkopen: outbound sales, conversie en warme opvolging van leads. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van de mensen aan de lijn. We focussen strak op conversie en vooruitgang tegenover duidelijke KPI's, niet op louter belvolume of gespreksduur. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.</p>"
               },
               {
                 "question": "Wat kost het?",
-                "answer": "<p>De prijs hangt af van de schaal en het doel, maar het principe is altijd hetzelfde: 100% kostentransparantie. Je krijgt de volledige prijszetting vooraf, zonder verborgen kosten achteraf, en de wekelijkse rapportering toont wat elk beluur opbrengt. Zo lees je zwart op wit wat je per euro terugkrijgt in conversie en pipeline.</p>"
+                "answer": "<p>De prijs hangt af van de schaal en het doel, met een heldere structuur vooraf: duidelijke tarieven zonder verborgen kosten achteraf, en wekelijkse rapportering die toont wat elk beluur oplevert. Zo lees je zwart op wit wat je terugkrijgt in conversie en pipeline.</p>"
               },
               {
                 "question": "Hoe meten jullie?",
@@ -354,8 +352,7 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: nog te bouwen -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/crosssell",
           eyebrow="Werkt sterker samen met",
           heading="Los te boeken. Maar scherper in combinatie.",
@@ -363,7 +360,7 @@
               {
                 "idx": "01",
                 "naam": "Marketing",
-                "desc": "Websites, SEA, SEO/GEO, social ads en e-mail — data-gedreven via ons eigen AI-platform. Levert de leads die dit contact center binnen 30 minuten belt.",
+                "desc": "Websites, SEA, SEO/GEO, social ads en e-mail, data-gedreven via ons eigen AI-platform. Levert de leads die dit contact center binnen 30 minuten belt.",
                 "url": {
                   "url": {
                     "href": "/marketing",
@@ -422,7 +419,7 @@
           aria="Vraag een gratis sales-scan aan",
           sc_eyebrow="Gratis sales-scan",
           heading="Waar laat jouw commerciële motor rendement liggen?",
-          tekst="<p>In 20 minuten brengen we samen je grootste hefbomen in kaart — van prospectie tot opvolging. Concreet, vrijblijvend en meteen bruikbaar.</p>",
+          tekst="<p>In 20 minuten brengen we samen je grootste hefbomen in kaart, van prospectie tot opvolging. Concreet, vrijblijvend en meteen bruikbaar.</p>",
           veldenset={
               "naam": true,
               "email": true,
@@ -430,7 +427,7 @@
               "website": false
             },
           link_label="Vraag je sales-scan aan",
-          note="Vrijblijvend — je zit nergens aan vast.",
+          note="Vrijblijvend, je zit nergens aan vast.",
           navy=false,
           form={
               "form_id": "79c85a00-56e9-4014-be21-cb8af40feb9d",
@@ -449,7 +446,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Zet jouw conversie hier volgend jaar tussen.",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

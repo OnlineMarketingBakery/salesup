@@ -103,6 +103,8 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
 /* Op donker vlak: oranje vlak + navy label (contrast ruim); hover -> wit vlak + navy label */
 .btn.on-dark{background:var(--orange); color:var(--navy-deep); border-color:var(--orange);}
 .btn.on-dark:hover{background:var(--white); color:var(--navy-deep); border-color:var(--white); transform:translateY(-1px);}
+.btn.on-dark.ghost{background:transparent; color:var(--white); border-color:rgba(255,255,255,.55);}
+.btn.on-dark.ghost:hover{background:var(--white); color:var(--navy-deep); border-color:var(--white);}
 
 /* ---------- HEADER / NAV ---------- */
 header{

@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Face2Face Sales
+  label: salesUp, Face2Face Sales
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Face2Face Sales\",\n      \"serviceType\":\"Face-to-face verkoop en werving in het veld\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/face2face-sales\",\n      \"description\":\"Verkopers en wervers face-to-face in het veld, bij de prospect of op locatie. Omnichannel opgevolgd, met dezelfde kwaliteitsbewaking en afrekenen-op-resultaat als het Sales Contact Center.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor wie is Face2Face Sales geschikt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Voor verkoop en werving die een gezicht en een gesprek nodig hebben: bij de prospect op locatie, op events en beurzen, op de winkelvloer of deur-aan-deur. We zetten een getraind team in het veld en volgen elke prospect omnichannel op, zodat een contact in het veld verder gaat via telefoon en mail tot in het CRM. Je rekent ons af op resultaat tegenover een vooraf afgesproken doel, net zoals bij ons Sales Contact Center.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Werken jullie met studenten of met vaste verkopers?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Allebei, afhankelijk van de opdracht. Voor werving en promoteams zetten we getrainde studenten in; de kwaliteit en coaching in het veld gebeuren door vaste salescoaches die dagelijks meelopen. Zo krijg je de schaal en energie van een veldteam met de kwaliteitsbewaking van een vast team.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit in het veld?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Met dezelfde kwaliteitsbewaking als aan de telefoon. Gesprekken worden gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van de mensen in het veld via ons trainingsplatform salesUp Academy. Een vaste salescoach volgt elke shift op en stuurt meteen bij, zodat je niet betaalt voor volume maar voor kwaliteit.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe rekenen jullie af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We spreken vooraf een doelstelling af en rapporteren het resultaat daartegenover, met 100% kostentransparantie. Je krijgt een wekelijkse rapportering die toont wat het veldteam oplevert — kwalitatieve leads, afspraken of verkopen. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Face2Face Sales\",\n      \"serviceType\":\"Face-to-face verkoop en werving in het veld\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/face2face-sales\",\n      \"description\":\"Verkopers en wervers face-to-face in het veld, bij de prospect of op locatie. Omnichannel opgevolgd, met dezelfde kwaliteitsbewaking en afrekenen-op-resultaat als het Sales Contact Center.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor wie is Face2Face Sales geschikt?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Voor verkoop en werving die een gezicht en een gesprek nodig hebben: bij de prospect op locatie, op events en beurzen, op de winkelvloer of deur-aan-deur. We zetten een getraind team in het veld en volgen elke prospect omnichannel op, zodat een contact in het veld verder gaat via telefoon en mail tot in het CRM. Je rekent ons af op resultaat tegenover een vooraf afgesproken doel, net zoals bij ons Sales Contact Center.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Werken jullie met studenten of met vaste verkopers?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Allebei, afhankelijk van de opdracht. Voor werving en promoteams zetten we getrainde studenten in; de kwaliteit en coaching in het veld gebeuren door vaste salescoaches die dagelijks meelopen. Zo krijg je de schaal en energie van een veldteam met de kwaliteitsbewaking van een vast team.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit in het veld?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Met dezelfde kwaliteitsbewaking als aan de telefoon. Gesprekken worden gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van de mensen in het veld via ons trainingsplatform salesUp Academy. Een vaste salescoach volgt elke shift op en stuurt meteen bij, zodat je niet betaalt voor volume maar voor kwaliteit.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe rekenen jullie af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We spreken vooraf een doelstelling af en rapporteren het resultaat daartegenover, met 100% kostentransparantie. Je krijgt een wekelijkse rapportering die toont wat het veldteam oplevert, kwalitatieve leads, afspraken of verkopen. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
   hreflang_nl="https://www.salesup.be/face2face-sales",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -55,14 +55,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload office-two-men-chat.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geen echt veldbeeld beschikbaar; sfeerbeeld uit ../assets -->
-        <!-- VERIFIEER: Orange zet salesUp F2F in (deur-aan-deur, lokale events) náást het Sales Contact Center; geen publiek F2F-specifiek cijfer, dus kwalitatief. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Face2Face Sales",
           heading="Verkopen waar het telt: <em>oog in oog</em> met je klant.",
-          subtext="<p>Wij zetten verkopers en wervers face-to-face in het veld — bij je prospect op locatie, op events en beurzen, op de winkelvloer of deur-aan-deur. Elk contact wordt omnichannel opgevolgd tot in je CRM, met dezelfde kwaliteitsbewaking en het afrekenen-op-resultaat van ons Sales Contact Center.</p>",
+          subtext="<p>Wij zetten verkopers en wervers face-to-face in het veld, bij je prospect op locatie, op events en beurzen, op de winkelvloer of deur-aan-deur. Elk contact wordt omnichannel opgevolgd tot in je CRM, met dezelfde kwaliteitsbewaking en het afrekenen-op-resultaat van ons Sales Contact Center.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -104,9 +101,9 @@
             },
           trustcard_badge="",
           trustcard_stat="",
-          trustcard_label="Bij Orange zetten we een veldteam in — deur-aan-deur en op lokale events — náást het Sales Contact Center, als één omnichannel-aanpak op één gedeeld doel.",
+          trustcard_label="Bij Orange zetten we een veldteam in, deur-aan-deur en op lokale events, náást het Sales Contact Center, als één omnichannel-aanpak op één gedeeld doel.",
           trustcard_quote="\"De gedrevenheid werkt aanstekelijk en geeft onze cijfers dagelijks een boost.\"",
-          trustcard_quote_who="— <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+          trustcard_quote_who=", <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -233,12 +230,12 @@
           path="../modules/concept",
           eyebrow="Ons verschil in het veld",
           heading="Geen standaard promoteam. Elke actie is een <em>creatief concept</em>.",
-          tekst="<p>Waar de meeste bureaus mensen met een flyer de straat op sturen, bouwen wij rond elke campagne een creatief concept — een idee dat opvalt en mensen doet stoppen. Dat is uniek in de markt, en precies waarom onze acties in het veld blijven werken.</p>",
+          tekst="<p>Waar de meeste bureaus mensen met een flyer de straat op sturen, bouwen wij rond elke campagne een creatief concept, een idee dat opvalt en mensen doet stoppen. Dat is uniek in de markt, en precies waarom onze acties in het veld blijven werken.</p>",
           chain=[
               {
                 "num": "01",
                 "title": "Uniek in de markt",
-                "tekst": "<p>Geen twee acties zijn hetzelfde — jouw merk valt op tussen de rest, in plaats van weg te vallen.</p>"
+                "tekst": "<p>Geen twee acties zijn hetzelfde, jouw merk valt op tussen de rest, in plaats van weg te vallen.</p>"
               },
               {
                 "num": "02",
@@ -248,7 +245,7 @@
               {
                 "num": "03",
                 "title": "Leukere job voor onze wervers",
-                "tekst": "<p>Wie met een straf concept mag werken, staat er met meer goesting en overtuiging — en dat voelt je doelgroep.</p>"
+                "tekst": "<p>Wie met een straf concept mag werken, staat er met meer goesting en overtuiging, en dat voelt je doelgroep.</p>"
               },
               {
                 "num": "04",
@@ -269,7 +266,7 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Een gezicht dat verkoopt, geen folder.",
-          intro="<p>Sommige verkoop en werving lukt pas oog in oog. We zetten een getraind team in het veld en volgen elk contact op tot in je CRM — met dezelfde meetbaarheid als aan de telefoon.</p>",
+          intro="<p>Sommige verkoop en werving lukt pas oog in oog. We zetten een getraind team in het veld en volgen elk contact op tot in je CRM, met dezelfde meetbaarheid als aan de telefoon.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -278,15 +275,15 @@
               },
               {
                 "title": "Omnichannel opgevolgd tot in je CRM",
-                "tekst": "<p>Een contact in het veld blijft niet op straat liggen. We volgen elke prospect verder op via telefoon en mail, en registreren alles in je CRM — zodat veld en Sales Contact Center één doorlopend traject vormen.</p>"
+                "tekst": "<p>Een contact in het veld blijft niet op straat liggen. We volgen elke prospect verder op via telefoon en mail, en registreren alles in je CRM, zodat veld en Sales Contact Center één doorlopend traject vormen.</p>"
               },
               {
                 "title": "Dezelfde kwaliteitsbewaking",
                 "tekst": "<p>Gesprekken worden gescoord op kwaliteit en koopkans, en die scores voeden de coaching en de training via salesUp Academy. Geen anonieme freelancers: een vaste salescoach loopt dagelijks mee in het veld.</p>"
               },
               {
-                "title": "Afgerekend op resultaat",
-                "tekst": "<p>Je rekent ons af op wat het veldteam oplevert tegenover een vooraf afgesproken doel — kwalitatieve leads, afspraken of verkopen — niet op het aantal deuren of gesprekken. Met 100% kostentransparantie.</p>"
+                "title": "Gericht op resultaat",
+                "tekst": "<p>We focussen op wat het veldteam oplevert tegenover duidelijke KPI's (kwalitatieve leads, afspraken of verkopen), niet op het loutere aantal deuren of gesprekken. Met heldere rapportering en volledige inzage.</p>"
               }
             ]
             %}
@@ -297,33 +294,32 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload gesprek-1op1.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/ai-differentiator",
           anchor="ai",
           eyebrow="De AI-differentiator",
           heading="Ook in het veld: elk gesprek telt en wordt gescoord.",
-          intro="Onze platformen zijn eigen bouw. Ze meten wat er in elk gesprek gebeurt en signaleren waar omzet zit. Die scores stromen door naar ons trainingsplatform salesUp Academy, dat de mensen in het veld scherper maakt — dezelfde datalus die aan de lijn werkt. De AI meet en signaleert; de mens verkoopt, oog in oog.",
+          intro="Onze platformen zijn eigen bouw. Ze meten wat er in elk gesprek gebeurt en signaleren waar omzet zit. Die scores stromen door naar ons trainingsplatform salesUp Academy, dat de mensen in het veld scherper maakt, dezelfde datalus die aan de lijn werkt. De AI meet en signaleert; de mens verkoopt, oog in oog.",
           points=[
               {
                 "num": "01",
-                "text": "<p><strong>Automated quality monitoring</strong> — gesprekken gescoord op kwaliteit en koopkans, geen steekproef achteraf.</p>"
+                "text": "<p><strong>Automated quality monitoring</strong>, gesprekken gescoord op kwaliteit en koopkans, geen steekproef achteraf.</p>"
               },
               {
                 "num": "02",
-                "text": "<p><strong>Opportunity score</strong> — de warmste contacten worden als eerste opgevolgd, zodat geen kans blijft liggen.</p>"
+                "text": "<p><strong>Opportunity score</strong>, de warmste contacten worden als eerste opgevolgd, zodat geen kans blijft liggen.</p>"
               },
               {
                 "num": "03",
-                "text": "<p><strong>Objection-detectie</strong> — terugkerende bezwaren worden herkend, zodat pitch en aanbod meebewegen.</p>"
+                "text": "<p><strong>Objection-detectie</strong>, terugkerende bezwaren worden herkend, zodat pitch en aanbod meebewegen.</p>"
               },
               {
                 "num": "04",
-                "text": "<p><strong>Dagelijkse coaching in het veld</strong> — een vaste salescoach volgt elke shift op en stuurt meteen bij.</p>"
+                "text": "<p><strong>Dagelijkse coaching in het veld</strong>, een vaste salescoach volgt elke shift op en stuurt meteen bij.</p>"
               },
               {
                 "num": "05",
-                "text": "<p><strong>Data gekoppeld aan salesUp Academy</strong> — wie waar hapert, wordt daar getraind.</p>"
+                "text": "<p><strong>Data gekoppeld aan salesUp Academy</strong>, wie waar hapert, wordt daar getraind.</p>"
               }
             ],
           image={
@@ -342,13 +338,13 @@
           path="../modules/steps",
           anchor="aanpak",
           eyebrow="Hoe het werkt",
-          heading="Van doelstelling tot afgerekend resultaat.",
-          intro="<p>We spreken vooraf een doelstelling af en stemmen af waar en bij wie het team aan de slag gaat.</p>",
+          heading="Van doelstelling tot meetbaar resultaat.",
+          intro="<p>We stemmen vooraf de doelstellingen af en bepalen waar en bij wie het team aan de slag gaat.</p>",
           steps=[
               {
                 "num": "01",
                 "title": "Doel, regio & doelgroep bepalen",
-                "tekst": "<p>We spreken vooraf een doelstelling af en stemmen af waar en bij wie het team aan de slag gaat.</p>"
+                "tekst": "<p>We stemmen vooraf de doelstellingen af en bepalen waar en bij wie het team aan de slag gaat.</p>"
               },
               {
                 "num": "02",
@@ -358,12 +354,12 @@
               {
                 "num": "03",
                 "title": "In het veld: verkopen of kwalificeren",
-                "tekst": "<p>We gaan oog in oog in gesprek — sluiten ter plaatse, of leveren gekwalificeerde leads voor telefonische opvolging.</p>"
+                "tekst": "<p>We gaan oog in oog in gesprek, sluiten ter plaatse, of leveren gekwalificeerde leads voor telefonische opvolging.</p>"
               },
               {
                 "num": "04",
                 "title": "Scoren, coachen & wekelijks rapporteren",
-                "tekst": "<p>Gesprekken worden gescoord, de coach stuurt dagelijks bij en je krijgt een wekelijkse rapportering met 100% kostentransparantie.</p>"
+                "tekst": "<p>Gesprekken worden gescoord, de coach stuurt dagelijks bij en je krijgt een wekelijkse rapportering met heldere resultaten.</p>"
               }
             ]
             %}
@@ -383,7 +379,7 @@
           faq_items=[
               {
                 "question": "Voor wie is Face2Face Sales geschikt?",
-                "answer": "<p>Voor verkoop en werving die een gezicht en een gesprek nodig hebben: bij de prospect op locatie, op events en beurzen, op de winkelvloer of deur-aan-deur. We zetten een getraind team in het veld en volgen elke prospect omnichannel op, zodat een contact in het veld verder gaat via telefoon en mail tot in het CRM. Je rekent ons af op resultaat tegenover een vooraf afgesproken doel, net zoals bij ons Sales Contact Center.</p>"
+                "answer": "<p>Voor verkoop en werving die een gezicht en een gesprek nodig hebben: bij de prospect op locatie, op events en beurzen, op de winkelvloer of deur-aan-deur. We zetten een getraind team in het veld en volgen elke prospect omnichannel op, zodat een contact in het veld verder gaat via telefoon en mail tot in het CRM. We sturen continu bij op resultaat tegenover afgesproken doelstellingen, net zoals bij ons Sales Contact Center.</p>"
               },
               {
                 "question": "Werken jullie met studenten of met vaste verkopers?",
@@ -394,8 +390,8 @@
                 "answer": "<p>Met dezelfde kwaliteitsbewaking als aan de telefoon. Gesprekken worden gescoord op kwaliteit en koopkans, en die scores sturen de opvolging én de training van de mensen in het veld via ons trainingsplatform salesUp Academy. Een vaste salescoach volgt elke shift op en stuurt meteen bij, zodat je niet betaalt voor volume maar voor kwaliteit.</p>"
               },
               {
-                "question": "Hoe rekenen jullie af?",
-                "answer": "<p>We spreken vooraf een doelstelling af en rapporteren het resultaat daartegenover, met 100% kostentransparantie. Je krijgt een wekelijkse rapportering die toont wat het veldteam oplevert — kwalitatieve leads, afspraken of verkopen. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
+                "question": "Hoe meten jullie het resultaat?",
+                "answer": "<p>We spreken vooraf duidelijke targets af en rapporteren de voortgang daartegenover. Je krijgt een wekelijkse rapportering die toont wat het veldteam oplevert (kwalitatieve leads, afspraken of verkopen). Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
               }
             ]
             %}
@@ -406,8 +402,7 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: nog te bouwen -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/crosssell",
           eyebrow="Werkt sterker samen met",
           heading="Los te boeken. Maar scherper in combinatie.",
@@ -427,7 +422,7 @@
               {
                 "idx": "02",
                 "naam": "Marketing",
-                "desc": "Websites, SEA, SEO/GEO, social ads en e-mail — data-gedreven via ons eigen AI-platform. Levert de leads en de zichtbaarheid vóór het veldbezoek.",
+                "desc": "Websites, SEA, SEO/GEO, social ads en e-mail, data-gedreven via ons eigen AI-platform. Levert de leads en de zichtbaarheid vóór het veldbezoek.",
                 "url": {
                   "url": {
                     "href": "/marketing",
@@ -482,7 +477,7 @@
               "website": false
             },
           link_label="Vraag je sales-scan aan",
-          note="Vrijblijvend — je zit nergens aan vast.",
+          note="Vrijblijvend, je zit nergens aan vast.",
           navy=false,
           form={
               "form_id": "79c85a00-56e9-4014-be21-cb8af40feb9d",
@@ -501,7 +496,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Zet een team in het veld dat écht verkoopt.",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een veldteam voor jou kan betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een veldteam voor jou kan betekenen. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

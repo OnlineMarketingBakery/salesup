@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Case Liantis
+  label: salesUp, Case Liantis
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{{ require_css(get_asset_url('../css/blog.css')) }}{{ require_css(get_asset_url('../css/cases.css')) }}{{ require_css(get_asset_url('../css/case.css')) }}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Liantis x salesUp: mensen laten groeien om groei mogelijk te maken\", \"about\": \"Liantis\", \"description\": \"Liantis x salesUp: mensen laten groeien om groei mogelijk te maken — keynote, managementsessies en hybride sales training.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/liantis\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Liantis\", \"item\": \"https://www.salesup.be/cases/liantis\"}]}]}",
+  json_ld="{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": [\"Article\", \"CreativeWork\"], \"headline\": \"Liantis x salesUp: mensen laten groeien om groei mogelijk te maken\", \"about\": \"Liantis\", \"description\": \"Liantis x salesUp: mensen laten groeien om groei mogelijk te maken, keynote, managementsessies en hybride sales training.\", \"author\": {\"@type\": \"Organization\", \"name\": \"salesUp\", \"url\": \"https://www.salesup.be/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"salesUp\"}, \"inLanguage\": \"nl-BE\", \"mainEntityOfPage\": \"https://www.salesup.be/cases/liantis\"}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.salesup.be/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Cases\", \"item\": \"https://www.salesup.be/cases\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Liantis\", \"item\": \"https://www.salesup.be/cases/liantis\"}]}]}",
   hreflang_nl="https://www.salesup.be/cases/liantis",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -62,7 +62,7 @@
             },
           eyebrow="Client case · HR-dienstengroep",
           heading="Liantis x salesUp: mensen laten groeien om groei mogelijk te maken",
-          subtext="<p>Liantis x salesUp: mensen laten groeien om groei mogelijk te maken — keynote, managementsessies en hybride sales training.</p>",
+          subtext="<p>Liantis x salesUp: mensen laten groeien om groei mogelijk te maken, keynote, managementsessies en hybride sales training.</p>",
           meta_tags=[
               {
                 "link_label": "Training"
@@ -104,7 +104,7 @@
             {% dnd_module
           path="../modules/case-quote",
           quote="<p>&ldquo;Jullie hebben de mensen tot inzichten gebracht. Soms ook wat shocking. En dat werkt. Ook maanden later bleef de impact voelbaar binnen de teams.&rdquo;</p>",
-          who="&mdash; <strong>Eveline Boúúaert</strong>, Head of Sales KMO bij Liantis"
+          who=", <strong>Eveline Boúúaert</strong>, Head of Sales KMO bij Liantis"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -117,7 +117,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Zet jouw cijfers hier volgend jaar tussen.",
-          tekst="<p>Je hebt gezien wat we voor Liantis deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug &mdash; dat is letterlijk ons vak.</p>",
+          tekst="<p>Je hebt gezien wat we voor Liantis deden. Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat er in jouw pipeline zit. We bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Events & beurzen
+  label: salesUp, Events & beurzen
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Events & beurzen\",\n      \"serviceType\":\"Verkoopteam op stands en events\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/events-beurzen\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"url\":\"https://www.salesup.be/face2face-sales\"},\n      \"description\":\"Een getraind verkoopteam op je stand of event dat leads capteert, kwalificeert en warm doorgeeft, met een creatief standconcept en omnichannel-opvolging tot in het CRM.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Events & beurzen\",\"item\":\"https://www.salesup.be/events-beurzen\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat doet jullie team precies op onze stand?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ons team spreekt bezoekers actief aan, brengt je verhaal en capteert leads — maar niet zomaar visitekaartjes. We kwalificeren ter plaatse zodat je achteraf weet wie er echt interesse heeft, en geven die contacten warm door voor opvolging. Waar het aanbod het toelaat, sluiten we ook op het event zelf af.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat bedoelen jullie met een creatief standconcept?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op een druk event moet je stand mensen doen stoppen. Wij bouwen rond je aanwezigheid een idee dat opvalt tussen de rest, zodat bezoekers naar je toe komen in plaats van voorbij te lopen. Dat concept maakt de gesprekken makkelijker te openen en levert zo meer kwalitatieve leads op.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Krijgen we de leads bruikbaar terug?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Elke lead wordt gekwalificeerd en geregistreerd in je CRM, en we volgen omnichannel op via telefoon en mail zodat een contact op het event verder gaat als een echt salestraject. Zo blijft je beursbudget niet steken in een stapel visitekaartjes, maar wordt het een pipeline.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op wat het team oplevert tegenover een vooraf afgesproken doel — gekwalificeerde leads, afspraken of verkopen — niet op het aantal aangesproken bezoekers. Je krijgt een rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Events & beurzen\",\n      \"serviceType\":\"Verkoopteam op stands en events\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/events-beurzen\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"url\":\"https://www.salesup.be/face2face-sales\"},\n      \"description\":\"Een getraind verkoopteam op je stand of event dat leads capteert, kwalificeert en warm doorgeeft, met een creatief standconcept en omnichannel-opvolging tot in het CRM.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Events & beurzen\",\"item\":\"https://www.salesup.be/events-beurzen\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat doet jullie team precies op onze stand?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ons team spreekt bezoekers actief aan, brengt je verhaal en capteert leads, maar niet zomaar visitekaartjes. We kwalificeren ter plaatse zodat je achteraf weet wie er echt interesse heeft, en geven die contacten warm door voor opvolging. Waar het aanbod het toelaat, sluiten we ook op het event zelf af.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat bedoelen jullie met een creatief standconcept?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op een druk event moet je stand mensen doen stoppen. Wij bouwen rond je aanwezigheid een idee dat opvalt tussen de rest, zodat bezoekers naar je toe komen in plaats van voorbij te lopen. Dat concept maakt de gesprekken makkelijker te openen en levert zo meer kwalitatieve leads op.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Krijgen we de leads bruikbaar terug?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Elke lead wordt gekwalificeerd en geregistreerd in je CRM, en we volgen omnichannel op via telefoon en mail zodat een contact op het event verder gaat als een echt salestraject. Zo blijft je beursbudget niet steken in een stapel visitekaartjes, maar wordt het een pipeline.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op wat het team oplevert tegenover een vooraf afgesproken doel, gekwalificeerde leads, afspraken of verkopen, niet op het aantal aangesproken bezoekers. Je krijgt een rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
   hreflang_nl="https://www.salesup.be/events-beurzen",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -65,14 +65,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload event-borrel.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geen echt beursbeeld beschikbaar; sfeerbeeld uit ../assets -->
-        <!-- VERIFIEER: hier hoort een echt cijfer (bv. gekwalificeerde leads per beursdag) zodra beschikbaar; nu kwalitatief. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Face2Face Sales · Events & beurzen",
           heading="Van je stand een <em>verkoopmachine</em> maken.",
-          subtext="<p>Een getraind verkoopteam op je stand of event dat bezoekers actief aanspreekt, leads capteert én kwalificeert en warm doorgeeft. Rond je aanwezigheid bouwen we een creatief concept dat mensen doet stoppen, elk gesprek wordt gescoord en omnichannel opgevolgd tot in je CRM — met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.</p>",
+          subtext="<p>Een getraind verkoopteam op je stand of event dat bezoekers actief aanspreekt, leads capteert én kwalificeert en warm doorgeeft. Rond je aanwezigheid bouwen we een creatief concept dat mensen doet stoppen, elk gesprek wordt gescoord en omnichannel opgevolgd tot in je CRM, met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -115,8 +112,8 @@
           trustcard_badge="",
           trustcard_stat="",
           trustcard_label="Geen stapel visitekaartjes, maar een gekwalificeerde pipeline: elk contact op je event wordt gescoord, warm doorgegeven en opgevolgd tot in je CRM.",
-          trustcard_quote="\"Een stand die opvalt is de start — de opvolging maakt er omzet van.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak in het veld"
+          trustcard_quote="\"Een stand die opvalt is de start, de opvolging maakt er omzet van.\"",
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak in het veld"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -130,7 +127,7 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Meer dan visitekaartjes verzamelen.",
-          intro="<p>Een beurs kost budget en tijd. Wij zorgen dat je aanwezigheid opvalt, dat bezoekers écht in gesprek gaan en dat elke lead gekwalificeerd én opgevolgd wordt — zodat je stand een pipeline oplevert.</p>",
+          intro="<p>Een beurs kost budget en tijd. Wij zorgen dat je aanwezigheid opvalt, dat bezoekers écht in gesprek gaan en dat elke lead gekwalificeerd én opgevolgd wordt, zodat je stand een pipeline oplevert.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -143,11 +140,11 @@
               },
               {
                 "title": "Gekwalificeerd en warm doorgegeven",
-                "tekst": "<p>We kwalificeren leads ter plaatse, zodat je achteraf weet wie er echt interesse heeft. Warme contacten geven we door voor gerichte opvolging — geen stapel anonieme visitekaartjes.</p>"
+                "tekst": "<p>We kwalificeren leads ter plaatse, zodat je achteraf weet wie er echt interesse heeft. Warme contacten geven we door voor gerichte opvolging, geen stapel anonieme visitekaartjes.</p>"
               },
               {
                 "title": "Opgevolgd tot in je CRM",
-                "tekst": "<p>Elke lead wordt geregistreerd en omnichannel opgevolgd via telefoon en mail, zodat een contact op het event verder gaat als een echt salestraject. Afgerekend op resultaat, met 100% kostentransparantie.</p>"
+                "tekst": "<p>Elke lead wordt geregistreerd en omnichannel opgevolgd via telefoon en mail, zodat een contact op het event verder gaat als een echt salestraject. Doelgericht gestuurd met heldere rapportering.</p>"
               }
             ]
             %}
@@ -178,12 +175,12 @@
               {
                 "num": "03",
                 "title": "Op de stand: capteren & kwalificeren",
-                "tekst": "<p>Het team spreekt bezoekers aan, capteert leads en kwalificeert ze ter plaatse — of sluit af waar dat kan.</p>"
+                "tekst": "<p>Het team spreekt bezoekers aan, capteert leads en kwalificeert ze ter plaatse, of sluit af waar dat kan.</p>"
               },
               {
                 "num": "04",
                 "title": "Opvolgen, scoren & rapporteren",
-                "tekst": "<p>Warme leads worden omnichannel opgevolgd, gesprekken worden gescoord en je krijgt een rapportering met 100% kostentransparantie.</p>"
+                "tekst": "<p>Warme leads worden omnichannel opgevolgd, gesprekken worden gescoord en je krijgt wekelijks een overzichtelijke rapportage.</p>"
               }
             ]
             %}
@@ -203,7 +200,7 @@
           faq_items=[
               {
                 "question": "Wat doet jullie team precies op onze stand?",
-                "answer": "<p>Ons team spreekt bezoekers actief aan, brengt je verhaal en capteert leads — maar niet zomaar visitekaartjes. We kwalificeren ter plaatse zodat je achteraf weet wie er echt interesse heeft, en geven die contacten warm door voor opvolging. Waar het aanbod het toelaat, sluiten we ook op het event zelf af.</p>"
+                "answer": "<p>Ons team spreekt bezoekers actief aan, brengt je verhaal en capteert leads, maar niet zomaar visitekaartjes. We kwalificeren ter plaatse zodat je achteraf weet wie er echt interesse heeft, en geven die contacten warm door voor opvolging. Waar het aanbod het toelaat, sluiten we ook op het event zelf af.</p>"
               },
               {
                 "question": "Wat bedoelen jullie met een creatief standconcept?",
@@ -214,8 +211,8 @@
                 "answer": "<p>Ja. Elke lead wordt gekwalificeerd en geregistreerd in je CRM, en we volgen omnichannel op via telefoon en mail zodat een contact op het event verder gaat als een echt salestraject. Zo blijft je beursbudget niet steken in een stapel visitekaartjes, maar wordt het een pipeline.</p>"
               },
               {
-                "question": "Waarop rekenen jullie ons af?",
-                "answer": "<p>Op wat het team oplevert tegenover een vooraf afgesproken doel — gekwalificeerde leads, afspraken of verkopen — niet op het aantal aangesproken bezoekers. Je krijgt een rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
+                "question": "Hoe meten jullie het resultaat?",
+                "answer": "<p>We focussen op wat het team oplevert tegenover een vooraf afgesproken doelstelling (gekwalificeerde leads, afspraken of verkopen), niet op het aantal aangesproken bezoekers. Je krijgt een duidelijke rapportage van de resultaten. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
               }
             ]
             %}
@@ -276,7 +273,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Klaar om je volgende beurs echt te laten renderen?",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een verkoopteam op je stand kan betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat een verkoopteam op je stand kan betekenen. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

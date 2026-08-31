@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — After-sales
+  label: salesUp, After-sales
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"After sales & heractivatie\",\n      \"serviceType\":\"Heractivatie, upsell, cross-sell en winback via de telefoon\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/after-sales\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"url\":\"https://www.salesup.be/sales-contact-center\"},\n      \"description\":\"Een verkoopkanaal op je bestaande klantenbestand: heractivatie van slapende klanten, upsell en cross-sell en winback via de telefoon, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op extra omzet tegenover een vooraf afgesproken doel.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Contact Center\",\"item\":\"https://www.salesup.be/sales-contact-center\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"After sales & heractivatie\",\"item\":\"https://www.salesup.be/after-sales\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Is dit een klantendienst?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. Dit is een verkoopkanaal op je bestaande klantenbestand, geen support-lijn. We bellen slapende klanten weer wakker, verkopen erbij via upsell en cross-sell, en winnen weggegane klanten terug. Elk gesprek is gericht op extra omzet uit klanten die je al hebt, met dezelfde kwaliteitsbewaking als de rest van ons Sales Contact Center.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit van elk gesprek?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. Opportunity-scores tonen welke klant klaar is voor meer, objection-detectie herkent waarom een klant afhaakte. Die scores sturen de opvolging én de training van de mensen aan de lijn via ons platform salesUp Academy. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op extra omzet tegenover een vooraf afgesproken doel — heractivaties, upsell, cross-sell en teruggewonnen klanten — en niet op belvolume of gespreksduur. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie, zodat je zwart op wit leest wat je bestaande basis nog waard is.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor welke klanten werkt dit het best?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Voor bedrijven met een klantenbestand dat blijft liggen: klanten die al een tijd niets meer kochten, accounts met ruimte voor een extra product of dienst, en klanten die wegbleven om een reden die je kan wegnemen. We segmenteren op basis van je CRM- of ERP-data en benaderen elk segment gericht, niet met één generieke actie voor iedereen.\"}\n        }\n      ]\n    }\n  ]\n}",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"telephone\":\"+3253782830\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"After sales & heractivatie\",\n      \"serviceType\":\"Heractivatie, upsell, cross-sell en winback via de telefoon\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/after-sales\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Sales Contact Center\",\"url\":\"https://www.salesup.be/sales-contact-center\"},\n      \"description\":\"Een verkoopkanaal op je bestaande klantenbestand: heractivatie van slapende klanten, upsell en cross-sell en winback via de telefoon, met elk gesprek automatisch gescoord op kwaliteit en koopkans en afgerekend op extra omzet tegenover een vooraf afgesproken doel.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sales Contact Center\",\"item\":\"https://www.salesup.be/sales-contact-center\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"After sales & heractivatie\",\"item\":\"https://www.salesup.be/after-sales\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Is dit een klantendienst?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nee. Dit is een verkoopkanaal op je bestaande klantenbestand, geen support-lijn. We bellen slapende klanten weer wakker, verkopen erbij via upsell en cross-sell, en winnen weggegane klanten terug. Elk gesprek is gericht op extra omzet uit klanten die je al hebt, met dezelfde kwaliteitsbewaking als de rest van ons Sales Contact Center.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe bewaken jullie de kwaliteit van elk gesprek?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. Opportunity-scores tonen welke klant klaar is voor meer, objection-detectie herkent waarom een klant afhaakte. Die scores sturen de opvolging én de training van de mensen aan de lijn via ons platform salesUp Academy. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op extra omzet tegenover een vooraf afgesproken doel, heractivaties, upsell, cross-sell en teruggewonnen klanten, en niet op belvolume of gespreksduur. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie, zodat je zwart op wit leest wat je bestaande basis nog waard is.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor welke klanten werkt dit het best?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Voor bedrijven met een klantenbestand dat blijft liggen: klanten die al een tijd niets meer kochten, accounts met ruimte voor een extra product of dienst, en klanten die wegbleven om een reden die je kan wegnemen. We segmenteren op basis van je CRM- of ERP-data en benaderen elk segment gericht, niet met één generieke actie voor iedereen.\"}\n        }\n      ]\n    }\n  ]\n}",
   hreflang_nl="https://www.salesup.be/after-sales",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -65,12 +65,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload cc-woman-desk.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Sales Contact Center · After sales",
           heading="De meeste omzet zit in de klanten die je <em>al</em> hebt.",
-          subtext="<p>Heractivatie van slapende klanten, upsell en cross-sell en winback via de telefoon — een verkoopkanaal op je bestaande basis, géén klantendienst. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, en je rekent ons af op extra omzet tegenover een vooraf afgesproken doel.</p>",
+          subtext="<p>Heractivatie van slapende klanten, upsell en cross-sell en winback via de telefoon, een verkoopkanaal op je bestaande basis, géén klantendienst. Elk gesprek wordt automatisch gescoord op kwaliteit en koopkans, doelgericht gestuurd op extra omzet en duidelijke targets.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -98,7 +97,7 @@
                 "link_label": "Winback via de telefoon"
               },
               {
-                "link_label": "Afgerekend op extra omzet"
+                "link_label": "Focus op extra omzet"
               }
             ],
           trust_chips=[],
@@ -111,9 +110,9 @@
             },
           trustcard_badge="",
           trustcard_stat="91<em>%</em>",
-          trustcard_label="Auditscore van ons Sales Contact Center-team bij Orange — dezelfde kwaliteitsbewaking bewaakt elk heractivatie-, upsell- en winbackgesprek.",
+          trustcard_label="Auditscore van ons Sales Contact Center-team bij Orange, dezelfde kwaliteitsbewaking bewaakt elk heractivatie-, upsell- en winbackgesprek.",
           trustcard_quote="\"Het is geen traditionele klant-leveranciersrelatie. We hebben één doel en werken hier samen aan.\"",
-          trustcard_quote_who="— <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
+          trustcard_quote_who=", <strong>Stefanie Van Rillaer</strong>, Head of Hunting bij Orange"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -127,7 +126,7 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Extra verkoop, niet extra support.",
-          intro="<p>Je bestaande klantenbestand is de goedkoopste pipeline die je hebt. Wij bellen die basis systematisch af om er te verkopen — gericht per segment, gescoord per gesprek.</p>",
+          intro="<p>Je bestaande klantenbestand is de goedkoopste pipeline die je hebt. Wij bellen die basis systematisch af om er te verkopen, gericht per segment, gescoord per gesprek.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -140,11 +139,11 @@
               },
               {
                 "title": "Winback van weggegane klanten",
-                "tekst": "<p>Klanten die vertrokken, benaderen we gericht op de reden waarom ze wegbleven — geen generieke kortingscode voor iedereen. Objection-detectie herkent die reden zodat het gesprek meebeweegt.</p>"
+                "tekst": "<p>Klanten die vertrokken, benaderen we gericht op de reden waarom ze wegbleven, geen generieke kortingscode voor iedereen. Objection-detectie herkent die reden zodat het gesprek meebeweegt.</p>"
               },
               {
-                "title": "Gescoord, afgerekend op omzet, data → salesUp Academy",
-                "tekst": "<p>Elk gesprek wordt gescoord op kwaliteit en koopkans; je rekent ons af op extra omzet tegenover een doel. De scores stromen door naar salesUp Academy, dat de mensen aan de lijn scherper maakt.</p>"
+                "title": "Gescoord, doelgericht op omzet, data → salesUp Academy",
+                "tekst": "<p>Elk gesprek wordt gescoord op kwaliteit en koopkans, gestuurd op extra omzet tegenover je targets. De scores stromen door naar salesUp Academy, dat de mensen aan de lijn scherper maakt.</p>"
               }
             ]
             %}
@@ -160,12 +159,12 @@
           anchor="aanpak",
           eyebrow="Hoe het werkt",
           heading="Van klantenbestand tot extra omzet.",
-          intro="<p>Op basis van je CRM- of ERP-data bepalen we welke klanten slapen, ruimte hebben voor meer of terug te winnen zijn — tegenover een vooraf afgesproken omzetdoel.</p>",
+          intro="<p>Op basis van je CRM- of ERP-data bepalen we welke klanten slapen, ruimte hebben voor meer of terug te winnen zijn, tegenover een vooraf afgesproken omzetdoel.</p>",
           steps=[
               {
                 "num": "01",
                 "title": "Segmenteren & doel afstemmen",
-                "tekst": "<p>Op basis van je CRM- of ERP-data bepalen we welke klanten slapen, ruimte hebben voor meer of terug te winnen zijn — tegenover een vooraf afgesproken omzetdoel.</p>"
+                "tekst": "<p>Op basis van je CRM- of ERP-data bepalen we welke klanten slapen, ruimte hebben voor meer of terug te winnen zijn, tegenover een vooraf afgesproken omzetdoel.</p>"
               },
               {
                 "num": "02",
@@ -180,7 +179,7 @@
               {
                 "num": "04",
                 "title": "Wekelijks rapporteren & bijsturen",
-                "tekst": "<p>Je krijgt een wekelijkse rapportering over extra omzet, conversie per segment en gesprekskwaliteit — met 100% kostentransparantie.</p>"
+                "tekst": "<p>Je krijgt een wekelijkse rapportering over extra omzet, conversie per segment en gesprekskwaliteit, met overzichtelijke cijfers en duidelijke inzichten.</p>"
               }
             ]
             %}
@@ -207,8 +206,8 @@
                 "answer": "<p>Onze eigen software scoort elk gesprek automatisch op kwaliteit en koopkans, geen steekproef achteraf. Opportunity-scores tonen welke klant klaar is voor meer, objection-detectie herkent waarom een klant afhaakte. Die scores sturen de opvolging én de training van de mensen aan de lijn via ons platform salesUp Academy. Bij Orange leverde die aanpak een auditscore van 91% op, de hoogste van Europa.</p>"
               },
               {
-                "question": "Waarop rekenen jullie ons af?",
-                "answer": "<p>Op extra omzet tegenover een vooraf afgesproken doel — heractivaties, upsell, cross-sell en teruggewonnen klanten — en niet op belvolume of gespreksduur. Je krijgt elke week een rapportering die toont wat elk beluur opbrengt, met 100% kostentransparantie, zodat je zwart op wit leest wat je bestaande basis nog waard is.</p>"
+                "question": "Hoe meten jullie het resultaat?",
+                "answer": "<p>We focussen op extra omzet tegenover een vooraf afgesproken doel (heractivaties, upsell, cross-sell en teruggewonnen klanten) en niet op louter belvolume of gespreksduur. Je krijgt elke week een rapportering die toont wat elk beluur oplevert, zodat je helder ziet wat je bestaande klantenbasis waard is.</p>"
               },
               {
                 "question": "Voor welke klanten werkt dit het best?",
@@ -273,7 +272,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Zie wat je bestaande klanten nog waard zijn.",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van de omzet die in je huidige basis blijft liggen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van de omzet die in je huidige basis blijft liggen. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {

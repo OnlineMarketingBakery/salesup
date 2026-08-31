@@ -1,13 +1,13 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: salesUp — Deur-aan-deur
+  label: salesUp, Deur-aan-deur
 -->
 {% extends "./base.html" %}
 {% block extra_css %}{% endblock %}
 {% block content %}
 {% module "json_ld" path="../modules/json-ld",
-  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Deur-aan-deur (D2D)\",\n      \"serviceType\":\"Deur-aan-deur verkoop en werving in het veld\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/deur-aan-deur\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"url\":\"https://www.salesup.be/face2face-sales\"},\n      \"description\":\"Persoonlijke werving en verkoop aan de deur door een getraind team, met kwaliteitsscreening, omnichannel-opvolging tot in het CRM en afrekenen op resultaat.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Deur-aan-deur (D2D)\",\"item\":\"https://www.salesup.be/deur-aan-deur\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor welk soort aanbod werkt deur-aan-deur?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Deur-aan-deur werkt het best voor een aanbod dat baat heeft bij een persoonlijk gesprek en een duidelijke uitleg aan de deur — denk aan werving, abonnementen of een propositie die je even wil tonen. Kan je aanbod ter plaatse beslist worden, dan sluiten we aan de deur af; anders leveren we een gekwalificeerde lead voor telefonische opvolging.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe voorkomen jullie de slechte reputatie van D2D?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Met kwaliteit boven volume. Onze mensen zijn getraind, dragen een herkenbaar gezicht van je merk en werken met respect voor de bewoner. Gesprekken worden gescoord op kwaliteit en een vaste salescoach loopt mee in de wijk om meteen bij te sturen. We rekenen af op kwalitatief resultaat, niet op het aantal aangebelde deuren.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat gebeurt er met een contact na de deur?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een contact aan de deur blijft niet op straat liggen. We volgen elke prospect omnichannel op via telefoon en mail en registreren alles in je CRM, zodat het veld en ons Sales Contact Center één doorlopend traject vormen. Zo gaat geen enkele kwalitatieve lead verloren.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op wat het team oplevert tegenover een vooraf afgesproken doel — verkopen, inschrijvingen of gekwalificeerde leads — niet op het aantal deuren. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
+  json_ld="{\n  \"@context\":\"https://schema.org\",\n  \"@graph\":[\n    {\n      \"@type\":\"Organization\",\n      \"@id\":\"https://www.salesup.be/#org\",\n      \"name\":\"salesUp\",\n      \"url\":\"https://www.salesup.be/\",\n      \"email\":\"info@salesup.be\",\n      \"address\":{\n        \"@type\":\"PostalAddress\",\n        \"streetAddress\":\"Evenbroekveld 14\",\n        \"postalCode\":\"9420\",\n        \"addressLocality\":\"Erpe-Mere\",\n        \"addressCountry\":\"BE\"\n      },\n      \"areaServed\":{\"@type\":\"Country\",\"name\":\"België\"}\n    },\n    {\n      \"@type\":\"Service\",\n      \"name\":\"Deur-aan-deur (D2D)\",\n      \"serviceType\":\"Deur-aan-deur verkoop en werving in het veld\",\n      \"provider\":{\"@id\":\"https://www.salesup.be/#org\"},\n      \"areaServed\":\"BE\",\n      \"url\":\"https://www.salesup.be/deur-aan-deur\",\n      \"isPartOf\":{\"@type\":\"Service\",\"name\":\"Face2Face Sales\",\"url\":\"https://www.salesup.be/face2face-sales\"},\n      \"description\":\"Persoonlijke werving en verkoop aan de deur door een getraind team, met kwaliteitsscreening, omnichannel-opvolging tot in het CRM en afrekenen op resultaat.\"\n    },\n    {\n      \"@type\":\"BreadcrumbList\",\n      \"itemListElement\":[\n        {\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.salesup.be/\"},\n        {\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diensten\",\"item\":\"https://www.salesup.be/#diensten\"},\n        {\"@type\":\"ListItem\",\"position\":3,\"name\":\"Face2Face Sales\",\"item\":\"https://www.salesup.be/face2face-sales\"},\n        {\"@type\":\"ListItem\",\"position\":4,\"name\":\"Deur-aan-deur (D2D)\",\"item\":\"https://www.salesup.be/deur-aan-deur\"}\n      ]\n    },\n    {\n      \"@type\":\"FAQPage\",\n      \"mainEntity\":[\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Voor welk soort aanbod werkt deur-aan-deur?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Deur-aan-deur werkt het best voor een aanbod dat baat heeft bij een persoonlijk gesprek en een duidelijke uitleg aan de deur, denk aan werving, abonnementen of een propositie die je even wil tonen. Kan je aanbod ter plaatse beslist worden, dan sluiten we aan de deur af; anders leveren we een gekwalificeerde lead voor telefonische opvolging.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Hoe voorkomen jullie de slechte reputatie van D2D?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Met kwaliteit boven volume. Onze mensen zijn getraind, dragen een herkenbaar gezicht van je merk en werken met respect voor de bewoner. Gesprekken worden gescoord op kwaliteit en een vaste salescoach loopt mee in de wijk om meteen bij te sturen. We rekenen af op kwalitatief resultaat, niet op het aantal aangebelde deuren.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Wat gebeurt er met een contact na de deur?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Een contact aan de deur blijft niet op straat liggen. We volgen elke prospect omnichannel op via telefoon en mail en registreren alles in je CRM, zodat het veld en ons Sales Contact Center één doorlopend traject vormen. Zo gaat geen enkele kwalitatieve lead verloren.\"}\n        },\n        {\n          \"@type\":\"Question\",\n          \"name\":\"Waarop rekenen jullie ons af?\",\n          \"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Op wat het team oplevert tegenover een vooraf afgesproken doel, verkopen, inschrijvingen of gekwalificeerde leads, niet op het aantal deuren. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.\"}\n        }\n      ]\n    }\n  ]\n}",
   hreflang_nl="https://www.salesup.be/deur-aan-deur",
   hreflang_fr="" %}
   {% dnd_area "inhoud" label="Pagina-inhoud" %}
@@ -65,14 +65,11 @@
       {% dnd_section %}
         {% dnd_column %}
           {% dnd_row %}
-        <!-- TODO: upload gesprek-1op1.jpg naar HubSpot File Manager (lokaal bestand ontbreekt) -->
-        <!-- INTERIM: geen echt deur-aan-deur-beeld beschikbaar; sfeerbeeld uit ../assets -->
-        <!-- VERIFIEER: hier hoort een echt cijfer (bv. conversie of kwalitatieve leads per wijk) zodra beschikbaar; nu kwalitatief. -->
-            {% dnd_module
+        {% dnd_module
           path="../modules/hero",
           eyebrow="Face2Face Sales · Deur-aan-deur",
           heading="Verkoop aan de deur, <em>zonder</em> de slechte reputatie.",
-          subtext="<p>Persoonlijke werving en verkoop aan de deur door een getraind team dat met respect voor de bewoner werkt. We zetten in op kwaliteit boven volume: elk gesprek wordt gescoord, een vaste salescoach loopt mee in de wijk en elk contact wordt omnichannel opgevolgd tot in je CRM — met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.</p>",
+          subtext="<p>Persoonlijke werving en verkoop aan de deur door een getraind team dat met respect voor de bewoner werkt. We zetten in op kwaliteit boven volume: elk gesprek wordt gescoord, een vaste salescoach loopt mee in de wijk en elk contact wordt omnichannel opgevolgd tot in je CRM, met hetzelfde afrekenen-op-resultaat als ons Sales Contact Center.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
@@ -114,9 +111,9 @@
             },
           trustcard_badge="",
           trustcard_stat="",
-          trustcard_label="Kwaliteit boven volume: getrainde mensen met een herkenbaar gezicht van je merk, gescoord op elk gesprek — geen anonieme aanbellers die je reputatie schaden.",
+          trustcard_label="Kwaliteit boven volume: getrainde mensen met een herkenbaar gezicht van je merk, gescoord op elk gesprek, geen anonieme aanbellers die je reputatie schaden.",
           trustcard_quote="\"Aan de deur telt niet hoeveel je aanbelt, maar hoe je het gesprek voert.\"",
-          trustcard_quote_who="— <strong>salesUp</strong>, over de aanpak in het veld"
+          trustcard_quote_who=", <strong>salesUp</strong>, over de aanpak in het veld"
             %}
             {% end_dnd_module %}
           {% end_dnd_row %}
@@ -130,7 +127,7 @@
           anchor="oplevert",
           eyebrow="Wat het oplevert",
           heading="Een gesprek dat een folder niet voert.",
-          intro="<p>Aan de deur beslis je in enkele seconden of iemand luistert. Wij zetten getrainde mensen in, screenen op kwaliteit en volgen elk contact op — zodat deur-aan-deur meetbaar en respectvol wordt.</p>",
+          intro="<p>Aan de deur beslis je in enkele seconden of iemand luistert. Wij zetten getrainde mensen in, screenen op kwaliteit en volgen elk contact op, zodat deur-aan-deur meetbaar en respectvol wordt.</p>",
           vac_troef=false,
           feature_cards=[
               {
@@ -139,15 +136,15 @@
               },
               {
                 "title": "Kwaliteit boven volume",
-                "tekst": "<p>Getrainde wervers met een herkenbaar gezicht van je merk, werkend met respect voor de bewoner. Gesprekken worden gescoord op kwaliteit en koopkans — geen aanbellers die je reputatie schaden.</p>"
+                "tekst": "<p>Getrainde wervers met een herkenbaar gezicht van je merk, werkend met respect voor de bewoner. Gesprekken worden gescoord op kwaliteit en koopkans, geen aanbellers die je reputatie schaden.</p>"
               },
               {
                 "title": "Een vaste salescoach in de wijk",
                 "tekst": "<p>Geen anonieme freelancers: een vaste salescoach loopt mee, volgt elke shift op en stuurt meteen bij. De scores voeden de coaching en de training via salesUp Academy.</p>"
               },
               {
-                "title": "Omnichannel opgevolgd, afgerekend op resultaat",
-                "tekst": "<p>We volgen elk contact op via telefoon en mail tot in je CRM, zodat geen kwalitatieve lead verloren gaat. Je rekent ons af op resultaat tegenover een vooraf afgesproken doel, met 100% kostentransparantie.</p>"
+                "title": "Omnichannel opgevolgd, gericht op resultaat",
+                "tekst": "<p>We volgen elk contact op via telefoon en mail tot in je CRM, zodat geen kwalitatieve lead verloren gaat. Doelgericht gestuurd met heldere rapportage.</p>"
               }
             ]
             %}
@@ -162,13 +159,13 @@
           path="../modules/steps",
           anchor="aanpak",
           eyebrow="Hoe het werkt",
-          heading="Van wijk tot afgerekend resultaat.",
-          intro="<p>We spreken vooraf een doelstelling af en stemmen af in welke wijken en bij welke doelgroep het team aan de slag gaat.</p>",
+          heading="Van wijk tot meetbaar resultaat.",
+          intro="<p>We stemmen vooraf de doelstellingen af en bepalen in welke wijken en bij welke doelgroep het team aan de slag gaat.</p>",
           steps=[
               {
                 "num": "01",
                 "title": "Doel, regio & doelgroep bepalen",
-                "tekst": "<p>We spreken vooraf een doelstelling af en stemmen af in welke wijken en bij welke doelgroep het team aan de slag gaat.</p>"
+                "tekst": "<p>We stemmen vooraf de doelstellingen af en bepalen in welke wijken en bij welke doelgroep het team aan de slag gaat.</p>"
               },
               {
                 "num": "02",
@@ -178,12 +175,12 @@
               {
                 "num": "03",
                 "title": "Aan de deur: verkopen of kwalificeren",
-                "tekst": "<p>We gaan persoonlijk in gesprek — sluiten ter plaatse, of leveren een gekwalificeerde lead voor telefonische opvolging.</p>"
+                "tekst": "<p>We gaan persoonlijk in gesprek, sluiten ter plaatse, of leveren een gekwalificeerde lead voor telefonische opvolging.</p>"
               },
               {
                 "num": "04",
                 "title": "Scoren, coachen & wekelijks rapporteren",
-                "tekst": "<p>Gesprekken worden gescoord, de coach stuurt dagelijks bij en je krijgt een wekelijkse rapportering met 100% kostentransparantie.</p>"
+                "tekst": "<p>Gesprekken worden gescoord, de coach stuurt dagelijks bij en je krijgt een wekelijkse rapportering met overzichtelijke resultaten.</p>"
               }
             ]
             %}
@@ -203,7 +200,7 @@
           faq_items=[
               {
                 "question": "Voor welk soort aanbod werkt deur-aan-deur?",
-                "answer": "<p>Deur-aan-deur werkt het best voor een aanbod dat baat heeft bij een persoonlijk gesprek en een duidelijke uitleg aan de deur — denk aan werving, abonnementen of een propositie die je even wil tonen. Kan je aanbod ter plaatse beslist worden, dan sluiten we aan de deur af; anders leveren we een gekwalificeerde lead voor telefonische opvolging.</p>"
+                "answer": "<p>Deur-aan-deur werkt het best voor een aanbod dat baat heeft bij een persoonlijk gesprek en een duidelijke uitleg aan de deur, denk aan werving, abonnementen of een propositie die je even wil tonen. Kan je aanbod ter plaatse beslist worden, dan sluiten we aan de deur af; anders leveren we een gekwalificeerde lead voor telefonische opvolging.</p>"
               },
               {
                 "question": "Hoe voorkomen jullie de slechte reputatie van D2D?",
@@ -214,8 +211,8 @@
                 "answer": "<p>Een contact aan de deur blijft niet op straat liggen. We volgen elke prospect omnichannel op via telefoon en mail en registreren alles in je CRM, zodat het veld en ons Sales Contact Center één doorlopend traject vormen. Zo gaat geen enkele kwalitatieve lead verloren.</p>"
               },
               {
-                "question": "Waarop rekenen jullie ons af?",
-                "answer": "<p>Op wat het team oplevert tegenover een vooraf afgesproken doel — verkopen, inschrijvingen of gekwalificeerde leads — niet op het aantal deuren. Je krijgt een wekelijkse rapportering met 100% kostentransparantie. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
+                "question": "Hoe meten jullie het resultaat?",
+                "answer": "<p>We focussen op wat het team oplevert tegenover een vooraf afgesproken doelstelling (verkopen, inschrijvingen of gekwalificeerde leads), niet op het aantal deuren. Je krijgt een wekelijkse rapportering met heldere resultaten. Werk je met een aanvraag of RFP, dan bellen we je binnen 30 minuten terug en krijg je een vast aanspreekpunt.</p>"
               }
             ]
             %}
@@ -276,7 +273,7 @@
           path="../modules/final-cta",
           anchor="contact",
           heading="Klaar voor deur-aan-deur die je merk niet schaadt?",
-          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat deur-aan-deur voor jouw aanbod kan betekenen. Wij bellen je binnen 30 minuten terug — dat is letterlijk ons vak.</p>",
+          tekst="<p>Het eerste gesprek duurt een half uur en levert je een eerlijke inschatting op van wat deur-aan-deur voor jouw aanbod kan betekenen. Wij bellen je binnen 30 minuten terug, dat is letterlijk ons vak.</p>",
           cta1_text="Plan een gesprek",
           cta1_url={
               "url": {
