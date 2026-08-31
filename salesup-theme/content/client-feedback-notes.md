@@ -111,6 +111,14 @@ Running list for the client. Append new sheet items under each round.
 - **Cropped & Transparent Brand Assets:**
   - Extracted and tightly cropped transparent white/orange assets for `Liantis`, `Zambon`, `Astara`, `Trustteam`, `Upgrade Estate`, `Q8`, `Hivolta`, and vector `Orange`, eliminating any white square boxes or large transparent padding gaps.
 
+#### Round 13 — Complete Vector Normalization & Baseline Typography Balance
+- **Unified Single-Line Brand Geometry:**
+  - Re-engineered all brand vector SVGs (`Radiance Energy`, `Upgrade Estate`, `SPM Technologies`, `Ikaros Solar`, `Immo Van Middelem`, `VM Building Solutions`, `Eurocircuits`, `EV Shop`, `Alindus`, `Messer Group`, `Astara`, `Liantis`, `Zambon`, `JLR`, `Orange`, `Q8`, `UNIZO`, `Van Heurck`, `Axians`, `Trustteam`, `Hivolta`, `Geodis`, `Cesano`, `Sobelhor`) onto a uniform single-line canvas.
+  - Eliminated stacked 2-line text that caused severe font-size shrinkage when height-constrained.
+- **Calibrated Cap-Height & Weight:**
+  - Standardized letter cap-height (~18-20px) and emblem size (~22-24px) within a uniform 36px viewBox.
+  - All marquee logos now render with identical visual weight, optical baseline, and sharp vector clarity across all viewport widths.
+
 ---
 
 #### Open / next

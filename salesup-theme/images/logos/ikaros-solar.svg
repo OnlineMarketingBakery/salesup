@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" width="180" height="40">
-  <g transform="translate(6, 7)">
-    <circle cx="12" cy="12" r="6" fill="#EF7D00"/>
-    <path d="M12 0v3m0 21v3M0 12h3m21 0h3" stroke="#EF7D00" stroke-width="2" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 36" width="175" height="36">
+  <g transform="translate(4, 7)">
+    <circle cx="11" cy="11" r="5" fill="#EF7D00"/>
+    <path d="M11 0v3m0 16v3M0 11h3m16 0h3M3.2 3.2l2.2 2.2m11.2 11.2l2.2 2.2M3.2 18.8l2.2-2.2m11.2-11.2l2.2-2.2" stroke="#EF7D00" stroke-width="2" stroke-linecap="round"/>
   </g>
-  <text x="38" y="22" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="800" font-size="14" letter-spacing="0.06em" fill="#FFFFFF">IKAROS</text>
-  <text x="38" y="31" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="500" font-size="8" letter-spacing="0.14em" fill="rgba(255,255,255,0.75)">SOLAR</text>
+  <text x="34" y="25" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="18" letter-spacing="0.04em" fill="#FFFFFF">IKAROS SOLAR</text>
 </svg>
