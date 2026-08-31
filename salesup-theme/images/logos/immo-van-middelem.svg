@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" width="240" height="36">
-  <g transform="translate(4, 7)">
-    <path fill="#EF7D00" d="M11 1L1 10h3v11h14V10h3L11 1zm0 4.5l5 4.5v9H6v-9l5-4.5z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 40" width="210" height="40">
+  <g transform="translate(6, 8)">
+    <path fill="#EF7D00" d="M12 2L2 11h3v11h14V11h3L12 2zm0 4.5l5 4.5v9H7v-9l5-4.5z"/>
   </g>
-  <text x="32" y="25" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="17" letter-spacing="0.03em" fill="#FFFFFF">IMMO VAN MIDDELEM</text>
+  <text x="34" y="21" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="13" letter-spacing="0.04em" fill="#FFFFFF">IMMO</text>
+  <text x="34" y="31" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="500" font-size="9" letter-spacing="0.06em" fill="rgba(255,255,255,0.85)">VAN MIDDELEM</text>
 </svg>

@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 36" width="215" height="36">
-  <g transform="translate(4, 7)">
-    <rect x="0" y="0" width="22" height="22" rx="4" fill="#EF7D00"/>
-    <path fill="#FFFFFF" d="M6 6h10v2.5H8.5V10h6.5v2.5H8.5v3.5H6V6z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+  <g transform="translate(6, 9)">
+    <rect x="0" y="0" width="22" height="22" rx="5" fill="#EF7D00"/>
+    <path fill="#FFFFFF" d="M6 7h10v2.5H8.5V11h6.5v2.5H8.5v3.5H6V7z"/>
   </g>
-  <text x="34" y="25" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="17" letter-spacing="0.03em" fill="#FFFFFF">SPM TECHNOLOGIES</text>
+  <text x="36" y="22" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="800" font-size="14" letter-spacing="0.06em" fill="#FFFFFF">SPM</text>
+  <text x="36" y="31" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-weight="500" font-size="8" letter-spacing="0.12em" fill="rgba(255,255,255,0.75)">TECHNOLOGIES</text>
 </svg>
