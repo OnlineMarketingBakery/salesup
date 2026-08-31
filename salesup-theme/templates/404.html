@@ -5,6 +5,35 @@
 -->
 {% extends "./base.html" %}
 
+{% block extra_head %}
+<script>
+(function() {
+  var path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
+  var redirects = {
+    '/vacature-studentenjob-face2face': '/jobs-studenten',
+    '/studentenjob-face2face': '/jobs-studenten',
+    '/vacature/studentenjob-face2face': '/jobs-studenten',
+    '/vacatures/studentenjob-face2face': '/jobs-studenten',
+    '/vacature-contact-center': '/jobs-contact-center',
+    '/vacature-sales-consultants': '/jobs-sales-consultants',
+    '/client-cases': '/cases',
+    '/client-cases/liantis': '/cases/liantis',
+    '/client-cases/orange': '/cases/orange',
+    '/client-cases/zambon': '/cases/zambon',
+    '/client-cases/astara': '/cases/astara',
+    '/client-cases/trustteam': '/cases/trustteam',
+    '/client-cases/q8oils': '/cases/q8oils'
+  };
+
+  if (redirects[path]) {
+    window.location.replace(redirects[path]);
+  } else if (path.indexOf('/client-cases') === 0) {
+    window.location.replace('/cases');
+  }
+})();
+</script>
+{% endblock %}
+
 {% block content %}
 <section class="hero wrap" style="padding: 100px 24px 120px; text-align: center; display: flex; flex-direction: column; align-items: center;">
   <span class="eyebrow mono" style="margin-bottom: 16px;">Error 404</span>

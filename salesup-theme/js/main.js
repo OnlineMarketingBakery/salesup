@@ -97,4 +97,74 @@
       });
     });
   }
+
+  // Global handler to fix any legacy /client-cases/ or CTA links
+  function fixLegacyLinks() {
+    var caseMap = {
+      'liantis': '/cases/liantis',
+      'eveline': '/cases/liantis',
+      'orange': '/cases/orange',
+      'stefanie': '/cases/orange',
+      'trustteam': '/cases/trustteam',
+      'pascal': '/cases/trustteam',
+      'astara': '/cases/astara',
+      'didier': '/cases/astara',
+      'q8': '/cases/q8oils',
+      'zambon': '/cases/zambon',
+      'geodis': '/cases/geodis',
+      'unizo': '/cases/unizo',
+      'eurocircuits': '/cases/eurocircuits',
+      'axians': '/cases/axians',
+      'upgrade': '/cases/upgrade-estate',
+      'jaguar': '/cases/jaguar-land-rover',
+      'immo': '/cases/immo-van-middelem',
+      'van-heurck': '/cases/van-heurck',
+      'spm': '/cases/spm',
+      'alindus': '/cases/alindus',
+      'ev-shop': '/cases/ev-shop',
+      'messer': '/cases/messer-group',
+      'radiance': '/cases/radiance-energy',
+      'vm-building': '/cases/vm-building',
+      'hivolta': '/cases/hivolta',
+      'ichoosr': '/cases/ichoosr'
+    };
+
+    var currentPath = window.location.pathname.toLowerCase();
+    var pageText = (document.title + ' ' + (document.querySelector('h1') ? document.querySelector('h1').textContent : '')).toLowerCase();
+
+    document.querySelectorAll('a').forEach(function(a) {
+      var href = (a.getAttribute('href') || '').toLowerCase();
+      var text = (a.textContent || '').trim().toLowerCase();
+      var ctaId = a.getAttribute('data-hubspot-cta-id') || '';
+
+      if (href.indexOf('/client-cases') !== -1 || text.indexOf('client case') !== -1 || ctaId === '400098372851' || a.classList.contains('hs-inline-web-interactive-400098372851')) {
+        var targetCase = '/cases';
+        for (var k in caseMap) {
+          if (href.indexOf(k) !== -1 || currentPath.indexOf(k) !== -1 || pageText.indexOf(k) !== -1) {
+            targetCase = caseMap[k];
+            break;
+          }
+        }
+        a.setAttribute('href', targetCase);
+        a.onclick = function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          window.location.href = targetCase;
+          return false;
+        };
+      } else if ((text.indexOf('podcast') !== -1 || text.indexOf('beluister') !== -1) && (href.indexOf('hubspot') !== -1 || href.indexOf('podcast') !== -1 || ctaId)) {
+        a.setAttribute('href', '/groeipodcast-salesup');
+        a.onclick = function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          window.location.href = '/groeipodcast-salesup';
+          return false;
+        };
+      }
+    });
+  }
+
+  fixLegacyLinks();
+  setTimeout(fixLegacyLinks, 500);
+  setTimeout(fixLegacyLinks, 1500);
 })();

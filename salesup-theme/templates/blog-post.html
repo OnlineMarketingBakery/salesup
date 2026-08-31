@@ -117,4 +117,74 @@
     }
   }
 %}
+{% block extra_js %}
+<script>
+(function() {
+  function fixBlogLinks() {
+    var caseMap = {
+      'liantis': '/cases/liantis',
+      'eveline': '/cases/liantis',
+      'orange': '/cases/orange',
+      'stefanie': '/cases/orange',
+      'trustteam': '/cases/trustteam',
+      'pascal': '/cases/trustteam',
+      'astara': '/cases/astara',
+      'didier': '/cases/astara',
+      'q8': '/cases/q8oils',
+      'zambon': '/cases/zambon',
+      'geodis': '/cases/geodis',
+      'unizo': '/cases/unizo',
+      'eurocircuits': '/cases/eurocircuits',
+      'axians': '/cases/axians',
+      'upgrade': '/cases/upgrade-estate',
+      'jaguar': '/cases/jaguar-land-rover'
+    };
+
+    var currentPath = window.location.pathname.toLowerCase();
+    var pageText = (document.title + ' ' + (document.querySelector('.article h1') ? document.querySelector('.article h1').textContent : '')).toLowerCase();
+    var defaultCase = '/cases';
+
+    for (var key in caseMap) {
+      if (currentPath.indexOf(key) !== -1 || pageText.indexOf(key) !== -1) {
+        defaultCase = caseMap[key];
+        break;
+      }
+    }
+
+    var links = document.querySelectorAll('.article-body a, a.bd-cta, a[data-hubspot-cta-id]');
+    links.forEach(function(link) {
+      var text = (link.textContent || '').trim().toLowerCase();
+      var href = (link.getAttribute('href') || '').toLowerCase();
+      var ctaId = link.getAttribute('data-hubspot-cta-id') || '';
+
+      if (text.indexOf('client case') !== -1 || href.indexOf('client-cases') !== -1 || ctaId === '400098372851' || link.classList.contains('hs-inline-web-interactive-400098372851')) {
+        link.setAttribute('href', defaultCase);
+        link.onclick = function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          window.location.href = defaultCase;
+          return false;
+        };
+      } else if (text.indexOf('podcast') !== -1 || text.indexOf('beluister') !== -1) {
+        link.setAttribute('href', '/groeipodcast-salesup');
+        link.onclick = function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          window.location.href = '/groeipodcast-salesup';
+          return false;
+        };
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fixBlogLinks);
+  } else {
+    fixBlogLinks();
+  }
+  setTimeout(fixBlogLinks, 500);
+  setTimeout(fixBlogLinks, 1500);
+})();
+</script>
+{% endblock extra_js %}
 {% endblock content %}

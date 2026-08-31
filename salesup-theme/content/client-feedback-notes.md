@@ -48,15 +48,17 @@ Running list for the client. Append new sheet items under each round.
 - **5. Blog Alignment:**
   - Confirmed new blog templates (`blog-index.html` & `blog-post.html`) are live. HubSpot blog posts and dynamic category tags mapped to the 5 core services.
 
-#### Round 7 — 404 System Pages, Blog Inner Links & Case Card Contrast
-- **1. Case Listing Cards (`/cases`):**
-  - Restored crisp dark typography `<h3>{{ c.klant }}</h3>` on the white case listing cards. This eliminates the invisible white-on-white logo issue while keeping brand names prominent and readable across all devices.
-- **2. 404 & 500 Error Pages:**
+#### Round 7 — Case Logos with Contrast Badges, 404 System Pages & Blog Legacy Redirects
+- **1. Case Listing Logos (`/cases`):**
+  - Restored real client logo image assets on `/cases` cards (`Orange`, `Q8Oils`, `Liantis`, `Geodis`, `Trustteam`, `Astara`, `iChoosr`, `Upgrade Estate`, `Eurocircuits`, `Jaguar Land Rover`, `Hivolta`, `Audika`, etc.).
+  - Wrapped logos in `.case-logo-wrap.is-light-bg` with a sleek navy badge (`background: var(--navy-deep); border-radius: 8px; padding: 6px 14px; min-height: 38px;`). This ensures transparent and white logos have crisp contrast against the white cards and look unified with the brand identity.
+- **2. 404 & 500 Error Pages (New Theme):**
   - Created brand-new dedicated `404.html` and `500.html` system templates in `salesup-theme` with the new design header, footer, Poppins typography, and modern CTA buttons.
-  - Selected/assigned `salesUp — 404 Pagina niet gevonden` under HubSpot Settings → Website → Pages → System Pages.
+  - Uploaded to HubSpot CMS. In HubSpot portal settings (**Settings → Website → Pages → System Pages**), select `salesUp — 404 Pagina niet gevonden` under 404 error page to replace the old POWER THEME 404 page globally.
 - **3. Blog Inner Links & Legacy Case Redirects:**
-  - Updated all blog post JSON bodies and internal anchor links to point directly to their respective case study pages (`/cases/orange`, `/cases/astara`, `/cases/trustteam`, `/cases/liantis`) and podcast page (`/groeipodcast-salesup`).
-  - Added 301 redirects for `/client-cases` and `/client-cases/` to `/cases`.
+  - Diagnosed that old blog posts and HubSpot CTA buttons pointed to legacy long-tail URLs on the old theme (e.g. `/client-cases/liantis-x-salesup-mensen-laten-groeien-om-groei-mogelijk-te-maken`).
+  - Added full 301 redirect mappings for all 23 legacy `/client-cases/...` URLs to their new respective `/cases/<slug>` pages in `redirects.json`.
+  - Updated all blog post JSON content so internal links point directly to `/cases/<slug>` and `/groeipodcast-salesup`.
 
 ---
 

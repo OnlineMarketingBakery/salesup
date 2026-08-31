@@ -6,3 +6,4 @@ hubspot.config.yml
 .hs-pak
 *.log
 .hs/
+old-power-theme/

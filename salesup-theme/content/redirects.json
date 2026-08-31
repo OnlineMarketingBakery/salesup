@@ -669,5 +669,115 @@
     "from": "/client-cases/ikaros-solar",
     "to": "/cases/ikaros-solar",
     "note": "geen live dedicated URL; Ikaros stond op /telefonische-prospectie (dienstpagina, niet redirecten)"
+  },
+  {
+    "from": "/client-cases/liantis-x-salesup-mensen-laten-groeien-om-groei-mogelijk-te-maken",
+    "to": "/cases/liantis",
+    "note": "legacy power theme case URL → /cases/liantis"
+  },
+  {
+    "from": "/client-cases/zambon-hybrid-sales-training-vlot-schakelen-van-face-to-face-naar-telesales",
+    "to": "/cases/zambon",
+    "note": "legacy power theme case URL → /cases/zambon"
+  },
+  {
+    "from": "/client-cases/meer-verkopen-voor-spm",
+    "to": "/cases/spm",
+    "note": "legacy power theme case URL → /cases/spm"
+  },
+  {
+    "from": "/client-cases/q8oils-een-geoliede-samenwerking-voor-b2b-prospectie",
+    "to": "/cases/q8oils",
+    "note": "legacy power theme case URL → /cases/q8oils"
+  },
+  {
+    "from": "/client-cases/jaguar-land-rover-benelux-kiest-salesup-voor-effectieve-leads",
+    "to": "/cases/jaguar-land-rover",
+    "note": "legacy power theme case URL → /cases/jaguar-land-rover"
+  },
+  {
+    "from": "/client-cases/flexibele-klantondersteuning-voor-ichoosr",
+    "to": "/cases/ichoosr",
+    "note": "legacy power theme case URL → /cases/ichoosr"
+  },
+  {
+    "from": "/client-cases/telefonische-prospectie-voor-upgrade-estate",
+    "to": "/cases/upgrade-estate",
+    "note": "legacy power theme case URL → /cases/upgrade-estate"
+  },
+  {
+    "from": "/client-cases/astara-x-salesup-hoe-menselijk-contact-het-verschil-maakt-in-de-autosector",
+    "to": "/cases/astara",
+    "note": "legacy power theme case URL → /cases/astara"
+  },
+  {
+    "from": "/client-cases/trustteam-x-salesup-groei-versnellen-met-hetzelfde-dna",
+    "to": "/cases/trustteam",
+    "note": "legacy power theme case URL → /cases/trustteam"
+  },
+  {
+    "from": "/client-cases/telefonische-prospectie-voor-radiance-energy",
+    "to": "/cases/radiance-energy",
+    "note": "legacy power theme case URL → /cases/radiance-energy"
+  },
+  {
+    "from": "/client-cases/telefonische-prospectie-voor-ev-shop",
+    "to": "/cases/ev-shop",
+    "note": "legacy power theme case URL → /cases/ev-shop"
+  },
+  {
+    "from": "/client-cases/salesup-versterkt-de-wereldwijde-aanwezigheid-van-geodis",
+    "to": "/cases/geodis",
+    "note": "legacy power theme case URL → /cases/geodis"
+  },
+  {
+    "from": "/client-cases/de-3-saleslessen-van-stefanie-van-rillaer-head-of-hunting-bij-orange",
+    "to": "/cases/orange",
+    "note": "legacy power theme case URL → /cases/orange"
+  },
+  {
+    "from": "/client-cases/van-heurck-strategische-marktbevraging-transformeert-verkoopaanpak",
+    "to": "/cases/van-heurck",
+    "note": "legacy power theme case URL → /cases/van-heurck"
+  },
+  {
+    "from": "/client-cases/hivolta-de-weg-naar-zonovergoten-succes-in-online-marketing",
+    "to": "/cases/hivolta",
+    "note": "legacy power theme case URL → /cases/hivolta"
+  },
+  {
+    "from": "/client-cases/een-naadloze-samenwerking-tussen-serviceup-en-immo-van-middelem",
+    "to": "/cases/immo-van-middelem",
+    "note": "legacy power theme case URL → /cases/immo-van-middelem"
+  },
+  {
+    "from": "/client-cases/salesup-strategische-telefonische-prospectie-partner-van-alindus",
+    "to": "/cases/alindus",
+    "note": "legacy power theme case URL → /cases/alindus"
+  },
+  {
+    "from": "/client-cases/telefonische-prospectie-voor-vm-building-solutions",
+    "to": "/cases/vm-building",
+    "note": "legacy power theme case URL → /cases/vm-building"
+  },
+  {
+    "from": "/client-cases/meer-verkopen-voor-eurocircuits",
+    "to": "/cases/eurocircuits",
+    "note": "legacy power theme case URL → /cases/eurocircuits"
+  },
+  {
+    "from": "/client-cases/prospectie-voor-unizo",
+    "to": "/cases/unizo",
+    "note": "legacy power theme case URL → /cases/unizo"
+  },
+  {
+    "from": "/client-cases/duurzame-samenwerking-tussen-messer-group-en-salesup",
+    "to": "/cases/messer-group",
+    "note": "legacy power theme case URL → /cases/messer-group"
+  },
+  {
+    "from": "/client-cases/salesup-verhoogt-leads-sales-voor-axians-audiovisual",
+    "to": "/cases/axians",
+    "note": "legacy power theme case URL → /cases/axians"
   }
 ]

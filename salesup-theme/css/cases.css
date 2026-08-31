@@ -114,10 +114,21 @@ a.case-kaart:focus-visible{outline:3px solid var(--orange); outline-offset:3px;}
 }
 .portfolio-intro{color:var(--slate); max-width:60ch; font-size:15px; margin:10px 0 0; line-height:1.55;}
 
-/* Case-kaart logo: geen grijze tegel */
+/* Case-kaart logo: badge chip for perfect contrast with light/white logos */
+.case-logo-wrap{
+  display:inline-flex; align-items:center; justify-content:center;
+  margin:0 0 14px;
+}
+.case-logo-wrap.is-light-bg{
+  background:var(--navy-deep);
+  padding:6px 14px;
+  border-radius:8px;
+  box-sizing:border-box;
+  min-height:38px;
+}
 .case-logo{
-  height:32px; width:auto; max-width:140px; object-fit:contain;
-  display:block; margin:0 0 14px; background:transparent;
+  height:24px; width:auto; max-width:130px; object-fit:contain;
+  display:block; margin:0; background:transparent;
   filter:none; opacity:1;
 }
 
