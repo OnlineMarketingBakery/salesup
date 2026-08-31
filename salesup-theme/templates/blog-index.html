@@ -52,7 +52,13 @@
   trustcard_quote_who=""
 %}
 
-{% set all_tags = blog_tags(group.id, 250) %}
+{% set service_tags = [
+  {"name": "Marketing", "slug": "marketing"},
+  {"name": "Sales Contact Center", "slug": "sales-contact-center"},
+  {"name": "Face2Face Sales", "slug": "face2face-sales"},
+  {"name": "Training", "slug": "training"},
+  {"name": "Sales Consultants", "slug": "sales-consultants"}
+] %}
 {% if topic %}
   {% set current_tag = topic %}
 {% elif tag and tag.slug %}
@@ -67,15 +73,15 @@
 <section class="blog-listing wrap" aria-label="Blogartikels">
   <nav class="blog-tags" aria-label="Filter op categorie">
     <a class="blog-tag{% unless current_tag %} is-active{% endunless %}" href="{{ group.absolute_url }}"{% unless current_tag %} aria-current="page"{% endunless %}>Toon alles</a>
-    {% for item in all_tags %}
-    <a class="blog-tag{% if current_tag and current_tag == item.slug %} is-active{% endif %}" href="{{ blog_tag_url(group.id, item.slug) }}"{% if current_tag and current_tag == item.slug %} aria-current="page"{% endif %}>{{ item.name|default(item) }}</a>
+    {% for item in service_tags %}
+    <a class="blog-tag{% if current_tag and (current_tag == item.slug or current_tag == (item.slug|replace('-', ' ')) or (current_tag|lower) == (item.name|lower)) %} is-active{% endif %}" href="{{ blog_tag_url(group.id, item.slug)|default(group.absolute_url ~ '/tag/' ~ item.slug) }}"{% if current_tag and (current_tag == item.slug or current_tag == (item.slug|replace('-', ' ')) or (current_tag|lower) == (item.name|lower)) %} aria-current="page"{% endif %}>{{ item.name }}</a>
     {% endfor %}
   </nav>
   <label class="blog-tags-mobile-label mono" for="blog-tag-select">Filter</label>
   <select id="blog-tag-select" class="blog-tags-select" aria-label="Filter op categorie" onchange="if(this.value){location.href=this.value;}">
     <option value="{{ group.absolute_url }}"{% unless current_tag %} selected{% endunless %}>Toon alles</option>
-    {% for item in all_tags %}
-    <option value="{{ blog_tag_url(group.id, item.slug) }}"{% if current_tag and current_tag == item.slug %} selected{% endif %}>{{ item.name|default(item) }}</option>
+    {% for item in service_tags %}
+    <option value="{{ blog_tag_url(group.id, item.slug)|default(group.absolute_url ~ '/tag/' ~ item.slug) }}"{% if current_tag and (current_tag == item.slug or current_tag == (item.slug|replace('-', ' ')) or (current_tag|lower) == (item.name|lower)) %} selected{% endif %}>{{ item.name }}</option>
     {% endfor %}
   </select>
 
