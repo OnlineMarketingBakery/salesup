@@ -60,14 +60,11 @@ Running list for the client. Append new sheet items under each round.
   - Added full 301 redirect mappings for all 23 legacy `/client-cases/...` URLs to their new respective `/cases/<slug>` pages in `redirects.json`.
   - Updated all blog post JSON content so internal links point directly to `/cases/<slug>` and `/groeipodcast-salesup`.
 
-#### Round 8 — Unified Case Logo Sizing & Contrast Badges (Listing & Detail Pages)
-- **Problem diagnosed:** 
-  - On `/cases` listing cards, square and padded logo image files (such as `Liantis`, `Zambon`, `JLR`, `Astara`, `Orange`) were shrunk down to tiny 6–10px icons inside the 24px container due to large transparent margins in the source files, and unmatched titles (like `iChoosr.`) fell through to unstyled `<h3>` text without any badge container.
-  - On single case detail pages (`/cases/<slug>`), some logos had a dark badge (`.is-light`), while others had no background (making white logos like `Liantis` and `Zambon` completely invisible on the white hero section), resulting in inconsistent heights and jarring contrast differences.
-- **Solution implemented:**
-  - **Listing Cards (`/cases`):** Unified all cards to use a standardized 44px dark navy badge (`.case-logo-wrap`) with optical scaling classes (`is-pad` and `is-pad-large`) for padded and square assets (`Liantis`, `Zambon`, `JLR`, `Astara`, `Orange`, `Trustteam`, `Hivolta`, etc.). Every card has the exact same badge dimensions, alignment, and visual weight.
-  - **Case Hero Detail Pages (`/cases/<slug>`):** Standardized all case heroes with a matching 52px dark navy badge (`.case-hero-logo-wrap`) and optical scaling. All logos (including white assets) now render with crisp contrast, identical container height, and proper proportions.
-  - **Theme SVG Assets:** Cleaned and set fill to `#FFFFFF` for SVG assets (`van-heurck.svg`, `unizo.svg`, `axians.svg`, `vm-building.svg`, `radiance-energy.svg`, etc.) so custom logos without raster files display cleanly inside the brand badge.
+#### Round 8 — Unified Case Logo Sizing & Single-Line Hero Layout (Listing & Detail Pages)
+- **Single-Line Hero Header:** Updated single case pages so the logo badge and the eyebrow text (`CLIENT CASE · SECTOR`) sit side-by-side on one clean horizontal line.
+- **UNIZO Logo Display:** Fixed UNIZO and other theme vector logos on single case detail pages by mapping direct public asset URLs with robust error fallbacks so no blank badges appear.
+- **Listing Cards (`/cases`):** Standardized all cards to use a consistent 44px dark navy badge (`.case-logo-wrap`) with optical scaling classes (`is-pad` and `is-pad-large`) for padded and square assets (`Liantis`, `Zambon`, `JLR`, `Astara`, `Orange`, `Trustteam`, `Hivolta`, etc.).
+- **Case Hero Detail Pages (`/cases/<slug>`):** Standardized case heroes with a matching 44px dark navy badge (`.case-hero-logo-wrap`) aligned inline with the eyebrow label.
 
 ---
 

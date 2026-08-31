@@ -34,13 +34,13 @@
 {# Real logos only — unified navy brand badge for perfect legibility and contrast across all cases. #}
 {% set logo_src = "" %}
 {% set logo_alt = heading %}
-{% if module.logo.src %}
+{% if module.logo.src and not "placeholder" in (module.logo.src|lower) and not "images/logos" in module.logo.src %}
   {% set logo_src = module.logo.src %}
   {% set logo_alt = module.logo.alt|default(heading) %}
 {% endif %}
 
-{% set case_name = (heading ~ " " ~ module.eyebrow)|lower %}
-{% if not logo_src or "placeholder" in (logo_src|lower) %}
+{% set case_name = (heading ~ " " ~ module.eyebrow ~ " " ~ content.html_title ~ " " ~ content.absolute_url)|lower %}
+{% if not logo_src or "placeholder" in (logo_src|lower) or "images/logos" in logo_src %}
   {% if "liantis" in case_name %}
     {% set logo_src = "https://salesup.be/hubfs/liantis.png" %}
     {% set logo_alt = "Liantis logo" %}
@@ -80,51 +80,53 @@
   {% elif "atradius" in case_name %}
     {% set logo_src = "https://salesup.be/hubfs/Atradius.png" %}
     {% set logo_alt = "Atradius logo" %}
-  {% elif "van heurck" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/van-heurck.svg') %}
-    {% set logo_alt = "Van Heurck logo" %}
   {% elif "unizo" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/unizo.svg') %}
-    {% set logo_alt = "UNIZO logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/unizo.svg" %}
+    {% set logo_alt = "UNIZO" %}
+  {% elif "van heurck" in case_name %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/van-heurck.svg" %}
+    {% set logo_alt = "Van Heurck" %}
   {% elif "axians" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/axians.svg') %}
-    {% set logo_alt = "Axians logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/axians.svg" %}
+    {% set logo_alt = "Axians" %}
   {% elif "vm building" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/vm-building.svg') %}
-    {% set logo_alt = "VM Building Solutions logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/vm-building.svg" %}
+    {% set logo_alt = "VM Building Solutions" %}
   {% elif "radiance" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/radiance-energy.svg') %}
-    {% set logo_alt = "Radiance Energy logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/radiance-energy.svg" %}
+    {% set logo_alt = "Radiance Energy" %}
   {% elif "messer" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/messer-group.svg') %}
-    {% set logo_alt = "Messer Group logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/messer-group.svg" %}
+    {% set logo_alt = "Messer Group" %}
   {% elif "alindus" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/alindus.svg') %}
-    {% set logo_alt = "Alindus logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/alindus.svg" %}
+    {% set logo_alt = "Alindus" %}
   {% elif "ev shop" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/ev-shop.svg') %}
-    {% set logo_alt = "EV Shop logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ev-shop.svg" %}
+    {% set logo_alt = "EV Shop" %}
   {% elif "spm" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/spm.svg') %}
-    {% set logo_alt = "SPM Technologies logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/spm.svg" %}
+    {% set logo_alt = "SPM Technologies" %}
   {% elif "immo van middelem" in case_name %}
-    {% set logo_src = get_asset_url('../../images/logos/immo-van-middelem.svg') %}
-    {% set logo_alt = "Immo Van Middelem logo" %}
+    {% set logo_src = "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/immo-van-middelem.svg" %}
+    {% set logo_alt = "Immo Van Middelem" %}
   {% endif %}
 {% endif %}
-
-{% set primary = module.stats|first %}
-{% set primary_on_card = primary and primary.cijfer and primary.cijfer != "•" %}
 
 <section class="case-hero">
   <div class="wrap case-hero-grid">
     <div class="case-hero-copy">
-      {% if logo_src %}
-      <div class="case-hero-logo-wrap">
-        <img class="case-hero-logo{% if 'zambon' in logo_src|lower or 'liantis' in logo_src|lower or 'jlr' in logo_src|lower %} is-pad-large{% elif 'astra' in logo_src|lower or 'orange' in logo_src|lower or 'trustteam' in logo_src|lower or 'hivolta' in logo_src|lower or 'upgrade' in logo_src|lower or 'q8' in logo_src|lower %} is-pad{% endif %}" src="{{ logo_src }}" alt="{{ logo_alt }}" decoding="async">
+      <div class="case-hero-logo-row">
+        <div class="case-hero-logo-wrap">
+          {% if logo_src %}
+            <img class="case-hero-logo{% if 'zambon' in logo_src|lower or 'liantis' in logo_src|lower or 'jlr' in logo_src|lower %} is-pad-large{% elif 'astra' in logo_src|lower or 'orange' in logo_src|lower or 'trustteam' in logo_src|lower or 'hivolta' in logo_src|lower or 'upgrade' in logo_src|lower or 'q8' in logo_src|lower %} is-pad{% endif %}" src="{{ logo_src }}" alt="{{ logo_alt }}" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" decoding="async">
+            <span class="case-hero-logo-text" style="display:none;">{{ logo_alt|default('Client Case') }}</span>
+          {% else %}
+            <span class="case-hero-logo-text">{{ logo_alt|default('Client Case') }}</span>
+          {% endif %}
+        </div>
+        {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
       </div>
-      {% endif %}
-      {% if module.eyebrow %}<span class="eyebrow mono">{{ module.eyebrow }}</span>{% endif %}
       {% if module.heading %}<h1>{{ module.heading }}</h1>{% endif %}
       {% if module.subtext %}<div class="case-sub">{{ module.subtext }}</div>{% endif %}
       {% if module.meta_tags %}

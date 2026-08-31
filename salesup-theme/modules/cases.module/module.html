@@ -88,7 +88,28 @@
       "vokans": "https://salesup.be/hubfs/Boost%20business%20logos/Vokans.svg",
       "Vokans": "https://salesup.be/hubfs/Boost%20business%20logos/Vokans.svg",
       "mdo": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png",
-      "MDO Group": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png"
+      "MDO Group": "https://salesup.be/hubfs/MDO%20Group%20-%20tevreden%20klant%20van%20salesUp.png",
+      "unizo": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/unizo.svg",
+      "UNIZO": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/unizo.svg",
+      "Unizo": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/unizo.svg",
+      "van-heurck": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/van-heurck.svg",
+      "Van Heurck": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/van-heurck.svg",
+      "axians": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/axians.svg",
+      "Axians": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/axians.svg",
+      "vm-building": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/vm-building.svg",
+      "VM Building Solutions": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/vm-building.svg",
+      "radiance-energy": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/radiance-energy.svg",
+      "Radiance Energy": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/radiance-energy.svg",
+      "messer-group": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/messer-group.svg",
+      "Messer Group": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/messer-group.svg",
+      "alindus": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/alindus.svg",
+      "Alindus": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/alindus.svg",
+      "ev-shop": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ev-shop.svg",
+      "EV Shop": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/ev-shop.svg",
+      "spm": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/spm.svg",
+      "SPM Technologies": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/spm.svg",
+      "immo-van-middelem": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/immo-van-middelem.svg",
+      "Immo Van Middelem": "https://salesup.be/hubfs/raw_assets/public/salesup-theme/images/logos/immo-van-middelem.svg"
     } %}
     {% set pad_large = ["zambon", "Zambon", "liantis", "Liantis", "jlr", "JLR", "jaguar-land-rover", "Jaguar Land Rover"] %}
     {% set pad_medium = ["astara", "Astara", "orange", "Orange", "trustteam", "Trustteam", "hivolta", "Hivolta", "upgrade-estate", "Upgrade Estate", "UpgradeEstate", "q8", "Q8", "q8oils", "Q8Oils"] %}
@@ -103,7 +124,8 @@
       <div class="case-kop">
         <div class="case-logo-wrap">
           {% if logo_url %}
-            <img class="case-logo{% if c.klant in pad_large or c.logo_slug in pad_large %} is-pad-large{% elif c.klant in pad_medium or c.logo_slug in pad_medium %} is-pad{% endif %}" src="{{ logo_url }}" alt="{{ c.klant }}" loading="lazy" decoding="async">
+            <img class="case-logo{% if c.klant in pad_large or c.logo_slug in pad_large %} is-pad-large{% elif c.klant in pad_medium or c.logo_slug in pad_medium %} is-pad{% endif %}" src="{{ logo_url }}" alt="{{ c.klant }}" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" loading="lazy" decoding="async">
+            <span class="case-logo-text" style="display:none;">{{ c.klant }}</span>
           {% else %}
             <span class="case-logo-text">{{ c.klant }}</span>
           {% endif %}
